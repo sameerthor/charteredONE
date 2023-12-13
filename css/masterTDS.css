@@ -886,7 +886,7 @@ nav .breadcrumb a{
   padding-bottom: .5rem;
  }
  .verified{
-  color: #006400;
+  color: #006400 !important;
  }
  .unverified{
   color: #d00000 !important;
@@ -977,5 +977,59 @@ nav .breadcrumb a{
   letter-spacing: .5px;
 }
 .raiseRequest:hover{
+  color: #fff;
+}
+.deductor-details-correction{
+  max-width: 100%;
+  margin: auto;
+}
+.custom-fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.custom-legend {
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-fieldset label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+/* ==================steps========================== */
+.steps{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media(max-width:768px){
+ .steps{
+  display: block;
+ }
+ .steps .count{
+ margin-bottom: 1rem;
+}
+}
+.steps .count{
+  border-radius: 50%;
+  padding: .2rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: .5rem;
+  font-weight: 600;
+  color: #3f6ad8;
+  border: 1px solid #3f6ad8;
+}
+.steps .selected{
+  border: 1px solid #26ace3;
+  background-color: #26ace3;
   color: #fff;
 }

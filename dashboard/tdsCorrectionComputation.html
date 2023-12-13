@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -19,8 +20,9 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="../css/dashboardpack.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/masterTDS.css">
     <!-- *******************Fontawesome***************************** -->
@@ -571,214 +573,159 @@
                 </div>
                 <!-- ===================Content====================== -->
                 <div class="app-main__outer">
-                    <div class="app-main__inner"> 
+                    <div class="app-main__inner">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-card mb-3 card">
+                                    <div class="card-body mt-4">
+                                        <div class="steps">
+                                            <div>
+                                                <a href="./tdsCorrectionDeductor.html"><span class="count">1</span>Deductor</a>
+                                            </div>
+                                            <div>
+                                               <a href="./tdsDeducteePan.html"> <span class="count">2</span>Deductee &amp PAN</a>
+                                            </div>
+                                            <div>
+                                                <a href="./tdsCorrectionSalary.html"><span class="count">3</span>Salary</a>
+                                            </div>
+                                            <div>
+                                                <a href="./tdsCorrectionDeducteeTransaction.html"><span class="count">4</span>Deductee Transaction</a>
+                                            </div>
+                                            <div>
+                                                <a href="./tdsCorrectionChallan.html"><span class="count">5</span>Challan</a>
+                                            </div>
+                                            <div>
+                                                <a href="./tdsCorrectionComputation.html"><span class="count selected">6</span>Computation</a>
+                                            </div>
+                                            <div>
+                                                <a href="./tdsCorrectionFVU.html"><span class="count">7</span>FVU</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-body">
-                                        <div class="d-md-flex align-items-center">
-                                            <nav aria-label="breadcrumb" class="me-auto">
-                                                <ol class="breadcrumb">
-                                                  <li class="breadcrumb-item"><a href="./tdsReturnDashboard.html"><i class="fa-solid fa-angle-left"></i> Back to Return Dashboard</a></li>
-                                                </ol>
-                                            </nav>
-                                            <nav aria-label="breadcrumb" class="ms-auto">
-                                                <ol class="breadcrumb">
-                                                  <li class="breadcrumb-item"><a href="./tdsChallanList.html">Next <i class="fa-solid fa-angle-right"></i></a></li>
-                                                </ol>
-                                            </nav>
-                                        </div>
-                                        <div>
-                                            <h3 class="text-center main-heading">List of Deductee Transaction</h3>  
-                                        </div>
-                                        <div class="row filter-data">
-                                            <h4>Filter Transaction</h4>
-                                            <div class="col-md-3">
-                                                <div class="dropdown custome-dropdown">
-                                                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                      PAN
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                      <li>
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                 PAN available and Verified
-                                                                </label>
-                                                            </div>
-                                                        </a>
-                                                      </li>
-                                                      <li>
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                    PAN available and Unverified
-                                                                </label>
-                                                            </div>
-                                                        </a>
-                                                     </li>
-                                                     <li>
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                  PAN Invalid
-                                                                </label>
-                                                            </div>
-                                                        </a>
-                                                     </li>
-                                                     <li>
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                  PAN Name mis-match
-                                                                </label>
-                                                            </div>
-                                                        </a>
-                                                     </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="dropdown custome-dropdown">
-                                                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                      Deduction
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                      <li>
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                 Deduction at Higer Rate
-                                                                </label>
-                                                            </div>
-                                                        </a>
-                                                      </li>
-                                                      <li>
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                   Short Deduction
-                                                                </label>
-                                                            </div>
-                                                        </a>
-                                                     </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="dropdown custome-dropdown">
-                                                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                      Non Avl of PAN
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                      <li>
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                No PAN Available
-                                                                </label>
-                                                            </div>
-                                                        </a>
-                                                      </li>
-                                                    </ul>
+                                        <div class="card-header table-header">
+                                            <div class="header-item">
+                                                <div class="mb-lg-0 mb-2">
+                                                    <span>Overview</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>        
-                                    <div class="card-body">
                                         <div class="table-responsive custome-table">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <thead>
                                                     <tr>
                                                         <th>
-                                                             Transaction <a href="#000" data-bs-toggle="offcanvas" data-bs-target="#createDeducteeTransaction">  (Add New <i class="fa-solid fa-plus"></i>)</a>
+                                                           No. of Deductee Transaction</a>
                                                         </th>
                                                         <th>
-                                                            PAN
-                                                        </th>
-                                                        <th>
-                                                           Section
-                                                        </th>
-                                                        <th>
-                                                            Rate
-                                                        </th>
-                                                        <th>
-                                                            Payment Date
-                                                        </th>
-                                                        <th>
-                                                            Deduction Date
-                                                        </th>
-                                                        <th>
-                                                            Amount Paid
+                                                            No. of Challan
                                                         </th>
                                                         <th>
                                                             Total Tax Deducted
                                                         </th>
-                                                        <th>
-                                                            Mapped Challan
-                                                        </th>
-                                                        <th>
-                                                            Action
-                                                        </th>
+                                                        <th>Total Tax Adjusted</th>
+                                                        <th>Total Tax Remaining to be Adjusted</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><span>Rochem India PVT LTD</span></td>
-                                                        <td><span>DDIPM66E</span></td>
-                                                        <td>1944(b)</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
                                                         <td>10</td>
-                                                        <td>10/12/2023</td>
-                                                        <td>01/11/2023</td>
-                                                        <td>214443.00</td>
-                                                        <td>124214.00</td>
-                                                        <td>
-                                                            <span>42442</span>
-                                                            <a href="#000" class="link-transaction" onclick="unlinkAlert()"><i class="fa-solid fa-link"></i></a>
-                                                        </td>
-                                                        <td class="d-flex">
-                                                            <a href="#000" class="me-auto edit-transaction" data-bs-toggle="offcanvas" data-bs-target="#updateDeducteeTransaction"><i class="fa-regular fa-pen-to-square"></i></a>
-                                                            <a href="#000" class="ms-auto delete-transaction"><i class="fa-solid fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><span>Rochem India PVT LTD</span></td>
-                                                        <td><span>DDIPM66E</span></td>
-                                                        <td>1944(b)</td>
                                                         <td>10</td>
-                                                        <td>10/12/2023</td>
-                                                        <td>01/11/2023</td>
-                                                        <td>214443.00</td>
-                                                        <td>124214.00</td>
-                                                        <td>
-                                                            <span>42442</span>
-                                                            <a href="#000" class="link-transaction" onclick="unlinkAlert()"><i class="fa-solid fa-link"></i></a>
-                                                        </td>
-                                                        <td class="d-flex">
-                                                            <a href="#000" class="me-auto edit-transaction" data-bs-toggle="offcanvas" data-bs-target="#updateDeducteeTransaction"><i class="fa-regular fa-pen-to-square"></i></a>
-                                                            <a href="#000" class="ms-auto delete-transaction"><i class="fa-solid fa-trash"></i></a>
-                                                        </td>
+                                                        <td>0</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
-                                    <div class="d-block text-center card-footer mt-4">
-                                        <ul class="page">
-                                            <li class="pagebtn"><a href="#"><i class="fa-solid fa-angle-left"></i></a></li>
-                                            <li class="pagenum active"><a href="#">1</a></li>
-                                            <li class="pagenum"><a href="#">2</a></li>
-                                            <li class="pagenum"><a href="#">...</a></li>
-                                            <li class="pagenum"><a href="#">8</a></li>
-                                            <li class="pagebtn"><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
-                                        </ul>
+                                    <div class="card-body">
+                                        <div class="table-responsive custome-table">
+                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>
+                                                         Particular
+                                                        </th>
+                                                        <th>
+                                                           Original Correction Statement
+                                                        </th>
+                                                        <th>
+                                                           Updated Correction Statement
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th colspan="4">Summary</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Tax Liability</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Interest Liability</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="4">Challan Summary</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Challan Amount</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total  Amount Unutilized in this Return</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total  Amount Unutilized Challan as on Today. Available for Mapping</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Interest &amp Other Allocated</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Interest &amp Other Liability</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Remaining for Adjustment</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="4">Deductee Transaction Summary</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Tax Payable as per DT</td>
+                                                        <td></td>
+                                                        <td>10</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="./tdsCorrectionFVU.html" class="btn btn-info">Proceed to Generate FVU</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -787,243 +734,24 @@
                 </div>
         </div>
     </div>
-    <!-- ==============================Update Deductee Transaction Offcanvas==================== -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="updateDeducteeTransaction" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h2 class="offcanvas-title" id="offcanvasRightLabel">Update Deductee Transaction</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="card-body d-md-flex align-items-center">
-               <div class="me-auto d-flex mb-3 mb-md-0">
-                    <div class="mr-5"><span class="fw-bolder">Map Challan?</span></div>
-                    <div class="form-check mr-3">
-                        <input class="form-check-input" type="radio" id="radioContent1" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                        Now
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="radioContent1" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Later
-                        </label>
-                    </div>
-               </div>
-                <div class="ms-auto unconsumed">
-                    <strong class="pr-2"> Unconsumed Amount:</strong> <span>₹ 124124124214</span>
-                </div>
-            </div>
-            <div class="card-body">
-                <div>
-                    <div class="row">
-                        <div class="mb-4 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Section</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Choose</option>
-                                <option value="1">194A</option>
-                                <option value="2">194B</option>
-                                <option value="3">194C</option>
-                                <option value="4">194D</option>
-                            </select>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Deductee Name</label>
-                            <input type="date" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Reson of Deduction</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Choose</option>
-                                <option value="1">Reson 1</option>
-                                <option value="1">Reson 2</option>
-                                <option value="1">Reson 3</option>
-                                <option value="1">Reson 4</option>
-                            </select>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label" min="0">Lower Deduction Certificate No.</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                    </div>
-                    <h4>Amount Info</h4>
-                    <div class="row">
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Payment Date</label>
-                            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="0.00">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Deduction Date</label>
-                            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="0.00">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Rate</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0.00">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Cash Withdraw in Access of</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Choose</option>
-                                <option value="1">Reson 1</option>
-                                <option value="1">Reson 2</option>
-                                <option value="1">Reson 3</option>
-                                <option value="1">Reson 4</option>
-                            </select>
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Access Withdraw Amount</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Amount Paid</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Tax Deducted</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Surcharge</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Education Cess</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="canvas-btn">
-                            <a href="#000">Save</a>
-                            <a href="#000" data-bs-dismiss="offcanvas" aria-label="Close" class="btn btn-secondary">Cancle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ==============================Create Deductee Transaction Offcanvas==================== -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="createDeducteeTransaction" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h2 class="offcanvas-title" id="offcanvasRightLabel">Create Deductee Transaction</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="card-body d-md-flex align-items-center">
-               <div class="me-auto d-flex mb-3 mb-md-0">
-                    <div class="mr-5"><span class="fw-bolder">Map Challan?</span></div>
-                    <div class="form-check mr-3">
-                        <input class="form-check-input" type="radio" id="radioContent1" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                        Now
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="radioContent1" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Later
-                        </label>
-                    </div>
-               </div>
-                <div class="ms-auto unconsumed">
-                    <strong class="pr-2"> Unconsumed Amount:</strong> <span>₹ 124124124214</span>
-                </div>
-            </div>
-            <div class="card-body">
-                <div>
-                    <div class="row">
-                        <div class="mb-4 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Section</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Choose</option>
-                                <option value="1">194A</option>
-                                <option value="2">194B</option>
-                                <option value="3">194C</option>
-                                <option value="4">194D</option>
-                            </select>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Deductee Name</label>
-                            <input type="date" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Reson of Deduction</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Choose</option>
-                                <option value="1">Reson 1</option>
-                                <option value="1">Reson 2</option>
-                                <option value="1">Reson 3</option>
-                                <option value="1">Reson 4</option>
-                            </select>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label" min="0">Lower Deduction Certificate No.</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                    </div>
-                    <h4>Amount Info</h4>
-                    <div class="row">
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Payment Date</label>
-                            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="0.00">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Deduction Date</label>
-                            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="0.00">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Rate</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0.00">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Cash Withdraw in Access of</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Choose</option>
-                                <option value="1">Reson 1</option>
-                                <option value="1">Reson 2</option>
-                                <option value="1">Reson 3</option>
-                                <option value="1">Reson 4</option>
-                            </select>
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Access Withdraw Amount</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Amount Paid</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Tax Deducted</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Surcharge</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                        <div class="mb-4 col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Education Cess</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="₹">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="canvas-btn">
-                            <a href="#000">Save</a>
-                            <a href="#000" data-bs-dismiss="offcanvas" aria-label="Close" class="btn btn-secondary">Save &amp New</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<script>
-        function unlinkAlert(){
-            alert("Are you sare want to unlink this Challan? ");
-        }
-</script>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../js/dashboard-pack.js"></script> 
 <script src="../js/dashboard.js"></script>
+<!-- ========================date Picker CDN=========================== -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script>
+    $(function() {
+      $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
+</script>
 </body>
 </html>
