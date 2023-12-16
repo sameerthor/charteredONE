@@ -1,54 +1,22 @@
-.client-data{
-    max-width: 60%;
-    margin: 1rem auto;
-    box-shadow: 5px 5px 10px #eae9e9;
+body a {
+    text-decoration: none;
 }
-.client-data thead{
-    background-color: #26ace3;
-    color: #fff;
+body a:hover{
+    text-decoration: none;
+}
+.table-responsive .table th{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     letter-spacing: 1px;
-    font-size: 1.2rem;
+    color: #000;
+    font-size: .85rem;
+}
+.table-responsive .table td{
+    color: #000 !important;
     font-weight: 500;
-    border-radius: 10px;
-}
-.client-data thead th{
-    border-right: 1px solid #dcd8d8;
-}
-.client-data .table-responsive thead th:last-child{
-    border-right: none;
-}
-.client-data tr td{
-    font-weight: 500;
-    border-right: 1px solid #dcd8d8;
-}
-.client-data  tr td:last-child{
-    font-weight: 500;
-    border-right: none;
-}
-.client-data .edit-info{
-   display: inline-block;
-   margin-bottom: 1.4rem;
-   padding: .4rem 1rem;
-   border-radius: 4px;
-   font-weight: 500;
-   letter-spacing: .5px;
-   text-transform: capitalize;
-   cursor: pointer;
-   background-color: #26ace3;
-   color: #fff;
-   border: none;
-   outline: none;
-   text-decoration: none;
-}
-
-.client-data table{
-    min-width: 400px;
-}
-@media(max-width:768px){
-    .table-responsive{
-        max-width: 100%;
-        width: 100%;
-    }
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .5px;
+    font-size: .8rem;
 }
 /* ===================Address Info=============== */
 .primary-info{
@@ -163,3 +131,53 @@
         border: none;
         outline: none;
       }
+      .client-details{
+        width:  100%;
+        margin: auto;
+      }
+      .form-label {
+        color: #000;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: .5px;
+        font-size: .85rem;
+    }
+    .form-label span{
+        color: #ff0000;
+        font-weight: 600;
+    }
+    .client-details .form-control{
+        font-size: .8rem;
+        font-family: 'Montserrat', sans-serif;
+        color: #000;
+        letter-spacing: .5px;
+        font-weight: 500;
+    }
+    .client-details h4{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    input:disabled {
+        background: linear-gradient(to right, #f1f5f8, #90e0ef); 
+        border: 1px solid #cccccc;
+        padding: 10px;
+      }
+.complete-view{
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: .5px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    background-color: #26ace3;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.complete-view:hover{
+    text-decoration: none;
+    color: #fff;
+}
