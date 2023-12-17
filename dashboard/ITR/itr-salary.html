@@ -1,0 +1,958 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/dashboardpack.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/itr.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>             
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="custome-header">
+                                    <div>
+                                        <div class="header-item">
+                                            <span class="client-name" data-bs-toggle="tooltip" data-bs-placement="top" title="Adem Makaran">Adem Makarum</span>
+                                        </div>
+                                        <div>
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title=" PAN: DIIPM2226">DIIPM2226</span> |
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Status: Individual">Individual</span> |
+                                            <span class="header-link"><a href="./edit-client.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit Client Info">Residence <i class="fa-solid fa-user-pen" ></i></a></span> |
+                                            <span class="header-link"><a href="https://eportal.incometax.gov.in/iec/foservices/#/login" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="visit IT Portal">IT Portal <img src="../../images/itd-logo.png" height="20" width="28" alt=""></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="custome-dropdowm align-items-center">
+                                       <div class="custome-toggle">
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>PY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>CY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                       </div>
+                                        <div class="filling-btn">
+                                            <a href="#000">e-Filling</a>
+                                            <a href="#000">Computation</a>
+                                        </div>
+                                        <div class="fy-year">
+                                            <span>A.Y. 2023-24</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="breadcrumbs breadcrumbs-top bg-light mb-3">
+                                        <a href="./client-master-ITR.html"><i class="fa-solid fa-angle-left"></i> Return to Client Master</a>
+                                    </div>
+                                    <div class="main-heading">
+                                        <h4>Salary Income</h4>
+                                    </div>
+                                    <div class="add-sal-emp card-body">
+                                        <div class="card-header bg-light">
+                                            <span>Employer Wise Salary</span>
+                                        </div>
+                                        <div class="add-new-btn">
+                                            <div class="input-group-btn">
+                                                <button type="button"  onclick="education_fields();"> Add Employer  </button>
+                                            </div>
+                                            <div class="emlpoyer-type">
+                                                <a href="#000">Central Gov</a>
+                                                <a href="#000">State Gov</a>
+                                                <a href="#000">PSU</a>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Pensioner</option>
+                                                    <option value="1">Pensioner CG</option>
+                                                    <option value="2">Pensioner SG</option>
+                                                    <option value="3">Pensioner PSU</option>
+                                                    <option value="4">Pensioner Other</option>
+                                                </select>
+                                                <a href="#000" class="selected">Others</a>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default ">
+                                          <div class="panel-body">
+                                          
+                                            <div id="education_fields">
+                                                    
+                                            </div>
+                                            <div class="row my-4 input-group">
+                                                <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">
+                                                    <label for="" class="form-label">Employer Name</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">
+                                                    <label for="" class="form-label">TAN</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">
+                                                    <label for="" class="form-label">Address</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">
+                                                    <label for="" class="form-label">Pincode / Zipcode</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">
+                                                    <label for="" class="form-label">State</label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Uttar Pradesh</option>
+                                                        <option value="1">Madhya Pradesh</option>
+                                                        <option value="2">Rajsthan</option>
+                                                        <option value="3">Chhatisgarh</option>
+                                                        <option value="4">Other</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">
+                                                    <label for="" class="form-label">Country</label>
+                                                    <select class="form-select" aria-label="Default select example" disabled>
+                                                        <option selected>India</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <!-- =============================== -->
+                                    <div class="card-body">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Gross Salary
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="flush-headingOne">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                                Salary Detail as per 17(1)*
+                                                            </button>
+                                                          </h2>
+                                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive active-content content" id="">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Basic Salary</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>House Rent Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Leave Travel Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Dearness Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Conveyance Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Leave Encashment on Retirement</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Children Education Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Hostel Education Allounce</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Arrear Received</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Total</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="flush-headingTwo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                                Salary Detail as per 17(2)
+                                                            </button>
+                                                          </h2>
+                                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive active-content content" id="">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Rent-free Accommodation</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Cars</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Sweeper / Gardener / Watchman / PA</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Interest Free Loans</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="flush-headingThree">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                                Salary Detail as per 17(3)
+                                                            </button>
+                                                          </h2>
+                                                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive active-content content" id="">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="Addition Field 1">
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="Addition Field 2">
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="Addition Field 3">
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- =============================== -->
+                                    <div class="mt-4">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#overallExemptions" aria-expanded="true" aria-controls="collapseOne">
+                                                    Overall Exemptions & Deductions
+                                                </button>
+                                              </h2>
+                                              <div id="overallExemptions" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="flush-headingOne">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exemptAllowance" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                                Exempt Allowance u/s 10
+                                                            </button>
+                                                          </h2>
+                                                          <div id="exemptAllowance" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive active-content content" id="">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>House Rent Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Children Education Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Hostel Expenditure Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Leave Travel Concession</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Conveyance Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Leave Encashment</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Gratuity</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Commuted Pension</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Voluntary Retirement Scheme</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Retrenchment Compensation</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Allowance Paid To Employees Outside India</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Total</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="flush-headingTwo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Deductionu" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                                Deduction u/s 16
+                                                            </button>
+                                                          </h2>
+                                                          <div id="Deductionu" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive active-content content" id="">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Standard Deduction</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Entertainment Allowance</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Professional Tax</th>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" value="0.00">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- =============================== -->
+                                    <div class="mt-4">
+                                        <div class="table-responsive active-content content" id="">
+                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                <tbody>
+                                                        <th></th>
+                                                        <th>2024-25</th>
+                                                        <th>2023-24</th>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>17(1)</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>17(1)</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>17(2)</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>17(3)</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Gross Salary</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Exemptions u/s 10</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Net Salary</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Deduction u/s 16</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Taxable Salary</th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="d-block text-center card-footer">
+                                        <div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const appendAlert = (message, type) => {
+        const wrapper = document.createElement('div')
+        wrapper.innerHTML = [
+            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+            `   <div>${message}</div>`,
+            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+            '</div>'
+        ].join('')
+
+        alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
+        alertTrigger.addEventListener('click', () => {
+            appendAlert('Auditor data updated succesfully!', 'success')
+        })
+        }
+    </script>
+    <!-- <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+    <script>
+            var room = 1;
+            function education_fields() {
+            
+                room++;
+                var objTo = document.getElementById('education_fields')
+                var divtest = document.createElement("div");
+                divtest.setAttribute("class", "form-group removeclass"+room);
+                var rdiv = 'removeclass'+room;
+                divtest.innerHTML = '<div class="input-group"><div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">  <label for="" class="form-label">Employer Name</label> <input type="text" class="form-control" value=""></div><div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">  <label for="" class="form-label">TAN</label> <input type="text" class="form-control" value=""></div><div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">  <label for="" class="form-label">Address</label> <input type="text" class="form-control" value=""></div><div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">  <label for="" class="form-label">Pincode / Zipcode</label> <input type="text" class="form-control" value=""></div> <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">  <label for="" class="form-label">State</label> <select class="form-select" aria-label="Default select example"> <option selected>Uttar Pradesh</option><option value="1">Madhya Pradesh</option> <option value="2">Rajsthan</option><option value="3">Chhatisgarh</option> <option value="4">Other</option></select></div> <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding"> <label for="" class="form-label">Name</label> <select class="form-select" aria-label="Default select example" disabled> <option selected>India</option>  </select> </div>  <div class ="detele-btn"><button class="btn btn-danger" type="button" onclick="remove_education_fields('+ room +');"> <i class="fa-solid fa-trash"></i> </button></div></div></div></div></div><div class="clear"></div> </div>';
+                
+                objTo.appendChild(divtest)
+            }
+            function remove_education_fields(rid) {
+                $('.removeclass'+rid).remove();
+            }
+    </script>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../../js/dashboard-pack.js"></script> 
+<script src="../../js/dashboard.js"></script>
+
+</body>
+</html>

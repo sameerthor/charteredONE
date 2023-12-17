@@ -1,3 +1,6 @@
+.app-main__inner{
+    background-color: #fff;
+}
 body a {
     text-decoration: none;
 }
@@ -141,6 +144,7 @@ body a:hover{
         font-family: 'Montserrat', sans-serif;
         letter-spacing: .5px;
         font-size: .85rem;
+        padding-left: .5rem;
     }
     .form-label span{
         color: #ff0000;
@@ -160,9 +164,10 @@ body a:hover{
         font-size: 1.1rem;
     }
     input:disabled {
-        background: linear-gradient(to right, #f1f5f8, #90e0ef); 
         border: 1px solid #cccccc;
         padding: 10px;
+        border: none;
+        background-color: transparent !important;
       }
 .complete-view{
     padding: .5rem 1rem;
@@ -181,3 +186,44 @@ body a:hover{
     text-decoration: none;
     color: #fff;
 }
+/* =======================Verticle Slider======================== */
+.current-year{
+    border: 1px solid #999;
+    padding: .5rem 1rem;
+    margin-left: .5rem;
+    border-radius: 4px;
+}
+.carousel-height{
+    min-height: 22rem;
+}
+  
+.hideScrollbar::-webkit-scrollbar{
+    display: none; 
+   }
+   .gst-insight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+  
+   .rotate{
+    animation: rotate 1.5s linear infinite; 
+  }
+  @keyframes rotate{
+    to{ transform: rotate(90deg);
+        transform-origin: center; }
+  }
+  .overdue, .overdue:hover{
+    color: #cd1c1f;
+    font-weight: 500;
+  }
+  .filed, .filed:hover{
+    color: #34a853;
+    font-weight: 500;
+  }
+  .table-responsive .table th{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .table-responsive .table td{
+    font-family: 'Montserrat', sans-serif;
+  }

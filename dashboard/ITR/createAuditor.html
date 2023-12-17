@@ -297,114 +297,73 @@
                             <div class="col-md-12">
                                 <div class="main-card mb-3 card">
                                     <div class="card-body">
-                                        <div class="breadcrumbs bg-light">
-                                            <a href="./client-master-ITR.html"><i class="fa-solid fa-angle-left"></i> Return to Master ITR</a>
+                                        <div class="breadcrumbs bg-light mb-3">
+                                            <a href="./auditorMaster.html"><i class="fa-solid fa-angle-left"></i> Return to Auditor Master</a>
                                         </div>
+                                        <div id="liveAlertPlaceholder"></div>
                                         <div class="btn-box">
                                             <div>
-                                                <h4 class="main-heading"></h4>
+                                                <span class="main-heading"></span>
                                             </div>
                                             <div>
-                                                <h4 class="main-heading">Add/ Edit Client Details</h4>
+                                                <h4 class="main-heading">Create New Auditor</h4>
                                             </div>
                                             <div class="d-flex main-btn">
-                                                <a href="#000" class="me-auto">Save</a>
-                                                <a href="./client-master-ITR.html" class="ms-auto">Cancle</a>
+                                                <a href="#000" class="me-auto" id="liveAlertBtn">Create</a>
+                                                <a href="./auditorMaster.html" class="ms-auto">Cancle</a>
                                             </div>
                                         </div>
                                         <div>
                                            <div class="row details-box">
                                                 <h4>Credentials</h4>
                                                 <div class="col-md-4 mb-3">
-                                                    <label for="" class="form-label"> PAN <span>*</span></label>
-                                                    <input type="text" class="form-control disabled" value="DIIPHVH363" disabled>
+                                                    <label for="" class="form-label"> CA IT Portal User ID <span>*</span> <img src="../../images/itd-logo.png" height="20" width="28" alt=""></label>
+                                                    <input type="text" class="form-control" value="" >
                                                 </div>
                                                 <div class="col-md-4 mb-3">
-                                                    <label for="" class="form-label"> Status / Type <span>*</span></label>
-                                                    <input type="text" class="form-control disabled" value="Individual" disabled>
-                                                </div>
-                                                <div class="col-md-4 mb-3">
-                                                    <label for="" class="form-label"> Password <span>*</span></label>
-                                                    <input type="password" class="form-control disabled" value="Individual" disabled>
+                                                    <label for="" class="form-label">CA IT Portal Password <span>*</span> <img src="../../images/itd-logo.png" height="20" width="28" alt=""></label>
+                                                    <input type="password" class="form-control" value="" >
                                                 </div>
                                            </div>
                                            <div class="row details-box">
                                                 <h4>Personal Details</h4>
                                                 <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label"> First Name <span>*</span></label>
-                                                    <input type="text" class="form-control" value="Steven" required>
+                                                    <label for="" class="form-label">Prop./Partnership/LLP PAN <span>*</span></label>
+                                                    <input type="text" class="form-control" value="" required>
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Middle Name</label>
+                                                    <label for="" class="form-label">Mobile No.</label>
                                                     <input type="text" class="form-control" value="">
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label"> Last Name <span>*</span></label>
-                                                    <input type="text" class="form-control" value="Smith">
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Aadhaar No./ Enrolment ID</label>
-                                                    <input type="text" class="form-control" value="1234 1234 1234">
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Date of Birth</label>
-                                                    <input type="text" class="form-control" value="10/11/1976">
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Residential Status</label>
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Residence</option>
-                                                        <option value="1">Non-Residence</option>
-                                                        <option value="2">Not Ordinary Residence</option>
-                                                        <option value="3">Three</option>
-                                                      </select>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Father's Name <span>*</span></label>
+                                                    <label for="" class="form-label">Aadhaar No.</label>
                                                     <input type="text" class="form-control" value="">
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Spouse Name</label>
+                                                    <label for="" class="form-label">Email Address</label>
                                                     <input type="text" class="form-control" value="">
                                                 </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Gender</label>
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Male</option>
-                                                        <option value="1">Female</option>
-                                                        <option value="2">Other</option>
-                                                      </select>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Passport No.</label>
-                                                    <input type="text" class="form-control" value="">
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Business / Proprietorship Name</label>
-                                                    <input type="text" class="form-control" value="">
-                                                </div>
-                                            </div>
                                             <div class="row details-box">
-                                                <h4>Home Addres</h4>
+                                                <h4>Addres</h4>
                                                 <div class="col-lg-3 col-md-4 mb-3">
                                                     <label for="" class="form-label"> Flat/ Door/ Block No <span>*</span></label>
-                                                    <input type="text" class="form-control" value="101 Siddhivinayak Complex" required>
+                                                    <input type="text" class="form-control" value="" required>
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
                                                     <label for="" class="form-label"> Road / Street <span>*</span></label>
-                                                    <input type="text" class="form-control" value="Station Road">
+                                                    <input type="text" class="form-control" value="">
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
                                                     <label for="" class="form-label">Pincode / Zipcode <span>*</span></label>
-                                                    <input type="text" class="form-control" value="222111">
+                                                    <input type="text" class="form-control" value="">
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
                                                     <label for="" class="form-label">Post Office</label>
-                                                    <input type="text" class="form-control" value="Charbagh">
+                                                    <input type="text" class="form-control" value="">
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
                                                     <label for="" class="form-label">Area / Locality <span>*</span></label>
-                                                    <input type="text" class="form-control" value="Sitamadhi">
+                                                    <input type="text" class="form-control" value="">
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
                                                     <label for="" class="form-label">Town / City / District <span>*</span></label>
@@ -413,70 +372,14 @@
                                                 <div class="col-lg-3 col-md-4 mb-3">
                                                     <label for="" class="form-label">State</label>
                                                     <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Uttar Pradesh</option>
-                                                        <option value="1">Andhra Pradesh</option>
-                                                        <option value="2">Maharastra</option>
+                                                        <option value="1">select</option>
+                                                        <option value="2">Andhra Pradesh</option>
+                                                        <option value="3">Maharastra</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-lg-3 col-md-4 mb-3">
                                                     <label for="" class="form-label">Country</label>
                                                     <input type="text" class="form-control" value="India" disabled>
-                                                </div>
-                                            </div>
-                                            <div class="row details-box">
-                                                <h4>Contact Details</h4>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label"> Primary Mobile No <span>*</span></label>
-                                                    <input type="text" class="form-control" value="+91 87654 65433" required>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Primary Email Address<span>*</span></label>
-                                                    <input type="email" class="form-control" value="exampleEmail@exampl.com">
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label"> Secondary  Mobile No</label>
-                                                    <input type="text" class="form-control" value="" required>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Secondary  Email Address</label>
-                                                    <input type="email" class="form-control" value="">
-                                                </div>
-                                            </div>
-                                            <div class="row details-box">
-                                                <h4>Bank Details</h4>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Country</label>
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>India</option>
-                                                        <option value="1">Afganistan</option>
-                                                        <option value="2">Australia</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Account No / IBAN No</label>
-                                                    <input type="text" class="form-control" value="">
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label"> Account Type</label>
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Savings</option>
-                                                        <option value="1">Current</option>
-                                                        <option value="2">Over Draft</option>
-                                                        <option value="3">Cash Credit</option>
-                                                        <option value="4">Non Residence Ordinary</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">IFSC / Swift Code</label>
-                                                    <input type="text" class="form-control" value="">
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Bank Name</label>
-                                                    <input type="text" class="form-control" value="">
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 mb-3">
-                                                    <label for="" class="form-label">Branch Name</label>
-                                                    <input type="text" class="form-control" value="">
                                                 </div>
                                             </div>
                                         </div>
@@ -492,6 +395,27 @@
                 </div>
         </div>
     </div>
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const appendAlert = (message, type) => {
+        const wrapper = document.createElement('div')
+        wrapper.innerHTML = [
+            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+            `   <div>${message}</div>`,
+            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+            '</div>'
+        ].join('')
+
+        alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
+        alertTrigger.addEventListener('click', () => {
+            appendAlert('New Auditor Created succesfully!', 'success')
+        })
+        }
+    </script>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
