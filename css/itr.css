@@ -77,6 +77,16 @@ body a:hover{
     letter-spacing: .5px;
     font-size: .8rem;
 }
+.samll-font-table .table th{
+    font-size: .75rem;
+}
+.samll-font-table .table td{
+    font-size: .7rem;
+}
+.samll-font-table .table input{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75rem;
+}
 .breadcrumbs{
     margin-top: 0.5rem;
     padding: 0.5rem;
@@ -198,7 +208,7 @@ nav .breadcrumb a{
     flex-direction: row;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
-    padding: .5rem .7rem;
+    padding: 2rem .7rem .5rem .7rem;
     background-color: #eee;
     align-items: center;
 }
@@ -432,6 +442,17 @@ nav .breadcrumb a{
     font-weight: 500;
     color: #000;
     font-size: .85rem;
+}
+.accordion .accordion-header .accordion-button{
+    font-family: 'Montserrat', sans-serif;
+   font-size: .8rem;
+   font-weight: 500;
+   color: #000;
+ }
+.accordion .accordion-header strong{
+   margin-right: .25rem;
+   font-weight: bold;
+   color: #000;
 }
 /* =======================Horizontal Stepper=================== */
 html {
@@ -715,3 +736,63 @@ html {
 .padding-less-input .table td{
     padding: .1rem;
 }
+/* ========================ITR Review====================== */
+.review-box{
+    border: 1px solid #dad7cd;
+    padding: .5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.review-box .review-child{
+    padding: .5rem 1rem;
+    background-color: #ffd166;
+}
+.review-box .review-child p{
+   color: #000;
+   font-weight: 500;
+   font-family: 'Montserrat', sans-serif;
+   font-size: .85rem;
+   margin-bottom: .2rem;
+}
+.review-box .review-child a{
+    color: #F96302;
+    font-weight: 600;
+    font-size: .85rem;
+    letter-spacing: .5px;
+    display: inline-block;
+ }
+ .review-box h4{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000;
+    letter-spacing: .5px;
+ }
+ .review-box ol li{
+   font-size: .8rem;
+   color: #000 !important;
+ }
+ .filing-btns{
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+ }
+  .filing-btns a{
+    padding: .5rem 1rem;
+    margin-right: .5rem;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    letter-spacing: .5px;
+ }
+ .filing-btns a:nth-of-type(1){
+    background-color: #2a850e;
+ }
+ .filing-btns a:nth-of-type(2){
+    background-color: #ff9800;
+ }
+ .header-color{
+    background-color: #fdf0d5;
+ }
+ .custome-header-margin{
+    margin-top: 3.5rem;
+ }

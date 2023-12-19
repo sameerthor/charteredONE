@@ -129,7 +129,7 @@
                 </div>
             </div>
         </div>             
-        <div class="app-main">
+        <!-- <div class="app-main">
                 <div class="app-sidebar sidebar-shadow">
                     <div class="app-header__logo">
                         <div class="logo-src"></div>
@@ -289,9 +289,9 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- ===================Content====================== -->
-                <div class="app-main__outer">
+                <div class="app-main__outer custome-header-margin">
                     <div class="app-main__inner">
                         <div class="row">
                             <div class="col-md-12">
@@ -334,177 +334,236 @@
                                         <a href="./itrSummary.html"><i class="fa-solid fa-angle-left"></i> Return to Dashboard</a>
                                     </div>
                                     <div class="main-heading">
-                                        <h4>Computation of Income</h4>
+                                        <h4>e-Filing</h4>
+                                        <p class="return-section"><span>Section</span>Regular Return -139(1)</p>
                                     </div>
-                                    
+                                    <!-- =============== Stepper===================== -->
+                                    <div class="md-stepper-horizontal orange">
+                                        <div class="md-step editable">
+                                            <a href="./e-filing.html"><div class="md-step-circle"><span>1</span></div></a>
+                                            <a href="./e-filing.html"><div class="md-step-title">Basic Information</div></a>
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step active done ">
+                                            <a href="./e-filing-review.html"><div class="md-step-circle"><span>2</span></div></a>
+                                           <a href="./e-filing-review.html"> <div class="md-step-title">Review &amp e-Filing</div></a>
+                                            <!-- <div class="md-step-optional">Optional</div> -->
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <!-- <div class="md-step active">
+                                          <div class="md-step-circle"><span>3</span></div>
+                                          <div class="md-step-title">Payment</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step">
+                                          <div class="md-step-circle"><span>4</span></div>
+                                          <div class="md-step-title">Review</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div> -->
+                                    </div>
                                     <!-- ===================================== -->
                                                                       
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="filing-btns">
-                                                <a href="#000">Download PDF</a>
-                                                <a href="./schedule-Amt.html">Schedule AMT &amp; AMTC</a>
+                                                <a href="#000">Download JSON</a>
+                                                <a href="#000"> Proceed for e-Filing</a>
                                             </div>
-                                        </div>
-                                        <div class="row details-box">
-                                            <h4>Credentials</h4>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Name of Assessee</label>
-                                                <input type="text" class="form-control" value="Adam Makaram" disabled>
+                                            <div class="col-md-12 mb-5">
+                                                <div class="review-box">
+                                                    <div class="review-child">
+                                                        <p>
+                                                            Amount of Total Tax reflected in AIS / 26 AS  does not have any difference to the amount shown in Computation of Income.
+                                                        </p>
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#TaxDetailvsAIS">Click here to check the details</a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Father's Name</label>
-                                                <input type="text" class="form-control" value="cold Makaram" disabled>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Reason of ITR-3 selection</h4>
+                                                    <div>
+                                                        <ol>
+                                                            <li>For individuals and HUFs having income from profits and gains of business or profession</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> PAN</label>
-                                                <input type="text" class="form-control" value="DIIPM713" disabled>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Why ruled out ITR-2</h4>
+                                                    <div>
+                                                        <ol>
+                                                            <li>Income of nature "Profits and gains from business and professions"</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Date of Birth</label>
-                                                <input type="text" class="form-control" value="10-Sep-1998" disabled>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>List of Errors/Warnings</h4>
+                                                    <div class="table-responsive" id="noContent">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <thead>
+                                                                <th>S. No.</th>
+                                                                <th>Modules</th>
+                                                                <th>Error/Warning Description</th>
+                                                                <th></th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Module Name</td>
+                                                                    <td>Description goes here</td>
+                                                                </tr>
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Assessment Year</label>
-                                                <input type="text" class="form-control" value="2024-25" disabled>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Signed By</h4>
+                                                    <div class="table-responsive" id="noContent">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Capacity: </td>
+                                                                    <td>
+                                                                        <select class="form-select" aria-label="Default select example">
+                                                                            <option selected>self</option>
+                                                                            <option value="1">Representative</option>
+                                                                            <option value="2">Authorised Signatory</option>
+                                                                        </select>
+                                                                    </td>
+                                                                    <td> Adem Makarum (DJHPM866E) , Son of Colt Makarum </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Gender</label>
-                                                <input type="text" class="form-control" value="Male" disabled>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Self Details</h4>
+                                                    <div class="table-responsive">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <tbody>
+                                                                <tr>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Name</label>
+                                                                            <input type="text" class="form-control" value="Adem Makaram" disabled>
+                                                                        </div>
+                                                                   </td>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Father's Name</label>
+                                                                            <input type="text" class="form-control" value="Colt Makarum" disabled>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">PAN</label>
+                                                                            <input type="text" class="form-control" value="DJHPM866E" disabled>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Status</label>
-                                                <input type="text" class="form-control" value="Individual" disabled>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Authorised Signatory Details</h4>
+                                                    <div class="table-responsive" id="noContent">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <tbody>
+                                                                <tr>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Name</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                   </td>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Father's Name</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">PAN</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> E-mail</label>
-                                                <input type="text" class="form-control" value="makaram@aus.com" disabled>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Representative Details</h4>
+                                                    <div class="table-responsive" id="noContent">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                       <div class="col">
+                                                                            <label for="" class="form-label pl-1">Representative</label>
+                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                <option selected>Legal Heir</option>
+                                                                                <option value="1">Manager</option>
+                                                                                <option value="2">Gaurdian</option>
+                                                                                <option value="2">Other</option>
+                                                                            </select>
+                                                                       </div>
+                                                                    </td>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Name</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Father's Name</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">PAN</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Aadhaar</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Address</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label">Filing Status</label>
-                                                <input type="text" class="form-control" value="Original Return" disabled>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Residential Status</label>
-                                                <input type="text" class="form-control" value="Resident" disabled>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Aadhaar</label>
-                                                <input type="text" class="form-control" value="1234 1234 1234" disabled>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Primary Mobile No</label>
-                                                <input type="text" class="form-control" value="98733 65463" disabled>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="" class="form-label"> Address</label>
-                                                <input type="text" class="form-control" value="Sydney, Australia" disabled>
-                                            </div>
-                                       </div>
-                                       <div class="table-responsive">
-                                            <table class="align-middle mb-0 table table-borderless  table-hover ">
-                                                <tbody>
-                                                    <tr>
-                                                        <th>
-                                                            Total Of Head Wise Incomes
-                                                        </th>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>
-                                                            Current Year Losses Adjustment
-                                                        </th>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>
-                                                            Balance After CYLA
-                                                        </th>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>
-                                                            Brought Forward Loss Set-off
-                                                        </th>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>
-                                                            Gross Total Income
-                                                        </th>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-header header-color">
-                                            <span>DEDUCTIONS UNDER CHAPTER VI-A</span>
-                                        </div>
-                                        <div class="table-responsive">
-                                            <table class="align-middle mb-0 table table-borderless  table-hover ">
-                                                <tbody>
-                                                    <tr>
-                                                        <th>
-                                                            Total Income
-                                                        </th>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>
-                                                            Total Income Rounded 288A
-                                                        </th>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-header header-color">
-                                            <span>TAX CALCULATION</span>
-                                        </div>
-                                        <div class="table-responsive">
-                                            <table class="align-middle mb-0 table table-borderless  table-hover ">
-                                                <tbody>
-                                                    <tr>
-                                                        <th>
-                                                            Net Tax Liability
-                                                        </th>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            Amount Payable (Refundable)
-                                                        </td>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-header header-color">
-                                            <span>TAX CALCULATION</span>
                                         </div>
                                     </div>
                                 </div>

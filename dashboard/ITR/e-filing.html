@@ -20,8 +20,8 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="../../css/dashboardpack.css">
     <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/dashboardpack.css">
     <link rel="stylesheet" href="../../css/dashboard.css">
     <link rel="stylesheet" href="../../css/itr.css">
     <!-- *******************Fontawesome***************************** -->
@@ -129,7 +129,7 @@
                 </div>
             </div>
         </div>             
-        <div class="app-main">
+        <!-- <div class="app-main">
                 <div class="app-sidebar sidebar-shadow">
                     <div class="app-header__logo">
                         <div class="logo-src"></div>
@@ -289,9 +289,9 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- ===================Content====================== -->
-                <div class="app-main__outer">
+                <div class="app-main__outer custome-header-margin">
                     <div class="app-main__inner">
                         <div class="row">
                             <div class="col-md-12">
@@ -346,8 +346,8 @@
                                             <div class="md-step-bar-right"></div>
                                         </div>
                                         <div class="md-step  editable">
-                                            <a href="./"><div class="md-step-circle"><span>2</span></div></a>
-                                           <a href=""> <div class="md-step-title">Review &amp e-Filing</div></a>
+                                            <a href="./e-filing-review.html"><div class="md-step-circle"><span>2</span></div></a>
+                                           <a href="./e-filing-review.html"> <div class="md-step-title">Review &amp e-Filing</div></a>
                                             <!-- <div class="md-step-optional">Optional</div> -->
                                             <div class="md-step-bar-left"></div>
                                             <div class="md-step-bar-right"></div>
@@ -371,8 +371,8 @@
                                             <li data-tab-target="#basicInfo" class="active tab">Basic Information</li>
                                             <li data-tab-target="#residentialStatus" class="tab">residentail Status</li>
                                             <li data-tab-target="#shareholdingDetails" class="tab">DIR/Shareholding Details</li>
-                                            <li data-tab-target="#ScheduleFa" class="tab">Schedule FA</li>
-                                            <li data-tab-target="#scheduleAl" class="tab">Schedule AL</li>
+                                            <li data-tab-target="#scheduleFa" class="tab">Schedule FA</li>
+                                            <li data-tab-target="#residentialStatusTwo" class="tab">residentail Status</li>
                                         </ul>
                                         
                                         <div class="tab-content">
@@ -760,17 +760,120 @@
                                                 <div class="card-header bg-light mt-5">
                                                     <span>Whether you have held unlisted equity shares at any time during the previous year?</span>
                                                 </div>
-                                                <div class="table-responsive">
+                                                <div class="table-responsive padding-less-input">
                                                     <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
-                                                        <tbody id="table_body">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="3"></th>
+                                                                <th colspan="3" class="text-center">Opening Balance</th>
+                                                                <th colspan="3" class="text-center">TShares Acquired during the year</th>
+                                                                <th colspan="3" class="text-center">Shares transferred during the year</th>
+                                                                <th colspan="2" class="text-center">Closing Balance</th>
+                                                                <th width="50px">
+                                                                    <div class="action_container col">
+                                                                        <button class="success" onclick="create_tr('table_bodyTwo')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Name of Company</th>
+                                                                <th>Type of Company</th>
+                                                                <th>PAN of Company</th>
+                                                                <th>Number of Share</th>
+                                                                <th>Cost of Aquisition</th>
+                                                                <th>Number of Share</th>
+                                                                <th>Date of Subscription/purchase</th>
+                                                                <th>Face value per share</th>
+                                                                <th>Issue price per share</th>
+                                                                <th>Purchase price per share</th>
+                                                                <th>Number of Share</th>
+                                                                <th>Sale Consideration</th>
+                                                                <th>Number of Share</th>
+                                                                <th>Cost of Aquisition</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="table_bodyTwo">
                                                             <tr>
                                                                 <td>
-                                                                    Whether you have held unlisted equity shares at any time during the previous year?
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
                                                                 </td>
                                                                 <td>
-                                                                    <div class="button-group col" data-group="group11">
-                                                                        <button class="button" data-bs-toggle="modal" data-bs-target="#unlistedEquity" onclick="highlightButton(this)">Yes</button>
-                                                                        <button class="button active" onclick="highlightButton(this)">No</button>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option selected>Choose</option>
+                                                                        <option value="1">Domestic</option>
+                                                                        <option value="2">Foreign</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="">
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="date" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="action_container col">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -779,17 +882,20 @@
                                                 </div>
                                             </div>
                                             <!-- ================================ -->
-                                            <div id="ScheduleFa" data-tab-content>
-                                                <div class="accordion" id="accordionExample">
+                                            <div id="scheduleFa" data-tab-content>
+                                                <div class="card-header bg-light mt-5">
+                                                    <span>Details of Foreign Assets and Income from any source outside India</span>
+                                                </div>
+                                                <div class="accordion mb-3" id="accordionExample">
                                                     <div class="accordion-item">
                                                       <h2 class="accordion-header" id="headingOne">
                                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            Gross Salary
+                                                            <strong>A1 </strong> Details of Foreign Depository Accounts held (including any beneficial interest) at any time during the calendar year ending as on 31st December, 2023
                                                         </button>
                                                       </h2>
                                                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                         <div class="accordion-body">
-                                                            <div class="table-responsive padding-less-input">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
                                                                 <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
                                                                     <thead>
                                                                         <tr>
@@ -883,11 +989,1082 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mb-3" id="accordionExampleTwo">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>A2 </strong>  Details of Foreign Custodial Accounts held (including any beneficial interest) at any time during the calendar year ending as on 31st December, 2023
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleTwo">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Name of financial institution</th>
+                                                                            <th class="text-center">Address of financial institution</th>
+                                                                            <th class="text-center">ZIP Code</th>
+                                                                            <th class="text-center">Account number</th>
+                                                                            <th>Status</th>
+                                                                            <th>Account opening date</th>
+                                                                            <th>Peak balance during the period</th>
+                                                                            <th>Closing balance</th>
+                                                                            <th>Nature of amount</th>
+                                                                            <th>Amount</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyA2')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyA2">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Owner</option>
+                                                                                    <option value="2">Beneficial Owner</option>
+                                                                                    <option value="2">Beneficiary </option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Interest</option>
+                                                                                    <option value="2">Divident Proceeds</option>
+                                                                                    <option value="2">Other Income</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mt-3" id="accordionExampleThree">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>A3 </strong> Details of Foreign Equity and Debt Interest held (including any beneficial interest) in any entity at any time during the calendar year ending as on 31st December, 2023
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleThree">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Name of entity</th>
+                                                                            <th class="text-center">Address of entity</th>
+                                                                            <th class="text-center">ZIP Code</th>
+                                                                            <th class="text-center">Nature of entity</th>
+                                                                            <th>Date of acquiring the interest</th>
+                                                                            <th>Initial value of the investment</th>
+                                                                            <th>Peak value of investment during the period</th>
+                                                                            <th>Closing balance</th>
+                                                                            <th>Total gross amount paid/credited with respect to the holding during the period</th>
+                                                                            <th>Total gross proceeds from sale or redemption of investment during the period</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyA3')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyA3">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="date" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mt-3" id="accordionExampleFour">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>A4 </strong>  Details of Foreign Cash Value Insurance Contract or Annuity Contract held (including any beneficial interest) at any time during the calendar year ending as on 31st December, 2023
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleFour">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Name of financial institution in which insurance contract held</th>
+                                                                            <th class="text-center">Address of financial institution</th>
+                                                                            <th class="text-center">ZIP Code</th>
+                                                                            <th class="text-center">Date of contract</th>
+                                                                            <th>The cash value or surrender value of the contract</th>
+                                                                            <th>Total gross amount paid/credited with respect to the contract during the period</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyA4')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyA4">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                           
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="date" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mt-3" id="accordionExampleB">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseB" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>B </strong>  Details of Financial Interest in any Entity held (including any beneficial interest) at any time during the calendar year ending as on 31st December, 2023
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseB" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleB">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Zip Code</th>
+                                                                            <th class="text-center">Nature of entity</th>
+                                                                            <th class="text-center">Name of entity</th>
+                                                                            <th class="text-center">Address of the Entity</th>
+                                                                            <th>Nature of Interest-Direct/Beneficial owner/Beneficiary</th>
+                                                                            <th>Date since held</th>
+                                                                            <th>Total Investment (at cost) (in rupees)</th>
+                                                                            <th>Income accrued from such Interest</th>
+                                                                            <th>Nature of Income</th>
+                                                                            <th>Amount</th>
+                                                                            <th>Schedule where offered</th>
+                                                                            <th>Item number of schedule</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyB')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyB">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Owner</option>
+                                                                                    <option value="2">Beneficial Owner</option>
+                                                                                    <option value="2">Beneficiary </option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="date" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Salary</option>
+                                                                                    <option value="2">House Property</option>
+                                                                                    <option value="3">Capital Gains</option>
+                                                                                    <option value="4">Business</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mt-3" id="accordionExampleC">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseC" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>C </strong>  Details of Immovable Property held (including any beneficial interest) at any time during the calendar year ending as on 31st December, 2023
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseC" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleC">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Zip Code</th>
+                                                                            <th class="text-center">Address of the Property</th>
+                                                                            <th class="text-center">Ownership-Direct/Beneficial owner/Beneficiary</th>
+                                                                            <th class="text-center">Date of acquisition</th>
+                                                                            <th>Total Investment (at cost) (in rupees)</th>
+                                                                            <th>Income derived from the property</th>
+                                                                            <th>Nature of Income</th>
+                                                                            <th>Amount</th>
+                                                                            <th>Schedule where offered</th>
+                                                                            <th>Item number of schedule</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyC')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyC">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Owner</option>
+                                                                                    <option value="2">Beneficial Owner</option>
+                                                                                    <option value="2">Beneficiary </option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="date" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Salary</option>
+                                                                                    <option value="2">House Property</option>
+                                                                                    <option value="3">Capital Gains</option>
+                                                                                    <option value="4">Business</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mt-3" id="accordionExampleD">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseD" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>D </strong>  Details of any other Capital Asset held (including any beneficial interest) at any time during the calendar year ending as on 31st December, 2023
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseD" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleD">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Zip Code</th>
+                                                                            <th class="text-center">Nature of Asset</th>
+                                                                            <th class="text-center">Ownership-Direct/Beneficial owner/Beneficiary</th>
+                                                                            <th class="text-center">Date of acquisition</th>
+                                                                            <th>Total Investment (at cost) (in rupees)</th>
+                                                                            <th>Income derived from the property</th>
+                                                                            <th>Nature of Income</th>
+                                                                            <th>Amount</th>
+                                                                            <th>Schedule where offered</th>
+                                                                            <th>Item number of schedule</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyD')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyD">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Owner</option>
+                                                                                    <option value="2">Beneficial Owner</option>
+                                                                                    <option value="2">Beneficiary </option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="date" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Salary</option>
+                                                                                    <option value="2">House Property</option>
+                                                                                    <option value="3">Capital Gains</option>
+                                                                                    <option value="4">Business</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mt-3" id="accordionExampleE">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseE" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>E </strong>  Details of account(s) in which you have signing authority held (including any beneficial interest) at any time during the calendar year ending as on 31st December, 2023 and which has not been included in A to D above
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseE" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleE">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Name of the Institution in which the account is held</th>
+                                                                            <th class="text-center">Address of the Institution</th>
+                                                                            <th class="text-center">Zip Code</th>
+                                                                            <th class="text-center">Name of the account holder</th>
+                                                                            <th>Account Number</th>
+                                                                            <th>Peak Balance Investment during the year (in rupees)</th>
+                                                                            <th>Whether income accrued is taxable in your hands?</th>
+                                                                            <th>If yes, Income accrued in the account</th>
+                                                                            <th>Amount</th>
+                                                                            <th>Schedule where offered</th>
+                                                                            <th>Item number of schedule</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyE')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyE">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                        
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Yes</option>
+                                                                                    <option value="2">No</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Salary</option>
+                                                                                    <option value="2">House Property</option>
+                                                                                    <option value="2">Other Sources</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mt-3" id="accordionExampleF">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseF" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>F </strong> Details of trusts, created under the laws of a country outside India, in which you are a trustee, beneficiary or settlor
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseF" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleF">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Zip Code</th>
+                                                                            <th class="text-center">Name of trust</th>
+                                                                            <th class="text-center">Address of trust</th>
+                                                                            <th>Name of the trustee</th>
+                                                                            <th class="text-center">Address of the trustee</th>
+                                                                            <th>Name of Settlor</th>
+                                                                            <th>Address of Settlor</th>
+                                                                            <th>Name of Beneficiaries</th>
+                                                                            <th>Address of Beneficiaries</th>
+                                                                            <th>Date since position held</th>
+                                                                            <th>Whether income derived is taxable in your hands?</th>
+                                                                            <th>If yes, Income derived from the trust</th>
+                                                                            <th>Amount</th>
+                                                                            <th>Schedule where offered</th>
+                                                                            <th>Item number of schedule</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyF')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyF">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="date" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Yes</option>
+                                                                                    <option value="2">NO</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Capital Gains</option>
+                                                                                    <option value="2">Bussiness</option>
+                                                                                    <option value="2">Other Sources </option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion mt-3" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseG" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <strong>G</strong> Details of any other income derived from any source outside India which is not included in,- (i) items A to F above and, (ii) income under the head business or profession
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseG" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleG">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive padding-less-input samll-font-table">
+                                                                <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Country/Region Name and Code</th>
+                                                                            <th class="text-center">Zip Code</th>
+                                                                            <th class="text-center">Name of the person from whom derived</th>
+                                                                            <th class="text-center">Address of the person from whom derived	</th>
+                                                                            <th>Income derived</th>
+                                                                            <th class="text-center">Nature of income</th>
+                                                                            <th>Wheather taxable in your hands?</th>
+                                                                            <th>Amount</th>
+                                                                            <th>Schedule where offered</th>
+                                                                            <th>Item number of schedule</th>
+                                                                            <th width="50px">
+                                                                                <div class="action_container">
+                                                                                    <button class="success" onclick="create_tr('table_bodyG')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table_bodyG">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">India</option>
+                                                                                    <option value="2">Nepal</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Yes</option>
+                                                                                    <option value="2">No</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Select</option>
+                                                                                    <option value="1">Salary</option>
+                                                                                    <option value="2">House Property</option>
+                                                                                    <option value="2">Other Sources</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <!-- ================================= -->
-                                            <div id="scheduleAl" data-tab-content>
-                                                <h1>scheduleAl</h1>
-                                                <p>News is great.</p>
+                                            <div id="residentialStatusTwo" data-tab-content>
+                                                <div class="card-header bg-light">
+                                                    <span>Resident Details</span>
+                                                </div>
+                                                <div class="table-responsive active-content content">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>You were in India for 182 days or more during the PY.</td>
+                                                                <td>
+                                                                    <div class="button-group col" data-group="group7">
+                                                                        <button class="button" onclick="highlightButton(this)">Yes</button>
+                                                                        <button class="button active" onclick="highlightButton(this)">No</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>You were in India for 60 days or more during the PY , and have been in India for 365 days or more within the 4 proceeding years.</td>
+                                                                <td>
+                                                                    <div class="button-group col" data-group="group8">
+                                                                        <button class="button" onclick="highlightButton(this)">Yes</button>
+                                                                        <button class="button active" onclick="highlightButton(this)">No</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>You are a citizen of India, who left India for the purpose of employment as a member of the crew of an Indian Ship and were in India for 182 days or more during the PY and 365 days or more within proceeding 4 years.</td>
+                                                                <td>
+                                                                    <div class="button-group col" data-group="group9">
+                                                                        <button class="button" onclick="highlightButton(this)">Yes</button>
+                                                                        <button class="button active" onclick="highlightButton(this)">No</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>You are a citizen of India or a person of Indian origin and have come on a visit to India during the previous year and were in India for (a)182 days or more during the previous year and 365 days or more within the preceding 4 years; (b)120 days or more during the
+                                                                    previous year and 365 days or more within the preceding 4 years if the total income, other than income from foreign sources, exceeds Rs. 15 Lakh.
+                                                                </td>
+                                                                <td>
+                                                                    <div class="button-group col" data-group="group10">
+                                                                        <button class="button" onclick="highlightButton(this)">Yes</button>
+                                                                        <button class="button active" onclick="highlightButton(this)">No</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>  
                                    </div>                                    
@@ -902,143 +2079,214 @@
                 </div>
         </div>
     </div>
-    <!-- ===============================Whether you have held unlisted equity shares at any time during the previous year modal================== -->
-    <div class="modal fade" id="unlistedEquity" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Whether you have held unlisted equity shares at any time during the previous year?</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="table-responsive padding-less-input">
-                    <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
-                        <thead>
-                            <tr>
-                                <th colspan="3"></th>
-                                <th colspan="3" class="text-center">Opening Balance</th>
-                                <th colspan="3" class="text-center">TShares Acquired during the year</th>
-                                <th colspan="3" class="text-center">Shares transferred during the year</th>
-                                <th colspan="2" class="text-center">Closing Balance</th>
-                                <th width="50px">
-                                    <div class="action_container col">
-                                        <button class="success" onclick="create_tr('table_bodyTwo')">
-                                        <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th>Name of Company</th>
-                                <th>Type of Company</th>
-                                <th>PAN of Company</th>
-                                <th>Number of Share</th>
-                                <th>Cost of Aquisition</th>
-                                <th>Number of Share</th>
-                                <th>Date of Subscription/purchase</th>
-                                <th>Face value per share</th>
-                                <th>Issue price per share</th>
-                                <th>Purchase price per share</th>
-                                <th>Number of Share</th>
-                                <th>Sale Consideration</th>
-                                <th>Number of Share</th>
-                                <th>Cost of Aquisition</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody id="table_bodyTwo">
-                            <tr>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Choose</option>
-                                        <option value="1">Domestic</option>
-                                        <option value="2">Foreign</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <div class="">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="action_container col">
-                                        <button class="danger" onclick="remove_tr(this)">
-                                            <i class="fa-solid fa-trash"></i>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>    
-                    </table>
-                </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-    </div>
     <!-- =================Add new Rows in tables=================== -->
+    <script>
+        function create_tr(table_id) {
+        let table_bodyG = document.getElementById(table_id),
+            first_tr   = table_bodyG.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_bodyG.append(tr_clone);
+
+        clean_first_tr(table_bodyG.firstElementChild);
+    }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+    </script>
+    <script>
+        function create_tr(table_id) {
+        let table_bodyF = document.getElementById(table_id),
+            first_tr   = table_bodyF.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_bodyF.append(tr_clone);
+
+        clean_first_tr(table_bodyF.firstElementChild);
+    }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+    </script>
+    <script>
+        function create_tr(table_id) {
+        let table_bodyE = document.getElementById(table_id),
+            first_tr   = table_bodyE.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_bodyE.append(tr_clone);
+
+        clean_first_tr(table_bodyE.firstElementChild);
+    }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+    </script>
+    <script>
+        function create_tr(table_id) {
+        let table_bodyD = document.getElementById(table_id),
+            first_tr   = table_bodyD.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_bodyD.append(tr_clone);
+
+        clean_first_tr(table_bodyD.firstElementChild);
+    }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+    </script>
+    <script>
+        function create_tr(table_id) {
+        let table_bodyC = document.getElementById(table_id),
+            first_tr   = table_bodyC.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_bodyC.append(tr_clone);
+
+        clean_first_tr(table_bodyC.firstElementChild);
+    }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+    </script>
+    <script>
+        function create_tr(table_id) {
+        let table_bodyB = document.getElementById(table_id),
+            first_tr   = table_bodyB.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_bodyB.append(tr_clone);
+
+        clean_first_tr(table_bodyB.firstElementChild);
+    }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+    </script>
+    <script>
+        function create_tr(table_id) {
+        let table_bodyA4 = document.getElementById(table_id),
+            first_tr   = table_bodyA4.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_bodyA4.append(tr_clone);
+
+        clean_first_tr(table_bodyA4.firstElementChild);
+    }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+    </script>
+    <script>
+            function create_tr(table_id) {
+            let table_bodyA3 = document.getElementById(table_id),
+                first_tr   = table_bodyA3.firstElementChild
+                tr_clone   = first_tr.cloneNode(true);
+
+                table_bodyA3.append(tr_clone);
+
+            clean_first_tr(table_bodyA3.firstElementChild);
+        }
+
+        function clean_first_tr(firstTr) {
+            let children = firstTr.children;
+            
+            children = Array.isArray(children) ? children : Object.values(children);
+            children.forEach(x=>{
+                if(x !== firstTr.lastElementChild)
+                {
+                    x.firstElementChild.value = '';
+                }
+            });
+        }
+    </script>
+    <script>
+            function create_tr(table_id) {
+            let table_bodyA2 = document.getElementById(table_id),
+                first_tr   = table_bodyA2.firstElementChild
+                tr_clone   = first_tr.cloneNode(true);
+
+                table_bodyA2.append(tr_clone);
+
+            clean_first_tr(table_bodyA2.firstElementChild);
+        }
+
+        function clean_first_tr(firstTr) {
+            let children = firstTr.children;
+            
+            children = Array.isArray(children) ? children : Object.values(children);
+            children.forEach(x=>{
+                if(x !== firstTr.lastElementChild)
+                {
+                    x.firstElementChild.value = '';
+                }
+            });
+        }
+    </script>
     <script>
             function create_tr(table_id) {
             let table_bodyThree = document.getElementById(table_id),
@@ -1060,15 +2308,6 @@
                     x.firstElementChild.value = '';
                 }
             });
-        }
-
-        function remove_tr(This) {
-            if(This.closest('tbody').childElementCount == 1)
-            {
-                alert("You don't have permission to Delete this row.");
-            }else{
-                This.closest('tr').remove();
-            }
         }
     </script>
     <script>
@@ -1149,21 +2388,21 @@
     </script>
     <!-- ====================tab design script================= -->
     <script>
-           const tabs = document.querySelectorAll('[data-tab-target]')
+            const tabs = document.querySelectorAll('[data-tab-target]')
             const tabContents = document.querySelectorAll('[data-tab-content]')
 
-            tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = document.querySelector(tab.dataset.tabTarget)
-                tabContents.forEach(tabContent => {
-                tabContent.classList.remove('active')
-                })
                 tabs.forEach(tab => {
-                tab.classList.remove('active')
+                tab.addEventListener('click', () => {
+                    const target = document.querySelector(tab.dataset.tabTarget)
+                    tabContents.forEach(tabContent => {
+                    tabContent.classList.remove('active')
+                    })
+                    tabs.forEach(tab => {
+                    tab.classList.remove('active')
+                    })
+                    tab.classList.add('active')
+                    target.classList.add('active')
                 })
-                tab.classList.add('active')
-                target.classList.add('active')
-            })
             })
     </script>
     <script>
