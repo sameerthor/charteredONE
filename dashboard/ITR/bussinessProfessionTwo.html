@@ -1,0 +1,1373 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/dashboardpack.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/itr.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>             
+        <!-- <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer custome-header-margin">
+                    <div class="app-main__inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="custome-header">
+                                    <div>
+                                        <div class="header-item">
+                                            <span class="client-name" data-bs-toggle="tooltip" data-bs-placement="top" title="Adem Makaran">Adem Makarum</span>
+                                        </div>
+                                        <div>
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title=" PAN: DIIPM2226">DIIPM2226</span> |
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Status: Individual">Individual</span> |
+                                            <span class="header-link"><a href="./edit-client.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit Client Info">Residence <i class="fa-solid fa-user-pen" ></i></a></span> |
+                                            <span class="header-link"><a href="https://eportal.incometax.gov.in/iec/foservices/#/login" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="visit IT Portal">IT Portal <img src="../../images/itd-logo.png" height="20" width="28" alt=""></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="custome-dropdowm align-items-center">
+                                       <div class="custome-toggle">
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>PY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>CY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                       </div>
+                                        <div class="filling-btn">
+                                            <a href="./e-filing.html">e-Filing</a>
+                                            <a href="./computation.html">Computation</a>
+                                        </div>
+                                        <div class="fy-year">
+                                            <span>A.Y. 2023-24</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="breadcrumbs breadcrumbs-top bg-light mb-3">
+                                        <a href="./client-master-ITR.html"><i class="fa-solid fa-angle-left"></i> Return to Client Master</a>
+                                    </div>
+                                    <div class="group-btn-box">
+                                        <div class="btn-item d-none d-md-flex">
+                                            <a href="./itr-salary.html">Salary</a>
+                                            <a href="./house-property.html">House Property</a>
+                                            <a href="./bussiness-profession.html" class="selected">Business Profession</a>
+                                            <a href="./capital-gain.html">Capital Gain</a>
+                                            <a href="./other-sources.html">Other Sources</a>
+                                            <a href="./exempt-income.html">Exempt Income</a>
+                                            <a href="./clubbing.html">Clubbing</a>
+                                            <a href="./dedection.html">Dedections</a>
+                                            <a href="./losses.html">Losses</a>
+                                            <a href="./schedule-pti.html">Schedule PTI</a>
+                                            <a href="./tax-details.html">Tax Details</a>
+                                            <a href="./schedule-vda.html">Schedule VDA</a>
+                                        </div>
+                                        <div class="offcanvas-btn d-md-none">
+                                            <a href="#000" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><i class="fa-solid fa-bars"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- =============== Stepper===================== -->
+                                    <div class="md-stepper-horizontal active orange">
+                                        <div class="md-step      done editable">
+                                            <a href="./bussiness-profession.html"><div class="md-step-circle"><span>1</span></div></a>
+                                            <a href="./bussiness-profession.html"><div class="md-step-title">Trial Balance</div></a>
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step active done">
+                                            <a href="./bussinessProfessionTwo.html"><div class="md-step-circle"><span>2</span></div></a>
+                                           <a href="./bussinessProfessionTwo.html"> <div class="md-step-title">Financial Statement</div></a>
+                                            <!-- <div class="md-step-optional">Optional</div> -->
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step editable">
+                                          <a href="./bussinessProfessionThree.html"><div class="md-step-circle"><span>3</span></div></a>
+                                          <a href="./bussinessProfessionThree.html"><div class="md-step-title">Consolidate Sch. BP</div></a>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step editable">
+                                          <a href="./bussinessProfessionFour.html"><div class="md-step-circle"><span>4</span></div></a>
+                                          <a href="./bussinessProfessionFour.html"><div class="md-step-title">Business Information</div></a>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step editable">
+                                            <a href="./bussinessProfessionFive.html"><div class="md-step-circle"><span>4</span></div></a>
+                                            <a href="./bussinessProfessionFive.html"> <div class="md-step-title">Author Information</div></a>
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tabList">
+                                            <div class="tabBtn active" onclick="changeTab(1)">Financial Statement Notes <i class="fa-solid fa-angle-right"></i></div>
+                                            <div class="tabBtn" onclick="changeTab(2)">Manufacturing Account <i class="fa-solid fa-angle-right"></i></div>
+                                            <div class="tabBtn" onclick="changeTab(3)">Trading Account <i class="fa-solid fa-angle-right"></i></div>
+                                        </div>
+                                        <div class="tab-data active" id="tab1Content">
+                                            <div class="responsive-tabs">
+                                                <input type="radio" name="tabs" id="tabone" checked="checked">
+                                                <label for="tabone">Capital Account</label>
+                                                <div class="tab">
+                                                    <div class="card-header bg-light">
+                                                        <span>Capital Account</span>
+                                                    </div>
+                                                    <div class="table-responsive hideScrollbar">
+                                                        <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-center">Name of Proprietor</th>
+                                                                    <th class="text-center">Profit Sharing Ratio</th>
+                                                                    <th class="text-center">Opening Balance </th>
+                                                                    <th class="text-center">Capital Introduction (Addition)</th>
+                                                                    <th class="text-center">Profit for the period</th>
+                                                                    <th class="text-center">Loss for the year</th>
+                                                                    <th class="text-center">Drawings </th>
+                                                                    <th class="text-center">Other Adjustment</th>
+                                                                    <th class="text-center">Closing Balance</th>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_body')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_body">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>   
+                                                            <tbody>
+                                                                <tr class="totalCount">
+                                                                    <th class="text-center">Total <i class="fa-solid fa-angle-right"></i></th>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td colspan="2">0</td>
+                                                                </tr>
+                                                            </tbody> 
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!-- ============================================= -->
+                                                <input type="radio" name="tabs" id="tabTwo">
+                                                <label for="tabTwo">Sundry Debtors</label>
+                                                <div class="tab">
+                                                    <div class="card-header bg-light">
+                                                        <span>Sundry Debtors</span>
+                                                    </div>
+                                                    <div class="table-responsive hideScrollbar">
+                                                        <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th class="text-center">Particulars</th>
+                                                                    <th class="text-center">Amount</th>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_bodyTwo')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_bodyTwo">
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>   
+                                                            <tbody>
+                                                                <tr class="totalCount">
+                                                                    <th class="text-center">Total <i class="fa-solid fa-angle-right"></i></th>
+                                                                    <td class="text-center">0</td>
+                                                                    <td class="text-center">0</td>
+                                                                </tr>
+                                                            </tbody> 
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                 <!-- ============================================= -->
+                                                 <input type="radio" name="tabs" id="tabThree">
+                                                 <label for="tabThree">Sundry Creditors</label>
+                                                 <div class="tab">
+                                                    <div class="card-header bg-light">
+                                                        <span>Sundry Creditors</span>
+                                                    </div>
+                                                    <div class="table-responsive hideScrollbar">
+                                                        <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th class="text-center">Particulars</th>
+                                                                    <th class="text-center">Amount</th>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_bodyThree')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_bodyThree">
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>   
+                                                            <tbody>
+                                                                <tr class="totalCount">
+                                                                    <th class="text-center">Total <i class="fa-solid fa-angle-right"></i></th>
+                                                                    <td class="text-center">0</td>
+                                                                    <td class="text-center">0</td>
+                                                                </tr>
+                                                            </tbody> 
+                                                        </table>
+                                                    </div>
+                                                 </div>
+                                                  <!-- ============================================= -->
+                                                <input type="radio" name="tabs" id="tabFour">
+                                                <label for="tabFour">Investment</label>
+                                                <div class="tab">
+                                                    <div class="card-header bg-light">
+                                                        <span>Long-term investments</span>
+                                                    </div>
+                                                    <div class="table-responsive hideScrollbar">
+                                                        <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th class="text-center">Government and other securities</th>
+                                                                    <th class="text-center">Quoted / Unquoted</th>
+                                                                    <th class="text-center">Amount</th>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_bodyFour')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_bodyFour">
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <select class="form-select" aria-label="Default select example">
+                                                                            <option selected></option>
+                                                                            <option value="1">Quoted</option>
+                                                                            <option value="2">Unquoted</option>
+                                                                        </select>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>   
+                                                            <tbody>
+                                                                <tr class="totalCount">
+                                                                    <th class="text-center">Total <i class="fa-solid fa-angle-right"></i></th>
+                                                                    <td class="text-right" colspan="3">0</td>
+                                                                </tr>
+                                                            </tbody> 
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                 <!-- ============================================= -->
+                                                 <input type="radio" name="tabs" id="tabFive">
+                                                 <label for="tabFive">Inventory</label>
+                                                 <div class="tab">
+                                                    <div class="card-header bg-light">
+                                                        <span>Long-term investments</span>
+                                                    </div>
+                                                    <div class="table-responsive hideScrollbar">
+                                                        <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-center" colspan="1">Particulars</th>
+                                                                    <th colspan="2" class="text-center">Stock</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th class="text-center">Opening</th>
+                                                                    <th class="text-center">Closing</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <thead class="totalCount">
+                                                                <tr>
+                                                                    <th class="text-center">
+                                                                        Raw materials (Total)  <i class="fa-solid fa-angle-right"></i>
+                                                                    </th>
+                                                                    <td class="text-center">
+                                                                       0
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        0
+                                                                    </td>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_bodyFive')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_bodyFive">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <thead class="totalCount">
+                                                                <th class="text-center">
+                                                                    Work-in-progress (Total)  <i class="fa-solid fa-angle-right"></i>
+                                                                </th>
+                                                                <td class="text-center">
+                                                                   0
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    0
+                                                                </td>
+                                                                <th width="50px">
+                                                                    <div class="action_container">
+                                                                        <button class="success" onclick="create_tr('table_bodySix')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </th>
+                                                            </thead>
+                                                            <tbody id="table_bodySix">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <thead class="totalCount">
+                                                                <th class="text-center">
+                                                                    Finished goods/Traded Goods (Total)  <i class="fa-solid fa-angle-right"></i>
+                                                                </th>
+                                                                <td class="text-center">
+                                                                   0
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    0
+                                                                </td>
+                                                                <th width="50px">
+                                                                    <div class="action_container">
+                                                                        <button class="success" onclick="create_tr('table_bodySeven')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </th>
+                                                            </thead>
+                                                            <tbody id="table_bodySeven">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <thead class="totalCount">
+                                                                <th class="text-center">
+                                                                    Stock-in-process (Total)  <i class="fa-solid fa-angle-right"></i>
+                                                                </th>
+                                                                <td class="text-center">
+                                                                   0
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    0
+                                                                </td>
+                                                                <th width="50px">
+                                                                    <div class="action_container">
+                                                                        <button class="success" onclick="create_tr('table_bodyEight')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </th>
+                                                            </thead>
+                                                            <tbody id="table_bodyEight">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <thead class="totalCount">
+                                                                <th class="text-center">
+                                                                    Stores and consumables including packing material (Total)  <i class="fa-solid fa-angle-right"></i>
+                                                                </th>
+                                                                <td class="text-center">
+                                                                   0
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    0
+                                                                </td>
+                                                                <th width="50px">
+                                                                    <div class="action_container">
+                                                                        <button class="success" onclick="create_tr('table_bodyNine')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </th>
+                                                            </thead>
+                                                            <tbody id="table_bodyNine">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tbody>
+                                                                    <tr class="totalCount">
+                                                                        <th class="text-center">Total</th>
+                                                                        <td class="text-center">0</td>
+                                                                        <td class="text-center">0</td>
+                                                                    </tr>
+                                                            </tbody>       
+                                                        </table>
+                                                    </div>
+                                                 </div>
+                                                  <!-- ============================================= -->
+                                                <input type="radio" name="tabs" id="tabSix">
+                                                <label for="tabSix">Short Term Investments</label>
+                                                <div class="tab">
+                                                    <div class="card-header bg-light">
+                                                        <span>Short Term Investments</span>
+                                                    </div>
+                                                    <div class="table-responsive hideScrollbar">
+                                                        <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th class="text-center">Particulars</th>
+                                                                    <th class="text-center">Amount</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <thead class="totalCount">
+                                                                <tr>
+                                                                    <th class="text-center">
+                                                                        Equity Share, including share application money (Total)  <i class="fa-solid fa-angle-right"></i>
+                                                                    </th>
+                                                                    <td class="text-right" colspan="2">
+                                                                         0
+                                                                    </td>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_bodyTen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_bodyTen">
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <thead class="totalCount">
+                                                                <tr>
+                                                                    <th class="text-center">
+                                                                        Preferences Shares (Total)  <i class="fa-solid fa-angle-right"></i>
+                                                                    </th>
+                                                                    <td class="text-right" colspan="2">
+                                                                         0
+                                                                    </td>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_bodyEleven')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_bodyEleven">
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <thead class="totalCount">
+                                                                <tr>
+                                                                    <th class="text-center">
+                                                                        Debentures (Total)  <i class="fa-solid fa-angle-right"></i>
+                                                                    </th>
+                                                                    <td class="text-right" colspan="2">
+                                                                         0
+                                                                    </td>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_bodyTwelve')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_bodyTwelve">
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tbody>
+                                                                    <tr class="totalCount">
+                                                                        <th>Sub Total  <i class="fa-solid fa-angle-right"></i></th>
+                                                                        <td colspan="2" class="text-right">
+                                                                            0
+                                                                        </td>
+                                                                    </tr>
+                                                            </tbody>      
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                 <!-- ============================================= -->
+                                                 <input type="radio" name="tabs" id="tabSeven">
+                                                 <label for="tabSeven">Bad debts</label>
+                                                 <div class="tab">
+                                                    <div class="card-header bg-light">
+                                                        <span>Bad debts</span>
+                                                    </div>
+                                                    <div class="table-responsive hideScrollbar">
+                                                        <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-center">Name</th>
+                                                                    <th class="text-center">Amount</th>
+                                                                    <th class="text-center">PAN</th>
+                                                                    <th class="text-center">Aadhar</th>
+                                                                    <th width="50px">
+                                                                        <div class="action_container">
+                                                                            <button class="success" onclick="create_tr('table_bodyThirteen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_bodyThirteen">
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td>
+                                                                        <div class="action_container">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tbody>
+                                                                    <tr class="totalCount">
+                                                                        <th class="text-center"> Total  <i class="fa-solid fa-angle-right"></i></th>
+                                                                        <td class="text-center">
+                                                                            0
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                            </tbody>      
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-header bg-light mt-5">
+                                                        <span>Address Details needs to be furnished in below mentioned cases as the Amount of Bed Debts is more than ₹ 1 Lakh and PAN and/or Aadhaar is missing</span>
+                                                    </div>
+                                                    <div class="table-responsive hideScrollbar">
+                                                        <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th class="text-center">Name</th>
+                                                                    <th class="text-center">Amount</th>
+                                                                    <th class="text-center">Flat/Door/Block No.</th>
+                                                                    <th class="text-center">Name of Premises/Building/Village</th>
+                                                                    <th class="text-center">Road/Street/Post Office</th>
+                                                                    <th class="text-center">Area/Locality</th>
+                                                                    <th class="text-center">Town/City/District</th>
+                                                                    <th class="text-center">PIN/ZIP Code</th>
+                                                                    <th class="text-center">State</th>
+                                                                    <th class="text-center">Country/Region</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>
+                                                                        
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <select class="form-select" aria-label="Default select example">
+                                                                            <option selected></option>
+                                                                            <option value="1">Uttar Pradesh</option>
+                                                                            <option value="2">Delhi</option>
+                                                                            <option value="3">Uttarakhand</option>
+                                                                        </select>
+                                                                    </td>
+                                                                    <td>
+                                                                        <select class="form-select" aria-label="Default select example">
+                                                                            <option selected></option>
+                                                                            <option value="1">India</option>
+                                                                            <option value="2">China</option>
+                                                                            <option value="3">Nepal</option>
+                                                                        </select>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tbody>
+                                                                    <tr class="totalCount">
+                                                                        <th class="text-center"> Total  <i class="fa-solid fa-angle-right"></i></th>
+                                                                        <td class="text-right" colspan="10">
+                                                                            0
+                                                                        </td>
+                                                                    </tr>
+                                                            </tbody>      
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                  <!-- ============================================= -->
+                                            </div> 
+                                        </div>
+                                          
+                                        <div class="tab-data" id="tab2Content">
+                                            <p>Content for Tab 2 goes here.</p>
+                                        </div>
+                                          
+                                        <div class="tab-data" id="tab3Content">
+                                            <p>Content for Tab 3 goes here.</p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- =============================Trail Bal Modal===================================== -->
+    <div id="floatingBtn">
+        <a href="#000" data-bs-toggle="modal" data-bs-target="#trailBal"><button class="bn632-hover bn18">Trial Bal</button></a>
+    </div>
+    <div class="modal fade" id="trailBal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl aisShares">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Drag and Drop Data</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive hideScrollbar">
+                    <table class="_table align-middle mb-0 table  table-striped" border="1">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Tally Ledger</th>
+                                <th class="text-center">Current Year Amt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">0</td>
+                                <td class="text-center">0</td> 
+                            </tr>
+                        </tbody>    
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#000" data-bs-dismiss="modal"><button class="bn632-hover bn18">Dismiss</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--====================Import CG data================================ -->
+  <div class="modal fade import-file-modal" id="importCGData" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Import Deductor</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="file-upload">
+                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Import File</button>
+                    <div class="image-upload-wrap">
+                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  />
+                        <div class="drag-text">
+                        <h3>Drag and drop a file or select add file</h3>
+                        </div>
+                    </div>
+                    <div class="file-upload-content">
+                        <div class="image-title-wrap mt-4">
+                        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded File</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right text-msg">
+                    <h4>Don't have the Excel Template?</h4>
+                    <a href="#000">Click here to download</a>
+                </div>
+            </div>
+            <div class="modal-footer text-center d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifyEntry">Import File</button>
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- =============================SIDE OFFCANVAS========================== -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header bg-light">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="canvas-links">
+                <a href="./itr-salary.html" class="">Salary <i class="fa-solid fa-indian-rupee-sign"></i></a>
+                <a href="./house-property.html">House Property <i class="fa-solid fa-house-circle-check"></i></a>
+                <a href="./bussiness-profession.html">Business Profession <i class="fa-solid fa-business-time"></i></a>
+                <a href="./capital-gain.html" class="selected">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
+                <a href="./other-sources.html">Other Sources <i class="fa-brands fa-sourcetree"></i></a>
+                <a href="./exempt-income.html">Exempt Income <i class="fa-solid fa-money-bill-transfer"></i></a>
+                <a href="./clubbing.html">Clubbing <i class="fa-solid fa-people-group"></i></a>
+                <a href="./dedection.html">Deductions <i class="fa-regular fa-money-bill-1"></i></a>
+                <a href="./losses.html">Losses <i class="fa-solid fa-chart-simple"></i></a>
+                <a href="./schedule-pti.html">Schedule PTI <i class="fa-solid fa-building-columns"></i></a>
+                <a href="./tax-details.html">Tax Details <i class="fa-solid fa-money-check-dollar"></i></a>
+                <a href="./schedule-vda.html">Schedule VDA <i class="fa-solid fa-person-circle-check"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeTab(tabNumber) {
+          document.querySelectorAll('.tab-data').forEach(function(content) {
+            content.classList.remove('active');
+          });
+          document.querySelectorAll('.tabBtn').forEach(function(tab) {
+            tab.classList.remove('active');
+          });
+      
+          document.getElementById('tab' + tabNumber + 'Content').classList.add('active');
+          document.querySelector('.tabBtn:nth-child(' + tabNumber + ')').classList.add('active');
+        }
+      </script>
+    <script>
+        function create_tr(table_id) {
+        let table_body = document.getElementById(table_id),
+            first_tr   = table_body.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_body.append(tr_clone);
+
+        clean_first_tr(table_body.firstElementChild);
+        }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+
+    function remove_tr(This) {
+        if(This.closest('tbody').childElementCount == 1)
+        {
+            alert("You don't have permission to Delete this row.");
+        }else{
+            This.closest('tr').remove();
+        }
+    }
+    </script>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../../js/dashboard-pack.js"></script> 
+<script src="../../js/dashboard.js"></script>
+
+</body>
+</html>

@@ -335,8 +335,8 @@
                                     </div>
                                     <div class="group-btn-box">
                                         <div class="btn-item d-none d-md-flex">
-                                            <a href="./itr-salary.html" class="selected">Salary</a>
-                                            <a href="./house-property.html">House Property</a>
+                                            <a href="./itr-salary.html">Salary</a>
+                                            <a href="./house-property.html" class="selected">House Property</a>
                                             <a href="./bussiness-profession.html">Business Profession</a>
                                             <a href="./capital-gain.html">Capital Gain</a>
                                             <a href="./other-sources.html">Other Sources</a>
@@ -353,7 +353,7 @@
                                         </div>
                                     </div>
                                     <div class="main-heading">
-                                        <h4>Salary Income</h4>
+                                        <h4>House Property</h4>
                                     </div>
                                     <div class="add-sal-emp card-body">
                                         <div class="card-header bg-light">
@@ -914,8 +914,8 @@
         </div>
         <div class="offcanvas-body">
             <div class="canvas-links">
-                <a href="./itr-salary.html" class="selected">Salary <i class="fa-solid fa-indian-rupee-sign"></i></a>
-                <a href="./house-property.html">House Property <i class="fa-solid fa-house-circle-check"></i></a>
+                <a href="./itr-salary.html" class="">Salary <i class="fa-solid fa-indian-rupee-sign"></i></a>
+                <a href="./house-property.html" class="selected">House Property <i class="fa-solid fa-house-circle-check"></i></a>
                 <a href="./bussiness-profession.html">Business Profession <i class="fa-solid fa-business-time"></i></a>
                 <a href="./capital-gain.html">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
                 <a href="./other-sources.html">Other Sources <i class="fa-brands fa-sourcetree"></i></a>
@@ -929,6 +929,47 @@
             </div>
         </div>
     </div>
+    <script>
+             // tabbed content
+    // http://www.entheosweb.com/tutorials/css/tabs.asp
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+  /* if in tab mode */
+    $("ul.tabs li").click(function() {
+		
+      $(".tab_content").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+		
+      $("ul.tabs li").removeClass("active");
+      $(this).addClass("active");
+
+	  $(".tab_drawer_heading").removeClass("d_active");
+	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+	  
+    });
+	/* if in drawer mode */
+	$(".tab_drawer_heading").click(function() {
+      
+      $(".tab_content").hide();
+      var d_activeTab = $(this).attr("rel"); 
+      $("#"+d_activeTab).fadeIn();
+	  
+	  $(".tab_drawer_heading").removeClass("d_active");
+      $(this).addClass("d_active");
+	  
+	  $("ul.tabs li").removeClass("active");
+	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+	
+	
+	/* Extra class "tab_last" 
+	   to add border to right side
+	   of last tab */
+	$('ul.tabs li').last().addClass("tab_last");
+	
+    </script>
     <script>
         const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
         const appendAlert = (message, type) => {
@@ -980,6 +1021,7 @@
             }
     </script>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 <script src="../../js/dashboard-pack.js"></script> 
