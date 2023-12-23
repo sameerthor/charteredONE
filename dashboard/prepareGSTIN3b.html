@@ -634,10 +634,16 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <div class="card-header">
-                                            <span>Outward Supplies and Reverse Charge Inward Supplies</span>
+                                        <div class="liability-breakup bg-light">
+                                            <div>
+                                                <span>Outward Supplies and Reverse Charge Inward Supplies</span>
+                                            </div>
+                                            <div class="download-btn">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#taxLiability">Tax Liability Breakup</a>
+                                                <a href="#">Portal Auto-Calculated Data</a>
+                                            </div>
                                         </div>
-                                        <div class="table-responsive mt-2">
+                                        <div class="table-responsive">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <tbody>
                                                     <tr>
@@ -1985,6 +1991,109 @@
                                     <span>0.00</span>
                                 </td>
                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- ========================Tax Liability ====================== -->
+    <div class="modal fade" id="taxLiability" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Tax Liability Breakup</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="align-middle mb-0 table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th class="text-center">FY</th>
+                                <th class="text-center">Month</th>
+                                <th class="text-center">IGST</th>
+                                <th class="text-center">CGST</th>
+                                <th class="text-center">SGST</th>
+                                <th class="text-center">Cess</th>
+                                <th width="50px">
+                                    <div class="action_container">
+                                        <button class="success" onclick="create_tr('table_bodyTwo')">
+                                        <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">2023-24</td>
+                                <td class="text-center">December</td>
+                                <td class="text-center">0.00</td>
+                                <td class="text-center">0.00</td>
+                                <td class="text-center">0.00</td>
+                                <td class="text-center">0.00</td>
+                            </tr>
+                        </tbody>
+                        <tbody id="table_bodyTwo">
+                            <tr>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">2023-24</option>
+                                        <option value="2">2022-23</option>
+                                        <option value="3">2021-22</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">JAN</option>
+                                        <option value="2">FEB</option>
+                                        <option value="3">MAR</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="col">
+                                        <input type="text" class="form-control" value="0">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col">
+                                        <input type="text" class="form-control" value="0">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col">
+                                        <input type="text" class="form-control" value="0">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col">
+                                        <input type="text" class="form-control" value="0">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="action_container">
+                                        <button class="danger" onclick="remove_tr(this)">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                                <tr class="totalCount">
+                                    <th colspan="2">Total</th>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                </tr>
                         </tbody>
                     </table>
                 </div>

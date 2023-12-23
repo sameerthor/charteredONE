@@ -1,0 +1,450 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="../css/dashboardpack.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/preparegstin.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>  
+        <!-- ===================Content====================== -->
+        <div class="app-main__outer custome-header-margin">
+                <div class="app-main__inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="main-card mb-3 card">
+                                <div class="card-header header-links">
+                                    <div class="header-links-items mb-3 mb-md-0">
+                                        <a href="./gstinsummery.html"><i class="fa-solid fa-angle-left"></i> Back to Dashboard</a>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <div class="mr-2">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>2023 - 24</option>
+                                                <option value="1">2022 - 23</option>
+                                                <option value="2">2021 - 22</option>
+                                                <option value="3">2020 - 21</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>March</option>
+                                                <option value="1">Apr</option>
+                                                <option value="2">May</option>
+                                                <option value="3">June</option>
+                                                <option value="4">July</option>
+                                                <option value="5">August</option>
+                                                <option value="6">September</option>
+                                                <option value="7">October</option>
+                                                <option value="8">November</option>
+                                                <option value="9">December</option>
+                                                <option value="10">Jan</option>
+                                                <option value="11">Feb</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="card-body">
+                                    <div class="TwoAbtn">
+                                        <h4>Supplier Wise Reco: </h4>
+                                        <a href="./view-gst2A.html" class="selected">By 2A</a>
+                                        <a href="./view-gst2A2B.html" class="">By 2B</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="edit-header">
+                                        <div class="customeDropBox">
+                                            <div class="dropItem">
+                                                <a href="#000">Annual</a>
+                                            </div>
+                                            <div class="customeDropdown dropItem">
+                                                <div class="dropdown-btn" onclick="toggleDropdown()">Select Items</div>
+                                                <div class="dropdown-content" id="dropdownContent">
+                                                  <div class="checkbox-container">
+                                                    <label class="checkbox-item"><input type="checkbox" name="item1">Apr - June 2023</label>
+                                                    <label class="checkbox-item"><input type="checkbox" name="item2">Jul - Sept 2023</label>
+                                                    <label class="checkbox-item"><input type="checkbox" name="item3">Oct - Dec 2023</label>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="customeDropdown dropItem">
+                                                <div class="dropdown-btn" onclick="toggleDropdownTwo()">Select Items</div>
+                                                <div class="dropdown-content" id="dropdownContentTwo">
+                                                  <div class="checkbox-container">
+                                                    <label class="checkbox-item"><input type="checkbox" name="item1">JAN 2023</label>
+                                                    <label class="checkbox-item"><input type="checkbox" name="item2">FAB 2023</label>
+                                                    <label class="checkbox-item"><input type="checkbox" name="item3">MAR 2023</label>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class=" lists-btn">
+                                            <a href="#"><i class="fa-solid fa-arrow-down"></i> Monthly Data</a>
+                                            <a href="#"><i class="fa-regular fa-envelope"></i> To Suppliers</a>
+                                            <a href="#"><i class="fa-regular fa-envelope"></i> Complete Data</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="edit-data-box">
+                                        <div>
+                                            <div class="custome-header">
+                                                <span>By 2B</span>
+                                            </div>
+                                            <div class="table-responsive hideScrollbar">
+                                                <table class="align-middle mb-0 table table-borderless table-striped twoATwobTable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">QRMP</th>
+                                                            <th class="text-center">Supplier Name</th>
+                                                            <th class="text-center"> GSTIN</th>
+                                                            <th class="text-center">Taxable Diff.</th>
+                                                            <th class="text-center">Books Tax</th>
+                                                            <th class="text-center">2A Tax</th>
+                                                            <th class="text-center">Tax Diff</th>
+                                                            <th class="text-center matched">Matched</th>
+                                                            <th class="text-center partiallyMatched">Partially Matched</th>
+                                                            <th class="text-center twoAOnly">In 2A Only</th>
+                                                            <th class="text-center bookOnly">In Book Data</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="table_bodyYTwo">
+                                                        <tr>
+                                                            <td class="text-center qrmp"> <a href="#000">M</a></td>
+                                                            <td class="suppName">
+                                                                <a href="#">Google India Pvt Ltd</a>
+                                                            </td>
+                                                            <td class="gstin">
+                                                               <a href="#000"> 06ATHPA4200C1ZN</a>
+                                                            </td>
+                                                            <td class="taxableDiff">
+                                                               <a href="#">(24124124)</a>
+                                                            </td>
+                                                            <td>
+                                                                0.00
+                                                            </td>
+                                                            <td>
+                                                               21241241
+                                                            </td>
+                                                            <td class="taxableDiff">
+                                                                <a href="#">(24124124)</a>
+                                                             </td>
+                                                            <td class="matched">
+                                                               <a href="#">0</a>
+                                                            </td>
+                                                            <td class="partiallyMatched">
+                                                                <a href="#">0</a>
+                                                            </td>
+                                                            <td class="twoAOnly">
+                                                                <a href="#">10</a>
+                                                            </td>
+                                                            <td class="bookOnly">
+                                                                <a href="#">0</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center qrmp"> <a href="#000">M</a></td>
+                                                            <td class="suppName">
+                                                                <a href="#">Google India Pvt Ltd</a>
+                                                            </td>
+                                                            <td class="gstin">
+                                                               <a href="#000"> 06ATHPA4200C1ZN</a>
+                                                            </td>
+                                                            <td class="taxableDiff">
+                                                               <a href="#">(24124124)</a>
+                                                            </td>
+                                                            <td>
+                                                                0.00
+                                                            </td>
+                                                            <td>
+                                                               21241241
+                                                            </td>
+                                                            <td class="taxableDiff">
+                                                                <a href="#">(24124124)</a>
+                                                             </td>
+                                                            <td class="matched">
+                                                               <a href="#">0</a>
+                                                            </td>
+                                                            <td class="partiallyMatched">
+                                                                <a href="#">0</a>
+                                                            </td>
+                                                            <td class="twoAOnly">
+                                                                <a href="#">10</a>
+                                                            </td>
+                                                            <td class="bookOnly">
+                                                                <a href="#">0</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center qrmp"> <a href="#000">Q</a></td>
+                                                            <td class="suppName">
+                                                                <a href="#">Google India Pvt Ltd</a>
+                                                            </td>
+                                                            <td class="gstin">
+                                                               <a href="#000"> 06ATHPA4200C1ZN</a>
+                                                            </td>
+                                                            <td class="taxableDiff">
+                                                               <a href="#">(24124124)</a>
+                                                            </td>
+                                                            <td>
+                                                                0.00
+                                                            </td>
+                                                            <td>
+                                                               21241241
+                                                            </td>
+                                                            <td class="taxableDiff">
+                                                                <a href="#">(24124124)</a>
+                                                             </td>
+                                                            <td class="matched">
+                                                               <a href="#">0</a>
+                                                            </td>
+                                                            <td class="partiallyMatched">
+                                                                <a href="#">0</a>
+                                                            </td>
+                                                            <td class="twoAOnly">
+                                                                <a href="#">10</a>
+                                                            </td>
+                                                            <td class="bookOnly">
+                                                                <a href="#">0</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center qrmp"> <a href="#000">Q</a></td>
+                                                            <td class="suppName">
+                                                                <a href="#">Google India Pvt Ltd</a>
+                                                            </td>
+                                                            <td class="gstin">
+                                                               <a href="#000"> 06ATHPA4200C1ZN</a>
+                                                            </td>
+                                                            <td class="taxableDiff">
+                                                               <a href="#">(24124124)</a>
+                                                            </td>
+                                                            <td>
+                                                                0.00
+                                                            </td>
+                                                            <td>
+                                                               21241241
+                                                            </td>
+                                                            <td class="taxableDiff">
+                                                                <a href="#">(24124124)</a>
+                                                             </td>
+                                                            <td class="matched">
+                                                               <a href="#">0</a>
+                                                            </td>
+                                                            <td class="partiallyMatched">
+                                                                <a href="#">0</a>
+                                                            </td>
+                                                            <td class="twoAOnly">
+                                                                <a href="#">10</a>
+                                                            </td>
+                                                            <td class="bookOnly">
+                                                                <a href="#">0</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>   
+                                                    <tbody>
+                                                            <tr class="totalCount">
+                                                                <th>Total <i class="fa-solid fa-angle-right"></i></th>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+                                                    </tbody> 
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- ======================== -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleDropdown() {
+          var dropdownContent = document.getElementById("dropdownContent");
+          dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        }
+    
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropdown-btn')) {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "block";
+            }
+          }
+        }
+      </script>
+      <script>
+        function toggleDropdownTwo() {
+          var dropdownContent = document.getElementById("dropdownContentTwo");
+          dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        }
+    
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropdown-btn')) {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "block";
+            }
+          }
+        }
+      </script>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../js/dashboard-pack.js"></script> 
+<script src="../js/dashboard.js"></script>
+<!-- ========================date Picker CDN=========================== -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script>
+    $(function() {
+      $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
+</script>
+</body>
+</html>

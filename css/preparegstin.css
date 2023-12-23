@@ -408,6 +408,9 @@ body a:hover{
    .edit-data-box .table-responsive .table .form-control:focus{
     border: 1px solid #26ace3;
    }
+   .table-responsive .table .totalCount{
+    background-color: #fff8dc;
+  }
    /* ================== */
    input[type='date']:not(:focus):in-range::-webkit-datetime-edit-year-field,
   input[type='date']:not(:focus):in-range::-webkit-datetime-edit-month-field,
@@ -418,3 +421,179 @@ body a:hover{
   .hideScrollbar::-webkit-scrollbar{
     display: none; 
    }
+.liability-breakup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0000007d;
+    padding: .4rem 0rem;
+}
+@media(max-width:992px){
+    .liability-breakup{
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .liability-breakup div{
+        width: 100%;
+        text-align: center;
+     }
+     .liability-breakup .download-btn{
+        margin-top: .5rem;
+     }
+     .liability-breakup .download-btn a{
+       font-size: .75rem;  
+       letter-spacing: .5px; 
+
+    }
+ }
+.TwoAbtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.TwoAbtn h4{
+   font-weight: 500;
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.1rem;
+   color: #000;
+   margin-right: .5rem;
+}
+.TwoAbtn a{
+   border: 1px solid #ff5722;
+   font-family: 'Montserrat', sans-serif;
+   padding: .2rem 1rem;
+   margin-right: .5rem;
+   font-size: .8rem;
+   font-weight: 500;
+   letter-spacing: .5px;
+   color: #ff5722;
+   border-radius: 4px;
+}
+.TwoAbtn a:hover{
+    color: #ff5722;
+ }
+ .TwoAbtn .selected{
+    background-color: #ff5722;
+    color: #fff;
+ }
+ .TwoAbtn .selected:hover{
+    color: #fff;
+ }
+ /* ====================custome dropdown=============== */
+    .customeDropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-btn {
+        cursor: pointer;
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .checkbox-container {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+      }
+  
+      .checkbox-item {
+        margin-bottom: 8px;
+      }
+      .customeDropBox{
+        display: flex;
+       flex-direction: row;
+       align-items: center;
+      }
+      .lists-btn{
+        display: flex;
+        align-items: center;
+      }
+      .lists-btn a{
+        padding: .4rem .8rem;
+        font-size: .8rem;
+        letter-spacing: .5px;
+        margin-left: .5rem;
+        background-color: #259dff;
+        color: #fff;
+        border-radius: 4px;
+        font-weight: 500;
+        text-decoration: none;
+        outline:none;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      .lists-btn a:hover{
+        padding: .4rem .8rem;
+        font-size: .8rem;
+        letter-spacing: .5px;
+        margin-left: .5rem;
+        background-color: #259dff;
+        color: #fff;
+        border-radius: 4px;
+      }
+      .customeDropBox .dropItem{
+        border: 1px solid #232323;
+        padding: .5rem 1rem;
+        border-right: none;
+        font-size: .8rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: .5px;
+      }
+      .customeDropBox .dropItem:nth-of-type(3){
+        border-right: 1px solid #232323;
+      }
+      .customeDropBox .dropItem:nth-of-type(1){
+        background-color: #ff5722;
+        color: #fff;
+      }
+      .customeDropBox .dropItem:nth-of-type(1) a{
+        background-color: #ff5722;
+        color: #fff;
+      }
+      .twoATwobTable .qrmp a{
+        color: #fca373;
+      }
+      .twoATwobTable .suppName a{
+        color: #3d7da7;
+      }
+      .twoATwobTable .gstin a{
+        color: #000;
+      }
+      .twoATwobTable .taxableDiff a{
+        color: #fe467b;
+      }
+      .twoATwobTable .matched{
+        color: #15cc90 !important;
+      }
+      .twoATwobTable .matched a{
+        color: #15cc90;
+      }
+      .twoATwobTable .partiallyMatched{
+        color: #fe467b !important;
+      }
+      .twoATwobTable .partiallyMatched a{
+        color: #fe467b;
+      }
+      .twoATwobTable .twoAOnly{
+        color: #638268 !important;
+      }
+      .twoATwobTable .twoAOnly a{
+        color: #638268;
+      }
+      .twoATwobTable .bookOnly{
+        color: #ca717c !important;
+      }
+      .twoATwobTable .bookOnly a{
+        color: #ca717c;
+      }
