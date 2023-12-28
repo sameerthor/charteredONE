@@ -140,7 +140,7 @@
                             <div class="main-card mb-3 card">
                                 <div class="card-header header-links">
                                     <div class="header-links-items mb-3 mb-md-0">
-                                        <a href="./gstinsummery.html"><i class="fa-solid fa-angle-left"></i> Back to Dashboard</a>
+                                        <a href="./view-gst2A2B.html"><i class="fa-solid fa-angle-left"></i> Back</a>
                                     </div>
                                     <div class="d-flex flex-row">
                                         <div class="mr-2">
@@ -172,9 +172,9 @@
                             
                                 <div class="card-body">
                                     <div class="TwoAbtn">
-                                        <h4>Supplier Wise Reco: </h4>
-                                        <a href="./view-gst2A.html">By 2A</a>
-                                        <a href="./view-gst2A2B.html" class="selected">By 2B</a>
+                                        <h4>Invoice Wise Reco : </h4>
+                                        <a href="./2AInnovoiceWise.html" class="">2A</a>
+                                        <a href="./2BInnovoiceWise.html" class="selected">2B</a>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -301,189 +301,130 @@
                                             </div>
                                         </div>
                                         <div class=" lists-btn">
-                                            <a href="#"><i class="fa-solid fa-arrow-down"></i> Monthly Data</a>
-                                            <a href="./supplierEmail.html"><i class="fa-regular fa-envelope"></i> To Suppliers</a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#sendMail"><i class="fa-regular fa-envelope"></i> Complete Data</a>
-                                            <a href="./2AInnovoiceWise.html">Invoice  Wise Reco</a>
+                                            <a href="./month-wise-record.html">Month  Wise Reco</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="edit-data-box">
                                         <div>
-                                            <div class="custome-header">
-                                                <span>By 2B</span>
+                                            <div class="custome-header header-checks">
+                                                <div>
+                                                    <span>B2B</span>
+                                                </div>
+                                                <div class="check-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label matched" for="flexCheckChecked">
+                                                          Matched
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label mis-matched" for="flexCheckChecked">
+                                                          Mis-Matched
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label book-only" for="flexCheckChecked">
+                                                          In Books Only
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label r1Only" for="flexCheckChecked">
+                                                          In R1 Only 
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="table-responsive hideScrollbar">
-                                                <table class="align-middle mb-0 table table-borderless table-striped twoATwobTable">
+                                                <table class="align-middle mb-0 table table-borderless table-striped twoATwobTable" border="1">
+                                                    <thead>
+                                                        <th colspan="8" class="text-center books">Books</th>
+                                                        <th colspan="5" class="text-center gstrone">GSTR 1</th>
+                                                    </thead>
                                                     <thead>
                                                         <tr>
-                                                            <th class="text-center">QRMP</th>
-                                                            <th class="text-center">Supplier Name</th>
-                                                            <th class="text-center"> GSTIN</th>
-                                                            <th class="text-center">Taxable Diff.</th>
-                                                            <th class="text-center">Books Tax</th>
-                                                            <th class="text-center">2A Tax</th>
-                                                            <th class="text-center">Tax Diff</th>
-                                                            <th class="text-center matched">Matched</th>
-                                                            <th class="text-center partiallyMatched">Partially Matched</th>
-                                                            <th class="text-center twoAOnly">In 2A Only</th>
-                                                            <th class="text-center bookOnly">In Book Data</th>
+                                                            <th class="books"></th>
+                                                            <th class="text-center books">Supplier Name</th>
+                                                            <th class="text-center books">GSTIN</th>
+                                                            <th class="text-center books">Doc Dt</th>
+                                                            <th class="text-center books">Doc No</th>
+                                                            <th class="text-center books">Taxable Val</th>
+                                                            <th class="text-center books">Tax</th>
+                                                            <th class="text-center books">Book Prd</th>
+                                                            <th class="text-center gstrone">Doc Dt</th>
+                                                            <th class="text-center gstrone">Doc No</th>
+                                                            <th class="text-center gstrone">Taxable Val</th>
+                                                            <th class="text-center gstrone">Tax</th>
+                                                            <th class="text-center gstrone">2B Prd</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody id="table_bodyYTwo">
+                                                    <tbody>
                                                         <tr>
-                                                            <td class="text-center qrmp"> <a href="#000">M</a></td>
-                                                            <td class="suppName">
-                                                                <a href="./2AInnovoiceWise.html">Google India Pvt Ltd</a>
-                                                            </td>
-                                                            <td class="gstin">
-                                                               <a href="#000"> 06ATHPA4200C1ZN</a>
-                                                            </td>
-                                                            <td class="taxableDiff">
-                                                               <a href="#">(24124124)</a>
-                                                            </td>
-                                                            <td>
-                                                                0.00
-                                                            </td>
-                                                            <td>
-                                                               21241241
-                                                            </td>
-                                                            <td class="taxableDiff">
-                                                                <a href="#">(24124124)</a>
-                                                             </td>
-                                                            <td class="matched">
-                                                               <a href="#">0</a>
-                                                            </td>
-                                                            <td class="partiallyMatched">
-                                                                <a href="#">0</a>
-                                                            </td>
-                                                            <td class="twoAOnly">
-                                                                <a href="#">10</a>
-                                                            </td>
-                                                            <td class="bookOnly">
-                                                                <a href="#">0</a>
-                                                            </td>
+                                                            <th class="books"></th>
+                                                            <td class="books"><a href="#">Wakefit Innovations </a></td>
+                                                            <td class="books">06AABCW7791A1ZB</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">No Rec Found</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">-</td>
+                                                            <td class="gstrone">03/06/2023</td>
+                                                            <td class="gstrone"><a href="#">RSG2-4371</a></td>
+                                                            <td class="gstrone">968.64</td>
+                                                            <td class="gstrone">174.36</td>
+                                                            <td class="gstrone">Jun 23</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="text-center qrmp"> <a href="#000">M</a></td>
-                                                            <td class="suppName">
-                                                                <a href="./2AInnovoiceWise.html">Google India Pvt Ltd</a>
-                                                            </td>
-                                                            <td class="gstin">
-                                                               <a href="#000"> 06ATHPA4200C1ZN</a>
-                                                            </td>
-                                                            <td class="taxableDiff">
-                                                               <a href="#">(24124124)</a>
-                                                            </td>
-                                                            <td>
-                                                                0.00
-                                                            </td>
-                                                            <td>
-                                                               21241241
-                                                            </td>
-                                                            <td class="taxableDiff">
-                                                                <a href="#">(24124124)</a>
-                                                             </td>
-                                                            <td class="matched">
-                                                               <a href="#">0</a>
-                                                            </td>
-                                                            <td class="partiallyMatched">
-                                                                <a href="#">0</a>
-                                                            </td>
-                                                            <td class="twoAOnly">
-                                                                <a href="#">10</a>
-                                                            </td>
-                                                            <td class="bookOnly">
-                                                                <a href="#">0</a>
-                                                            </td>
+                                                            <th class="books"></th>
+                                                            <td class="books"><a href="#">Suri Consumer Private  </a></td>
+                                                            <td class="books">06AABCW7791A1ZB</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">No Rec Found</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">-</td>
+                                                            <td class="gstrone">03/06/2023</td>
+                                                            <td class="gstrone"><a href="#">RSG2-4371</a></td>
+                                                            <td class="gstrone">968.64</td>
+                                                            <td class="gstrone">174.36</td>
+                                                            <td class="gstrone">Jun 23</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="text-center qrmp"> <a href="#000">Q</a></td>
-                                                            <td class="suppName">
-                                                                <a href="./2AInnovoiceWise.html">Google India Pvt Ltd</a>
-                                                            </td>
-                                                            <td class="gstin">
-                                                               <a href="#000"> 06ATHPA4200C1ZN</a>
-                                                            </td>
-                                                            <td class="taxableDiff">
-                                                               <a href="#">(24124124)</a>
-                                                            </td>
-                                                            <td>
-                                                                0.00
-                                                            </td>
-                                                            <td>
-                                                               21241241
-                                                            </td>
-                                                            <td class="taxableDiff">
-                                                                <a href="#">(24124124)</a>
-                                                             </td>
-                                                            <td class="matched">
-                                                               <a href="#">0</a>
-                                                            </td>
-                                                            <td class="partiallyMatched">
-                                                                <a href="#">0</a>
-                                                            </td>
-                                                            <td class="twoAOnly">
-                                                                <a href="#">10</a>
-                                                            </td>
-                                                            <td class="bookOnly">
-                                                                <a href="#">0</a>
-                                                            </td>
+                                                            <th class="books"></th>
+                                                            <td class="books"><a href="#">Google India Pvt LTD</a></td>
+                                                            <td class="books">06AABCW7791A1ZB</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">No Rec Found</td>
+                                                            <td class="books">-</td>
+                                                            <td class="books">-</td>
+                                                            <td class="gstrone">03/06/2023</td>
+                                                            <td class="gstrone"><a href="#">RSG2-4371</a></td>
+                                                            <td class="gstrone">968.64</td>
+                                                            <td class="gstrone">174.36</td>
+                                                            <td class="gstrone">Jun 23</td>
                                                         </tr>
-                                                        <tr>
-                                                            <td class="text-center qrmp"> <a href="#000">Q</a></td>
-                                                            <td class="suppName">
-                                                                <a href="./2AInnovoiceWise.html">Google India Pvt Ltd</a>
-                                                            </td>
-                                                            <td class="gstin">
-                                                               <a href="#000"> 06ATHPA4200C1ZN</a>
-                                                            </td>
-                                                            <td class="taxableDiff">
-                                                               <a href="#">(24124124)</a>
-                                                            </td>
-                                                            <td>
-                                                                0.00
-                                                            </td>
-                                                            <td>
-                                                               21241241
-                                                            </td>
-                                                            <td class="taxableDiff">
-                                                                <a href="#">(24124124)</a>
-                                                             </td>
-                                                            <td class="matched">
-                                                               <a href="#">0</a>
-                                                            </td>
-                                                            <td class="partiallyMatched">
-                                                                <a href="#">0</a>
-                                                            </td>
-                                                            <td class="twoAOnly">
-                                                                <a href="#">10</a>
-                                                            </td>
-                                                            <td class="bookOnly">
-                                                                <a href="#">0</a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>   
+                                                    </tbody>    
                                                     <tbody>
                                                             <tr class="totalCount">
                                                                 <th>Total <i class="fa-solid fa-angle-right"></i></th>
                                                                 <td>0</td>
+                                                                <td colspan="2">0</td>
                                                                 <td>0</td>
                                                                 <td>0</td>
+                                                                <td colspan="3">0</td>
                                                                 <td>0</td>
                                                                 <td>0</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
+                                                                <td colspan="2">0</td>
                                                             </tr>
                                                     </tbody> 
                                                 </table>
                                             </div>
                                         </div>
-                                        <!-- ======================== -->
                                     </div>
                                 </div>
                             </div>
@@ -491,26 +432,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- =============================send email======================== -->
-    <div class="modal fade" id="sendMail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Send Mail</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="col">
-                    <input type="text" class="form-control" placeholder="eg. example@yourEmail.com">
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</button>
-              <button type="button" class="btn btn-primary">Send</button>
-            </div>
-          </div>
         </div>
     </div>
 <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>

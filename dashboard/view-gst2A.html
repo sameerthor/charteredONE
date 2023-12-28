@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="../css/dashboardpack.css">
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/preparegstin.css">
     <!-- *******************Fontawesome***************************** -->
@@ -132,7 +133,7 @@
             </div>
         </div>  
         <!-- ===================Content====================== -->
-        <div class="app-main__outer custome-header-margin">
+        <div class="custome-header-margin">
                 <div class="app-main__inner">
                     <div class="row">
                         <div class="col-md-12">
@@ -180,34 +181,131 @@
                                     <div class="edit-header">
                                         <div class="customeDropBox">
                                             <div class="dropItem">
-                                                <a href="#000">Annual</a>
+                                                <a href="#000" class="btn">Annual</a>
                                             </div>
                                             <div class="customeDropdown dropItem">
-                                                <div class="dropdown-btn" onclick="toggleDropdown()">Select Items</div>
-                                                <div class="dropdown-content" id="dropdownContent">
-                                                  <div class="checkbox-container">
-                                                    <label class="checkbox-item"><input type="checkbox" name="item1">Apr - June 2023</label>
-                                                    <label class="checkbox-item"><input type="checkbox" name="item2">Jul - Sept 2023</label>
-                                                    <label class="checkbox-item"><input type="checkbox" name="item3">Oct - Dec 2023</label>
-                                                  </div>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle custome-toggle" type="button" id="dropdownMenuButton"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Quartely
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme1" />
+                                                                    <label class="form-check-label" for="Checkme1">Apr - Jun 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme2" checked />
+                                                                    <label class="form-check-label" for="Checkme2">Jul - Sep 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
+                                                                    <label class="form-check-label" for="Checkme3">Oct - Dec 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                             <div class="customeDropdown dropItem">
-                                                <div class="dropdown-btn" onclick="toggleDropdownTwo()">Select Items</div>
-                                                <div class="dropdown-content" id="dropdownContentTwo">
-                                                  <div class="checkbox-container">
-                                                    <label class="checkbox-item"><input type="checkbox" name="item1">JAN 2023</label>
-                                                    <label class="checkbox-item"><input type="checkbox" name="item2">FAB 2023</label>
-                                                    <label class="checkbox-item"><input type="checkbox" name="item3">MAR 2023</label>
-                                                  </div>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                   Monthaly
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme1" />
+                                                                    <label class="form-check-label" for="Checkme1">Apr 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme2" checked />
+                                                                    <label class="form-check-label" for="Checkme2">May 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
+                                                                    <label class="form-check-label" for="Checkme3">Jun 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
+                                                                    <label class="form-check-label" for="Checkme3">Jul 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
+                                                                    <label class="form-check-label" for="Checkme3">Aug 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
+                                                                    <label class="form-check-label" for="Checkme3">Sep 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
+                                                                    <label class="form-check-label" for="Checkme3">Oct 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
+                                                                    <label class="form-check-label" for="Checkme3">Nov 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
+                                                                    <label class="form-check-label" for="Checkme3">Dec 2023</label>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
                                         
                                         <div class=" lists-btn">
                                             <a href="#"><i class="fa-solid fa-arrow-down"></i> Monthly Data</a>
-                                            <a href="#"><i class="fa-regular fa-envelope"></i> To Suppliers</a>
-                                            <a href="#"><i class="fa-regular fa-envelope"></i> Complete Data</a>
+                                            <a href="./supplierEmail.html"><i class="fa-regular fa-envelope"></i> To Suppliers</a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#sendMail"><i class="fa-regular fa-envelope"></i> Complete Data</a>
+                                            <a href="./2AInnovoiceWise.html">Invoice  Wise Reco</a>
                                         </div>
                                     </div>
                                 </div>
@@ -396,55 +494,31 @@
             </div>
         </div>
     </div>
-    
-    <script>
-        function toggleDropdown() {
-          var dropdownContent = document.getElementById("dropdownContent");
-          dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
-        }
-    
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropdown-btn')) {
-            var dropdownContent = document.getElementById("dropdownContent");
-            if (dropdownContent.style.display === "block") {
-              dropdownContent.style.display = "block";
-            }
-          }
-        }
-      </script>
-      <script>
-        function toggleDropdownTwo() {
-          var dropdownContent = document.getElementById("dropdownContentTwo");
-          dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
-        }
-    
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropdown-btn')) {
-            var dropdownContent = document.getElementById("dropdownContent");
-            if (dropdownContent.style.display === "block") {
-              dropdownContent.style.display = "block";
-            }
-          }
-        }
-      </script>
-<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+    <!-- =============================send email======================== -->
+    <div class="modal fade" id="sendMail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Send Mail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="col">
+                    <input type="text" class="form-control" placeholder="eg. example@yourEmail.com">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</button>
+              <button type="button" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+    </div>
 <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
 <!-- ==========================JQuery================================ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../js/dashboard-pack.js"></script> 
 <script src="../js/dashboard.js"></script>
-<!-- ========================date Picker CDN=========================== -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-<script>
-    $(function() {
-      $('input[name="daterange"]').daterangepicker({
-        opens: 'left'
-      }, function(start, end, label) {
-        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-      });
-    });
-</script>
 </body>
 </html>
