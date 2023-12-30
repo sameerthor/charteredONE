@@ -1,0 +1,1917 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 705(Revised), Modifications to the Opinion in the Independent
+                                                Auditor’s Report   
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                         <h5 class="mt-4">
+                                            Note: Please refer to the Implementation Guide on Reporting Standards (Revised SA 700, Revised
+                                            SA 705 and Revised SA 706). 
+                                            
+                                            
+                                        </h5>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Circumstances When a Modification to the Auditor’s Opinion is
+                                                            Required
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 6 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor modified the opinion in the auditor’s report when: 
+
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The auditor concludes that, based on the audit evidence obtained,
+                                                                the financial statements as a whole are not free from material
+                                                                misstatement; or 
+                                                            </li>
+                                                            <li>
+                                                                The auditor is unable to obtain sufficient appropriate audit
+                                                                evidence to conclude that the financial statements as a whole are
+                                                                free from material misstatement? 
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: SA 450 defines a misstatement as a difference between the
+                                                            amount, classification, presentation, or disclosure of a reported
+                                                            financial statement item and the amount, classification, presentation,
+                                                            or disclosure that is required for the item to be in accordance with the
+                                                            applicable financial reporting framework. Accordingly, a material
+                                                            misstatement of the financial statements may arise in relation to: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The appropriateness of the selected accounting policies; 
+
+                                                            </li>
+                                                            <li>
+                                                                The application of the selected accounting policies; or 
+
+                                                            </li>
+                                                            <li>
+                                                                The appropriateness or adequacy of disclosures in the financial
+                                                                statements (Para A3)] 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A4 
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has identified any of the following in relation to
+                                                            appropriateness of accounting policies selected by management which
+                                                            may result into material misstatement of the financial statements: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The selected accounting policies are not consistent with the
+                                                                applicable financial reporting framework; or 
+                                                            </li>
+                                                            <li>
+                                                                The financial statements, including the related notes, do not
+                                                                represent the underlying transactions and events in a manner that
+                                                                achieves fair presentation?
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A5
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the changes in selection of significant accounting policies
+                                                            adhere to the requirements of the financial reporting frameworks in
+                                                            relation to accounting for, and disclosure of, changes in accounting
+                                                            policies?
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the entity complied with these requirements? 
+                                                        </p>
+                                                        <p>
+                                                            If entity not complied with these requirements, then this can give rise
+                                                            to material misstatement.
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A6 
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has identified any of the following in relation to
+                                                            the application of the selected accounting policies which may result
+                                                            into material misstatement of the financial statements? 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                When management has not applied the selected accounting
+                                                                policies consistently with the financial reporting framework,
+                                                                including when management has not applied the selected
+                                                                accounting policies consistently between periods or to similar
+                                                                transactions and events (consistency in application); or 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Due to the method of application of the selected accounting
+                                                                policies (such as an unintentional error in application)? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A7 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has identified any of the following in relation to
+                                                            the appropriateness or adequacy of disclosures in the financial
+                                                            statements which may result into material misstatement of this
+                                                            financial statements? 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The financial statements do not include all of the disclosures
+                                                                required by the applicable financial reporting framework; 
+                                                            </li>
+                                                            <li>
+                                                                The disclosures in the financial statements are not presented in
+                                                                accordance with the applicable financial reporting framework; or
+                                                            </li>
+                                                            <li>
+                                                                The financial statements do not provide the disclosures necessary
+                                                                to achieve fair presentation.
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A8 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether any of the following situations arose for the auditor which
+                                                            caused inability to obtain sufficient appropriate audit evidence (also
+                                                            referred to as a limitation on the scope of the audit)? 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Circumstances beyond the control of the entity;
+                                                            </li>
+                                                            <li>
+                                                                Circumstances relating to the nature or timing of the auditor’s
+                                                                work; or 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Limitations imposed by management. 
+
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: Examples of circumstances beyond the control of the entity
+                                                            include when: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The entity’s accounting records have been destroyed.
+                                                            </li>
+                                                            <li>
+                                                                The accounting records of a significant component have been
+                                                                seized indefinitely by governmental authorities. (Para A10)
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            Examples of circumstances relating to the nature or timing of the
+                                                            auditor’s work include when: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The entity is required to use the equity method of accounting for
+                                                                an associated entity, and the auditor is unable to obtain sufficient
+                                                                appropriate audit evidence about the latter’s financial information
+                                                                to evaluate whether the equity method has been appropriately
+                                                                applied. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The timing of the auditor’s appointment is such that the auditor is
+                                                                unable to observe the counting of the physical inventories. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The auditor determines that performing substantive procedures
+                                                                alone is not sufficient, but the entity’s controls are not effective.
+                                                                (Para A11) 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            Examples of an inability to obtain sufficient appropriate audit
+                                                            evidence arising from a limitation on the scope of the audit imposed by management include when: 
+
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Management prevents the auditor from observing the counting of
+                                                                the physical inventory. 
+                                                            </li>
+                                                            <li>
+                                                                Management prevents the auditor from requesting external
+                                                                confirmation of specific account balances.(Para A12)] 
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Determining the Type of Modification to the Auditor’s Opinion 
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 7
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has expressed a qualified opinion when: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The auditor, having obtained sufficient appropriate audit
+                                                                evidence, concludes that misstatements, individually or in the
+                                                                aggregate, are material, but not pervasive, to the financial
+                                                                statements; or
+                                                            </li>
+                                                            <li>
+                                                                The auditor is unable to obtain sufficient appropriate audit
+                                                                evidence on which to base the opinion, but the auditor concludes
+                                                                that the possible effects on the financial statements of undetected
+                                                                misstatements, if any, could be material but not pervasive? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 8 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor expressed an adverse opinion when the auditor, having
+                                                            obtained sufficient appropriate audit evidence, concludes that
+                                                            misstatements, individually or in the aggregate, are both material and
+                                                            pervasive to the financial statements? 
+                                                            
+                                                        </p>
+                                                     </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 9 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor disclaimed an opinion when the auditor is unable to
+                                                            obtain sufficient appropriate audit evidence on which to base the
+                                                            opinion, and the auditor concludes that the possible effects on the
+                                                            financial statements of undetected misstatements, if any, could be both
+                                                            material and pervasive?  
+                                                        </p>
+                                                     </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 10
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor concluded that it is not possible to form an opinion on
+                                                            the financial statements due to the potential interaction of the multiple
+                                                            uncertainties and their possible cumulative effect on the financial
+                                                            statements? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the opinion is disclaimed? 
+
+                                                        </p>
+                                                     </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Consequence of an Inability to Obtain Sufficient Appropriate
+                                                            Audit Evidence Due to a Management-Imposed Limitation after
+                                                            the Auditor Has Accepted the Engagement
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 11
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether, after the acceptance of engagement, the management has
+                                                            imposed limitation on scope of audit which can cause auditor to
+                                                            express a qualified opinion or to disclaim an opinion on the financial
+                                                            statements?  
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor requested that management remove the
+                                                            limitation? 
+                                                        </p>
+                                                     </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 12
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the management has refused to remove the said limitation?   
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor communicated the matter to those charged with
+                                                            governance, unless all of those charged with governance are involved
+                                                            in managing the entity and determined whether it is possible to perform alternative procedures to obtain sufficient appropriate audit
+                                                            evidence? 
+                                                        </p>
+                                                     </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 13
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor is unable to obtain sufficient appropriate audit
+                                                            evidence, has the auditor determined following implications?
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                If the auditor concludes that the possible effects on the financial
+                                                                statements of undetected misstatements, if any, could be material
+                                                                but not pervasive, the auditor shall qualify the opinion; or
+                                                            </li>
+                                                            <li>
+                                                                If the auditor concludes that the possible effects on the financial
+                                                                statements of undetected misstatements, if any, could be both
+                                                                material and pervasive so that a qualification of the opinion
+                                                                would be inadequate to communicate the gravity of the situation,
+                                                                the auditor shall: 
+                                                                
+                                                            </li>
+                                                            <ol type="i">
+                                                                <li>
+                                                                    Withdraw from the audit, where practicable and possible
+                                                                    under applicable law or regulation; or
+                                                                </li>
+                                                                <li>
+                                                                    If withdrawal from the audit before issuing the auditor’s
+                                                                    report is not practicable or possible, disclaim an opinion on
+                                                                    the financial statements. 
+                                                                </li>
+                                                            </ol>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: The practicality of withdrawing from the audit may depend on
+                                                            the stage of completion of the engagement at the time that
+                                                            management imposes the scope limitation. If the auditor has
+                                                            substantially completed the audit, the auditor may decide to complete
+                                                            the audit to the extent possible, disclaim an opinion and explain the
+                                                            scope limitation within the Basis for Disclaimer of Opinion section
+                                                            prior to withdrawing. (Para A13) 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            In certain circumstances, withdrawal from the audit may not be
+                                                            possible if the auditor is required by law or regulation to continue the
+                                                            audit engagement. This may be the case for an auditor that is
+                                                            appointed to audit the financial statements of public sector entities. It
+                                                            may also be the case in entities where the auditor is appointed to audit
+                                                            the financial statements covering a specific period, or appointed for a
+                                                            specific period and is prohibited from withdrawing before the
+                                                            completion of the audit of those financial statements or before the end
+                                                            of that period, respectively. The auditor may also consider it necessary
+                                                            to include an Other Matter paragraph in the auditor’s report.( Para
+                                                            A14)] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 14
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has contemplated to withdraw from the
+                                                            engagement as per Para 13(b)(i) above?
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor before withdrawing communicated to those
+                                                            charged with governance any matters regarding misstatements
+                                                            identified during the audit that would have given rise to a modification
+                                                            of the opinion? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 15
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has concluded that it is necessary to express an
+                                                            adverse opinion or disclaim an opinion on the financial statements as a
+                                                            whole? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor also included an unmodified opinion with respect to the same financial reporting framework on a single financial
+                                                            statement or one or more specific elements, accounts or items of a
+                                                            financial statement?
+                                                        </p>
+                                                        <p>
+                                                            [Note: To include such an unmodified opinion in the same report in
+                                                            these circumstances would contradict the auditor’s adverse opinion or
+                                                            disclaimer of opinion on the financial statements as a whole. 
+                                                        </p>
+                                                        <p>
+                                                            The following are examples of reporting circumstances that would not
+                                                            contradict the auditor’s adverse opinion or disclaimer of opinion:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The expression of an unmodified opinion on financial statements
+                                                                prepared under a given financial reporting framework and, within
+                                                                the same report, the expression of an adverse opinion on the same
+                                                                financial statements under a different financial reporting
+                                                                framework.
+                                                            </li>
+                                                            <li>
+                                                                The expression of a disclaimer of opinion regarding the results of
+                                                                operations, and cash flows, where relevant, and an unmodified
+                                                                opinion regarding the financial position (see SA 510. In this case,
+                                                                the auditor has not expressed a disclaimer of opinion on the
+                                                                financial statements as a whole. (Para A16)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Form and Content of the Auditor’s Report When the Opinion is
+                                                            Modified
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 16
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor modified the audit opinion, whether the auditor use
+                                                            the heading “Qualified Opinion,” “Adverse Opinion,” or “Disclaimer
+                                                            of Opinion,” as appropriate, for the Opinion section? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 17
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When auditor has expressed a qualified opinion due to a material
+                                                            misstatement in the financial statements, has the auditor stated in the
+                                                            auditor’s opinion, except for the effects of the matter(s) described in
+                                                            the Basis for Qualified Opinion section: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                When reporting in accordance with a fair presentation
+                                                                framework, the accompanying financial statements present fairly,
+                                                                in all material respects (or give a true and fair view of) […] in
+                                                                accordance with [the applicable financial reporting framework];
+                                                                or
+                                                            </li>
+                                                            <li>
+                                                                When reporting in accordance with a compliance framework, the
+                                                                accompanying financial statements have been prepared, in all
+                                                                material respects, in accordance with [the applicable financial
+                                                                reporting framework]? 
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            Whether modification arose from an inability to obtain sufficient
+                                                            appropriate audit evidence? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor used the corresponding phrase “except for the
+                                                            possible effects of the matter(s) ...” for the modified opinion? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: When the auditor expresses a qualified opinion, it would not be
+                                                            appropriate to use phrases such as “with the foregoing explanation” or
+                                                            “subject to” in the Opinion section as these are not sufficiently clear or
+                                                            forceful. (Para A20)]
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 18
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor expresses an adverse opinion, has the auditor stated
+                                                            in the auditor’s opinion, because of the significance of the matter(s)
+                                                            described in the Basis for Adverse Opinion section: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                When reporting in accordance with a fair presentation
+                                                                framework, the accompanying financial statements do not present
+                                                                fairly (or give a true and fair view of) […] in accordance with
+                                                                [the applicable financial reporting framework]; or 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                When reporting in accordance with a compliance framework, the
+                                                                accompanying financial statements have not been prepared, in all
+                                                                material respects, in accordance with [the applicable financial
+                                                                reporting framework]? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 19
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor disclaimed an opinion due to an inability to obtain
+                                                            sufficient appropriate audit evidence, has the auditor: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Stated that the auditor does not express an opinion on the
+                                                                accompanying financial statements; 
+                                                            </li>
+                                                            <li>
+                                                                Stated that, because of the significance of the matter(s) described
+                                                                in the Basis for Disclaimer of Opinion section, the auditor has not
+                                                                been able to obtain sufficient appropriate audit evidence to
+                                                                provide a basis for an audit opinion on the financial statements;
+                                                                and
+                                                            </li>
+                                                            <li>
+                                                                Amended the statement required by paragraph 24(b) of SA 700
+                                                                (Revised), which indicates that the financial statements have been
+                                                                audited, to state that the auditor was engaged to audit the
+                                                                financial statements? 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Basis for Opinion 
+
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 20
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor modifies the opinion on the financial statements, has
+                                                            the auditor in addition to the specific elements required by SA 700
+                                                            (Revised):
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Amend the heading “Basis for Opinion” required by paragraph
+                                                                28 of SA 700 (Revised) to “Basis for Qualified Opinion,” “Basis
+                                                                for Adverse Opinion,” or “Basis for Disclaimer of Opinion,” as
+                                                                appropriate; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Within this section, include a description of the matter giving rise
+                                                                to the modification? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 21
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether there is a material misstatement of the financial statements
+                                                            that relates to specific amounts in the financial statements (including
+                                                            quantitative disclosures in the notes to the financial statements)?
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor included in the Basis for Opinion section a
+                                                            description and quantification of the financial effects of the
+                                                            misstatement, unless impracticable? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: If it is not practicable to quantify the financial effects, the
+                                                            auditor shall so state in this section.] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 22
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether there is a material misstatement of the financial statements that relates to narrative disclosures? 
+
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor included in the Basis for Opinion section an
+                                                            explanation of how the disclosures are misstated? 
+                                                         </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 23
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether there is a material misstatement of the financial statements
+                                                            that relates to the non-disclosure of information required to be
+                                                            disclosed? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Discussed the non-disclosure with those charged with
+                                                                governance;
+                                                            </li>
+                                                            <li>
+                                                                Described in the Basis for Opinion section the nature of the
+                                                                omitted information; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Unless prohibited by law or regulation, included the omitted
+                                                                disclosures, provided it is practicable to do so and the auditor has
+                                                                obtained sufficient appropriate audit evidence about the omitted
+                                                                information?
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: Disclosing the omitted information within the Basis for
+                                                            Opinion section would not be practicable if: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The disclosures have not been prepared by management or the
+                                                                disclosures are otherwise not readily available to the auditor; or 
+                                                            </li>
+                                                            <li>
+                                                                In the auditor’s judgment, the disclosures would be unduly
+                                                                voluminous in relation to the auditor’s report.(Para A23)] 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 24
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the modification resulted from an inability to obtain
+                                                            sufficient appropriate audit evidence?
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor included in the Basis for Opinion section the
+                                                            reasons for that inability? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 25
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor expressed a qualified or adverse opinion, has the
+                                                            auditor amended the statement about whether the audit evidence
+                                                            obtained is sufficient and appropriate to provide a basis for the
+                                                            auditor’s opinion required by paragraph 28(d) of SA 700(Revised) to
+                                                            include the word “qualified” or “adverse”, as appropriate? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 26
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor disclaimed an opinion on the financial
+                                                            statements? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, the auditor shall not include the elements required by
+                                                            paragraphs 28(b) and 28(d) of SA 700 (Revised)? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Those elements are: 
+
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                A reference to the section of the auditor’s report where the
+                                                                auditor’s responsibilities are described; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                A statement about whether the audit evidence obtained is
+                                                                sufficient and appropriate to provide a basis for the auditor’s opinion.] 
+
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 27
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Even if the auditor has expressed an adverse opinion or disclaimed an
+                                                            opinion on the financial statements, has the auditor described in the
+                                                            Basis for Opinion section the reasons for any other matters of which
+                                                            the auditor is aware that would have required a modification to the
+                                                            opinion, and the effects thereof? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 28
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor disclaimed an opinion on the financial statements
+                                                            due to an inability to obtain sufficient appropriate audit evidence, has
+                                                            the auditor amended the description of the auditor’s responsibilities
+                                                            required by paragraphs 39–41 of SA 700 (Revised) to include only the
+                                                            following: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                A statement that the auditor’s responsibility is to conduct an audit
+                                                                of the entity’s financial statements in accordance with Standards
+                                                                on Auditing and to issue an auditor’s report; 
+                                                            </li>
+                                                            <li>
+                                                                A statement that, however, because of the matter(s) described in
+                                                                the Basis for Disclaimer of Opinion section, the auditor was not
+                                                                able to obtain sufficient appropriate audit evidence to provide a
+                                                                basis for an audit opinion on the financial statements; and 
+                                                            </li>
+                                                            <li>
+                                                                The statement about auditor independence and other ethical
+                                                                responsibilities required by paragraph 28(c) of SA 700
+                                                                (Revised)? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Considerations When the Auditor Disclaims an Opinion on the
+                                                            Financial Statements
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 29
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor disclaimed an opinion on the financial statements,
+                                                            has the auditor’s report included a Key Audit Matters section in
+                                                            accordance with SA 701 or an Other Information section in
+                                                            accordance with SA 720 (Revised)? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: Providing the reasons for the auditor’s inability to obtain
+                                                            sufficient appropriate audit evidence within the Basis for Disclaimer
+                                                            of Opinion section of the auditor’s report provides useful information
+                                                            to users in understanding why the auditor has disclaimed an opinion
+                                                            on the financial statements and may further guard against
+                                                            inappropriate reliance on them. However, communication of any key
+                                                            audit matters other than the matter(s) giving rise to the disclaimer of
+                                                            opinion may suggest that the financial statements as a whole are more
+                                                            credible in relation to those matters than would be appropriate in the
+                                                            circumstances, and would be inconsistent with the disclaimer of
+                                                            opinion on the financial statements as a whole. Similarly, it would not
+                                                            be appropriate to include an Other Information section in accordance
+                                                            with SA 720 (Revised) addressing the auditor’s consideration of the
+                                                            consistency of the other information with the financial statements.
+                                                            Accordingly, paragraph 29 of this SA prohibits a Key Audit Matters
+                                                            section or an Other Information section from being included in the auditor’s report when the auditor disclaims an opinion on the financial
+                                                            statements, unless the auditor is otherwise required by law or
+                                                            regulation to communicate key audit matters or to report on other
+                                                            information. (Para A26)] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Communication with Those Charged with Governance
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 30 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor expects to modify the opinion in the auditor’s report,
+                                                            has the auditor communicated with those charged with governance the
+                                                            circumstances that led to the expected modification and the wording
+                                                            of the modification? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                              </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

@@ -1,0 +1,1975 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 315, Identifying and Assessing the Risks of Material
+                                                Misstatement Through Understanding the Entity and its
+                                                Environment
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                    </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                               <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Risk Assessment Procedures and Related Activities 
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 5  
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                      <p>
+                                                            Whether the auditor has performed risk assessment procedures to
+                                                            provide a basis for the identification and assessment of risks of
+                                                            material misstatement at the financial statement and assertion level?
+                                                        </p>
+                                                       <p>
+                                                        [Note: Auditor should obtain an understanding of the entity and its
+                                                        environment, including the entity’s internal control (referred to
+                                                        hereafter as an “understanding of the entity”). The understanding
+                                                        establishes a frame of reference within which the auditor plans the
+                                                        audit and exercises professional judgment throughout the audit.
+                                                        Auditor can refer Para A1 for areas where understanding can play a
+                                                        major role.] 
+                                                        
+                                                       </p>
+                                                       <p>
+                                                        [Note: Auditor can use information obtained by performing risk
+                                                        assessment procedures and related activities as audit evidence to
+                                                        support assessments of the risks of material misstatement. (Para A2)
+                                                       </p>
+                                                       <p>
+                                                        Auditor is also required to assess that whether the understanding that
+                                                        has been obtained is sufficient to meet the objective stated in this SA.
+                                                        (Para A3)]
+                                                       </p>
+                                                       <p>
+                                                        [Note: Although the auditor is required to perform all the risk
+                                                        assessment procedures described in paragraph 6 of the SA 315 in the
+                                                        course of obtaining the required understanding of the entity, the
+                                                        auditor is not required to perform all of them for each aspect of that
+                                                        understanding. Auditor can perform other procedures listed in Para A5
+                                                        of this SA.]
+                                                       </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para 6 
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Whether the risk assessment procedures include the following: 
+                                                        </p>
+                                                     <ul>
+                                                            <li>
+                                                                Inquiries of management, of appropriate individuals within the
+                                                                internal audit function (if the function exists), and others within the
+                                                                entity who in the auditor’s judgment may have information that is
+                                                                likely to assist in identifying risk of material misstatement due to
+                                                                fraud or error
+                                                            </li>
+                                                            <li>
+                                                                Analytical procedures 
+                                                            </li>
+                                                            <li>
+                                                                Observation and inspection?
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Analytical procedures may include both financial and nonfinancial information. When analytical procedures use data aggregated
+                                                            at a high level, the results of those analytical procedures only provide a
+                                                            broad initial indication about whether a material misstatement may
+                                                            exist. Accordingly, in such cases, consideration of other information
+                                                            that has been gathered when identifying the risks of material misstatement together with the results of such analytical procedures
+                                                            may assist the auditor in understanding and evaluating the results of
+                                                            the analytical procedures. (Para A15)] 
+                                                          </p>
+                                                          <p>
+                                                            [Note: Auditor can observe or inspect the entity’s operation, internal
+                                                            control manuals, reports prepared by the management or entity’s
+                                                            premise and plant facilities and etc., (Para A17)]
+                                                          </p>
+                                                     </td>
+                                                     <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                     <td>
+                                                        <input type="text" class="form-control">
+                                                     </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 7 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has also considered information obtained from the
+                                                            auditor’s client acceptance or continuance processes which are
+                                                            relevant to identifying risks of material misstatement?
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 8
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Where the engagement partner has performed other engagements for
+                                                            the entity, whether the engagement partner has considered information
+                                                            obtained which is relevant to identifying risk of material
+                                                            misstatement?
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 9 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor intends to use information obtained from the
+                                                            auditor’s previous experience with the entity and from audit
+                                                            procedures performed in previous audits?
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the auditor has determined changes occurred since the
+                                                            previous audit that may affect its relevance to the current audit?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor can make inquiries and perform other appropriate audit
+                                                            procedures, such as walk-throughs of relevant systems to determine
+                                                            whether changes have occurred that may affect the relevance of such
+                                                            information. (Para A19)]
+                                                        </p>
+                                                        <p>
+                                                            [Note: Previous experience may assist auditor with information about
+                                                            such matters as:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Past misstatements and whether they were corrected on a timely
+                                                                basis.
+                                                            </li>
+                                                            <li>
+                                                                The nature of the entity and its environment, and the entity’s
+                                                                internal control (including deficiencies in internal control). 
+                                                            </li>
+                                                            <li>
+                                                                Significant changes that the entity or its operations may have
+                                                                undergone since the prior financial period, which may assist the
+                                                                auditor in gaining a sufficient understanding of the entity to
+                                                                identify and assess risks of material misstatement. (Para A18)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 10
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the engagement partner and other key engagement team
+                                                            members has discussed the susceptibility of entity’s financial
+                                                            statements to material misstatement and application of applicable
+                                                            financial reporting framework to entity’s facts and circumstances?
+                                                        </p>
+                                                        <p>
+                                                            Whether the engagement partner has determined that which matters
+                                                            are to be communicated to engagement team members not involved in
+                                                            the discussion?
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            The Required Understanding of the Entity and its Environment,
+                                                            Including the Entity’s Internal Control 
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 11 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has obtained an understanding of the following: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Relevant industry, regulatory and other external factors including
+                                                                the applicable financial reporting framework. 
+                                                            </li>
+                                                            <li>
+                                                                The nature of the entity, including: 
+                                                            </li>
+                                                            <ul>
+                                                                 <li>
+                                                                    its operations; 
+                                                                 </li>
+                                                                 <li>
+                                                                    its ownership and governance structures; 
+                                                                </li>
+                                                                <li>
+                                                                    the types of investments that the entity is making and plans to
+                                                                    make including investments in special -purpose entities; and
+                                                                </li>
+                                                                <li>
+                                                                    the way that the entity is structured and how it is financed;
+                                                                </li>
+                                                                <li>
+                                                                    to enable the auditor to understand the classes of transactions,
+                                                                    account balances, and disclosures to be expected in the financial
+                                                                    statements. 
+                                                                  </li>
+                                                            </ul>
+                                                            <li>
+                                                                The entity’s selection and application of accounting policies,
+                                                                including the reasons for changes thereto. The auditor shall
+                                                                evaluate whether the entity’s accounting policies are appropriate
+                                                                for its business and consistent with the applicable financial
+                                                                reporting framework and accounting policies used in the relevant
+                                                                industry. 
+                                                            </li>
+                                                            <li>
+                                                                The entity’s objectives and strategies and those related business
+                                                                risks that may result in risk of material misstatement. 
+                                                            </li>
+                                                            <li>
+                                                                The measurement and review of the entity’s financial
+                                                                performance?
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: Auditor can refer Para A23, A25 and A28 for examples of
+                                                            matters that an auditor may consider while understanding industry,
+                                                            regulatory factors and other factors.] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor can refer examples listed in Para A30 of matters that
+                                                            can be considered when obtaining understanding of the nature of the
+                                                            entity.]
+                                                        </p>
+                                                        <p>
+                                                            [Note: An understanding of the entity’s selection and application of
+                                                            accounting policies may encompass such matters as: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The methods the entity uses to account for significant and unusual
+                                                                transactions. 
+                                                            </li>
+                                                            <li>
+                                                                The effect of significant accounting policies in controversial or
+                                                                emerging areas for which there is a lack of authoritative guidance
+                                                                or consensus. 
+                                                            </li>
+                                                            <li>
+                                                                Changes in the entity’s accounting policies. 
+                                                            </li>
+                                                            <li>
+                                                                Financial reporting standards and laws and regulations that are
+                                                                new to the entity, and when and how the entity will adopt such
+                                                                requirements. (Para A34)] 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Auditor can refer Para A38 of this SA for examples of matters
+                                                            that the auditor may consider when obtaining an understanding of the
+                                                            entity’s objectives, strategies and related business risks that may result in a risk of material misstatement of the financial statements.] 
+                                                        </p>
+                                                    </td>
+                                                     <p>
+                                                        [Note: The measurement and review of financial performance is not
+                                                        the same as the monitoring of controls, though their purposes may
+                                                        overlap. The measurement and review of performance is directed at
+                                                        whether business performance is meeting the objectives set by
+                                                        management. Monitoring of controls is specifically concerned with the
+                                                        effective operation of internal control. In some cases, however,
+                                                        performance indicators also provide information that enables
+                                                        management to identify deficiencies in internal control. (Para A43)]
+                                                     </p>
+                                                     <p>
+                                                        [Note: Auditor can refer para A44 and A45 for examples of internallygenerated and external information used by management for
+                                                        measuring and reviewing financial performance, and which the auditor
+                                                        may consider.]
+                                                     </p>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            The Entity’s Internal Control
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 12
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has obtained an understanding of internal control
+                                                            relevant to the audit?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Internal Control is divided in following five components:
+                                                        </p>
+                                                        <ol type="1">
+                                                            <li>
+                                                                The control environment; 
+                                                            </li>
+                                                            <li>
+                                                                The entity’s risk assessment process; 
+                                                            </li>
+                                                            <li>
+                                                                The information system, including the related business processes,
+                                                                relevant to financial reporting, and communication; 
+                                                            </li>
+                                                            <li>
+                                                                Control activities; and
+                                                            </li>
+                                                            <li>
+                                                                Monitoring of controls (Refer A57 of SA) 
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            Auditor can refer Appendix 1–“Internal Control Components” of this
+                                                            SA which provides further explanation of these components of internal
+                                                            control.]
+                                                        </p>
+                                                        <p>
+                                                            [Note: An entity’s system of internal control contains manual elements
+                                                            and often contains automated elements. The characteristics of manual
+                                                            or automated elements are relevant to the auditor’s risk assessment and
+                                                            further audit procedures based thereon. (Para A59)]
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor can refer Para A62 which illustrates risks IT poses to
+                                                            an entity’s internal control.] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Manual elements in internal control may be more suitable
+                                                            where judgment and discretion are required. Manual control elements
+                                                            may be less suitable where there is high volume or recurring
+                                                            transactions, or in situations where errors that can be anticipated or
+                                                            predicted can be prevented, or detected and corrected, by control
+                                                            parameters that are automated or Control activities where the specific
+                                                            ways to perform the control can be adequately designed and
+                                                            automated. (Para A63 & A64)]
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor can refer Para A67 for factors relevant to the judgment
+                                                            about whether a control, individually or in combination with others, is relevant to the audit.] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Controls over the completeness and accuracy of information
+                                                            produced by the entity may be relevant to the audit if Auditor intends
+                                                            to make use of the information in designing and performing further
+                                                            procedures.(Para A68)]
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 13
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has evaluated the design of controls relevant to
+                                                            the audit and determined whether they have been implemented by
+                                                            performing procedures in addition to inquiry of the entity’s personnel?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Risk assessment procedures to obtain audit evidence about the
+                                                            design and implementation of relevant controls may include inquiring
+                                                            of entity personnel, observing the application of specific controls,
+                                                            inspecting documents and reports, tracing transactions through the
+                                                            information system relevant to financial reporting. (Para A73)]
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor should note that obtaining an understanding of an
+                                                            entity’s controls is not sufficient to test their operating effectiveness,
+                                                            unless there is some automation that provides for the consistent
+                                                            operation of the controls. (Para A74)]
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 14
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor evaluated following while obtaining understanding of
+                                                            control environment? 
+                                                        </p>
+                                                       <ol type="a">
+                                                            <li>
+                                                                Whether the management, with the oversight of those charged
+                                                                with governance, has created and maintained a culture of honesty
+                                                                and ethical behaviour?; and  
+                                                            </li>
+                                                            <li>
+                                                                Whether the strengths in the control environment elements
+                                                                collectively provide an appropriate foundation for the other
+                                                                components of internal control, and whether those other
+                                                                components are not undermined by deficiencies in the control
+                                                                environment? 
+                                                            </li>
+                                                         </ol>
+                                                        <p>
+                                                            [Note: Elements of the control environment that may be relevant
+                                                            when obtaining an understanding of the control environment include
+                                                            the following:
+                                                        </p>
+                                                       <ul>
+                                                        <li>
+                                                            Communication and enforcement of integrity and ethical values
+                                                        </li>
+                                                        <li>
+                                                            Commitment to competence 
+                                                        </li>
+                                                        <li>
+                                                            Participation by those charged with governance
+                                                        </li>
+                                                        <li>
+                                                            Management’s philosophy and operating style
+                                                        </li>
+                                                        <li>
+                                                            Organisational structure 
+                                                         </li>
+                                                         <li>
+                                                            Assignment of authority and responsibility 
+                                                         </li>
+                                                         <li>
+                                                            Human resource policies and practices (Refer Para A76)]
+                                                         </li>
+                                                       </ul>
+                                                       <p>
+                                                        [Note: Auditor may also consider how management has responded to
+                                                        the findings and recommendations of the internal audit function
+                                                        regarding identified deficiencies in internal control relevant to the
+                                                        audit, including whether and how such responses have been
+                                                        implemented, and whether they have been subsequently evaluated by the internal audit function. (Para A78)] 
+                                                       </p>
+                                                       <p>
+                                                        [Note: The effectiveness of the design of the control environment in
+                                                        relation to participation by those charged with governance can be
+                                                        influenced by their independence from management and their ability to
+                                                        evaluate the actions of management, their understanding of entity’s
+                                                        business transactions and the extent to which they evaluate whether the
+                                                        financial statements are prepared in accordance with the applicable
+                                                        financial reporting framework. (Para A79)] 
+                                                       </p>
+                                                       <p>
+                                                        [Note: The control environment in itself does not prevent, or detect
+                                                        and correct, a material misstatement. It may, however, influence the
+                                                        evaluation of the effectiveness of other controls and thereby,
+                                                        assessment of the risks of material misstatement. (Para A82)]
+                                                       </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 15
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor obtained an understanding of the entity’s process for: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Identifying business risks relevant to financial reporting
+                                                                objectives;
+                                                            </li>
+                                                            <li>
+                                                                Estimating the significance of the risks; 
+                                                            </li>
+                                                            <li>
+                                                                Assessing the likelihood of their occurrence; and 
+                                                            </li>
+                                                            <li>
+                                                                Deciding about actions to address those risks? 
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 16
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the entity has established risk assessment process? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the auditor has obtained an understanding of it and
+                                                            result thereof?
+                                                        </p>
+                                                        <p>
+                                                            Has the auditor identified risks of material misstatement that
+                                                            management failed to identify while obtaining understanding of
+                                                            entity’s risk assessment process? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the auditor has evaluated that there was an underlying
+                                                            risk of a kind that the auditor expects would have been identified by
+                                                            the entity’s risk assessment process. 
+                                                          </p>
+                                                          <p>
+                                                            If there is such a risk, has the auditor obtained an understanding of
+                                                            why that process failed to identify it and evaluated whether the process
+                                                            is appropriate to its circumstances or determined if there is a
+                                                            significant deficiency in internal control with regard to the entity’s risk
+                                                            assessment process?
+                                                          </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 17
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Where the entity has not established the risk assessment process, has
+                                                            the auditor discussed with management 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                business risks relevant to financial reporting objectives have been
+                                                                identified and
+                                                            </li>
+                                                            <li>
+                                                                how they have been addressed?
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Auditor shall evaluate whether the absence of a documented
+                                                            risk assessment process is appropriate in the circumstances or
+                                                            determine whether it represents a significant deficiency in internal
+                                                            control.]
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 18
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has obtained an understanding of the information
+                                                            system, including the related business processes, relevant to financial
+                                                            reporting, including the following areas:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The classes of transactions in the entity’s operations that are
+                                                                significant to the financial statements;
+                                                            </li>
+                                                            <li>
+                                                                The procedures, within both information technology (IT) and
+                                                                manual systems, by which those transactions are initiated,
+                                                                recorded, processed, corrected as necessary, transferred to the
+                                                                general ledger and reported in the financial statements;
+                                                            </li>
+                                                            <li>
+                                                                The related accounting records, supporting information and
+                                                                specific accounts in the financial statements that are used to
+                                                                initiate, record, process and report transactions; this includes the
+                                                                correction of incorrect information and how information is
+                                                                transferred to the general ledger. The records may be in either
+                                                                manual or electronic form;
+                                                            </li>
+                                                            <li>
+                                                                How the information system captures events and conditions, other
+                                                                than transactions, that are significant to the financial statements; 
+                                                            </li>
+                                                            <li>
+                                                                The financial reporting process used to prepare the entity’s
+                                                                financial statements, including significant accounting estimates
+                                                                and disclosures; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Controls surrounding journal entries, including non-standard
+                                                                journal entries used to record non-recurring, unusual transactions
+                                                                or adjustments? 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: The information system relevant to financial reporting
+                                                            objectives, which includes the accounting system, consists of the
+                                                            procedures and records designed and established to:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Initiate, record, process, and report entity transactions (as well as
+                                                                events and conditions) and to maintain accountability for the
+                                                                related assets, liabilities, and equity;
+                                                            </li>
+                                                            <li>
+                                                                Resolve incorrect processing of transactions; 
+                                                            </li>
+                                                            <li>
+                                                                Process and account for system overrides or bypasses to controls;
+                                                            </li>
+                                                            <li>
+                                                                Transfer information from transaction processing systems to the
+                                                                general ledger; 
+                                                            </li>
+                                                            <li>
+                                                                Capture information relevant to financial reporting for events and
+                                                                conditions other than transactions; and 
+                                                            </li>
+                                                            <li>
+                                                                Ensure information required to be disclosed by the applicable
+                                                                financial reporting framework is accumulated, recorded,
+                                                                processed, summarised and appropriately reported in the financial
+                                                                statements. (Para A88)] 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Non-standard journal entries to record non-recurring, unusual
+                                                            transactions or adjustments include consolidating adjustments and
+                                                            entries for a business combination or disposal or non-recurring
+                                                            estimates such as the impairment of an asset. (Para A90)]
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 19
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has obtained understanding of how the entity
+                                                            communicates financial reporting roles and responsibilities and
+                                                            significant matters relating to financial reporting, including: 
+                                                        </p>
+                                                        <ol type="a">
+                                                             <li>
+                                                                Communications between management and those charged with
+                                                                governance; and
+                                                             </li>
+                                                             <li>
+                                                                External communications, such as those with regulatory
+                                                                authorities? 
+                                                             </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 20
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor obtained understanding of control activities which are
+                                                            necessary to assess the risks of material misstatement at the assertion
+                                                            level and design further audit procedures responsive to assessed risks? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor is required to understand only those control activities
+                                                            related to significant class of transactions, account balance, and
+                                                            disclosure in the financial statements and the assertions which the
+                                                            auditor finds relevant in his risk assessment process.]
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor emphasis may be on identifying and obtaining an
+                                                            understanding of control activities that address the areas where the
+                                                            auditor considers that risks of material misstatement are likely to be
+                                                            higher. When multiple control activities each achieve the same
+                                                            objective, it is unnecessary to obtain an understanding of each of the
+                                                            control activities related to such objective. (Para A98)]
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 21
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p> 
+                                                            Has the auditor obtained understanding of how the entity has
+                                                            responded to risks arising from IT?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Controls over IT systems are effective when they maintain the
+                                                            integrity of information and the security of the data such systems
+                                                            process and include effective general IT-controls and application
+                                                            controls. (Para A102)]
+                                                        </p>
+                                                   </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 22
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p> 
+                                                            Whether the auditor has obtained an understanding of the major
+                                                            activities that the entity uses to monitor internal control over financial
+                                                            reporting, including those related to those control activities relevant to
+                                                            the audit, and how the entity initiates remedial actions to deficiencies
+                                                            in its controls?
+                                                        </p>
+                                                   </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 23 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p> 
+                                                            Whether the entity has an internal audit function? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor obtained understanding of the nature of the
+                                                            internal audit function’s responsibilities, its organisational status, and
+                                                            the activities performed, or to be performed? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: If the nature of the internal audit function’s responsibilities and
+                                                            assurance activities are related to the entity’s financial reporting, the
+                                                            auditor may also be able to use the work of the internal audit function
+                                                            to modify the nature or timing, or reduce the extent, of audit
+                                                            procedures to be performed directly by the auditor in obtaining audit
+                                                            evidence. Auditors may be more likely to be able to use the work of an
+                                                            entity’s internal audit function when it appears, that the entity has an
+                                                            internal audit function that is adequately and appropriately resourced relative to the size of the entity and the nature of its operations and has
+                                                            a direct reporting relationship to those charged with governance. (Para
+                                                            A112) 
+                                                        </p>
+                                                        <p>
+                                                            If, based on the auditor’s preliminary understanding of the internal
+                                                            audit function, the auditor expects to use the work of the internal audit
+                                                            function to modify the nature or timing, or reduce the extent, of audit
+                                                            procedures to be performed, SA 610 (Revised) applies. (Para A113)]
+                                                        </p>
+                                                   </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 24 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has obtained an understanding of the sources of
+                                                            the information used in the entity’s monitoring activities and the basis
+                                                            upon which management considers the information to be sufficiently
+                                                            reliable for the purpose?
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Identifying and Assessing the Risks of Material Misstatement
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 25 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            To provide a basis for designing and performing further audit
+                                                            procedures has the auditor identified and assessed the risks of material
+                                                            misstatement at: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                the financial statement level; and 
+                                                            </li>
+                                                            <li>
+                                                                the assertion level for classes of transactions, account balances,
+                                                                and disclosures?
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Auditor can use assertions described in Para A123 of this SA
+                                                            for assessment of risk of material misstatement at assertion level.]
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 26  
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While identifying and assessing the risks of material misstatement, has
+                                                            the auditor: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Identified risks throughout the process of obtaining an
+                                                                understanding of the entity and its environment, including relevant
+                                                                controls that relate to the risks, and by considering the classes of
+                                                                transactions, account balances, and disclosures in the financial
+                                                                statements; 
+                                                            </li>
+                                                            <li>
+                                                                Assessed the identified risks, and evaluated whether they relate
+                                                                more pervasively to the financial statements as a whole and
+                                                                potentially affect many assertions; 
+                                                            </li>
+                                                            <li>
+                                                                Relate the identified risks to what can go wrong at the assertion
+                                                                level, taking account of relevant controls that the auditor intends to
+                                                                test; and
+                                                            </li>
+                                                            <li>
+                                                                Considered the likelihood of misstatement, including the
+                                                                possibility of multiple misstatements, and whether the potential
+                                                                misstatement is of a magnitude that could result in a material
+                                                                misstatement? 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Auditor can refer Appendix 2-“Conditions and Events that May
+                                                            Indicate Risks of Material Misstatement” of this SA which provides
+                                                            examples of conditions and events that may indicate the existence of
+                                                            risks of material misstatement.] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Controls can be either directly or indirectly related to an assertion. The more indirect the relationship, the less effective that
+                                                            control may be in preventing, or detecting and correcting,
+                                                            misstatements in that assertion. For example, a sales manager’s review
+                                                            of a summary of sales activity for specific stores by region ordinarily
+                                                            is only indirectly related to the completeness assertion for sales
+                                                            revenue. Accordingly, it may be less effective in reducing risk for that
+                                                            assertion than controls more directly related to that assertion, such as
+                                                            matching shipping documents with billing documents. (Para A130)]
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                               <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 27,
+                                                            29 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has determined that any of the risks identified are,
+                                                            in the auditor’s judgment, a significant risk?
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor obtained understanding of the entity’s controls,
+                                                            including control activities, relevant to that risk?
+                                                        </p>
+                                                        <p>
+                                                            [Note: The auditor’s understanding of whether the entity has designed
+                                                            and implemented controls for significant risks arising from non-routine
+                                                            or judgmental matters includes whether and how management
+                                                            responds to the risks. Such responses might include: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Control activities such as a review of assumptions by senior
+                                                                management or experts.
+                                                            </li>
+                                                            <li>
+                                                                Documented processes for estimations. 
+                                                            </li>
+                                                            <li>
+                                                                Approval by those charged with governance. (Para A136) 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            Where management has not implemented controls over significant
+                                                            risk, auditor is required to communicate the same to Those charged
+                                                            with Governance in accordance with Para A7 of SA 265.] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 28
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            In exercising the judgment mentioned in Para 27 of this SA, whether
+                                                            the auditor has excluded the effects of identified controls related to the
+                                                            risk and considered following: 
+                                                        </p>
+                                                       <ul>
+                                                            <li>
+                                                                Whether the risk is a risk of fraud; 
+                                                            </li>
+                                                            <li>
+                                                                Whether the risk is related to recent significant economic,
+                                                                accounting, or other developments like changes in regulatory
+                                                                environment, etc., and, therefore, requires specific attention;  
+                                                            </li>
+                                                            <li>
+                                                                The complexity of transactions;  
+                                                            </li>
+                                                            <li>
+                                                                Whether the risk involves significant transactions with related
+                                                                parties; 
+                                                            </li>
+                                                            <li>
+                                                                The degree of subjectivity in the measurement of financial
+                                                                information related to the risk, especially those measurements
+                                                                involving a wide range of measurement uncertainty; and 
+                                                            </li>
+                                                            <li>
+                                                                Whether the risk involves significant transactions that are outside
+                                                                the normal course of business for the entity, or that otherwise
+                                                                appear to be unusual?
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Auditor can refer to Para A132 and A133 of this SA for matter
+                                                            giving rise to significant non-routine transactions and significant
+                                                            judgmental matters that require the development of accounting estimates.] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 30
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor assessed that only substantive procedures designed in
+                                                            respect of the risk do not provide sufficient appropriate audit evidence
+                                                            in respect of some risk? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor obtained understanding of entity’s controls over
+                                                            such risks? 
+                                                         </p>
+                                                         <p>
+                                                            [Note: Such risks may relate to the inaccurate or incomplete recording
+                                                            of routine and significant classes of transactions or account balances,
+                                                            the characteristics of which often permit highly automated processing
+                                                            with little or no manual intervention. In such cases, the entity’s
+                                                            controls over such risks are relevant to the audit and the auditor shall
+                                                            obtain an understanding of them. (Para 30)] 
+                                                         </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 31
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Where there is change in risk assessment during the course of the audit
+                                                            as additional audit evidence is obtained, whether the auditor has
+                                                            obtained audit evidence from performing further audit procedures, or if
+                                                            new information is obtained, either of which is inconsistent with the
+                                                            audit evidence on which the auditor originally based the assessment,
+                                                            whether the auditor has revised the assessment and modified the
+                                                            further planned audit procedures accordingly? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Documentation
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 32
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has documented following:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The discussion among the engagement team where required by
+                                                                paragraph 10 of this SA, and the significant decisions reached; 
+                                                            </li>
+                                                            <li>
+                                                                Key elements of the understanding obtained regarding each of the
+                                                                aspects of the entity and its environment specified in paragraph 11
+                                                                of this SA and of each of the internal control components specified
+                                                                in paragraphs 14-24 of this SA; the sources of information from
+                                                                which the understanding was obtained; and the risk assessment
+                                                                procedures performed;
+                                                            </li>
+                                                            <li>
+                                                                The identified and assessed risks of material misstatement at the
+                                                                financial statement level and at the assertion level as required by
+                                                                paragraph 25 of this SA; and
+                                                            </li>
+                                                            <li>
+                                                                The risks identified, and related controls about which the auditor
+                                                                has obtained an understanding, as a result of the requirements in
+                                                                paragraphs 27-30 of this SA?
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                 </tr>
+                                              </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

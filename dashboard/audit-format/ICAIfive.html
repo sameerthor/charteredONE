@@ -1,0 +1,2302 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 240, The Auditor’s Responsibilities Relating to Fraud in an
+Audit of Financial Statements 
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                            
+                                    </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <h5>
+                                                                Professional skepticism 
+                                                            </h5>
+                                                      </td>
+                                                        
+                                                    </tr> 
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                12 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                In accordance with SA 200, auditor shall maintain professional
+                                                                skepticism throughout the audit, recognizing the possibility that a
+                                                                material misstatement due to fraud could exist, notwithstanding the
+                                                                auditor’s past experience of honesty and integrity of the entity’s
+                                                                management and those charged with governance.
+                                                            </p>
+                                                            <p>
+                                                                Professional skepticism is an attitude that includes a questioning mind
+                                                                and a critical assessment of audit evidence. Maintaining professional
+                                                                skepticism requires an ongoing questioning of whether the information
+                                                                and audit evidence obtained suggests that a material misstatement due to
+                                                                fraud may exist. It includes considering the reliability of the information
+                                                                to be used as audit evidence and the controls over its preparation and
+                                                                maintenance where relevant. 
+                                                                
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                13, 14
+                                                                
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Are conditions identified during the audit causing the auditor to believe
+                                                                that the records and documents furnished by the management may not
+                                                                be authentic or that the terms contained in any document furnished by
+                                                                the management have been modified but not disclosed to the auditor?
+                                                            </p>
+                                                            <p>
+                                                                If answer to the above question is ‘Yes’, please specify actions taken
+                                                                and mitigation steps, considering the guidance below and possible steps:
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    Investigations relating to such condition/documentation.
+                                                                </li>
+                                                                <li>
+                                                                    Obtaining a direct confirmation from the third party in respect of
+                                                                    such documentation. 
+                                                                </li>
+                                                                <li>
+                                                                    Involvement of an expert to assess the authenticity of the
+                                                                    documentation furnished. 
+                                                                </li>
+                                                            </ul>
+                                                            <p>
+                                                                [Note: An audit performed in accordance with SAs rarely involves the
+                                                                authentication of documents, nor is the auditor trained as or expected to
+                                                                be an expert in such authentication. However, when the auditor
+                                                                identifies conditions that cause the auditor to believe that a document
+                                                                may not be authentic or that terms in a document have been modified
+                                                                but not disclosed to the auditor, possible procedures to investigate
+                                                                further may include: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    Confirming directly with the third party. 
+                                                                </li>
+                                                                <li>
+                                                                    Using the work of an expert to assess the document’s authenticity
+                                                                    (Para A9)] 
+                                                                </li>
+                                                            </ul>
+                                                            <p>
+                                                                Whether responses to the auditor inquiries of management or those
+                                                                charged with governance are inconsistent? 
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor has investigated these inconsistencies? Please
+                                                                document the investigation undertaken and result of such investigation.
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <h5>
+                                                                Discussion Among the Engagement Team
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                15 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has a Risk Assessment and Planning Discussion (RAPD) been carried
+                                                                out amongst the engagement team members as required by SA 315? 
+                                                            </p>
+                                                            <p>
+                                                                Whether the RAPD included discussion on susceptibility of the financial
+                                                                statements to material misstatement due to fraud? 
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <h5>
+                                                                Risk Assessment Procedures and Related Activities 
+
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                17
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor made enquiries relating to: 
+
+                                                            </p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    Whether management has made any assessment of the risk that
+                                                                    the financial statements may be materially misstated due to
+                                                                    fraud, including the nature, extent and frequency of such
+                                                                    assessments 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    Whether management has established a process for identifying
+                                                                    and responding to the risks of fraud in the entity, including any
+                                                                    specific risks of fraud that management has identified or that
+                                                                    have been brought to its attention, or whether management has
+                                                                    established a process for identifying classes of transactions,
+                                                                    account balances, or disclosures for which a risk of fraud is
+                                                                    likely to exist
+                                                                </li>
+                                                                <li>
+                                                                    Whether management has communicated to those charged with
+                                                                    governance regarding its processes for identifying and
+                                                                    responding to the risks of fraud in the entity 
+                                                                </li>
+                                                                <li>
+                                                                    Whether management has communicated its views on business
+                                                                    practices and ethical behavior to the entity’s employees. 
+                                                                    
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                18 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor made inquiries of management, and others within the
+                                                                entity as appropriate, to determine whether the persons to whom such
+                                                                enquires were directed have knowledge of any actual, suspected or
+                                                                alleged fraud affecting the entity? 
+                                                            </p>
+                                                            <p>
+                                                                [Note: Examples of others within the entity to whom the auditor may
+                                                                direct inquiries about the existence or suspicion of fraud include: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    Operating personnel not directly involved in the financial reporting
+                                                                    process.
+                                                                </li>
+                                                                <li>
+                                                                    Employees with different levels of authority.
+                                                                </li>
+                                                                <li>
+                                                                    Employees involved in initiating, processing or recording complex or
+                                                                    unusual transactions and those who supervise or monitor such
+                                                                    employees.
+                                                                </li>
+                                                                <li>
+                                                                    In-house legal counsel.
+                                                                </li>
+                                                                <li>
+                                                                    Chief ethics officer or equivalent person. 
+                                                                </li>
+                                                                <li>
+                                                                    The person or persons charged with dealing with allegations of fraud.
+                                                                    (Para A16) 
+                                                                </li>
+                                                            </ul>
+                                                            <p>
+                                                                Management is often in the best position to perpetrate fraud.
+                                                                Accordingly, when evaluating management’s responses to inquiries with
+                                                                an attitude of professional skepticism, the auditor may judge it necessary
+                                                                to corroborate responses to inquiries with other information. (Para A17)]
+                                                                
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                19 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                         <p>
+                                                            Where the entity has an internal audit function, did the auditor make
+                                                            enquiries with internal audit to determine whether it has knowledge of
+                                                            any actual, suspected or alleged fraud affecting the entity, and to obtain
+                                                            the views of internal audit about the risks of fraud? 
+                                                         </p>   
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                20
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                         <p>
+                                                            Where those charged with governance are not involved in managing the
+                                                            entity, has the auditor obtained an understanding of how those charged
+                                                            with governance exercise oversight of management’s processes for
+                                                            identifying and responding to the risks of fraud in the entity and the
+                                                            internal control that management has established to mitigate these risks?  
+                                                         </p>  
+                                                         <p>
+                                                            [Note: An understanding of the oversight exercised by those charged
+                                                            with governance may provide insights regarding the susceptibility of the
+                                                            entity to management fraud, the adequacy of internal control over risks
+                                                            of fraud, and the competency and integrity of management. The auditor
+                                                            may obtain this understanding in a number of ways, such as by attending
+                                                            meetings where such discussions take place, reading the minutes from
+                                                            such meetings or making inquiries of those charged with governance
+                                                            (Para A20) 
+                                                         </p> 
+                                                         <h5>
+                                                            Considerations Specific to Smaller Entities 
+
+                                                         </h5>
+                                                         <p>
+                                                            In some cases, all of those charged with governance are involved in
+                                                            managing the entity. This may be the case in a small entity where a
+                                                            single owner manages the entity and no one else has a governance role.
+                                                            In these cases, there is ordinarily no action on the part of the auditor
+                                                            because there is no oversight separate from management (Para A21)] 
+                                                            
+                                                         </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            21 
+                                                             
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                     <p>
+                                                        Has the auditor made inquiries of those charged with governance to
+                                                        determine whether they have knowledge of any actual, suspected or
+                                                        alleged fraud affecting the entity? 
+                                                        
+                                                     </p> 
+                                                     <p>
+                                                        Whether the auditor has corroborated these inquiries with the responses
+                                                        to the inquiries of management? 
+                                                        
+                                                     </p>  
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            22, 34
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                     <p>
+                                                        Has the auditor identified any unusual or unexpected relationships while
+                                                        performing analytical procedures particularly with regards to revenue? If
+                                                        yes, whether evaluation of such unusual or unexpected relationships
+                                                        indicates any risk of material misstatement due to fraud? 
+                                                     </p> 
+                                                     <p>
+                                                        Is auditor’s evaluation of analytical procedures performed, while
+                                                        forming an overall conclusion as to whether the financial statements as a
+                                                        whole are consistent with the auditor’s understanding of the entity and
+                                                        its environment, indicate a previously unrecognized risk of material
+                                                        misstatement due to fraud? 
+                                                     </p>  
+                                                     <p>
+                                                        [Note: Determining which particular trends and relationships may
+                                                        indicate a risk of material misstatement due to fraud requires
+                                                        professional judgment. Unusual relationships involving year-end revenue and income are particularly relevant. These might include, for
+                                                        example: uncharacteristically large amounts of income being reported in
+                                                        the last few weeks of the reporting period or unusual transactions; or
+                                                        income that is inconsistent with trends in cash flow from
+                                                        operations.(Para A49)] 
+                                                     </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            23 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                     <p>
+                                                        Whether any other information obtained during the course of audit
+                                                        indicates risk of material misstatement due to fraud? 
+                                                     </p> 
+                                                     <p>
+                                                        [Note: In addition to information obtained from applying analytical
+                                                        procedures, other information obtained about the entity and its
+                                                        environment may be helpful in identifying the risk of material
+                                                        misstatement due to fraud. The discussion among team members may
+                                                        provide information that is helpful in identifying such risks. In addition,
+                                                        information obtained from the auditor’s client acceptance and retention
+                                                        processes, and experience gained on other engagements performed for
+                                                        the entity, for example engagements to review interim financial
+                                                        information, may be relevant in the identification of the risks of material
+                                                        misstatement due to fraud.(Para A22)] 
+                                                        
+                                                     </p>  
+                                                  </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            24 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the evaluation of information obtained from the other risk
+                                                            assessment procedures and related activities performed, indicates that
+                                                            one or more fraud risk factors are present?
+                                                        </p>
+                                                        <p>
+                                                            [Note: The fact that fraud is usually concealed can make it very difficult
+                                                            to detect. Nevertheless, the auditor may identify events or conditions
+                                                            that indicate an incentive or pressure to commit fraud or provide an
+                                                            opportunity to commit fraud (fraud risk factors). For example:
+                                                        </p>
+                                                        <ul>
+                                                             <li>
+                                                                The need to meet expectations of third parties to obtain additional
+                                                                equity financing may create pressure to commit fraud; 
+                                                             </li>
+                                                             <li>
+                                                                The granting of significant bonuses if unrealistic profit targets are
+                                                                met may create an incentive to commit fraud; and
+                                                             </li>
+                                                             <li>
+                                                                A control environment that is not effective may create an opportunity
+                                                                to commit fraud. (Para A23) 
+                                                             </li>
+                                                        </ul>
+                                                        <p>
+                                                            Examples of fraud risk factors related to fraudulent financial reporting
+                                                            and misappropriation of assets are presented in Appendix 1 to this
+                                                            checklist. These illustrative risk factors are classified based on the three
+                                                            conditions that are generally present when fraud exists:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                An incentive or pressure to commit fraud; 
+                                                            </li>
+                                                            <li>
+                                                                A perceived opportunity to commit fraud; and 
+                                                            </li>
+                                                            <li>
+                                                                An ability to rationalize the fraudulent action. (Para A25) 
+
+                                                            </li>
+                                                        </ul>
+                                                        <h5>
+                                                            Considerations Specific to Smaller Entities
+                                                        </h5>
+                                                        <p>
+                                                            In the case of a small entity, some or all of these considerations may be
+                                                            inapplicable or less relevant. For example, a smaller entity may not have
+                                                            a written code of conduct but, instead, may have developed a culture
+                                                            that emphasizes the importance of integrity and ethical behavior through
+                                                            oral communication and by management example. Domination of
+                                                            management by a single individual in a small entity does not generally, in and of itself, indicate a failure by management to display and
+                                                            communicate an appropriate attitude regarding internal control and the
+                                                            financial reporting process. In some entities, the need for management
+                                                            authorization can compensate for otherwise deficient controls and
+                                                            reduce the risk of employee fraud. However, domination of management
+                                                            by a single individual can be a potential weakness since there is an
+                                                            opportunity for management override of controls. (Para A27)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Identification and Assessment of the Risks of Material Misstatement Due to Fraud 
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            25, 27
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor identified and assessed the risks of material
+                                                            misstatement due to fraud at the financial statement level, and at the
+                                                            assertion level for classes of transactions, account balances and
+                                                            disclosures? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            Have the risks of material misstatements due to fraud been considered as
+                                                            significant risks and has the auditor obtained an understanding of the
+                                                            entity’s related controls, including control activities relevant to such
+                                                            risks? 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            26, 47
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor considered presumption of fraud risk in revenue
+                                                            recognition while identifying and assessing the risk of material
+                                                            misstatement due to fraud?
+                                                        </p>
+                                                        <p>
+                                                            If answer to above is Yes, has the auditor evaluated which types of
+                                                            revenue, revenue transactions or assertions give rise to fraud risks?
+                                                        </p>
+                                                        <p>
+                                                            If answer to above is No, has the auditor documented the rationale or
+                                                            reasons for concluding absence of fraud risks in revenue recognition? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Material misstatement due to fraudulent financial reporting
+                                                            relating to revenue recognition often results from an overstatement of
+                                                            revenues through, for example, premature revenue recognition or
+                                                            recording fictitious revenues. It may result also from an understatement
+                                                            of revenues through, for example, improperly shifting revenues to a later
+                                                            period. (Para A28) 
+                                                        </p>
+                                                        <p>
+                                                            The risks of fraud in revenue recognition may be greater in some entities
+                                                            than others. For example, there may be pressures or incentives on
+                                                            management to commit fraudulent financial reporting through
+                                                            inappropriate revenue recognition in the case of listed entities when, for
+                                                            example, performance is measured in terms of year-over-year revenue
+                                                            growth or profit. Similarly, for example, there may be greater risks of
+                                                            fraud in revenue recognition in the case of entities that generate a
+                                                            substantial portion of revenues through cash sales. (Para A29) 
+                                                        </p>
+                                                        <p>
+                                                            The presumption that there are risks of fraud in revenue recognition may
+                                                            be rebutted. For example, the auditor may conclude that there is no risk
+                                                            of material misstatement due to fraud relating to revenue recognition in
+                                                            the case where there is a single type of simple revenue transaction, for
+                                                            example, leasehold revenue from a single unit rental property (Para
+                                                            A30)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Responses to the Assessed Risk of Material Misstatement Due to Fraud 
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            28 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor determined overall responses to address the assessed
+                                                            risks of material misstatement due to fraud at the financial statement
+                                                            level in accordance with SA 330? 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            29 
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            In determining overall responses to address the assessed risks of
+                                                            material misstatement due to fraud at the financial statement level,
+                                                        </p>
+                                                        <ul>
+                                                             <li>
+                                                                Has the auditor assigned and supervised personnel taking into
+                                                                account knowledge, skills and ability of individuals? 
+                                                             </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: The auditor may respond to identified risks of material
+                                                            misstatement due to fraud by, for example, assigning additional
+                                                            individuals with specialized skill and knowledge, such as forensic and
+                                                            IT experts, or by assigning more experienced individuals to the
+                                                            engagement. (Para A34)
+                                                        </p>
+                                                        <p>
+                                                            The extent of supervision reflects the auditor’s assessment of risks of
+                                                            material misstatement due to fraud and the competencies of the
+                                                            engagement team members performing the work (Para A35)] 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Has the auditor evaluated the selection and application of accounting
+                                                                policies by the entity, particularly those related to subjective
+                                                                measurements and complex transactions which may be indicative of
+                                                                fraudulent financial reporting resulting from management’s effort to
+                                                                manage earnings?
+                                                            </li>
+                                                            <li>
+                                                                Whether an element of unpredictability has been incorporated in the
+                                                                selection of the nature, timing and extent of audit procedures? 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Incorporating an element of unpredictability in the selection of
+                                                            the nature, timing and extent of audit procedures to be performed is
+                                                            important as individuals within the entity who are familiar with the audit
+                                                            procedures normally performed on engagements may be more able to
+                                                            conceal fraudulent financial reporting. This can be achieved by, for
+                                                            example: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Performing substantive procedures on selected account balances and
+                                                                assertions not otherwise tested due to their materiality or risk. 
+                                                            </li>
+                                                            <li>
+                                                                Adjusting the timing of audit procedures from that otherwise
+                                                                expected.
+                                                            </li>
+                                                            <li>
+                                                                Using different sampling methods
+                                                            </li>
+                                                            <li>
+                                                                Performing audit procedures at different locations or at locations on
+                                                                an unannounced basis. (Para A36)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                       <span>
+                                                        Para
+                                                        30
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor designed and performed further audit procedures whose
+                                                            nature, timing and extent are responsive to the assessed risks of material
+                                                            misstatement due to fraud at the assertion level? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: The auditor’s responses to address the assessed risks of material
+                                                            misstatement due to fraud at the assertion level may include changing
+                                                            the nature, timing, and extent of audit procedures in the following ways: 
+                                                        </p>
+                                                        <ul>
+                                                             <li>
+                                                                The nature of audit procedures to be performed may need to be
+                                                                changed to obtain audit evidence that is more reliable and relevant or
+                                                                to obtain additional corroborative information. This may affect both
+                                                                the type of audit procedures to be performed and their combination.
+                                                                For example: 
+                                                                
+                                                             </li>
+                                                             <ul>
+                                                                <li>
+                                                                    Physical observation or inspection of certain assets may become
+                                                                    more important or the auditor may choose to use computerassisted audit techniques to gather more evidence about data
+                                                                    contained in significant accounts or electronic transaction files.
+                                                                </li>
+                                                                <li>
+                                                                    The auditor may design procedures to obtain additional
+                                                                    corroborative information. For example, if the auditor identifies
+                                                                    that management is under pressure to meet earnings expectations,
+                                                                    there may be a related risk that management is inflating sales by
+                                                                    entering into sales agreements that include terms that preclude
+                                                                    revenue recognition or by invoicing sales before delivery. In these
+                                                                    circumstances, the auditor may, for example, design external
+                                                                    confirmations not only to confirm outstanding amounts, but also
+                                                                    to confirm the details of the sales agreements, including date, any
+                                                                    rights of return and delivery terms. In addition, the auditor might
+                                                                    find it effective to supplement such external confirmations with
+                                                                    inquiries of non-financial personnel in the entity regarding any
+                                                                    changes in sales agreements and delivery terms. 
+                                                                    
+                                                                </li>
+                                                        </ul>
+                                                        <li>
+                                                            The timing of substantive procedures may need to be modified. The
+                                                            auditor may conclude that performing substantive testing at or near
+                                                            the period end better addresses an assessed risk of material
+                                                            misstatement due to fraud. The auditor may conclude that, given the
+                                                            assessed risks of intentional misstatement or manipulation, audit
+                                                            procedures to extend audit conclusions from an interim date to the
+                                                            period end would not be effective. In contrast, because an intentional
+                                                            misstatement—for example, a misstatement involving improper
+                                                            revenue recognition—may have been initiated in an interim period,
+                                                            the auditor may elect to apply substantive procedures to transactions
+                                                            occurring earlier in or throughout the reporting period. 
+                                                        </li>
+                                                        <li>
+                                                            The extent of the procedures applied reflects the assessment of the
+                                                            risks of material misstatement due to fraud. For example, increasing
+                                                            sample sizes or performing analytical procedures at a more detailed
+                                                            level may be appropriate. Also, computer-assisted audit techniques
+                                                            may enable more extensive testing of electronic transactions and
+                                                            account files. Such techniques can be used to select sample
+                                                            transactions from key electronic files, to sort transactions with
+                                                            specific characteristics, or to test an entire population instead of a
+                                                            sample. (Para A37) 
+                                                            
+                                                        </li>
+                                                        </ul>
+                                                        <p>
+                                                            If the auditor identifies a risk of material misstatement due to fraud that
+                                                            affects inventory quantities, examining the entity’s inventory records
+                                                            may help to identify locations or items that require specific attention
+                                                            during or after the physical inventory count. Such a review may lead to a
+                                                            decision to observe inventory counts at certain locations on an
+                                                            unannounced basis or to conduct inventory counts at all locations on the same date. (Para A38) 
+
+                                                        </p>
+                                                        <p>
+                                                            Appendix 2 of this SA: Examples of responses to the auditor’s
+                                                            assessment of the risk of material misstatements due to misappropriation
+                                                            of assets are as follows: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Counting cash or securities at or near year-end.
+                                                            </li>
+                                                            <li>
+                                                                Confirming directly with customers the account activity (including
+                                                                credit memo and sales return activity as well as dates payments were
+                                                                made) for the period under audit.
+                                                            </li>
+                                                            <li>
+                                                                Analyzing recoveries of written-off accounts. 
+
+                                                            </li>
+                                                            <li>
+                                                                Analyzing inventory shortages by location or product type. 
+                                                            </li>
+                                                            <li>
+                                                                Comparing key inventory ratios to industry norm.
+                                                            </li>
+                                                            <li>
+                                                                Reviewing supporting documentation for reductions to the perpetual
+                                                                inventory records.
+                                                            </li>
+                                                            <li>
+                                                                Performing a computerized match of the vendor list with a list of
+                                                                employees to identify matches of addresses or phone numbers. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Performing a computerized search of payroll records to identify
+                                                                duplicate addresses, employee identification or taxing authority
+                                                                numbers or bank accounts.
+                                                            </li>
+                                                            <li>
+                                                                Reviewing personnel files for those that contain little or no evidence
+                                                                of activity, for example, lack of performance evaluations. 
+                                                            </li>
+                                                            <li>
+                                                                Analyzing sales discounts and returns for unusual patterns or trends.
+                                                            </li>
+                                                            <li>
+                                                                Confirming specific terms of contracts with third parties.
+                                                            </li>
+                                                            <li>
+                                                                Obtaining evidence that contracts are being carried out in
+                                                                accordance with their terms.
+                                                            </li>
+                                                            <li>
+                                                                Reviewing the propriety of large and unusual expenses.
+                                                            </li>
+                                                            <li>
+                                                                Reviewing the authorization and carrying value of senior
+                                                                management and related party loans. 
+                                                            </li>
+                                                            <li>
+                                                                Reviewing the level and propriety of expense reports submitted by
+                                                                senior management.] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Audit Procedures Responsive to Risks Related to Management Override of Controls
+
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td>
+                                                        <p>
+                                                            [Note: Management is in a unique position to perpetrate fraud because
+                                                            of management’s ability to manipulate accounting records and prepare
+                                                            fraudulent financial statements by overriding controls that otherwise
+                                                            appear to be operating effectively. Although the level of risk of
+                                                            management override of controls will vary from entity to entity, the risk
+                                                            is nevertheless present in all entities. Due to the unpredictable way in
+                                                            which such override could occur, it is a risk of material misstatement
+                                                            due to fraud and thus a significant risk. (Para 31)] 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            32 (a)
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                Has the auditor tested the appropriateness of journal entries recorded
+                                                                in the general ledger and other adjustments made in the preparation
+                                                                of the financial statements?
+                                                            </li>
+                                                            <li>
+                                                                Has the auditor: 
+
+                                                            </li>
+                                                            <ul>
+                                                                <li>
+                                                                    Performed inquiries with individuals involved in the financial
+                                                                    reporting process about inappropriate or unusual activity relating
+                                                                    to the processing of journal entries and other adjustments? 
+                                                                </li>
+                                                                <li>
+                                                                    Selected journal entries and other adjustments made at the end of
+                                                                    a reporting period?
+                                                                </li>
+                                                                <li>
+                                                                    Considered the need to test journal entries and other adjustments
+                                                                    throughout the period? 
+                                                                </li>
+                                                        </ul>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Material misstatement of financial statements due to fraud often
+                                                            involves the manipulation of the Financial reporting process by
+                                                            recording inappropriate or unauthorized journal entries. This may occur
+                                                            throughout the year or at period end, or by management making
+                                                            adjustments to amounts reported in the financial statements that are not
+                                                            reflected in journal entries, such as through consolidating adjustments
+                                                            and reclassifications (Para A41)] 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            32 (b)
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                Whether the review of accounting estimates for biases and evaluation
+                                                                of circumstances producing bias is been done and whether such
+                                                                evaluation and review represents a risk of material misstatement due
+                                                                to fraud?
+                                                            </li>
+                                                            <li>
+                                                                Has the auditor performed the following:
+                                                            </li>
+                                                            <ul>
+                                                                <li>
+                                                                    Evaluated whether the judgments and decisions made by
+                                                                    management in making the accounting estimates included in the
+                                                                    financial statements, even if they are individually reasonable,
+                                                                    indicate a possible bias on the part of the entity’s management
+                                                                    that may represent a risk of material misstatement due to fraud. If
+                                                                    so, has the auditor re-evaluated the accounting estimates taken as
+                                                                    a whole; and
+                                                                </li>
+                                                                <li>
+                                                                    Performed a retrospective review of management judgments and
+                                                                    assumptions related to significant accounting estimates reflected
+                                                                    in the financial statements of the prior year?
+                                                                </li>
+                                                        </ul>
+                                                    </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            32 (c)
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                Has the auditor come across any significant transactions entered into
+                                                                by the entity that are outside the normal course of business for the
+                                                                entity, or that otherwise appears to be unusual given the auditor’s
+                                                                understanding of the entity and its environment and other
+                                                                information obtained during the audit?
+                                                            </li>
+                                                            <li>
+                                                                If yes, has the auditor evaluated the business rationale of such
+                                                                significant and unusual transactions and whether such evaluation
+                                                                suggests that these transactions may have been entered into to engage
+                                                                in fraudulent financial reporting or to conceal misappropriation of
+                                                                assets? 
+                                                                
+                                                            </li>
+                                                            <p>
+                                                                [Note: Indicators that may suggest that significant transactions that
+                                                                are outside the normal course of business for the entity, or that
+                                                                otherwise appear to be unusual, may have been entered into to
+                                                                engage in fraudulent financial reporting or to conceal
+                                                                misappropriation of assets include: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    The form of such transactions appears overly complex (for
+                                                                    example, the transaction involves multiple entities within a
+                                                                    consolidated group or multiple unrelated third parties). 
+                                                                </li>
+                                                                <li>
+                                                                    Management has not discussed the nature of and accounting for
+                                                                    such transactions with those charged with governance of the entity, and there is inadequate documentation
+                                                                </li>
+                                                                <li>
+                                                                    Management is placing more emphasis on the need for a
+                                                                    particular accounting treatment than on the underlying economics
+                                                                    of the transaction.
+                                                                </li>
+                                                                <li>
+                                                                    Transactions that involve non-consolidated related parties,
+                                                                    including special purpose entities, have not been properly
+                                                                    reviewed or approved by those charged with governance of the
+                                                                    entity.
+                                                                </li>
+                                                                <li>
+                                                                    The transactions involve previously unidentified related parties or
+                                                                    parties that do not have the substance or the financial strength to
+                                                                    support the transaction without assistance from the entity under
+                                                                    audit.(Para A47)]
+                                                                </li>
+                                                        </ul>
+                                                    </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            33 
+                                                        </span>
+                                                    </td>
+                                                   <td>
+                                                        <p>
+                                                            In order to respond to the identified risks of management override of
+                                                            controls, does the auditor consider it appropriate to perform other audit
+                                                            procedures in addition to those specifically referred to above? 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Evaluation of Audit Evidence 
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            34 
+                                                      </span>
+                                                    </td>
+                                                   <td>
+                                                        <p>
+                                                            Has the auditor evaluated whether analytical procedures that are
+                                                            performed when forming an overall conclusion as to whether the
+                                                            financial statements as a whole are consistent with the auditor’s
+                                                            understanding of the entity and its environment indicate a previously
+                                                            unrecognized risk of material misstatement due to fraud?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Determining which particular trends and relationships may
+                                                            indicate a risk of material misstatement due to fraud requires
+                                                            professional judgment. Unusual relationships involving year-end
+                                                            revenue and income are particularly relevant. These might include, for
+                                                            example: uncharacteristically large amounts of income being reported in
+                                                            the last few weeks of the reporting period or unusual transactions; or
+                                                            income that is inconsistent with trends in cash flow from
+                                                            operations(Para A49)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            35 
+                                                             
+                                                      </span>
+                                                    </td>
+                                                   <td>
+                                                        <p>
+                                                            Has the auditor identified any misstatement? 
+                                                        </p>
+                                                        <p>
+                                                            If answer to above is ‘Yes’, has the auditor evaluated whether such a
+                                                            misstatement is indicative of fraud?
+                                                        </p>
+                                                        <p>
+                                                            If there is such an indication, has the auditor evaluated the implications
+                                                            of the misstatement in relation to other aspects of the audit, particularly
+                                                            the reliability of management representations, recognizing that an
+                                                            instance of fraud is unlikely to be an isolated occurrence?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Since fraud involves incentive or pressure to commit fraud, a
+                                                            perceived opportunity to do so or some rationalization of the act, an
+                                                            instance of fraud is unlikely to be an isolated occurrence. Accordingly,
+                                                            misstatements, such as numerous misstatements at a specific location
+                                                            even though the cumulative effect is not material, may be indicative of a
+                                                            risk of material misstatement due to fraud(Para A50)] 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            36 
+                                                         </span>
+                                                    </td>
+                                                   <td>
+                                                        <p>
+                                                            Where the auditor has identified any misstatement, whether material or
+                                                            not, and the auditor has reasons to believe that it is or it may be the
+                                                            result of fraud and that management (in particular, senior management) is involved, has the auditor re-evaluated the assessment of the risks of
+                                                            material misstatement due to fraud and its resulting impact on the
+                                                            nature, timing and extent of audit procedures to respond to the assessed
+                                                            risks? 
+                                                        </p>
+                                                        <p>
+                                                            For the cases explained above, has the auditor also considered whether
+                                                            circumstances or conditions indicate possible collusion involving
+                                                            employees, management or third parties when re-considering the
+                                                            reliability of evidence previously obtained? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: The implications of identified fraud depend on the circumstances.
+                                                            For example, an otherwise insignificant fraud may be significant if it
+                                                            involves senior management. In such circumstances, the reliability of
+                                                            evidence previously obtained may be called into question, since there
+                                                            may be doubts about the completeness and truthfulness of
+                                                            representations made and about the genuineness of accounting records
+                                                            and documentation. There may also be a possibility of collusion
+                                                            involving employees, management or third parties. (Para A50)] 
+                                                        </p>
+                                                       
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            37 
+                                                            
+                                                         </span>
+                                                    </td>
+                                                   <td>
+                                                        <p>
+                                                            Has the auditor evaluated the implications for the audit in case the
+                                                            auditor confirms that or is unable to conclude whether, the financial
+                                                            statements are materially misstated as a result of fraud? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: SA 450 and SA 700 establish requirements and provide guidance
+                                                            on the evaluation and disposition of misstatements and the effect on the
+                                                            auditor’s opinion in the auditor’s report (Para A52)] 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                <td>
+                                                    <h5>
+                                                        Auditor Unable to Continue the Engagement 
+                                                     </h5>
+                                                </td>
+                                                <td><input type=“text” class=“form-control”></td>
+                                                <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                38 
+                                                                
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Are there any exceptional circumstances, as a result of a misstatement
+                                                                resulting from fraud or suspected fraud, that brings into questions ability
+                                                                to continue performing the audit? 
+                                                            </p>
+                                                            <p>
+                                                                If the answer to the above is ‘yes’, has the auditor considered:
+                                                            </p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    Determining the professional and legal responsibilities applicable in
+                                                                    the circumstances , including the requirement for the auditor to
+                                                                    report to the person or persons who made the audit appointment or,
+                                                                    in some cases, to regulatory authorities; 
+                                                                </li>
+                                                                <li>
+                                                                    Withdrawing from the engagement, if appropriate, where
+                                                                    withdrawal from the engagement is legally permitted; and 
+                                                                </li>
+                                                                <li>
+                                                                    Where the auditor elects to withdraw from the engagement, has the
+                                                                    auditor :
+                                                                </li>
+                                                                <ol type="i">
+                                                                    <li>
+                                                                        Discussed with the appropriate level of management and those
+                                                                        charged with governance, the auditor’s withdrawal from the
+                                                                        engagement and the reasons for the withdrawal; and 
+                                                                    </li>
+                                                                    <li>
+                                                                        Determined whether there is a professional or legal requirement
+                                                                        to report to the person or persons who made the audit
+                                                                        appointment or, in some cases, to regulatory authorities, the
+                                                                        auditor’s withdrawal from the engagement and the reasons for
+                                                                        the withdrawal.
+                                                                    </li>
+                                                                </ol>
+                                                            </ol>
+                                                            <p>
+                                                                [Note: Examples of exceptional circumstances that may arise and that may bring into question the auditor’s ability to continue performing the
+                                                                audit include:
+                                                                </p>
+                                                                 <ol type="a">
+                                                                    <li>
+                                                                        The entity does not take appropriate action regarding fraud that the
+                                                                        auditor considers necessary in the circumstances, even when the
+                                                                        fraud is not material to the financial statements; 
+                                                                        
+                                                                    </li>
+                                                                    <li>
+                                                                        The auditor’s consideration of the risks of material misstatement due
+                                                                        to fraud and the results of audit tests indicate a significant risk of
+                                                                        material and pervasive fraud; or
+                                                                    </li>
+                                                                    <li>
+                                                                        The auditor has significant concern about the competence or
+                                                                        integrity of management or those charged with governance. (Para
+                                                                        A53) 
+                                                                    </li>
+                                                                </ol>
+                                                           <p>
+                                                            Because of the variety of the circumstances that may arise, it is not
+                                                            possible to describe definitively when withdrawal from an engagement
+                                                            is appropriate. Factors that affect the auditor’s conclusion include the
+                                                            implications of the involvement of a member of management or of those
+                                                            charged with governance (which may affect the reliability of
+                                                            management representations) and the effects on the auditor of a
+                                                            continuing association with the entity. (Para A54) 
+                                                           </p>
+                                                           <p>
+                                                            The auditor has professional and legal responsibilities in such
+                                                            circumstances and these responsibilities may vary under different
+                                                            legislations and regulations and, accordingly, the clients. Under some
+                                                            legislations/ regulations, for example, the auditor may be entitled to, or
+                                                            required to, make a statement or report to the person or persons who
+                                                            made the audit appointment or, in some cases, to regulatory authorities.
+                                                            Given the exceptional nature of the circumstances and the need to
+                                                            consider the legal requirements, the auditor may consider it appropriate
+                                                            to seek legal advice when deciding whether to withdraw from an
+                                                            engagement and in determining an appropriate course of action,
+                                                            including the possibility of reporting to shareholders, regulators or
+                                                            others. (Para A55)
+                                                           </p>
+                                                           <p>
+                                                            In some cases, the option of withdrawing from the engagement may not
+                                                            be available to the auditor due to the nature of the terms of appointment
+                                                            or public interest considerations. (Para A56)]
+                                                           </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <h5>
+                                                                Management Representations 
+
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                39 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor obtained written representations from the management
+                                                                and, where applicable, those charged with governance, stating that: 
+                                                            </p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    They acknowledge their responsibility for the design,
+                                                                    implementation and maintenance of internal control to prevent and
+                                                                    detect fraud; 
+                                                                </li>
+                                                                <li>
+                                                                    They have disclosed to the auditor the results of their assessment of
+                                                                    the risk that the financial statements may be materially misstated as
+                                                                    a result of fraud; 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    They have disclosed to the auditor their knowledge of fraud or
+                                                                    suspected fraud affecting the entity involving: 
+                                                                    
+                                                                </li>
+                                                                <ol type="i">
+                                                                    <li>
+                                                                        Management;
+                                                                    </li>
+                                                                    <li>
+                                                                        Employees who have significant roles in internal control; or 
+                                                                    </li>
+                                                                    <li>
+                                                                        Others where the fraud could have a material effect on the
+                                                                        financial statements; and 
+                                                                    </li>
+                                                                </ol>
+                                                                <li>
+                                                                    They have disclosed to the auditor their knowledge of any
+                                                                    allegations of fraud, or suspected fraud, affecting the entity’s
+                                                                    financial statements communicated by employees, former
+                                                                    employees, analysts, regulators or others. 
+                                                                    
+                                                                </li>
+                                                            </ol>
+                                                            <p>
+                                                                [Note: SA 580, establishes requirements and provides guidance on
+                                                                obtaining appropriate representations from management and where
+                                                                appropriate those charged with governance in the audit. In addition to
+                                                                acknowledging that they have fulfilled their responsibility for the
+                                                                preparation of the financial statements, it is important that, irrespective
+                                                                of the size of the entity, management and where appropriate those
+                                                                charged with governance acknowledge their responsibility for internal
+                                                                control designed, implemented and maintained to prevent and detect
+                                                                fraud. (Para A57)] 
+                                                            </p>
+                                                            <p>
+                                                                Because of the nature of fraud and the difficulties encountered by
+                                                                auditors in detecting material misstatements in the financial statements
+                                                                resulting from fraud, it is important that the auditor obtains a written
+                                                                representation from management and where appropriate those charged
+                                                                with governance confirming that they have disclosed to the auditor:
+                                                            </p>
+                                                            <ol type="a">
+                                                                 <li>
+                                                                    The results of management’s assessment of the risk that the financial
+                                                                    statements may be materially misstated as a result of fraud; and 
+                                                                    
+                                                                 </li>
+                                                                 <li>
+                                                                    Their knowledge of actual, suspected or alleged fraud affecting the
+                                                                    entity. (Para A58)] 
+                                                                 </li>
+                                                            </ol>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <h5>
+                                                                Communications to Management and with Those Charged with Governance 
+
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                40 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                If a fraud has been identified or any information has been obtained that
+                                                                indicates that a fraud may exist, has the auditor communicated such
+                                                                matter, on a timely basis, to the appropriate level of management, in
+                                                                order to inform those with primary responsibility for the prevention and
+                                                                detection of fraud? 
+                                                                
+                                                            </p>
+                                                            <p>
+                                                                [Note: When the auditor has obtained evidence that fraud exists or may
+                                                                exist, it is important that the matter be brought to the attention of the
+                                                                appropriate level of management as soon as practicable. This is so even
+                                                                if the matter might be considered inconsequential (for example, a minor
+                                                                defalcation by an employee at a low level in the entity’s organization).
+                                                                The determination of which level of management is the appropriate one
+                                                                is a matter of professional judgment and is affected by such factors as
+                                                                the likelihood of collusion and the nature and magnitude of the
+                                                                suspected fraud. Ordinarily, the appropriate level of management is at
+                                                                least one level above the persons who appear to be involved with the
+                                                                suspected fraud. (Para A59)]
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                41 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                In situations where the auditor identified or suspected fraud involving (a) management or (b) employees who have significant roles in internal
+                                                                control or (c) others where the fraud results in material misstatement in
+                                                                the financial statements, has the auditor communicated such
+                                                                matters/suspicions to those charged with governance and discussed the
+                                                                nature, timing and extent of audit procedures necessary to complete the
+                                                                audit? 
+                                                                
+                                                            </p>
+                                                            <p>
+                                                                [Note: The auditor’s communication with those charged with
+                                                                governance may be made orally or in writing. SA 260 (Revised)
+                                                                identifies factors the auditor considers in determining whether to
+                                                                communicate orally or in writing. Due to the nature and sensitivity of
+                                                                fraud involving senior management, or fraud that results in a material
+                                                                misstatement in the financial statements, the auditor reports such matters
+                                                                on a timely basis and may consider it necessary to also report such
+                                                                matters in writing; (Para A60) 
+                                                            </p>
+                                                            <p>
+                                                                In some cases, the auditor may consider it appropriate to communicate
+                                                                with those charged with governance when the auditor becomes aware of
+                                                                fraud involving employees other than management that does not result
+                                                                in a material misstatement. Similarly, those charged with governance
+                                                                may wish to be informed of such circumstances. The communication
+                                                                process is assisted if the auditor and those charged with governance
+                                                                agree at an early stage in the audit about the nature and extent of the
+                                                                auditor’s communications in this regard. (Para A61) 
+                                                                
+                                                            </p>
+                                                            <p>
+                                                                In the exceptional circumstances where the auditor has doubts about the
+                                                                integrity or honesty of management or those charged with governance,
+                                                                the auditor may consider it appropriate to obtain legal advice to assist in
+                                                                determining the appropriate course of action. (Para A62)] 
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                           <span>
+                                                            Para
+                                                            42 
+                                                           </span> 
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether other matters related to fraud that are, in auditor’s judgment,
+                                                                relevant to the responsibilities of those charged with governance, have
+                                                                been communicated to those charged with governance in accordance
+                                                                with SA 260 (Revised)? 
+                                                            </p>
+                                                            <p>
+                                                                [Note: Other matters related to fraud to be discussed with those charged
+                                                                with governance of the entity may include, for example: 
+                                                            </p>
+                                                            <ul>
+                                                                 <li>
+                                                                    Concerns about the nature, extent and frequency of management’s
+                                                                    assessments of the controls in place to prevent and detect fraud and
+                                                                    of the risk that the financial statements may be misstated. 
+                                                                 </li>
+                                                                 <li>
+                                                                    A failure by management to appropriately address identified
+                                                                    significant deficiencies in internal control, or to appropriately
+                                                                    respond to an identified fraud.
+                                                                 </li>
+                                                                 <li>
+                                                                    The auditor’s evaluation of the entity’s control environment,
+                                                                    including questions regarding the competence and integrity of
+                                                                    management.
+                                                                 </li>
+                                                                 <li>
+                                                                    Actions by management that may be indicative of fraudulent
+                                                                    financial reporting, such as management’s selection and application
+                                                                    of accounting policies that may be indicative of management’s effort
+                                                                    to manage earnings in order to deceive financial statement users by
+                                                                    influencing their perceptions as to the entity’s performance and profitability. 
+                                                                </li>
+                                                                <li>
+                                                                    Concerns about the adequacy and completeness of the authorization
+                                                                    of transactions that appear to be outside the normal course of
+                                                                    business (Para A63)] 
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>
+                                                                Communication to Regulatory and Enforcement Authorities 
+
+                                                            </h5>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                43 
+                                                                
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                If the auditor identifies or suspects a fraud, has the auditor determined
+                                                                whether there is a responsibility to report the occurrence or suspicion to
+                                                                a party outside the entity? 
+                                                            </p>
+                                                            <p>
+                                                                [Note: The auditor’s professional duty to maintain the confidentiality of
+                                                                client information may preclude reporting fraud to a party outside the
+                                                                client entity. However, the auditor’s legal responsibilities vary by law &
+                                                                statute and, in certain circumstances; the duty of confidentiality may be
+                                                                overridden by statute, the law or courts of law. In some entities, for
+                                                                example, in case of audit of banks, the auditor has a statutory duty to
+                                                                report the occurrence of fraud to the supervisory authorities, i.e., the
+                                                                Reserve Bank of India, in terms of the latter’s circular no.
+                                                                DBS.FGV.(F).No. BC/23.08.001/2001-02. Also, in some entities the
+                                                                auditor may have a duty to report misstatements to authorities in those
+                                                                cases where management and those charged with governance fail to take
+                                                                corrective action. (Para A64) 
+                                                            </p>
+                                                            <p>
+                                                                The auditor may consider it appropriate to obtain legal advice to
+                                                                determine the appropriate course of action in the circumstances, the
+                                                                purpose of which is to ascertain the steps necessary in considering the
+                                                                public interest aspects of identified fraud. (Para A65) 
+                                                                
+                                                            </p>
+                                                            <p>
+                                                                In some clients, requirements for reporting fraud, whether or not
+                                                                discovered through the audit process, may be subject to specific
+                                                                provisions of the audit mandate or related legislation or regulation. (Para
+                                                                A66)] 
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <h5>
+                                                                Documentation
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                44 
+                                                                
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p> Does the auditor’s documentation of the responses to the assessed risks
+                                                                of material misstatement (as required by SA 330) include the following:
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    The overall responses to the assessed risks of material misstatement
+                                                                    due to fraud at the financial statement level and the nature, timing
+                                                                    and extent of audit procedures, and the linkage of those procedures with the assessed risks of material misstatement due to fraud at the
+                                                                    assertion level?                                                                 </li>
+                                                                <li>
+                                                                    The results of audit procedures including those designed to address
+                                                                    the risk of management override of controls? 
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                46 
+                                                                
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether all the communications about fraud made to management,
+                                                                those charged with governance, regulators and others has been properly
+                                                                documented? 
+                                                                
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                47
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the rationale for concluding that the presumption of risk of
+                                                                material misstatement due to fraud related to revenue recognition is not
+                                                                applicable in the circumstances of the engagement has been properly
+                                                                documented? 
+                                                                
+                                                            </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

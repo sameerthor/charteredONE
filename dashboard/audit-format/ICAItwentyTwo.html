@@ -1,0 +1,2049 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 540, Auditing Accounting Estimates, Including Fair Value
+                                                Accounting Estimates and Related Disclosures </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- <small class="bullet">
+                                                *Wherever applicable
+                                            </small> -->
+                                     </div>
+                                     <div class="table-responsive my-4 col-md-10 mx-auto">
+                                        <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Para
+                                                        No.
+                                                        </th>
+                                                    <th>Particulars</th>
+                                                    <th> Response
+                                                        [Yes, No,
+                                                        NA] (give
+                                                        comments
+                                                        wherever
+                                                        required)
+                                                        
+                                                    </th>
+                                                    <th>
+                                                        WP
+                                                        Reference 
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody> 
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Risk Assessment Procedures and Related Activities
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 8 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                   
+                                                    <p>
+                                                        In order to provide a basis for the identification and assessment of the
+                                                        risks of material misstatement for accounting estimates, has the auditor
+                                                        obtained an understanding of the following: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            The requirements of the applicable financial reporting framework
+                                                            relevant to accounting estimates, including related disclosures. 
+                                                        </li>
+                                                        <li>
+                                                            How management identifies those transactions, events and
+                                                            conditions that may give rise to the need for accounting estimates to
+                                                            be recognised or disclosed in the financial statements. In obtaining
+                                                            this understanding, the auditor shall make inquiries of management
+                                                            about changes in circumstances that may give rise to new, or the
+                                                            need to revise existing, accounting estimates. 
+                                                        </li>
+                                                        <li>
+                                                            How management makes the accounting estimates, and an
+                                                            understanding of the data on which they are based, including: 
+                                                        </li>
+                                                        <ol type="i">
+                                                            <li>
+                                                                The method, including where applicable the model, used in
+                                                                making the accounting estimate; 
+                                                            </li>
+                                                            <li>
+                                                                Relevant controls; 
+                                                            </li>
+                                                            <li>
+                                                                Whether management has used an expert;
+                                                            </li>
+                                                            <li>
+                                                                The assumptions underlying the accounting estimates: 
+
+                                                            </li>
+                                                            <li>
+                                                                Whether there has been or ought to have been a change from
+                                                                the prior period in the methods for making the accounting
+                                                                estimates, and if so, why; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Whether and, if so, how management has assessed the effect of
+                                                                estimation uncertainty?
+                                                            </li>
+                                                        </ol>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: Inquiries of management about changes in circumstances may
+                                                        include, for example, inquiries about whether: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The entity has engaged in new types of transactions that may give
+                                                            rise to accounting estimates. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Terms of transactions that gave rise to accounting estimates have
+                                                            changed. 
+                                                        </li>
+                                                        <li>
+                                                            Accounting policies relating to accounting estimates have changed,
+                                                            as a result of changes to the requirements of the applicable financial
+                                                            reporting framework or otherwise. 
+                                                        </li>
+                                                        <li>
+                                                            Regulatory or other changes outside the control of management
+                                                            have occurred that may require management to revise, or make new, accounting estimates. 
+
+                                                        </li>
+                                                        <li>
+                                                            New conditions or events have occurred that may give rise to the
+                                                            need for new or revised accounting estimates. (Para A19)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Matters that the auditor may consider in obtaining an
+                                                        understanding of relevant controls include, for example, the experience
+                                                        and competence of those who make the accounting estimates, and
+                                                        controls related to: 
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            How management determines the completeness, relevance and
+                                                            accuracy of the data used to develop accounting estimates. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The review and approval of accounting estimates, including the
+                                                            assumptions or inputs used in their development, by appropriate
+                                                            levels of management and, where appropriate, those charged with
+                                                            governance. 
+                                                        </li>
+                                                        <li>
+                                                            The segregation of duties between those committing the entity to
+                                                            the underlying transactions and those responsible for making the
+                                                            accounting estimates, including whether the assignment of
+                                                            responsibilities appropriately takes account of the nature of the
+                                                            entity and its products or services (Para A27)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Other relevant controls in making the accounting estimates
+                                                        depending on the circumstances, may include those established over: 
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The design and development, or selection, of a particular model for
+                                                            a particular purpose. 
+                                                        </li>
+                                                        <li>
+                                                            The use of the model. 
+                                                        </li>
+                                                        <li>
+                                                            The maintenance and periodic validation of the integrity of the
+                                                            model. (Para A28)] 
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Assumptions are integral components of accounting estimates.
+                                                        Matters that the auditor may consider in obtaining an understanding of
+                                                        the assumptions underlying the accounting estimates may include: 
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The nature of the assumptions, including which of the assumptions
+                                                            are likely to be significant assumptions. 
+                                                        </li>
+                                                        <li>
+                                                            How management assesses whether the assumptions are relevant
+                                                            and complete. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Where applicable, how management determines that the
+                                                            assumptions used are internally consistent. 
+                                                        </li>
+                                                        <li>
+                                                            Whether the assumptions relate to matters within the control of
+                                                            management and how they conform to the entity’s business plans
+                                                            and the external environment, or to matters that are outside its
+                                                            control. 
+                                                        </li>
+                                                        <li>
+                                                            The nature and extent of documentation, if any, supporting the
+                                                            assumptions. (Para A31)] 
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: In evaluating how management makes the accounting estimates,
+                                                        the auditor is required to understand whether there has been or ought to
+                                                        have been a change from the prior period in the methods for making the accounting estimates. A specific estimation method may need to be
+                                                        changed in response to changes in the environment or circumstances
+                                                        affecting the entity or in the requirements of the applicable financial
+                                                        reporting framework. If management has changed the method for
+                                                        making an accounting estimate, it is important that management can
+                                                        demonstrate that the new method is more appropriate or is itself a
+                                                        response to such changes. (Para A37)] 
+                                                    </p>
+                                                    <p>
+                                                        [Note: Matters that the auditor may consider in obtaining an
+                                                        understanding of whether and, if so, how management has assessed the
+                                                        effect of estimation uncertainty may include: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Whether and, if so, how management has considered alternative
+                                                            assumptions or outcomes by, for example, performing a sensitivity
+                                                            analysis to determine the effect of changes in the assumptions on an
+                                                            accounting estimate. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            How management determines the accounting estimate when
+                                                            analysis indicates a number of outcome scenarios. 
+                                                        </li>
+                                                        <li>
+                                                            Whether management monitors the outcome of accounting
+                                                            estimates made in the prior period, and whether management has
+                                                            appropriately responded to the outcome of that monitoring
+                                                            procedure. (Para A38)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 9 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor reviewed the outcome of accounting estimates included
+                                                        in prior period financial statements, or, where applicable, their
+                                                        subsequent re–estimation for the purpose of current period? 
+                                                    </p>
+                                                    <p>
+                                                        Whether the nature and extent of auditor’s review takes into account the
+                                                        nature of accounting estimate?
+                                                    </p>
+                                                    <p>
+                                                        Whether information obtained from review would be relevant to
+                                                        identifying and assessing risks of material misstatement of accounting
+                                                        estimates made in current period financial statements. (the review is not
+                                                        intended to call into question the judgments made in the prior periods
+                                                        that were based on information available at that time.)? 
+                                                    </p>
+                                                    <p>
+                                                        [Note: The outcome of an accounting estimate will often differ from the
+                                                        accounting estimate recognised in the prior period financial statements.
+                                                        By performing risk assessment procedures to identify and understand
+                                                        the reasons for such differences, the auditor may obtain: 
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Information regarding the effectiveness of management’s prior
+                                                            period estimation process, from which the auditor can judge the
+                                                            likely effectiveness of management’s current process. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Audit evidence that is pertinent to the re-estimation, in the current
+                                                            period, of prior period accounting estimates.
+                                                        </li>
+                                                        <li>
+                                                            Audit evidence of matters, such as estimation uncertainty, that may
+                                                            be required to be disclosed in the financial statements. (Para A39)] 
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: The review of prior period accounting estimates may also assist
+                                                        the auditor, in the current period, in identifying circumstances or
+                                                        conditions that increase the susceptibility of accounting estimates to, or
+                                                        indicate the presence of, possible management bias. The auditor’s professional skepticism assists in identifying such circumstances or
+                                                        conditions and in determining the nature, timing and extent of further
+                                                        audit procedures. (Para A40)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: A retrospective review of management judgments and
+                                                        assumptions related to significant accounting estimates is also required
+                                                        as part of the requirement for the auditor to design and perform
+                                                        procedures to review accounting estimates for biases that could
+                                                        represent a risk of material misstatement due to fraud, in response to the
+                                                        risks of management override of controls. (Para A41)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Identifying and Assessing the Risks of Material Misstatement
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 10,
+                                                        11 
+                                                        
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        In identifying and assessing the risks of material misstatement, as
+                                                        required by SA 315, has the auditor evaluated the degree of estimation
+                                                        uncertainty associated with an accounting estimate? 
+                                                    </p>
+                                                    <p>
+                                                        Has the auditor determined whether in the auditor’s judgement any of
+                                                        those accounting estimates that have been identified as having high
+                                                        estimation uncertainty give rise to significant risks? 
+                                                    </p>
+                                                    <p>
+                                                        [Note: The degree of estimation uncertainty associated with an
+                                                        accounting estimate may be influenced by factors such as: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The extent to which the accounting estimate depends on judgment. 
+                                                        </li>
+                                                        <li>
+                                                            The sensitivity of the accounting estimate to changes in
+                                                            assumptions. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The existence of recognised measurement techniques that may
+                                                            mitigate the estimation uncertainty (though the subjectivity of the
+                                                            assumptions used as inputs may nevertheless give rise to estimation
+                                                            uncertainty). 
+                                                        </li>
+                                                        <li>
+                                                            The length of the forecast period, and the relevance of data drawn
+                                                            from past events to forecast future events. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The availability of reliable data from external sources. 
+                                                        </li>
+                                                        <li>
+                                                            The extent to which the accounting estimate is based on observable
+                                                            or unobservable inputs. (Para A45)] 
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Matters that the auditor considers in assessing the risks of
+                                                        material misstatement may also include: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The actual or expected magnitude of an accounting estimate. 
+                                                        </li>
+                                                        <li>
+                                                            The recorded amount of the accounting estimate (that is,
+                                                            management’s point estimate) in relation to the amount expected by
+                                                            the auditor to be recorded. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Whether management has used an expert in making the accounting
+                                                            estimate. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The outcome of the review of prior period accounting estimates.
+                                                            (Para A46)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Examples of accounting estimates that may have high estimation uncertainty include the following: 
+
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Accounting estimates that are highly dependent upon judgment. 
+                                                        </li>
+                                                        <li>
+                                                            Accounting estimates that are not calculated using recognised
+                                                            measurement techniques.
+                                                        </li>
+                                                        <li>
+                                                            Accounting estimates where the results of the auditor’s review of
+                                                            similar accounting estimates made in the prior period financial
+                                                            statements indicate a substantial difference between the original
+                                                            accounting estimate and the actual outcome. 
+                                                        </li>
+                                                        <li>
+                                                            Fair value accounting estimates for which a highly specialised
+                                                            entity-developed model is used or for which there are no observable
+                                                            inputs. (Para A47)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Where the auditor determines that an accounting estimate gives
+                                                        rise to a significant risk, the auditor is required to obtain an
+                                                        understanding of the entity’s controls, including control activities. (Para
+                                                        A50)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: In some cases, the estimation uncertainty of an accounting
+                                                        estimate may cast significant doubt about the entity’s ability to continue
+                                                        as a going concern. (Para A51)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Responses to the Assessed Risks of Material Misstatement 
+
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 12 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Based on the assessed risks of material misstatement, has the auditor
+                                                        determined: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Whether management has appropriately applied the requirements of
+                                                            the applicable financial reporting framework relevant to the
+                                                            accounting estimate; and 
+                                                        </li>
+                                                        <li>
+                                                            Whether the methods for making the accounting estimates are
+                                                            appropriate and have been applied consistently, and whether
+                                                            changes, if any, in accounting estimates or in the method for
+                                                            making them from the prior period are appropriate in the
+                                                            circumstances? 
+                                                            
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: Determining whether management has appropriately applied the
+                                                        requirements of the applicable financial reporting framework is based,
+                                                        in part, on the auditor’s understanding of the entity and its environment.
+                                                        (Para A54)]
+                                                    </p>
+                                                    <p>
+                                                        [Note: In some situations, additional audit procedures, such as the
+                                                        inspection by the auditor of the current physical condition of an asset,
+                                                        may be necessary to determine whether management has appropriately
+                                                        applied the requirements of the applicable financial reporting
+                                                        framework. (Para A55)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: The auditor’s consideration of a change in an accounting
+                                                        estimate, or in the method for making it from the prior period, is
+                                                        important because a change that is not based on a change in
+                                                        circumstances or new information is considered arbitrary. Arbitrary
+                                                        changes in an accounting estimate result in inconsistent financial statements over time and may give rise to a financial statement
+                                                        misstatement or be an indicator of possible management bias. (Para
+                                                        A57)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 13 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        In responding to the assessed risks of material misstatement, as required
+                                                        by SA 330, has the auditor undertaken one or more of the following,
+                                                        taking account of the nature of accounting estimate: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Determine whether events occurring up to the date of the auditor’s
+                                                            report provide audit evidence regarding the accounting estimate. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Test how management made the accounting estimate and the data
+                                                            on which it is based. In doing so, the auditor shall evaluate whether:
+                                                        </li>
+                                                        <ol type="i">
+                                                            <li>
+                                                                The method of measurement used is appropriate in the
+                                                                circumstances; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The assumptions used by management are reasonable in light
+                                                                of the measurement objectives of the applicable financial
+                                                                reporting framework.
+                                                            </li>
+                                                        </ol>
+                                                        <li>
+                                                            Test the operating effectiveness of the controls over how
+                                                            management made the accounting estimate, together with
+                                                            appropriate substantive procedures. 
+                                                        </li>
+                                                        <li>
+                                                            Develop a point estimate or a range to evaluate management’s point
+                                                            estimate. For this purpose: 
+                                                            
+                                                        </li>
+                                                        <ol type="i">
+                                                            <li>
+                                                                When the auditor uses assumptions or methods that differ from
+                                                                management’s, the auditor shall obtain an understanding of
+                                                                management’s assumptions or methods sufficient to establish
+                                                                that the auditor’s point estimate or range takes into account
+                                                                relevant variables and to evaluate any significant differences
+                                                                from management’s point estimate. 
+                                                            </li>
+                                                            <li>
+                                                                When the auditor concludes that it is appropriate to use a
+                                                                range, the auditor shall narrow the range, based on audit
+                                                                evidence available, until all outcomes within the range are
+                                                                considered reasonable? 
+                                                            </li>
+                                                        </ol>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: The auditor’s decision as to which response, individually or in
+                                                        combination, to undertake to respond to the risks of material
+                                                        misstatement may be influenced by such matters as: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The nature of the accounting estimate, including whether it arises
+                                                            from routine or non-routine transactions. 
+                                                        </li>
+                                                        <li>
+                                                            Whether the procedure(s) is expected to effectively provide the
+                                                            auditor with sufficient appropriate audit evidence. 
+                                                        </li>
+                                                        <li>
+                                                            The assessed risk of material misstatement, including whether the
+                                                            assessed risk is a significant risk. (Para A59)]
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Even though the auditor may decide not to undertake this
+                                                        approach in respect of specific accounting estimates, the auditor is
+                                                        required to perform audit procedures designed to obtain sufficient
+                                                        appropriate audit evidence that all events occurring between the date of
+                                                        the financial statements and the date of the auditor’s report that require adjustment of, or disclosure in, the financial statements have been
+                                                        identified and appropriately reflected in the financial statements.
+                                                        Because the measurement of many accounting estimates, other than fair
+                                                        value accounting estimates, usually depends on the outcome of future
+                                                        conditions, transactions or events, the auditor’s work under SA 560 is
+                                                        particularly relevant. (Para A66)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: The auditor’s evaluation of the assumptions used by
+                                                        management is based only on information available to the auditor at the
+                                                        time of the audit. Audit procedures dealing with management
+                                                        assumptions are performed in the context of the audit of the entity’s
+                                                        financial statements, and not for the purpose of providing an opinion on
+                                                        assumptions themselves. (Para A77)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: In evaluating the reasonableness of the assumptions supporting
+                                                        an accounting estimate, the auditor may identify one or more significant
+                                                        assumptions. If so, it may indicate that the accounting estimate has high
+                                                        estimation uncertainty and may, therefore, give rise to a significant risk.
+                                                        (Para 83)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: Testing the operating effectiveness of the controls is required
+                                                        when: 
+                                                        
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            The auditor’s assessment of risks of material misstatement at the
+                                                            assertion level includes an expectation that controls over the
+                                                            process are operating effectively; or 
+                                                        </li>
+                                                        <li>
+                                                            Substantive procedures alone do not provide sufficient appropriate
+                                                            audit evidence at the assertion level. (Para A85)] 
+                                                            
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: Even when the entity’s controls are well designed and properly
+                                                        implemented, developing a point estimate or a range may be an
+                                                        effective or efficient response to the assessed risks. In other situations,
+                                                        the auditor may consider this approach as part of determining whether
+                                                        further procedures are necessary and, if so, their nature and extent.
+                                                        (Para A88)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: The ability of the auditor to make a point estimate, as opposed to
+                                                        a range, depends on several factors, including the model used, the
+                                                        nature and extent of data available and the estimation uncertainty
+                                                        involved with the accounting estimate. Further, the decision to develop
+                                                        a point estimate or range may be influenced by the applicable financial
+                                                        reporting framework, which may prescribe the point estimate that is to
+                                                        be used after consideration of the alternative outcomes and assumptions
+                                                        or prescribe a specific measurement method. (Para A90)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: When the auditor makes a point estimate or a range and uses
+                                                        assumptions or a method different from those used by management, the
+                                                        auditor is required to obtain a sufficient understanding of the
+                                                        assumptions or method used by management in making the accounting
+                                                        estimate. This understanding provides the auditor with information that
+                                                        may be relevant to the auditor’s development of an appropriate point
+                                                        estimate or range. Further, it assists the auditor to understand and
+                                                        evaluate any significant differences from management’s point estimate.
+                                                        (Para A92)] 
+                                                    </p>
+                                                    <p>
+                                                        [Note: When the auditor concludes that it is appropriate to use a range
+                                                        to evaluate the reasonableness of management’s point estimate (the
+                                                        auditor’s range), the auditor is required to ensure that range to
+                                                        encompass all “reasonable outcomes” rather than all possible outcomes.
+                                                        The range cannot be one that comprises all possible outcomes if it is to
+                                                        be useful, as such a range would be too wide to be effective for
+                                                        purposes of the audit. The auditor’s range is useful and effective when
+                                                        it is sufficiently narrow to enable the auditor to conclude whether the
+                                                        accounting estimate is misstated. (Para A93)] 
+                                                        
+                                                    </p>
+                                               
+                                                <p>
+                                                    [Note: Ordinarily, a range that has been narrowed to be equal to or less
+                                                    than performance materiality is adequate for the purposes of evaluating
+                                                    the reasonableness of management’s point estimate. However,
+                                                    particularly in certain industries, it may not be possible to narrow the
+                                                    range to below such an amount. This does not necessarily preclude
+                                                    recognition of the accounting estimate. It may indicate, however, that
+                                                    the estimation uncertainty associated with the accounting estimate is
+                                                    such that it gives rise to a significant risk. (Para A94)] 
+                                                </p>
+                                                <p>
+                                                    [Note: Narrowing the range to a position where all outcomes within the
+                                                    range are considered reasonable may be achieved by: 
+                                                    
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        Eliminating from the range those outcomes at the extremities of the
+                                                        range judged by the auditor to be unlikely to occur; and 
+                                                        
+                                                    </li>
+                                                    <li>
+                                                        Continuing to narrow the range, based on audit evidence available,
+                                                        until the auditor concludes that all outcomes within the range are
+                                                        considered reasonable. In some rare cases, the auditor may be able
+                                                        to narrow the range until the audit evidence indicates a point
+                                                        estimate. (Para A95)] 
+                                                        
+                                                    </li>
+                                                </ol>
+                                            </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 14
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        In determining the matters identified in para 12 or in responding to the
+                                                        assessed risks of material misstatement in accordance with para 13, has
+                                                        the auditor considered whether specialised skills or knowledge in
+                                                        relation to one or more aspects of the accounting estimates are required,
+                                                        in order to obtain sufficient appropriate audit evidence? 
+                                                    </p>
+                                                    <p>
+                                                        [Note: Matters that may affect the auditor’s consideration of whether
+                                                        specialised skills or knowledge is required include, for example: 
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The nature of the underlying asset, liability or component of equity
+                                                            in a particular business or industry.
+                                                        </li>
+                                                        <li>
+                                                            A high degree of estimation uncertainty. 
+
+                                                        </li>
+                                                        <li>
+                                                            Complex calculations or specialised models are involved. 
+
+                                                        </li>
+                                                        <li>
+                                                            The complexity of the requirements of the applicable financial
+                                                            reporting framework relevant to accounting estimates, including
+                                                            whether there are areas known to be subject to differing
+                                                            interpretation or practice is inconsistent or developing. 
+                                                        </li>
+                                                        <li>
+                                                            The procedures the auditor intends to undertake in responding to
+                                                            assessed risks. (Para A97)] 
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Depending on the auditor’s understanding and experience of
+                                                        working with the auditor’s expert or those other individuals with specialised skills or knowledge, the auditor may consider it appropriate
+                                                        to discuss matters such as the requirements of the applicable financial
+                                                        reporting framework with the individuals involved to establish that their
+                                                        work is relevant for audit purposes. (Para A101)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Further Substantive Procedures to Respond to Significant Risks 
+
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 15,
+                                                        16 
+                                                        
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Estimation Uncertainty 
+                                                    </h5>
+                                                    <p>
+                                                        For accounting estimates that give rise to significant risks, in addition to
+                                                        other substantive procedures performed, has the auditor evaluated the
+                                                        following: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            How management has considered alternative assumptions or
+                                                            outcomes, and why it has rejected them, or how management has
+                                                            otherwise addressed estimation uncertainty in making the
+                                                            accounting estimate. 
+                                                        </li>
+                                                        <li>
+                                                            Whether the significant assumptions used by management are
+                                                            reasonable. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Where relevant to the reasonableness of the significant assumptions
+                                                            used by management or the appropriate application of the
+                                                            applicable financial reporting framework, management’s intent to
+                                                            carry out specific courses of action and its ability to do so? 
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        Has the auditor, if considered necessary, developed a range with which
+                                                        to evaluate the reasonableness of the accounting estimate in the case
+                                                        where, in the auditor’s judgment, management has not adequately
+                                                        addressed the effects of estimation uncertainty on the accounting
+                                                        estimates that give rise to significant risks? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: In auditing accounting estimates that give rise to significant
+                                                        risks, the auditor’s further substantive procedures are focused on the
+                                                        evaluation of: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            How management has assessed the effect of estimation uncertainty
+                                                            on the accounting estimate, and the effect such uncertainty may
+                                                            have on the appropriateness of the recognition of the accounting
+                                                            estimate in the financial statements; and 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The adequacy of related disclosures. (Para A102)] 
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: The following may be few cases where the auditor may not be
+                                                        satisfied on management’s addressing of effects of estimation
+                                                        uncertainty on accounting estimates that give rise to significant risks: 
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Sufficient appropriate audit evidence could not be obtained through
+                                                            the auditor’s evaluation of how management has addressed the
+                                                            effects of estimation uncertainty. 
+                                                        </li>
+                                                        <li>
+                                                            It is necessary to explore further the degree of estimation
+                                                            uncertainty associated with an accounting estimate. 
+                                                        </li>
+                                                        <li>
+                                                            It is unlikely that other audit evidence can be obtained. 
+
+                                                        </li>
+                                                        <li>
+                                                            Indicators of management bias in the making of accounting estimates may exist. (Para A111)] 
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 17 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Recognition and Measurement Criteria 
+
+                                                    </h5>
+                                                    <p>
+                                                        Has the auditor obtained sufficient appropriate audit evidence for
+                                                        accounting estimates that give rise to significant risks, to ensure
+                                                        whether the following are in accordance with the requirements of
+                                                        applicable financial reporting framework: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            management’s decision to recognise, or to not recognise, the
+                                                            accounting estimates in the financial statements; and 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            the selected measurement basis for the accounting estimates? 
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: Where management has recognised an accounting estimate in the
+                                                        financial statements, the focus of the auditor’s evaluation is on whether
+                                                        the measurement of the accounting estimate is sufficiently reliable to
+                                                        meet the recognition criteria of the applicable financial reporting
+                                                        framework. (Para A113)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: With respect to accounting estimates that have not been
+                                                        recognised, the focus of the auditor’s evaluation is on whether the
+                                                        recognition criteria of the applicable financial reporting framework
+                                                        have in fact been met. Even where an accounting estimate has not been
+                                                        recognised, and the auditor concludes that this treatment is appropriate,
+                                                        there may be a need for disclosure of the circumstances in the notes to
+                                                        the financial statements. Where applicable, the auditor may also
+                                                        determine that an accounting estimate that has been identified as having
+                                                        a high estimation uncertainty is a key audit matter to be communicated
+                                                        in the auditor’s report, or may consider it necessary to include an
+                                                        Emphasis of Matter paragraph in the auditor’s report. If any matter is
+                                                        determined to be a key audit matter, auditor is prohibited from
+                                                        including an Emphasis of Matter paragraph in the auditor report. (Para
+                                                        A114)]
+                                                    </p>
+                                                    <p>
+                                                        [Note: With respect to fair value accounting estimates, some financial
+                                                        reporting frameworks presume that fair value can be measured reliably
+                                                        as a prerequisite to either requiring or permitting fair value
+                                                        measurements and disclosures. In some cases, this presumption may be
+                                                        overcome when, for example, there is no appropriate method or basis
+                                                        for measurement. In such cases, the focus of the auditor’s evaluation is
+                                                        on whether management’s basis for overcoming the presumption
+                                                        relating to the use of fair value set forth under the applicable financial
+                                                        reporting framework is appropriate. (Para A115)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Evaluating the Reasonableness of the Accounting Estimates and
+                                                        Determining Misstatements 
+                                                        
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 18 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor, based on the audit evidence, evaluated whether the
+                                                        accounting estimates in financial statements are either reasonable, or
+                                                        are misstated? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: Based on the audit evidence obtained, the auditor may conclude
+                                                        that the evidence points to an accounting estimate that differs from management’s point estimate. Where the audit evidence supports a
+                                                        point estimate, the difference between the auditor’s point estimate and
+                                                        management’s point estimate constitutes a misstatement. Where the
+                                                        auditor has concluded that using the auditor’s range provides sufficient
+                                                        appropriate audit evidence, a management point estimate that lies
+                                                        outside the auditor’s range would not be supported by audit evidence.
+                                                        In such cases, the misstatement is no less than the difference between
+                                                        management’s point estimate and the nearest point of the auditor’s
+                                                        range. (Para A116)] 
+                                                    </p>
+                                                    <p>
+                                                        [Note: Where management has changed an accounting estimate, or the
+                                                        method in making it, from the prior period based on a subjective
+                                                        assessment that there has been a change in circumstances, the auditor
+                                                        may conclude based on the audit evidence that the accounting estimate
+                                                        is misstated as a result of an arbitrary change by management or may
+                                                        regard it as an indicator of possible management bias. (Para A117)]
+                                                    </p>
+                                                    <p>
+                                                        [Note: Evaluating the reasonableness of accounting estimates and
+                                                        related disclosures included in the notes to the financial statements,
+                                                        whether required by the applicable financial reporting framework or
+                                                        disclosed voluntarily, involves essentially the same types of
+                                                        considerations applied when auditing an accounting estimate recognised
+                                                        in the financial statements. (Para A119)]
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Disclosures Related to Accounting Estimates
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 19,
+                                                        20 
+                                                        
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                  <p>
+                                                    Has the auditor obtained sufficient appropriate audit evidence about
+                                                    whether the disclosures in financial statements related to accounting
+                                                    estimates are in accordance with the requirements of applicable
+                                                    financial reporting framework? 
+                                                    
+                                                  </p>
+                                                  <p>
+                                                    For accounting estimates that give rise to significant risks, has the
+                                                    auditor evaluated the adequacy of disclosure of their estimation
+                                                    uncertainty in the financial statements in the context of the applicable
+                                                    financial reporting framework? 
+                                                  </p>
+                                                  <p>
+                                                    [Note: The presentation of financial statements in accordance with the
+                                                    applicable financial reporting framework includes adequate disclosure
+                                                    of material matters. The applicable financial reporting framework may
+                                                    permit, or prescribe, disclosures related to accounting estimates, and
+                                                    some entities may disclose voluntarily additional information in the
+                                                    notes to the financial statements. These disclosures may include, for
+                                                    example: 
+                                                  </p>
+                                                  <ul>
+                                                    <li>
+                                                        The assumptions used. 
+                                                    </li>
+                                                    <li>
+                                                        The method of estimation used, including any applicable model. 
+                                                    </li>
+                                                    <li>
+                                                        The basis for the selection of the method of estimation. 
+                                                    </li>
+                                                    <li>
+                                                        The effect of any changes to the method of estimation from the
+                                                        prior period.
+                                                    </li>
+                                                    <li>
+                                                        The sources and implications of estimation uncertainty. 
+
+                                                    </li>
+                                                  </ul>
+                                                  <p>
+                                                    Such disclosures are relevant to users in understanding the accounting estimates recognised or disclosed in the financial statements. (Para
+                                                    A120)] 
+                                                    
+                                                  </p>
+                                                  <p>
+                                                    [Note: In some cases, the applicable financial reporting framework may
+                                                    require specific disclosures regarding uncertainties. For example, some
+                                                    financial reporting frameworks prescribe: 
+                                                  </p>
+                                                  <ul>
+                                                    <li>
+                                                        The disclosure of key assumptions and other sources of estimation
+                                                        uncertainty that have a significant risk of causing a material
+                                                        adjustment to the carrying amounts of assets and liabilities. Such
+                                                        requirements may be described using terms such as “Key Sources
+                                                        of Estimation Uncertainty” or “Critical Accounting Estimates”. 
+                                                    </li>
+                                                    <li>
+                                                        The disclosure of the range of possible outcomes, and the
+                                                        assumptions used in determining the range. 
+                                                        
+                                                    </li>
+                                                    <li>
+                                                        The disclosure of information regarding the significance of fair
+                                                        value accounting estimates to the entity’s financial position and
+                                                        performance. 
+                                                    </li>
+                                                    <li>
+                                                        Qualitative disclosures such as the exposures to risk and how they
+                                                        arise, the entity’s objectives, policies and procedures for managing
+                                                        the risk and the methods used to measure the risk and any changes
+                                                        from the previous period of these qualitative concepts. 
+                                                    </li>
+                                                    <li>
+                                                        Quantitative disclosures such as the extent to which the entity is
+                                                        exposed to risk, based on information provided internally to the
+                                                        entity’s key management personnel, including credit risk, liquidity
+                                                        risk and market risk. (Para A121)] 
+                                                        
+                                                    </li>
+                                                  </ul>
+                                                  <p>
+                                                    [Note: In relation to accounting estimates having significant risk, even
+                                                    where the disclosures are in accordance with the applicable financial
+                                                    reporting framework, the auditor may conclude that the disclosure of
+                                                    estimation uncertainty is inadequate in light of the circumstances and
+                                                    facts involved. The auditor’s evaluation of the adequacy of disclosure
+                                                    of estimation uncertainty increases in importance the greater the range
+                                                    of possible outcomes of the accounting estimate is in relation to
+                                                    materiality. (Para A122)] 
+                                                  </p>
+                                                  <p>
+                                                    [Note: In some cases, the auditor may consider it appropriate to
+                                                    encourage management to describe, in the notes to the financial
+                                                    statements, the circumstances relating to the estimation uncertainty.
+                                                    (Para A123)]
+                                                    
+                                                  </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Indicators of Possible Management Bias 
+
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 21 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor reviewed the judgments and decisions made by
+                                                        management in the making of accounting estimates to identify whether
+                                                        there are indicators of possible management bias? 
+                                                    </p>
+                                                    <p>
+                                                        (Indicators of possible management bias do not themselves constitute
+                                                        misstatements for the purposes of drawing conclusions on the
+                                                        reasonableness of individual accounting estimates.)
+                                                    </p>
+                                                    <p>
+                                                        [Note: During the audit, the auditor may become aware of judgments
+                                                        and decisions made by management which give rise to indicators of possible management bias. Such indicators may affect the auditor’s
+                                                        conclusion as to whether the auditor’s risk assessment and related
+                                                        responses remain appropriate, and the auditor may need to consider the
+                                                        implications for the rest of the audit. Further, they may affect the
+                                                        auditor’s evaluation of whether the financial statements as a whole are
+                                                        free from material misstatement. (Para A124)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: Examples of indicators of possible management bias with
+                                                        respect to accounting estimates include: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            [Note: Examples of indicators of possible management bias with
+                                                            respect to accounting estimates include: 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Use of an entity’s own assumptions for fair value accounting
+                                                            estimates when they are inconsistent with observable marketplace
+                                                            assumptions. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Selection or construction of significant assumptions that yield a
+                                                            point estimate favourable for management objectives. 
+                                                        </li>
+                                                        <li>
+                                                            Selection of a point estimate that may indicate a pattern of
+                                                            optimism or pessimism. (Para A125)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Written Representations
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 22 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                   <p>
+                                                    Has the auditor obtained written representations from management and,
+                                                    where appropriate, those charged with governance about whether they
+                                                    believe that the significant assumptions used in making accounting
+                                                    estimates are reasonable? 
+                                                   </p>
+                                                   <p>
+                                                    [Note: For those accounting estimates not recognised or disclosed in the
+                                                    financial statements, written representations may also include
+                                                    representations about: 
+                                                    
+                                                   </p>
+                                                   <ul>
+                                                    <li>
+                                                        The appropriateness of the basis used by management for
+                                                        determining that the recognition or disclosure criteria of the
+                                                        applicable financial reporting framework have not been met. 
+                                                    </li>
+                                                    <li>
+                                                        The appropriateness of the basis used by management to overcome
+                                                        the presumption relating to the use of fair value set forth under the
+                                                        entity’s applicable financial reporting framework, for those
+                                                        accounting estimates not measured or disclosed at fair value. (Para
+                                                        A127)] 
+                                                    </li>
+                                                   </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Documentation
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 23 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor ensured that the audit documentation includes the
+                                                        following: 
+                                                        
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            The basis for the auditor’s conclusions about the reasonableness of
+                                                            accounting estimates and their disclosure that give rise to
+                                                            significant risks; and 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Indicators of possible management bias, if any? 
+
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: Documentation of indicators of possible management bias identified during the audit assists the auditor in concluding whether the
+                                                        auditor’s risk assessment and related responses remain appropriate, and
+                                                        in evaluating whether the financial statements as a whole are free from
+                                                        material misstatement. (Para A128)]
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            </tbody>
+
+                                            </table>
+                                        </div>
+                                  </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

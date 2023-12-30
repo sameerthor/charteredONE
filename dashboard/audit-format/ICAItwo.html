@@ -1,0 +1,1507 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                 SA 210, Agreeing the Terms of Audit Engagements
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b>The purpose of this checklist is to provide guidance on compliance with the
+requirements of Standards on Auditing. </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                               
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">*Wherever applicable</small>
+                                       
+                                       <h5 class="mt-4">
+                                         Note: Please refer to the Implementation Guide to SA 210, “Agreeing the Terms of Audit
+Engagements”. 
+                                       </h5>
+                                    </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>         
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            6(a)
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Preconditions for an Audit 
+
+                                                        </h5>
+                                                        <p>
+                                                            Has the auditor determined that the financial reporting framework to
+                                                            be applied in the preparation of the financial statements is acceptable? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor can use following factors while determining
+                                                            acceptability of the financial reporting framework to be applied in the
+                                                            preparation of the financial statements:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The nature of the entity (for example, whether it is a business
+                                                                enterprise, or a not for profit organization); 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                               The purpose of the financial statements (for example, whether they
+                                                                are prepared to meet the common financial information needs of a
+                                                                wide range of users or the financial information needs of specific
+                                                                users); 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The nature of the financial statements (for example, whether the
+                                                                financial statements are a complete set of financial statements or a
+                                                                single financial statement); and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Whether law or regulation prescribes the applicable financial
+                                                                reporting framework. (Para A4)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para
+                                                            A2
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Whether the auditor has accepted an assurance engagement after
+                                                            evaluating that the criteria to be used are suitable and are available to
+                                                            the intended users? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: At present, there is no objective and authoritative basis that has
+                                                            been generally recognised globally for judging the acceptability of
+                                                            general-purpose frameworks. In the absence of such a basis, financial
+                                                            reporting standards established by organizations that are authorised or
+                                                            recognised to promulgate standards to be used by certain types of
+                                                            entities are presumed to be acceptable for general purpose financial
+                                                            statements prepared by such entities, provided the organizations follow
+                                                            an established and transparent process involving deliberation and
+                                                            consideration of the views of a wide range of stakeholders. (Para A8)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            In case of some entities, law or regulation may prescribe the financial
+                                                            reporting framework to be used in the preparation of general-purpose
+                                                            financial statements. In the absence of indications to the contrary, such
+                                                            a financial reporting framework is presumed to be acceptable for
+                                                            general purpose financial statements prepared by such entities. (Para
+                                                            A9)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            To determine whether the financial reporting framework, to be applied in the preparation of the financial statements, is acceptable, auditor can
+                                                            refer Appendix 2 of this SA summarised below.
+                                                            
+                                                        </p>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para
+                                                            6(b)
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <h5>
+                                                            Preconditions for an Audit 
+
+                                                        </h5>
+                                                        <p>
+                                                            Has the auditor obtained agreement from management that it
+                                                            acknowledges and understands its responsibility on following: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Preparation of the financial statements in accordance with the
+                                                                applicable financial reporting framework, including where relevant
+                                                                their fair presentation; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Implementation of such internal control as management determines
+                                                                is necessary to enable the preparation of financial statements that
+                                                                are free from material misstatement, whether due to fraud or error;
+                                                                and 
+                                                            </li>
+                                                            <li>
+                                                                To provide the auditor with: 
+
+                                                            </li>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    Access to all information of which management is aware that
+                                                                    is relevant to the preparation of the financial statements such
+                                                                    as records, documentation and other matters; 
+                                                                </li>
+                                                                <li>
+                                                                    Additional information that the auditor may request from
+                                                                    management for the purpose of the audit; and 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    Unrestricted access to persons within the entity from whom
+                                                                    the auditor determines it necessary to obtain audit evidence. 
+                                                                </li>
+                                                            </ol>
+                                                        </ul>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 7
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Limitation on Scope Prior to Audit Engagement Acceptance 
+                                                        </h5>
+                                                        <p>
+                                                            Whether any limitations have been imposed by the management or
+                                                            those charged with governance on the scope of auditor’s work in the
+                                                            terms of a proposed audit engagement such that the auditor believes
+                                                            the limitation will result in the auditor disclaiming an opinion on the
+                                                            financial statements? 
+                                                               
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the auditor has accepted the audit engagement?
+                                                            If accepted, whether such engagement is required to be accepted by
+                                                            any law or regulation?
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td colspan="4">
+                                                        <h5>Other Factors Affecting Audit Engagement Acceptance</h5>
+
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para 8
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            If the preconditions for an audit are not present, whether the auditor
+                                                            has discussed the matter with management. Unless required by law or
+                                                            regulation to do so, the auditor shall not accept the proposed audit
+                                                            engagement: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                If the auditor has determined that the financial reporting
+                                                                framework to be applied in the preparation of the financial
+                                                                statements is unacceptable, except when financial reporting
+                                                                framework is prescribed by law or regulation or 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                If the agreement referred to in paragraph 6(b) has not been
+                                                                obtained.
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para 9
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <h5>
+                                                            Agreement on Audit Engagement Terms 
+
+                                                        </h5>
+                                                        <p>
+                                                            Has the auditor agreed terms of the audit engagement with
+                                                            management or those charged with governance as appropriate? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: The roles of management and those charged with governance
+                                                            in agreeing the terms of the audit engagement for the entity depend on
+                                                            the governance structure of the entity and relevant law or regulation.
+                                                            (Para A21)] 
+                                                            
+                                                        </p>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            10 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the agreed terms of the audit engagement have been recorded
+                                                            in an audit engagement letter or other suitable form of written
+                                                            agreement and include: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The objective and scope of the audit of the financial statements; 
+
+                                                            </li>
+                                                            <li>
+                                                                The responsibilities of the auditor; 
+
+                                                            </li>
+                                                            <li>
+                                                                The responsibilities of management;
+                                                            </li>
+                                                            <li>
+                                                                Identification of the applicable financial reporting framework for
+                                                                the preparation of the financial statements; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Reference to the expected form and content of any reports to be
+                                                                issued by the auditor and a statement that there may be
+                                                                circumstances in which a report may differ from its expected form
+                                                                and content. 
+                                                                
+                                                            </li>
+                                                       </ul>
+                                                       <p>
+                                                        [Note: Auditor can refer to paragraph A23 and A25 of this SA for
+                                                        examples of references that an auditor can make in audit engagement
+                                                        letter.]
+                                                        
+                                                       </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para
+                                                            11  
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Whether law or regulation prescribes in sufficient detail the terms of
+                                                            the audit engagement? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: If answer to above question is yes, the auditor need not record
+                                                            them in a written agreement, except for the fact that such law or
+                                                            regulation applies, and that management acknowledges and
+                                                            understands its responsibilities as set out in Para 6(b) of this SA.] 
+                                                            
+                                                        </p>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                       <span>
+                                                        Para
+                                                        12 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                       <p>
+                                                        Whether the law or regulation prescribes responsibilities of
+                                                        management similar to those described in para 6(b) of this SA and
+                                                        such that their effect is equivalent to those set out in para 6(b) of this
+                                                        SA? 
+                                                     </p>
+                                                       <p>
+                                                        If no, has the auditor used the description mentioned in para 6(b) of
+                                                        this SA? 
+                                                         
+                                                       </p>
+                                                       <p>
+                                                        [Note: If law or regulation prescribes responsibilities of management
+                                                        similar to those described in paragraph 6(b), the auditor may determine
+                                                        that the law or regulation includes responsibilities that, in the auditor’s
+                                                        judgment, are equivalent in effect to those set out in that paragraph.
+                                                        For such responsibilities that are equivalent, the auditor may use the
+                                                        wording of the law or regulation to describe them in the written
+                                                        agreement.] 
+                                                        
+                                                       </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A26 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor of a parent entity is also the auditor of a
+                                                            component? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether following factors have been considered for preparation
+                                                            of separate audit engagement letter:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Who appoints the component auditor; 
+                                                            </li>
+                                                            <li>
+                                                                Whether a separate auditor’s report is to be issued on the
+                                                                component; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Legal requirements in relation to audit appointments; 
+
+                                                            </li>
+                                                            <li>
+                                                                Degree of ownership by parent; and 
+
+                                                            </li>
+                                                            <li>
+                                                                Degree of independence of the component management from the
+                                                                parent entity.
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A27 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor concluded that it is not necessary to record certain
+                                                            terms of the audit engagement in an audit engagement letter?
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor obtained written agreement from management
+                                                            that it acknowledges and understands its responsibilities set out in para
+                                                            6(b) of this SA? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            13
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Recurring Audit 
+
+                                                        </h5>
+                                                        <p>
+                                                            Has the auditor assessed circumstances where terms of the audit
+                                                            engagement need to be revised and that is need to remind the entity of
+                                                            the existing terms of the audit engagement? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor can consider following factors to revise the terms of the
+                                                            audit engagement or to remind the entity of existing terms: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Any indication that the entity misunderstands the objective and
+                                                                scope of the audit. 
+                                                            </li>
+                                                            <li>
+                                                                Any revised or special terms of the audit engagement. 
+
+                                                            </li>
+                                                            <li>
+                                                                A recent change of senior management. 
+
+                                                            </li>
+                                                            <li>
+                                                                A significant change in ownership. 
+
+                                                            </li>
+                                                            <li>
+                                                                A significant change in nature or size of the entity’s business. 
+
+                                                            </li>
+                                                            <li>
+                                                                A change in legal or regulatory requirements. 
+                                                            </li>
+                                                            <li>
+                                                                A change in the financial reporting framework adopted in the
+                                                                preparation of the financial statements.
+                                                            </li>
+                                                            <li>
+                                                                A change in other reporting requirements.(Para A29)] 
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para
+                                                            14 to
+                                                            17
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <h5>
+                                                            Acceptance of a Change in the Terms of the Audit Engagement
+                                                        </h5>
+                                                        <p>
+                                                            Whether the auditor has been asked to change the terms of the audit
+                                                            engagement without any reasonable justification? 
+                                                        </p>
+                                                        <p>
+                                                            If the auditor is unable to agree to a change of the terms of the audit
+                                                            engagement and is not permitted by management to continue the
+                                                            original audit engagement, whether the auditor has: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Withdrawn from the audit engagement where possible under applicable law or regulation; and 
+
+                                                            </li>
+                                                            <li>
+                                                                Determined whether there is any obligation, either contractual or
+                                                                otherwise, to report the circumstances to other parties, such as those
+                                                                charged with governance, owners or regulators. 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            If terms of audit engagement are changed, whether the auditor and the
+                                                            management has agreed on and recorded the new terms of the
+                                                            engagement in an engagement letter or other suitable form of written
+                                                            agreement. 
+                                                        </p>
+                                                        <p>
+                                                            Where the auditor is requested to change the audit engagement to an
+                                                            engagement that conveys a lower level of assurance, has the auditor
+                                                            determined whether there is reasonable justification for doing so? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: Before agreeing to change an audit engagement to a review or a
+                                                            related service, an auditor who was engaged to perform an audit in
+                                                            accordance with SAs may need to assess, in addition to the matters
+                                                            referred to in paragraphs A30-A32 of this SA, any legal or contractual
+                                                            implications of the change. (Para A33) 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If the auditor concludes that there is reasonable justification to change
+                                                            the audit engagement to a review or a related service, the audit work
+                                                            performed to the date of change may be relevant to the changed
+                                                            engagement; however, the work required to be performed and the
+                                                            report to be issued would be those appropriate to the revised
+                                                            engagement. In order to avoid confusing the reader, the report on the
+                                                            related service would not include reference to the original audit
+                                                            engagement or any procedures that may have been performed in the
+                                                            original audit engagement, except where the audit engagement is
+                                                            changed to an engagement to undertake agreed- upon procedures and
+                                                            thus reference to the procedures performed is a normal part of the
+                                                            report. (Para A34)] 
+                                                            
+                                                        </p>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A34 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            If the auditor has accepted to change the audit engagement, whether
+                                                            the auditor’s report includes reference to: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The original audit engagement; or
+                                                            </li>
+                                                            <li>
+                                                                Any procedures that may have been performed in the original audit
+                                                                engagement.
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                     <td colspan="4">
+                                                        <h5> Additional Considerations in Engagement Acceptance 
+                                                        </h5>
+                                                     </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <Span>
+                                                            Para
+                                                            18 
+                                                        </Span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Financial Reporting Standards Supplemented by Law or
+                                                            Regulation 
+                                                        </h5>
+                                                        <p>
+                                                            Whether there are any conflicts between Financial Reporting
+                                                            Standards and additional requirements supplemented by law or
+                                                            regulation? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor discussed with the management the nature of the
+                                                            additional requirements and agreed whether:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The additional requirements can be met through additional disclosures in the financial statements; or
+                                                            </li>
+                                                            <li>
+                                                                The description of the applicable financial reporting framework in
+                                                                the financial statements can be amended accordingly.
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            If neither of above action is possible, whether the auditor determined
+                                                            need of modification in auditor’s report in accordance with SA
+                                                            705(Revised).
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            19, 20
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Financial Reporting Framework Prescribed by Law or Regulation
+                                                            - Other Matters Affecting Acceptance
+                                                        </h5>
+                                                        <p>
+                                                            Whether financial reporting framework prescribed by law or regulation
+                                                            is unacceptable? 
+                                                        </p>
+                                                        <p>
+                                                            If yes but for the fact that it is prescribed by law or regulation,
+                                                            whether the auditor has accepted audit engagement only if the
+                                                            following conditions are present:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Management agreed to provide additional disclosures in the
+                                                                financial statements required to avoid the financial statements
+                                                                being misleading; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                It is recognised in the terms of the audit engagement that:
+                                                            </li></ul>
+                                                            <ol type="i">
+                                                                <li>
+                                                                    The auditor’s report on the financial statements will incorporate
+                                                                    an Emphasis of Matter paragraph, drawing users’ attention to
+                                                                    the additional disclosures, in accordance with SA 706(Revised);
+                                                                    and 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    Unless the auditor is required by law or regulation to express the
+                                                                    auditor’s opinion on the financial statements by using the
+                                                                    phrases “present fairly, in all material respects”, or “give a true
+                                                                    and fair view” in accordance with the applicable financial
+                                                                    reporting framework, the auditor’s opinion on the financial
+                                                                    statements will not include such phrases.
+                                                                </li>
+                                                            </ol>
+                                                        
+                                                        <p>
+                                                            If above conditions are not present, and the auditor is required by law
+                                                            or regulation to undertake the audit engagement, whether the auditor
+                                                            evaluated effect of the misleading nature of the financial statements on
+                                                            the auditor’s report and included appropriate reference to this matter in
+                                                            the terms of the audit engagement? 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            21 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Auditor’s Report Prescribed by Law or Regulation 
+                                                        </h5>
+                                                        <p>
+                                                            Whether the law or regulation applicable to the entity prescribes the
+                                                            layout or wording of the auditor’s report in a form or in terms that are
+                                                            significantly different from the requirements of SAs? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the auditor evaluated that: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Whether users might misunderstand the assurance obtained from
+                                                                the audit of the financial statements and, if so,
+                                                            </li>
+                                                            <li>
+                                                                Whether additional explanation in the auditor’s report can mitigate possible misunderstanding. 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: If the auditor concludes that additional explanation in the
+                                                            auditor’s report cannot mitigate possible misunderstanding, the auditor
+                                                            shall not accept the audit engagement, unless required by law or
+                                                            regulation to do so. 
+                                                        </p>
+                                                        <p>
+                                                            An audit conducted in accordance with such law or regulation does not
+                                                            comply with SAs. Accordingly, the auditor shall not include any
+                                                            reference within the auditor’s report to the audit having been
+                                                            conducted in accordance with SAs.] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Appendix 2 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Determining the Acceptability of General Purpose Frameworks
+                                                        </h5>
+                                                        <p>
+                                                            While determining acceptability of general-purpose framework, has
+                                                            the auditor assessed the following attributes:  
+                                                        </p>
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <b>Relevance,</b> that the information provided in the financial
+                                                                statements is relevant to the nature of the entity and the purpose of
+                                                                the financial statements.
+                                                            </li>
+                                                            <li>
+                                                                <b>Completeness,</b> that transactions and events, account balances and
+                                                                disclosures that could affect conclusions based on the financial
+                                                                statements are not omitted.
+                                                            </li>
+                                                            <li>
+                                                                <b>Reliability,</b>  that the information provided in the financial
+                                                                statements: 
+                                                                 
+                                                            </li>
+                                                        </ul>
+                                                        <ol type="i">
+                                                            <li>
+                                                                Where applicable, reflects the economic substance of events
+                                                                and transactions and not merely their legal form; and 
+                                                            </li>
+                                                            <li>
+                                                                Results in reasonably consistent evaluation, measurement,
+                                                                presentation and disclosure, when used in similar
+                                                                circumstances.
+                                                            </li>
+                                                      </ol>
+                                                      <ul>
+                                                        <li>
+                                                            <b>Neutrality,</b> that it contributes to information in the financial
+                                                            statements that is free from bias.
+                                                        </li>
+                                                         <li><b>Understandability,</b> that the information in the financial statements
+                                                            is clear and comprehensive and not subject to significantly different
+                                                            interpretation. </li>
+                                                      </ul>
+                                                        <p>
+                                                            [Note: A conglomeration of accounting conventions devised to suit
+                                                            individual preferences is not an acceptable financial reporting
+                                                            framework for general purpose financial statements. Similarly, a
+                                                            compliance framework will not be an acceptable financial reporting
+                                                            framework, unless it is generally accepted in the industry to which the
+                                                            entity belongs by preparers and users.]
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                           
+                                        </div>
+
+                                        </div>  
+                                             
+                                            
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

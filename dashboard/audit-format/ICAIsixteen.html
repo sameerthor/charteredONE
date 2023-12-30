@@ -1,0 +1,1728 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 500, Audit Evidence 
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Sufficient Appropriate Audit Evidence
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            6,
+                                                            A10 
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor designed and performed following audit procedures
+                                                            that are appropriate in the circumstances to obtain sufficient
+                                                            appropriate audit evidence? 
+                                                        </p>
+                                                       <ul>
+                                                        <li>
+                                                            Risk assessment Procedures 
+                                                        </li>
+                                                        <li>
+                                                            Test of Controls; and
+                                                        </li>
+                                                        <li>
+                                                            Substantive procedures
+                                                        </li>
+                                                       </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A1 
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has obtained sufficient and appropriate audit
+                                                            evidence to support auditor’s opinion and report?
+                                                        </p>
+                                                     
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A2 
+                                                            
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor performed following procedures to obtain audit
+                                                            evidence: 
+                                                            
+                                                        </p>
+                                                       <ul>
+                                                        <li>
+                                                            Inspection 
+                                                        </li>
+                                                        <li>
+                                                            Inspection
+                                                        </li>
+                                                        <li>
+                                                            Confirmation
+                                                        </li>
+                                                        <li>
+                                                            Recalculation
+                                                        </li>
+                                                        <li>
+                                                            Reperformance
+                                                        </li>
+                                                        <li>
+                                                            Analytical Procedures 
+                                                        </li>
+                                                       </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A6  
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether sufficient appropriate audit evidence has been obtained to
+                                                            reduce audit risk to an acceptably low level, and thereby enable the
+                                                            auditor to draw reasonable conclusions on which to base the
+                                                            auditor’s opinion?
+                                                        </p>
+                                                     
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A8 
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor obtained consistent audit evidence from different
+                                                            sources or of a different nature than from items of audit evidence
+                                                            considered individually? 
+                                                        </p>
+                                                     <p>
+                                                        For example, corroborating information obtained from a source
+                                                        independent of the entity may increase the assurance the auditor
+                                                        obtains from audit evidence that is generated internally, such as
+                                                        evidence existing within the accounting records, minutes of
+                                                        meetings, or a management representation.
+                                                     </p>
+                                                     <p>
+                                                        [Note: Information from sources independent of the entity that the
+                                                        auditor may use as audit evidence may include confirmations from
+                                                        third parties, analysts’ reports, and comparable data about competitors (benchmarking data). (Para A9)] 
+
+                                                     </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A13   
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            If electronic information cannot be retrievable after a specified
+                                                            period of time, has the auditor requested for retention of some
+                                                            information for auditor’s review or to perform audit procedures at a
+                                                            time when the information is available?  
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A14 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has examined records or documents, whether
+                                                            internal or external, in paper form, electronic form, or other media,
+                                                            or a physical examination of an asset while performing inspection?  
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A17 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While performing observation to obtain audit evidence, has the
+                                                            auditor looked at a process or procedure being performed by others?   
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A18
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While performing external confirmation procedures, has the auditor
+                                                            obtained direct written response from a third party (the confirming
+                                                            party), in paper form, or by electronic or other medium? 
+                                                              
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A19 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While performing recalculation, has the auditor checked the
+                                                            mathematical accuracy of documents or records, manually or
+                                                            electronically?   
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A20 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While reperforming, has the auditor independently executed
+                                                            procedures or controls that were originally performed as part of the
+                                                            entity’s internal control?   
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A21 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While performing analytical procedures, has the auditor :    
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Evaluated the financial information made by a study of
+                                                                plausible relationships among both financial and non-financial
+                                                                data, 
+                                                            </li>
+                                                            <li>
+                                                                Investigated the identified fluctuations and relationships that are
+                                                                inconsistent with other relevant information or deviate
+                                                                significantly from predicted amounts. 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A22
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While performing inquiry, has the auditor obtained information of
+                                                            knowledgeable persons, both financial and non- financial, within
+                                                            the entity or outside the entity? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A23 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether responses to inquiries provided the auditor with
+                                                            information   
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                not previously possessed or with corroborative audit evidence
+                                                                or  
+                                                            </li>
+                                                            <li>
+                                                                that differs significantly from other information that the auditor
+                                                                has obtained?
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            If yes, has the auditor modified or performed additional audit
+                                                            procedures? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A24 
+                                                            
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While performing inquiry, has the auditor identified that the
+                                                            information available to support management’s intent is limited?
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor understood management’s past history of
+                                                            carrying out its stated intentions, management’s stated reasons for
+                                                            choosing a particular course of action, and management’s ability to
+                                                            pursue a specific course of action? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A25 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor obtained written representations from management
+                                                            and, where appropriate, those charged with governance to confirm
+                                                            responses to oral inquiries? 
+                                                        </p>
+                                                       
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td> </td>
+                                                    <td>
+                                                      <h5>
+                                                        Information to be Used as Audit Evidence
+                                                      </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            7 
+                                                             
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When designing and performing audit procedure, has the auditor
+                                                            considered relevance and reliability of information which is to be
+                                                            used as audit evidence?  
+                                                        </p>
+                                                       
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A31 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor assessed reliability of an audit evidence by
+                                                            generalising following:   
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Whether the audit evidence obtained from independent sources
+                                                                outside the entity? 
+                                                                  
+                                                            </li>
+                                                            <li>
+                                                                Whether the controls, including preparation and maintenance,
+                                                                imposed by the entity are effective for audit evidences
+                                                                generated internally? 
+                                                            </li>
+                                                            <li>
+                                                                Whether the audit evidence is obtained directly by the auditor? 
+                                                            </li>
+                                                            <li>
+                                                                Whether the audit evidence obtained in any form other than
+                                                                obtained orally?
+                                                            </li>
+                                                            <li> 
+                                                                Whether the audit evidence provided by original documents?
+                                                            </li>
+                                                        </ul>
+                                                        
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 8 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When information to be used as audit evidence has been prepared
+                                                            using the work of a management’s expert, whether the auditor
+                                                            having regard to the significance of the work of expert for auditor’s
+                                                            purposes:   
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Evaluated the competence, capabilities and objectivity of that
+                                                                expert  
+                                                            </li>
+                                                            <li>
+                                                                Obtained an understanding of the work of that expert 
+
+                                                            </li>
+                                                            <li>
+                                                                Evaluated the appropriateness of that expert’s work as audit
+                                                                evidence for the relevant assertion
+                                                            </li>
+                                                           
+                                                        </ul>
+                                                       <p>
+                                                        [Note: Auditor can refer para A36 of this SA for factors that may
+                                                        affect nature, timing and extent of audit procedures in relation to
+                                                        requirements in para 8.] 
+                                                        
+                                                       </p>
+                                                       <p>
+                                                        [Note Auditor can refer para A38 of this SA for examples of
+                                                        sources where information regarding the competence, capabilities
+                                                        and objectivity of a management’s expert may come.] 
+                                                        
+                                                       </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A39,
+                                                            A40 
+                                                            
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            While evaluating competence, capabilities and objectivity of a
+                                                            management’s expert, has the auditor considered following matters:   
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Whether that expert’s work is subject to technical performance standards or other professional or industry requirements?   
+                                                            </li>
+                                                            <li>
+                                                                Whether the management’s expert’s competence is relevant for
+                                                                the matter for which that expert’s work will be used, including
+                                                                any areas of specialty within that expert’s field?  
+                                                            </li>
+                                                            <li>
+                                                                Whether the management’s expert is competent with respect to
+                                                                relevant accounting requirements? 
+                                                            </li>
+                                                           <li>
+                                                            Whether unexpected events, changes in conditions, or the audit
+                                                            evidence obtained from the results of audit procedures indicate
+                                                            that it may be necessary to reconsider the initial evaluation of
+                                                            the competence, capabilities and objectivity of the
+                                                            management’s expert as the audit progresses? 
+                                                           </li>
+                                                        </ul>
+                                                       <p>
+                                                        [Note: Auditor can refer para A36 of this SA for factors that may
+                                                        affect nature, timing and extent of audit procedures in relation to
+                                                        requirements in para 8.] 
+                                                        
+                                                       </p>
+                                                       <p>
+                                                        [Note Auditor can refer para A38 of this SA for examples of
+                                                        sources where information regarding the competence, capabilities
+                                                        and objectivity of a management’s expert may come.] 
+                                                        
+                                                       </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A43   
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor discussed with management and that expert: 
+  
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                any interests and relationships that may create threats to the
+                                                                expert’s objectivity, and 
+                                                                    
+                                                            </li>
+                                                            <li>
+                                                                any applicable safeguards, including any professional
+                                                                requirements that apply to the expert?   
+                                                            </li>
+                                                          
+                                                        </ul>
+                                                       <p>
+                                                        If yes, whether the auditor has evaluated that the safeguards are
+                                                        adequate?
+                                                       </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A44    
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has the expertise to evaluate the work of the
+                                                            management’s expert? 
+                                                        </p>
+                                                        <p>
+                                                            If no, whether the auditor needs an auditor’s expert for this purpose
+                                                            in accordance with SA 620?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Aspects of the management’s expert’s field relevant to the
+                                                            auditor’s understanding may include: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Whether that expert’s field has areas of specialty within it that
+                                                                are relevant to the audit.   
+                                                            </li>
+                                                            <li>
+                                                                Whether any professional or other standards, and regulatory or
+                                                                legal requirements apply.    
+                                                            </li>
+                                                          <li>
+                                                            What assumptions and methods are used by the management’s
+                                                            expert, and whether they are generally accepted within that
+                                                            expert’s field and appropriate for financial reporting purposes.
+                                                          </li>
+                                                          <li>
+                                                            The nature of internal and external data or information the
+                                                            auditor’s expert uses. (Para A45)]
+                                                          </li>
+                                                        </ul>
+                                                      
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A46,
+                                                            A47    
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether there existed an engagement letter or other written form of
+                                                            agreement between the entity and management’s expert? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor evaluated the appropriateness of:
+                                                        </p>
+                                                       
+                                                        <ul>
+                                                            <li>
+                                                                The nature, scope and objectives of that expert’s work;    
+                                                            </li>
+                                                            <li>
+                                                                The respective roles and responsibilities of management and
+                                                                that expert; and 
+                                                                  
+                                                            </li>
+                                                          <li>
+                                                            The nature, timing and extent of communication between
+                                                            management and that expert, including the form of any report to be provided by that expert? (in case management’s expert is
+                                                            engaged by the entity) 
+                                                            
+                                                          </li>
+                                                          
+                                                        </ul>
+                                                      <p>
+                                                        If no, has the auditor inquired of the expert and other members of
+                                                        management to obtain the necessary understanding? (in case
+                                                        management’s expert is employed by the entity) 
+                                                        
+                                                      </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A48    
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor has considered following while evaluating the
+                                                            appropriateness of the management’s expert’s work as audit
+                                                            evidence for the relevant assertion: 
+                                                        </p>
+                                                       
+                                                        <ul>
+                                                            <li>
+                                                                The relevance and reasonableness of that expert’s findings or
+                                                                conclusions, their consistency with other audit evidence, and
+                                                                whether they have been appropriately reflected in the financial
+                                                                statements;    
+                                                            </li>
+                                                            <li>
+                                                                If that expert’s work involves use of significant assumptions
+                                                                and methods, the relevance and reasonableness of those
+                                                                assumptions and methods; and 
+                                                            </li>
+                                                          <li>
+                                                            If that expert’s work involves significant use of source data, the
+                                                            relevance, completeness, and accuracy of that source data. 
+                                                          </li>
+                                                          
+                                                        </ul>
+                                                      <p>
+                                                        If no, has the auditor inquired of the expert and other members of
+                                                        management to obtain the necessary understanding? (in case
+                                                        management’s expert is employed by the entity) 
+                                                        
+                                                      </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 9
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When using information produced by the entity, whether the auditor
+                                                            evaluated that the information is sufficiently reliable for the
+                                                            auditor’s purposes?
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            9(a) 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether auditor has obtained audit evidence about the accuracy and
+                                                            completeness of information to be used as audit evidence? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Obtaining audit evidence about the accuracy and
+                                                            completeness of such information may be performed concurrently
+                                                            with the actual audit procedure applied to the information when
+                                                            obtaining such audit evidence is an integral part of the audit
+                                                            procedure itself. In other situations, the auditor may have obtained
+                                                            audit evidence of the accuracy and completeness of such
+                                                            information by testing controls over the preparation and
+                                                            maintenance of the information. In some situations, however, the
+                                                            auditor may determine that additional audit procedures are needed.
+                                                            (Para A50)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            9(b) 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor evaluated whether the information is sufficiently
+                                                            precise and detailed for the auditor’s purposes? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Selecting Items for Testing to Obtain Audit Evidence
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 10
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When designing tests of controls and tests of details, has the auditor
+                                                            determined means of selecting items for testing that are effective in
+                                                            meeting the purpose of the audit procedure? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: The means available to the auditor for selecting items for
+                                                            testing are: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                             <li>
+                                                                Selecting all items (100% examination); 
+
+                                                             </li>
+                                                             <li> 
+                                                                Selecting specific items; and 
+
+                                                             </li>
+                                                             <li>
+                                                                Audit sampling. (Para A52)] 
+
+                                                             </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: Auditor can refer to Para A53 of this SA for examples where
+                                                            100% examination may be appropriate.] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A54 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the specific items selected include: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                High value or key items. 
+                                                            </li>
+                                                            <li>
+                                                                All items over a certain amount 
+
+                                                            </li>
+                                                            <li>
+                                                                Items to obtain information. 
+
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: While selective examination of specific items from a class of
+                                                            transactions or account balance will often be an efficient means of
+                                                            obtaining audit evidence, it does not constitute audit sampling. The
+                                                            results of audit procedures applied to items selected in this way
+                                                            cannot be projected to the entire population; accordingly, selective
+                                                            examination of specific items does not provide audit evidence
+                                                            concerning the remainder of the population. (Para A55)] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Inconsistency in, or Doubts over Reliability of, Audit Evidence
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 11
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the audit evidence obtained from one source is inconsistent
+                                                            with that obtained from another or the auditor has doubts over the
+                                                            reliability of information to be used as audit evidence?
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor determined what modifications or additions to
+                                                            audit procedures are necessary to resolve the matter, and considered
+                                                            the effect of the matter, if any, on other aspects of the audit?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Auditor can refer paragraph 11 of SA 230 for specific
+                                                            documentation requirement if the auditor identified information that
+                                                            is inconsistent with the auditor’s final conclusion regarding a
+                                                            significant matter.] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                               </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

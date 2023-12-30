@@ -1,0 +1,1392 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 560, Subsequent Events </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                         <h5 class="mt-4">
+                                            Note: Please refer to the Implementation Guide to SA 560, “Subsequent Events”. 
+                                         </h5>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                               <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Events Occurring Between the Date of the Financial Statements
+                                                        and the Date of the Auditor’s Report 
+                                                        
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 6,
+                                                        7 
+                                                        
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor performed the audit procedures designed to obtain
+                                                        sufficient appropriate audit evidence regarding identification of all
+                                                        events occurring between the date of the financial statements and the
+                                                        date of the auditor’s report that require adjustment of, or disclosure in,
+                                                        the financial statements? 
+                                                    </p>
+                                                    <p>
+                                                        [Note: The auditor is not expected to perform additional audit
+                                                        procedures on matters to which previously applied audit procedures
+                                                        have provided satisfactory conclusions.] 
+                                                    </p>
+                                                    <p>
+                                                        [Note: Depending on the auditor’s risk assessment, the audit
+                                                        procedures required may include procedures (in addition to procedures
+                                                        that the auditor may perform for other purposes that, nevertheless, may
+                                                        provide evidence about subsequent events), necessary to obtain
+                                                        sufficient appropriate audit evidence, involving the review or testing of
+                                                        accounting records or transactions occurring between the date of the
+                                                        financial statements and the date of the auditor’s report (Para A6)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        Has the auditor performed the procedures required by paragraph 6 so
+                                                        that they cover the period from the date of the financial statements to
+                                                        the date of the auditor’s report, or as near as practicable thereto? 
+                                                    </p>
+                                                    <p>
+                                                        Has the auditor taken into account the auditor’s risk assessment in
+                                                        determining the nature and extent of audit procedures, including the
+                                                        following: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Obtaining an understanding of any procedures management has
+                                                            established to ensure that subsequent events are identified. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Inquiring of management and, where appropriate, those charged
+                                                            with governance as to whether any subsequent events have occurred
+                                                            which might affect the financial statements. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Reading minutes, if any, of the meetings, of the entity’s owners,
+                                                            management and those charged with governance, that have been
+                                                            held after the date of the financial statements and inquiring about
+                                                            matters discussed at any such meetings for which minutes are not
+                                                            yet available. 
+                                                        </li>
+                                                        <li>
+                                                            Reading the entity’s latest subsequent interim financial statements,
+                                                            if any? 
+                                                            
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: The subsequent events procedures that the auditor performs
+                                                        may depend on the information that is available and, in particular, the extent to which the accounting records have been prepared since the
+                                                        date of the financial statements. When the accounting records are not
+                                                        up-to-date, and accordingly no interim financial statements (whether
+                                                        for internal or external purposes) have been prepared, or minutes of
+                                                        meetings of management or those charged with governance have not
+                                                        been prepared, relevant audit procedures may take the form of
+                                                        inspection of available books and records, including bank statements.
+                                                        (Para A7)] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: In addition to procedures mentioned in Para 7, the auditor may
+                                                        consider it necessary and appropriate to: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Read the entity’s latest available budgets, cash flow forecasts and
+                                                            other related management reports for periods after the date of the
+                                                            financial statements; 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Inquire, or extend previous oral or written inquiries, of the entity’s
+                                                            legal counsel concerning litigation and claims; or 
+                                                        </li>
+                                                        <li>
+                                                            Consider whether written representations covering particular
+                                                            subsequent events may be necessary to support other audit evidence
+                                                            and thereby obtain sufficient appropriate audit evidence. (Para A8)]
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: In inquiring of management /those charged with governance,
+                                                        about any subsequent events occurred that might affect the financial
+                                                        statements, the auditor may inquire the current status of items that
+                                                        were accounted for on the basis of preliminary or inconclusive data
+                                                        and may make specific inquiries about the following matters: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                         <li>
+                                                            Whether new commitments, borrowings or guarantees have been
+                                                            entered into. 
+                                                            
+                                                         </li>
+                                                         <li>
+                                                            Whether sales or acquisitions of assets have occurred or are planned.
+                                                         </li>
+                                                         <li>
+                                                            Whether there have been increases in capital or issuance of debt
+                                                            instruments, such as the issue of new shares or debentures, or an
+                                                            agreement to merge or liquidate has been made or is planned. 
+                                                         </li>
+                                                         <li>
+                                                            Whether any assets have been appropriated by government or
+                                                            destroyed, for example, by fire or flood. 
+                                                            
+                                                         </li>
+                                                         <li>
+                                                            Whether there have been any developments regarding
+                                                            contingencies. 
+                                                         </li>
+                                                         <li>
+                                                            Whether any unusual accounting adjustments have been made or are
+                                                            contemplated. 
+                                                         </li>
+                                                         <li>
+                                                            Whether any events have occurred or are likely to occur that will
+                                                            bring into question the appropriateness of accounting policies used
+                                                            in the financial statements. 
+                                                         </li>
+                                                         <li>
+                                                            Whether any events have occurred that are relevant to the
+                                                            measurement of estimates or provisions made in the financial
+                                                            statements. 
+                                                            
+                                                         </li>
+                                                         <li>
+                                                            Whether any events have occurred that are relevant to the
+                                                            recoverability of assets. (Para A9)] 
+                                                         </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 8 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Whether the auditor, as result of procedures performed as required by
+                                                        Para 6 and 7, identified events that require adjustment of, or disclosure
+                                                        in, the financial statements? 
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor determined whether each such event is
+                                                        appropriately reflected in those financial statements? 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Written Representations 
+
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 9 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor requested management and, where appropriate, those
+                                                        charged with governance to provide a written representation in
+                                                        accordance with SA 580 that all events occurring subsequent to the
+                                                        date of the financial statements and for which applicable financial
+                                                        reporting framework requires adjustment or disclosure have been
+                                                        adjusted or disclosed? 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Facts Which Become Known to the Auditor After the Date of the
+                                                        Auditor’s Report but Before the Date the Financial Statements are
+                                                        Issued
+                                                        
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 10
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Whether any fact become known to the auditor after the date of the
+                                                        auditor’s report but before the date the financial statements are issued,
+                                                        which may have caused the auditor to amend the auditor’s report had
+                                                        the fact become known to auditor at the date of auditor’s report?
+                                                    </p>
+                                                    <p>
+                                                        [Note: The auditor has no obligation to perform any audit procedures
+                                                        regarding the financial statements after the date of the auditor’s
+                                                        report.] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor: 
+
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Discussed the matter with management and, where appropriate,
+                                                            those charged with governance. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Determined whether the financial statements need amendment and,
+                                                            if so, 
+                                                        </li>
+                                                        <li>
+                                                            Inquired how management intends to address the matter in the
+                                                            financial statements?
+                                                            
+                                                        </li>
+                                                    </ol>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 11 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the management amended the financial statements?
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Carried out the audit procedures necessary in the circumstances on
+                                                            the amendment.
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Unless the circumstances in para 12 apply: 
+
+                                                        </li>
+                                                        <ol type="i">
+                                                            <li>
+                                                                Extended the audit procedures referred to in para 6 and 7 to the
+                                                                date of the new auditor’s report; and
+                                                            </li>
+                                                            <li>
+                                                                Provided a new auditor’s report on the amended financial
+                                                                statements. The new auditor’s report shall not be dated earlier
+                                                                than the date of approval of the amended financial statements?
+                                                            </li>
+                                                        </ol>
+                                                    </ol>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 12
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Whether the law, regulation or the financial reporting framework
+                                                        prohibited management from restricting the amendment of the
+                                                        financial statements to the effects of the subsequent events or events
+                                                        causing those amendments and those responsible for approving the
+                                                        financial statements are prohibited from restricting their approval to
+                                                        that amendment? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        If no, the auditor is permitted to restrict the audit procedures on
+                                                        subsequent events required in paragraph 11 to that amendment. In such
+                                                        cases, has the auditor either: 
+                                                        
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Amended the auditor’s report to include an additional date restricted
+                                                            to that amendment that thereby indicates that the auditor’s
+                                                            procedures on subsequent events are restricted solely to the
+                                                            amendment of the financial statements described in the relevant note
+                                                            to the financial statements; or 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Provided a new or amended auditor’s report that includes a
+                                                            statement in an Emphasis of Matter paragraph or Other Matter(s)
+                                                            paragraph that conveys that auditor’s procedures on subsequent
+                                                            events are restricted solely to the amendment of the financial
+                                                            statements as described in the relevant note to the financial
+                                                            statements? 
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: When, in the circumstances described in paragraph 12(a), the
+                                                        auditor amends the auditor’s report to include an additional date
+                                                        restricted to that amendment, the date of the auditor’s report on the
+                                                        financial statements prior to their subsequent amendment by
+                                                        management remains unchanged because this date informs the reader
+                                                        as to when the audit work on those financial statements was
+                                                        completed. However, an additional date is included in the auditor’s
+                                                        report to inform users that the auditor’s procedures subsequent to that
+                                                        date were restricted to the subsequent amendment of the financial
+                                                        statements. The following is an illustration of such an additional date: 
+                                                    </p>
+                                                    <p>
+                                                        “(Date of auditor’s report), except as to Note Y, which is as of (date of
+                                                        completion of audit procedures restricted to amendment described in
+                                                        Note Y)”. (Para A13)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 13
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor come across any situation where the management does
+                                                        not amend the financial statements in circumstances where the auditor
+                                                        believes they need to be amended? 
+                                                    </p>
+                                                    <p>
+                                                        If yes: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Has the auditor modified the opinion as required by SA
+                                                            705(Revised) and then provided the auditor’s report, if the auditor’s
+                                                            report has not yet provided by entity or 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Has the auditor notified the management and, unless all of those
+                                                            charged with governance are involved in managing the entity, those
+                                                            charged with governance, not to issue the financial statements to
+                                                            third parties before the necessary amendments have been made? 
+                                                        </li>
+                                                        <li>
+                                                            Has the Auditor taken appropriate action to seek to prevent reliance on the auditor’s report, if the financial statements are nevertheless
+                                                            subsequently issued without the necessary amendments?
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: In some entities, management may not be required by the
+                                                        applicable law, regulation or the financial reporting framework to issue
+                                                        amended financial statements. This is often the case when issuance of
+                                                        the financial statements for the following period is imminent, provided
+                                                        appropriate disclosures are made in such statements. (Para A14)]
+                                                    </p>
+                                                    <p>
+                                                        [Note: The auditor may need to fulfill additional legal obligations even
+                                                        when the auditor has notified management not to issue the financial
+                                                        statements and management has agreed to this request. (Para A16)] 
+                                                    </p>
+                                                    <p>
+                                                        [Note: When management has issued the financial statements despite
+                                                        the auditor’s notification not to issue the financial statements to third
+                                                        parties, the auditor’s course of action to prevent reliance on the
+                                                        auditor’s report on the financial statements depends upon the auditor’s
+                                                        legal rights and obligations. Consequently, the auditor may consider it
+                                                        appropriate to seek legal advice. (Para A17)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Facts Which Become Known to the Auditor After the Financial
+                                                        Statements have been Issued
+                                                        
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 14
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has any fact become known to the auditor after the financial
+                                                        statements are issued, which may have caused the auditor to amend the
+                                                        auditor’s report had the fact become known to auditor at the date of
+                                                        auditor’s report? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor: 
+
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Discussed the matter with management and, where appropriate,
+                                                            those charged with governance. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Determined whether the financial statements need amendment and,
+                                                            if so, 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Inquired how management intends to address the matter in the
+                                                            financial statements? 
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: The auditor’s obligations regarding other information received
+                                                        after the date of the auditor’s report are addressed in SA 720(Revised).
+                                                        While the auditor has no obligation to perform any audit procedures
+                                                        regarding the financial statements after the financial statements have
+                                                        been issued, SA 720 (Revised) contains requirements and guidance
+                                                        with respect to other information obtained after the date of the
+                                                        auditor’s report. (Para A18)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 15 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the management amended the financial statements? 
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor: 
+
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Carried out the audit procedures necessary in the circumstances on
+                                                            the amendment.
+                                                        </li>
+                                                        <li>
+                                                            Reviewed the steps taken by management to ensure that anyone in
+                                                            receipt of the previously issued financial statements together with
+                                                            the auditor’s report thereon is informed of the situation. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Unless the circumstances in paragraph 12 apply:
+
+                                                        </li>
+                                                        <ol type="i">
+                                                            <li>
+                                                                Extended the audit procedures referred in para 6 and 7 to the
+                                                                date of the new auditor’s report; and date the new auditor’s
+                                                                report no earlier than the date of approval of the amended
+                                                                financial statements; and
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Provided a new auditor’s report on the amended financial
+                                                                statements. 
+                                                            </li>
+                                                        </ol>
+                                                        <li>
+                                                            When the circumstances in paragraph 12 apply, amended the
+                                                            auditor’s report, or provided a new auditor’s report as required by
+                                                            paragraph 12? 
+                                                            
+                                                        </li>
+                                                    </ol>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 16 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor included in the new or amended auditor’s report an
+                                                        Emphasis of Matter paragraph or Other Matter(s) paragraph referring
+                                                        to a note to the financial statements that more extensively discusses the
+                                                        reason for the amendment of the previously issued financial statements
+                                                        and to the earlier report provided by the auditor? 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 17 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the management taken the necessary steps to ensure that anyone in
+                                                        receipt of the previously issued financial statements is informed of the
+                                                        situation and management has amended the financial statements in
+                                                        circumstances where the auditor believes they need to be amended? 
+                                                    </p>
+                                                    <p>
+                                                        If not, has the auditor notified management and, unless all of those
+                                                        charged with governance are involved in managing the entity, those
+                                                        charged with governance, that the auditor will seek to prevent future
+                                                        reliance on the auditor’s report? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        Has the management or those charged with governance, taken these
+                                                        necessary steps after being notified of the above by the auditor?
+                                                    </p>
+                                                    <p>
+                                                        If not, has the auditor taken appropriate action to seek to prevent
+                                                        reliance on the auditor’s report? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: When the auditor believes that management, or those charged
+                                                        with governance, have failed to take the necessary steps to prevent
+                                                        reliance on the auditor’s report on financial statements previously
+                                                        issued by the entity despite the auditor’s prior notification that the
+                                                        auditor will take action to seek to prevent such reliance, the auditor’s
+                                                        course of action depends upon the auditor’s legal rights and
+                                                        obligations. Consequently, the auditor may consider it appropriate to
+                                                        seek legal advice. (Para A20)] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                                </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

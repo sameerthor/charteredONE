@@ -1,0 +1,1809 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 550, Related Parties</h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                         
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 11
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Risk Assessment Procedures and Related Activities
+                                                    </h5>
+                                                    <p>
+                                                        Whether the auditor has performed the audit procedures and related
+                                                        activities to obtain information relevant to identifying the risks of
+                                                        material misstatement associated with related party relationships and
+                                                        transactions? 
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td>
+                                                    <span>
+                                                        Para
+                                                        A8 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Whether auditor’s responsibilities regarding related party relationships
+                                                        and transactions affected by the audit mandate, or by obligations on
+                                                        those entities arising from legislation, regulation, ministerial directives,
+                                                        government policy requirements, or resolutions of the legislature? 
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor addressed the risks of non-compliance with laws
+                                                        and regulations governing such entities that lay down specific
+                                                        requirements in the conduct of business with related parties and
+                                                        considered specific Financial reporting requirements for related party
+                                                        relationships and transactions that may differ from other entities? 
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Understanding the Entity’s Related Party Relationships and
+                                                        Transactions
+                                                        
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                               </tr>
+                                            </tr>
+                                            <tr>
+                                             <td>
+                                                <span>
+                                                    Para 12 
+                                                </span>
+                                             </td>
+                                             <td>
+                                                 <p>
+                                                    Whether the engagement team discussion includes specific
+                                                    consideration of the susceptibility of financial statements to material
+                                                    misstatement due to fraud or error that could result from the entity’s
+                                                    related party relationships and transactions? 
+                                                    
+                                                 </p>
+                                                 <p>
+                                                    [Note: Matters that may be addressed in the discussion among the
+                                                    engagement team include: 
+                                                    
+                                                 </p>
+                                                 <ul>
+                                                    <li>
+                                                        The nature and extent of the entity’s relationships and transactions
+                                                        with related parties (using, for example, the auditor’s record of
+                                                        identified related parties updated after each audit). 
+                                                        
+                                                    </li>
+                                                    <li>
+                                                        An emphasis on the importance of maintaining professional
+                                                        skepticism throughout the audit regarding the potential for material
+                                                        misstatement associated with related party relationships and
+                                                        transactions. 
+                                                    </li>
+                                                    <li>
+                                                        The circumstances or conditions of the entity that may indicate the
+                                                        existence of related party relationships or transactions that
+                                                        management has not identified or disclosed to the auditor (e.g., a
+                                                        complex organisational structure, use of special-purpose entities for
+                                                        off-balance sheet transactions, or an inadequate information
+                                                        system). 
+                                                    </li>
+                                                    <li>
+                                                        The records or documents that may indicate the existence of related
+                                                        party relationships or transactions. (Para A9)] 
+                                                        
+                                                    </li>
+                                                 </ul>
+                                                 <p>
+                                                    [Note: In addition, the discussion in the context of fraud may include
+                                                    specific consideration of how related parties may be involved in fraud.
+                                                    For example: 
+                                                 </p>
+                                                 <ul>
+                                                    <li>
+                                                        How special-purpose entities controlled by management might be
+                                                        used to facilitate earnings management. 
+                                                        
+                                                    </li>
+                                                    <li>
+                                                        How transactions between the entity and a known business partner
+                                                        of a key member of management could be arranged to facilitate
+                                                        misappropriation of the entity’s assets. (Para A10)] 
+                                                        
+                                                    </li>
+                                                 </ul>
+                                             </td>
+                                             <td>
+                                                 <input type="text" class="form-control">
+                                             </td>
+                                             <td>
+                                                 <input type="text" class="form-control">
+                                             </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 13
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor inquired of management regarding: 
+
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            The identity of the entity’s related parties, including changes from
+                                                            the prior period; 
+                                                        </li>
+                                                        <li>
+                                                            The nature of the relationships between the entity and these related
+                                                            parties; and 
+                                                        </li>
+                                                        <li>
+                                                            Whether the entity entered into any transactions with these related
+                                                            parties during the period and, if so, the type and purpose of the
+                                                            transactions? 
+                                                        </li>
+                                                    </ol>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para
+                                                        A11,
+                                                        A12 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Whether the applicable financial reporting framework established
+                                                        related party requirements? 
+                                                    </p>
+                                                    <p>
+                                                        If yes, whether the management has maintained information systems to
+                                                        record, process and summarise related party relationships and
+                                                        transactions to enable the entity to meet the accounting and disclosure
+                                                        requirements of the framework? 
+                                                    </p>
+                                                    <p>
+                                                        If no, whether auditor’s risk assessment procedures and related
+                                                        activities include inquiries to obtain information regarding, 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            the entity’s ownership and governance structures, 
+
+                                                        </li>
+                                                        <li>
+                                                            the types of investments that the entity is making and plans to make
+                                                            and 
+                                                        </li>
+                                                        <li>
+                                                            the way the entity is structured and how it is financed?
+                                                        </li>
+                                                        <li>
+                                                            Whether the auditor identified parties with which the entity
+                                                            engages in significant transactions, or shares resources to a
+                                                            significant degree? 
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 14
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor inquired of management and others within the entity,
+                                                        and performed other risk assessment procedures considered
+                                                        appropriate, to obtain an understanding of the controls, if any, that
+                                                        management has established to: 
+                                                        
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Identify, account for, and disclose related party relationships and
+                                                            transactions in accordance with the applicable financial reporting
+                                                            framework 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Authorize and approve significant transactions and arrangements
+                                                            with related parties; and
+                                                        </li>
+                                                        <li>
+                                                            Authorize and approve significant transactions and arrangements outside the normal course of business? 
+
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: Others within the entity are those considered likely to have
+                                                        knowledge of the entity’s related party relationships and transactions,
+                                                        and the entity’s controls over such relationships and transactions. These
+                                                        may include, to the extent that they do not form part of management: 
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Those charged with governance; 
+                                                        </li>
+                                                        <li>
+                                                            Personnel in a position to initiate, process, or record transactions
+                                                            that are both significant and outside the entity’s normal course of
+                                                            business, and those who supervise or monitor such personnel; 
+                                                        </li>
+                                                        <li>
+                                                            Internal auditors; 
+
+                                                        </li>
+                                                        <li>
+                                                            In-house legal counsel; and 
+
+                                                        </li>
+                                                        <li>
+                                                            The chief ethics officer or equivalent person. (Para A15)]
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Auditor can refer para A17 of this SA containing features of the
+                                                        control environment relevant to mitigating the risks of material
+                                                        misstatement associated with related party relationships and
+                                                        transactions.] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: Auditor can refer para A19 of this SA for examples of possible
+                                                        fraud in relation to management override of controls.] 
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para
+                                                        A18
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor concluded that controls over related party relationships
+                                                        and transactions are ineffective or does not exist and auditor is unable
+                                                        to obtain sufficient appropriate audit evidence about related party
+                                                        relationships and transactions? 
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor in accordance with SA 705(Revised), considered
+                                                        the implications for the audit, including the auditor’s report?
+                                                    </p>
+                                                    <p>
+                                                        [Note: Controls over related party relationships and transactions within
+                                                        some entities may be deficient or non-existent for a number of reasons,
+                                                        such as: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The low importance attached by management to identifying and
+                                                            disclosing related party relationships and transactions.
+                                                        </li>
+                                                        <li>
+                                                            The lack of appropriate oversight by those charged with
+                                                            governance. 
+                                                        </li>
+                                                        <li>
+                                                            An intentional disregard for such controls because related party
+                                                            disclosures may reveal information that management considers
+                                                            sensitive, for example, the existence of transactions involving
+                                                            family members of management. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            An insufficient understanding by management of the related party
+                                                            requirements of the applicable financial reporting framework. 
+                                                        </li>
+                                                        <li>
+                                                            The absence of disclosure requirements under the applicable
+                                                            financial reporting framework. (Para A18)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Maintaining Alertness for Related Party Information When
+                                                        Reviewing Records or Documents
+                                                        
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 15
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor inspected following for indications of the existence of
+                                                        related party relationships or transactions that management has not
+                                                        previously identified or disclosed to the auditor: 
+                                                        
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Bank, legal and third party confirmations obtained as part of the
+                                                            auditor’s procedures; 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Minutes of meetings of shareholders and of those charged with
+                                                            governance; and 
+                                                        </li>
+                                                        <li>
+                                                            Such other records or documents considers necessary in the
+                                                            circumstances of the entity? 
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: Auditor can refer para A22 and para A23 of this SA for
+                                                        examples of documents or arrangements that auditor may inspect to
+                                                        obtain information about related party relationships and transactions.]
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 16
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Has the auditor identified significant transactions outside the entity’s
+                                                        normal course of business when performing the audit procedures
+                                                        required by Para 15 or through other audit procedures? 
+                                                    </p>
+                                                    <p>
+                                                        If yes, whether the auditor has inquired of management about nature of
+                                                        these transactions and involvement of related parties in a significant
+                                                        transaction outside the entity’s normal course of business?
+                                                    </p>
+                                                    <p>
+                                                        [Note: Auditor can refer para A25 of this SA for examples of
+                                                        transactions outside the entity’s normal course of business.]
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para
+                                                        A26 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        While inquiring into the nature of the significant transactions outside
+                                                        the entity’s normal course of business, has the auditor obtained
+                                                        understanding of the business rationale of the transactions, and the
+                                                        terms and conditions under which these have been entered into?
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 17  
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Sharing Related Party Information with the Engagement Team
+                                                    </h5>
+                                                    <p>
+                                                        Has the auditor shared the relevant information obtained about the
+                                                        entity’s related parties with the other members of the engagement
+                                                        team? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: Auditor can refer para A28 of this SA for examples of related
+                                                        party information that may be shared among the engagement team
+                                                        members.]
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Identification and Assessment of Risks of Material Misstatement
+                                                        Associated with Related Party Relationships and Transactions 
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 18
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                   <p>
+                                                    Has the auditor identified and assessed the risks of material
+                                                    misstatement associated with related party relationships and
+                                                    transactions and determined whether those risks are significant? 
+                                                   </p>
+                                                   <p>
+                                                    [Note: In making this determination, the auditor shall treat identified
+                                                    significant related party transactions outside the entity’s normal course
+                                                    of business as giving rise to significant risks.]
+                                                    
+                                                   </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 19
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                   <p>
+                                                    Has the auditor identified fraud risk factors (including circumstances
+                                                    relating to the existence of a related party with dominant influence) when performing the risk assessment procedures and related activities
+                                                    in connection with related parties?  
+                                                   </p>
+                                                   <p>
+                                                    If yes, whether such information was considered in identifying and
+                                                    assessing the risks of material misstatement due to fraud in accordance
+                                                    with SA 240? 
+                                                     
+                                                   </p>
+                                                   <p>
+                                                    [Note: Related parties, by virtue of their ability to exert control or
+                                                    significant influence, may be in a position to exert dominant influence
+                                                    over the entity or its management. Consideration of such behavior is
+                                                    relevant when identifying and assessing the risks of material
+                                                    misstatement due to fraud. (Para A6)]
+                                                   </p>
+                                                   <p>
+                                                    [Note: Auditor can refer para A29 of this SA for indicators of dominant
+                                                    influence exerted by a related party and para A30 for examples of
+                                                    significant risks of material misstatement due to fraud that may arise if
+                                                    related party with dominant influence exists.] 
+                                                    
+                                                   </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 20
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Responses to the Risks of Material Misstatement Associated with
+                                                        Related Party Relationships and Transactions
+                                                    </h5>
+                                                   <p>
+                                                    Has the auditor designed and performed further audit procedures to
+                                                    obtain sufficient appropriate audit evidence about the assessed risks of
+                                                    material misstatement associated with related party relationships and
+                                                    transactions? 
+                                                    
+                                                   </p>
+                                                   <p>
+                                                    [Note: Examples of substantive audit procedures that the auditor may
+                                                    perform when the auditor has assessed a significant risk that
+                                                    management has not appropriately accounted for or disclosed specific
+                                                    related party transactions in accordance with the applicable financial
+                                                    reporting framework (whether due to fraud or error) include: 
+                                                    
+                                                   </p>
+                                                   <ul>
+                                                    <li>
+                                                        Confirming or discussing specific aspects of the transactions with
+                                                        intermediaries such as banks, law firms, guarantors, or agents,
+                                                        where practicable and not prohibited by law, regulation or ethical
+                                                        rules. 
+                                                    </li>
+                                                    <li>
+                                                        Confirming the purposes, specific terms or amounts of the
+                                                        transactions with the related parties (this audit procedure may be
+                                                        less effective where the auditor judges that the entity is likely to
+                                                        influence the related parties in their responses to the auditor). 
+                                                        
+                                                    </li>
+                                                    <li>
+                                                        Where applicable, reading the financial statements or other relevant
+                                                        financial information, if available, of the related parties for
+                                                        evidence of the accounting of the transactions in the related parties’
+                                                        accounting records. (Para A32)] 
+                                                        
+                                                    </li>
+                                                   </ul>
+                                                   <p>
+                                                    [Note: If the auditor has assessed a significant risk of material
+                                                    misstatement due to fraud as a result of the presence of a related party
+                                                    with dominant influence, the auditor may, in addition to the general
+                                                    requirements of SA 240, perform audit procedures such as the
+                                                    following to obtain an understanding of the business relationships that
+                                                    such a related party may have established directly or indirectly with the
+                                                    entity and to determine the need for further appropriate substantive
+                                                    audit procedures:
+                                                   </p>
+                                                   <ul>
+                                                    <li>
+                                                        Inquiries of, and discussion with, management and those charged
+                                                        with governance. 
+                                                    </li>
+                                                    <li>
+                                                        Inquiries of the related party. 
+                                                    </li>
+                                                    <li>
+                                                        Inspection of significant contracts with the related party. 
+
+                                                    </li>
+                                                    <li>
+                                                        Appropriate background research, such as through the Internet or
+                                                        specific external business information databases. 
+                                                    </li>
+                                                    <li>
+                                                        Review of employee whistle-blowing reports where these are
+                                                        retained. (Para A33)] 
+                                                        
+                                                    </li>
+                                                   </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para
+                                                        21, 22
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Identification of Previously Unidentified or Undisclosed Related
+                                                        Parties or Significant Related Party Transactions 
+                                                        
+                                                    </h5>
+                                                    <p>
+                                                        Has the auditor identified arrangements or information that suggests the
+                                                        existence of related party relationships or transactions that management
+                                                        has not previously identified or disclosed to the auditor? 
+                                                    </p>
+                                                    <p>
+                                                        [Note: The auditor shall determine whether the underlying
+                                                        circumstances confirm the existence of those relationships or
+                                                        transactions.] 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        If yes, Has the auditor: 
+
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Promptly communicated the relevant information to the other
+                                                            members of the engagement team; 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Where the applicable financial reporting framework establishes
+                                                            related party requirements; 
+                                                        </li>
+                                                        <ul>
+                                                            <li>
+                                                                Requested management to identify all transactions with the
+                                                                newly identified related parties for auditor’s further
+                                                                evaluation; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Inquired as to why the entity’s controls over related party
+                                                                relationships and transactions failed to enable identification or
+                                                                disclosure of the related party relationships or transactions; 
+                                                            </li>
+                                                        </ul>
+                                                        <li>
+                                                            Performed appropriate substantive audit procedures relating to
+                                                            such newly identified related parties or significant related party
+                                                            transactions; 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Reconsidered the risk that other related parties or significant
+                                                            related party transactions may exist that management has not
+                                                            previously identified or disclosed to the auditor, and perform
+                                                            additional audit procedures as necessary; and 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Evaluated the implication on audit if the non–disclosure by
+                                                            management appears intentional (and therefore indicative of a risk
+                                                            of material misstatement due to fraud). 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Auditor can refer para A36 of this SA for examples of
+                                                        substantive audit procedures that the auditor may perform relating to
+                                                        newly identified related parties or significant related party
+                                                        transactions.]
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 23
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Identified Significant Related Party Transactions outside the Entity’s Normal Course of Business 
+
+                                                    </h5>
+                                                    <p>
+                                                        Has the auditor identified significant related party transactions outside
+                                                        the entity’s normal course of business? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor:
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Inspected the underlying contracts or agreements, if any, and
+                                                            evaluated whether 
+                                                        </li>
+                                                        <ol type="i">
+                                                            <li>
+                                                                The business rationale (or lack thereof) of transactions suggests
+                                                                that they may have been entered into to engage in fraudulent
+                                                                financial reporting or to conceal misappropriation of assets; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The terms of the transactions are consistent with management’s
+                                                                explanations; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The transactions have been appropriately accounted for and
+                                                                disclosed in accordance with the applicable financial reporting
+                                                                framework; and
+                                                            </li>
+                                                        </ol>
+                                                        <li>
+                                                            Obtained audit evidence that the transactions have been
+                                                            appropriately authorized and approved? 
+                                                            
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        [Note: Auditor can refer para A38 and A39 of this SA for factors that
+                                                        may be relevant while evaluating the business rationale of a significant
+                                                        related party transaction outside the entity’s normal course of business.] 
+                                                    </p>
+                                                    <p>
+                                                        [Note: Authorisation and approval alone, however, may not be
+                                                        sufficient in concluding whether risks of material misstatement due to
+                                                        fraud are absent because authorisation and approval may be ineffective
+                                                        if there has been collusion between the related parties or if the entity is
+                                                        subject to the dominant influence of a related party. (Para A40)]
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 24
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Assertions That Related Party Transactions Were Conducted on
+                                                        Terms Equivalent to Those Prevailing in an Arm’s Length
+                                                        Transaction 
+                                                        
+                                                    </h5>
+                                                    <p>
+                                                        Has the management made an assertion in the financial statements to
+                                                        the effect that a related party transaction was conducted on terms
+                                                        equivalent to those prevailing in an arm’s length transaction? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        If yes, whether the auditor has obtained sufficient appropriate audit
+                                                        evidence about the assertion? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: Management’s support for the assertion that a related party
+                                                        transaction was conducted on terms equivalent to those prevailing in an
+                                                        arm’s length transaction may include: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Comparing the terms of the related party transaction to those of an
+                                                            identical or similar transaction with one or more unrelated parties. 
+                                                        </li>
+                                                        <li>
+                                                            Engaging an external expert to determine a market value and to
+                                                            confirm market terms and conditions for the transaction. 
+                                                        </li>
+                                                        <li>
+                                                            Comparing the terms of the transaction to known market terms for
+                                                            broadly similar transactions on an open market. (Para A43)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Evaluating management’s support for this assertion may involve one or more of the following: 
+
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            Considering the appropriateness of management’s process for
+                                                            supporting the assertion. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Verifying the source of the internal or external data supporting the
+                                                            assertion, and testing the data to determine their accuracy,
+                                                            completeness and relevance.
+                                                        </li>
+                                                        <li>
+                                                            Evaluating the reasonableness of any significant assumptions on
+                                                            which the assertion is based. (Para A44)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <h5>
+                                                        Evaluation of the Accounting for and Disclosure of Identified
+                                                        Related Party Relationships and Transactions 
+                                                    </h5>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para
+                                                        25(a)
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        In forming an opinion on the financial statements in accordance with
+                                                        SA 700 (Revised), has the auditor evaluated that the identified related
+                                                        party relationships and transactions have been appropriately accounted
+                                                        for and disclosed in accordance with the applicable financial reporting
+                                                        framework?
+                                                    </p>
+                                                    <p>
+                                                        [Note: Evaluating the related party disclosures in the context of the
+                                                        disclosure requirements of the applicable financial reporting framework
+                                                        means considering whether the facts and circumstances of the entity’s
+                                                        related party relationships and transactions have been appropriately
+                                                        summarized and presented so that the disclosures are understandable.
+                                                        Disclosures of related party transactions may not be understandable if: 
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            The business rationale and the effects of the transactions on the
+                                                            financial statements are unclear or misstated; or 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Key terms, conditions, or other important elements of the
+                                                            transactions necessary for understanding them are not appropriately
+                                                            disclosed. (Para A47)]
+                                                            
+                                                        </li>
+                                                    </ol>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para
+                                                        25(b) 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Informing an opinion on the financial statements in accordance with
+                                                        SA 700 (Revised) has the auditor evaluated that whether the effects of
+                                                        the related party relationships and transactions:
+                                                    </p>
+                                                   <ul>
+                                                    <li>
+                                                        Prevent the financial statements from achieving true and fair
+                                                        presentation (for fair presentation frameworks); or 
+                                                    </li>
+                                                    <li>
+                                                        Cause the financial statements to be misleading (for compliance
+                                                        frameworks) 
+                                                        
+                                                    </li>
+                                                   </ul>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 26
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Written Representations 
+
+                                                    </h5>
+                                                    <p>
+                                                        Whether the applicable financial reporting framework established
+                                                        related party requirements? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor obtained written representation from the
+                                                        management and, where appropriate those charged with governance
+                                                        stating that: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            They have disclosed to the auditor the identity of the entity’s
+                                                            related parties and all the related party relationships and
+                                                            transactions of which they are aware; and 
+                                                        </li>
+                                                        <li>
+                                                            They have appropriately accounted for and disclosed such
+                                                            relationships and transactions in accordance with the requirements
+                                                            of the framework? 
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        [Note: Auditor can refer para A48 for circumstances in which it may be
+                                                        appropriate to obtain written representations from those charged with
+                                                        governance.]
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 27 
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Communication with Those Charged with Governance 
+
+                                                    </h5>
+                                                    <p>
+                                                        If all of those charged with governance are not involved in managing
+                                                        the entity, has the auditor communicated with them significant matters
+                                                        that arise during the audit in connection with the entity’s related
+                                                        parties? 
+                                                    </p>
+                                                    <p>
+                                                        [Note: Auditor can refer para A50 for examples of significant related
+                                                        party matters.
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Para 28
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h5>
+                                                        Documentation
+                                                    </h5>
+                                                    <p>
+                                                        Has the auditor included names of the identified related parties and the
+                                                        nature of the related party relationships in audit documentation?
+                                                        
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                                </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>
