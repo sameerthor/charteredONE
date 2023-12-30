@@ -847,10 +847,39 @@ body a:hover{
     display: flex;
   }
   .lists-btn-toggle a{
-    border: 1px solid red;
     margin-left: .5rem;
     padding: .35rem .8rem;
     font-weight: 500;
     font-size: .85rem;
   }
-  
+  /* ======================consolidated table================ */
+  .table-responsive .consolidated-table .setTwo{
+    background-color: #fbfaff;
+  }
+  .table-responsive .consolidated-table .setThree{
+    background-color: #fdf4e7;
+  }
+  .table-responsive .consolidated-table .setFour{
+    background-color: #f3f3f3;
+  }
+  .table-responsive .monthly-consolidate {
+    background-color: #f1edf8;
+  }
+  .table-responsive .monthly-consolidateTwo {
+    background-color: #fffbdb;
+  }
+  .save-data-box{
+    background-color: #fffbdb;
+    padding: 1.8rem 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  .save-data-box p{
+    margin: 0;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .85rem;
+    font-weight: 500;
+  }

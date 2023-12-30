@@ -624,16 +624,33 @@
                                                 <a href="./gstin3bOffsetLiability.html"><span class="count selected">4</span>Offset Liability</a>
                                             </div>
                                             <div>
-                                                <a href="#000"><span class="count">5</span>File GSTR 3B</a>
+                                                <a href="./save-and-file-gst.html"><span class="count">5</span>File GSTR 3B</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <div class="card-header">
-                                            <span>ITC Utilization</span>
+                                        <div class="edit-header">
+                                            <div class=" lists-btn">
+                                                <a href="#">Download JSON</a>
+                                                <a href="https://payment.gst.gov.in/payment/" target="_blank">Create Challan</a>
+                                            </div>
+                                            <div class=" lists-btn">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#sendMail"><i class="fa-regular fa-envelope"></i> Email PDF</a>
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#sendMail"><i class="fa-regular fa-envelope"></i> Email Computation</a>
+                                            </div>
                                         </div>
-                                        <div class="table-responsive mt-2">
-                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="edit-header">
+                                            <div class="customeDropBox mb-3 mb-lg-0">
+                                                <span>ITC Utilization Optimize Offsets</span>
+                                            </div>
+                                            <div class=" lists-btn">
+                                                <a href="#"> Optimize Offset</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="align-middle mb-0 table table-borderless table-striped">
                                                 <tbody>
                                                     <tr class="text-center">
                                                         <th>Tax Type</th>
@@ -879,10 +896,15 @@
                                     </div>
                                     <!-- ========================== -->
                                     <div class="card-body">
-                                        <div class="card-header">
-                                            <span>Cash Utilization (Tax, Interest and Late Fees)</span>
+                                        <div class="edit-header">
+                                            <div class="customeDropBox mb-3 mb-lg-0">
+                                                <span>Cash Utilization (Tax, Interest and Late Fees)</span>
+                                            </div>
+                                            <div class=" lists-btn">
+                                                <a href="#"><i class="fa-solid fa-arrows-rotate"></i> Refresh Data</a>
+                                            </div>
                                         </div>
-                                        <div class="table-responsive mt-2">
+                                        <div class="table-responsive">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <tbody>
                                                     <tr class="text-center">
@@ -1019,7 +1041,7 @@
                                         <div class="card-header">
                                             <span>Credit &amp Cash Ledger</span>
                                         </div>
-                                        <div class="table-responsive mt-2">
+                                        <div class="table-responsive">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <tbody>
                                                     <tr class="text-center">
@@ -1065,6 +1087,26 @@
                         </div>
                     </div>
                 </div>
+        </div>
+    </div>
+    <!-- =============================send email======================== -->
+    <div class="modal fade" id="sendMail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Send Mail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="col">
+                    <input type="text" class="form-control" placeholder="eg. example@yourEmail.com">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</button>
+              <button type="button" class="btn btn-primary">Send</button>
+            </div>
+          </div>
         </div>
     </div>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
