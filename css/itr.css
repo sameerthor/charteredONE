@@ -1388,3 +1388,116 @@ input[type='date']:not(:focus):in-range::-webkit-datetime-edit-year-field,
 .accordion-button.collapsed::after {
 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+.bussiness-info-btn{
+  margin-bottom: .5rem;
+}
+.bussiness-info-btn a{
+  display: inline-block;
+  margin-right: .5rem;
+  padding: .4rem .8rem;
+  letter-spacing: .5px;
+  font-weight: 500;
+  font-size: .8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 2px solid #F96302;
+  color: #F96302;
+}
+.bussiness-info-btn .selected{
+  background-color: #F96302;
+  color: #fff;
+}
+@media(max-width:500px){
+  .bussiness-info-btn a{
+    padding: .35rem .6rem;
+    font-size: .7rem;
+    margin-bottom: .5rem;
+  }
+}
+.bussiness-info-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+ .term span{
+  font-weight: 600;
+  font-size: .71rem;
+  color: #000;
+}
+ .term label{
+  font-weight: 600;
+  font-size: .7rem;
+  color: #000;
+}
+@media(max-width:768px){
+  .bussiness-info-header{
+   flex-direction: column;
+  }
+}
+.custome-form-check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custome-form-check input{
+ height: .85rem;
+ width: .85rem;
+ border: 1px solid #232323bf;
+}
+.qdbtns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qdbtns .import-btn{
+  display: inline-block;
+  display: inline-block;
+  padding: .4rem .8rem;
+  letter-spacing: .5px;
+  font-weight: 500;
+  font-size: .8rem;
+  border-radius: 1.76rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #26ace3;
+  color: #fff;
+} 
+@media(max-width:768px){
+  .qdbtns{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.gst-details-box label{
+  font-weight: 500;
+  color: #000;
+  padding-left: .25rem;
+}
+.done-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+}
+.done-btn a{
+  margin-left: .6rem;
+  padding: .4rem 1rem;
+  letter-spacing: .5px;
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.done-btn a:nth-of-type(1){
+ background-color: #259dff;
+}
+.done-btn a:nth-of-type(2){
+  background-color: #6c757d;
+ }

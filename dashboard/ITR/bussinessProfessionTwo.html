@@ -230,7 +230,8 @@
                                             <div class="tabBtn" onclick="changeTab(1)">Financial Statement Notes <i class="fa-solid fa-angle-right"></i></div>
                                             <div class="tabBtn" onclick="changeTab(2)">Manufacturing Account <i class="fa-solid fa-angle-right"></i></div>
                                             <div class="tabBtn" onclick="changeTab(3)">Trading Account <i class="fa-solid fa-angle-right"></i></div>
-                                            <div class="tabBtn active" onclick="changeTab(4)">Profit &amp; Loss <i class="fa-solid fa-angle-right"></i></div>
+                                            <div class="tabBtn" onclick="changeTab(4)">Profit &amp; Loss <i class="fa-solid fa-angle-right"></i></div>
+                                            <div class="tabBtn active" onclick="changeTab(5)">Balance Sheet <i class="fa-solid fa-angle-right"></i></div>
                                         </div>
                                         <div class="tab-data edit-data-box" id="tab1Content">
                                             <div class="responsive-tabs">
@@ -2595,7 +2596,7 @@
                                         </div>
                                       </div>
                                       <!-- ======================== -->
-                                      <div class="tab-data active edit-data-box col-md-10 mx-auto" id="tab4Content">
+                                      <div class="tab-data edit-data-box col-md-10 mx-auto" id="tab4Content">
                                             <div>
                                                 <div class="table-header">
                                                     <span>Profit &amp; Loss</span>
@@ -4536,6 +4537,1610 @@
                                                 <!-- ======================== -->
                                             </div>
                                         </div>
+                                      <!-- ========================== -->
+                                      <div class="tab-data active edit-data-box col-md-10 mx-auto" id="tab5Content">
+                                        <div class="table-header">
+                                            <span>Balance Sheet</span>
+                                        </div>
+                                        <div class="table-responsive hideScrollbar">
+                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <thead>
+                                                            <th class="text-center">Particulars</th>
+                                                            <th class="text-center">Total</th>
+                                                        </thead>
+                                                    </tr>
+                                                </thead>
+                                            </table>   
+                                        </div>     
+                                        <!-- ================================= -->
+                                        <div class="accordion table-accordian" id="accordionExampleTwelve">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwo">
+                                                        (1) Proprietor's fund
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwelve">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead>
+                                                                   <tr>
+                                                                        <th class="pl-4"><span>(a) Proprietor's capital</span></th>
+                                                                        <td>0.oo</td>
+                                                                   </tr>
+                                                                </thead>
+                                                            </table> 
+                                                        </div>
+                                                        <div class="accordion table-accordian" id="accordionExampleThirteen">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button class="accordion-button collapsed pl-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        (b) Reserves and Surplus
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleThirteen">
+                                                                    <div class="accordion-body">
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>(i)  Capital Reserve</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyNinetyFive')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyNinetyFive">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>(ii)  Revaluation Reserve</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyNinetySix')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyNinetySix">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>(iii)  Statutory Reserve</span></td> 
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyNinetySeven')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyNinetySeven">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>(iv) Any Other Reserve</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyNinetyEight')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyNinetyEight">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <tbody>
+                                                                                    <tr class="totalCount">
+                                                                                        <th class="pl-5">(v) Total(bi + bii + biii + biv)</th>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table> 
+                                                                        </div>
+                                                                    </div>   
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead>
+                                                                   <tr>
+                                                                        <th class="pl-4"><span>(c) Total proprietor's fund (a+bv)</span></th>
+                                                                        <td>0.oo</td>
+                                                                   </tr>
+                                                                </thead>
+                                                            </table> 
+                                                        </div>           
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ================ -->
+                                        <div class="accordion table-accordian" id="accordionExampleFourteen">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                        (2) Loan Funds
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleFourteen">
+                                                    <div class="accordion-body">
+                                                        <div class="accordion table-accordian" id="accordionExampleFifteen">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button class="accordion-button collapsed pl-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        (a) Secured Loans
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleFifteen">
+                                                                    <div class="accordion-body">
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>(i)  Foreign Currency Loan</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyHundredTwo')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyHundredTwo">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>(ii)  Rupee Loans</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyNinetyNine')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyNinetyNine">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>(A)   From Banks</span></td> 
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyHundred')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyHundred">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>  (B)   From Others</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyHundredOne')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyHundredOne">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <tbody>
+                                                                                    <tr class="totalCount">
+                                                                                        <th class="pl-5">(C) Total (iiA + iiB)</th>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                    <tr class="totalCount">
+                                                                                        <th class="pl-5">Total (ai + iiC)</th>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table> 
+                                                                        </div>
+                                                                    </div>   
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                        <!-- =================== -->
+                                                        <div class="accordion table-accordian" id="accordionExampleSixteen">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button class="accordion-button collapsed pl-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        (b)  Unsecured Loans (including deposits)
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleSixteen">
+                                                                    <div class="accordion-body">
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span>(A)   From Banks</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyNinetyFive')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyNinetyFive">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-5"><span> (C)   From Others</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('table_bodyNinetySix')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="table_bodyNinetySix">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <tbody>
+                                                                                    <tr class="totalCount">
+                                                                                        <th class="pl-5">iii Total(bi + bii)</th>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table> 
+                                                                        </div>
+                                                                    </div>   
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead>
+                                                                   <tr>
+                                                                        <th class="pl-4"><span>(c) Total Loan (a + b)</span></th>
+                                                                        <td>0.oo</td>
+                                                                   </tr>
+                                                                </thead>
+                                                            </table> 
+                                                        </div>           
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- =============== -->
+                                        <div class="table-responsive hideScrollbar">
+                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                <thead>
+                                                   <tr>
+                                                        <th><span>	(3) Deferred tax liability</span></th>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" value="0.00">
+                                                            </div>
+                                                        </td>
+                                                   </tr>
+                                                </thead>
+                                            </table> 
+                                        </div>
+                                        <!--=======================  -->
+                                        <div class="accordion table-accordian" id="accordionExampleSeventeen">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapSeventeen" aria-expanded="false" aria-controls="collapseTwo">
+                                                        (4) Advances
+                                                    </button>
+                                                </h2>
+                                                <div id="collapSeventeen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleSeventeen">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                   <tr>
+                                                                        <td class="pl-4"><span>(i) From Persons specified in section 40A(2) of IT Act</span></td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control" value="0.00">
+                                                                            </div>
+                                                                        </td>
+                                                                   </tr>
+                                                                   <tr>
+                                                                        <td class="pl-4"><span>(ii) From Others</span></td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control" value="0.00">
+                                                                            </div>
+                                                                        </td>
+                                                                   </tr>
+                                                                   <tr class="totalCount">
+                                                                        <th class="pl-4">(iii) Total Advances (i + ii)</th>
+                                                                        <td>0.00</td>
+                                                                   </tr>
+                                                                </tbody>
+                                                            </table> 
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead>
+                                                                   <tr>
+                                                                        <th class="pl-4"><span>(c) Total proprietor's fund (a+bv)</span></th>
+                                                                        <td>0.oo</td>
+                                                                   </tr>
+                                                                </thead>
+                                                            </table> 
+                                                        </div>           
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ================ -->
+                                        <div class="table-responsive hideScrollbar">
+                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                <thead>
+                                                   <tr>
+                                                        <th><span>(5) Sources of funds (1c+2c+3+4iii)</span></th>
+                                                        <td>0.oo</td>
+                                                   </tr>
+                                                </thead>
+                                            </table> 
+                                        </div> 
+                                        <!-- ==================== -->
+                                        <div class="accordion table-accordian" id="accordionExampleEighteen">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsEighteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                        (1)  Fixed assets
+                                                    </button>
+                                                </h2>
+                                                <div id="collapsEighteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleEighteen">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead>
+                                                                    <tr class="flex-table-row">
+                                                                        <td class="pl-5"><span> (a)   Gross block</span></td>
+                                                                        <td>
+                                                                            <div class="table-flex">
+                                                                                <div>
+                                                                                <span>0.00</span>
+                                                                                </div>
+                                                                                <div class="action_container" width="50">
+                                                                                    <button class="success" onclick="create_tr('createRowOne')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </thead> 
+                                                                <tbody id="createRowOne">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-flex">
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <thead>
+                                                                    <tr class="flex-table-row">
+                                                                        <td class="pl-5"><span>  (b)   Depreciation</span></td>
+                                                                        <td>
+                                                                            <div class="table-flex">
+                                                                                <div>
+                                                                                <span>0.00</span>
+                                                                                </div>
+                                                                                <div class="action_container" width="50">
+                                                                                    <button class="success" onclick="create_tr('createRowTwo')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </thead> 
+                                                                <tbody id="createRowTwo">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-flex">
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <td class="pl-5"><span>(c) Net Block(a-b)</span></td>
+                                                                        <td>0.00</td>
+                                                                    </tr>
+                                                                </thead>
+                                                                <thead>
+                                                                    <tr class="flex-table-row">
+                                                                        <td class="pl-5"><span>  (d)   Capital work-in-Progress</span></td>
+                                                                        <td>
+                                                                            <div class="table-flex">
+                                                                                <div>
+                                                                                <span>0.00</span>
+                                                                                </div>
+                                                                                <div class="action_container" width="50">
+                                                                                    <button class="success" onclick="create_tr('createRowThree')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </thead> 
+                                                                <tbody id="createRowThree">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-flex">
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table> 
+                                                        </div>         
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ==================== -->
+                                        <div class="accordion table-accordian" id="accordionExampleNineteen">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsNineteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                        (2)  Investments
+                                                    </button>
+                                                </h2>
+                                                <div id="collapsNineteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleNineteen">
+                                                    <div class="accordion-body">
+                                                        <div class="accordion table-accordian" id="accordionExampleTwenty">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwenty" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        (a) Long Term Investments
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapsTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwenty">
+                                                                    <div class="accordion-body">
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <tbody>
+                                                                                        <tr>
+                                                                                            <td><span> (i) Government and other Securities-Quoted</span></td>
+                                                                                            <td>0.00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><span> (ii) Government and other Securities-Unquoted</span></td>
+                                                                                            <td>0.00</td>
+                                                                                        </tr>
+                                                                                        <tr class="totalCount">
+                                                                                            <td><span> (iii) Total(ai+aii)</span></td>
+                                                                                            <td>0.00</td>
+                                                                                        </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>  
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- ================== -->
+                                                        <div class="accordion table-accordian" id="accordionExampleTwentyOne">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwentyOne" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        (b) Short-term investments
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapsTwentyOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwentyOne">
+                                                                    <div class="accordion-body">
+                                                                        <div class="table-responsive">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <tbody>
+                                                                                        <tr>
+                                                                                            <td><span> (i) Equity Shares,including share application money  </span></td>
+                                                                                            <td>0.00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><span> (ii) Preference Shares</span></td>
+                                                                                            <td>0.00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><span> (iii) Debenture</span></td>
+                                                                                            <td>0.00</td>
+                                                                                        </tr>
+                                                                                        <tr class="totalCount">
+                                                                                            <td><span> (iv) Total (bi + bii + biii)</span></td>
+                                                                                            <td>0.00</td>
+                                                                                        </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                        <tr class="totalCount">
+                                                                            <th><span>(c) Total investments (aviii + bvii)</span></th>
+                                                                            <td>0.00</td>
+                                                                        </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ==================== -->
+                                        <div class="accordion table-accordian" id="accordionExampleTwentyTwo">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwentyTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        (3)   Current assets ,loans and advances
+                                                    </button>
+                                                </h2>
+                                                <div id="collapsTwentyTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwentyTwo">
+                                                    <div class="accordion-body">
+                                                        <div class="accordion table-accordian" id="accordionExampleTwentyThree">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwentyThree" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        (a) Current assets
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapsTwentyThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwentyThree">
+                                                                    <div class="accordion-body">
+                                                                        <div class="accordion table-accordian" id="accordionExampleTwentySix">
+                                                                            <div class="accordion-item">
+                                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwentySix" aria-expanded="false" aria-controls="collapseTwo">
+                                                                                        (I) Inventories
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="collapsTwentySix" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwentySix">
+                                                                                    <div class="accordion-body">
+                                                                                        <div class="table-responsive hideScrollbar">
+                                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                                <tbody>
+                                                                                                        <tr>
+                                                                                                            <td><span> (A) Stores / consumables including packing Materials</span></td>
+                                                                                                            <td>0.00</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td><span> (B) Raw materials</span></td>
+                                                                                                            <td>0.00</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td><span> (C) Stock-in-process</span></td>
+                                                                                                            <td>0.00</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td><span> (D) Finished Goods/Traded Goods</span></td>
+                                                                                                            <td>0.00</td>
+                                                                                                        </tr>
+                                                                                                        <tr class="totalCount">
+                                                                                                            <td><span> (H) Total Inventories (A+B+C+D)</span></td>
+                                                                                                            <td>0.00</td>
+                                                                                                        </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>          
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <tbody>
+                                                                                        <tr>
+                                                                                            <th><span>(II) Sundry Debtors</span></th>
+                                                                                            <td>0.00</td>
+                                                                                        </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <div class="accordion table-accordian" id="accordionExampleTwentySeven">
+                                                                            <div class="accordion-item">
+                                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwentySeven" aria-expanded="false" aria-controls="collapseTwo">
+                                                                                        (III) Cash and Bank balances
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="collapsTwentySeven" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwentySeven">
+                                                                                    <div class="accordion-body">
+                                                                                        <div class="table-responsive hideScrollbar">
+                                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                                <thead>
+                                                                                                    <tr class="flex-table-row">
+                                                                                                        <td><span> (A) Cash-in-hand</span></td>
+                                                                                                        <td>
+                                                                                                            <div class="table-flex">
+                                                                                                                <div>
+                                                                                                                    <span>0.00</span>
+                                                                                                                </div>
+                                                                                                                <div class="action_container" width="50">
+                                                                                                                    <button class="success" onclick="create_tr('createRowFive')">
+                                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                                    </button>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </thead> 
+                                                                                                <tbody id="createRowFive">
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="col">
+                                                                                                                <input type="text" class="form-control">
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <div class="table-flex">
+                                                                                                                <div class="col">
+                                                                                                                    <input type="text" class="form-control">
+                                                                                                                </div>
+                                                                                                                <div class="action_container">
+                                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                                    </button>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                                <thead>
+                                                                                                    <tr class="flex-table-row">
+                                                                                                        <td><span>(B) Balance with banks</span></td>
+                                                                                                        <td>
+                                                                                                            <div class="table-flex">
+                                                                                                                <div>
+                                                                                                                    <span>0.00</span>
+                                                                                                                </div>
+                                                                                                                <div class="action_container" width="50">
+                                                                                                                    <button class="success" onclick="create_tr('createRowSix')">
+                                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                                    </button>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </thead> 
+                                                                                                <tbody id="createRowSix">
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="col">
+                                                                                                                <input type="text" class="form-control">
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <div class="table-flex">
+                                                                                                                <div class="col">
+                                                                                                                    <input type="text" class="form-control">
+                                                                                                                </div>
+                                                                                                                <div class="action_container">
+                                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                                    </button>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                                <tbody>
+                                                                                                    <tr class="totalCount">
+                                                                                                        <th>(D) Total Cash and cash equivalents (iiiA + iiiB + iiiC)</th>
+                                                                                                        <td>0.00</td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>  
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td><span>  (IV)  Other Current Assets</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowFour')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowFour">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- =========== -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- ================== -->
+                                                        <div class="accordion table-accordian" id="accordionExampleTwentyFour">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwentyFour" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        (b) Loans and advances
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapsTwentyFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwentyFour">
+                                                                    <div class="accordion-body">
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td><span>  (i)   Advances recoverable in cash or in kind or for value to be received</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowSeven')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowSeven">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td><span> (ii)   Deposits, loans and advances to corporates and others</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowEight')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowEight">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td><span>(iii)   Balance with Revenue Authorities</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowNine')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowNine">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <tbody>
+                                                                                    <tr class="totalCount">
+                                                                                        <th> (iv) Total(bi+bii+biii)</th>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                        <tr class="totalCount">
+                                                                            <th><span>(c) Total of current assets, loans and advances (av + bv)</span></th>
+                                                                            <td>0.00</td>
+                                                                        </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="accordion table-accordian" id="accordionExampleTwentyFive">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwentyFive" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        (d) Current liabilities and provisions
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapsTwentyFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwentyFive">
+                                                                    <div class="accordion-body">
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <th colspan="2"><span>(I) Current Liabilities</span></th>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="pl-3"><span> (A) Sundry Creditors</span></td>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>       
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-3"><span>  (B)   Advances recoverable in cash or in kind or for value to be received</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowTen')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowTen">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-3"><span>(C)   Interest Accured on above </span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowEleven')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowEleven">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-3"><span>   (D)   Interest accured but not due on loans </span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowTwelve')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowTwelve">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <tbody>
+                                                                                    <tr class="totalCount">
+                                                                                        <th class="pl-3">   (E) Total(iA+iB+iC+iD)</th>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <!-- ========== -->
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <th colspan="2"><span>(II) Provisions</span></th>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>       
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-3"><span> (A) Provision for Income Tax</span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowThirteen')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowThirteen">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-3"><span>(B) Provision for Leave encashment/Superannuation/Gratuity </span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowFourteen')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowFourteen">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <thead>
+                                                                                    <tr class="flex-table-row">
+                                                                                        <td class="pl-3"><span> (C) Other Provision </span></td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div>
+                                                                                                    <span>0.00</span>
+                                                                                                </div>
+                                                                                                <div class="action_container" width="50">
+                                                                                                    <button class="success" onclick="create_tr('createRowFifteen')">
+                                                                                                    <i class="fa fa-plus"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </thead> 
+                                                                                <tbody id="createRowFifteen">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="table-flex">
+                                                                                                <div class="col">
+                                                                                                    <input type="text" class="form-control">
+                                                                                                </div>
+                                                                                                <div class="action_container">
+                                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <tbody>
+                                                                                    <tr class="totalCount">
+                                                                                        <th class="pl-3">   (D) Total(iiA+iiB+iiC)</th>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <div class="table-responsive hideScrollbar">
+                                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                                <tbody>
+                                                                                    <tr class="totalCount">
+                                                                                        <th><span>  (iii) Total (iE + iiD)</span></th>
+                                                                                        <td>0.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                        <tr class="totalCount">
+                                                                            <th><span>(e) Net Current assets(3c-diii)</span></th>
+                                                                            <td>0.00</td>
+                                                                        </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ==================== -->
+                                        <div class="accordion table-accordian" id="accordionExampleTwentySix">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsTwentySix" aria-expanded="false" aria-controls="collapseTwo">
+                                                        (4)   
+                                                    </button>
+                                                </h2>
+                                                <div id="collapsTwentySix" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwentySix">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead>
+                                                                    <tr class="flex-table-row">
+                                                                        <td class="pl-3"><span> (a)  Miscellaneous expenditure and written off or adjusted</span></td>
+                                                                        <td>
+                                                                            <div class="table-flex">
+                                                                                <div>
+                                                                                    <span>0.00</span>
+                                                                                </div>
+                                                                                <div class="action_container" width="50">
+                                                                                    <button class="success" onclick="create_tr('createRowSixteent')">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </thead> 
+                                                                <tbody id="createRowSixteent">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-flex">
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                                <div class="action_container">
+                                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="pl-3"><span>   (b) Deferred Tax Asset</span></th>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="pl-3"><span>   (c) Debit balance in Profit and loss account/ accumulated balance</span></th>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="totalCount">
+                                                                        <th class="pl-3"><span>  (d) Total(4a+4b+4c)</span></th>
+                                                                        <td>
+                                                                            0.00
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>           
+                                        </div>
+                                        <!-- ================= -->
+                                        <div class="table-responsive hideScrollbar">
+                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                <tbody>
+                                                    <tr class="totalCount">
+                                                        <th><span> 	(5) Total application of funds(1e+2c+3e+4d)</span></th>
+                                                        <td>
+                                                            0.00
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>                                
                                 </div>
                             </div>
@@ -4623,8 +6228,8 @@
             <div class="canvas-links">
                 <a href="./itr-salary.html" class="">Salary <i class="fa-solid fa-indian-rupee-sign"></i></a>
                 <a href="./house-property.html">House Property <i class="fa-solid fa-house-circle-check"></i></a>
-                <a href="./bussiness-profession.html">Business Profession <i class="fa-solid fa-business-time"></i></a>
-                <a href="./capital-gain.html" class="selected">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
+                <a href="./bussiness-profession.html" class="selected">Business Profession <i class="fa-solid fa-business-time"></i></a>
+                <a href="./capital-gain.html" class="">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
                 <a href="./other-sources.html">Other Sources <i class="fa-brands fa-sourcetree"></i></a>
                 <a href="./exempt-income.html">Exempt Income <i class="fa-solid fa-money-bill-transfer"></i></a>
                 <a href="./clubbing.html">Clubbing <i class="fa-solid fa-people-group"></i></a>
