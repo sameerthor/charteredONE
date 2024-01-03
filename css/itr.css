@@ -1501,3 +1501,98 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .done-btn a:nth-of-type(2){
   background-color: #6c757d;
  }
+ .bussines-box .bussiness-item{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #faedcd;
+  padding: .5rem .3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #23232361;
+ }
+ .bussines-box .bussiness-item:hover{
+  box-shadow: 5px 5px 10px #23232341;
+ }
+ .bussines-box .bussiness-item .businessName{
+  font-size: .9rem;
+  font-weight: 600;
+  color: #000;
+ }
+ .bussines-box .bussiness-item span {
+  color: #000;
+  display: block;
+  font-size: .75rem;
+  font-weight: 500;
+  margin-bottom: .3rem;
+ }
+ .bussines-box .bussiness-item  .link-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: .5rem;
+ }
+ .bussines-box .bussiness-item  .link-group a{
+  padding: .2rem .6rem;
+  font-weight: 500;
+  color: #000;
+  font-size: 1rem;
+ }
+ .bussines-box  .add-business{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+ }
+ .bussines-box  .add-business a{
+  display: block;
+  text-align: center;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-size: .8rem;
+  color: #000;
+}
+.closing-stock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.closing-stock .closing-stock-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.closing-stock .closing-stock-item p{
+  margin: 0;
+}
+@media(max-width:600px){
+  .closing-stock{
+   flex-direction: column;
+   width: 100%;
+   justify-content: center;
+  }
+  .closing-stock .closing-stock-item{
+    margin-top: .5rem;
+  }
+}
+.table-responsive .table .currentYr{
+  background-color: #fdf4e7;
+}
+.table-responsive .table .previousYr{
+  background-color: #9fcf9f54;
+}
+#presumtiveLink{
+  display: none;
+}
+#presumtiveLinkEdit{
+  display: none;
+}
+.modal .small-format{
+  color: #000;
+  font-weight: 500;
+  font-size: .7rem;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
