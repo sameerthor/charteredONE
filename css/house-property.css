@@ -39,7 +39,7 @@
     color: #ff9800;
 }
 
-.houseProperty .addPropertyBtn{
+/* .houseProperty .addPropertyBtn{
     border-radius: 50px;
     text-align: center;
     width: 20px;
@@ -47,12 +47,12 @@
     line-height: 16px;
     background-color: #ff9800;
     color: #fff;
-    /* margin: auto 10px; */
+    margin: auto 10px;
     cursor: pointer;
-}
-.houseProperty .addPropertyBtn i{
+} */
+/* .houseProperty .addPropertyBtn i{
     font-size: 12px;
-}
+} */
 .houseProperty .addPropertyBtn:hover{
     width: 22px;
     height: 22px;
@@ -172,6 +172,7 @@
     background-color: #eee;
     color:#000 ;
   }
+
   @media(max-width:768px) {
     .selectTypeBlock{
         margin-left: 0;

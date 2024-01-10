@@ -360,7 +360,7 @@
                                             <li class="flex" data-toggle="pill" href="#property_letout"><a>Property 2 <br/> <span>0.00</span></a><span><i class="fa fa-trash-can" data-toggle="modal" data-target="#removeProperty" onclick="selectTab()"></i></span></li>
                                             <li class="flex" data-toggle="pill" href="#property_deemed"><a>Property 3 <br/> <span>0.00</span></a><span><i class="fa fa-trash-can" data-toggle="modal" data-target="#removeProperty" onclick="selectTab()"></i></span></li>
                                           </ul>
-                                          &nbsp;&nbsp;<p class="addPropertyBtn" onclick="addProperty()"><i class="fa fa-plus"></i></p>&nbsp;&nbsp;
+                                          &nbsp;&nbsp;<p class="addPropertyBtn" onclick="addProperty()"><i class="fa fa-plus plusIcon"></i></p>&nbsp;&nbsp;
                                           <div class="selectTypeBlock gap-2">
                                             <p>Select Type: </p>
                                             <div class="nav nav-pills">
@@ -379,9 +379,16 @@
                                           <div class="row tab-content" id="PropertyDetails">
                                             <div id="property_letout" class="col-sm-12 tab-pane in">
                                                 <form class="row g-3">
-                                                    <div class="d-flex justify-content-center w-100">
+                                                    <div class="row">
+                                                    <div class="col-sm-6 col-xs-12">
                                                     <legend>Property Details</legend>
-                                                    <!-- <div>Is the Property Co-owned?</div> -->
+                                                    </div>
+                                                    <div class="form-check form-switch col-sm-6 col-xs-12 text-right" id="toggleBtn">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="myCheck" onclick="coownerForm()" />
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Is the Property Co-owned?</label>
+                                                  </div>
+                                                    <!-- <label for="myCheck">Checkbox:</label> 
+                                                    <input type="checkbox" id="myCheck"> -->
                                                     </div>
                                                     <div class="col-sm-6 col-xs-12">
                                                       <label for="Address" class="form-label required" required>Address</label>
@@ -406,6 +413,46 @@
                                                     <div class="col-sm-3 col-xs-12">
                                                       <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
                                                       <input type="text" class="form-control" id="OOP" placeholder="e.g. Self">
+                                                    </div>
+                                                  </form>
+                                                  <form class="row g-3 coownedForm"  onsubmit="return false" style="display: none;">
+                                                    <legend>Co-owner Details</legend>
+                                                    <div class="row">
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Assessee % Share in Property" class="form-label">Assessee % Share in Property</label>
+                                                        <input type="text" class="form-control" id="ASIP" value="100.00" disabled>
+                                                      </div>
+                                                    <div class="col-sm-3 col-xs-12 mt-4">
+                                                        <input autocomplete="off" type="checkbox" checked id="select" class="mt-3"> <label for="100% benefit of Interest">100% benefit of Interest</label>
+                                                    </div>
+                                                </div>
+                                                    <div id="coownerRow">
+                                                        <div class="row coownerRowBlock mb-2">
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Co-owner Name" class="form-label required" required>Co-owner Name</label>
+                                                        <input type="text" class="form-control" id="CON">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="PAN" class="form-label required" required>PAN</label>
+                                                        <input type="text" class="form-control" id="PAN">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Aadhaar No" class="form-label">Aadhaar No</label>
+                                                        <input type="text" class="form-control" id="AN">
+                                                      </div>
+                                                      <div class="col-sm-2 col-xs-12">
+                                                        <label for="% of Property of Co-owner" class="form-label required" required>% of Property of Co-owner</label>
+                                                        <input type="text" class="form-control" id="POPOCO">
+                                                      </div>
+                                                      <div class="col-sm-1 col-xs-6 mt-4">
+                                                        <button class="" onclick="create_tr('coownerRow')" style="border: 0;background: none;">
+                                                            <i class="fa fa-plus plusIcon mt-2"></i>
+                                                        </button>
+                                                        <button class="" onclick="remove_tr(this)" style="border: 0;background: none;color: #ff9800;">
+                                                            <i class="fa-solid fa-trash-can mt-2"></i>
+                                                        </button>
+                                                      </div>
+                                                    </div>
                                                     </div>
                                                   </form>
                                                   <form class="row g-3">
@@ -722,6 +769,37 @@
 	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
     });
 	
+    function coownerForm() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementsByClassName("coownedForm");
+    for (var i=0;i<text.length;i+=1){
+        if (checkBox.checked == true){
+        text[i].style.display = "flex";
+    } else {
+        text[i].style.display = "none";
+    }
+    }
+}
+    function create_tr(table_id) {
+        let table_body = document.getElementById(table_id),
+            first_tr   = table_body.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_body.append(tr_clone);
+
+        clean_first_tr(table_body.firstElementChild);
+    }
+    function remove_tr(This) {
+        if(This.closest('.coownerRowBlock').x == 1)
+        {
+            alert("You don't have permission to Delete this row.");
+        }else{
+            This.closest('.coownerRowBlock').remove();
+        }
+    }
+    
+
+ 
 	
 	/* Extra class "tab_last" 
 	   to add border to right side
