@@ -1117,9 +1117,9 @@
                                                             <th>Balance Carried forward to the next year</th>
                                                             </tr>
                                                 </tbody>
-                                                <tbody>
+                                                <tbody id="table_body">
                                                    <tr>
-                                                        <td></td>
+                                                        <td><i class="fa fa-plus plusIcon" onclick="create_tr('table_body')"></i></td>
                                                         <td>1</td>
                                                         <td>2024 - 25</td>
                                                         <td>
@@ -1383,8 +1383,36 @@
                                                         <td>0</td>
                                                     </tr>
                                                     <tr>
-                                                        <td></td>
+                                                        <td class="" width="100"><i class="fa fa-plus plusIcon" onclick="create_tr('table_body')"></i> &nbsp;<i class="fa fa-close plusIcon" onclick="remove_tr(this)"></i></td>
                                                         <td>13</td>
+                                                        <td>
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected>select</option>
+                                                                <option value="1">Yes</option>
+                                                                <option value="2">No</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>14</td>
                                                         <td>Total</td>
                                                         <td>0</td>
                                                         <td>0</td>
@@ -1490,7 +1518,15 @@
              table_body.append(tr_clone);
 
              clean_first_tr(table_body.firstElementChild);
-    }
+            }
+            function remove_tr(This) {
+                if(This.closest('tbody').childElementCount == 1)
+                {
+                    alert("You don't have permission to Delete this row.");
+                }else{
+                    This.closest('tr').remove();
+                }
+            }
     </script>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

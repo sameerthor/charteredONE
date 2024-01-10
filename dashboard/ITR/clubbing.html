@@ -367,8 +367,8 @@
                                                 <tr>
                                                     <th class="text-center">
                                                         <div class="col">
-                                                            <input autocomplete="off" type="checkbox" checked id="select">
-                                                            <i class="fa fa-trash-can" style="color: #ff9800;"></i>
+                                                            <input autocomplete="off" type="checkbox" id="select" class="all"  onclick="checkAll()">
+                                                            <i class="fa fa-trash-can" style="color: #ff9800;" onclick="delete_checkRow()"></i>
                                                         </div>
                                                     </th>
                                                     <th class="text-center">Name <i class="fa fa-plus plusIcon"  onclick="create_tr('table_body')"></i></th>
@@ -380,10 +380,10 @@
                                                    </tr>
                                             </thead>
                                             <tbody id="table_body">
-                                                <tr>
+                                                <tr class="clubbingRow">
                                                     <td class="text-center">
                                                         <div class="col">
-                                                            <input autocomplete="off" type="checkbox" checked id="select">
+                                                            <input autocomplete="off" class="checkbox" type="checkbox" id="select">
                                                         </div>
                                                     </td>
                                                     <td>
@@ -413,7 +413,7 @@
                                                     </td>
                                                     <td>
                                                         <select class="form-select" aria-label="Default select example">
-                                                            <option selected></option>
+                                                            <option selected>Select</option>
                                                             <option value="1">Business Profession</option>
                                                             <option value="2">Capital Gain</option>
                                                         </select>
@@ -459,14 +459,28 @@
         });
     }
 
-    function remove_tr(This) {
-        if(This.closest('tbody').childElementCount == 1)
-        {
-            alert("You don't have permission to Delete this row.");
-        }else{
-            This.closest('tr').remove();
+    function delete_checkRow() {
+let inputs = document.querySelectorAll('.checkbox');
+ $('input:checked').not('.all').parents("tr").remove();
+$('.all').on('click',function(){
+  var $inputs = $('table').find('input');
+  $inputs.prop('checked', 'checked');
+}); 
+}
+    function checkAll() {
+        let inputs = document.querySelectorAll('.checkbox');
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].checked = true;
         }
     }
+    // function delete_checkRow() {
+    //     let inputs = document.querySelectorAll('.checkbox');
+    //     for (let i = 0; i < inputs.length; i++) {
+    //         if(inputs[i].checked = true){
+    //             delete(inputs[i])
+    //         }
+    //     }
+    // }
     </script>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

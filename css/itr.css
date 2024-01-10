@@ -131,6 +131,10 @@ body a:hover {
   font-family: FontAwesome;
   margin: 0 10px 0 0;
 }
+select{
+  font-size: 12px!important;
+  cursor: pointer;
+}
 @media (max-width: 550px) {
   .header-btn {
     flex-direction: column;
