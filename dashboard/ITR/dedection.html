@@ -1,0 +1,2130 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/dashboardpack.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/itr.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>             
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer custome-header-margin">
+                    <div class="app-main__inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="custome-header">
+                                    <div>
+                                        <div class="header-item">
+                                            <span class="client-name" data-bs-toggle="tooltip" data-bs-placement="top" title="Adem Makaran">Adem Makarum</span>
+                                        </div>
+                                        <div>
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title=" PAN: DIIPM2226">DIIPM2226</span> |
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Status: Individual">Individual</span> |
+                                            <span class="header-link"><a href="./edit-client.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit Client Info">Residence <i class="fa-solid fa-user-pen" ></i></a></span> |
+                                            <span class="header-link"><a href="https://eportal.incometax.gov.in/iec/foservices/#/login" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="visit IT Portal">IT Portal <img src="../../images/itd-logo.png" height="20" width="28" alt=""></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="custome-dropdowm align-items-center">
+                                       <div class="custome-toggle">
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>PY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>CY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                       </div>
+                                        <div class="filling-btn">
+                                            <a href="./e-filing.html">e-Filing</a>
+                                            <a href="./computation.html">Computation</a>
+                                        </div>
+                                        <div class="fy-year">
+                                            <span>A.Y. 2023-24</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="breadcrumbs breadcrumbs-top bg-light mb-3">
+                                        <a href="./client-master-ITR.html"><i class="fa-solid fa-angle-left"></i> Return to Client Master</a>
+                                    </div>
+                                    <div class="group-btn-box">
+                                        <div class="btn-item d-none d-md-flex">
+                                            <a href="./itr-salary.html">Salary</a>
+                                            <a href="./house-property.html">House Property</a>
+                                            <a href="./bussiness-profession.html" class="">Business Profession</a>
+                                            <a href="./capital-gain.html">Capital Gain</a>
+                                            <a href="./other-sources.html" class="">Other Sources</a>
+                                            <a href="./exempt-income.html">Exempt Income</a>
+                                            <a href="./clubbing.html">Clubbing</a>
+                                            <a href="./dedection.html" class="selected">Deductions</a>
+                                            <a href="./losses.html">Losses</a>
+                                            <a href="./schedule-pti.html">Schedule PTI</a>
+                                            <a href="./tax-details.html">Tax Details</a>
+                                            <a href="./schedule-vda.html">Schedule VDA</a>
+                                        </div>
+                                        <div class="offcanvas-btn d-md-none">
+                                            <a href="#000" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><i class="fa-solid fa-bars"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="table-header closing-stock">
+                                        <div>
+                                            <span class="pl-1">Deduaction Dashboard <i class="fa-solid fa-arrow-down"></i></span>
+                                        </div>
+                                        <div class="closing-stock-item">
+                                            <a href="./schedule10AA.html" class="auditor-masterBtn"> Schedule 10AA &amp; RA</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-heading mb-3">
+                                        <h4>Deductions under Chapter VI-A</h4>
+                                    </div>  
+                                    <div class="card-body edit-data-box">
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleOne">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Deductions on Investments.
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleOne">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">80C. (Amount paid for eligible investments) <i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left pl-2">Descriptions</th>
+                                                                    <th class="text-center">Interest Amount</th>
+                                                                </thead> 
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Life insurance premium paid</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Contribution toward provident fund / PPF</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Investment in NSC (VIII issue) + Interest</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Tuition fees paid for children</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Repayment of housing loan (principle component)</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Sukanya Samridhi Amount</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Contribution toward notified pension fund by MF/UTI</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Stamp duty</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">5 Years fixed deposit with PO or Schedule Bank</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    
+                                                                    <tr class="totalCount">
+                                                                        <th class="pl-2">Other's ?</th>
+                                                                        <th class="text-right pr-2">0.00</th>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-center">Add Description</th>
+                                                                    <th class="text-center">Enter Interest Amt</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyOne')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyOne">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table> 
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleTwo">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Deductions on Investments. (Maximum Limit: 1,50,000/-)
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">	80CCD(1).<i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Employee's contribution towards NPS</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Self contribution towards NPS</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table> 
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleThree">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Deduction for the premium paid for Medical Insurance. Maximum Limit: ( 25,000/-, 50,000/-(for Senior Citizen))
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleThree">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">	80D.<i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Whether you or any of your family member (excluding parents) is a senior citizen?</td>
+                                                                        <td class="text-right pr-4" data-group="groupA">
+                                                                            <button class="toggleTable" onclick="showContent('contentA', 'buttonA')" id="buttonA">Yes</button>
+                                                                            <button class="toggleTable" onclick="showContent('contentB', 'buttonB')" id="buttonB">No</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped hideTable" id="contentA">
+                                                                <thead class="totalCount">
+                                                                        <th class="text-center">Particulars</th>
+                                                                        <th class="text-center">Amount</th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Whether you or any of your family member (excluding parents) is a senior citizen?</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Preventive Health Checkup</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Medical Expenditure</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped hideTable" id="contentB">
+                                                                <thead class="totalCount">
+                                                                        <th class="text-center">Particulars</th>
+                                                                        <th class="text-center">Amount</th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Whether you or any of your family member (excluding parents) is a senior citizen?</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Preventive Health Checkup</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>   
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                    <tr class="totalCount">
+                                                                        <td class="text-left pl-2">Whether any one of your parents is a senior citizen ?</td>
+                                                                        <td class="text-right pr-4" data-group="groupB">
+                                                                            <button class="toggleTable" onclick="showContent('contentA1', 'buttonA1')" id="buttonA1">Yes</button>
+                                                                            <button class="toggleTable" onclick="showContent('contentB1', 'buttonB1')" id="buttonB1">No</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped hideTable" id="contentA1">
+                                                                <thead class="totalCount">
+                                                                        <th class="text-center">Particulars</th>
+                                                                        <th class="text-center">Amount</th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Whether you or any of your family member (excluding parents) is a senior citizen?</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Preventive Health Checkup</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Medical Expenditure</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped hideTable" id="contentB1">
+                                                                <thead class="totalCount">
+                                                                        <th class="text-center">Particulars</th>
+                                                                        <th class="text-center">Amount</th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Whether you or any of your family member (excluding parents) is a senior citizen?</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Preventive Health Checkup</td>
+                                                                        <td>
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>   
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleFour">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Deduction for donations towards Social Causes
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleFour">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">80G. (Details of donation entitled for deduction under section 80G) <i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="60">
+                                                                        <div class="delete-with-checks">
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">Donation Type</th>
+                                                                    <th class="text-center">PAN of Donee</th>
+                                                                    <th class="text-center">Name of Donee</th>
+                                                                    <th class="text-center">Address</th>
+                                                                    <th class="text-center">PIN Code</th>
+                                                                    <th class="text-center">City/Town/District</th>
+                                                                    <th class="text-center">State</th>
+                                                                    <th class="text-center">Donation in cash</th>
+                                                                    <th class="text-center">Donation in other mode</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyTwo')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyTwo">
+                                                                    <tr>
+                                                                        <th class="text-left" width="60">
+                                                                            <div class="delete-with-checks">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <td>
+                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                <option selected></option>
+                                                                                <option value="1">Donations entitled for 50% deduction without qualifying limit</option>
+                                                                                <option value="2">Donations entitled for 100% deduction subject to qualifying limit</option>
+                                                                                <option value="3">Donations entitled for 50% deduction subject to qualifying limit</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                <option selected></option>
+                                                                                <option value="1">Uttar Pradesh</option>
+                                                                                <option value="2">Maharastra</option>
+                                                                                <option value="3">Madhya Pradesh</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleFive">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Deduction for rent paid when HRA is not received from employer. (Maximum Limit: 60,000/-)
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleFive">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">	80GG.<i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">Rent Paid</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-left pl-2">No. of Months</td>
+                                                                        <td class="text-center">
+                                                                            <div class="col-md-6 mx-auto">
+                                                                                <input type="text" class="form-control text-right" value="0">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table> 
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleSix">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Deduction in respect of certain donations for scientific research or rural development.
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleSix">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">80GGA. (Details of donations for scientific research or rural development) <i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="60">
+                                                                        <div class="delete-with-checks">
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">Relevant clause under which deduction is claimed</th>
+                                                                    <th class="text-center">PAN of Donee</th>
+                                                                    <th class="text-center">Name of Donee</th>
+                                                                    <th class="text-center">Address</th>
+                                                                    <th class="text-center">PIN Code</th>
+                                                                    <th class="text-center">City/Town/District</th>
+                                                                    <th class="text-center">State</th>
+                                                                    <th class="text-center">Donation in cash</th>
+                                                                    <th class="text-center">Donation in other mode</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyTwo')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyTwo">
+                                                                    <tr>
+                                                                        <th class="text-left" width="60">
+                                                                            <div class="delete-with-checks">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <td>
+                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                <option selected></option>
+                                                                                <option value="1">80GGA(2)(a) Sum paid to Research Association or University, college or other institution for Scientific Research</option>
+                                                                                <option value="2">80GGA(2)(aa) Sum paid to Research Association or University, college or other institution for Social science or Statistical Research</option>
+                                                                                <option value="3">0GGA(2)(bb) Sum paid to PSU or Local Authority or an association or institution approved by the National Committee for carrying out any eligible project</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                <option selected></option>
+                                                                                <option value="1">Uttar Pradesh</option>
+                                                                                <option value="2">Maharastra</option>
+                                                                                <option value="3">Madhya Pradesh</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleSeven">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Deductions in respect of profits and gains from industrial undertakings or enterprises engaged in infrastructure development, etc
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleSeven">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">80-IA (Details of donations for scientific research or rural development) <i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-center">
+                                                                        Deductions under section 80-IA
+                                                                    </th>
+                                                                    <th class="text-center">
+                                                                        Amt of deduction
+                                                                    </th>
+                                                                    <th></th>
+                                                                </thead>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="">
+                                                                    <th class="text-left pl-4">a. Deduction in respect of profits of an enterprise referred to in section 80-IA(4)(i)</th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyFour')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyFour">
+                                                                    <tr>
+                                                                        <td class="pl-4">a1.</td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left pl-4"> b. Deduction in respect of profits of an undertaking referred to in section 80- IA(4)(iv)</th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyThree')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyThree">
+                                                                    <tr>
+                                                                        <td class="pl-4">b1.</td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left pl-4"> c. Deduction in respect of profits of an undertaking referred to in section 80- IA(4)(v)</th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyFive')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyFive">
+                                                                    <tr>
+                                                                        <td class="pl-4">c1.</td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody class="totalCount">
+                                                                    <tr>
+                                                                        <th class="pl-4">Total deduction under section 80-IA <i class="fa-solid fa-angle-right"></i></th>
+                                                                        <td class="text-center">00</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleEight">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Deduction in respect of profits and gains from certain industrial undertakings other than infrastructure development undertakings   
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleEight">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">	80-IB  <i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-center">
+                                                                        Deductions under section 80-IB
+                                                                    </th>
+                                                                    <th class="text-left">
+                                                                        Amt of deduction
+                                                                    </th>
+                                                                    <th></th>
+                                                                </thead>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="">
+                                                                    <th class="text-left" width="1000">
+                                                                        <div class="col-md-6">
+                                                                            a. Deduction in respect of industrial undertaking located in Jammu & Kashmir or Ladakh [Section 80-IB(4)]
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodySix')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodySix">
+                                                                    <tr>
+                                                                        <td class="pl-4">a1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            b. Deduction in the case of undertaking which begins commercial production or refining of mineral oil [Section 80-IB(9)]
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodySeven')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodySeven">
+                                                                    <tr>
+                                                                        <td class="pl-4">b1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000">
+                                                                        <div class="col-md-6">
+                                                                            c. Deduction in the case of an undertaking developing and building housing projects [Section 80-IB(10)]
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyEight')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyEight">
+                                                                    <tr>
+                                                                        <td class="pl-4">c1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            d. Deduction in the case of an undertaking engaged in processing, preservation and packaging of fruits, vegetables, meat, meat products, poultry, marine or dairy products [Section 80-IB(11A)]
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyNine')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyNine">
+                                                                    <tr>
+                                                                        <td class="pl-4">d1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000">
+                                                                        <div class="col-md-6">
+                                                                            e. Deduction in the case of an undertaking engaged in integrated business of handling, storage and transportation of food grains [Section 80-IB(11A)]
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyTen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyTen">
+                                                                    <tr>
+                                                                        <td class="pl-4">e1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody class="totalCount">
+                                                                    <tr>
+                                                                        <th class="pl-4">Total deduction under section 80-IA <i class="fa-solid fa-angle-right"></i></th>
+                                                                        <td class="text-center">00</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="accordion table-accordian" id="accordionExampleNine">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed pl-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Special provisions in respect of certain undertakings or enterprises in certain special category States
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleNine">
+                                                    <div class="accordion-body">
+                                                        <div class="table-header closing-stock">
+                                                            <div>
+                                                                <span class="pl-1">80-IC or 80-IE  <i class="fa-solid fa-arrow-down"></i></span>
+                                                            </div>
+                                                            <div class="closing-stock-item">
+                                                                <span class="pl-2">0.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-center">
+                                                                        Deductions under section 80-IC or 80-IE
+                                                                    </th>
+                                                                    <th class="text-left">
+                                                                        Amt of deduction
+                                                                    </th>
+                                                                    <th></th>
+                                                                </thead>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="">
+                                                                    <th class="text-left" width="1000">
+                                                                        <div class="col-md-6">
+                                                                            a.Deduction in respect of industrial undertaking located in Sikkim
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyEleven')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyEleven">
+                                                                    <tr>
+                                                                        <td class="pl-4">a1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            b. Deduction in respect of industrial undertaking located in Himachal Pradesh
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyTwelve')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyTwelve">
+                                                                    <tr>
+                                                                        <td class="pl-4">b1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000">
+                                                                        <div class="col-md-6">
+                                                                            c.  Deduction in respect of industrial undertaking located in Uttaranchal
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyThirteen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyThirteen">
+                                                                    <tr>
+                                                                        <td class="pl-4">c1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody class="totalCount">
+                                                                    <tr>
+                                                                        <th class="pl-4" colspan="3">d. Deduction in respect of industrial undertaking located in North-East <i class="fa-solid fa-angle-down"></i></i></th>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            (da). Assam
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyFourteen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyFourteen">
+                                                                    <tr>
+                                                                        <td class="pl-4">da1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            (db).  Arunachal Pradesh
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyFifteen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyFifteen">
+                                                                    <tr>
+                                                                        <td class="pl-4">db1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            (dc). Manipur
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodySixteen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodySixteen">
+                                                                    <tr>
+                                                                        <td class="pl-4">dc1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            (dd).  Mizoram
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodySeventeen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodySeventeen">
+                                                                    <tr>
+                                                                        <td class="pl-4">dd1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            (de). Meghalaya
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyEighteen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyEighteen">
+                                                                    <tr>
+                                                                        <td class="pl-4">de1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000"> 
+                                                                        <div class="col-md-6">
+                                                                            (df). Nagaland
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyNineteen')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyNineteen">
+                                                                    <tr>
+                                                                        <td class="pl-4">df1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        
+
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <thead class="totalCount">
+                                                                    <th class="text-left" width="1000">
+                                                                        <div class="col-md-6">
+                                                                            (dg). Tripura
+                                                                        </div>
+                                                                    </th>
+                                                                    <th class="text-center">0</th>
+                                                                    <th class="text-center">
+                                                                        <div class="action_container" width="50">
+                                                                            <button class="success" onclick="create_tr('table_bodyTwenty')">
+                                                                            <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody id="table_bodyTwenty">
+                                                                    <tr>
+                                                                        <td class="pl-4">dg1.</td>
+                                                                        <td width="200">
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td class="text-center">
+                                                                            <div class="action_container">
+                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody class="totalCount">
+                                                                    <tr>
+                                                                        <th class="pl-4">Total deduction under section 80-IA <i class="fa-solid fa-angle-right"></i></th>
+                                                                        <td class="text-center">00</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>       
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                        <div>
+                                            <div class="table-responsive">
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="pl-4">80CCC</th>
+                                                            <th>Deductions for payment towards annuity pension plans. <em>( Maximum Limit: 1,50,000/-)</em></th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80CCD(1B)</th>
+                                                            <th>Deductions in respect of investment in National Pension Scheme. <em>( Maximum Limit: 50,000/-)</em></th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80CCD (2)</th>
+                                                            <th>Deductions in respect of Employer's contribution towards NPS</th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80DD</th>
+                                                            <th>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span>
+                                                                        Deduction in respect of maintenance including medical treatment of a Differently Abled Dependent <em>Maximum Limit: ( Normal 75,000/- , Severe 1,25,000/-)</em>
+                                                                    </span>
+                                                                    <div class="form-check form-switch ml-4 table-toggle-btn">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Severe</label>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80DDB</th>
+                                                            <th>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span>
+                                                                        Deduction for Treatment of Specified Diseases. <em>Maximum Limit: ( Normal & Senior Citizen 40,000/- , Super Senior Citizen 1,00,000/-)</em>
+                                                                    </span>
+                                                                    <div class="form-check form-switch ml-4 table-toggle-btn">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Senior Citizen</label>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80E</th>
+                                                            <th>Deduction for Interest Paid on Education Loan</th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80EE</th>
+                                                            <th>Deduction on Interest Paid for First Time Home Buyer. <em> Maximum Limit: ( 50,000/-)</em></th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80EEA</th>
+                                                            <th>Deduction on Home Loan Interest. <em>Maximum Limit: ( 1,50,000/-)</em></th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80EEB</th>
+                                                            <th>Deduction for Interest paid on Loan for E-Vehicle. <em>Maximum Limit: ( 1,50,000/-)</em></th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80TTA</th>
+                                                            <th>Deduction for Interest Earned on Savings Account. <em>Maximum Limit: ( 10,000/-)</em></th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80TTB</th>
+                                                            <th>
+                                                                <div class="d-flex">
+                                                                    <span>Interest Deduction on Deposits for Senior Citizens <em>Maximum Limit: ( 50,000/-)</em></span>
+                                                                    <div class="form-check form-switch ml-4 table-toggle-btn">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Normal Disability</label>
+                                                                    </div>
+                                                                    <div class="form-check form-switch ml-4 table-toggle-btn">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" >
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Severe Disability</label>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80GGC</th>
+                                                            <th>Deduction on Donation given to Political Parties.</th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80IAB</th>
+                                                            <th>Profits and gains by an undertaking or enterprise engaged in development of Special Economic Zone.</th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80IBA</th>
+                                                            <th>Deductions in respect of profits and gains from housing projects</th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80JJA</th>
+                                                            <th>Deduction in respect of profits and gains from business of collecting and processing of bio-degradable waste</th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80JJAA</th>
+                                                            <th>Deduction in respect of employment of new employees</th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80QQB</th>
+                                                            <th>Deduction in respect of royalty income, etc., of authors of certain books other than text-books <em>Maximum Limit: ( 3,00,000/-)</em></th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80RRB</th>
+                                                            <th>Deduction in respect of royalty on patents. <em>Maximum Limit: (3,00,000/-)</em></th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pl-4">80ID</th>
+                                                            <th>Deduction in respect of profits and gains from business of hotels and convention centres in specified area.</th>
+                                                            <th>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+   
+    <!-- =============================Summary view Modal===================================== -->
+    <div id="floatingBtn">
+        <a href="#000" data-bs-toggle="modal" data-bs-target="#summaryView"><button class="bn632-hover bn18">Summary View</button></a>
+    </div>
+    <div class="modal fade" id="summaryView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Deductions Summary</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body edit-data-box">
+                <div class="table-responsive hideScrollbar">
+                    <table class="align-middle mb-0 table table-borderless table-striped">
+                        <thead class="">
+                            <th></th>
+                            <th class="text">2022-23</th>
+                            <th class="text">2021-22</th>
+                            <th></th>
+                            <th class="text-"> 2022-23</th>
+                            <th>2021-22</th>
+                        </thead> 
+                        <tbody>
+                            <tr class="totalCount">
+                                <th class="text-left">Part B Deductions</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 C</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 D</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 CCC</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 DD</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 CCD(1)</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 DDB</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 CCD(1B)</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 E</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 CCD(2)</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 EE</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 G</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 EEA</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 GG</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 EEA</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 GG</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 EEB</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 GGA</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 GGB</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 GGC</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink"></td>
+                                <td class="text-right"></td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr class="totalCount">
+                                <th class="text-left">Part B Deductions</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 IA</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 JJA</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 IB</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 JJAA</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 IC or 80 IE</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 QQB</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 IAB</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">10AA</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 IBA</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink"></td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                            <tr class="totalCount">
+                                <th class="text-left">Part B Deductions</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-hotpink">80 TTA/80TTB</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                                <td class="bg-hotpink">80 U</td>
+                                <td class="text-right">0</td>
+                                <td class="text-right">0</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>      
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <!-- =============================SIDE OFFCANVAS========================== -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header bg-light">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="canvas-links">
+                <a href="./itr-salary.html" class="">Salary <i class="fa-solid fa-indian-rupee-sign"></i></a>
+                <a href="./house-property.html">House Property <i class="fa-solid fa-house-circle-check"></i></a>
+                <a href="./bussiness-profession.html">Business Profession <i class="fa-solid fa-business-time"></i></a>
+                <a href="./capital-gain.html" class="">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
+                <a href="./other-sources.html" class="">Other Sources <i class="fa-brands fa-sourcetree"></i></a>
+                <a href="./exempt-income.html">Exempt Income <i class="fa-solid fa-money-bill-transfer"></i></a>
+                <a href="./clubbing.html" class="">Clubbing <i class="fa-solid fa-people-group"></i></a>
+                <a href="./dedection.html" class="selected">Deductions <i class="fa-regular fa-money-bill-1"></i></a>
+                <a href="./losses.html">Losses <i class="fa-solid fa-chart-simple"></i></a>
+                <a href="./schedule-pti.html">Schedule PTI <i class="fa-solid fa-building-columns"></i></a>
+                <a href="./tax-details.html">Tax Details <i class="fa-solid fa-money-check-dollar"></i></a>
+                <a href="./schedule-vda.html">Schedule VDA <i class="fa-solid fa-person-circle-check"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showContent(contentId, buttonId) {
+          var contentElements = document.querySelectorAll('.hideTable');
+          var buttonElements = document.querySelectorAll('button');
+          contentElements.forEach(function (element) {
+            element.style.display = 'none';
+          });
+    
+          buttonElements.forEach(function (button) {
+            button.classList.remove('tableBtn');
+          });
+          var selectedContent = document.getElementById(contentId);
+          selectedContent.style.display = 'table';
+    
+          var selectedButton = document.getElementById(buttonId);
+          selectedButton.classList.add('tableBtn');
+        }
+    </script>
+    <script>
+        function readURL(input) {
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+            $('.image-upload-wrap').hide();
+
+            $('.file-upload-image').attr('src', e.target.result);
+            $('.file-upload-content').show();
+
+            $('.image-title').html(input.files[0].name);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+
+        } else {
+            removeUpload();
+        }
+        }
+
+        function removeUpload() {
+        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+        $('.file-upload-content').hide();
+        $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function () {
+                $('.image-upload-wrap').addClass('image-dropping');
+            });
+            $('.image-upload-wrap').bind('dragleave', function () {
+                $('.image-upload-wrap').removeClass('image-dropping');
+        });
+  </script>
+<script>
+        function create_tr(table_id) {
+        let table_body = document.getElementById(table_id),
+            first_tr   = table_body.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_body.append(tr_clone);
+
+        clean_first_tr(table_body.firstElementChild);
+    }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+
+    function remove_tr(This) {
+        if(This.closest('tbody').childElementCount == 1)
+        {
+            alert("You don't have permission to Delete this row.");
+        }else{
+            This.closest('tr').remove();
+        }
+    }
+</script>
+    <!-- ================== -->
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../../js/dashboard-pack.js"></script> 
+<script src="../../js/dashboard.js"></script>
+
+</body>
+</html>

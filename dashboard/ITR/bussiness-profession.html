@@ -637,8 +637,8 @@
             <div class="canvas-links">
                 <a href="./itr-salary.html" class="">Salary <i class="fa-solid fa-indian-rupee-sign"></i></a>
                 <a href="./house-property.html">House Property <i class="fa-solid fa-house-circle-check"></i></a>
-                <a href="./bussiness-profession.html">Business Profession <i class="fa-solid fa-business-time"></i></a>
-                <a href="./capital-gain.html" class="selected">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
+                <a href="./bussiness-profession.html" class="selected">Business Profession <i class="fa-solid fa-business-time"></i></a>
+                <a href="./capital-gain.html" class="">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
                 <a href="./other-sources.html">Other Sources <i class="fa-brands fa-sourcetree"></i></a>
                 <a href="./exempt-income.html">Exempt Income <i class="fa-solid fa-money-bill-transfer"></i></a>
                 <a href="./clubbing.html">Clubbing <i class="fa-solid fa-people-group"></i></a>
@@ -707,41 +707,6 @@
         }
     </script>
     <!-- ================== -->
-    <script>
-        function readURL(input) {
-        if (input.files && input.files[0]) {
-    
-            var reader = new FileReader();
-    
-            reader.onload = function(e) {
-            $('.image-upload-wrap').hide();
-    
-            $('.file-upload-image').attr('src', e.target.result);
-            $('.file-upload-content').show();
-    
-            $('.image-title').html(input.files[0].name);
-            };
-    
-            reader.readAsDataURL(input.files[0]);
-    
-        } else {
-            removeUpload();
-        }
-        }
-    
-        function removeUpload() {
-        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-        $('.file-upload-content').hide();
-        $('.image-upload-wrap').show();
-        }
-        $('.image-upload-wrap').bind('dragover', function () {
-                $('.image-upload-wrap').addClass('image-dropping');
-            });
-            $('.image-upload-wrap').bind('dragleave', function () {
-                $('.image-upload-wrap').removeClass('image-dropping');
-        });
-    
-    </script>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>

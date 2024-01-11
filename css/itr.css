@@ -651,6 +651,16 @@ html {
     background-color: #26ace3;
     color: #fff; 
   }
+  .toggleTable{
+    border: none;
+    outline: none;
+    font-weight: 500;
+    padding: .1rem .6rem;
+    border-radius: 4px;
+    border: 1px solid #26ace3;
+    color: #000;
+    background-color: #fff;
+  }
   .button-group button{
     border: none;
     outline: none;
@@ -987,9 +997,6 @@ input[type='date']:not(:focus):in-range::-webkit-datetime-edit-year-field,
     margin-top: 0.2rem;
   }
 }
-.responsive-tabs{
-    border: 1px solid red;
-}
 
 /* ======================Export btn============== */
 .export-btn{
@@ -1040,7 +1047,6 @@ input[type='date']:not(:focus):in-range::-webkit-datetime-edit-year-field,
         margin-bottom: .6rem;
      }
      .export-btn{
-        border: 1px solid red;
         padding: 0;
     }
     .export-btn .btn-list{
@@ -1388,6 +1394,9 @@ input[type='date']:not(:focus):in-range::-webkit-datetime-edit-year-field,
 .accordion-button.collapsed::after {
 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+.accordion-body {
+  padding: 0rem;
+}
 .bussiness-info-btn{
   margin-bottom: .5rem;
 }
@@ -1595,4 +1604,138 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   font-size: .7rem;
   padding-left: 1.2rem;
   margin-bottom: 1rem;
+}
+.modal-btn-group{
+  margin-top: 1rem;
+}
+.modal-btn-group a{
+  display: inline-block;
+  padding: .4rem .8rem;
+  letter-spacing: .5px;
+  font-weight: 500;
+  font-size: .8rem;
+  margin-right: .5rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+.modal-fullscreen{
+  width: 2000px;
+  max-width: 100%;
+  margin: auto;
+}
+.modal-ninety{
+  width: 2000px;
+  max-width: 95%;
+  margin: auto;
+}
+.modal .grossReceipts{
+  border: 1px solid #4b83a7;
+  width: 99.9%;
+  padding: 1rem .5rem;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+.modal .grossReceipts small{
+  font-size: .75rem;
+  font-weight: 500;
+  color: #000;
+}
+.modal .grossReceipts h2{
+ font-size: 1.4rem;
+ color: #000;
+ font-weight: 500;
+ margin-bottom: 1rem;
+ font-family: 'Montserrat', sans-serif;
+}
+.modal .pandlPreview{
+  border: 1px solid #fdaea7;
+  padding: 1rem .5rem;
+}
+.modal .grossReceipts .form-label{
+  font-size: .75rem;
+  font-family: 'Montserrat', sans-serif;
+ }
+ .modal .grossReceipts .liability{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+ .modal .grossReceipts .liability h3{
+  font-weight: 600;
+  color: #000;
+  font-size: .95rem;
+ }
+ .auditor-masterBtn{
+  display: inline-block;
+  padding: .4rem 1rem;
+  font-size: .8rem;
+  letter-spacing: .5px;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #26ace3;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+ }
+ .auditor-masterBtn:hover{
+  color: #fff;
+ }
+ .delete-with-checks{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+ }
+ .delete-with-checks .form-check{
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 0;
+  margin: 0 .5rem;
+ }
+ .delete-with-checks .form-check-input{
+  padding: 0;
+  margin: 0;
+  border: 1px solid #23232345;
+  height: .85rem;
+  width: .85rem;
+ }
+ .delete-with-checks a{
+ padding: 0;
+ margin: 0;
+ font-size: 1.2rem;
+ color: #ed5e68;
+ }
+ .modal .sources-table .table{
+  max-width: 100%;
+  min-width: fit-content;
+ }
+ .hideTable {
+  display: none;
+}
+.tableBtn{
+  background-color: #00bcd4;
+  color: #fff;
+}
+.table-toggle-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.table-toggle-btn input{
+  display: inline-block;
+  height: 1rem;
+
+  border: 1px solid #2323236e;
+}
+.table-toggle-btn label{
+  font-weight: 600;
+  font-size: .8rem;
+}
+.bg-hotpink{
+  background-color: #fdf4e7 !important;
 }
