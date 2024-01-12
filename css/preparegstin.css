@@ -38,6 +38,9 @@
   color: #26ace3;
   font-size: 13px;
 }
+.gstinSummary .norecordFound{
+  font-size: 12px;
+}
 .table-responsive .thead th{
   color:#3f6ad8!important;
   text-align: center;
@@ -50,6 +53,15 @@
   padding: 0;
   border: 0;
   white-space: break-spaces;
+}
+.table-responsive .dropdown-toggle:hover,.table-responsive .dropdown-toggle:active{
+  background-color: inherit!important;
+}
+.table-responsive .dropdown-menu .dropdown-item{
+  white-space: break-spaces;
+  /* max-width: 300px; */
+  display: block;
+  font-size: 11px;
 }
 .table-responsive tr:not(.thead) th{
   font-size: 10px;
@@ -119,6 +131,7 @@
 }
 .table-responsive table th{
     border: 1px solid #23232329;
+    /* text-align: center; */
 }
 .table-responsive table td{
     border: 1px solid #23232329;

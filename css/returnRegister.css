@@ -152,11 +152,11 @@ body a:hover{
 .gstinSummary .table-body td:nth-last-child(1){
     font-weight: 600;
   }
-.gstinSummary .gstr_taxTable .table-body td:nth-last-child(1){
-    background-color: #c6cee559;
+.gstinSummary .gstr_taxTable .table-body td:nth-last-child(1),.trBg{
+    background-color: #e0f3ff!important;
 }
 .gstinSummary th.total{
-    background-color: #c6cee559;
+    background-color: #e0f3ff;
 }
 @media(max-width:768px){
     /* .monthwise-header{
@@ -370,12 +370,59 @@ body a:hover{
     /* color: #fff; */
     color: rgba(0, 0, 0, 0.8);
 }
+.quickLinks{
+    padding: 10px;
+}
+.quickLinks h6{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.quickLinksTabs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.quickLinksTabs .link_tab{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 6px 14px 6px 6px;
+    border: 1px solid rgb(225, 229, 238);
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+.quickLinksTabs .link_tab.active{
+    border: 1px solid rgb(127, 227, 173);
+    background-color: rgb(210, 248, 227);
+}
+.quickLinksTabs .link_tab:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: rgb(190, 194, 204) 0px 8px 13px;
+}
+.quickLinksTabs .link_tab img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.quickLinksTabs .link_tab span{
+    font-size: 11px;
+    font-weight: 600;
+}
 @media(max-width:768px){
     .download-btn {
-        margin-top: 1rem;
-        margin-bottom: .5rem;
+        /* margin-top: 1rem;
+        margin-bottom: .5rem; */
     }
     .download-btn a{
-        margin-bottom: .5rem;
+        margin: .5rem auto;
     }
 }
