@@ -31,6 +31,11 @@ body a:hover{
   .header-links{
     justify-content: space-between;
   }
+  .header-links .form-select{
+    font-size: 13px;
+    box-shadow: none;
+    cursor: pointer;
+  }
   @media(max-width:768px){
     .header-links{
      flex-direction: column;
@@ -45,11 +50,13 @@ body a:hover{
 .pendindreturns{
     color: #ff0000 !important;
     text-decoration: none !important;
+    font-weight: 600;
 }
 .filedreturns{
     color: #34a853 !important;
     text-decoration: none !important;
     letter-spacing: .5px;
+    font-weight: 600;
 }
 .table-responsive .company-name{
     text-decoration: none;
@@ -82,30 +89,79 @@ body a:hover{
 .active-content {
     display: block;
 }
+.cv{
+    color: #3f6ad8;
+}
 /* ========= month wise=========== */
-.table-responsive .table-head th{
-    color: #cd1c1f !important;
-    letter-spacing: .5px;
+.table-responsive  th{
+    /* color: #cd1c1f !important; */
+    font-weight: 600;
+    color: #3f6ad8!important;
+    letter-spacing: 0.3px;
 }
 .table-responsive .count{
+    color: darkslategray;
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
 }
 .monthwise-header{
-    border-top: 1px solid #2323234d;
-    border-bottom: 1px solid #2323234d;
-    border-radius: 0 !important;
-    background-color: #ddd;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-top-right-radius: 4px!important;
+    border-top-left-radius: 4px!important;
+    background-color: #26ace3;
+    color: #fff;
+    height: 2.5rem;
+    font-weight: 600;
+    font-size: 13px;
+}
+.monthwise-header .headerFlexItem span{
+    text-transform: capitalize;
+}
+.gstinSummary {
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+}
+.gstinSummary td a, .gstinSummary td span{
+    cursor: pointer;
+}
+.prepare{
+    color: #26ace3;
+}
+.due{
+    color: #ff9800;
+}
+.gstinSummary .table-responsive{
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.gstinSummary th{
+    font-size: 11px!important;
+    white-space: nowrap;
+}
+.gstinSummary td, .gstinSummary .table-body th{
+    font-size: 10px!important;
+    white-space: nowrap;
+}
+.gstinSummary .table-body td:nth-last-child(1){
+    font-weight: 600;
+  }
+.gstinSummary .gstr_taxTable .table-body td:nth-last-child(1){
+    background-color: #c6cee559;
+}
+.gstinSummary th.total{
+    background-color: #c6cee559;
 }
 @media(max-width:768px){
-    .monthwise-header{
+    /* .monthwise-header{
         display:  block;
-    }
+    } */
 }
 #monthWiseReturnWise{
     display: none;
@@ -132,7 +188,7 @@ body a:hover{
     outline: none;
 }
 .table-responsive .crossx{
-    color: #cd1c1f;
+    color: #ff0000b3;
     font-weight: 600;
     font-size: 1.1rem;
 }
@@ -205,19 +261,48 @@ body a:hover{
 #creditLedger table th{
     vertical-align: top;
 }
-
-
+#importBookData .modal-dialog{
+    width: 70%;
+    max-width: none;
+    height: 100%;
+    margin: 20px auto;
+}
+#importBookData .modal-title{
+    font-size: 18px;
+}
 #importBookData table tr{
     border: 1px solid #23232329;
 }
 #importBookData table th{
     border: 1px solid #23232329;
+    font-size: 11px;
 }
 #importBookData table td{
     border: 1px solid #23232329;
+    font-size: 11px;
 }
 #importBookData table th{
-    vertical-align: top;
+    vertical-align: middle;
+}
+#importBookData .btn-close{
+    font-size: 13px;
+}
+#importBookData .thead{
+    background-color: #26ace3!important;
+    color: #fff!important;
+    font-size: 13px;
+}
+#importBookData .thead th{
+    color: #fff!important;
+    font-size: 12px;
+}
+#importBookData .modal-footer button{
+    padding: 5px;
+    font-size: 13px;
+    min-width: 80px;
+    max-width: 100%;
+    font-weight: 600;
+    border-radius: 4px;
 }
 
 /* ============================date picker============================= */
@@ -229,7 +314,7 @@ body a:hover{
 #importBtn{
     position: fixed;
     bottom: 45%;
-    right: -90px;
+    right: -75px;
     border-radius: 0px;
     background-color: #26ace3;
     border: none;
@@ -243,8 +328,9 @@ body a:hover{
 }
 #importBtn a{
 	display: inline-block;
-	font-size: 18px;
+	font-size: 14px;
 	padding: 5px; 
+    font-weight: 600;
 	color: #fff;
 	text-transform: uppercase;
     letter-spacing: .5px;
@@ -253,32 +339,36 @@ body a:hover{
 .import-file{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     padding: .5rem;
     font-weight: 500;
     color: #000;
+    font-size: 11px;
 }
 .import-file .delete{
     color: #ff0000;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 12px;
 }
 .download-btn a{
-    padding: .4rem .85rem;
+    text-transform: capitalize;
+    padding: 6px;
     letter-spacing: .5px;
-    background-color: #26ace3;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     border-radius: 5px;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: .8rem;
+    font-weight: 600;
+    font-size: 10px;
     display: inline-block;
 }
 .download-btn a:hover{
-    color: #fff;
+    /* color: #fff; */
+    color: rgba(0, 0, 0, 0.8);
 }
 @media(max-width:768px){
     .download-btn {

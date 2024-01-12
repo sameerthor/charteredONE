@@ -1,4 +1,7 @@
-
+:root {
+    --background-color: #f96302;
+    --table-header-bg:#26ace3;
+}
 .ui-theme-settings .btn-open-options{
     display: flex;
     justify-content: center;
@@ -124,12 +127,12 @@ body{
     font-weight: 600;
     letter-spacing: .5px;
     color: #000;
-    font-size: .85rem;
+    font-size: 11px;
 }
 .table-responsive .table td{
     color: #000;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: .5px;
-    font-size: .8rem;
+    font-size: 10px;
 }
