@@ -1,0 +1,627 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/dashboardpack.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/itr.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>             
+        <!-- <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer custome-header-margin">
+                    <div class="app-main__inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="custome-header">
+                                    <div>
+                                        <div class="header-item">
+                                            <span class="client-name" data-bs-toggle="tooltip" data-bs-placement="top" title="Adem Makaran">Adem Makarum</span>
+                                        </div>
+                                        <div>
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title=" PAN: DIIPM2226">DIIPM2226</span> |
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Status: Individual">Individual</span> |
+                                            <span class="header-link"><a href="./edit-client.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit Client Info">Residence <i class="fa-solid fa-user-pen" ></i></a></span> |
+                                            <span class="header-link"><a href="https://eportal.incometax.gov.in/iec/foservices/#/login" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="visit IT Portal">IT Portal <img src="../../images/itd-logo.png" height="20" width="28" alt=""></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="custome-dropdowm align-items-center">
+                                       <div class="custome-toggle">
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>PY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>CY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                       </div>
+                                        <div class="filling-btn">
+                                            <a href="./e-filing.html">e-Filing</a>
+                                            <a href="./computation.html">Computation</a>
+                                        </div>
+                                        <div class="fy-year">
+                                            <span>A.Y. 2023-24</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="breadcrumbs breadcrumbs-top bg-light mb-3">
+                                        <a href="./itrSummary.html"><i class="fa-solid fa-angle-left"></i> Return to Dashboard</a>
+                                    </div>
+                                    <div class="main-heading">
+                                        <h4>e-Filing</h4>
+                                        <p class="return-section"><span>Section</span>Regular Return -139(1)</p>
+                                    </div>
+                                    <!-- =============== Stepper===================== -->
+                                    <div class="md-stepper-horizontal orange">
+                                        <div class="md-step editable">
+                                            <a href="./e-filing.html"><div class="md-step-circle"><span>1</span></div></a>
+                                            <a href="./e-filing.html"><div class="md-step-title">Basic Information</div></a>
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step active done ">
+                                            <a href="./e-filing-review.html"><div class="md-step-circle"><span>2</span></div></a>
+                                           <a href="./e-filing-review.html"> <div class="md-step-title">Review &amp e-Filing</div></a>
+                                            <!-- <div class="md-step-optional">Optional</div> -->
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <!-- <div class="md-step active">
+                                          <div class="md-step-circle"><span>3</span></div>
+                                          <div class="md-step-title">Payment</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step">
+                                          <div class="md-step-circle"><span>4</span></div>
+                                          <div class="md-step-title">Review</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div> -->
+                                    </div>
+                                    <!-- ===================================== -->
+                                                                      
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="filing-btns">
+                                                <a href="#000">Download JSON</a>
+                                                <a href="#000"> Proceed for e-Filing</a>
+                                            </div>
+                                            <div class="col-md-12 mb-5">
+                                                <div class="review-box">
+                                                    <div class="review-child">
+                                                        <p>
+                                                            Amount of Total Tax reflected in AIS / 26 AS  does not have any difference to the amount shown in Computation of Income.
+                                                        </p>
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#TaxDetailvsAIS">Click here to check the details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Reason of ITR-3 selection</h4>
+                                                    <div>
+                                                        <ol>
+                                                            <li>For individuals and HUFs having income from profits and gains of business or profession</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Why ruled out ITR-2</h4>
+                                                    <div>
+                                                        <ol>
+                                                            <li>Income of nature "Profits and gains from business and professions"</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>List of Errors/Warnings</h4>
+                                                    <div class="table-responsive" id="noContent">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <thead>
+                                                                <th>S. No.</th>
+                                                                <th>Modules</th>
+                                                                <th>Error/Warning Description</th>
+                                                                <th></th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Module Name</td>
+                                                                    <td>Description goes here</td>
+                                                                </tr>
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Signed By</h4>
+                                                    <div class="table-responsive" id="noContent">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Capacity: </td>
+                                                                    <td>
+                                                                        <select class="form-select" aria-label="Default select example">
+                                                                            <option selected>self</option>
+                                                                            <option value="1">Representative</option>
+                                                                            <option value="2">Authorised Signatory</option>
+                                                                        </select>
+                                                                    </td>
+                                                                    <td> Adem Makarum (DJHPM866E) , Son of Colt Makarum </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Self Details</h4>
+                                                    <div class="table-responsive">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <tbody>
+                                                                <tr>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Name</label>
+                                                                            <input type="text" class="form-control" value="Adem Makaram" disabled>
+                                                                        </div>
+                                                                   </td>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Father's Name</label>
+                                                                            <input type="text" class="form-control" value="Colt Makarum" disabled>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">PAN</label>
+                                                                            <input type="text" class="form-control" value="DJHPM866E" disabled>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Authorised Signatory Details</h4>
+                                                    <div class="table-responsive" id="noContent">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <tbody>
+                                                                <tr>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Name</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                   </td>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Father's Name</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">PAN</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="review-box">
+                                                    <h4>Representative Details</h4>
+                                                    <div class="table-responsive" id="noContent">
+                                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover ">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                       <div class="col">
+                                                                            <label for="" class="form-label pl-1">Representative</label>
+                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                <option selected>Legal Heir</option>
+                                                                                <option value="1">Manager</option>
+                                                                                <option value="2">Gaurdian</option>
+                                                                                <option value="2">Other</option>
+                                                                            </select>
+                                                                       </div>
+                                                                    </td>
+                                                                   <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Name</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Father's Name</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">PAN</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Aadhaar</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <label for="" class="form-label pl-1">Address</label>
+                                                                            <input type="text" class="form-control" value="">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- =============================== Tax Detail vs AIS================== -->
+    <div class="modal fade" id="TaxDetailvsAIS" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Tax Detail vs AIS</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive padding-less-input samll-font-table">
+                    <table class="_table align-middle mb-0 table  table-striped table-hover" border="1">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Tax Paid</th>
+                                <th class="text-center">Tax in AIS/26AS</th>
+                                <th class="text-center">Tax in Computation</th>
+                                <th class="text-center">Diff</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_bodyB">
+                            <tr>
+                                <td>
+                                    Advance Tax
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                            </tr>
+                        </tbody>    
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../../js/dashboard-pack.js"></script> 
+<script src="../../js/dashboard.js"></script>
+
+</body>
+</html>

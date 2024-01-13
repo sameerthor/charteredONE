@@ -1,0 +1,1690 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 720 (Revised), The Auditor's Responsibilities Relating to Other
+                                                Information
+                                                 
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                            <h5 class="mt-4">
+                                                Note: Please refer to the Implementation Guide to SA 720(Revised), “The Auditor’s
+                                                Responsibilities Relating to Other Information”. 
+                                                
+                                            </h5>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Obtaining the Other Information 
+
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 13
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor done the follow
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Determined, through discussion with management, which
+                                                                document(s) comprises the annual report, and the entity’s planned
+                                                                manner and timing of the issuance of such document(s); 
+                                                            </li>
+                                                            <li>
+                                                                Made appropriate arrangements with management to obtain in a
+                                                                timely manner and, if possible, prior to the date of the auditor’s
+                                                                report, the final version of the document(s) comprising the annual
+                                                                report; and 
+                                                            </li>
+                                                            <li>
+                                                                When some or all of the document(s) determined in (a) above, will
+                                                                not be available until after the date of the auditor’s report, request
+                                                                management to provide a written representation that the final
+                                                                version of the document(s) will be provided to the auditor when
+                                                                available, and prior to its issuance by the entity, such that the
+                                                                auditor can complete the procedures required by this SA? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: When the annual report is translated into other languages
+                                                            pursuant to law or regulation, consideration may need to be given as to
+                                                            whether one, or more than one of the “annual reports” form part of the
+                                                            other information. Local law or regulation may provide further
+                                                            guidance in this respect. (Para A12)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: The auditor may communicate the following with management
+                                                            or those charged with governance, who is responsible for preparing the
+                                                            annual report: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The auditor’s expectations in relation to obtaining the final version
+                                                                of the annual report in a timely manner prior to the date of the
+                                                                auditor’s report such that the auditor can complete the procedures
+                                                                required by this SA before the date of the auditor’s report, or if
+                                                                that is not possible, as soon as practicable and in any case prior to
+                                                                the entity’s issuance of such information.
+                                                            </li>
+                                                            <li>
+                                                                The possible implications when the other information is obtained
+                                                                after the date of the auditor’s report.(Para A13)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: The communications referred to in para A13 may be
+                                                            particularly appropriate for initial audit engagement or where there has
+                                                            been a change in management or those charged with governance or
+                                                            when other information is expected to be obtained after the date of
+                                                            auditor’s report. (Para A14)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: In the case where the entity is considering development of a
+                                                            document at the date of auditor’s report, that may be part of entity’s annual report but management is unable to confirm to the auditor the
+                                                            purpose or timing of such a document. If auditor is unable to ascertain
+                                                            the purpose or timing of such a document, the document is not
+                                                            considered other information for purpose of this SA. (Para A17)] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Obtaining the other information in a timely manner prior to the
+                                                            date of the auditor’s report enables any necessary revisions to be made
+                                                            to the financial statements, the auditor’s report, or the other
+                                                            information prior to their issuance. The audit engagement letter may
+                                                            make reference to an agreement with management to make available
+                                                            to the auditor the other information in a timely manner, and if possible
+                                                            prior to the date of the auditor’s report. (Para A18)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: When other information is only made available to users via the
+                                                            entity’s website, the version of the other information obtained from the
+                                                            entity, rather than directly from the entity’s website, is the relevant
+                                                            document on which the auditor would perform procedures in
+                                                            accordance with this SA. The auditor has no responsibility under this
+                                                            SA to search for other information, including other information that
+                                                            may be on the entity’s website, nor to perform any procedures to
+                                                            confirm that other information is appropriately displayed on the
+                                                            entity’s website or otherwise has been appropriately transmitted or
+                                                            displayed electronically. (Para A19)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: The auditor is not precluded from dating or issuing the
+                                                            auditor’s report if the auditor has not obtained some or all of the other
+                                                            information. (Para A20)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: When the other information is obtained after the date of the
+                                                            auditor’s report, the auditor is not required to update the procedures
+                                                            performed in accordance with para 6 and 7 of SA 560. (Para A21)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: As per guidelines of SA 580, the written representation
+                                                            required to be requested by paragraph 13(c) above regarding other
+                                                            information that will be available only after the date of the auditor’s
+                                                            report is intended to support the auditor’s ability to complete the
+                                                            procedures required by this SA with respect to such information. In
+                                                            addition, the auditor may find it useful to request other written
+                                                            representations, for example, that: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Management has informed the auditor of all the documents that it
+                                                                expects to issue that may comprise other information; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The financial statements and any other information obtained by
+                                                                the auditor prior to the date of the auditor’s report are consistent
+                                                                with one another, and the other information does not contain any
+                                                                material misstatements; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                With regard to other information that has not been obtained by the
+                                                                auditor prior to the date of the auditor’s report, that management
+                                                                intends to prepare and issue such other information and the
+                                                                expected timing of such issuance. (Para A22)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Reading and Considering the Other Information 
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            14, 15
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            In reading the other information, has the auditor: 
+
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Considered whether there is a material inconsistency between the
+                                                                other information and the financial statements. As the basis for
+                                                                this consideration, has the auditor, to evaluate their consistency,
+                                                                compared selected amounts or other items in the other information
+                                                                (that are intended to be the same as, to summarize, or to provide
+                                                                greater detail about, the amounts or other items in the financial
+                                                                statements) with such amounts or other items in the financial
+                                                                statements; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Considered whether there is a material inconsistency between the
+                                                                other information and the auditor’s knowledge obtained in the
+                                                                audit, in the context of audit evidence obtained and conclusions
+                                                                reached in the audit? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            While reading the other information, has the auditor came across
+                                                            indications of whether the other information not related to the financial
+                                                            statements or the auditor’s knowledge obtained in the audit appears to
+                                                            be materially misstated? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: In evaluating the consistency of selected amounts or other items
+                                                            in the other information with the financial statements, the auditor is
+                                                            not required to compare all amounts or other items in the other
+                                                            information.(Para A26)] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Selecting the amounts or other items to compare is a matter of
+                                                            professional judgment. Factors relevant to this judgment include: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The significance of the amount or other item in the context in
+                                                                which it is presented, which may affect the importance that users
+                                                                would attach to the amount or other item (for example, a key ratio
+                                                                or amount) 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                If quantitative, the relative size of the amount compared with
+                                                                accounts or items in the financial statements or the other
+                                                                information to which they relate. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The sensitivity of the particular amount or other item in the other
+                                                                information, for example, share based payments for senior
+                                                                management. (Para A27)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Determining the nature and extent of procedures to address the
+                                                            concern of materially inconsistent information (para 14(a)) is a matter
+                                                            of professional judgment, recognizing that the auditor’s
+                                                            responsibilities under this SA do not constitute an assurance
+                                                            engagement on the other information or impose an obligation to obtain
+                                                            assurance about the other information. Examples of such procedures
+                                                            include: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                For information that is intended to be the same as information in
+                                                                the financial statements, comparing the information to the
+                                                                financial statements. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                For information intended to convey the same meaning as
+                                                                disclosures in the financial statements, comparing the words used and considering the significance of differences in wording used
+                                                                and whether such differences imply different meanings. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Obtaining a reconciliation between an amount within the other
+                                                                information and the financial statements from management and: 
+                                                                
+                                                            </li>
+                                                            <ul>
+                                                                <li>
+                                                                    Comparing items in the reconciliation to the financial
+                                                                    statements and the other information; and 
+                                                                </li>
+                                                                <li>
+                                                                    Checking whether the calculations within the reconciliation are
+                                                                    arithmetically accurate. (Para A28)] 
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: In considering whether there is a material inconsistency
+                                                            between the other information and the auditor’s knowledge obtained in
+                                                            the audit, the auditor may focus on those matters in the other
+                                                            information that are of sufficient importance that a misstatement of the
+                                                            other information in relation to that matter could be material.(Para
+                                                            A33)] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Remaining alert for other indications that the other information
+                                                            appears to be materially misstated could potentially result in the
+                                                            auditor identifying such matters as
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Differences between the other information and the general
+                                                                knowledge, apart from the knowledge obtained in the audit, of the
+                                                                engagement team member reading the other information that lead
+                                                                the auditor to believe that the other information appears to be
+                                                                materially misstated; or
+                                                            </li>
+                                                            <li>
+                                                                An internal inconsistency in the other information that leads the
+                                                                auditor to believe that the other information appears to be
+                                                                materially misstated. (Para A38)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Responding When a Material Inconsistency Appears to Exist or
+                                                            Other Information Appears to Be Materially Misstated
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 16
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor identified that a material inconsistency appears to exist
+                                                            or whether the auditor becomes aware that the other information
+                                                            appears to be materially misstated?
+                                                        </p>
+                                                        <p>
+                                                            If yes, 
+
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                has the auditor discussed the matter with the management; and 
+
+                                                            </li>
+                                                            <li>
+                                                                if necessary, performed other procedures to conclude whether:
+                                                            </li>
+                                                            <ul>
+                                                                <li>
+                                                                    A material misstatement of the other information exists; 
+
+                                                                </li>
+                                                                <li>
+                                                                    A material misstatement of the financial statements exists; or 
+                                                                </li>
+                                                                <li>
+                                                                    The auditor’s understanding of the entity and its environment
+                                                                    needs to be updated? 
+                                                                </li>
+                                                            </ul>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: The auditor’s discussion with management about a material
+                                                            inconsistency (or other information that appears to be materially
+                                                            misstated) may include requesting management to provide support for
+                                                            the basis of management’s statements in the other information. Based
+                                                            on management’s further information or explanations, the auditor may
+                                                            be satisfied that the other information is not materially misstated. For example, management explanations may indicate reasonable and
+                                                            sufficient grounds for valid differences of judgment. (Para A39)
+                                                        </p>
+                                                        <p>
+                                                            Conversely, the discussion with management may provide further
+                                                            information that supports the auditor’s conclusion that a material
+                                                            misstatement of the other information exists. (Para A40)] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: It may be more difficult for the auditor to challenge
+                                                            management on matters of judgment than on those of a more factual
+                                                            nature. However, there may be circumstances where the auditor
+                                                            concludes that the other information contains a statement that is not
+                                                            consistent with the financial statements or the auditor’s knowledge
+                                                            obtained in the audit. These circumstances may raise doubt about the
+                                                            other information, the financial statements, or the auditor’s knowledge
+                                                            obtained in the audit. (Para A41)] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: As there is a wide range of possible material misstatements of
+                                                            the other information, the nature and extent of other procedures the
+                                                            auditor may perform to conclude whether a material misstatement of
+                                                            the other information exists are matters of the auditor’s professional
+                                                            judgment in the circumstances. (Para A42)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: When the auditor is unable to conclude that a material
+                                                            inconsistency no longer appears to exist or that the other information
+                                                            no longer appears to be materially misstated, the auditor may request
+                                                            management to consult with a qualified third party (for example, a
+                                                            management’s expert or legal counsel). In certain cases, after
+                                                            considering the responses from management’s consultation, the
+                                                            auditor may not be able to conclude whether or not a material
+                                                            misstatement of the other information exists. Actions the auditor may
+                                                            then take include one or more of the following: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Obtaining advice from the auditor’s legal counsel; 
+
+                                                            </li>
+                                                            <li>
+                                                                Considering the implications for the auditor’s report for example,
+                                                                whether to describe the circumstances when there is a limitation
+                                                                imposed by management; or
+                                                            </li>
+                                                            <li>
+                                                                Withdrawing from the audit, where withdrawal is possible under
+                                                                applicable law or regulation. (Para A43)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Responding When the Auditor Concludes That a Material
+                                                            Misstatement of the Other Information Exists
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            17, 18,
+                                                            19 
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor concluded that a material misstatement of the other
+                                                            information exists? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor requested the management to correct the other
+                                                            information? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If a material misstatement in other information exists and the auditor
+                                                            has requested the management to correct the other information, has the
+                                                            management agreed to make the correction? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor determined that the correction has been made? 
+
+                                                        </p>
+                                                        <p>
+                                                            If no, has the auditor communicated the matter with those charged with governance and requested the correction to be made? 
+
+                                                        </p>
+                                                        <p>
+                                                            If the auditor concludes that a material misstatement exists in other
+                                                            information obtained prior to the date of auditor’s report and other
+                                                            information is not corrected after communicating with those charged
+                                                            with governance, has the auditor taken an appropriate action from
+                                                            below: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Considering the implications for the auditor’s report and
+                                                                communicating with those charged with governance about how the
+                                                                auditor plans to address the material misstatement in the auditor’s
+                                                                report; or
+                                                            </li>
+                                                            <li>
+                                                                Withdrawing from the engagement, where withdrawal is possible
+                                                                under applicable law or regulation? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: The auditor may use professional judgement and take into
+                                                            account whether the rationale given by management and those charged
+                                                            with governance for not making the correction raises doubt about the
+                                                            integrity or honesty of management or those charged with governance,
+                                                            such as when the auditor suspects an intention to mislead. The auditor
+                                                            may also consider it appropriate to seek legal advice. In some cases,
+                                                            the auditor may be required by law, regulation or the professional
+                                                            standards to communicate the matter to a regulator. (Para A44)] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: In rare circumstances, a disclaimer of opinion on the financial
+                                                            statements may be appropriate when the refusal to correct the material
+                                                            misstatement of the other information casts such doubt on the integrity
+                                                            of management and those charged with governance as to call into
+                                                            question the reliability of audit evidence in general.(Para A45)] 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Withdrawal from the engagement, where withdrawal is possible
+                                                            under applicable law or regulation, may be appropriate when the
+                                                            circumstances surrounding the refusal to correct the material
+                                                            misstatement of the other information cast such doubt on the integrity
+                                                            of management and those charged with governance as to call into
+                                                            question the reliability of representations obtained from them during
+                                                            the audit. (Para A46)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If the auditor concludes that a material misstatement exists in other
+                                                            information obtained after the date of the auditor’s report, has the
+                                                            auditor: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                if the other information is corrected, performed the procedures
+                                                                necessary in the circumstances; or 
+                                                             </li>
+                                                             <li>
+                                                                if the other information is not corrected after communicating with
+                                                                those charged with governance, taken appropriate action
+                                                                considering the auditor’s legal rights and obligations, to seek to
+                                                                have the uncorrected material misstatement appropriately brought
+                                                                to the attention of users for whom the auditor’s report is prepared? 
+                                                             </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: When a material misstatement of the other information remains
+                                                            uncorrected, appropriate actions that the auditor may take to seek to
+                                                            have the uncorrected material misstatement appropriately brought to
+                                                            the attention of users for whom the auditor’s report is prepared, when permitted by law or regulation, include, for example:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Providing a new or amended auditor’s report to management
+                                                                including a modified section in accordance with paragraph 22, and
+                                                                requesting management to provide this new or amended auditor’s
+                                                                report to users for whom the auditor’s report is prepared and
+                                                                reviewing the steps taken by management to provide the new or
+                                                                amended auditor’s report to such users; 
+                                                            </li>
+                                                            <li>
+                                                                Bringing the material misstatement of the other information to the
+                                                                attention of the appointing authority (for example, by addressing
+                                                                the matter in a general meeting of shareholders); 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Communicating with the regulator where required by applicable
+                                                                law or regulation about the uncorrected material misstatement; or
+                                                            </li>
+                                                            <li>
+                                                                Considering the implications for engagement continuance. (Para
+                                                                A50)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Responding When a Material Misstatement in the Financial
+                                                            Statements Exists or the Auditor’s Understanding of the Entity
+                                                            and Its Environment Needs to Be Updated 
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            20,A51
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                    <p>
+                                                        Has the auditor concluded that a material misstatement in the financial
+                                                        statements exist, or the auditor’s understanding of the entity and its
+                                                        environment needs to be updated after performing procedures stated
+                                                        above in Para 14 and 15? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the auditor responded appropriately in accordance with the
+                                                        other SAs? 
+                                                    </p>
+                                                    <p>
+                                                        In reading the other information, has the auditor become aware of new
+                                                        information that has implications for: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The auditor’s understanding of the entity and its environment and,
+                                                            accordingly, may indicate the need to revise the auditor’s risk
+                                                            assessment. 
+                                                        </li>
+                                                        <li>
+                                                            The auditor’s responsibility to evaluate the effect of identified
+                                                            misstatements on the audit and of uncorrected misstatements, if
+                                                            any, on the financial statements. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The auditor’s responsibilities relating to subsequent events? 
+
+                                                        </li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Reporting
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            21, 22,
+                                                            23 
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                      <p>
+                                                        Has the auditor included a separate section in auditor’s report with a
+                                                        heading “Other Information”, or other appropriate heading, when, at
+                                                        the date of the auditor’s report: 
+                                                      </p>
+                                                      <ol type="a">
+                                                        <li>
+                                                            For an audit of financial statements of a listed entity, the auditor
+                                                            has obtained, or expects to obtain, the other information; or
+                                                        </li>
+                                                        <li>
+                                                            For an audit of financial statements of an unlisted corporate entity,
+                                                            the auditor has obtained some or all of the other information? 
+                                                        </li>
+                                                      </ol>
+                                                      <p>
+                                                        Whether the Other Information section included in auditor’s report include following
+                                                      </p>
+                                                      <ol type="a">
+                                                        <li>
+                                                            A statement that management is responsible for the other
+                                                            information; 
+                                                        </li>
+                                                        <li>
+                                                            An identification of:
+                                                        </li>
+                                                        <ol type="i">
+                                                            <li>
+                                                                Other information, if any, obtained by the auditor prior to the
+                                                                date of the auditor’s report; and
+                                                            </li>
+                                                            <li>
+                                                                For an audit of financial statements of a listed entity, other
+                                                                information, if any, expected to be obtained after the date of the
+                                                                auditor’s report; 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                        <li>
+                                                            A statement that the auditor’s opinion does not cover the other
+                                                            information and, accordingly, that the auditor does not express (or
+                                                            will not express) an audit opinion or any form of assurance
+                                                            conclusion thereon; 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            A description of the auditor’s responsibilities relating to reading,
+                                                            considering and reporting on other information as required by this
+                                                            SA; and 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            When other information has been obtained prior to the date of the
+                                                            auditor’s report, either: 
+                                                            
+                                                        </li>
+                                                        <ol type="i">
+                                                            <li>
+                                                                A statement that the auditor has nothing to report; or
+                                                            </li>
+                                                            <li>
+                                                                If the auditor has concluded that there is an uncorrected material
+                                                                misstatement of the other information, a statement that describes
+                                                                the uncorrected material misstatement of the other information?
+                                                            </li>
+                                                        </ol>
+                                                      </ol>
+                                                      <p>
+                                                        Whether the auditor expressed a qualified or adverse opinion in
+                                                        accordance with SA 705 (Revised)? 
+                                                        
+                                                      </p>
+                                                      <p>
+                                                        If yes, has the auditor considered implications of the matter giving rise
+                                                        to the modification of opinion for the statement required in para 22(e)?
+                                                      </p>
+                                                      <h5>
+                                                        <i> Impact on the Statement required by paragraph 22(e) above in case
+                                                            of different Audit Opinions: 
+                                                            </i>
+                                                      </h5>
+                                                      <h5>
+                                                        <i>
+                                                            Qualified or Adverse Opinion 
+                                                        </i>
+                                                      </h5>
+                                                      <p>
+                                                        [Note: A qualified or adverse auditor’s opinion on the financial
+                                                        statements may not have an impact on the statement required by
+                                                        paragraph 22(e) if the matter in respect of which the auditor’s opinion
+                                                        has been modified is not included or otherwise addressed in the other
+                                                        information and the matter does not affect any part of the other
+                                                        information. (Para A54)] 
+                                                        
+                                                      </p>
+                                                      <h5>
+                                                        <i>
+                                                            Qualified Opinion Due to a Material Misstatement in the Financial
+                                                            Statements 
+                                                        </i>
+                                                      </h5>
+                                                      <p>
+                                                        [Note: In circumstances when the auditor’s opinion is qualified,
+                                                        consideration may be given as to whether the other information is also
+                                                        materially misstated for the same matter as, or a related matter to, the
+                                                        matter giving rise to the qualified opinion on the financial statements.
+                                                        (Para A55)] 
+                                                        
+                                                      </p>
+                                                      <h5>
+                                                        <i>
+                                                            Qualified Opinion Due to Limitation of Scope 
+                                                        </i>
+                                                      </h5>
+                                                      <p>
+                                                        [Note: When there is a limitation of scope with respect to a material
+                                                        item in the financial statements, the auditor will not have obtained
+                                                        sufficient appropriate audit evidence about that matter. In these
+                                                        circumstances, the auditor may be unable to conclude whether or not
+                                                        the amounts or other items in the other information related to this
+                                                        matter result in a material misstatement of the other information.
+                                                        Accordingly, the auditor may need to modify the statement required
+                                                        by paragraph 22(e) to refer to the auditor’s inability to consider
+                                                        management’s description of the matter in the other information in
+                                                        respect of which the auditor’s opinion on the financial statements has
+                                                        been qualified as explained in the Basis for Qualified Opinion
+                                                        paragraph. The auditor is nevertheless required to report any other
+                                                        uncorrected material misstatements of the other information that have
+                                                        been identified. (Para A56)] 
+                                                      </p>
+                                                      <h5>
+                                                        <i>
+                                                            Adverse Opinion 
+                                                        </i>
+                                                      </h5>
+                                                      <p>
+                                                        [Note: An adverse opinion on the financial statements relating to a
+                                                        specific matter(s) described in the Basis for Adverse Opinion
+                                                        paragraph does not justify the omission of reporting of material
+                                                        misstatements of the other information that the auditor has identified
+                                                        in the auditor’s report in accordance with paragraph 22(e)(ii). When an
+                                                        adverse opinion has been expressed on the financial statements, the
+                                                        auditor may need to appropriately modify the statement required by
+                                                        paragraph 22(e). (Para A57) 
+                                                      </p>
+                                                      <h5>
+                                                        <i>
+                                                            Disclaimer of Opinion
+                                                        </i>
+                                                      </h5>
+                                                      <p>
+                                                        [Note: When the auditor disclaims an opinion on the financial
+                                                        statements, providing further details about the audit, including a
+                                                        section to address other information may overshadow the disclaimer of
+                                                        opinion on the financial statements as a whole. Accordingly, in those
+                                                        circumstances, as required by SA 705 (Revised), the auditor’s report
+                                                        does not include a section addressing the reporting requirements under
+                                                        this SA. (Para A58)]
+                                                      </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Reporting Prescribed by Law or Regulation
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 24
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Is the auditor required by a relevant law or regulation to refer to the
+                                                            other information in the auditor’s report using a specific layout or
+                                                            wording?
+                                                        </p>
+                                                        <p>
+                                                            If yes, to refer to Standards on Auditing, does the auditor’s report
+                                                            includes, at a minimum:
+                                                        </p>
+                                                        <ol type="a">
+                                                             <li>
+                                                                Identification of the other information obtained by the auditor
+                                                                prior to the date of the auditor’s report; 
+                                                                
+                                                             </li>
+                                                             <li>
+                                                                A description of the auditor’s responsibilities with respect to the
+                                                                other information; and 
+                                                                
+                                                             </li>
+                                                             <li>
+                                                                An explicit statement addressing the outcome of the auditor’s
+                                                                work for this purpose? 
+                                                             </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: When the differences between the legal or regulatory
+                                                            requirements to report with respect to the other information and this SA relate only to the layout and wording in the auditor’s report and, at
+                                                            a minimum, each of the elements identified in paragraph 24 above, is
+                                                            included in the auditor’s report, the auditor’s report may refer to
+                                                            Standards on Auditing. Accordingly, in such circumstances the auditor
+                                                            is considered to have complied with the requirements of this SA, even
+                                                            when the layout and wording used in the auditor’s report are specified
+                                                            by legal or regulatory reporting requirements. (Para A59)] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Documentation
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 25
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Does the audit documentation include the following? 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Documentation of the procedures performed under this SA; and
+                                                            </li>
+                                                            <li>
+                                                                The final version of the other information on which the auditor has
+                                                                performed the work required under this SA?
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                              </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

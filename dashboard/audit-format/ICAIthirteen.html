@@ -1,0 +1,1854 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 330, The Auditor’s Responses to Assessed Risks 
+                                             </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                5 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <h5>
+                                                                Overall Responses
+                                                            </h5>
+                                                            <p>
+                                                                Whether the auditor has designed and implemented overall
+                                                                responses to address the assessed risks of material misstatement at
+                                                                the financial statement level?
+                                                            </p>
+                                                            <p>
+                                                                [Note: Auditor may include following while addressing assessed
+                                                                risk of material misstatement at the financial statement: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    Emphasizing to the audit team the need to maintain professional
+                                                                    skepticism. 
+                                                                </li>
+                                                                <li>
+                                                                    Assigning more experienced staff or those with special skills or
+                                                                    using experts.
+                                                                </li>
+                                                                <li>
+                                                                    Providing more supervision. 
+                                                                </li>
+                                                                <li>
+                                                                    Incorporating additional elements of unpredictability in the
+                                                                    selection of further audit procedures to be performed.
+                                                                </li>
+                                                                <li>
+                                                                    Making general changes to the nature, timing or extent of audit
+                                                                    procedures, for example: performing substantive procedures at
+                                                                    the period end instead of at an interim date; or modifying the
+                                                                    nature of audit procedures to obtain more persuasive audit
+                                                                    evidence. (Para A1)] 
+                                                                </li>
+                                                            </ul>
+                                                            <p>
+                                                                [Note: The auditor may respond to an ineffective control
+                                                                environment by: 
+                                                           </p>
+                                                           <ul>
+                                                            <li>
+                                                                Conducting more audit procedures as of the period end rather
+                                                                than at an interim date.
+                                                            </li>
+                                                            <li>
+                                                                Obtaining more extensive audit evidence from substantive
+                                                                procedures.
+                                                            </li>
+                                                            <li>
+                                                                Increasing the number of locations to be included in the audit
+                                                                scope.(Para A2)] 
+                                                            </li>
+                                                           </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>
+                                                                Audit Procedures Responsive to the Assessed Risks of Material
+                                                                Misstatement at the Assertion Level
+                                                            </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                6 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor has designed and performed further audit
+                                                                procedures whose nature, timing and extent are based on and are
+                                                                responsive to the assessed risks of material misstatement at the
+                                                                assertion level? 
+                                                           </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                7 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor has considered following while designing the
+                                                                further audit procedures to be performed: 
+                                                           </p>
+                                                           <ul>
+                                                            <li>
+                                                                Reasons for the assessment given to the risk of material misstatement at the assertion level for each class of transactions,
+                                                                account balance, and disclosure including: 
+                                                            </li>
+                                                            <ul>
+                                                                <li>
+                                                                    The likelihood of material misstatement due to the particular
+                                                                    characteristics of the relevant class of transactions, account
+                                                                    balance, or disclosure
+                                                                </li>
+                                                                <li>
+                                                                    Whether the risk assessment takes into account the relevant
+                                                                    controls, thereby requiring the auditor to obtain audit evidence
+                                                                    to determine whether the controls are operating effectively.
+                                                                </li>
+                                                            </ul>
+                                                            <li>
+                                                                Obtaining more persuasive audit evidence the higher the
+                                                                auditor’s assessment of risk? 
+                                                            </li>
+                                                            <p>
+                                                                [Note: 
+                                                                </p>
+                                                                <li>
+                                                                    The auditor’s assessed risks may affect both the types of audit
+                                                                    procedures to be performed and their combination. For example,
+                                                                    when an assessed risk is high, the auditor may confirm the
+                                                                    completeness of the terms of a contract with the counterparty, in
+                                                                    addition to inspecting the document (Para A9). 
+                                                                </li>
+                                                                <li>
+                                                                    The reasons for the assessment given to a risk are relevant in
+                                                                    determining the nature of audit procedures. For example, if an
+                                                                    assessed risk is lower the auditor may determine that substantive
+                                                                    analytical procedures alone provide sufficient appropriate audit
+                                                                    evidence. On the other hand, if the assessed risk is lower because
+                                                                    of internal controls, and auditor intends to base the substantive
+                                                                    procedures on that low assessment, then the auditor performs
+                                                                    tests of those controls.(Para A10)] 
+                                                                </li>
+                                                           </ul>
+                                                                <p>
+                                                                    [Note: Auditor can refer para A13 of this SA for examples of audit
+                                                                    procedures that can be performed only at or after the period end.]
+                                                                    [Note: Factors that influence the auditor’s consideration of when to
+                                                                    perform audit procedures include the following:
+                                                                </p>
+                                                                <ul>
+                                                                <li>
+                                                                    The control environment. 
+                                                                 </li>
+                                                                 <li>
+                                                                    When relevant information is available (for example, electronic
+                                                                    files may subsequently be overwritten, or procedures to be
+                                                                    observed may occur only at certain times). 
+                                                                 </li>
+                                                                 <li>
+                                                                    The nature of the risk (for example, if there is a risk of inflated
+                                                                    revenues to meet earnings expectations by subsequent creation
+                                                                    of false sales agreements, the auditor may wish to examine
+                                                                    contracts available on the date of the period end).
+                                                                 </li>
+                                                                 <li>
+                                                                    The period or date to which the audit evidence relates.(Para
+                                                                    A14)] 
+                                                            </li>
+                                                           </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>
+                                                                Test of Controls 
+                                                            </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                8 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor designed and performed tests of controls to
+                                                                obtain sufficient appropriate audit evidence as to the operating
+                                                                effectiveness of relevant controls when:
+                                                            </p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    The auditor’s assessment of risks of material misstatement at
+                                                                    the assertion level includes an expectation that the controls are
+                                                                    operating effectively (i.e., the auditor intends to rely on the
+                                                                    operating effectiveness of controls in determining the nature,
+                                                                    timing and extent of substantive procedures); or 
+                                                                </li>
+                                                                <li>
+                                                                    Substantive procedures alone cannot provide sufficient
+                                                                    appropriate audit evidence at the assertion level.
+                                                                </li>
+                                                            </ol>
+                                                            <p>
+                                                                [Note: Testing the operating effectiveness of controls is different
+                                                                from obtaining an understanding of and evaluating the design and
+                                                                implementation of controls. However, the same types of audit
+                                                                procedures are used. (Para A21)] 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                9 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                At the time of designing and performing tests of controls, has the
+                                                                auditor obtained more persuasive audit evidence so as to placing
+                                                                greater reliance on the effectiveness of a control?
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                10(a)
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                While designing and performing test of controls has the auditor
+                                                                performed other audit procedures in combination with inquiry to
+                                                                obtain audit evidence about the operating effectiveness of the
+                                                                controls, including how the control were applied at relevant times
+                                                                during the period under audit, the consistency with which they were
+                                                                applied and by whom or by what means they were applied? 
+                                                            </p>
+                                                            <p>
+                                                                [Note: Auditor may consider following while determining the
+                                                                extent of tests of controls: 
+                                                            </p>
+                                                            <ul>
+                                                                 <li>
+                                                                    The frequency of the performance of the control by the entity
+                                                                    during the period. 
+                                                                </li>
+                                                                <li>
+                                                                    The length of time during the audit period that the auditor is
+                                                                    relying on the operating effectiveness of the control. 
+                                                                </li>
+                                                                <li>
+                                                                    The expected rate of deviation from a control.
+                                                                </li>
+                                                                <li>
+                                                                    The relevance and reliability of the audit evidence to be obtained
+                                                                    regarding the operating effectiveness of the control at the
+                                                                    assertion level. 
+                                                                </li>
+                                                                <li>
+                                                                    The extent to which audit evidence is obtained from tests of
+                                                                    other controls related to the assertion. (Para A28)] 
+                                                                </li>
+                                                            </ul>
+                                                            <p>
+                                                                [Note: Auditor may consider performing following tests to
+                                                                determine that the control continues to function effectively: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    Changes to the program are not made without being subject to
+                                                                    the appropriate program change controls;
+                                                                </li>
+                                                                <li>
+                                                                    The authorised version of the program is used for processing
+                                                                    transactions; and 
+                                                                </li>
+                                                                <li>
+                                                                    Other relevant general controls are effective. 
+                                                                </li>
+                                                            </ul>
+                                                            <p>
+                                                                Determining that changes to the programs have not been made, as
+                                                                may be the case when the entity uses packaged software
+                                                                applications without modifying or maintaining them. (Para A29)] 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                10(b)
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor determined whether the controls to be tested depend
+                                                                upon other controls (indirect controls), and if so, whether it is
+                                                                necessary to obtain audit evidence supporting the effective
+                                                                operation of those indirect controls? 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                11 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor has tested controls for the particular time, or
+                                                                throughout the period, for which the auditor intends to rely on those
+                                                                controls, subject to paragraphs 12 and 15 of this SA, in order to
+                                                                provide an appropriate basis for the auditor’s intended reliance?
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                12  
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor obtained audit evidence about the operating
+                                                                effectiveness of controls during an interim period?
+                                                            </p>
+                                                            <p>
+                                                                If yes, has the auditor obtained audit evidence about significant
+                                                                changes to those controls subsequent to the interim period and
+                                                                determined the additional audit evidence to be obtained for the
+                                                                remaining period?
+                                                            </p>
+                                                            <p>
+                                                                [Note: Relevant factors in determining what additional audit
+                                                                evidence to obtain about controls that were operating during the
+                                                                period remaining after an interim period, include: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    The significance of the assessed risks of material misstatement at
+                                                                    the assertion level.
+                                                                </li>
+                                                                <li>
+                                                                    The specific controls that were tested during the interim period,
+                                                                    and significant changes to them since they were tested, including
+                                                                    changes in the information system, processes, and personnel.
+                                                                </li>
+                                                                <li>
+                                                                    The degree to which audit evidence about the operating
+                                                                    effectiveness of those controls was obtained.
+                                                                </li>
+                                                                <li>
+                                                                    The length of the remaining period.
+                                                                </li>
+                                                                <li>
+                                                                    The extent to which the auditor intends to reduce further
+                                                                    substantive procedures based on the reliance of controls.
+                                                                </li>
+                                                                <li>
+                                                                    The control environment. (Para A33)] 
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                13  
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                In determining whether it is appropriate to use audit evidence about
+                                                                the operating effectiveness of controls obtained in previous audits,
+                                                                and, if so, the length of the time period that may elapse before
+                                                                retesting a control, whether the auditor has considered the
+                                                                following:
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    The effectiveness of other elements of internal control, including
+                                                                    the control environment, the entity’s monitoring of controls, and
+                                                                    the entity’s risk assessment process; 
+                                                                </li>
+                                                                <li>
+                                                                    The risks arising from the characteristics of the control,
+                                                                    including whether it is manual or automated;
+                                                                </li>
+                                                                <li>
+                                                                    The effectiveness of general IT-controls; 
+                                                                </li>
+                                                                <li>
+                                                                    The effectiveness of the control and its application by the entity,
+                                                                    including the nature and extent of deviations in the application of the control noted in previous audits, and whether there have been
+                                                                    personnel changes that significantly affect the application of the
+                                                                    control; 
+                                                                </li>
+                                                                <li>
+                                                                    Whether the lack of a change in a particular control poses a risk
+                                                                    due to changing circumstances; and
+                                                                </li>
+                                                                <li>
+                                                                    The risks of material misstatement and the extent of reliance on
+                                                                    the control?
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                14 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                When the auditor plans to use audit evidence from a previous audit
+                                                                about the operating effectiveness of specific controls, whether the
+                                                                auditor has established the continuing relevance of that evidence by
+                                                                obtaining audit evidence about significant changes in those controls
+                                                                that have occurred subsequent to the previous audit. 
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor has obtained this evidence by
+                                                                performing inquiry combined with observation or inspection, to
+                                                                confirm the understanding of those specific controls, and: 
+                                                            </p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    When there have been changes that affect the continuing
+                                                                    relevance of the audit evidence from the previous audit, the
+                                                                    auditor shall test the controls in the current audit.
+                                                                </li>
+                                                                <li>
+                                                                    When there have not been such changes, the auditor shall test
+                                                                    the controls at least once in every third audit, and shall test
+                                                                    some controls each audit to avoid the possibility of testing all
+                                                                    the controls on which the auditor intends to rely in a single
+                                                                    audit period with no testing of controls in the subsequent two
+                                                                    audit periods.
+                                                                </li>
+                                                            </ol>
+                                                            <p>
+                                                                [Note: Factors that may decrease the period for retesting a control
+                                                                or result in not relying on audit evidence obtained in previous
+                                                                audits at all, include the following: 
+                                                             </p>
+                                                             <ul>
+                                                                <li>
+                                                                    A deficient control environment.
+                                                                </li>
+                                                                <li>
+                                                                    Deficient monitoring of controls. 
+                                                                </li>
+                                                                <li>
+                                                                    A significant manual element to the relevant controls. 
+                                                                </li>
+                                                                <li>
+                                                                    Personnel changes that significantly affect the application of the
+                                                                    control. 
+                                                                </li>
+                                                                <li>
+                                                                    Changing circumstances that indicate the need for changes in the
+                                                                    control. 
+                                                                </li>
+                                                                <li>
+                                                                    Deficient general IT-controls. (Para A38)] 
+                                                                </li>
+                                                             </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                15 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor planned to rely on controls over a risk the auditor
+                                                                has determined to be a significant risk? 
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor has tested these controls in current
+                                                                period? 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                16
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                While evaluating the operating effectiveness of relevant controls,
+                                                                whether the auditor detected misstatement while performing
+                                                                substantive procedures?  
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor has evaluated that the misstatement
+                                                                ascertained indicate that controls are not operating effectively?  
+                                                            </p>
+                                                            <p>
+                                                                [Note: The absence of misstatements detected by substantive
+                                                                procedures, however, does not provide audit evidence that controls
+                                                                related to the assertion being tested are effective.] 
+                                                                
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                17 
+                                                           </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor detected deviations from controls upon which the
+                                                                auditor intends to rely?   
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor has made specific inquiries to
+                                                                understand these matters and their potential consequences and
+                                                                determined whether the tests of controls that have been performed
+                                                                provide an appropriate basis for reliance on the controls, whether
+                                                                additional tests of controls are necessary or whether the potential
+                                                                risks of misstatement need to be addressed using substantive
+                                                                procedures?  
+                                                            </p>
+                                                            <p>
+                                                                [Note: Deviations from prescribed controls may be caused by such
+                                                                factors as changes in key personnel, significant seasonal
+                                                                fluctuations in volume of transactions and human error. (Para A41)]  
+                                                                
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>
+                                                                Substantive Procedures
+                                                            </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                18 
+                                                           </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor designed and performed substantive procedures for
+                                                                each material class of transactions, account balance, and
+                                                                disclosure?   
+                                                            </p>
+                                                            <p>
+                                                                [Note: Because the assessment of the risk of material misstatement
+                                                                takes account of internal control, the extent of substantive
+                                                                procedures may need to be increased when the results from tests of
+                                                                controls are unsatisfactory. (Para A46)]
+                                                           </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                19
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor considered performing external confirmation
+                                                                procedures as substantive audit procedures?
+                                                            </p>
+                                                            <p>
+                                                                [Note: Situations where external confirmation procedures may
+                                                                provide relevant audit evidence in responding to assessed risks of
+                                                                material misstatement include:
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    Bank balances and other information relevant to banking
+                                                                    relationships. 
+                                                                </li>
+                                                                <li>
+                                                                    Accounts receivable balances and terms. 
+                                                                </li>
+                                                                <li>
+                                                                    Inventories held by third parties at bonded warehouses for
+                                                                    processing or on consignment. 
+                                                                </li>
+                                                                <li>
+                                                                    Property title deeds held by lawyers or financiers for safe
+                                                                    custody or as security. 
+                                                                </li>
+                                                                <li>
+                                                                    Investments held for safekeeping by third parties or purchased
+                                                                    from stockbrokers but not delivered at the balance sheet date. 
+                                                                </li>
+                                                                <li>
+                                                                    Amounts due to lenders, including relevant terms of repayment
+                                                                    and restrictive covenants. 
+                                                                </li>
+                                                                <li>
+                                                                    Accounts payable balances and terms. (Para A48)] 
+                                                                </li>
+                                                            </ul>
+                                                            <p>
+                                                                [Note: Factors that may assist the auditor in determining whether
+                                                                external confirmation procedures are to be performed as substantive
+                                                                audit procedures include: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    The confirming party’s knowledge of the subject matter
+                                                                </li>
+                                                                <li>
+                                                                    The ability or willingness of the intended confirming party to
+                                                                    respond 
+                                                                </li>
+                                                                <li>
+                                                                    The objectivity of the intended confirming party. (Para A51)] 
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                20 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor included following substantive procedures related
+                                                                to the financial statement closing process: 
+                                                           </p>
+                                                           <ul>
+                                                            <li>
+                                                                Agreed or reconciled the financial statements with the
+                                                                underlying accounting records; and
+                                                            </li>
+                                                            <li>
+                                                                Examined material journal entries and other adjustments made
+                                                                during the course of preparing the financial statements? 
+                                                            </li>
+                                                           </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                21 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor determined that an assessed risk of material
+                                                                misstatement at the assertion level is a significant risk?
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor has performed substantive procedures
+                                                                that are specifically responsive to that risk? 
+                                                            </p>
+                                                            <p>
+                                                                [Note: When the approach to a significant risk consists only of
+                                                                substantive procedures, those procedures shall include tests of
+                                                                details.] 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                22 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor performed substantive procedures at an interim
+                                                                date? 
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor covered the remaining period by
+                                                                performing substantive procedures, combined with tests of controls
+                                                                for the intervening period or if the auditor determines that it is
+                                                                sufficient, further substantive procedures only, that provided a
+                                                                reasonable basis for extending the audit conclusions from the
+                                                                interim date to the period end? 
+                                                           </p>
+                                                            <p>
+                                                                [Note: Auditor can refer Para A56 and A57 of this SA which
+                                                                provides list of factors that may influence whether to perform
+                                                                substantive procedures at an interim date or whether to perform
+                                                                substantive analytical procedures with respect to the period
+                                                                between the interim date and the period end.] 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                23 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor detected misstatements that the auditor did not
+                                                                expect when assessing the risks of material misstatement at an
+                                                                interim date? 
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor evaluated that whether the related
+                                                                assessment of risk and the planned nature, timing, or extent of
+                                                                substantive procedures covering the remaining period need to be
+                                                                modified?
+                                                           </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                       <h5>
+                                                        Adequacy of Presentation and Disclosure
+                                                       </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                24 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor has performed audit procedures to evaluate
+                                                                whether the overall presentation of the financial statements,
+                                                                including the related disclosures, is in accordance with the
+                                                                applicable financial reporting framework? 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                       <h5>
+                                                        Evaluating the Sufficiency and Appropriateness of Audit
+                                                        Evidence
+                                                       </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                25 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor evaluated appropriateness of the assessments of the
+                                                                risks of material misstatement at the assertion level before
+                                                                conclusion of audit based on the audit procedures performed and
+                                                                the audit evidence obtained?
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                26 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor has concluded that sufficient appropriate audit
+                                                                evidence has been obtained? 
+                                                            </p>
+                                                            <p>
+                                                                [Note: The auditor’s judgment as to what constitutes sufficient
+                                                                appropriate audit evidence is influenced by such factors as the
+                                                                following:
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    Significance of the potential misstatement in the assertion and
+                                                                    the likelihood of its having a material effect, individually or
+                                                                    aggregated with other potential misstatements, on the financial
+                                                                    statements.
+                                                                </li>
+                                                                <li>
+                                                                    Effectiveness of management’s responses and controls to
+                                                                    address the risks.
+                                                                </li>
+                                                                <li>
+                                                                    Effectiveness of management’s responses and controls to
+                                                                    address the risks.
+                                                                </li>
+                                                                <li>
+                                                                    Results of audit procedures performed, including whether such
+                                                                    audit procedures identified specific instances of fraud or error.
+                                                                </li>
+                                                                <li>
+                                                                    Source and reliability of the available information. 
+                                                                </li>
+                                                                <li>
+                                                                    Persuasiveness of the audit evidence. 
+                                                                </li>
+                                                                <li>
+                                                                    Understanding of the entity and its environment, including the
+                                                                    entity’s internal control. (Para A62)] 
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                27 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                If sufficient appropriate audit evidence as to a material financial
+                                                                statement assertion has not been obtained whether the auditor
+                                                                attempted to obtain further audit evidence? 
+                                                            </p>
+                                                            <p>
+                                                                Whether auditor been able to obtain sufficient appropriate audit
+                                                                evidence post the said attempt?
+                                                            </p>
+                                                            <p>
+                                                                If no, has the auditor expressed a qualified opinion or a disclaimer
+                                                                of opinion? 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>
+                                                                Documentation
+                                                            </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                28 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                           <p>
+                                                            Has the auditor documented following: 
+                                                         </p>
+                                                         <ul>
+                                                            <li>
+                                                                The overall responses to address the assessed risks of material
+                                                                misstatement at the financial statement level, and the nature,
+                                                                timing and extent of the further audit procedures performed;
+                                                            </li>
+                                                            <li>
+                                                                The linkage of those procedures with the assessed risks at the
+                                                                assertion level; and 
+                                                           </li>
+                                                           <li>
+                                                            The results of the audit procedures, including the conclusions
+                                                            where these are not otherwise clear? 
+                                                           </li>
+                                                         </ul>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                29
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor planned to use audit evidences about the operating
+                                                                effectiveness of controls obtained in previous audits? 
+                                                            </p>
+                                                            <p>
+                                                                If yes, whether the auditor documented the conclusions reached
+                                                                about relying on such controls that were tested in a previous audit? 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                30 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor’s documentation demonstrate that the financial
+                                                                statements agree or reconcile with the underlying accounting
+                                                                records? 
+                                                            </p>
+                                                         </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tex" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                               </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

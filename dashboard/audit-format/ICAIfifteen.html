@@ -1,0 +1,1334 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 450, Evaluation of Misstatements Identified during the Audit 
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Accumulation of Identified Misstatements 
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            5 
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor accumulated misstatements identified during the
+                                                            audit, other than those that are clearly trivial? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: The auditor may designate an amount below which
+                                                            misstatements would be clearly trivial and would not need to be
+                                                            accumulated because the auditor expects that the accumulation of
+                                                            such amounts clearly would not have a material effect on the
+                                                            financial statements. “Clearly trivial” is not another expression for
+                                                            “not material”. Matters that are “clearly trivial” will be of a wholly
+                                                            different(smaller) order of magnitude than materiality determined
+                                                            in accordance with SA 320, and will be matters that are clearly
+                                                            inconsequential, whether taken individually or in aggregate and
+                                                            whether judged by any criteria of size, nature or circumstances.
+                                                            When there is any uncertainty about whether one or more items are
+                                                            clearly trivial, the matter is considered not to be clearly trivial.
+                                                            (Para A2)] 
+                                                       </p>
+                                                       <p>
+                                                        [Note: To assist the auditor in evaluating the effect of
+                                                        misstatements accumulated during the audit and in communicating
+                                                        misstatements to management and those charged with governance,
+                                                        it may be useful to distinguish between factual misstatements,
+                                                        judgmental misstatements and projected misstatements. (Para A3)] 
+                                                       </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Consideration of Identified Misstatements as the Audit
+                                                            Progresses
+                                                       </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para 6,
+                                                                7 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor has determined that the overall audit strategy
+                                                                and audit plan need to be revised, if: 
+                                                            </p>
+                                                            <ol type="a">
+                                                                 <li>
+                                                                    the nature of identified misstatements and the circumstances of
+                                                                    their occurrence indicate that other misstatements may exist
+                                                                    that, when aggregated with misstatements accumulated during
+                                                                    the audit, could be material. 
+                                                                 </li>
+                                                                 <li>
+                                                                    the aggregate of misstatements accumulated during the audit
+                                                                    approaches materiality determined in accordance with SA 320.
+                                                                 </li>
+                                                                 <li>
+                                                                    in case of b) above, if the aggregate of misstatements
+                                                                    accumulated during the audit approaches materiality
+                                                                    determined in accordance with SA 320, whether the auditor has
+                                                                    assessed if a greater than an acceptably low level of risk that
+                                                                    possible undetected misstatements exists and when taken with
+                                                                    the aggregate of misstatements accumulated during the audit, could exceed the materiality. (Para A5) 
+                                                                 </li>
+                                                            </ol>
+                                                            <p>
+                                                                (Undetected misstatements could exist because of the presence of
+                                                                sampling risk and non-sampling risk) 
+                                                            </p>
+                                                            <p>
+                                                                If, at the auditor’s request, management has examined a class of
+                                                                transactions, account balance or disclosure and corrected
+                                                                misstatements that were detected, has the auditor performed
+                                                                additional audit procedures to determine whether misstatements
+                                                                remain.
+                                                            </p>
+                                                            <p>
+                                                                [Note: The auditor may request management to examine a class of
+                                                                transactions, account balance or disclosure in order for management
+                                                                to understand the cause of a misstatement identified by the auditor,
+                                                                perform procedures to determine the amount of the actual
+                                                                misstatement in the class of transactions, account balance or
+                                                                disclosure, and to make appropriate adjustments to the financial
+                                                                statements. (Para A6)] 
+                                                           </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>
+                                                                Communication and Correction of Misstatements 
+                                                            </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                8 
+                                                                
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    Has the auditor communicated on a timely basis all
+                                                                    misstatements accumulated during the audit with the
+                                                                    appropriate level of management, unless prohibited by law or
+                                                                    regulation. 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    Has the auditor requested the management to correct those
+                                                                    misstatements. 
+                                                                </li>
+                                                            </ol>
+                                                            <p>
+                                                                [Note: Ordinarily, the appropriate level of management is the one
+                                                                that has responsibility and authority to evaluate the misstatements
+                                                                and to take the necessary action. (Para A7)] 
+                                                            </p>
+                                                            <p>
+                                                                [Note: Law or regulation may restrict the auditor’s communication
+                                                                of certain misstatements to management, or others, within the
+                                                                entity. For example, laws or regulations may specifically prohibit a
+                                                                communication, or other action, that might prejudice an
+                                                                investigation by an appropriate authority into an actual, or
+                                                                suspected, illegal act. In some circumstances, potential conflicts
+                                                                between the auditor’s obligations of confidentiality and obligations
+                                                                to communicate may be complex. In such cases, the auditor may
+                                                                consider seeking legal advice. (Para A8)] 
+                                                            </p>
+                                                            <p>
+                                                                [Note: The correction by management of all misstatements,
+                                                                including those communicated by the auditor, enables management
+                                                                to maintain accurate accounting books and records and reduces the
+                                                                risks of material misstatement of future financial statements
+                                                                because of the cumulative effect of immaterial uncorrected
+                                                                misstatements related to prior periods. (Para A9)] 
+                                                                
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                9 
+                                                                
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                If management refuses to correct some or all of the misstatements
+                                                                communicated by the auditor, has the auditor obtained an
+                                                                understanding of management’s reasons for not making the corrections. 
+
+                                                            </p>
+                                                            <p>
+                                                                If yes, has the auditor taken that understanding into account when
+                                                                evaluating whether the financial statements as a whole are free
+                                                                from material misstatement.
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                10 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor, prior to evaluating the effect of uncorrected
+                                                                misstatements, reassessed the materiality determined in accordance
+                                                                with SA 320 to confirm whether it remains appropriate in the
+                                                                context of the entity’s actual financial results. 
+                                                            </p>
+                                                            <p>
+                                                                [Note: If the auditor’s reassessment of materiality determined in
+                                                                accordance with SA 320 gives rise to a lower amount (or amounts),
+                                                                then performance materiality and the appropriateness of the nature,
+                                                                timing and extent of the further audit procedures, are reconsidered
+                                                                so as to obtain sufficient appropriate audit evidence on which to
+                                                                base the audit opinion. (Para A12)] 
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                11 
+                                                                
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    Has the auditor determined whether uncorrected misstatements
+                                                                    are material, individually or in aggregate. 
+                                                                </li>
+                                                                <li>
+                                                                    In making the above determination, whether the auditor has
+                                                                    considered the following: 
+                                                                </li>
+                                                                <ol type="1">
+                                                                    <li>
+                                                                        The size and nature of the misstatements, both in relation to
+                                                                        particular classes of transactions, account balances or
+                                                                        disclosures and the financial statements as a whole, and the
+                                                                        particular circumstances of their occurrence; and 
+                                                                    </li>
+                                                                    <li>
+                                                                        The effect of uncorrected misstatements related to prior periods
+                                                                        on the relevant classes of transactions, account balances or
+                                                                        disclosures, and the financial statements as a whole. 
+                                                                    </li>
+                                                                </ol>
+                                                            </ol>
+                                                            <p>
+                                                                [Note: If an individual misstatement is judged to be material, it is
+                                                                unlikely that it can be offset by other misstatements. (Para A14).] 
+                                                            </p>
+                                                            <p>
+                                                                [Note: Determining whether a classification misstatement is
+                                                                material involves the evaluation of qualitative considerations, such
+                                                                as the effect of the classification misstatement on debt or other
+                                                                contractual covenants, the effect on individual line items or subtotals, or the effect on key ratios. There may be circumstances
+                                                                where the auditor concludes that a classification misstatement is not
+                                                                material in the context of the financial statements as a whole, even
+                                                                though it may exceed the materiality level or levels applied in
+                                                                evaluating other misstatements. (Para A15)]
+                                                            </p>
+                                                            <p>
+                                                                [Note: SA 240, explains how the implications of a misstatement
+                                                                that is, or may be, the result of fraud, ought to be considered in
+                                                                relation to other aspects of the audit, even if the size of the
+                                                                misstatement is not material in relation to the financial statements.
+                                                                (Para A17)] 
+                                                            </p>
+                                                            <p>
+                                                                [Note: Issues such as public interest, accountability, probity and
+                                                                ensuring effective legislative oversight, in particular, may affect the
+                                                                assessment whether an item is material by virtue of its nature. This
+                                                                is particularly so for items that relate to compliance with regulation, legislation or other authority. (Para A20)] 
+
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                A16
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                The circumstances related to some misstatements may cause the
+                                                                auditor to evaluate them as material, individually or when
+                                                                considered together with other misstatements accumulated during
+                                                                the audit, even if they are lower than the materiality for the
+                                                                financial statements as a whole. 
+                                                            </p>
+                                                            <p>
+                                                                Whether the auditor has considered the following circumstances
+                                                                that may affect the evaluation include the extent to which the
+                                                                misstatement: 
+                                                            </p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    affects compliance with regulatory requirements; 
+
+                                                                </li>
+                                                                <li>
+                                                                    affects compliance with debt covenants or other contractual
+                                                                    requirements; 
+                                                                </li>
+                                                                <li>
+                                                                    relates to the incorrect selection or application of an accounting
+                                                                    policy that has an immaterial effect on the current period’s
+                                                                    financial statements but is likely to have a material effect on
+                                                                    future periods’ financial statements;
+                                                                </li>
+                                                                <li>
+                                                                    makes a change in earnings or other trends, especially in the
+                                                                    context of general economic and industry conditions; 
+                                                                </li>
+                                                                <li>
+                                                                    affects ratios used to evaluate the entity’s financial position,
+                                                                    results of operations or cash flows; 
+                                                                </li>
+                                                                <li>
+                                                                    affects segment information presented in the financial
+                                                                    statements; 
+                                                                </li>
+                                                                <li>
+                                                                    has the effect of increasing management compensation;
+                                                                </li>
+                                                                <li>
+                                                                    is significant having regard to the auditor’s understanding of
+                                                                    known previous communications to users;
+                                                                </li>
+                                                                <li>
+                                                                    relates to items involving particular parties; 
+
+                                                                </li>
+                                                                <li>
+                                                                    is an omission of information not specifically required by the
+                                                                    applicable financial reporting framework but which, in the
+                                                                    judgment of the auditor, is important to the users’
+                                                                    understanding of the financial position, financial performance
+                                                                    or cash flows of the entity; 
+                                                                </li>
+                                                                <li>
+                                                                    affects other information to be included in the entity’s annual
+                                                                    report that may reasonably be expected to influence the
+                                                                    economic decisions of the users of the financial statements. 
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>
+                                                                Communication with Those Charged with Governance
+                                                            </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                12 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    Whether the auditor has communicated with those charged with
+                                                                    governance, uncorrected misstatements and the effect that they,
+                                                                    individually or in aggregate, may have on the opinion in the
+                                                                    auditor’s report, unless prohibited by law or regulation. 
+                                                                </li>
+                                                                <li>
+                                                                    Whether the auditor’s communication has identified material
+                                                                    uncorrected misstatements individually. 
+                                                                </li>
+                                                                <li>
+                                                                    Whether the auditor has requested that uncorrected misstatements be corrected. 
+
+                                                                </li>
+                                                            </ol>
+                                                            <p>
+                                                                [Note: Where there is a large number of individual immaterial
+                                                                uncorrected misstatements, the auditor may communicate the
+                                                                number and overall monetary effect of the uncorrected
+                                                                misstatements, rather than the details of each individual uncorrected
+                                                                misstatement. (Para A22)] 
+                                                            </p>
+                                                            <p>
+                                                                [Note: SA 260(Revised) requires the auditor to communicate with
+                                                                those charged with governance the written representations the
+                                                                auditor is requesting. The auditor may discuss with those charged
+                                                                with governance the reasons for, and the implications of, a failure
+                                                                to correct misstatements, having regard to the size and nature of the
+                                                                misstatement judged in the surrounding circumstances, and possible
+                                                                implications in relation to future financial statements. (Para A23)]
+                                                                
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                13 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Whether the auditor has also communicated with those charged
+                                                                with governance the effect of uncorrected misstatements related to
+                                                                prior periods on the relevant classes of transactions, account
+                                                                balances or disclosures, and the financial statements as a whole.
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                        <h5>
+                                                            Written Representation
+                                                        </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                14 
+                                                           </span>
+                                                        </td>
+                                                        <td>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Whether the auditor has requested a written representation from
+                                                                management and, where appropriate, those charged with
+                                                                governance whether they believe the effects of uncorrected
+                                                                misstatements are immaterial, individually and in aggregate, to
+                                                                the financial statements as a whole. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Whether the auditor has included a summary of such items in
+                                                                or attached to the written representation.
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: In some circumstances, management and, where appropriate,
+                                                            those charged with governance may not believe that certain
+                                                            uncorrected misstatements are misstatements. For that reason, they
+                                                            may want to add to their written representation words such as: “We
+                                                            do not agree that items ………and …………… constitute
+                                                            misstatements because [description of reasons].” Obtaining this
+                                                            representation does not, however, relieve the auditor of the need to
+                                                            form a conclusion on the effect of uncorrected misstatements. (Para
+                                                            A24)]
+                                                            
+                                                        </p>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                        <h5>
+                                                            Documentation
+                                                        </h5>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>
+                                                                Para
+                                                                15 
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                Has the auditor included the following in the audit documentation: 
+
+                                                            </p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    The amount below which misstatements would be regarded as
+                                                                    clearly trivial; 
+                                                                </li>
+                                                                <li>
+                                                                    All misstatements accumulated during the audit and whether
+                                                                    they have been corrected; and
+                                                                </li>
+                                                                <li>
+                                                                    The auditor’s conclusion as to whether uncorrected
+                                                                    misstatements are material, individually or in aggregate, and the basis for that conclusion.
+                                                                </li>
+                                                            </ol>
+                                                            <p>
+                                                                [Note: The auditor’s documentation of uncorrected misstatements
+                                                                may take into account: 
+                                                            </p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    The consideration of the aggregate effect of uncorrected
+                                                                    misstatements; 
+                                                                </li>
+                                                                <li>
+                                                                    The evaluation of whether the materiality level or levels for
+                                                                    particular classes of transactions, account balances or
+                                                                    disclosures, if any, have been exceeded; and
+                                                                </li>
+                                                                <li>
+                                                                    The evaluation of the effect of uncorrected misstatements on
+                                                                    key ratios or trends, and compliance with legal, regulatory and
+                                                                    contractual requirements (for example, debt covenants). (Para
+                                                                    A25)] 
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                               </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

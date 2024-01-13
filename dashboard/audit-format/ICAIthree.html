@@ -1,0 +1,1797 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 220, Quality Control for an Audit of Financial Statements
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b>The purpose of this checklist is to provide guidance on compliance with the
+requirements of Standards on Auditing. </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                    </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>         
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>Leadership Responsibilities for Quality on Audits</h5>
+                                                    </td>
+                                                    
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 8
+                                                        </span>
+                                                  <td>
+                                                        <p>
+                                                            Whether the engagement partner took the responsibility for the overall
+                                                            quality on each audit engagement to which the engagement partner is
+                                                            assigned? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A3
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the Engagement Partner passed on appropriate messages to the
+                                                            other members of the engagement team, in taking responsibility for
+                                                            the overall quality on each audit engagement? 
+                                                        </p>
+                                                        <p>
+                                                            Whether the message emphasised on: 
+
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The importance to audit quality of: 
+
+                                                            </li>
+                                                            <ul>
+                                                                <li>
+                                                                    Performing work that complies with professional standards
+                                                                    and regulatory and legal requirements; 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    Complying with the firm’s quality control policies and
+                                                                    procedures as applicable; 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    Issuing auditor’s reports that are appropriate in the
+                                                                    circumstances; and
+                                                                </li>
+                                                                <li>
+                                                                    The engagement team’s ability to raise concerns without fear
+                                                                    of reprisals; and 
+                                                                </li>
+                                                            </ul>
+                                                            <li>
+                                                                The fact that quality is essential in performing audit engagements? 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>Relevant Ethical Requirements 
+                                                        </h5>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 9,
+                                                            10
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the engagement partner, throughout the audit engagement,
+                                                            has come across any evidence, through observation and making
+                                                            inquiries as necessary or through the firm’s system of quality control
+                                                            or otherwise, of non-compliance with relevant ethical requirements by
+                                                            members of the engagement team? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the engagement partner, in consultation with others in
+                                                            the firm, determined the appropriate action. 
+                                                        </p>
+                                                        <p>
+                                                            [Note: The definitions of “firm”, “network” or “network firm” in
+                                                            relevant ethical requirements may differ from those set out in this SA.
+                                                            For example, the Code of Ethics of the Institute of Chartered
+                                                            Accountants of India (ICAI) defines the “Network Firm” as:
+                                                            “Networking amongst two or more firms under common control,
+                                                            ownership or management with the firm or having affiliation with an
+                                                            accounting entity or any entity that a reasonable and informed third party having knowledge of all relevant information would reasonably
+                                                            conclude as being part of the firm nationally”. (Para A5)] 
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para 11
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <h5>
+                                                            Independence
+                                                        </h5>
+                                                        <p>
+                                                            Whether the engagement partner while forming a conclusion on
+                                                            compliance with independence requirements that apply to the audit
+                                                            engagement: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Obtained relevant information from the firm and, where
+                                                                applicable, network firms, to identify and evaluate circumstances
+                                                                and relationships that create threats to independence; 
+                                                            </li>
+                                                            <li>
+                                                                Evaluated information on identified breaches, if any, of the firm’s
+                                                                independence policies and procedures to determine whether they
+                                                                create a threat to independence for the audit engagement; and
+                                                            </li>
+                                                            <li>
+                                                                Took appropriate action to eliminate such threats or reduce them
+                                                                to an acceptable level by applying safeguards, or, if considered
+                                                                appropriate, to withdraw from the audit engagement, where
+                                                                withdrawal is permitted by law or regulation?
+                                                            </li>
+                                                            <li>
+                                                                Has the engagement partner promptly reported to the firm any
+                                                                inability to resolve the matter for appropriate action? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para
+                                                            A6 
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Where the engagement partner identified any threat to Independence
+                                                            that safeguards may not be able to eliminate or reduce to an acceptable
+                                                            level, has the engagement partner reported to the relevant person(s)
+                                                            within the firm to determine appropriate action? 
+                                                            
+                                                        </p>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td></td>
+                                                     <td>
+                                                        <h5> Acceptance and Continuance of Client Relationships and Audit
+                                                            Engagements</h5>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                       <span>
+                                                        Para 12
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                       <p>
+                                                        Whether the engagement partner is satisfied that appropriate
+                                                        procedures regarding the acceptance and continuance of client
+                                                        relationships and audit engagements have been followed and
+                                                        determined that conclusions reached in this regard are appropriate? 
+                                                        
+                                                       </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para
+                                                            A8
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Before accepting an engagement with a new client, when deciding
+                                                            whether to continue an existing engagement, and when considering
+                                                            acceptance of a new engagement with an existing client whether
+                                                            following information is obtained: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The integrity of the principal owners, key management and those
+                                                                charged with governance of the entity; 
+                                                            </li>
+                                                            <li>
+                                                                Whether the engagement team is competent to perform the audit
+                                                                engagement and has the necessary capabilities, including time and
+                                                                resources;
+                                                            </li>
+                                                            <li>
+                                                                Whether the firm and the engagement team can comply with
+                                                                relevant ethical requirements; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Significant matters that have arisen during the current or previous
+                                                                audit engagement, and their implications for continuing the
+                                                                relationship?
+                                                            </li>
+                                                        </ul>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para 13
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Whether the engagement partner obtained information that would
+                                                            have caused the firm to decline the audit engagement had that
+                                                            information been available earlier? If yes, whether the engagement
+                                                            partner had communicated that information promptly to the firm, so
+                                                            that the firm and the engagement partner can take the necessary
+                                                            action? 
+                                                            
+                                                        </p>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                     <td></td>
+                                                     <td><h5> Assignment of Engagement Teams</h5></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 14
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the engagement partner is satisfied that the engagement team,
+                                                            and any auditor’s experts who are not part of the engagement team,
+                                                            collectively have the appropriate competence and capabilities to: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Perform the audit engagement in accordance with professional
+                                                                standards and regulatory and legal requirements; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Enable an auditor’s report that is appropriate in the circumstances
+                                                                to be issued? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: An engagement team also includes a member using expertise in
+                                                            a specialised area of accounting or auditing, whether engaged or
+                                                            employed by the firm, if any, who performs audit procedures on the
+                                                            engagement. (Para A10)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para
+                                                            A11 
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Has following factors considered by the engagement partner while
+                                                            determining appropriate competence and capabilities expected of the
+                                                            engagement team as a whole: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Team’s understanding of, and practical experience with, audit
+                                                                engagements of a similar nature and complexity through
+                                                                appropriate training and participation. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Team’s understanding of professional standards and regulatory
+                                                                and legal requirements. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Team’s technical expertise, including expertise with relevant
+                                                                information technology and specialised areas of accounting or
+                                                                auditing.
+                                                            </li>
+                                                            <li>
+                                                                Team’s knowledge of relevant industries in which the client
+                                                                operates. 
+                                                            </li>
+                                                            <li>
+                                                                Team’s ability to apply professional judgment. 
+                                                            </li>
+                                                            <li>
+                                                                Team’s understanding of the firm’s quality control policies and
+                                                                procedures? 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                    <h5> Engagement Performance</h5>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <Span>
+                                                            Para 15  
+                                                        </Span>
+                                                    </td>
+                                                    <td>
+                                                        <h5> Direction, Supervision and Performance 
+                                                        </h5>
+                                                        <p>
+                                                            Whether the engagement partner took responsibility for: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The direction, supervision and performance of the audit
+                                                                engagement in compliance with professional standards and
+                                                                regulatory and legal requirements; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The auditor’s report being appropriate in the circumstances? 
+
+                                                            </li>
+
+                                                        </ol>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                     <td>
+                                                        <Span>
+                                                            Para
+                                                            A13
+                                                        </Span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Whether direction of the engagement team involved informing the
+                                                            members of the engagement team of following matters: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Their responsibilities, including the need to comply with relevant
+                                                                ethical requirements, and to plan and perform an audit with
+                                                                professional skepticism as required by SA 200.
+                                                            </li>
+                                                            <li>
+                                                                Responsibilities of respective partners where more than one
+                                                                partner is involved in the conduct of an audit engagement. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The objectives of the work to be performed. 
+
+                                                            </li>
+                                                            <li>
+                                                                The nature of the entity’s business. 
+                                                            </li>
+                                                            <li>
+                                                                Risk-related issues. 
+
+                                                            </li>
+                                                            <li>
+                                                                Problems that may arise.
+                                                            </li>
+                                                            <li>
+                                                                The detailed approach to the performance of the engagement?
+                                                            </li>
+                                                        </ul>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                       <Span>
+                                                        Para
+                                                        A15 
+                                                       </Span>
+                                                    </td>
+                                                    <td>
+                                                       <p>
+                                                        Whether supervision included following matters:
+                                                       </p>
+                                                       <ul>
+                                                           <li>
+                                                            Tracking the progress of the audit engagement. 
+
+                                                           </li>
+                                                           <li>
+                                                            Considering the competence and capabilities of individual
+                                                            members of the engagement team, including whether they have
+                                                            sufficient time to carry out their work, whether they understand
+                                                            their instructions, and whether the work is being carried out in
+                                                            accordance with the planned approach to the audit engagement.
+                                                           </li>
+                                                           <li>
+                                                            Addressing significant matters arising during the audit
+                                                            engagement, considering their significance and modifying the
+                                                            planned approach appropriately.    
+                                                        </li>
+                                                           <li>
+                                                            Identifying matters for consultation or consideration by more
+                                                            experienced engagement team members during the audit
+                                                            engagement? 
+                                                            
+                                                           </li>
+                                                          </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5> Reviews 
+                                                        </h5>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            16, 17
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the engagement partner took responsibility for reviews being
+                                                            performed in accordance with the firm’s review policies and
+                                                            procedures?
+                                                        </p>
+                                                        <p>
+                                                            [Note: Under SQC 1, the firm’s review responsibility policies and
+                                                            procedures are determined on the basis that work of less experienced
+                                                            team members is reviewed by more experienced team members. (Para
+                                                            A16)]
+                                                        </p>
+                                                        <p>
+                                                            On or before the date of the auditor’s report, whether the engagement
+                                                            partner, through a review of the audit documentation and discussion
+                                                            with the engagement team, is satisfied that sufficient appropriate audit
+                                                            evidence has been obtained to support the conclusions reached and for
+                                                            the auditor’s report to be issued? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td>
+                                                        <span>
+                                                            Para
+                                                            A17 
+                                                        </span>
+                                                     </td>
+                                                     <td>
+                                                        <p>
+                                                            Whether review consisted of following considerations: 
+                                                        </p>
+                                                        <ul>
+                                                            <li> The work has been performed in accordance with professional standards and regulatory and legal requirements; 
+                                                            </li>
+                                                            <li>
+                                                                Significant matters have been raised for further consideration; 
+
+                                                            </li>
+                                                            <li>
+                                                                Appropriate consultations have taken place and the resulting
+                                                                conclusions have been documented and implemented; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                There is a need to revise the nature, timing and extent of work
+                                                                performed; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The work performed supports the conclusions reached and is
+                                                                appropriately documented; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The evidence obtained is sufficient and appropriate to support the
+                                                                auditor’s report; and
+                                                            </li>
+                                                            <li>
+                                                            The objectives of the engagement procedures have been achieved?
+                                                            </li>
+                                                        </ul>
+                                                            <p>
+                                                                [Note: An engagement partner taking over an audit during the
+                                                                engagement, may apply the above review procedures of paragraph
+                                                                A17 to review the work performed to the date of a change in order to
+                                                                assume the responsibilities of an engagement partner. (Para A19)] 
+                                                                
+                                                            </p>
+                                                       
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A18 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the engagement partner has performed timely reviews of the
+                                                            following: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Critical areas of judgment, especially those relating to difficult or
+                                                                contentious matters identified during the course of the
+                                                                engagement;
+                                                            </li>
+                                                            <li>
+                                                                Significant risks; and 
+
+                                                            </li>
+                                                            <li>
+                                                                Other areas the engagement partner considers important? 
+
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A20 
+                                                      </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the engagement team uses a member with expertise in a
+                                                            specialized area of accounting or auditing? 
+                                                       </p>
+                                                       <p>
+                                                        If yes, whether the direction, supervision and review of that
+                                                        engagement team member’s work includes matters such as:
+                                                       </p>
+                                                        <ul>
+                                                            <li>
+                                                                Agreeing with that member the nature, scope and objectives of
+                                                                that member’s work; and the respective roles of, and the nature,
+                                                                timing and extent of communication between that member and
+                                                                other members of the engagement team. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Evaluating the adequacy of that member’s work including the
+                                                                relevance and reasonableness of that member’s findings or
+                                                                conclusions and their consistency with other audit evidence? 
+                                                            </li>
+                                                            </ul>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            18 
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Consultation
+                                                        </h5>
+                                                        <p>
+                                                            Whether the engagement partner has: 
+
+                                                        </p>
+                                                        <ol type="a">
+                                                             <li>
+                                                                Taken responsibility for the engagement team undertaking
+                                                                appropriate consultation on difficult or contentious matters; 
+                                                             </li>
+                                                             <li>
+                                                                Been satisfied that members of the engagement team have
+                                                                undertaken appropriate consultation during the course of the
+                                                                engagement, both within the engagement team and between the
+                                                                engagement team and others at the appropriate level within or
+                                                                outside the firm; 
+                                                             </li>
+                                                             <li>
+                                                                Been satisfied that the nature and scope of, and conclusions
+                                                                resulting from, such consultations are agreed with the party
+                                                                consulted; and 
+                                                             </li>
+                                                             <li>
+                                                                Determined that conclusions resulting from such consultations
+                                                                have been implemented? 
+                                                             </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: Effective consultation on significant technical, ethical, and
+                                                            other matters within the firm or, where applicable, outside the firm
+                                                            can be achieved when those consulted: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Are given all the relevant facts that will enable them to provide
+                                                                informed advice; and 
+                                                            </li>
+                                                            <li>
+                                                                Have appropriate knowledge, seniority and experience. (Para
+                                                                A21)] 
+                                                            </li>
+                                                       </ul>
+                                                       <p>
+                                                        [Note: It may be appropriate for the engagement team to consult
+                                                        outside the firm, for example, where the firm lacks appropriate
+                                                        internal resources. They may take advantage of advisory services
+                                                        provided by other firms, professional and regulatory bodies, or
+                                                        commercial organisations that provide relevant quality control
+                                                        services. (Para A22)] 
+                                                       </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td></td>
+                                                     <td>
+                                                        <h5>
+                                                            Engagement Quality Control Review
+                                                        </h5>
+                                                     </td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                     <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 19
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            For audits of financial statements of listed entities, and those other
+                                                            audit engagements, if any, for which the firm has determined that an
+                                                            engagement quality control review is required, whether the
+                                                            engagement partner has:
+                                                        </p>
+                                                        
+                                                        <ol type="a">
+                                                             <li>
+                                                                Determined that an engagement quality control reviewer has been
+                                                                appointed;
+                                                             <li>
+                                                                Discussed significant matters arising during the audit engagement,
+                                                                including those identified during the engagement quality control
+                                                                review, with the engagement quality control reviewer; and  
+                                                             </li>
+                                                             <li>
+                                                                Not dated the auditor’s report until the completion of the
+                                                                engagement quality control review? 
+                                                             </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: SA 700(Revised) requires the auditor’s report to be dated no
+                                                            earlier than the date on which the auditor has obtained sufficient
+                                                            appropriate evidence on which to base the auditor’s opinion on the
+                                                            financial statements. In cases of an audit of financial statements of
+                                                            listed entities or when an engagement meets the criteria for an
+                                                            engagement quality control review, such a review assists the auditor in
+                                                            determining whether sufficient appropriate evidence has been
+                                                            obtained. (Para A23)] 
+                                                            
+                                                        </p>
+                                                      
+                                                       <p>
+                                                        [Note: Conducting the engagement quality control review in a timely
+                                                        manner at appropriate stages during the engagement allows significant
+                                                        matters to be promptly resolved to the engagement quality control
+                                                        reviewer’s satisfaction on or before the date of the auditor’s report.
+                                                        (Para A24)] 
+                                                         
+                                                       </p>
+                                                       <p>
+                                                        [Note: Remaining alert for changes in circumstances allows the
+                                                        engagement partner to identify situations in which an engagement
+                                                        quality control review is necessary, even though at the start of the
+                                                        engagement, such a review was not required. (Para A26)] 
+                                                        
+                                                       </p>
+                                                       <p>
+                                                        [Note: In addition to the audits of financial statements of listed
+                                                        entities, an engagement quality control review is required for such
+                                                        audit engagements also that meet the criteria established by the firm
+                                                        that subjects engagements to an engagement quality control review. In
+                                                        some cases, none of the firm’s audit engagements may meet the
+                                                        criteria that would subject them to such a review. (Para A30)] 
+                                                        
+                                                       </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 20
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the engagement quality control reviewer has performed an
+                                                            objective evaluation of the significant judgments made by the
+                                                            engagement team, and the conclusions reached in formulating the
+                                                            auditor’s report, through the following: 
+                                                        </p>
+                                                        
+                                                        <ol type="a">
+                                                             <li>
+                                                                Discussion of significant matters with the engagement partner;
+                                                             <li>
+                                                                Review of the financial statements and the proposed auditor’s
+                                                                report; 
+                                                             </li>
+                                                             <li>
+                                                                Review of selected audit documentation relating to the significant
+                                                                judgments the engagement team made and the conclusions it
+                                                                reached; and
+                                                             </li>
+                                                             <li>
+                                                                Evaluation of the conclusions reached in formulating the auditor’s
+                                                                report and consideration of whether the proposed auditor’s report
+                                                                is appropriate? 
+                                                                
+                                                             </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: The extent of the engagement quality control review may
+                                                            depend, among other things, on the complexity of the audit
+                                                            engagement, whether the entity is a listed entity, and the risk that the
+                                                            auditor’s report might not be appropriate in the circumstances. The
+                                                            performance of an engagement quality control review does not reduce
+                                                            the responsibilities of the engagement partner for the audit
+                                                            engagement and its performance. (Para A27)] 
+                                                       </p>
+                                                       <p>
+                                                        [Note: When SA 701 applies, the conclusions reached by the
+                                                        engagement team in formulating the auditor’s report include
+                                                        determining: 
+                                                     </p>
+                                                       <ul>
+                                                        <li>
+                                                            The key audit matters to be included in the auditor’s report; 
+
+                                                        </li>
+                                                        <li>
+                                                            The key audit matters that will not be communicated in the
+                                                            auditor’s report in accordance with paragraph 14 of SA 701 if any;
+                                                            and
+                                                        </li>
+                                                        <li>
+                                                            If applicable, depending on the facts and circumstances of the
+                                                            entity and the audit, that there are no key audit matters to
+                                                            communicate in the auditor’s report. 
+                                                            
+                                                        </li>
+                                                       </ul>
+                                                       <p>
+                                                        In addition, the review of the proposed auditor’s report includes
+                                                        consideration of the proposed wording to be included in the Key Audit
+                                                        Matters section. (Para A28)] 
+                                                       </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 21
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the entity being audited is a listed entity? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the engagement quality control reviewer, on
+                                                            performing an engagement quality control review, has considered the
+                                                            following: 
+                                                        </p>
+                                                        <ol type="a">
+                                                             <li>
+                                                                The engagement team’s evaluation of the firm’s independence
+                                                                in relation to the audit engagement;
+                                                             <li>
+                                                                Whether appropriate consultation has taken place on matters
+                                                                involving differences of opinion or other difficult or
+                                                                contentious matters, and the conclusions arising from those
+                                                                consultations; and 
+                                                             </li>
+                                                             <li>
+                                                                Whether audit documentation selected for review reflects the
+                                                                work performed in relation to the significant judgments made
+                                                                and supports the conclusions reached? 
+                                                                
+                                                             </li>
+                                                             
+                                                        </ol>
+                                                        <p>
+                                                            [Note: Other matters relevant to evaluating the significant judgments
+                                                            made by the engagement team that may be considered in an
+                                                            engagement quality control review of a listed entity include: 
+                                                            
+                                                       </p>
+                                                     
+                                                       <ul>
+                                                        <li>
+                                                            Significant risks identified during the engagement in accordance
+                                                            with SA 315 and the responses to those risks in accordance with
+                                                            SA 330, including the engagement team’s assessment of, and
+                                                            response to, the risk of fraud in accordance with SA 240.
+                                                        </li>
+                                                        <li>
+                                                            Judgments made, particularly with respect to materiality and
+                                                            significant risks.
+                                                        </li>
+                                                        <li>
+                                                            The significance and disposition of corrected and uncorrected
+                                                            misstatements identified during the audit. 
+                                                      </li>
+                                                        <li>
+                                                            The matters to be communicated to management and those
+                                                            charged with governance and, where applicable, other parties such
+                                                            as regulatory bodies. 
+                                                      </li>
+                                                       </ul>
+                                                       <p>
+                                                        These other matters, depending on the circumstances, may also be
+                                                        applicable for engagement quality control reviews for audits of
+                                                        financial statements of other entities.(Para A29)] 
+                                                     </p>
+                                                    </td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                    <td><input type=“text” class=“form-control”></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 22
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Differences of Opinion
+                                                        </h5>
+                                                        <p>
+                                                            In case of differences of opinion within the engagement team, with
+                                                            those consulted, or, where applicable, between the engagement partner
+                                                            and the engagement quality control reviewer, whether the engagement
+                                                            team has followed the firm’s policies and procedures for dealing with
+                                                            and resolving differences of opinion? 
+                                                            
+                                                        </p>
+                                                        </td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        <td><input type=“text” class=“form-control”></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span>
+                                                                    Para 23
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <h5>
+                                                                    Monitoring 
+                                                                </h5>
+                                                                <p>
+                                                                    Whether the engagement partner has considered the results of the
+                                                                    firm’s monitoring process as evidenced in the latest information
+                                                                    circulated by the firm and, if applicable, other network firms and
+                                                                    Whether deficiencies noted in that information affected the audit
+                                                                    engagement? 
+                                                                    
+                                                                </p>
+                                                                <p>
+                                                                    [Note: In considering deficiencies that may affect the audit
+                                                                    engagement, the engagement partner may have regard to measures the
+                                                                    firm took to rectify the situation that the engagement partner considers
+                                                                    are sufficient in the context of that audit. (Para A34) 
+                                                                </p>
+                                                                <p>
+                                                                    A deficiency in the firm’s system of quality control does not
+                                                                    necessarily indicate that a particular audit engagement was not
+                                                                    performed in accordance with professional standards and regulatory
+                                                                    and legal requirements, or that the auditor’s report was not
+                                                                    appropriate. (Para A35)] 
+                                                                    
+                                                                </p>
+                                                                </td>
+                                                                <td><input type=“text” class=“form-control”></td>
+                                                                <td><input type=“text” class=“form-control”></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>
+                                                                        <h5>
+                                                                            Documentation 
+
+                                                                        </h5>
+                                                                    </td>
+                                                                    <td><input type=“text” class=“form-control”></td>
+                                                                    <td><input type=“text” class=“form-control”></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>
+                                                                            Para 24
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p>
+                                                                            Whether following matters have been documented by auditor: 
+
+                                                                        </p>
+                                                                       
+                                                                        <ol type="a">
+                                                                             <li>
+                                                                                Issues identified with respect to compliance with relevant
+                                                                                ethical requirements and how they were resolved. 
+                                                                                
+                                                                             <li>
+                                                                                Conclusions on compliance with independence requirements
+                                                                                that apply to the audit engagement, and any relevant
+                                                                                discussions with the firm that support these conclusions. 
+                                                                                
+                                                                             </li>
+                                                                             <li>
+                                                                                Conclusions reached regarding the acceptance and continuance
+                                                                                of client relationships and audit engagements. 
+                                                                            </li>
+                                                                             <li>
+                                                                                The nature and scope of, and conclusions resulting from,
+                                                                                consultations undertaken during the course of the audit
+                                                                                engagement? 
+                                                                                
+                                                                             </li>
+                                                                        </ol>
+                                                                        <p>
+                                                                            [Note: Documentation of consultations with other professionals that
+                                                                            involve difficult or contentious matters that is sufficiently complete
+                                                                            and detailed contributes to an understanding of: 
+                                                                     </p>
+                                                                     
+                                                                       <ul>
+                                                                        <li>
+                                                                            The issue on which consultation was sought; and 
+                                                                        </li>
+                                                                        <li>
+                                                                            The results of the consultation, including any decisions taken, the
+                                                                            basis for those decisions and how they were implemented. (Para
+                                                                            A36)] 
+                                                                        </li>
+                                                                       </ul>
+                                                                   </td>
+                                                                    <td><input type=“text” class=“form-control”></td>
+                                                                    <td><input type=“text” class=“form-control”></td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                    <td>
+                                                                        <span>
+                                                                            Para 25
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p>
+                                                                            Whether the engagement quality control reviewer has documented, for
+                                                                            the audit engagement reviewed, the following: 
+                                                                            
+                                                                        </p>
+                                                                       
+                                                                        <ol type="a">
+                                                                             <li>
+                                                                                The procedures required by the firm’s policies on engagement
+                                                                                quality control review have been performed; 
+                                                                                <li>
+                                                                                    The engagement quality control review has been completed on or
+                                                                                    before the date of the auditor’s report; and 
+                                                                                    
+                                                                             </li>
+                                                                             <li>
+                                                                                The reviewer is not aware of any unresolved matters that would
+                                                                                cause the reviewer to believe that the significant judgments the
+                                                                                engagement team made and the conclusions they reached were not
+                                                                                appropriate? 
+                                                                            </li>
+                                                                            
+                                                                        </ol>
+                                                                   </td>
+                                                                    <td><input type=“text” class=“form-control”></td>
+                                                                    <td><input type=“text” class=“form-control”></td>
+                                                                 </tr>
+                                                </tbody>
+                                            </table>
+                                           
+                                        </div>
+
+                                        </div>  
+                                             
+                                            
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

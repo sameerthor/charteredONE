@@ -1,0 +1,1673 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 402, Audit Considerations Relating to an Entity Using a Service
+                                                Organisation
+                                             </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Obtaining an Understanding of the Services Provided by a Service
+                                                            Organisation, Including Internal Control
+                                                         </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>  
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 9
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the user auditor obtained understanding of how user entity uses
+                                                            services of a service organization in the user entity’s operation?
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether user auditor has obtained understanding of:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The nature of the services provided by the service organisation
+                                                                and the significance of those services to the user entity, including
+                                                                the effect thereof on the user entity’s internal control;
+                                                            </li>
+                                                            <li>
+                                                                The nature and materiality of the transactions processed or
+                                                                accounts or financial reporting processes affected by the service
+                                                                organisation; 
+                                                           </li>
+                                                           <li>
+                                                            The degree of interaction between the activities of the service
+                                                            organisation and those of the user entity; and 
+                                                           </li>
+                                                           <li>
+                                                            The nature of the relationship between the user entity and the
+                                                            service organisation, including the relevant contractual terms for
+                                                            the activities undertaken by the service organisation? 
+                                                           </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: Examples of service organisation services that are relevant to
+                                                            the audit include: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Maintenance of the user entity’s accounting records.
+                                                            </li>
+                                                            <li>
+                                                                Management of assets.
+                                                            </li>
+                                                            <li>
+                                                                Initiating, recording or processing transactions as agent of the user
+                                                                entity. (Para A4)] 
+                                                           </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>   
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para A8
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the user auditor obtained and evaluated contract or service level
+                                                            agreement (SLA) between the user entity and the service
+                                                            organisation? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the user auditor evaluated that the said contract or SLA
+                                                            contains following matters: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The information to be provided to the user entity and
+                                                                responsibilities for initiating transactions relating to the activities
+                                                                undertaken by the service organisation;
+                                                            </li>
+                                                            <li>
+                                                                The application of requirements of regulatory bodies concerning
+                                                                the form of records to be maintained, or access to them; 
+                                                            </li>
+                                                            <li>
+                                                                The indemnification, if any, to be provided to the user entity in the event of a performance failure; 
+                                                             </li>
+                                                             <li>
+                                                                Whether the service organisation will provide a report on its
+                                                                controls and, if so, whether such report would be a Type 1 or Type
+                                                                2 report?; 
+                                                             </li>
+                                                             <li>
+                                                                Whether the user auditor has rights of access to the accounting
+                                                                records of the user entity maintained by the service organisation
+                                                                and other information necessary for the conduct of the audit?; and
+                                                             </li>
+                                                             <li>
+                                                                Whether the agreement allows for direct communication between
+                                                                the user auditor and the service auditor? 
+                                                             </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 10
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the user auditor has evaluated design and implementation of
+                                                            relevant controls at the user entity relating to services and transactions
+                                                            processed by service organisation?
+                                                        </p>
+                                                        <p>
+                                                            [Note: These controls may include:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Comparing the data submitted to the service organisation with
+                                                                reports of information received from the service organisation after
+                                                                the data has been processed. 
+                                                            </li>
+                                                            <li>
+                                                                Recomputing a sample of the overall amount for clerical accuracy
+                                                                and reviewing the total amount for reasonableness. (Para A12)] 
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 11
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether a sufficient understanding of the nature and significance of
+                                                            the services provided by the service organisation and their effect on
+                                                            the user entity’s internal control relevant to the audit has been
+                                                            obtained to provide a basis for the identification and assessment of
+                                                            risks of material misstatement? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 12
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the user auditor is unable to obtain a sufficient understanding
+                                                            from the user entity? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the user auditor obtained that understanding from one or
+                                                            more of the following procedures: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Obtaining a Type 1 or Type 2 report, if available; 
+                                                            </li>
+                                                            <li>
+                                                                Contacting the service organisation, through the user entity, to
+                                                                obtain specific information; 
+                                                            </li>
+                                                            <li>
+                                                                Visiting the service organisation and performing procedures that
+                                                                will provide the necessary information about the relevant controls
+                                                                at the service organisation; or 
+                                                            </li>
+                                                            <li>
+                                                                Using another auditor to perform procedures that will provide the
+                                                                necessary information about the relevant controls at the service
+                                                                organisation?
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: The user auditor’s decision as to which procedure, individually
+                                                            or in combination, in paragraph 12 of this SA to undertake, in order to
+                                                            obtain the information necessary to provide a basis for the identification
+                                                            and assessment of the risks of material misstatement in relation to the user entity’s use of the service organisation, may be influenced by such
+                                                            matters as: 
+                                                         </p>
+                                                         <ul>
+                                                            <li>
+                                                                The size of both the user entity and the service organisation; 
+                                                            </li>
+                                                            <li>
+                                                                The complexity of the transactions at the user entity and the
+                                                                complexity of the services provided by the service organisation;
+                                                            </li>
+                                                            <li>
+                                                                The location of the service organisation (for example, the user
+                                                                auditor may decide to use another auditor to perform procedures at
+                                                                the service organisation on the user auditor’s behalf if the service
+                                                                organisation is in a remote location);
+                                                            </li>
+                                                            <li>
+                                                                Whether the procedure(s) is expected to effectively provide the
+                                                                user auditor with sufficient appropriate audit evidence; and 
+                                                            </li>
+                                                            <li>
+                                                                The nature of the relationship between the user entity and the
+                                                                service organisation.(Para A15)] 
+                                                            </li>
+                                                         </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Using a Type 1 or Type 2 Report to Support the User Auditor’s
+                                                            Understanding of the Service Organisation
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 13
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            In determining the sufficiency and appropriateness of the audit
+                                                            evidence provided by a Type 1 or Type 2 report, whether the user
+                                                            auditor satisfied as to: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The service auditor’s professional competence (except where the
+                                                                service auditor is a member of the Institute of Chartered
+                                                                Accountants of India) and independence from the service
+                                                                organisation; and 
+                                                            </li>
+                                                            <li>
+                                                                The adequacy of the standards under which the Type 1 or Type 2
+                                                                report was issued? 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 14
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the user auditor planned to use a Type 1 or Type 2 report as
+                                                            audit evidence to support the user auditor’s understanding about the
+                                                            design and implementation of controls at the service organisation? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the user auditor: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Evaluated whether the description and design of controls at the
+                                                                service organisation is at a date or for a period that is appropriate
+                                                                for the user auditor’s purposes; 
+                                                            </li>
+                                                            <li>
+                                                                Evaluated the sufficiency and appropriateness of the evidence
+                                                                provided by the report for the understanding of the user entity’s
+                                                                internal control relevant to the audit; and 
+                                                            </li>
+                                                            <li>
+                                                                Determined whether complementary user entity controls identified
+                                                                by the service organisation are relevant to the user entity and, if
+                                                                so, obtain an understanding of whether the user entity has
+                                                                designed and implemented such controls? 
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: A Type 1 or Type 2 report, along with information about the user
+                                                            entity, may assist the user auditor in obtaining an understanding of: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The aspects of controls at the service organisation that may affect the processing of the user entity’s transactions, including the use
+                                                                of subservice organisations; 
+                                                            </li>
+                                                            <li>
+                                                                The flow of significant transactions through the service
+                                                                organisation to determine the points in the transaction flow where
+                                                                material misstatements in the user entity’s financial statements
+                                                                could occur; 
+                                                            </li>
+                                                            <li>
+                                                                The control objectives at the service organisation that are relevant
+                                                                to the user entity’s financial statement assertions; and 
+                                                            </li>
+                                                            <li>
+                                                                Whether controls at the service organisation are suitably designed
+                                                                and implemented to prevent or detect processing errors that could
+                                                                result in material misstatements in the user entity’s financial
+                                                                statements. (Para A22)] 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Responding to the Assessed Risks of Material Misstatement
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 15
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            In responding to assessed risks in accordance with SA 330, has the
+                                                            user auditor: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Determined whether sufficient appropriate audit evidence
+                                                                concerning the relevant financial statement assertions is available
+                                                                from records held at the user entity; and, if not, 
+                                                            </li>
+                                                            <li>
+                                                                Performed further audit procedures to obtain sufficient appropriate
+                                                                audit evidence or use another auditor to perform those procedures
+                                                                at the service organisation on the user auditor’s behalf. 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A26 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the user auditor performed following procedures in determining
+                                                            the nature and extent of audit evidence to be obtained in relation to
+                                                            balances representing assets held or transactions undertaken by a
+                                                            service organisation on behalf of the user entity?
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Inspecting records and documents held by the user entity. 
+                                                            </li>
+                                                            <li>
+                                                                Inspecting records and documents held by the service
+                                                                organisation.
+                                                            </li>
+                                                            <li>
+                                                                Obtaining confirmations of balances and transactions from the
+                                                                service organisation. 
+                                                            </li>
+                                                            <li>
+                                                                Performing analytical procedures on the records maintained by the
+                                                                user entity or on the reports received from the service
+                                                                organisation. 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Tests of Controls
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 16
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the user auditor’s risk assessment includes an expectation
+                                                            that controls at the service organisation are operating effectively? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the user auditor obtained audit evidence about the operating
+                                                            effectiveness of those controls from one or more of the following
+                                                            procedures: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Obtaining a Type 2 report, if available; 
+                                                            </li>
+                                                            <li>
+                                                                Performing appropriate tests of controls at the service
+                                                                organisation; or 
+                                                            </li>
+                                                            <li>
+                                                                Using another auditor to perform tests of controls at the service
+                                                                organisation on behalf of the user auditor? 
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: If a Type 2 report is not available, a user auditor may contact
+                                                            the service organisation, through the user entity, to request that a
+                                                            service auditor be engaged to provide a Type 2 report that includes
+                                                            tests of the operating effectiveness of the relevant controls or the user
+                                                            auditor may use another auditor to perform procedures at the service
+                                                            organisation that test the operating effectiveness of those controls. A
+                                                            user auditor may also visit the service organisation and perform tests
+                                                            of relevant controls if the service organisation agrees to it. The user
+                                                            auditor’s risk assessments are based on the combined evidence
+                                                            provided by the work of another auditor and the user auditor’s own
+                                                            procedures. (Para A30)] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Using a Type 2 Report as Audit Evidence that Controls at the
+                                                            Service Organisation Are Operating Effectively
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 17
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Where the user auditor has used a Type 2 report as audit evidence that
+                                                            controls at the service organization are operating effectively.
+                                                        </p>
+                                                        <p>
+                                                            Has the user auditor determined whether the service auditor’s report
+                                                            provides sufficient appropriate audit evidence about the effectiveness
+                                                            of the controls to support the user auditor’s risk assessment by: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Evaluating whether the description, design and operating
+                                                                effectiveness of controls at the service organisation is at a date or
+                                                                for a period that is appropriate for the user auditor’s purposes; 
+                                                            </li>
+                                                            <li>
+                                                                Determining whether complementary user entity controls
+                                                                identified by the service organisation are relevant to the user entity
+                                                                and, if so, obtaining an understanding of whether the user entity
+                                                                has designed and implemented such controls and, if so, testing
+                                                                their operating effectiveness;
+                                                            </li>
+                                                            <li>
+                                                                Evaluating the adequacy of the time period covered by the tests of
+                                                                controls and the time elapsed since the performance of the tests of
+                                                                controls; and 
+                                                            </li>
+                                                            <li>
+                                                                Evaluating whether the tests of controls performed by the service
+                                                                auditor and the results thereof, as described in the service
+                                                                auditor’s report, are relevant to the assertions in the user entity’s
+                                                                financial statements and provide sufficient appropriate audit
+                                                                evidence to support the user auditor’s risk assessment? 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A31
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            In assessing that the service auditor’s report provides sufficient
+                                                            appropriate audit evidence about the effectiveness of the controls to
+                                                            support the user auditor’s risk assessment, has the user auditor considered following factors: 
+                                                        </p>
+                                                        
+                                                        <ol type="a">
+                                                            <li>
+                                                                The time period covered by the tests of controls and the time
+                                                                elapsed since the performance of the tests of controls;
+                                                            </li>
+                                                            <li>
+                                                                The scope of the service auditor’s work and the services and
+                                                                processes covered, the controls tested and tests that were
+                                                                performed, and the way in which tested controls relate to the user
+                                                                entity’s controls; and
+                                                            </li>
+                                                            <li>
+                                                                The results of those tests of controls and the service auditor’s
+                                                                opinion on the operating effectiveness of the controls?
+                                                            </li>
+                                                            
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A33 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the user auditor assessed that it is necessary for the user auditor to
+                                                            obtain additional evidence about significant changes to the relevant
+                                                            controls at the service organisation outside of the period covered by
+                                                            the Type 2 report or determine additional audit procedures to be
+                                                            performed? 
+                                                              
+                                                         </p>
+                                                        <p>
+                                                            If yes, whether following factors considered in determining what
+                                                            additional audit evidence to obtain about controls at the service
+                                                            organisation that were operating outside of the period covered by the
+                                                            service auditor’s report? 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                The significance of the assessed risks of material misstatement at
+                                                                the assertion level; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The specific controls that were tested during the interim period,
+                                                                and significant changes to them since they were tested, including
+                                                                changes in the information system, processes, and personnel;
+                                                            </li>
+                                                            <li>
+                                                                The degree to which audit evidence about the operating
+                                                                effectiveness of those controls was obtained; 
+                                                            </li>
+                                                            <li>
+                                                                The length of the remaining period; 
+
+                                                            </li>
+                                                            <li>
+                                                                The extent to which the user auditor intends to reduce further
+                                                                substantive procedures based on the reliance on controls; and 
+                                                            </li>
+                                                            <li>
+                                                                The effectiveness of the control environment and monitoring of
+                                                                controls at the user entity. 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A36 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            In certain circumstances, a service provided by the service
+                                                            organisation may be designed with the assumption that certain
+                                                            controls will be implemented by the user entity. For example, the
+                                                            service may be designed with the assumption that the user entity will
+                                                            have controls in place for authorising transactions before they are sent
+                                                            to the service organisation for processing. In such a situation, the
+                                                            service organisation’s description of controls may include a
+                                                            description of those complementary user entity controls.
+                                                        </p>
+                                                        <p>
+                                                            Has the user auditor considered whether those complementary user
+                                                            entity controls are relevant to the service provided to the user entity? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A39  
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the user auditor communicated significant deficiencies identified
+                                                            during the audit to management and those charged with governance of
+                                                            the user entity on a timely basis which may include the following: 
+                                                        </p>
+                                                       <ul>
+                                                        <li>
+                                                            Any monitoring of controls that could be implemented by the user
+                                                            entity, including those identified as a result of obtaining a Type 1
+                                                            or Type 2 report;
+                                                        </li>
+                                                        <li>
+                                                            Instances where complementary user entity controls are noted in
+                                                            the Type 1 or Type 2 report and are not implemented at the user
+                                                            entity; and 
+                                                        </li>
+                                                        <li>
+                                                            Controls that may be needed at the service organisation that do not
+                                                            appear to have been implemented or that are not specifically
+                                                            covered by a Type 2 report? 
+                                                        </li>
+                                                       </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Type 1 and Type 2 Reports that Exclude the Services of a
+                                                            Subservice Organisation
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                </tr>
+                                                <tr>
+                                                 <td>
+                                                    <span>
+                                                        Para 18
+                                                    </span>
+                                                 </td>
+                                                 <td>
+                                                    <p>
+                                                        Whether user auditor planned to use a Type 1 or a Type 2 report that
+                                                        excludes the services provided by a subservice organisation and those
+                                                        services are relevant to the audit of the user entity’s financial
+                                                        statements?  
+                                                    </p>
+                                                    <p>
+                                                        If yes, has the user auditor applied the requirements of this SA with
+                                                        respect to the services provided by the subservice organisation? 
+                                                    </p>
+                                                 </td>
+                                                 <td>
+                                                     <input type="text" class="form-control">
+                                                 </td>
+                                                 <td>
+                                                     <input type="text" class="form-control">
+                                                 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Fraud, Non-Compliance with Laws and Regulations and
+                                                            Uncorrected Misstatements in Relation to Activities at the Service
+                                                            Organisation
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                       <span>
+                                                        Para 19
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                       <p>
+                                                        Whether the service organisation has reported to the user entity, or
+                                                        whether the user entity is otherwise aware of, any fraud, noncompliance with laws and regulations or uncorrected misstatements
+                                                        affecting the financial statements of the user entity?  
+                                                       </p>
+                                                       <p>
+                                                        If yes, has the user auditor evaluated how such matters affect the
+                                                        nature, timing and extent of the user auditor’s further audit
+                                                        procedures, including the effect on the user auditor’s conclusions and
+                                                        user auditor’s report? 
+                                                       </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Reporting by the User Auditor 
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                       <span>
+                                                        Para 20
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                       <p>
+                                                        Whether the user auditor obtained sufficient appropriate audit
+                                                        evidence regarding the services provided by the service organisation
+                                                        relevant to the audit of the user entity’s financial statements? 
+                                                       </p>
+                                                       <p>
+                                                        If not, has the user auditor modified the opinion in the user auditor’s
+                                                        report in accordance with SA 705(Revised)? 
+                                                       </p>
+                                                       <p>
+                                                        [Note: When a user auditor is unable to obtain sufficient appropriate
+                                                        audit evidence regarding the services provided by the service
+                                                        organisation relevant to the audit of the user entity’s financial
+                                                        statements, a limitation on the scope of the audit exists. This may be
+                                                        the case when: 
+                                                       </p>
+                                                       <ul>
+                                                         <li>
+                                                            The user auditor is unable to obtain a sufficient understanding of
+                                                            the services provided by the service organisation and does not
+                                                            have a basis for the identification and assessment of the risks of
+                                                            material misstatement; 
+                                                         </li>
+                                                         <li>
+                                                            A user auditor’s risk assessment includes an expectation that
+                                                            controls at the service organisation are operating effectively and
+                                                            the user auditor is unable to obtain sufficient appropriate audit
+                                                            evidence about the operating effectiveness of these controls; or 
+                                                         </li>
+                                                         <li>
+                                                            Sufficient appropriate audit evidence is only available from
+                                                            records held at the service organisation, and the user auditor is
+                                                            unable to obtain direct access to these records. (Para A42)] 
+                                                            
+                                                         </li>
+                                                       </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                       <span>
+                                                        Para 21
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                       <p>
+                                                        Has the user auditor referred to the work of a service auditor in the
+                                                        user auditor’s report containing an unmodified opinion unless required
+                                                        by law or regulation to do so?  
+                                                       </p>
+                                                       <p>
+                                                        If such reference is required by law or regulation, whether the user
+                                                        auditor’s report has indicated that the reference does not diminish the
+                                                        user auditor’s responsibility for the audit opinion?  
+                                                       </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                       <span>
+                                                        Para 22
+                                                       </span>
+                                                    </td>
+                                                    <td>
+                                                       <p>
+                                                        Whether reference to the work of a service auditor is relevant to an
+                                                        understanding of a modification to the user auditor’s opinion?  
+                                                       </p>
+                                                       <p>
+                                                        If yes, has the user auditor’s report indicate that such reference does
+                                                        not diminish the user auditor’s responsibility for that opinion? 
+                                                      </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                               </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

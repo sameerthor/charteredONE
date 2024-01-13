@@ -1,0 +1,1521 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 580, Written Representations     
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                         <h5 class="mt-4">
+                                            Note: Please refer to the Implementation Guide to SA 580, “Written Representations”. 
+
+                                        </h5>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                   <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Management from whom written representations requested 
+
+                                                        </h5>
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 8,
+                                                            A6 
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor obtained written representations from management
+                                                            with appropriate responsibilities for the financial statements and
+                                                            knowledge of the matters concerned?
+                                                        </p>
+                                                        <p>
+                                                            Document here the persons from whom the written representations
+                                                            will be taken:  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        </p>
+                                                       <p>
+                                                        [Note: Written representations are requested from those responsible
+                                                        for the preparation and presentation of the financial statements. Those
+                                                        individuals may vary depending on the governance structure of the
+                                                        entity, and relevant law or regulation; however, management (rather
+                                                        than those charged with governance) is often the responsible party.
+                                                        Written representations may therefore be requested from the entity’s
+                                                        chief executive officer and chief financial officer, or other equivalent
+                                                        persons in entities that do not use such titles. In some circumstances,
+                                                        however, other parties, such as those charged with governance, are
+                                                        also responsible for the preparation and presentation of the financial
+                                                        statements.(Para A2)] 
+                                                       </p>
+                                                       <p>
+                                                        [Note: Due to its responsibility for the preparation and presentation of
+                                                        the financial statements, and its responsibilities for the conduct of the
+                                                        entity’s business, management would be expected to have sufficient
+                                                        knowledge of the process followed by the entity in preparing and
+                                                        presenting the financial statements and the assertions therein on which
+                                                        to base the written representations. (Para A3)]
+                                                        
+                                                       </p>
+                                                       <p>
+                                                        [Note: In some cases, however, management may decide to make
+                                                        inquiries of others who participate in preparing and presenting the
+                                                        financial statements and assertions therein, including individuals who
+                                                        have specialised knowledge relating to the matters about which written
+                                                        representations are requested. Such individuals may include:
+                                                        
+                                                       </p>
+                                                       <ul>
+                                                        <li>
+                                                            An actuary responsible for actuarially determined accounting
+                                                            measurements. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Staff engineers who may have responsibility for and specialised
+                                                            knowledge about environmental liability measurements. 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Internal counsel who may provide information essential to
+                                                            provisions for legal claims.(Para A4)] 
+                                                            
+                                                        </li>
+                                                       </ul>
+                                                       <p>
+                                                        [Note: In some cases, management may include in the written
+                                                        representations qualifying language to the effect that representations are made to the best of its knowledge and belief. It is reasonable for
+                                                        the auditor to accept such wording if the auditor is satisfied that the
+                                                        representations are being made by those with appropriate
+                                                        responsibilities and knowledge of the matters included in the
+                                                        representations.(Para A5)]
+                                                       </p>
+                                                       <p>
+                                                        For the representations being given by the management, has the
+                                                        auditor requested the management to include in the written
+                                                        representation a confirmation that it has made such inquiries as it
+                                                        considered appropriate to place it in the position to be able to make the
+                                                        requested written representations? 
+                                                       </p>
+                                                       <p>
+                                                        [Note: It is not expected that such inquiries would usually require a
+                                                        formal internal process beyond those already established by the entity.
+                                                        (Para A6)] 
+                                                        
+                                                       </p>
+                                                       <h5>
+                                                        Also refer the illustrative representation letter as part of Appendix
+                                                        2 of this Checklist. 
+                                                       </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Written representations about management’s responsibilities 
+                                                        </h5>
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 9,
+                                                            10, 11
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor requested management to provide written
+                                                            representations that: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                It has fulfilled its responsibility in relation to the preparation and
+                                                                presentation of the financial statements in accordance with the
+                                                                terms of the audit engagement and particularly in accordance with
+                                                                the applicable financial reporting framework and
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                It has provided the auditor with all the relevant information and
+                                                                access as agreed in the terms of the audit engagement and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                all transactions have been recorded and reflected in the financial
+                                                                statements? 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            Has the auditor ensured that such management responsibilities referred
+                                                            to in preceding question are described in the written representation
+                                                            letter in the same manner as described in the engagement letter? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: These should not be made subject to the best of management’s
+                                                            knowledge and belief. (Para A8) 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            Audit evidence obtained during the audit that management has
+                                                            fulfilled the responsibilities referred to in para 9 & 10 of this SA that it
+                                                            agreed to in the terms of the audit engagement is not sufficient without
+                                                            obtaining confirmation from management that it believes that it has
+                                                            fulfilled those responsibilities. This is because the auditor is not able to
+                                                            judge solely on other audit evidence whether management has
+                                                            prepared and presented the financial statements and provided
+                                                            information to the auditor on the basis of the agreed acknowledgement
+                                                            and understanding of its responsibilities. (Para A7)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: The written representations as above draw on the agreed
+                                                            acknowledgement and understanding of management of its
+                                                            responsibilities in the terms of the audit engagement by requesting
+                                                            confirmation that it has fulfilled them. The auditor may also ask management to reconfirm its acknowledgement and responsibilities in
+                                                            written representation. These are particularly appropriate when: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Those who signed the terms of the audit engagement on behalf of
+                                                                the entity no longer have the relevant responsibilities; 
+                                                            </li>
+                                                            <li>
+                                                                The terms of the audit engagement were prepared in a previous
+                                                                year; 
+                                                            </li>
+                                                            <li>
+                                                                There is any indication that management misunderstands those
+                                                                responsibilities; or
+                                                            </li>
+                                                            <li>
+                                                                Changes in circumstances make it appropriate to do so. (Para A8)] 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: The mandates for audits of the financial statements of certain
+                                                            entities may be broader than those of other entities. As a result, the
+                                                            premise, relating to management’s responsibilities, on which an audit
+                                                            of the financial statements of such an entity is conducted may give rise
+                                                            to additional written representations. These may include written
+                                                            representations confirming that transactions and events have been
+                                                            carried out in accordance with legislation or proper authority. (Para
+                                                            A9)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Other written representations 
+
+                                                        </h5>
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor requested written representations as required by the
+                                                            other Standards on Auditing (SAs) to support other audit evidence
+                                                            relevant to financial statements or one or more specific assertions in
+                                                            financial statements? For e.g.: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Fraud – SA 240 para 39; 
+
+                                                            </li>
+                                                            <li>
+                                                                Laws and regulations – SA 250 para 16; 
+
+                                                            </li>
+                                                            <li>
+                                                                Misstatements identified during the audit – SA 450 para 14; 
+                                                            </li>
+                                                            <li>
+                                                                Audit evidence – SA 501 para 12; 
+
+                                                            </li>
+                                                            <li>
+                                                                Estimates, including fair value estimates – SA 540 para 22; 
+
+                                                            </li>
+                                                            <li>
+                                                                Related parties – SA 550 para 26; 
+
+                                                            </li>
+                                                            <li>
+                                                                Subsequent events – SA 560 para 9; 
+                                                            </li>
+                                                            <li>
+                                                                Going concern – SA 570(Revised) para 16;
+                                                            </li>
+                                                            <li>
+                                                                Preparation and presentation of financial statements – SA 710 para
+                                                                9; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Preparation and presentation of financial statements – SA
+                                                                720(Revised) para 13. 
+                                                            </li>
+                                                        </ul>
+                                                        <h5>
+                                                            Refer to Appendix 1 of the Checklist for detail of Written
+                                                            representation required in these SA.
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A10
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Additional Written Representations about the Financial
+                                                            Statements 
+                                                            
+                                                        </h5>
+                                                        <p>
+                                                            Whether the written representations included the following with respect to the financial statements: 
+
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The selection and application of accounting policies are
+                                                                appropriate? and 
+                                                            </li>
+                                                            <li>
+                                                                Matters such as the following, where relevant under the applicable
+                                                                financial reporting framework, have been recognised, measured,
+                                                                presented or disclosed in accordance with that framework? 
+                                                                
+                                                            </li>
+                                                            <ul>
+                                                                <li>
+                                                                    Plans or intentions that may affect the carrying value or
+                                                                    classification of assets and liabilities; 
+                                                                </li>
+                                                                <li>
+                                                                    Liabilities, both actual and contingent; 
+
+                                                                </li>
+                                                                <li>
+                                                                    Title to, or control over, assets, the liens or encumbrances on
+                                                                    assets, and assets pledged as collateral; and 
+                                                                </li>
+                                                                <li>
+                                                                    Aspects of laws, regulations and contractual agreements that
+                                                                    may affect the financial statements, including noncompliance? 
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A11 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Additional Written Representations about Information Provided
+                                                            to the Auditor– <input type="text">
+                                                            
+                                                        </h5>
+                                                        <p>
+                                                            Does the written representation from the management include a
+                                                            confirmation that it has communicated to the auditor all deficiencies in
+                                                            internal control of which it is aware? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            A12
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Written Representation about Specific Assertions 
+                                                        </h5>
+                                                        <p>
+                                                            Does the written representations include the representation about
+                                                            specific assertions i.e. judgements, intentions about specific
+                                                            assertions? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: When obtaining evidence about, or evaluating, judgments and
+                                                            intentions, the auditor may consider one or more of the following: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                The entity’s past history in carrying out its stated intentions. 
+                                                            </li>
+                                                            <li>
+                                                                The entity’s reasons for choosing a particular course of action. 
+                                                            </li>
+                                                            <li>
+                                                                The entity’s ability to pursue a specific course of action. 
+                                                            </li>
+                                                            <li>
+                                                                The existence or lack of any other information that might have
+                                                                been obtained during the course of the audit that may be
+                                                                inconsistent with management’s judgment or intent. (Para A12)] 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: In addition, the auditor may consider it necessary to request
+                                                            management to provide written representations about specific
+                                                            assertions in the financial statements; in particular, to support an
+                                                            understanding that the auditor has obtained from other audit evidence
+                                                            of management’s judgment or intent in relation to, or the completeness
+                                                            of, a specific assertion. For example, if the intent of management is
+                                                            important to the valuation basis for investments, it may not be possible
+                                                            to obtain sufficient appropriate audit evidence without a written
+                                                            representation from management about its intentions. Although such
+                                                            written representations provide necessary audit evidence, they do not
+                                                            provide sufficient appropriate audit evidence on their own for that assertion. (Para A13)] 
+
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Date of and period (s) covered by written representations
+                                                        </h5>
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            13,
+                                                            A16 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Have the written representations dated as near as practicable to, but
+                                                            not after, the date of the auditor’s report on the financial statements? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Because written representations are necessary audit evidence,
+                                                            the auditor’s opinion cannot be expressed, and the auditor’s report
+                                                            cannot be dated, before the date of the written representations.
+                                                            Furthermore, because the auditor is concerned with events occurring
+                                                            up to the date of the auditor’s report that may require adjustment to or
+                                                            disclosure in the financial statements, the written representations are
+                                                            dated as near as practicable to, but not after, the date of the auditor’s
+                                                            report on the financial statements. (Para A15)]
+                                                        </p>
+                                                        <p>
+                                                            Whether the written representations cover all financial statements and
+                                                            period(s) referred to in the auditor’s report? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: The written representations are for all periods referred to in
+                                                            auditor’s report because management needs to reaffirm that the written
+                                                            representations it previously made with respect to the prior periods
+                                                            remain appropriate. The auditor and management may agree to a form
+                                                            of written representation that updates written representations relating
+                                                            to the prior periods by addressing whether there are any changes to
+                                                            such written representations and, if so, what they are.(Para A13)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: Compliance with the above to enable the auditor to obtain the
+                                                            audit evidence, as provided by the representation letter, prior to
+                                                            issuance of the audit report. (Para A17)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            In case the auditor has obtained a written representation about a
+                                                            specific assertion in the financial statements during the course of the
+                                                            audit, has it requested an updated written representation? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: Situations may arise where current management were not
+                                                            present during all periods referred to in the auditor’s report. Such
+                                                            persons may assert that they are not in a position to provide some or
+                                                            all of the written representations because they were not in place during
+                                                            the period. This fact, however, does not diminish such persons’
+                                                            responsibilities for the financial statements as a whole. Accordingly,
+                                                            the requirement for the auditor to request from them written
+                                                            representations that cover the whole of the relevant period(s) still
+                                                            applies. (Para A18)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Form of written representations
+
+                                                        </h5>
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para14,
+                                                            A22
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Have the written representation been obtained in the form of a
+                                                            representation letter addressed to the auditor? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: If law or regulation requires management to make written
+                                                            public statements about its responsibilities, the auditor may determine
+                                                            that such statements provide some or all of the representations required by paragraph 9 or 10 of this SA. consequently the relevant
+                                                            matters covered by such statements need not be included in the
+                                                            representation letter. Factors that may affect the auditor’s
+                                                            determination include:
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Whether the statement includes confirmation of the fulfilment of
+                                                                responsibilities that are equivalent to some or all of those set out in
+                                                                Paragraph 9 and 10 of this SA. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Whether the statement has been given or approved by those from
+                                                                whom the auditor requests the relevant written representations. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Whether a copy of the statement is provided to the auditor as near
+                                                                as practicable to, but not after, the date of the auditor’s report on
+                                                                the financial statements also refer Paragraph 13 of this SA. (Para
+                                                                A19)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            [Note: A formal statement of compliance with law or regulation, or of
+                                                            approval of the financial statements, would not contain sufficient
+                                                            information for the auditor to be satisfied that all necessary
+                                                            representations have been consciously made. The expression of
+                                                            management’s responsibilities in law or regulation is also not a
+                                                            substitute for the requested written representations. (Para A20)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            Has the auditor communicated to those charged with governance the
+                                                            written representations which the team has requested from the
+                                                            management? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td colspan="4">
+                                                        <h5>
+                                                            Doubt as to the reliability of written representations and requested written representations not
+                                                            provided
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            15, 16,
+                                                            17,
+                                                            A24,
+                                                            A25 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <h5>
+                                                            Doubt as to the reliability of written representations 
+                                                        </h5>
+                                                        <p>
+                                                            Whether written representations are inconsistent with other audit
+                                                            evidence? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor performed audit procedures to resolve the
+                                                            matter? 
+                                                        </p>
+                                                        <p>
+                                                            If the matter remains unresolved, has the auditor reconsidered the
+                                                            assessment of the competence, integrity, ethical values or diligence of
+                                                            management, or of its commitment to or enforcement of these, and has
+                                                            determined the effect that this may have own the reliability of
+                                                            representations (oral and written) and audit evidence in general? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: In the case of identified inconsistencies between one or more
+                                                            written representations and audit evidence obtained from another
+                                                            source, the auditor may consider whether the risk assessment remains
+                                                            appropriate and, if not, revise the risk assessment and determine the
+                                                            nature, timing and extent of further audit procedures to respond to the
+                                                            assessed risks.(Para A23] 
+                                                        </p>
+                                                        <p>
+                                                            Due to such identified inconsistencies or for due to any reason, does
+                                                            the auditor have concerns about the competence, integrity, ethical
+                                                            values or diligence of management, or about its commitment to or its
+                                                            enforcement of the same? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor determined the effect that such concerns may
+                                                            have on the reliability of representations (oral or written) and audit
+                                                            evidence in general? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            In case the auditor has identified significant issues relating to the
+                                                            competence, integrity, ethical values or diligence of management, or
+                                                            about its commitment to or enforcement of these, but concluded that
+                                                            the written representations are nevertheless reliable, has this
+                                                            significant matter been documented in accordance with SA 230? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            SA 230, requires the auditor to document significant matters arising
+                                                            during the audit, the conclusions reached thereon, and significant
+                                                            professional judgments made in reaching those conclusions (Para A25)
+                                                        </p>
+                                                        <p>
+                                                            If the auditor concludes that the written representations are not
+                                                            reliable, have appropriate actions been taken, including determining
+                                                            the possible effect on the auditor’s report in accordance with SA 705
+                                                            (Revised)? 
+                                                        </p>
+                                                        <p>
+                                                            If the auditor concludes that the risk of management
+                                                            misrepresentation in the financial statements is such that an audit
+                                                            cannot be conducted, has the auditor considered where possible,
+                                                            withdrawing from the engagement, unless those charged with
+                                                            governance put in place appropriate corrective measures? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: Such measures, however, may not be sufficient to enable the
+                                                            auditor to issue an unmodified audit opinion (Para A24)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            18,
+                                                            A27  
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <b> Written Representation about Management’s Responsibilities</b> Has
+                                                            the written representation as requested been modified by the
+                                                            management? 
+                                                         </p>
+                                                        <p>
+                                                            If yes, has the auditor analysed the underlying reason for such
+                                                            modification and its impact on their opinion in the auditor’s report? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: A written representation that has been modified from that
+                                                            requested by the auditor does not necessarily mean that management
+                                                            did not provide the written representation. However, the underlying
+                                                            reason for such modification may affect the opinion in the auditor’s
+                                                            report. For example:
+                                                        </p>
+                                                        <p>
+                                                            The written representation about management’s fulfilment of its
+                                                            responsibility for the preparation and presentation of the financial
+                                                            statements may state that management believes that, except for
+                                                            material non-compliance with a particular requirement of the
+                                                            applicable financial reporting framework, the financial statements are
+                                                            prepared and presented in accordance with that framework. This does
+                                                            not imply that the written representation have not been provided
+                                                            because the auditor concluded that management has provided reliable
+                                                            written representations. However, the auditor is required to consider
+                                                            the effect of the non-compliance on the opinion in the auditor’s report
+                                                            in accordance with SA 705(Revised).
+                                                        </p>
+                                                        <p>
+                                                            The written representation about the responsibility of management to
+                                                            provide the auditor with all relevant information agreed in the terms of the audit engagement may state that management believes that, except
+                                                            for information destroyed in a fire, it has provided the auditor with
+                                                            such information. This does not imply that the written representation
+                                                            have not been provided because the auditor concluded that
+                                                            management has provided reliable written representations. However,
+                                                            the auditor is required to consider the effects of the pervasiveness of
+                                                            the information destroyed in the fire on the financial statements and
+                                                            the effect thereof on the opinion in the auditor’s report in accordance
+                                                            with SA 705(Revised). (Para A27)] 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            <b>Requested written representations not provided</b> Has the
+                                                            management not provided one or more of the requested written
+                                                            representations?  
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Discussed the matter with management; 
+
+                                                            </li>
+                                                            <li>
+                                                                Re-evaluated the integrity of management and evaluated the
+                                                                effect that this may have on the reliability of representations (oral
+                                                                or written) and audit evidence in general; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Taken appropriate actions, including determining the possible
+                                                                effect on the opinion in the auditor’s report in accordance with
+                                                                SA 705(Revised), having regard to the requirement in paragraph
+                                                                19 of this SA.
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 19   
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether auditor concluded that there is sufficient doubt about the
+                                                            integrity of management such that the written representations required
+                                                            by Para 9 and 10 of this SA are not reliable; or 
+                                                        </p>
+                                                        <p>
+                                                            Has the management not provided the written representations as
+                                                            required by paragraph 9 & 10 of this SA? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, has the auditor given a disclaimer of opinion on the financial
+                                                            statements in accordance with SA 705 (Revised)? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: If the auditor concludes that the written representations about
+                                                            these matters are unreliable, or if management does not provide those
+                                                            written representations, the auditor is unable to obtain sufficient
+                                                            appropriate audit evidence. The possible effects on the financial
+                                                            statements of such inability are not confined to specific elements,
+                                                            accounts or items of the financial statements and are hence pervasive.
+                                                            SA 705(Revised) requires the auditor to disclaim an opinion on the
+                                                            financial statements in such circumstances.(Para A26)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                   </tr>
+                                              </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>

@@ -1,0 +1,2252 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ICAI</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                SA 700(Revised), Forming an Opinion and Reporting on Financial
+                                                Statements      
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                                <p>Client :</p>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            
+                                            <div>
+                                                <p>Financial Year :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="number" min="1999" class="form-control" placeholder="yyyy">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Prepared by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div> 
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                                </div>
+                                            <div>
+                                                <p>Reviewd by :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" placeholder="Name"></div>
+                                               </div>
+                                            <div>
+                                                <p>Date :</p>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="date" class="form-control"></div>
+                                               </div>
+                                               <p><b>Purpose of the checklist:</b> The purpose of this checklist is to provide guidance on compliance with
+                                                the requirements of Standards on Auditing. 
+                                            </p> 
+                                               <h5>
+                                                How to use this checklist: 
+                                                </h5>
+                                                <ol type="1">
+                                                    <li>
+                                                        Relevant paragraph references in the Standard have been indicated in the first column. 
+    
+                                                    </li>
+                                                    <li>
+                                                        The Engagement Partner and Manager*
+                                                        are required to review the completed checklist and initial
+                                                       this page. 
+                                                    </li>
+                                                    <li>
+                                                        After completion, the checklist should be filed in the appropriate section of the working papers. 
+
+                                                    </li>
+                                                </ol>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                               
+                                                <tbody>  
+                                                    <tr>
+                                                       <td rowspan="2">
+                                                            <strong>Reviewed by</strong>
+                                                        </td>
+                                                        <th>Manager*</th>
+                                                        <th>
+                                                            Partner
+                                                        </th>    
+                                                    </tr> 
+                                                    <tr>
+                                                        <td> <input type="text" class="form-control"> </td>
+                                                        <td> <input type="text" class="form-control"> </td>      
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                        <td> <input type="date" class="form-control"> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <small class="bullet">
+                                                *Wherever applicable
+                                            </small>
+                                         <h5 class="mt-4">
+                                            Note: Please refer to the Implementation Guide on Reporting Standards (Revised SA 700, Revised
+                                            SA 705 and Revised SA 706). 
+                                            
+                                        </h5>
+                                     </div>
+                                        <div class="table-responsive my-4 col-md-10 mx-auto">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Para
+                                                            No.
+                                                            </th>
+                                                        <th>Particulars</th>
+                                                        <th> Response
+                                                            [Yes, No,
+                                                            NA] (give
+                                                            comments
+                                                            wherever
+                                                            required)
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            WP
+                                                            Reference 
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Forming an Opinion on the Financial Statements
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 10
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                      <p>
+                                                        Whether the auditor has formed an opinion on whether the financial
+                                                        statements are prepared, in all material respects, in accordance with
+                                                        the applicable financial reporting framework? 
+                                                        
+                                                      </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 11
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                      <p>
+                                                        Whether the auditor has concluded as to whether the auditor has
+                                                        obtained reasonable assurance about whether the financial statements
+                                                        as a whole are free from material misstatement, whether due to fraud
+                                                        or error? 
+                                                    </p>
+                                                    <p>
+                                                        In forming that conclusion, has the auditor considered:
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            The auditor’s conclusion, in accordance with SA 330, whether
+                                                            sufficient appropriate audit evidence has been obtained; 
+                                                        </li>
+                                                        <li>
+                                                            The auditor’s conclusion, in accordance with SA 450, whether
+                                                            uncorrected misstatements are material, individually or in
+                                                            aggregate; and 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The evaluations required by para 12-15 of this SA (Refer below)?
+                                                        </li>
+                                                    </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 12
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                      <p>
+                                                        Whether the financial statements are prepared, in all material respects,
+                                                        in accordance with the requirements of the applicable financial
+                                                        reporting framework?
+                                                    </p>
+                                                    <p>
+                                                        In evaluating this, whether the auditor has considered qualitative
+                                                        aspects of the entity’s accounting practices, including indicators of
+                                                        possible bias in management’s judgments? 
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        [Note: In considering the qualitative aspects of the entity’s accounting
+                                                        practices, the auditor may become aware of possible bias in
+                                                        management’s judgments. The auditor may conclude that the
+                                                        cumulative effect of a lack of neutrality, together with the effect of
+                                                        uncorrected misstatements, causes the financial statements as a whole
+                                                        to be materially misstated. Indicators of a lack of neutrality that may
+                                                        affect the auditor’s evaluation of whether the financial statements as a
+                                                        whole are materially misstated include the following: 
+                                                        
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            The selective correction of misstatements brought to
+                                                            management’s attention during the audit (e.g., correcting
+                                                            misstatements with the effect of increasing reported earnings, but not correcting misstatements that have the effect of decreasing
+                                                            reported earnings). 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            Possible management bias in the making of accounting estimates.
+                                                            (Para A2)] 
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 13
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                      <p>
+                                                        Whether, in view of the requirements of the applicable financial
+                                                        reporting framework: 
+                                                         
+                                                    </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            The financial statements adequately disclose the significant
+                                                            accounting policies selected and applied; 
+                                                        </li>
+                                                        <li>
+                                                            The accounting policies selected and applied are consistent with
+                                                            the applicable financial reporting framework and are appropriate; 
+                                                        </li>
+                                                        <li>
+                                                            The accounting estimates made by management are reasonable; 
+
+                                                        </li>
+                                                        <li>
+                                                            The information presented in the financial statements is relevant,
+                                                            reliable, comparable, and understandable; 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The financial statements provide adequate disclosures to enable
+                                                            the intended users to understand the effect of material
+                                                            transactions and events on the information conveyed in the
+                                                            financial statements; and 
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            The terminology used in the financial statements, including the
+                                                            title of each financial statement, is appropriate? 
+                                                            
+                                                        </li>
+                                                    </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 14
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                      <p>
+                                                        Whether the evaluation as to whether the financial statements achieve
+                                                        fair presentation considered: 
+                                                      </p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            The overall presentation, structure and content of the financial
+                                                            statements; and  
+                                                        </li>
+                                                        <li>
+                                                            Whether the financial statements, including the related notes,
+                                                            represent the underlying transactions and events in a manner that
+                                                            achieves fair presentation? 
+                                                            
+                                                        </li>
+                                                     </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 15
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the financial statements adequately refer to or describe the
+                                                            applicable financial reporting framework? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Form of Opinion 
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            16, 17
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor concluded that the financial statements are prepared,
+                                                            in all material respects, in accordance with the applicable financial
+                                                            reporting framework? 
+                                                         </p>
+                                                         <p>
+                                                            If yes, has the auditor expressed an unmodified opinion? 
+                                                        </p>
+                                                        <p>
+                                                            If no, whether the auditor: 
+
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                concludes that, based on the audit evidence obtained, the
+                                                                financial statements as a whole are not free from material
+                                                                misstatement; or 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                is unable to obtain sufficient appropriate audit evidence to conclude that the financial statements as a whole are free from
+                                                                material misstatement? 
+
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            Then the auditor shall modify the opinion in the auditor’s report in
+                                                            accordance with SA 705 (Revised). 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 18
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When financial statements prepared in accordance with the
+                                                            requirements of a fair presentation framework do not achieve fair
+                                                            presentation has the auditor discussed the matter with management?
+                                                        </p>
+                                                        <p>
+                                                            Whether it is necessary to modify the opinion in the auditor’s report in
+                                                            accordance with SA 705 (Revised)? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: There may be cases where the financial statements, although
+                                                            prepared in accordance with the requirements of a fair presentation
+                                                            framework, do not achieve fair presentation. Where this is the case, it
+                                                            may be possible for management to include additional disclosures in
+                                                            the financial statements beyond those specifically required by the
+                                                            framework or, in extremely rare circumstances, to depart from a
+                                                            requirement in the framework in order to achieve fair presentation of
+                                                            the financial statements. (Para A11)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 19
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the financial statements are prepared in accordance with a
+                                                            compliance framework, the auditor is not required to evaluate whether
+                                                            the financial statements achieve fair presentation. However, if in
+                                                            extremely rare circumstances the auditor concludes that such financial
+                                                            statements are misleading, has the auditor discussed the matter with
+                                                            management? and, 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            Has the auditor decided how it is resolved, and whether and how, to
+                                                            communicate it in the auditor’s report? 
+                                                              
+                                                        </p>
+                                                        
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Auditor’s Report 
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Auditor’s Report for Audits Conducted in Accordance with
+                                                            Standards on Auditing 
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 20
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor’s report is in writing?
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 21
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor’s report have a title that clearly indicates that it is
+                                                            the report of an independent auditor? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 22
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor’s report addressed, as appropriate, based on the
+                                                            circumstances of the engagement? 
+                                                             
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 23
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the first section of the auditor’s report include the auditor’s
+                                                            opinion, and have the heading “Opinion”? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 24
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the Opinion section of the auditor’s report also: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Identifies the entity whose financial statements have been
+                                                                audited; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                States that the financial statements have been audited; 
+
+                                                            </li>
+                                                            <li>
+                                                                Identifies the title of each statement comprising the financial
+                                                                statements; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Refers to the notes, including the summary of significant
+                                                                accounting policies; and 
+                                                            </li>
+                                                            <li>
+                                                                Specifies the date of, or period covered by, each financial
+                                                                statement comprising the financial statements? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 25
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When expressing an unmodified opinion on financial statements
+                                                            prepared in accordance with a fair presentation framework whether the
+                                                            auditor’s opinion use one of the following phrases, which are regarded
+                                                            as being equivalent: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                In our opinion, the accompanying financial statements present
+                                                                fairly, in all material respects, […] in accordance with [the
+                                                                applicable financial reporting framework]; or 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                In our opinion, the accompanying financial statements give a true
+                                                                and fair view of […] in accordance with [the applicable financial
+                                                                reporting framework]? 
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: In the case of financial statements prepared in accordance with
+                                                            a fair presentation framework, the auditor’s opinion states that the
+                                                            financial statements present fairly, in all material respects, or give a
+                                                            true and fair view of, the matters that the financial statements are
+                                                            designed to present. For example, in the case of financial statements of
+                                                            companies prepared in accordance with the Companies (Indian
+                                                            Accounting Standards) Rules, 2015, these matters are: true and fair
+                                                            view of the state of affairs of the company as at the end of its financial
+                                                            year and its profit or loss, (changes in equity) and its cash flows for
+                                                            the year ended on that date. Consequently, the […] in paragraph 25
+                                                            and elsewhere in this SA is intended to be replaced by the words in
+                                                            italics in the preceding sentence when the applicable financial
+                                                            reporting framework is Indian Accounting Standards (Ind AS)/
+                                                            Accounting Standards or, in the case of other applicable financial
+                                                            reporting frameworks, be replaced with words that describe the
+                                                            matters that the financial statements are designed to present. (Para
+                                                            A22)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            26, 27
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When expressing an unmodified opinion on financial statements
+                                                            prepared in accordance with a compliance framework, whether the
+                                                            auditor’s opinion states that the accompanying financial statements are
+                                                            prepared, in all material respects, in accordance with [the applicable
+                                                            financial reporting framework]?
+                                                        </p>
+                                                        <p>
+                                                            If the reference to the applicable financial reporting framework in the auditor’s opinion is not to Accounting Standards referred to in para 9
+                                                            of this SA, has the auditor’s opinion identified the origin of such other
+                                                            framework? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 28
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor’s report have a section, directly following the
+                                                            Opinion section, with the heading “Basis for Opinion”, that: 
+                                                         </p>
+                                                         <ol type="a">
+                                                            <li>
+                                                                States that the audit was conducted in accordance with Standards
+                                                                on Auditing; 
+                                                            </li>
+                                                            <li>
+                                                                Refers to the section of the auditor’s report that describes the
+                                                                auditor’s responsibilities under the SAs; 
+                                                            </li>
+                                                            <li>
+                                                                Includes a statement that the auditor is independent of the entity
+                                                                in accordance with the relevant ethical requirements relating to
+                                                                the audit and has fulfilled the auditor’s other ethical
+                                                                responsibilities in accordance with these requirements. The
+                                                                statement shall refer to the Code of Ethics issued by ICAI; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                States whether the auditor believes that the audit evidence the
+                                                                auditor has obtained is sufficient and appropriate to provide a
+                                                                basis for the auditor’s opinion? 
+                                                                
+                                                            </li>
+                                                         </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 29
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Where applicable, has the auditor reported in accordance with SA 570
+                                                            (Revised)?
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 30 
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            For audits of complete sets of general purpose financial statements of
+                                                            listed entities, has the auditor communicated key audit matters in the
+                                                            auditor’s report in accordance with SA 701? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 31
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor is otherwise required by law or regulation or
+                                                            decides to communicate key audit matters in the auditor’s report, has
+                                                            the auditor done so in accordance with SA 701? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 32
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Where applicable, has the auditor reported other information in
+                                                            accordance with SA 720(Revised)? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            33, 34
+                                                            
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Has the auditor included a section with a heading “Responsibilities of
+                                                            Management for the Financial Statements”?   
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether such section of the auditor’s report describes
+                                                            management’s responsibility for: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Preparing the financial statements in accordance with the
+                                                                applicable financial reporting framework, and for such internal
+                                                                control as management determines is necessary to enable the
+                                                                preparation of financial statements that are free from material
+                                                                misstatement, whether due to fraud or error; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Assessing the entity’s ability to continue as a going concern and
+                                                                whether the use of the going concern basis of accounting is
+                                                                appropriate as well as disclosing, if applicable, matters relating to going concern. The explanation of management’s responsibility
+                                                                for this assessment shall include a description of when the use of
+                                                                the going concern basis of accounting is appropriate? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: The auditor’s report shall use the term that is appropriate in the
+                                                            context of the legal framework applicable to the entity and need not
+                                                            refer specifically to “management”. In some entities, the appropriate
+                                                            reference may be to those charged with governance.] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 35
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether those responsible for the oversight of the financial reporting
+                                                            process are different from those who fulfil the responsibilities
+                                                            described above? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the heading of this section also refers to “Those
+                                                            Charged with Governance” or such term that is appropriate in the
+                                                            context of the legal framework applicable to entity? 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 36
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the financial statements are prepared in accordance with a
+                                                            fair presentation framework? 
+                                                             
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the description of responsibilities for the financial
+                                                            statements in the auditor’s report refers to “the preparation and fair
+                                                            presentation of these financial statements” or “the preparation of
+                                                            financial statements that give a true and fair view,” as appropriate in
+                                                            the circumstances? 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            37, 38,
+                                                            39, 40
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor’s report includes a section with the heading
+                                                            “Auditor’s Responsibilities for the Audit of the Financial
+                                                            Statements”? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether this section: 
+
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                States that the objectives of the auditor are to:
+                                                            </li>
+                                                            <ol type="i">
+                                                                <li>
+                                                                    Obtain reasonable assurance about whether the financial
+                                                                    statements as a whole are free from material misstatement,
+                                                                    whether due to fraud or error; and 
+                                                                </li>
+                                                                <li>
+                                                                    Issue an auditor’s report that includes the auditor’s opinion. 
+
+                                                                </li>
+                                                            </ol>
+                                                            <li>
+                                                                States that reasonable assurance is a high level of assurance, but
+                                                                is not a guarantee that an audit conducted in accordance with SAs
+                                                                will always detect a material misstatement when it exists; and
+                                                            </li>
+                                                            <li>
+                                                                States that misstatements can arise from fraud or error, and
+                                                                either: 
+                                                                
+                                                            </li>
+                                                            <ol type="i">
+                                                                <li>
+                                                                    Describe that they are considered material if, individually or
+                                                                    in the aggregate, they could reasonably be expected to
+                                                                    influence the economic decisions of users taken on the basis
+                                                                    of these financial statements; or 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    Provide a definition or description of materiality in
+                                                                    accordance with the applicable financial reporting framework. 
+
+                                                            </ol>
+                                                            <li>
+                                                                States that, as part of an audit in accordance with SAs, the auditor
+                                                                exercises professional judgment and maintains professional
+                                                                skepticism throughout the audit; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Describe an audit by stating that the auditor’s responsibilities are: 
+                                                            </li>
+                                                            <ol type="i">
+                                                                <li>
+                                                                    To identify and assess the risks of material misstatement of
+                                                                    the financial statements, whether due to fraud or error; to
+                                                                    design and perform audit procedures responsive to those
+                                                                    risks; and to obtain audit evidence that is sufficient and
+                                                                    appropriate to provide a basis for the auditor’s opinion. The
+                                                                    risk of not detecting a material misstatement resulting from
+                                                                    fraud is higher than for one resulting from error, as fraud
+                                                                    may involve collusion, forgery, intentional omissions,
+                                                                    misrepresentations, or the override of internal control.
+                                                                </li>
+                                                                <li>
+                                                                    To obtain an understanding of internal control relevant to the
+                                                                    audit in order to design audit procedures that are appropriate
+                                                                    in the circumstances, but not for the purpose of expressing
+                                                                    an opinion on the effectiveness of the entity’s internal
+                                                                    control. In circumstances when the auditor also has a
+                                                                    responsibility to express an opinion on the effectiveness of
+                                                                    internal control in conjunction with the audit of the financial
+                                                                    statements, the auditor shall omit the phrase that the
+                                                                    auditor’s consideration of internal control is not for the
+                                                                    purpose of expressing an opinion on the effectiveness of the
+                                                                    entity’s internal control. 
+                                                                </li>
+                                                                <li>
+                                                                    To evaluate the appropriateness of accounting policies used
+                                                                    and the reasonableness of accounting estimates and related
+                                                                    disclosures made by management. 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    To conclude on the appropriateness of management’s use of
+                                                                    the going concern basis of accounting and, based on the
+                                                                    audit evidence obtained, whether a material uncertainty
+                                                                    exists related to events or conditions that may cast
+                                                                    significant doubt on the entity’s ability to continue as a
+                                                                    going concern. If the auditor concludes that a material
+                                                                    uncertainty exists, the auditor is required to draw attention in
+                                                                    the auditor’s report to the related disclosures in the financial
+                                                                    statements or, if such disclosures are inadequate, to modify
+                                                                    the opinion. The auditor’s conclusions are based on the audit
+                                                                    evidence obtained up to the date of the auditor’s report.
+                                                                    However, future events or conditions may cause an entity to
+                                                                    cease to continue as a going concern. 
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    When the financial statements are prepared in accordance
+                                                                    with a fair presentation framework, to evaluate the overall
+                                                                    presentation, structure and content of the financial
+                                                                    statements, including the disclosures, and whether the
+                                                                    financial statements represent the underlying transactions
+                                                                    and events in a manner that achieves fair presentation. 
+                                                                </li>
+                                                                <li>
+                                                                    When SA 600 applies, further describe the auditor’s
+                                                                    responsibilities in a group audit engagement by stating: 
+                                                                <br>
+                                                                The division of responsibility for the financial information of the
+                                                                entity by indicating the extent to which the financial information
+                                                                of components audited by the other auditors have been included
+                                                                in the financial information of the entity, e.g., the number of
+                                                                divisions/branches/subsidiaries or other components audited by
+                                                                other auditors. 
+                                                            </li>
+                                                            <li>
+                                                                State that the auditor communicates with those charged with
+                                                                governance regarding, among other matters, the planned scope
+                                                                and timing of the audit and significant audit findings, including
+                                                                any significant deficiencies in internal control that the auditor
+                                                                identifies during the audit; 
+                                                            </li>
+                                                            <li>
+                                                                State that the auditor provides those charged with governance
+                                                                with a statement that the auditor has complied with relevant
+                                                                ethical requirements regarding independence and communicate
+                                                                with them all relationships and other matters that may reasonably
+                                                                be thought to bear on the auditor’s independence, and where
+                                                                applicable, related safeguards; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                For audits of financial statements of all such entities for which
+                                                                key audit matters are communicated in accordance with SA 701,
+                                                                state that, from the matters communicated with those charged
+                                                                with governance, the auditor determines those matters that were
+                                                                of most significance in the audit of the financial statements of the
+                                                                current period and are therefore the key audit matters. In
+                                                                accordance with the requirements of SA 701, the auditor
+                                                                describes these matters in the auditor’s report unless law or
+                                                                regulation precludes public disclosure about the matter or when,
+                                                                in extremely rare circumstances, the auditor determines that a
+                                                                matter should not be communicated in the auditor’s report
+                                                                because the adverse consequences of doing so would reasonably
+                                                                be expected to outweigh the public interest benefits of such
+                                                                communication? 
+                                                                
+                                                            </li>
+                                                            </ol>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 41
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the description of the auditor’s responsibilities for the audit
+                                                            of the financial statements required by para 39-40 of this SA has been
+                                                            included: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Within the body of the auditor’s report; 
+
+                                                            </li>
+                                                            <li>
+                                                                Within an appendix to the auditor’s report, in which case the
+                                                                auditor’s report shall include a reference to the location of the
+                                                                appendix; or 
+                                                            </li>
+                                                            <li>
+                                                                By a specific reference within the auditor’s report to the location
+                                                                of such a description on a website of an appropriate authority,
+                                                                where law, regulation or the applicable auditing standards
+                                                                expressly permit the auditor to do so. 
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 42
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            When the auditor refers to a description of the auditor’s
+                                                            responsibilities on a website of an appropriate authority, whether the
+                                                            auditor has determined that such description addresses, and is not
+                                                            inconsistent with, the requirements in paragraphs 39 – 40 of this SA. 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 43
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor addresses other reporting responsibilities in the
+                                                            auditor’s report on the financial statements that are in addition to the
+                                                            auditor’s responsibilities under the SAs? 
+                                                             
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether these other reporting responsibilities addressed in a
+                                                            separate section in the auditor’s report with a heading titled “Report
+                                                            on Other Legal and Regulatory Requirements”? 
+                                                        </p>
+                                                        <p>
+                                                            [Note: If other reporting responsibilities are presented in the same
+                                                            section as the related report elements required by the SAs, the
+                                                            auditor’s report shall clearly differentiate the other reporting
+                                                            responsibilities from the reporting that is required by the SAs. (Para
+                                                            44) 
+                                                        </p>
+                                                        <p>
+                                                            If the auditor’s report contains a separate section that addresses other
+                                                            reporting responsibilities, the requirements of paragraphs 20–40 of
+                                                            this SA shall be included under a section with a heading “Report on
+                                                            the Audit of the Financial Statements.” The “Report on Other Legal
+                                                            and Regulatory Requirements” shall follow the “Report on the Audit
+                                                            of the Financial Statements.” (Para 45)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 46
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor’s report is signed by the auditor (i.e. the
+                                                            engagement partner) in his personal name or where the firm is
+                                                            appointed as the auditor, the report is signed in the personal name of
+                                                            the auditor and in the name of the audit firm? 
+                                                              
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the partner/proprietor signing the audit report mentions
+                                                            the membership number assigned by the ICAI along with the
+                                                            registration number of the firm, wherever applicable, as allotted by
+                                                            ICAI, in the audit reports signed by them? 
+                                                            
+                                                        </p>
+                                                        </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 47
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                       <p>
+                                                        Whether the auditor’s report names specific location, which is
+                                                        ordinarily the city where the auditor’s report is signed?
+                                                       </p> 
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 48
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor’s report dated no earlier than the date on which
+                                                            the auditor has obtained sufficient appropriate audit evidence on
+                                                            which to base the auditor’s opinion on the financial statements,
+                                                            including evidence that: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                All the statements that comprise the financial statements,
+                                                                including the related notes, have been prepared; and 
+                                                            </li>
+                                                            <li>
+                                                                Those with the recognized authority have asserted that they have taken responsibility for those financial statements? 
+
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Auditor’s Report Prescribed by Law or Regulation 
+
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 49
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor is required by law or regulation applicable to the
+                                                            entity to use a specific layout, or wording of the auditor’s report?
+                                                        </p>
+                                                        <p>
+                                                            If yes, the auditor’s report shall refer to Standards on Auditing only if
+                                                            the auditor’s report includes, at a minimum, each of the following
+                                                            elements: 
+                                                            
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                A title.
+                                                            </li>
+                                                            <li>
+                                                                An addressee, as required by the circumstances of the
+                                                                engagement. 
+                                                            </li>
+                                                            <li>
+                                                                An Opinion section containing an expression of opinion on the
+                                                                financial statements and a reference to the applicable financial
+                                                                reporting framework used to prepare the financial statements. 
+                                                            </li>
+                                                            <li>
+                                                                An identification of the entity’s financial statements that have
+                                                                been audited. 
+                                                            </li>
+                                                            <li>
+                                                                A statement that the auditor is independent of the entity in
+                                                                accordance with the relevant ethical requirements relating to the
+                                                                audit, and has fulfilled the auditor’s other ethical responsibilities
+                                                                in accordance with these requirements. The statement shall refer
+                                                                to the Code of Ethics issued by ICAI.
+                                                            </li>
+                                                            <li>
+                                                                Where applicable, a section that addresses, and is not
+                                                                inconsistent with, the reporting requirements in paragraph 22 of
+                                                                SA 570(Revised). 
+                                                            </li>
+                                                            <li>
+                                                                Where applicable, a Basis for Qualified (or Adverse) Opinion
+                                                                section that addresses, and is not inconsistent with, the reporting
+                                                                requirements in paragraph 23 of SA 570 (Revised). 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Where applicable, a section that includes the information
+                                                                required by SA 701, or additional information about the audit
+                                                                that is prescribed by law or regulation and that addresses, and is
+                                                                not inconsistent with, the reporting requirements in that SA. 
+                                                            </li>
+                                                            <li>
+                                                                Where applicable, a section that addresses the reporting
+                                                                requirements in paragraph 24 of SA 720 (Revised). 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                A description of management’s responsibilities for the
+                                                                preparation of the financial statements and an identification of
+                                                                those responsible for the oversight of the financial reporting
+                                                                process that addresses, and is not inconsistent with, the
+                                                                requirements in paragraphs 33-36 of this SA. 
+                                                            </li>
+                                                            <li>
+                                                                A reference to Standards on Auditing and the law or regulation,
+                                                                and a description of the auditor’s responsibilities for an audit of
+                                                                the financial statements that addresses, and is not inconsistent
+                                                                with, the requirements in paragraphs 37-40 of this SA. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The auditor’s signature. 
+
+                                                            </li>
+                                                            <li>
+                                                                The Place of signature 
+                                                            </li>
+                                                            <li>
+                                                                The date of the auditor’s report. 
+
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            [Note: The SAs do not override law or regulation that governs an audit
+                                                            of financial statements. When SA 701 is applicable, reference can
+                                                            only be made to SAs in the auditor’s report if, in applying the law or
+                                                            regulation, the section required by paragraph 49(h) of this SA is not
+                                                            inconsistent with the reporting requirements in SA 701. In such
+                                                            circumstances, the auditor may need to tailor certain aspects of the
+                                                            communication of key audit matters in the auditor’s report required by
+                                                            SA 701, for example by: 
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Modifying the heading “Key Audit Matters”, if law or regulation
+                                                                prescribes a specific heading; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Explaining why the information required by law or regulation is
+                                                                being provided in the auditor’s report, for example by making a
+                                                                reference to the relevant law or regulation and describing how
+                                                                that information relates to the key audit matters; 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Where law or regulation prescribes the nature and extent of the
+                                                                description, supplementing the prescribed information to achieve
+                                                                an overall description of each key audit matter that is consistent
+                                                                with the requirement in paragraph 13 of SA 701. (Para A65)] 
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control"> 
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Auditor’s Report for Audits Conducted in Accordance with Both
+                                                            Standards on Auditing issued by ICAI and International
+                                                            Standards on Auditing or Auditing Standards of Any Other
+                                                            Jurisdiction
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para
+                                                            50, 51
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether the auditor is required to conduct an audit in accordance
+                                                            with, in addition to the Standards on Auditing issued by ICAI, the
+                                                            International Standards on Auditing or auditing standards of any other
+                                                            jurisdiction? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether the auditor’s report refer to Standards on Auditing in
+                                                            addition to the International Standards on Auditing or auditing
+                                                            standards of such other jurisdiction, only if: 
+                                                        </p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                There is no conflict between the requirements in the ISAs or such
+                                                                auditing standards of other jurisdiction and those in SAs that
+                                                                would lead the auditor (i) to form a different opinion, or (ii) not
+                                                                to include an Emphasis of Matter paragraph or Other Matter
+                                                                paragraph that, in the particular circumstances, is required by
+                                                                SAs; and 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                The auditor’s report includes, at a minimum, each of the elements
+                                                                set out in paragraphs 49(a)–(n) above when the auditor uses the
+                                                                layout or wording specified by the Standards on Auditing.
+                                                                However, reference to “law or regulation” in paragraph 49(k)
+                                                                shall be read as reference to the Standards on Auditing. The auditor’s report shall thereby identify such Standards on
+                                                                Auditing? 
+                                                                
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            When the auditor’s report refers to both the ISAs or the auditing
+                                                            standards of a specific jurisdiction and the Standards on Auditing
+                                                            issued by ICAI, whether the auditor’s report clearly identified the
+                                                            same including the jurisdiction of origin of the other auditing
+                                                            standards? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: A reference to both Standards on Auditing issued by ICAI and
+                                                            the International Standards on Auditing/auditing standards of another
+                                                            jurisdiction is not appropriate if there is a conflict between the
+                                                            requirements in SAs and those ISAs/ auditing standards of such other
+                                                            jurisdiction that would lead the auditor to form a different opinion or
+                                                            not to include an Emphasis of Matter or Other Matter paragraph that,
+                                                            in the particular circumstances, is required by SAs. In such a case, the
+                                                            auditor’s report refers only to the auditing standards (either Standards
+                                                            on Auditing issued by ICAI or ISAs/the auditing standards of such
+                                                            other jurisdiction) in accordance with which the auditor’s report has
+                                                            been prepared. (Para A69)] 
+                                                            
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <h5>
+                                                            Supplementary Information Presented with the Financial
+                                                            Statements
+                                                            
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 52
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether supplementary information that is not required by the
+                                                            applicable financial reporting framework is presented with the audited
+                                                            financial statements? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether in the auditor’s professional judgment, supplementary
+                                                            information is nevertheless an integral part of the financial statements
+                                                            due to its nature or how it is presented? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            When it is an integral part of the financial statements, whether the
+                                                            supplementary information is covered by the auditor’s opinion? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: To illustrate: 
+
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                When the notes to the financial statements include an explanation
+                                                                or the reconciliation of the extent to which the financial
+                                                                statements comply with another financial reporting framework,
+                                                                the auditor may consider this to be supplementary information
+                                                                that cannot be clearly differentiated from the financial statements.
+                                                                The auditor’s opinion would also cover notes or supplementary
+                                                                schedules that are cross-referenced from the financial statements. 
+                                                            </li>
+                                                            <li>
+                                                                When an additional profit and loss account that discloses specific
+                                                                items of expenditure is disclosed as a separate schedule included
+                                                                as an Appendix to the financial statements, the auditor may
+                                                                consider this to be supplementary information that can be clearly
+                                                                differentiated from the financial statements. (Para A71)] 
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <span>
+                                                            Para 53
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            Whether supplementary information that is not required by the
+                                                            applicable financial reporting framework is not considered an integral
+                                                            part of the audited financial statements? 
+                                                        </p>
+                                                        <p>
+                                                            If yes, whether such supplementary information is presented in a way
+                                                            that sufficiently and clearly differentiates it from the audited financial
+                                                            statements? 
+                                                            
+                                                        </p>
+                                                        <p>
+                                                            [Note: If this is not the case, then the auditor shall ask management to
+                                                            change how the unaudited supplementary information is presented. If
+                                                            management refuses to do so, the auditor shall identify the unaudited
+                                                            supplementary information and explain in the auditor’s report that
+                                                            such supplementary information has not been audited.]
+                                                        </p>
+                                                        <p>
+                                                            [Note: Management could change the presentation of unaudited
+                                                            supplementary information that could be construed as being covered
+                                                            by the auditor’s opinion, for example, by: 
+                                                            
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                Removing any cross-references from the financial statements to
+                                                                unaudited supplementary schedules or unaudited notes so that the
+                                                                demarcation between the audited and unaudited information is
+                                                                sufficiently clear. 
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                Placing the unaudited supplementary information outside of the
+                                                                financial statements or, if that is not possible in the
+                                                                circumstances, at a minimum placing the unaudited notes
+                                                                together at the end of the required notes to the financial
+                                                                statements and clearly labeling them as unaudited. Unaudited
+                                                                notes that are intermingled with the audited notes can be
+                                                                misinterpreted as being audited. (Para A75) 
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            The fact that supplementary information is unaudited does not relieve
+                                                            the auditor of the responsibilities described in SA 720(Revised). (Para
+                                                            A76)] 
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                  </tr>
+                                              </tbody>
+                                                </table>
+                                               
+                                                     </div>
+                                                </div>  
+                                  <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+
+</body>
+</html>
