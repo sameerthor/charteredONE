@@ -107,6 +107,15 @@ body{
     text-decoration: none;
     text-transform: capitalize;
   }
+  
+  @media(max-width:991px) {
+    .monthwise-header{
+        height: auto!important;
+    }
+    .table-responsive th, .table-responsive td{
+        white-space: nowrap;
+    }
+}
   @media(max-width:600px){
     .card-footer .page li{
         margin: 0 .3rem;

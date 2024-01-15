@@ -29,7 +29,11 @@
     <!-- *******************Fontawesome***************************** -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-    
+    <style>
+        #preparegstin .uploadSummaryTable th{
+            font-size: 9px;
+        }
+    </style>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
@@ -634,7 +638,7 @@
                                             </div>
                                         </div>
                                         <div class="table-responsive">
-                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover uploadSummaryTable">
                                                 <tbody>
                                                     <tr class="table-head">
                                                         <th class="text-center"></th>
@@ -883,7 +887,7 @@
                                             </table>
                                         </div>
                                     </div>
-                                    <div class="card-body gstinSummary">
+                                    <div class="card-body">
                                         <div class="card-header monthwise-header header-links">
                                             <div>
                                                 Previous to current month GSTR 1

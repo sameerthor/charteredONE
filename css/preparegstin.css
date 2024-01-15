@@ -28,6 +28,7 @@
   box-shadow: none;
   cursor: pointer;
 }
+
 .norecordFound{
   font-size: 14px;
   font-weight: 600;
@@ -43,7 +44,6 @@
 }
 .table-responsive .thead th{
   color:#3f6ad8!important;
-  text-align: center;
 }
 .table-responsive .dropdown-toggle{
   font-size: 10px;
@@ -64,13 +64,14 @@
   font-size: 11px;
 }
 .table-responsive tr:not(.thead) th{
-  font-size: 10px;
+  font-size: 10.2px;
 }
 .gstin3b .form-control, .gstin3b #table_body .form-select{
     font-size: 10px;
     height: 24px;
     border-radius: 4px;
     box-shadow: none;
+    width: 100px;
 }
 .table-responsive .fa-eye{
   color: darkslategray;
@@ -131,11 +132,12 @@
 }
 .table-responsive table th{
     border: 1px solid #23232329;
+    color:#3f6ad8!important;
     /* text-align: center; */
 }
 .table-responsive table td{
     border: 1px solid #23232329;
-    text-align: center;
+    /* text-align: center; */
 }
 .table-responsive table th{
   vertical-align: middle;
@@ -155,6 +157,7 @@
  .accordion-button{
     border: none !important;
     font-weight: 600;
+    box-shadow: none!important;
 }
 .accordion-button strong{
     margin-right: .5rem;
@@ -170,7 +173,7 @@
 
 .download-btn a{
   text-transform: capitalize;
-  padding: 6px;
+  padding: 0.5rem 0.8rem;
   letter-spacing: .5px;
   background-color: #fff;
   color: #000;
@@ -212,7 +215,7 @@
   border-top-left-radius: 4px!important;
   background-color: #26ace3!important;
   color: #fff;
-  height: 2.5rem;
+  height: 2.8rem;
   font-weight: 600;
   font-size: 13px;
 }
@@ -242,6 +245,9 @@
     }
     .custome-flex .bookdata{
         margin-bottom: 1rem;
+    }
+    .gstin3b .bg-light{
+      height: auto;
     }
 }
 .custome-header-margin{
@@ -377,7 +383,7 @@
 .edit-header .customeDropBox span{
     font-weight: 600;
     letter-spacing: .5px;
-    font-size: 1rem;
+    font-size: 13px;
 }
 .edit-header .heading{
     font-weight: 600;
@@ -582,7 +588,7 @@
         margin-top: .5rem;
      }
      .liability-breakup .download-btn a{
-       font-size: .75rem;  
+       font-size: 10px;
        letter-spacing: .5px; 
 
     }
@@ -972,7 +978,7 @@
   }
   .save-data-box{
     background-color: #fffbdb;
-    padding: 1.8rem 1rem;
+    padding: 15px 10px;
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -982,6 +988,6 @@
     margin: 0;
     color: #000;
     font-family: 'Montserrat', sans-serif;
-    font-size: .85rem;
+    font-size:12px;
     font-weight: 500;
   }

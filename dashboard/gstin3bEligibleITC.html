@@ -21,8 +21,8 @@
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" href="../css/dashboardpack.css">
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboardpack.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/preparegstin.css">
     <!-- *******************Fontawesome***************************** -->
@@ -293,7 +293,7 @@
                     </div>
                 </div>
                 <!-- ===================Content====================== -->
-                <div class="app-main__outer">
+                <div class="app-main__outer gstin3b" id="preparegstin">
                     <div class="app-main__inner"> 
                         <div class="row">
                             <div class="col-md-12">
@@ -349,30 +349,30 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <div class="edit-header">
+                                        <div class="edit-headere card-header liability-breakup bg-light">
                                             <div class="customeDropBox mb-3 mb-lg-0">
                                                 <span> Eligible ITC</span>
                                             </div>
-                                            <div class="lists-btn">
+                                            <div class="lists-btne download-btn">
                                                 <a href="./itc-tracker.html"></i>ITC Tracker</a>
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#itcClaimedComparison"> 2B vs ITC Claimed</a>
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#sendMail"><i class="fa-regular fa-envelope"></i> 2B vs ITC Claimed</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card-body">
+                                    <!-- </div>
+                                    <div class="card-body"> -->
                                         <div class="table-responsive">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <tbody>
-                                                    <tr class="text-center">
+                                                    <tr class="text-center thead">
                                                         <th>Head</th>
                                                         <th>IGST</th>
                                                         <th>CGST</th>
                                                         <th>SGST</th>
                                                         <th>Cess</th>
                                                     </tr>
-                                                    <tr>
-                                                        <th>A	ITC Available</th>
+                                                    <tr class="thead">
+                                                        <th>A &nbsp;&nbsp;ITC Available</th>
                                                         <td class="text-center">
                                                             <span>0.00</span>
                                                         </td>
@@ -548,7 +548,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>B	ITC Reversed</th>
+                                                        <th class="thead">B&nbsp;&nbsp;	ITC Reversed</th>
                                                         <td class="text-center">
                                                             <span>0.00</span>
                                                         </td>
@@ -608,8 +608,8 @@
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <th>C Net ITC Available (A)-(B)</th>
+                                                    <tr class="thead">
+                                                        <th>C&nbsp;&nbsp; Net ITC Available (A)-(B)</th>
                                                         <td>
                                                             <div class="col">
                                                                 <input type="text" class="form-control" placeholder="0.00">
@@ -631,8 +631,8 @@
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <th>D	Other Details</th>
+                                                    <tr class="thead"> 
+                                                        <th>D&nbsp;&nbsp;Other Details</th>
                                                         <td class="text-center">
                                                             <span>0.00</span>
                                                         </td class="text-center">
@@ -727,7 +727,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body mt-4">
-                                        <div class="card-header radio-links">
+                                        <div class="card-header liability-breakup bg-light radio-links ">
                                             <div>
                                                 <span>ITC Comparision</span>
                                             </div>
@@ -758,10 +758,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="table-responsive mt-2">
+                                        <div class="table-responsive">
                                             <table class="align-middle mb-0 table table-striped table-hover">
                                                 <tbody>
-                                                    <tr>
+                                                    <tr class="text-center thead">
                                                         <th>Tax</th>
                                                         <th>Apr 23</th>
                                                         <th>May 23</th>
@@ -776,7 +776,7 @@
                                                     </tr>
                                                     
                                                     <tr>
-                                                        <td>3B IGST</td>
+                                                        <th>3B IGST</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -789,7 +789,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2B IGST</td>
+                                                        <th>2B IGST</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -802,7 +802,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>3B IGST</td>
+                                                        <th>3B IGST</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -815,7 +815,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>IGST Diff</td>
+                                                        <th>IGST Diff</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -828,7 +828,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>3B CGST</td>
+                                                        <th>3B CGST</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -841,7 +841,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2B CGST</td>
+                                                        <th>2B CGST</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -854,7 +854,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>CGST Diff</td>
+                                                        <th>CGST Diff</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -867,7 +867,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>3B SGST</td>
+                                                        <th>3B SGST</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -880,7 +880,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>3B IGST</td>
+                                                        <th>3B IGST</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -893,7 +893,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2B SGST</td>
+                                                        <th>2B SGST</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -906,7 +906,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>SGST Diff</td>
+                                                        <th>SGST Diff</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -919,7 +919,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>3B Cess</td>
+                                                        <th>3B Cess</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -932,7 +932,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2B Cess</td>
+                                                        <th>2B Cess</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -945,7 +945,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Cess Diff</td>
+                                                        <th>Cess Diff</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -958,7 +958,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>3B Tax</td>
+                                                        <th>3B Tax</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -971,7 +971,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>3B Tax</td>
+                                                        <th>3B Tax</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
@@ -984,7 +984,7 @@
                                                         <td>31,496</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Total</td>
+                                                        <th>Total</th>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
                                                         <td>31,496</td>
