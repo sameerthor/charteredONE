@@ -219,6 +219,28 @@ body a:hover{
 .modalbtns{
     max-width: 100%;
 }
+.TL_accordion{
+    cursor: pointer;
+  }
+  tr .TL_accordion::before{
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 12px;
+    margin: 1px 4px 0 0;
+  }
+  .TL_accordionTable{
+    padding: 0;
+    margin: 0;
+  }
+ .TL_accordionrow{
+    padding: 0!important;
+    margin: 0;
+  }
+  tr[aria-expanded="true"] .TL_accordion::before{
+    content: "\f106";
+    font-family: FontAwesome;
+    margin: 0 4px 0 0;
+  }
 @media(max-width:991px) {
     .monthwise-header{
         height: auto!important;

@@ -71,7 +71,7 @@
     height: 24px;
     border-radius: 4px;
     box-shadow: none;
-    width: 100px;
+    /* width: 100px; */
 }
 .table-responsive .fa-eye{
   color: darkslategray;
@@ -249,6 +249,9 @@
     .gstin3b .bg-light{
       height: auto;
     }
+    .gstin3b .form-control, .gstin3b #table_body .form-select{
+      width: 100px;
+  }
 }
 .custome-header-margin{
     margin-top: 3.5rem;
@@ -452,6 +455,7 @@
 .data-header small:nth-last-of-type(1){
     margin-right: 0rem;
 }
+
 @media(max-width:768px){
     .data-header{
         flex-direction: column;
@@ -459,7 +463,9 @@
 }
 @media(max-width: 992px){
     .edit-header{
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 10px;
         justify-content: center;
     }
     .edit-header .custome-check{
@@ -577,8 +583,8 @@
 @media(max-width:992px){
     .liability-breakup{
        flex-direction: column;
-       flex-wrap: wrap;
-       justify-content: center;
+       /* flex-wrap: wrap; */
+       /* justify-content: center; */
     }
     .liability-breakup div{
         width: 100%;
