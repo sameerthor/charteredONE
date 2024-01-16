@@ -161,6 +161,10 @@ body a:hover{
 .gstinSummary .gstr_taxTable .table-body td:nth-last-child(1),.trBg{
     background-color: #e0f3ff!important;
 }
+.gstr_taxTable td{
+    width: 100px;
+    max-width: 100%;
+}
 .gstinSummary th.total{
     background-color: #e0f3ff;
 }
