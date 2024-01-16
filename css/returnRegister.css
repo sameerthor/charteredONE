@@ -241,6 +241,12 @@ body a:hover{
     font-family: FontAwesome;
     margin: 0 4px 0 0;
   }
+  .openall,.closeall{
+    cursor: pointer;
+  }
+  .closeall{
+    visibility: hidden;
+  }
 @media(max-width:991px) {
     .monthwise-header{
         height: auto!important;

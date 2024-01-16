@@ -1233,7 +1233,10 @@
                       >
                         <tbody>
                           <tr>
-                            <th class="text-left" rowspan="1"><i class="fa fa-angle-double-down"></i></th>
+                            <th class="text-left" rowspan="1">
+                              <i class="fa fa-angle-double-down openall"></i>
+                              <i class="fa fa-angle-double-up closeall"></i>
+                                </th>
                             <th>Apr 23</th>
                             <th>May 23</th>
                             <th>June 23</th>
@@ -2914,6 +2917,20 @@
       src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
     ></script>
     <script>
+   
+$(".openall").click(function () {
+    $(".collapse").addClass("show");
+    $(".table-body").attr("aria-expanded","true");
+    $(".openall").css("display", "none");
+    $(".closeall").css("display", "block");
+    $(".closeall").css("visibility", "visible");
+});
+$(".closeall").click(function () {
+    $(".collapse").removeClass("show");
+    $(".table-body").attr("aria-expanded","false");
+    $(".openall").css("display", "block");
+    $(".closeall").css("display", "none");
+});
       $(function () {
         $('input[name="daterange"]').daterangepicker(
           {
