@@ -1,0 +1,1854 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/dashboardpack.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/itr.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>             
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer custome-header-margin">
+                    <div class="app-main__inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="custome-header px-3">
+                                    <div>
+                                        <div class="header-item">
+                                            <span class="client-name" data-bs-toggle="tooltip" data-bs-placement="top" title="Adem Makaran">Adem Makarum</span>
+                                        </div>
+                                        <div>
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title=" PAN: DIIPM2226">DIIPM2226</span> |
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Status: Individual">Individual</span> |
+                                            <span class="header-link"><a href="./edit-client.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit Client Info">Residence <i class="fa-solid fa-user-pen" ></i></a></span> |
+                                            <span class="header-link"><a href="https://eportal.incometax.gov.in/iec/foservices/#/login" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="visit IT Portal">IT Portal <img src="../../images/itd-logo.png" height="20" width="28" alt=""></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="custome-dropdowm align-items-center">
+                                        <div class="filling-btn">
+                                            <a href="./e-filing.html">e-Filing</a>
+                                        </div>
+                                        <div class="fy-year">
+                                            <span>A.Y. 2023-24</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="breadcrumbs breadcrumbs-top bg-light mb-3">
+                                        <a href="./itrSummary.html"><i class="fa-solid fa-angle-left"></i> Return to Dashboard</a>
+                                    </div>
+                                    <!-- =============== Stepper===================== -->
+                                    <div class="md-stepper-horizontal active orange">
+                                        <div class="md-step editable">
+                                            <a href="./auditor-trail-balance.html"><div class="md-step-circle"><span>1</span></div></a>
+                                            <a href="./auditor-trail-balance.html"><div class="md-step-title">Trial Balance</div></a>
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step editable">
+                                            <a href="./auditor-financial-statement.html"><div class="md-step-circle"><span>2</span></div></a>
+                                           <a href="./auditor-financial-statement.html"> <div class="md-step-title">Financial Statement</div></a>
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step active done">
+                                          <a href="./form-3CB-3CD.html"><div class="md-step-circle"><span>3</span></div></a>
+                                          <a href="./form-3CB-3CD.html"><div class="md-step-title">Form 3CB-3CD</div></a>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body audit-form-box">
+                                        <div class="table-header bussiness-info-header mb-3">
+                                            <div class="mb-3 mb-md-0">
+                                                 <span>Audited Forms</span>
+                                            </div>
+                                        </div>
+                                        <div class="bussiness-info-btn">
+                                            <a href="./form-3CB-3CD.html" class="">Form 3CB</a>
+                                            <a href="./form-3CB-3CD.html" class="selected">Form 3CD</a>
+                                        </div>
+                                        <div class="edit-data-box row">
+                                            <div class="audit-form-info">
+                                                <div class="tab-flex mt-4 mb-3">
+                                                    <div class="tabList">
+                                                        <a href="#000" class="tabBtn active">Clauses 4,8-17 <i class="fa-solid fa-angle-right"></i></a>
+                                                        <a href="#000" class="tabBtn">Clauses 18-27 <i class="fa-solid fa-angle-right"></i></a>
+                                                        <a href="#000" class="tabBtn">Clauses 28-32 <i class="fa-solid fa-angle-right"></i></a>
+                                                        <a href="#000" class="tabBtn">Clauses 33-44 <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- ======================== -->
+                                            <div class="auditorDetails mb-4">
+                                                <div class="table-header bussiness-info-header">
+                                                    <div>
+                                                         <span>Clauses 4,8-17</span>
+                                                    </div>
+                                                    <div class="qdbtns mt-2 mt-md-0">
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#importExcel" class="import-btn">Import Excel</a>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleTwo">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(4)</span> Whether the assessee is liable to pay indirect tax like excise duty, service tax, sales tax, goods and services tax, customs duty, etc. if yes, please furnish the registration number or GST number or any other identification number allotted for the same:
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead>
+                                                                            <tr class="totalCount">
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td class="text-center">
+                                                                                    <div class="form-check custome-check">
+                                                                                        <input class="form-check-input" type="checkbox" value="" id="checkbox1" data-target="group1">
+                                                                                        <label class="form-check-label" for="group1">Yes</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input group1" type="checkbox" value="" id="flexCheckDefault"disabled>
+                                                                                            </div>
+                                                                                            <div>
+                                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th class="text-center">Type</th>
+                                                                                    <th class="text-center">State</th>
+                                                                                    <th class="text-center">Registration /Identification Number</th>
+                                                                                    <th class="text-center">Description</th>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container" width="50">
+                                                                                            <button class="success" onclick="create_tr('table_bodyOne')">
+                                                                                            <i class="fa fa-plus"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyOne">
+                                                                            <tr>
+                                                                                <th class="text-left">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input group1" type="checkbox" value="" id="flexCheckDefault"disabled>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="300">
+                                                                                    <select class="form-select group1" aria-label="Default select example" disabled>
+                                                                                        <option selected></option>
+                                                                                        <option value="1">Central Excise Duty</option>
+                                                                                        <option value="2">Custom Duty</option>
+                                                                                        <option value="3">Goods and Service Tax</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                        --
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="group1 form-control" disabled>
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                        --
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleThree">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(8)</span>Indicate the relevant clause of section 44AB under which the audit has been conducted
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleThree">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive hideScrollbar">
+                                                                <table class="align-middle mb-0 table  table-striped" border="1">
+                                                                    <thead>
+                                                                        <tr class="totalCount">
+                                                                            <th class="pl-4">Relevant clause of section 44AB under which the audit has been conducted</th>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="pl-4">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">44ABa-Clause 44AB(a)- Total sales/turnover/gross receipts of business exceeding specified limits;</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">44ABAA-Clause 44AB(a)- Proviso where aggregate cash receipts and cash payments of business exceeding specified limits;</label>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="pl-4">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">44ABb-Clause 44AB(b)- Gross receipts of profession exceeding specified limits;</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">44ABci-Clause 44AB(c)-i- Profits and gains lower than deemed profit u/s 44AE;</label>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="pl-4">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">44ABcii-Clause 44AB(c)-ii- Profits and gains lower than deemed profit u/s 44BBB;</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">44ABciii-Clause 44AB(c)-iii- Profits and gains lower than deemed profit u/s 44BBB",</label>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="pl-4">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">44ABd-Clause 44AB(d)- Profits and gains lower than deemed profit u/s 44ADA;</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">44ABe-Clause 44AB(e)- When provisions of section 44AD(4) are applicable;</label>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="pl-4">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Third Proviso to sec 44AB : Audited under any other law;</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>       
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleFour">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(8a)</span>Whether the assesse has opted for taxation under section 115BA/115BAA/115BAB/115BAC/115BAD?
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleFour">
+                                                        <div class="accordion-body">
+                                                            <div class="table-responsive hideScrollbar">
+                                                                <table class="align-middle mb-0 table  table-striped" border="1">
+                                                                    <thead>
+                                                                        <tr class="totalCount">
+                                                                            <th class="pl-4" colspan="4">Section</th>
+                                                                            <td class="text-center">
+                                                                                <div class="form-check custome-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="checkbox1" data-target="group2">
+                                                                                    <label class="form-check-label" for="group1">Yes</label>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="pl-4">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input group2" type="checkbox" role="switch" id="" disabled>
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">115BA</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input group2" type="checkbox" role="switch" id="" disabled>
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">115BAA</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input group2" type="checkbox" role="switch" id="" disabled>
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">115BAB</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input group2" type="checkbox" role="switch" id="" disabled>
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">115BAC</label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="pl-3">
+                                                                                <div class="form-check form-switch">
+                                                                                    <input class="form-check-input group2" type="checkbox" role="switch" id="" disabled>
+                                                                                    <label class="form-check-label" for="flexSwitchCheckDefault">115BAD</label>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>       
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleFive">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(10a)</span> Nature of business or profession (If more than one business or profession is carried on during the previous year, nature of every business or profession)
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleFive">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead>
+                                                                            <tr class="totalCount">
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td class="text-center">
+                                                                                    <div class="qdbtns text-center">
+                                                                                        <a href="#000" class="import-btn">Import From Trial Balance</a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                            </div>
+                                                                                            <div>
+                                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th class="text-center">Sector</th>
+                                                                                    <th class="text-center">Sub Sector</th>
+                                                                                    <th class="text-center">Code</th>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container" width="50">
+                                                                                            <button class="success" onclick="create_tr('table_bodyTwo')">
+                                                                                            <i class="fa fa-plus"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyTwo">
+                                                                            <tr>
+                                                                                <th class="text-left">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="300">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">AGRICULTURE, ANIMAL HUSBANDRY and FORESTRY</option>
+                                                                                        <option value="2">AGRICULTURE, ANIMAL HUSBANDRY and FORESTRY</option>
+                                                                                        <option value="3">CONSTRUCTION</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">01001 - Growing and manufacturing of tea</option>
+                                                                                        <option value="2">01002 - Growing and manufacturing of coffee</option>
+                                                                                        <option value="3">01003 - Growing and manufacturing of rubber</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="300" class="text-center">
+                                                                                    01001
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ============== -->
+                                                <div class="accordion table-accordian" id="accordionExampleSix">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(10b)</span> If there is any change in the nature of business or profession, the particulars of such change.
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleSix">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead>
+                                                                            <tr class="totalCount">
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td class="text-center">
+                                                                                    <div class="form-check custome-check">
+                                                                                        <input class="form-check-input" type="checkbox" value="" id="checkbox1" data-target="group3">
+                                                                                        <label class="form-check-label" for="group1">Yes</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input group3" type="checkbox" value="" id="flexCheckDefault"disabled>
+                                                                                            </div>
+                                                                                            <div>
+                                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th class="text-center">Business</th>
+                                                                                    <th class="text-center">Sector</th>
+                                                                                    <th class="text-center">Sub Sector</th>
+                                                                                    <th class="text-center">Code</th>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container" width="50">
+                                                                                            <button class="success" onclick="create_tr('table_bodyOne')">
+                                                                                            <i class="fa fa-plus"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyOne">
+                                                                            <tr>
+                                                                                <th class="text-left">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input group3" type="checkbox" value="" id="flexCheckDefault"disabled>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="300">
+                                                                                    <select class="form-select group3" aria-label="Default select example" disabled>
+                                                                                        <option selected></option>
+                                                                                        <option value="1">Added</option>
+                                                                                        <option value="2">Discontinued</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <select class="form-select group3" aria-label="Default select example" disabled>
+                                                                                        <option selected></option>
+                                                                                        <option value="1">AGRICULTURE, ANIMAL HUSBANDRY and FORESTRY</option>
+                                                                                        <option value="2">COMPUTER AND RELATED SERVICES</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <select class="form-select group3" aria-label="Default select example" disabled>
+                                                                                        <option selected></option>
+                                                                                        <option value="1">01001 - Growing and manufacturing of tea</option>
+                                                                                        <option value="2">01002 - Growing and manufacturing of coffee</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    01002
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleSeven">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(11a)</span>Whether books of account are prescribed under section 44AA, if yes, list of books so prescribed.
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleSeven">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table  table-striped" border="1">
+                                                                        <thead>
+                                                                            <tr class="totalCount">
+                                                                                <th class="pl-4" colspan="4">Books Prescribed</th>
+                                                                                <td class="text-center">
+                                                                                    <div class="form-check custome-check">
+                                                                                        <input class="form-check-input" type="checkbox" value="" id="checkbox1" data-target="group4">
+                                                                                        <label class="form-check-label" for="group1">Yes</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="pl-4">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled>
+                                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Bank Book</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="pl-3">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled>
+                                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Cash Book</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="pl-3">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled>
+                                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Journal</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="pl-3">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled>
+                                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Ledger</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="pl-3">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled>
+                                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Purchase Register</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="pl-4">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled>
+                                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Sales Register</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="pl-3">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled>
+                                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Stock Register</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="pl-3">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled><br/><br/>
+                                                                                        <input type="text" class="form-control group4" disabled>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="pl-3">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled><br/><br/>
+                                                                                        <input type="text" class="form-control group4" disabled>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="pl-3">
+                                                                                    <div class="form-check form-switch">
+                                                                                        <input class="form-check-input group4" type="checkbox" role="switch" id="" disabled><br/><br/>
+                                                                                        <input type="text" class="form-control group4" disabled>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleEight">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(11b)</span>List of books of account maintained and the address at which the books of accounts are kept. (In case books of account are maintained in a computer system, mention the books of account generated by such computer system. If the books of accounts are not kept at one location, please furnish the addresses of locations along with the details of books of accounts maintained at each location.)
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleEight">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead class="totalCount">
+                                                                                <tr>
+                                                                                    <th class="text-left" width="60">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                            </div>
+                                                                                            <div>
+                                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th class="text-center">Books Maintained</th>
+                                                                                    <th class="text-center">Address Line 1</th>
+                                                                                    <th class="text-center">Address Line 2</th>
+                                                                                    <th class="text-center">City/Town/District</th>
+                                                                                    <th class="text-center">PIN /ZIP Code</th>
+                                                                                    <th class="text-center">State</th>
+                                                                                    <th class="text-center">Country</th>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container" width="50">
+                                                                                            <button class="success" onclick="create_tr('table_bodyFour')">
+                                                                                            <i class="fa fa-plus"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyFour">
+                                                                            <tr>
+                                                                                <th class="text-left" width="60">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="200">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">Journal</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="200">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">Uttar Pradesh</option>
+                                                                                        <option value="2">Madhya Pradesh</option>
+                                                                                        <option value="3">Rajsthan</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="200">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">India</option>
+                                                                                        <option value="2">Afganistan</option>
+                                                                                        <option value="3">Australia</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ============== -->
+                                                <div class="accordion table-accordian" id="accordionExampleNine">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(11c)</span>List of books of account and nature of relevant documents examined.
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleNine">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead class="totalCount">
+                                                                                <tr>
+                                                                                    <th class="text-left" width="60">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                            </div>
+                                                                                            <div>
+                                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th class="text-center">Books Examined</th>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container" width="50">
+                                                                                            <button class="success" onclick="create_tr('table_bodyFive')">
+                                                                                            <i class="fa fa-plus"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyFive">
+                                                                            <tr>
+                                                                                <th class="text-left" width="60">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="200">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">Journal</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ============== -->
+                                                <div class="accordion table-accordian" id="accordionExampleTen">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(12)</span> Whether the profit and loss account includes any profits and gains assessable on presumptive basis, if yes, indicate the amount and the relevant section (44AD, 44AE, 44AF, 44B, 44BB, 44BBA, 44BBB, Chapter XII-G, First Schedule or any other relevant section.)
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTen">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead>
+                                                                            <tr class="totalCount">
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td class="text-center">
+                                                                                    <div class="form-check custome-check">
+                                                                                        <input class="form-check-input" type="checkbox" value="" id="checkbox1" data-target="group5">
+                                                                                        <label class="form-check-label" for="group1">Yes</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input group3" type="checkbox" value="" id="flexCheckDefault"disabled>
+                                                                                            </div>
+                                                                                            <div>
+                                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th class="text-center">Section</th>
+                                                                                    <th class="text-center">Description</th>
+                                                                                    <th class="text-center">Amount</th>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container" width="50">
+                                                                                            <button class="success" onclick="create_tr('table_bodySix')">
+                                                                                            <i class="fa fa-plus"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodySix">
+                                                                            <tr>
+                                                                                <th class="text-left">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input group5" type="checkbox" value="" id="flexCheckDefault"disabled>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="300">
+                                                                                    <select class="form-select group5" aria-label="Default select example" disabled>
+                                                                                        <option selected></option>
+                                                                                        <option value="1">44AD</option>
+                                                                                        <option value="2">44ADA</option>
+                                                                                        <option value="3">44BBB</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    01002
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control group5" disabled>
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="pl-4">
+                                                                    (13a) <span class="pl-3"> Method of accounting employed in the previous year.</span>
+                                                                </th>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="pl-4">
+                                                                    <div class="form-check form-switch pl-4">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="">
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Mercantile System</label>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="pl-3">
+                                                                    <div class="form-check form-switch">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="">
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Cash System</label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="pl-4" width="1250">
+                                                                    (13b) <span class="pl-3"> Whether there had been any change in the method of accounting employed vis-a-vis the method employed in the immediately preceding previous year.</span>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="toggleTable yesButton set1 ">Yes</button>
+                                                                    <button class="toggleTable noButton set1">No</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- ======================= -->
+                                                <div class="content set1">
+                                                    <div class="accordion table-accordian" id="accordionExampleEleven">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseTwo">
+                                                                <span class="pr-4">(13c)</span>	If answer to (b) above is in the affirmative, give details of such change, and the effect thereof on the profit or loss.
+                                                            </button>
+                                                            </h2>
+                                                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleEleven">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive hideScrollbar">
+                                                                        <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                            <thead class="totalCount">
+                                                                                    <tr>
+                                                                                        <th class="text-left" width="60">
+                                                                                            <div class="delete-with-checks">
+                                                                                                <div class="form-check">
+                                                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </th>
+                                                                                        <th class="text-center">Particulars</th>
+                                                                                        <th class="text-center">Increase in Profit</th>
+                                                                                        <th class="text-center">Decrease in Profit</th>
+                                                                                        <th class="text-center">
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodySeven')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </th>
+                                                                                    </tr>
+                                                                            </thead>
+                                                                            <tbody id="table_bodySeven">
+                                                                                <tr>
+                                                                                    <th class="text-left" width="60">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <td width="300">
+                                                                                        <input type="text" class="form-control">
+                                                                                    </td>
+                                                                                    <td width="300">
+                                                                                        <input type="text" class="form-control">
+                                                                                    </td>
+                                                                                    <td width="300">
+                                                                                        <input type="text" class="form-control">
+                                                                                    </td>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container">
+                                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                                <i class="fa-solid fa-trash"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>       
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="pl-4" width="1250">
+                                                                    (13d) <span class="pl-3"> Whether any adjustment is required to be made to the profits or loss for complying with the provisions of income computation and disclosure standards notified under section 145(2).</span>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="toggleTable yesButton set2 ">Yes</button>
+                                                                    <button class="toggleTable noButton set2">No</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- ======================= -->
+                                                <div class="content set2">
+                                                    <div class="accordion table-accordian" id="accordionExampleTwelve">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwo">
+                                                                <span class="pr-4">(13e)</span>If answer to (d) above is in the affirmative, give details of such adjustments.
+                                                            </button>
+                                                            </h2>
+                                                            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwelve">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive hideScrollbar">
+                                                                        <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                            <thead class="totalCount">
+                                                                                    <tr>
+                                                                                        <th class="text-left" width="60">
+                                                                                            <div class="delete-with-checks">
+                                                                                                <div class="form-check">
+                                                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </th>
+                                                                                        <th class="text-center">ICDS</th>
+                                                                                        <th class="text-center">Increase in Profit</th>
+                                                                                        <th class="text-center">Decrease in Profit</th>
+                                                                                        <th class="text-center">Net Effect</th>
+                                                                                        <th class="text-center">
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyEight')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </th>
+                                                                                    </tr>
+                                                                            </thead>
+                                                                            <tbody id="table_bodyEight">
+                                                                                <tr>
+                                                                                    <th class="text-left" width="60">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <td width="300">
+                                                                                        <select class="form-select" aria-label="Default select example">
+                                                                                            <option selected></option>
+                                                                                            <option value="1">I-Accounting Policies</option>
+                                                                                            <option value="2">II-Valuation of Inventories</option>
+                                                                                            <option value="3">III-Construction Contracts</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                    <td width="300">
+                                                                                        <input type="text" class="form-control">
+                                                                                    </td>
+                                                                                    <td width="300">
+                                                                                        <input type="text" class="form-control">
+                                                                                    </td>
+                                                                                    <td class="text-center">0</td>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container">
+                                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                                <i class="fa-solid fa-trash"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tbody class="totalCount">
+                                                                                <tr>
+                                                                                    <td></td>
+                                                                                    <th>Total <i class="fa-solid fa-angle-right"></i></th>
+                                                                                    <th class="text-center">0</th>
+                                                                                    <th class="text-center">0</th>
+                                                                                    <th class="text-center">0</th>
+                                                                                    <th></th>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>       
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ==================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleThirteen">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(13f)</span>Disclosure as per ICDS
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleThirteen">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead class="totalCount">
+                                                                            <tr>
+                                                                                <th class="text-left" width="60">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <th class="text-center">ICDS</th>
+                                                                                <th class="text-center">Disclosure</th>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container" width="50">
+                                                                                        <button class="success" onclick="create_tr('table_bodyNine')">
+                                                                                        <i class="fa fa-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyNine">
+                                                                            <tr>
+                                                                                <th class="text-left" width="60">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="300">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">I-Accounting Policies</option>
+                                                                                        <option value="2">II-Valuation of Inventories</option>
+                                                                                        <option value="3">III-Construction Contracts</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ====================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="pl-4" width="450">
+                                                                    (14a) <span class="pl-3"> Method of valuation of closing stock employed in the previous year</span>
+                                                                </th>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="pl-4" width=400>
+                                                                    <div class="form-check form-switch pl-4">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="">
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">At Cost</label>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="pl-3" width=400>
+                                                                    <div class="form-check form-switch">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="">
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">At Market rate</label>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="pl-3" width=400>
+                                                                    <div class="form-check form-switch">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="">
+                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Lower of Cost or Marker rate</label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- ======================= -->
+                                                <div class="accordion table-accordian" id="accordionExampleFifteen">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(14b)</span>In case of deviation from the method of valuation prescribed under section 145A, and the effect thereof on the profit or loss, please furnish:
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleFifteen">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead>
+                                                                            <tr class="totalCount">
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td class="text-center">
+                                                                                    <div class="form-check custome-check">
+                                                                                        <input class="form-check-input" type="checkbox" value="" id="checkbox1" data-target="group6">
+                                                                                        <label class="form-check-label" for="group1">Yes</label>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left">
+                                                                                        <div class="delete-with-checks">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input group6" type="checkbox" value="" id="flexCheckDefault"disabled>
+                                                                                            </div>
+                                                                                            <div>
+                                                                                                <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th class="text-center">Particulars</th>
+                                                                                    <th class="text-center">Increase in Profit</th>
+                                                                                    <th class="text-center">Decrease in Profit</th>
+                                                                                    <th class="text-center">
+                                                                                        <div class="action_container" width="50">
+                                                                                            <button class="success" onclick="create_tr('table_bodyTen')">
+                                                                                            <i class="fa fa-plus"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyTen">
+                                                                            <tr>
+                                                                                <th class="text-left">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input group6" type="checkbox" value="" id="flexCheckDefault"disabled>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control group6" disabled>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control group6" disabled>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control group6" disabled>
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ======================= -->
+                                                <div class="accordion table-accordian" id="accordionExampleSixteen">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(15)</span>Give the following particulars of the capital assets converted into stock in trade:-
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleSixteen">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead class="totalCount">
+                                                                            <tr>
+                                                                                <th class="text-left" width="60">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <th class="text-center">Description of capital asset</th>
+                                                                                <th class="text-center">Date of acquisition</th>
+                                                                                <th class="text-center">Cost of acquisition</th>
+                                                                                <th class="text-center">Amount at which the asset is converted into stock-in-trade</th>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container" width="50">
+                                                                                        <button class="success" onclick="create_tr('table_bodyEleven')">
+                                                                                        <i class="fa fa-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyEleven">
+                                                                            <tr>
+                                                                                <th class="text-left" width="60">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="date" class="form-control">
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ====================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleSeventeen">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(16)</span>Amounts not credited to the profit and loss account, being:-
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleSeventeen">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead class="totalCount">
+                                                                            <tr>
+                                                                                <th class="text-left pl-4">Particulars</th>
+                                                                                <th class="text-center">Description</th>
+                                                                                <th class="text-center">Amount</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyEleven">
+                                                                            <tr>
+                                                                                <td class="pl-4">
+                                                                                    The items falling within the scope section 28
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control text-right" value="0">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="pl-4" width="500">
+                                                                                    The proforma credits, drawbacks, refund of duty of customs or excise or service tax or refunds of sales tax or value added tax ,Goods and Service tax where such credits, drawbacks or refunds are admitted as due by the authorities concerned;
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">Performa credits</option>
+                                                                                        <option value="2">Drawbacks</option>
+                                                                                        <option value="3">Refunds of duty of Customs</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control text-right" value="0">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="pl-4">
+                                                                                    Escalation claims accepted during the previous year
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control text-right" value="0">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="pl-4">
+                                                                                    Any other item of income
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control text-right" value="0">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="pl-4">
+                                                                                    Capital receipt, if any
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control text-right" value="0">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead class="totalCount">
+                                                                            <tr>
+                                                                                <th class="text-center">Additional Particulars</th>
+                                                                                <th class="text-center"></th>
+                                                                                <th class="text-center"></th>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container" width="50">
+                                                                                        <button class="success" onclick="create_tr('table_bodyTwelve')">
+                                                                                        <i class="fa fa-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyTwelve">
+                                                                            <tr>
+                                                                                <td width="400">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">The proforma credits, drawbacks, refund of duty of customs or excise or service tax or refunds of sales tax or value added tax ,Goods and Service tax where such credits, drawbacks or refunds are admitted as due by the authorities concerned;</option>
+                                                                                        <option value="2">Capital receipt, if any</option>
+                                                                                        <option value="3">Escalation claims accepted during the previous year</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="300">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ====================== -->
+                                                <div class="accordion table-accordian" id="accordionExampleEighteen">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span class="pr-4">(17)</span>Where any land or building or both is transferred during the previous year for a consideration less than value adopted or assessed or assessable by any authority of a State Government referred to in section 43CA or 50C, please furnish:	
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleEighteen">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive hideScrollbar">
+                                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                        <thead class="totalCount">
+                                                                            <tr>
+                                                                                <th class="text-left" width="60">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <th class="text-center">Details of Propertyt</th>
+                                                                                <th class="text-center">Address Line 1</th>
+                                                                                <th class="text-center">Address Line 2</th>
+                                                                                <th class="text-center">PIN Code/ Zip Code</th>
+                                                                                <th class="text-center">City/Town</th>
+                                                                                <th class="text-center">State</th>
+                                                                                <th class="text-center">Country</th>
+                                                                                <th class="text-center">Consideration received or accrued</th>
+                                                                                <th class="text-center">Value adopted or assessed or assessable</th>
+                                                                                <th class="text-center">Whether provisions of second proviso to sub-section(1) of section 43CA or forth proviso to clause(x) of sub-section(2) of section 56 applicable ?</th>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container" width="50">
+                                                                                        <button class="success" onclick="create_tr('table_bodyThirteen')">
+                                                                                        <i class="fa fa-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="table_bodyThirteen">
+                                                                            <tr>
+                                                                                <th class="text-left" width="65">
+                                                                                    <div class="delete-with-checks">
+                                                                                        <div class="form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td width="150">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">Bihar</option>
+                                                                                        <option value="2">Assam</option>
+                                                                                        <option value="3">Arunachal Pradesh</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">India</option>
+                                                                                        <option value="2">Afganistan</option>
+                                                                                        <option value="3">Australia</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <input type="text" class="form-control">
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                        <option selected></option>
+                                                                                        <option value="1">India</option>
+                                                                                        <option value="2">Afganistan</option>
+                                                                                        <option value="3">Australia</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <th class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ====================== -->
+                                            </div> 
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- ==================Float Button===================== -->
+    <div id="floatingBtn">
+        <a href="./audit-consolidateSch-BP.html"><button class="bn632-hover bn18">Conso Sch BP</button></a>
+    </div>
+    <!--====================Import Modal Excel================================ -->
+  <div class="modal fade import-file-modal" id="importExcel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Import Deductor</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="file-upload">
+                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Import File</button>
+                    <div class="image-upload-wrap">
+                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  />
+                        <div class="drag-text">
+                        <h3>Drag and drop a file or select add file</h3>
+                        </div>
+                    </div>
+                    <div class="file-upload-content">
+                        <div class="image-title-wrap mt-4">
+                        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded File</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right text-msg">
+                    <h4>Don't have the Excel Template?</h4>
+                    <a href="#000">Click here to download</a>
+                </div>
+            </div>
+            <div class="modal-footer text-center d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifyEntry">Import File</button>
+            </div>
+        </div>
+    </div>
+  </div>
+    <script>
+        function toggleContent(set) {
+          const yesButtons = document.querySelectorAll(`.yesButton.${set}`);
+          const noButtons = document.querySelectorAll(`.noButton.${set}`);
+          const contents = document.querySelectorAll(`.content.${set}`);
+    
+          yesButtons.forEach(yesButton => {
+            yesButton.addEventListener('click', () => {
+              contents.forEach(content => (content.style.display = 'block'));
+              yesButtons.forEach(yesBtn => yesBtn.classList.add('toggleSelected'));
+              noButtons.forEach(noBtn => noBtn.classList.remove('toggleSelected'));
+            });
+          });
+    
+          noButtons.forEach(noButton => {
+            noButton.addEventListener('click', () => {
+              contents.forEach(content => (content.style.display = 'none'));
+              noButtons.forEach(noBtn => noBtn.classList.add('toggleSelected'));
+              yesButtons.forEach(yesBtn => yesBtn.classList.remove('toggleSelected'));
+            });
+          });
+        }
+    
+        // Toggle content for each set
+        toggleContent('set1');
+        toggleContent('set2');
+        // Add more sets as needed
+    </script>
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
+        checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', () => {
+            const targetClass = checkbox.getAttribute('data-target');
+            
+            const inputFields = document.querySelectorAll(`.${targetClass}`);
+            inputFields.forEach(inputField => {
+              inputField.disabled = !checkbox.checked;
+            });
+          });
+        });
+    </script>
+    <script>
+        function changeTab(tabNumber) {
+          document.querySelectorAll('.tab-data').forEach(function(content) {
+            content.classList.remove('active');
+          });
+          document.querySelectorAll('.tabBtn').forEach(function(tab) {
+            tab.classList.remove('active');
+          });
+      
+          document.getElementById('tab' + tabNumber + 'Content').classList.add('active');
+          document.querySelector('.tabBtn:nth-child(' + tabNumber + ')').classList.add('active');
+        }
+      </script>
+    <script>
+        function create_tr(table_id) {
+        let table_body = document.getElementById(table_id),
+            first_tr   = table_body.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_body.append(tr_clone);
+
+        clean_first_tr(table_body.firstElementChild);
+        }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+
+    function remove_tr(This) {
+        if(This.closest('tbody').childElementCount == 1)
+        {
+            alert("You don't have permission to Delete this row.");
+        }else{
+            This.closest('tr').remove();
+        }
+    }
+    </script>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../../js/dashboard-pack.js"></script> 
+<script src="../../js/dashboard.js"></script>
+
+</body>
+</html>
