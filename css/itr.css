@@ -626,7 +626,6 @@ html {
   }
   
   .tab-content {
-    border: 1px solid green;
     margin-top: .5rem;
   }
   #noButton, #yesButton{
@@ -1020,7 +1019,6 @@ input[type='date']:not(:focus):in-range::-webkit-datetime-edit-year-field,
     text-align: right;
 }
 .export-btn .btn-list a{
-    border: 1px solid green;
     padding: .4rem .6rem;
     display: inline-block;
     font-weight: 400;
@@ -1812,4 +1810,24 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   font-family: 'Montserrat', sans-serif;
   color: #000;
   letter-spacing: .5px;
+}
+.error-bullet{
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background-color: #e11f1f;
+}
+.table-responsive .table .error-desc{
+    color: #31719b;
+    font-weight: 600;
+    letter-spacing: .4px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: hover;
+}
+.table-responsive .table .module{
+  color: #000;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-family: 'Montserrat', sans-serif;
 }
