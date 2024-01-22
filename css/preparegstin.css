@@ -24,7 +24,7 @@
     gap: 10px;
 }
 #preparegstin .header-links .form-select{
-  font-size: 12px;
+  font-size: 12px!important;
   box-shadow: none;
   cursor: pointer;
 }
@@ -42,12 +42,15 @@
 .gstinSummary .norecordFound{
   font-size: 12px;
 }
-.table-responsive .thead th{
+.table-responsive .thead th,.table-responsive table th .dropdown-toggle{
   color:#3f6ad8!important;
+}
+.table-responsive table th .dropdown-toggle:hover{
+  text-decoration: underline;
+  background-color: transparent;
 }
 .table-responsive .dropdown-toggle{
   font-size: 10px;
-  background-color: #fff!important;
   color: #000!important;
   font-weight: 600;
   padding: 0;
@@ -63,6 +66,31 @@
   display: block;
   font-size: 11px;
 }
+.gstin3b_table .dropdown-menu{
+  position: absolute;
+    background-color: #f9f9f9;
+    max-width: 360px;
+    box-shadow: 0 7px 21px 5px rgba(0,0,0,.2);
+    /* white-space: break-spaces; */
+    border-radius: 4px;
+    top: 10px!important;
+}
+.gstin3b_table ul{
+  padding: 0px 15px;
+}
+.gstin3b_table li{
+  line-height: 15px;
+  margin: 5px 0;
+}
+.gstin3b_table .heading{
+  font-weight: 700;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+.gstin3b_table span{
+  font-weight: 500;
+  font-size: 9px;
+}
 .table-responsive tr:not(.thead) th{
   font-size: 10.2px;
 }
@@ -76,12 +104,19 @@
 .table-responsive .fa-eye{
   color: darkslategray;
 }
+.gstin3b .trBg{
+  background-color: #e0f3ff !important;
+
+}
 @media(max-width:768px){
   #preparegstin .steps{
     /* display: block; */
    }
    #preparegstin .steps div{
     flex-grow: 1;
+   }
+   #preparegstin .header-links-items .flex-row{
+    justify-content: center!important;
    }
 }
 .steps .count{
@@ -211,6 +246,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-top-right-radius: 4px!important;
   border-top-left-radius: 4px!important;
   background-color: #26ace3!important;
@@ -314,7 +350,8 @@
       height: auto;
     }
     .gstin3b .form-control, .gstin3b #table_body .form-select{
-      width: 100px;
+      min-width: 100px;
+      width: 100%;
   }
 }
 .custome-header-margin{
@@ -428,8 +465,8 @@
 .gstr_prepare .modal-title{
   font-size: 18px!important;
 }
-.gstr_prepare .modal-fullscreen .modal-content{
-  height: auto;
+.gstr_prepare .modal-fullscreen{
+  height: auto!important;
 }
 .gstr_prepare .modal-footer .btn{
   font-size: 13px;
@@ -681,7 +718,7 @@
         text-align: center;
      }
      .liability-breakup .download-btn{
-        margin-top: .5rem;
+        margin: 5px auto;
      }
      .liability-breakup .download-btn a{
        font-size: 10px;

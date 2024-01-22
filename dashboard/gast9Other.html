@@ -756,6 +756,8 @@
                                             <div class="download-btn mt-2 mt-md-0">
                                                 <a href="#000" class="">Export</a>
                                                 <a href="#000" class="">Import</a>
+                                                <a href="#000" data-bs-toggle="modal" data-bs-target="#gstr1_Modal">GSTR 1 - HSN Summary</a>
+                                                <a href="#000" class="">Populate HSN Summary from GSTR 1</a>
                                             </div>
                                         </div>
                                         <div class="table-responsive">
@@ -763,7 +765,7 @@
                                             <table class="_table align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <thead>
                                                     <tr>
-                                                        <th class="text-center">HSN </th>
+                                                        <th class="text-center">HSN</th>
                                                         <th>Description</th>
                                                         <th>UQC</th>
                                                         <th>Total Qty</th>
@@ -990,7 +992,7 @@
                 </div>
         </div>
     </div>
-    <!-- ===============================Mpdal======================================= -->
+    <!-- ===============================Modal======================================= -->
     <!-- ========================R9 / 10 Particulars of transc. for F.Y. declared in returns of next F.Y. till specified Prd ====================== -->
     <div class="modal fade" id="fyDeclaredNext" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -1082,7 +1084,46 @@
         </div>
     </div>
     <!-- ========================ITC Reversal Reported Under Section 4B of GSTR 3B====================== -->
-    <div class="modal fade" id="itcReversalGstr3B" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade gstr_prepare" id="gstr1_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">HSN Wise Summary of Outward Supplies</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="align-middle mb-0 table table-striped table-hover">
+                        <tbody>
+                            <tr>
+                                <th>HSN</th>
+                                <th>Description</th>
+                                <th>UQC</th>
+                                <th>Rate</th>
+                                <th>Qty</th>
+                                <th>Taxable Val</th>
+                                <th>IGST</th>
+                                <th>CGST</th>
+                                <th>SGST</th>
+                                <th>Cess</th>
+                            </tr>
+                            <tr>
+                                <td colspan="10">
+                                  <p class="norecordFound text-center">No records found!</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- GSTR-1 Modal -->
+    <div class="modal fade gstr_prepare" id="itcReversalGstr3B" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
             <div class="modal-header">

@@ -555,7 +555,7 @@
                                                                 <input type="text" class="form-control" placeholder="0.00">
                                                             </div>
                                                         </td>
-                                                        <td class="cardlink"><a href="#000" data-bs-toggle="modal" data-bs-target="#coveredAtoe">View</a></td>
+                                                        <td class="cardlink"><a href="#000" data-bs-toggle="modal" data-bs-target="#inwardSuppliesITC">View</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th></th>
@@ -675,7 +675,7 @@
                                                                 <input type="text" class="form-control" placeholder="0.00">
                                                             </div>
                                                         </td>
-                                                        <td class="cardlink"><a href="#000" data-bs-toggle="modal" data-bs-target="#suppliesRegisteredB2bRateWise">View</a></td>
+                                                        <td class="cardlink"><a href="#000" data-bs-toggle="modal" data-bs-target="#inwardSuppliesITC">View</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th></th>
@@ -767,7 +767,7 @@
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <th>E</th>
+                                                        <th>(E)</th>
                                                         <th>Import of Goods (including Supplies from SEZs)</th>
                                                         <td>
                                                             <div class="col">
@@ -794,7 +794,7 @@
                                                                 <input type="text" class="form-control" placeholder="0.00">
                                                             </div>
                                                         </td>
-                                                        <td class="cardlink"><a href="#000">View</a></td>
+                                                        <td class="cardlink"><a href="#000" data-bs-toggle="modal" data-bs-target="#suppliesRegisteredB2b">View</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th></th>
@@ -884,7 +884,7 @@
                                                                 <input type="text" class="form-control" placeholder="0.00">
                                                             </div>
                                                         </td>
-                                                        <td class="cardlink"><a href="#000">View</a></td>
+                                                        <td class="cardlink"><a href="#000" data-bs-toggle="modal" data-bs-target="#importITC_Modal">View</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th>(G)</th>
@@ -914,7 +914,7 @@
                                                                 <input type="text" class="form-control" placeholder="0.00">
                                                             </div>
                                                         </td>
-                                                        <td class="cardlink"><a href="#000">View</a></td>
+                                                        <td class="cardlink"><a href="#000"  data-bs-toggle="modal" data-bs-target="#importITC_Modal">View</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th>(H)</th>
@@ -1471,7 +1471,7 @@
                                                 <span> Other ITC Related Information</span>
                                             </div>
                                         </div>
-                                        <div class="table-responsive mt-2">
+                                        <div class="table-responsive">
                                             <table class="align-middle mb-0 table table-striped table-hover">
                                                 <tbody>
                                                     <tr class="text-center">
@@ -1817,6 +1817,281 @@
                 </div>
         </div>
     </div>
+    <!-- Modals -->
+    <!-- ========================Supplies made to Registered Person (B2B) ====================== -->
+<div class="modal fade gstr_prepare" id="suppliesRegisteredB2b" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Inward Supplies (Other than Imports and Inward Supplies liable to Reverse Charge but includes Services Received from SEZs)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="table-responsive">
+                <table class="align-middle mb-0 table table-striped table-hover">
+                    <tbody>
+                        <tr>
+                            <th>Section</th>
+                            <th>IGST</th>
+                            <th>CGST</th>
+                            <th>SGST</th>
+                            <th>Cess</th>
+                        </tr>
+                        <tr>
+                            <th>Inputs</th>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                        </tr>
+                        <tr>
+                            <th>Capital Goods</th>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                        </tr>
+                        <tr>
+                            <th>Input Services</th>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                            <td><span>-</span></td>
+                        </tr>
+                        <tr>
+                            <th><b>Total as per Books</b></th>
+                            <td><b>-</b></td>
+                            <td><b>-</b></td>
+                            <td><b>-</b></td>
+                            <td><b>-</b></td>
+                        </tr>
+                        <tr>
+                            <th><b>Total as per 3B (4 A(5))</b></th>
+                            <td><b>96,417.17</b></td>
+                            <td><b>32,407.95</b></td>
+                            <td><b>32,407.95</b></td>
+                            <td><b>0.00</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Inward Supplies on which tax is paid & ITC Availed -->
+<div class="modal fade gstr_prepare" id="inwardSuppliesITC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Inward Supplies Received from Unregistered Persons Liable to Reverse Charge (Other than B above) on which Tax is Paid & ITC Availed</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="table-responsive">
+                <table class="align-middle mb-0 table table-striped table-hover">
+                    <tbody>
+                        <tr>
+                            <th colspan="5" class="text-center">Total Inward Supplies Liable to RCM</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>IGST</th>
+                            <th>CGST</th>
+                            <th>SGST</th>
+                            <th>Cess</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Total as per 3B	
+                            </th>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Total as per 2B
+                            </th>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Total as per Books
+                            </th>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                            <td><span>0.00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Import of services and Ineligible ITC for the F.Y. -->
+<div class="modal fade gstr_prepare" id="importITC_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Import of Services (excluding Inward Supplies from SEZs)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="table-responsive">
+                <table class="align-middle mb-0 table table-striped table-hover">
+                    <tbody>
+                        <tr>
+                            <th class="text-center">Month</th>
+                            <th class="text-center">IGST</th>
+                            <th class="text-center">CGST</th>
+                            <th class="text-center">SGST</th>
+                            <th class="text-center">Cess</th>
+                        </tr>
+                       <tr>
+                            <th class="text-center">
+                                Apr-23
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                May-23
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Jun-23
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Jul-23
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Aug-23  
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Sep-23  
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Oct-23  
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Nov-23  
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Dec-23  
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Jan-24  
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Feb-24  
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                Mar-24  
+                            </th>
+                            <td class="text-center"><span>0.00</span></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><span>0.00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center"><b>Total as per 3B (4 A(2))</b></th>
+                            <td class="text-center" ><b>0.00</b></td>
+                            <td class="text-center"><b></b></td>
+                            <td class="text-center"><b></b></td>
+                            <td class="text-center"><b>0.00</b></td>
+                        </tr>
+                        <tr>
+                            <th class="text-center"><b>Total as per Books</b></th>
+                            <td class="text-center"><b>-</b></td>
+                            <td class="text-center"><b></b></td>
+                            <td class="text-center"><b></b></td>
+                            <td class="text-center"><b>-</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 <!-- ==========================JQuery================================ -->
