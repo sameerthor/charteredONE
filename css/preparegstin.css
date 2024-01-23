@@ -23,7 +23,7 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-#preparegstin .header-links .form-select{
+#preparegstin .header-links .form-select, .gstr_prepare .form-select{
   font-size: 12px!important;
   box-shadow: none;
   cursor: pointer;
@@ -45,7 +45,7 @@
 .table-responsive .thead th,.table-responsive table th .dropdown-toggle{
   color:#3f6ad8!important;
 }
-.table-responsive table th .dropdown-toggle:hover{
+.table-responsive table th .dropdown-toggle:hover,.table-responsive td .dropdown-toggle:hover{
   text-decoration: underline;
   background-color: transparent;
 }
@@ -56,6 +56,9 @@
   padding: 0;
   border: 0;
   white-space: break-spaces;
+}
+.table-responsive td .dropdown-toggle{
+  font-weight: 500;
 }
 .table-responsive .dropdown-toggle:hover,.table-responsive .dropdown-toggle:active{
   background-color: inherit!important;
@@ -81,11 +84,13 @@
 .gstin3b_table li{
   line-height: 15px;
   margin: 5px 0;
+  color: #000;
 }
 .gstin3b_table .heading{
   font-weight: 700;
   font-size: 11px;
   margin-bottom: 5px;
+  color: #000;
 }
 .gstin3b_table span{
   font-weight: 500;
@@ -94,7 +99,7 @@
 .table-responsive tr:not(.thead) th{
   font-size: 10.2px;
 }
-.gstin3b .form-control, .gstin3b #table_body .form-select{
+.gstin3b .form-control, .gstin3b #table_body .form-select,.gstr_prepare .form-select,.gstr_prepare .form-control{
     font-size: 10px;
     height: 24px;
     border-radius: 4px;
@@ -305,6 +310,7 @@
 }
 .gstin3b_container .gstin3b_detail .inrTxt{
   font-size: 13px;
+  margin-bottom: 10px;
 }
 .gstin3b_container .gstin3b_detail p{
   font-size: 12px;
@@ -461,9 +467,12 @@
 .gstr_prepare .modal-dialog.modal-fullscreen{
   width: 80%;
   margin: 20px auto;
+  max-width: 100%;
 }
 .gstr_prepare .modal-title{
   font-size: 18px!important;
+  color: #000;
+  font-weight: 600;
 }
 .gstr_prepare .modal-fullscreen{
   height: auto!important;
@@ -472,6 +481,9 @@
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.3px;
+}
+.gstr_prepare .btn-close{
+  box-shadow: none ;
 }
 @media(max-width:992px){
     .radio-links{
@@ -500,6 +512,9 @@
     background-color: #f0f4f9;
     padding:  .5rem 1rem;
     flex-wrap: wrap;
+}
+.edit-header .d-md-block .heading{
+  font-size: .9rem;
 }
 .edit-header .customeDropBox span{
     font-weight: 600;
@@ -532,7 +547,7 @@
 
 }
 .edit-header .custome-check .form-check-label{
-    font-size: .75rem;
+    font-size: .72rem;
     font-weight: 500;
     color: #000;
     letter-spacing: .5px;
@@ -555,8 +570,13 @@
 .edit-header select{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: .85rem;
+    font-size: .65rem;
     border: 1px solid #23232386;
+}
+.edit-header select:hover{
+  box-shadow: none;
+  cursor: pointer;
+  background-color: none;
 }
 .data-header{
     display: flex;
@@ -649,12 +669,12 @@
   .edit-data-box .table-responsive .table td{
     font-family: 'Montserrat', sans-serif;
     padding:  .2rem;
-    font-size: .78rem;
+    font-size: 10px;
   }
   .edit-data-box .table-responsive .table th{
     font-family: 'Montserrat', sans-serif;
     padding:  .2rem;
-    font-size: .8rem;
+    font-size: 10.2px;
   }
   .edit-data-box .table-responsive .table .form-control{
    border-radius: 2px;
@@ -664,8 +684,8 @@
    font-weight: 500;
    color: #000;
    font-family: 'Montserrat', sans-serif;
-   font-size: .75rem;
-   height: 1.8rem;
+   font-size: 10px;
+   /* height: 1.8rem; */
   }
   .edit-data-box .table-responsive .table .form-select{
     border-radius: 2px;
@@ -689,6 +709,10 @@
    }
    .table-responsive .table .totalCount{
     background-color: #fff8dc;
+    white-space: nowrap;
+  }
+  .table-responsive .table .totalCount td{
+    font-size: .68rem;
   }
    /* ================== */
    input[type='date']:not(:focus):in-range::-webkit-datetime-edit-year-field,

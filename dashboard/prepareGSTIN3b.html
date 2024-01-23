@@ -483,14 +483,16 @@
                         <h5>(B) Ledger balances</h5>
                         <p class="inrTxt"><i class="fa fa-inr"></i> 0.00</p>
                       </div>
+                      <div style="padding: 0 15px">
                       <div class="gstin3b_detail">
                         <h6>Credit Ledger</h6>
-                        <p class="inrTxt"><i class="fa fa-inr"></i> 0.00</p>
+                        <p><i class="fa fa-inr"></i> 0.00</p>
                       </div>
                       <div class="gstin3b_detail">
                         <h6>Cash Ledger</h6>
-                        <p class="inrTxt"><i class="fa fa-inr"></i> 0.00</p>
+                        <p><i class="fa fa-inr"></i> 0.00</p>
                       </div>
+                    </div>
                       <div>
                         <button>View Details</button>
                       </div>
@@ -1372,8 +1374,7 @@
                                 data-toggle="dropdown"
                                 aria-haspopup="true"
                                 aria-expanded="false"
-                                >B. Non-GST Inward supply</span
-                              >
+                                >B. Non-GST Inward supply</span>
                               <div class="dropdown-menu">
                                 <ul>
                                   <li>
@@ -1429,7 +1430,7 @@
     </div>
     <!-- ==========================Import book data modal====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="importBookData"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -1473,7 +1474,7 @@
     </div>
     <!-- ========================3.1 (e) Non-GST Outward Supplies modal ====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="nonGSToutward"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -1560,7 +1561,7 @@
     </div>
     <!-- ========================Outward Taxable Supplies (Other than Nil Rated, Exempt) ====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="outwardRateWise"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -1800,7 +1801,7 @@
     </div>
     <!-- ========================Inward Supplies (Liable to Reverse Charge) by GSTR 2B ====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="inwardSuppliesReverseCharge"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -1939,7 +1940,7 @@
     </div>
     <!-- ========================Outward Taxable Nill Rated modal modal ====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="outwardTaxableNillRated"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -2070,7 +2071,7 @@
     </div>
     <!-- ========================Outward Taxable zero rated modal modal ====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="outwardTaxableZeroRated"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -2201,7 +2202,7 @@
     </div>
     <!-- ========================Outward Section wise ====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="outwardSectionWise"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -2222,7 +2223,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="custome-btn-group my-2">
+            <div class="custome-btn-group download-btn my-2">
               <a href="#000" class="selected">Section Wise</a>
               <a
                 href="#000"
@@ -2398,13 +2399,13 @@
     </div>
     <!-- ========================Tax Liability ====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="taxLiability"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">
@@ -2418,7 +2419,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="table-responsive">
+            <div class="table-responsive gstin3b_table">
               <table class="align-middle mb-0 table table-striped table-hover">
                 <thead>
                   <tr>
@@ -2529,7 +2530,7 @@
     </div>
     <!-- ==========================Import book data modal====================== -->
     <div
-      class="modal fade"
+      class="modal fade gstr_prepare"
       id="importBookData"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
