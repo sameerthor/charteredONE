@@ -826,19 +826,32 @@
         border-radius: 4px;
       }
       .customeDropBox .dropItem{
-        border-right: none;
+        border-right: 1px solid #aaa;
         font-size: .8rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         letter-spacing: .5px;
       }
+      .customeDropBox .dropItem a:active{
+        background-color: #00bcd4;
+      }
+      .customeDropBox .dropItem .dropdown-item .form-check{
+        min-height: 0.5rem;
+      }
+      .customeDropBox .dropItem a{
+        border: 0;
+        font-size: 11px;
+      }
+      .customeDropBox .dropItem .dropdown-menu a{
+        font-size: 10px;
+      }
       .customeDropBox .dropItem:nth-of-type(1){
-        background-color: #ff5722;
+        background-color: #26ace3;
         color: #fff;
       }
-      .customeDropBox .dropItem:nth-of-type(1) a{
-        background-color: #ff5722;
-        color: #fff;
+      .customeDropBox .dropItem:nth-of-type(1) a,.viewgstBtn{
+        background-color: #26ace3!important;
+        color: #fff!important;
       }
       .twoATwobTable .qrmp a{
         color: #fca373;
