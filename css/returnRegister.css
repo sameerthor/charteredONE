@@ -171,6 +171,39 @@ body a:hover {
 .gstinSummary th.total {
   background-color: #e0f3ff;
 }
+/* Modal CSS */
+.gstr_prepare .modal-dialog.modal-fullscreen{
+  width: 80%;
+  margin: 20px auto;
+  max-width: 100%;
+}
+.gstr_prepare .modal-title{
+  font-size: 18px!important;
+  color: #000;
+  font-weight: 600;
+}
+.gstr_prepare .modal-fullscreen{
+  height: auto!important;
+}
+.gstr_prepare .modal-footer .btn{
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.gstr_prepare .btn-close{
+  box-shadow: none ;
+}
+.gstr_prepare .form-control{
+  font-size: 10px;
+  height: 24px;
+  border-radius: 4px;
+  box-shadow: none;
+  /* width: 100px; */
+}
+#sendMail.gstr_prepare .form-control{
+height: calc(2.25rem + 2px);
+font-size: 12px;
+}
 @media (max-width: 768px) {
   /* .monthwise-header{
         display:  block;
@@ -439,10 +472,11 @@ tr[aria-expanded="true"] .TL_accordion::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   gap: 5px;
-  width: 135px;
-  height: 80px;
+  width: 125px;
+  height: 85px;
   flex-wrap: wrap;
   cursor: pointer;
   padding: 6px 14px 6px 6px;
@@ -461,13 +495,13 @@ tr[aria-expanded="true"] .TL_accordion::before {
 }
 .quickLinksTabs .link_tab img {
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   line-height: 30px;
   font-size: 12px;
 }
 .quickLinksTabs .link_tab span{
-  font-size: 11px;
+  font-size: 0.65rem;
   font-weight: 600;
 }
 .MatchingContainer img {

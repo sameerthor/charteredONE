@@ -106,6 +106,10 @@
     box-shadow: none;
     /* width: 100px; */
 }
+#sendMail.gstr_prepare .form-control{
+  height: calc(2.25rem + 2px);
+  font-size: 12px;
+}
 .table-responsive .fa-eye{
   color: darkslategray;
 }
@@ -231,7 +235,7 @@
   background-color: #26ace3!important;
   color: #fff!important;
   font-size: 14px;
-  padding: 10px 20px;
+  padding: 10px;
   border-top-right-radius: 4px!important;
   border-top-left-radius: 4px!important;
 }
@@ -833,7 +837,7 @@
         letter-spacing: .5px;
       }
       .customeDropBox .dropItem a:active{
-        background-color: #00bcd4;
+        /* background-color: #00bcd4; */
       }
       .customeDropBox .dropItem .dropdown-item .form-check{
         min-height: 0.5rem;
@@ -848,6 +852,7 @@
       .customeDropBox .dropItem:nth-of-type(1){
         background-color: #26ace3;
         color: #fff;
+        border-right: none;
       }
       .customeDropBox .dropItem:nth-of-type(1) a,.viewgstBtn{
         background-color: #26ace3!important;
@@ -917,8 +922,13 @@
         align-items: center;
       }
       .supplier-check input{
-        padding: .45rem .45rem;
-        border: 2px solid #929191;
+        padding: 0.35rem 0.35rem;
+        border: 1px solid #929191;
+      }
+      .fyTxt{
+        color: #a1a1a1;
+        font-weight: 600;
+        margin-right: 8px;
       }
       /* ===========================Import modal========================= */
       /* =========================import modal================== */
@@ -1082,16 +1092,20 @@
     font-size: .75rem;
   }
   .header-checks .check-list .form-check .matched{
-    color: #34a853;
+    /* color: #34a853; */
+    color: #fff;
   }
   .header-checks .check-list .form-check .mis-matched{
-    color: #cd1c1f;
+    /* color: #cd1c1f; */
+    color: #fff;
   }
   .header-checks .check-list .form-check .book-only{
-    color: #cd87a9;
+    /* color: #cd87a9; */
+    color: #fff;
   }
   .header-checks .check-list .form-check .r1Only{
-    color: #5c8a7e;
+    /* color: #5c8a7e; */
+    color: #fff;
   }
   @media(max-width:768px){
     .header-checks{
