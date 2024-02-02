@@ -44,6 +44,7 @@
       href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../css/returnRegister.css" />
+    <link rel="stylesheet" href="../css/preparegstin.css">
     <!-- *******************Fontawesome***************************** -->
     <link
       rel="stylesheet"
@@ -333,51 +334,150 @@
                                 <div class="main-card mb-3 card">
                                     <div class="card-header header-links">
                                         <div class="header-links-items">
-                                            <span>All Matching Applications</span>
+                                            <span>GSTR-1 vs. Sales Register</span>
                                         </div>
                                     </div>
+                                    <div class="matchingContainer">
+                                        <div class="matchingLeftBox">
+                                    <div class="matchingHeader">
+                                        <div class="matchingText">
+                                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1588144894_gstr1_icon.svg" alt="anx2-icon" height="32px" width="32px"> GSTR-1
+                                        </div>
+                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Dec 20 - Feb 31</span></div>
+                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> Docs</span></div>
+                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO GSTR-1 DATA</div>
+                                    </div>
+                                    <div class="VS_img">
+                                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1582750135_group505.svg" alt="vs-Img">
+                                    </div>
+                                    <div class="matchingHeader">
+                                        <div class="matchingText">
+                                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1595250687_sales.png" alt="anx2-icon" height="32px" width="32px"> GSTR-1
+                                        </div>
+                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Dec 20 - Feb 31</span></div>
+                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> Docs</span></div>
+                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO SALES DATA</div>
+                                    </div>
+                                    <hr class="seperatorLine">
+                                </div>
+                                    <div class="selectDateBtn">
+                                        <button class="" data-toggle="modal" data-target="#selectDate">Select Dates</button>
+                                    </div>
+                                    </div>
+                                    <div id="matchingBlock">
                                     <div class="MatchingContainer">
-                                        <h6>Matching</h6>
                                         <div class="flex MatchingBlock">
-                                          <a href="./MatchingScreen.html" class="MatchingItem active">
-                                            <img
+                                          <a href="./all-client.html" class="MatchingItem active">
+                                            <img class="matchingImg"
                                               src="https://cleartax-media.s3.amazonaws.com/cleartax/images/1606914157_icon_small_matching_1vsr.png"
                                               alt="GSTR"
                                             />
-                                            <h5>GSTR-1 vs Sales Register</h5>
-                                            <span>Revalidate MMG1 with Sales Register and <br/>file GSTR-1</span>
+                                            <h5 class="matchingHead">GSTR-1 Data</h5>
+                                            <span class="matchingTxt">You need to download GSTR-1 data from GSTN to start matching</span>
+                                            <button class="download-btn"><img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608575654_subtractgstn.svg" height="14px" width="14px" alt="data_ico">Download data from GSTN&nbsp;</button>
                                           </a>
-                                          <a class="MatchingItem">
-                                            <img
+                                          <div class="dashedLine"></div>
+                                          <div class="matchingLine">
+                                           <span><i class="fa fa-code-compare"> </i> </span>Start Matching
+                                          </div>
+                                          <div class="dashedLine"></div>
+                                          <!-- <a class="MatchingItem">
+                                            <img class="matchingImg"
                                               src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1601282437_icon_small_matching_2avpr.png"
                                               alt="2A"
                                             />
-                                            <h5>2A vs PR GSTIN Matching</h5>
-                                            <span>Maximise ITC Claim<br/> Ensure Vendor Compliance</span>
+                                            <h5 class="matchingHead">2A vs PR GSTIN Matching</h5>
+                                            <span class="matchingTxt">Maximise ITC Claim<br/> Ensure Vendor Compliance</span>
                                           </a>
                                           <a class="MatchingItem">
-                                            <img
+                                            <img class="matchingImg"
                                               src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1606247708_2bvspr.png"
                                               alt="2B"
                                             />
-                                            <h5>2B vs PR GSTIN Matching</h5>
-                                            <span>Maximise ITC Claim<br/> Ensure Vendor Compliance</span>
-                                          </a>
-                                          <a class="MatchingItem">
-                                            <img
+                                            <h5 class="matchingHead">2B vs PR GSTIN Matching</h5>
+                                            <span class="matchingTxt">Maximise ITC Claim<br/> Ensure Vendor Compliance</span>
+                                          </a> -->
+                                            <a class="MatchingItem">
+                                            <img class="matchingImg"
                                               src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1600841701_8avpr.png"
                                               alt="GSTR9"
                                             />
-                                            <h5>GSTR9(8A) vs PR GSTIN<br/> Matching</h5>
-                                            <span>Ensure Compliance<br/> Revalidate & file GSTR 9</span>
+                                            <h5 class="matchingHead">Sales register</h5>
+                                            <span class="matchingTxt">You need to upload sales data to start matching</span>
+                                            <button class="upload-btn"><img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608575654_subtractgstn.svg" height="14px" width="14px" alt="data_ico">Download data from GSTN&nbsp;</button>
                                           </a>
                                         </div>
                                       </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+        </div>
+    </div>
+      <!-- ==========================Import book data modal====================== -->
+      <div class="modal fade  gstr_prepare" id="selectDate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Select Dates to filter GSTR-1 and Sales Register data for matching</h1>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="matching1_block">
+                <div>
+                    <div class="modal_title">
+                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1588144894_gstr1_icon.svg" alt=""><span>GSTR-1</span>
+                    </div>
+                    <div>
+                        <form class="row g-3">
+                            <div class="col-sm-6 col-xs-12">
+                              <label for="Return Period" class="form-label required" required>Return Period</label>
+                              <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-12 checkboxDD">
+                                <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                          </form>
+                    </div>
+                </div>
+              <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
+              <div class="downloadData">
+                <p>Download GSTR-1 data from GSTN Portal</p>
+                <button>Download GSTR-1 data</button>
+              </div>
+            </div>
+            <div class="matching2_block mt-4">
+                <div>
+                    <div class="modal_title">
+                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1595250687_sales.png" alt=""><span>GSTR-1</span>
+                    </div>
+                    <div>
+                        <form class="row g-3">
+                            <div class="col-sm-6 col-xs-12">
+                              <label for="Return Period" class="form-label required" required>Return Period</label>
+                              <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-12 checkboxDD">
+                                <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                          </form>
+                    </div>
+                </div>
+              <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
+              <div class="downloadData">
+                <p>Import More Sales Register</p>
+                <button>Import Sales Register</button>
+              </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn matchingBtn">Start Matching</button>
+            </div>
+          </div>
         </div>
     </div>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
