@@ -1269,17 +1269,17 @@
   }
   }
   @media(max-width:768px){
-    .header-checks{
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    }
-    .header-checks .check-list{
-       margin-top: .5rem;
-      }
-      .MatchingContainer .MatchingBlock{
-        flex-wrap: wrap;
-      }
+  .header-checks{
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+  }
+  .header-checks .check-list{
+      margin-top: .5rem;
+   }
+  .MatchingContainer .MatchingBlock{
+    flex-wrap: wrap;
+  }
   }
   @media(max-width:550px){
     .header-checks .check-list .form-check .form-check-label{

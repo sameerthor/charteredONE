@@ -129,6 +129,7 @@
                 </div>
             </div>
         </div>             
+<<<<<<< HEAD
         <!-- <div class="app-main">
                 <div class="app-sidebar sidebar-shadow">
                     <div class="app-header__logo">
@@ -290,6 +291,8 @@
                         </div>
                     </div> -->
                 <!-- </div> -->
+=======
+>>>>>>> SM
                 <!-- ===================Content====================== -->
                 <div class="app-main__outer custome-header-margin">
                     <div class="app-main__inner">
@@ -387,6 +390,7 @@
                                         </div>
                                     </div>
                                     <div class="main-heading mb-3">
+<<<<<<< HEAD
                                         <h4>Business Profession</h4>
                                     </div>                                  
                                     <div class="card-body">
@@ -1349,6 +1353,141 @@
                                              </div>
                                         </div>
                                     </div>
+=======
+                                        <h4>Trial Balance</h4>
+                                    </div>  
+                                    <div class="card-body">
+                                        <div class="row bussines-box">
+                                            <div class="col-lg-2 col-md-4 col-sm-6 mb-3 mb-md-0">
+                                                <div class="bussiness-item">
+                                                    <h2 class="businessName">OM Pharma SA</h2>
+                                                    <span>00001 - Share of Income from firm only</span>
+                                                    <span>Ordinary</span>
+                                                    <div class="link-group">
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#editBusiness"><i class="fa-regular fa-pen-to-square"></i></a>
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#importTrialBalanceData"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#deleteBusiness"><i class="fa-solid fa-trash-can"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-6 mb-3 mb-md-0">
+                                                <div class="bussiness-item">
+                                                    <h2 class="businessName">OM Pharma SA</h2>
+                                                    <span>00001 - Share of Income from firm only</span>
+                                                    <span>Ordinary</span>
+                                                    <div class="link-group">
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#editBusiness"><i class="fa-regular fa-pen-to-square"></i></a>
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#importTrialBalanceData"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#deleteBusiness"><i class="fa-solid fa-trash-can"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 col-md-4 col-sm-6 mb-3 mb-md-0">
+                                                <div class="bussiness-item add-business">
+                                                    <a href="#000" data-bs-toggle="modal" data-bs-target="#createBusiness"><i class="fa-solid fa-plus"></i></a>
+                                                    <a href="#000" data-bs-toggle="modal" data-bs-target="#createBusiness">Add Business</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body edit-data-box">
+                                        <div class="table-header closing-stock">
+                                            <div>
+                                                <span class="pr-2">Trial Balance Data  <i class="fa-solid fa-arrow-down"></i></span>
+                                                <a href="#000" data-bs-toggle="modal" data-bs-target="#consolidatedTrialBalance">(View Consolidated Trial Balance)</a>
+                                            </div>
+                                            <div class="closing-stock-item">
+                                                <p>Closing Stock:</p>
+                                                <div class="col-8">
+                                                    <input type="text" class="form-control" value="0.00">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive hideScrollbar">
+                                            <table class="_table align-middle mb-0 table  table-striped">
+                                                <thead>
+                                                    <tr class="totalCount">
+                                                        <th colspan="2"></th>
+                                                        <th colspan="3" class="text-center"> Current Year <a href="#000">[Difference: 0.00]</a></th>
+                                                        <th colspan="3" class="text-center"> Previous Year <a href="#000">[Difference: 0.00]</a></th>
+                                                    </tr>
+                                                </thead>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">S.N.</th>
+                                                        <th class="text-center">Particulars</th>
+                                                        <th class="text-center currentYr">KDK Group</th>
+                                                        <th class="text-center currentYr">Dr Amt</th>
+                                                        <th class="text-center currentYr">Cr Amt</th>
+                                                        <th class="text-center previousYr">KDK Group</th>
+                                                        <th class="text-center previousYr">Dr Amt</th>
+                                                        <th class="text-center previousYr">Cr Amt</th>
+                                                        <th class="text-center">
+                                                            <div class="action_container" width="50">
+                                                                <button class="success" onclick="create_tr('table_body')">
+                                                                <i class="fa fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="table_body">
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">
+                                                            <div class="col">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center currentYr">
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected></option>
+                                                                <option value="1">Branch/Divisions</option>
+                                                                <option value="2">Capital Account</option>
+                                                                <option value="3">Current Assets</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="text-center currentYr">
+                                                            <div class="col">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center currentYr">
+                                                            <div class="col">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center previousYr">
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected></option>
+                                                                <option value="1">Branch/Divisions</option>
+                                                                <option value="2">Capital Account</option>
+                                                                <option value="3">Current Assets</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="text-center previousYr">
+                                                            <div class="col">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center previousYr">
+                                                            <div class="col">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="action_container">
+                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>                                
+>>>>>>> SM
                                 </div>
                             </div>
                         </div>
@@ -1356,6 +1495,7 @@
                 </div>
         </div>
     </div>
+<<<<<<< HEAD
     <!-- =============================AIS Shares Modal===================================== -->
     <div id="floatingBtn">
         <a href="#000" data-bs-toggle="modal" data-bs-target="#aisShares"><button class="bn632-hover bn18">AIS-Shares</button></a>
@@ -1365,10 +1505,69 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="staticBackdropLabel">AIS - Shares</h1>
+=======
+    <!-- =============================Delete================================ -->
+    <div class="modal fade" id="deleteBusiness" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <p>By deleting business, Business Details and Trial Balance will be deleted for <strong>(Company Name) </strong> , Also Consolidated Sch. BP will be deleted. Are you sure to continue?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#000" class="btn btn-danger">Delete Any Way</a>
+                <a href="#000" data-bs-dismiss="modal" class="btn btn-secondary">Cancle</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- ================================ Import Trial Balance Data================================== -->
+    <div class="modal fade" id="importTrialBalanceData" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl aisShares">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Import Trial Balance Data</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <small class="small-format">Format Supported: .xls,.xlsx,.xlsm</small>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label pl-1" for="customFile">Trial Balance (CY) <span>*</span></label>
+                        <input type="file" class="form-control" id="customFile" />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label pl-1" for="customFile">List of Accounts <span>*</span></label>
+                        <input type="file" class="form-control" id="customFile" />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label pl-1" for="customFile">Trial Balance (PY) <span>*</span></label>
+                        <input type="file" class="form-control" id="customFile" />
+                    </div>
+                    <div class="text-center">
+                        <a href="#000" class="btn btn-info mr-2">Import</a>
+                        <a href="#000" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- ================================ Consolidated Trial Balance================================== -->
+    <div class="modal fade" id="consolidatedTrialBalance" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl aisShares">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Consolidated Trial Balance</h1>
+>>>>>>> SM
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="table-responsive hideScrollbar">
+<<<<<<< HEAD
                     <table class="_table align-middle mb-0 table  table-striped" border="1">
                         <thead>
                             <tr>
@@ -1403,11 +1602,180 @@
             </div>
             <div class="modal-footer">
               <a href="#000" data-bs-dismiss="modal"><button class="bn632-hover bn18">Dismiss</button></a>
+=======
+                    <table class="_table align-middle mb-0 table  table-striped">
+                        <thead>
+                            <tr class="totalCount">
+                                <th colspan="3"></th>
+                                <th colspan="2" class="text-center">Business Name Here <a href="#000">[Difference: 0.00]</a></th>
+                                <th colspan="2" class="text-center"></th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th class="text-center">S.N.</th>
+                                <th class="text-center">Particulars</th>
+                                <th class="text-center">KDK Group</th>
+                                <th class="text-center currentYr">Dr Amt</th>
+                                <th class="text-center currentYr">Cr Amt</th>
+                                <th class="text-center previousYr">Consolidated Dr Amt</th>
+                                <th class="text-center previousYr">Consolidated Cr Amt</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_body">
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center"><span>--</span></td>
+                                <td class="text-center"><span>--</span></td>
+                                <td class="text-center currentYr"><span>0.00</span></td>
+                                <td class="text-center currentYr"><span>0.00</span></td>
+                                <td class="text-center previousYr"><span>0.00</span></td>
+                                <td class="text-center previousYr"><span>0.00</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- =============================Edit Bussiness Modal===================================== -->
+    <div class="modal fade" id="editBusiness" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl aisShares">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Business Wise Details</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="SomeWhere">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="form-select" class="form-label pl-1">Select Type: <span>*</span></label>
+                            <select class="form-select" aria-label="Default select example" id="presumtiveEdit">
+                                <option selected></option>
+                                <option value="1">Ordinary</option>
+                                <option value="2">Specified</option>
+                                <option value="3">Speculative</option>
+                                <option value="4">Presumptive</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6" id="presumtiveLinkEdit">
+                            <label for="" class="form-label pl-1">Presumptive Type: <span>*</span></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">44AD</option>
+                                <option value="2">44ADA</option>
+                                <option value="3">44AE</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <label for="" class="form-label pl-1">Business Name <span>*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <label for="" class="form-label pl-1">Nature of Business <span>*</span></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">00001 - Share of Income from firm only</option>
+                                <option value="2">00001 - Share of Income from firm only</option>
+                                <option value="3">01002 - Growing and manufacturing of co</option>
+                                <option value="4">01002 - Growing and manufacturing of co</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <label for="" class="form-label pl-1">Description <span>*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <label for="" class="form-label pl-1">Trade  Name <span>*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center mb-3 mt-2">
+                    <a href="#000" class="btn btn-info mr-2">Done or Press Esc</a>
+                    <a href="#000" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</a>
+                </div>
+>>>>>>> SM
             </div>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
     <!--====================Import CG data================================ -->
+=======
+    <!-- =============================Add Bussiness Modal===================================== -->
+    <div id="floatingBtn">
+        <a href="#000" data-bs-toggle="modal" data-bs-target="#createBusiness"><button class="bn632-hover bn18">Add Business</button></a>
+    </div>
+    <div class="modal fade" id="createBusiness" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl aisShares">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Business Wise Details</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="SomeWhere">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="" class="form-label pl-1">Select Type: <span>*</span></label>
+                            <select class="form-select" aria-label="Default select example" id="presumtive">
+                                <option selected></option>
+                                <option value="1">Ordinary</option>
+                                <option value="2">Specified</option>
+                                <option value="3">Speculative</option>
+                                <option value="4">Presumptive</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6" id="presumtiveLink">
+                            <label for="" class="form-label pl-1">Presumptive Type: <span>*</span></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">44AD</option>
+                                <option value="2">44ADA</option>
+                                <option value="3">44AE</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <label for="" class="form-label pl-1">Business Name <span>*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <label for="" class="form-label pl-1">Nature of Business <span>*</span></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">00001 - Share of Income from firm only</option>
+                                <option value="2">00001 - Share of Income from firm only</option>
+                                <option value="3">01002 - Growing and manufacturing of co</option>
+                                <option value="4">01002 - Growing and manufacturing of co</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <label for="" class="form-label pl-1">Description <span>*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <label for="" class="form-label pl-1">Trade  Name <span>*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <a href="#000" class="btn btn-info mr-2">Done or Press Esc</a>
+                    <a href="#000" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--==================== Add bussines import modal ================================ -->
+>>>>>>> SM
   <div class="modal fade import-file-modal" id="importCGData" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1451,8 +1819,13 @@
             <div class="canvas-links">
                 <a href="./itr-salary.html" class="">Salary <i class="fa-solid fa-indian-rupee-sign"></i></a>
                 <a href="./house-property.html">House Property <i class="fa-solid fa-house-circle-check"></i></a>
+<<<<<<< HEAD
                 <a href="./bussiness-profession.html">Business Profession <i class="fa-solid fa-business-time"></i></a>
                 <a href="./capital-gain.html" class="selected">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
+=======
+                <a href="./bussiness-profession.html" class="selected">Business Profession <i class="fa-solid fa-business-time"></i></a>
+                <a href="./capital-gain.html" class="">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
+>>>>>>> SM
                 <a href="./other-sources.html">Other Sources <i class="fa-brands fa-sourcetree"></i></a>
                 <a href="./exempt-income.html">Exempt Income <i class="fa-solid fa-money-bill-transfer"></i></a>
                 <a href="./clubbing.html">Clubbing <i class="fa-solid fa-people-group"></i></a>
@@ -1464,6 +1837,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     
     <script>
         function create_tr(table_id) {
@@ -1496,6 +1870,31 @@
             This.closest('tr').remove();
         }
     }
+=======
+    <script>
+        var selectElement = document.getElementById('presumtiveEdit');
+
+        var hiddenDiv = document.getElementById('presumtiveLinkEdit');
+        selectElement.addEventListener('change', function() {
+          if (this.value === '4') {
+            hiddenDiv.style.display = 'block';
+          } else {
+            hiddenDiv.style.display = 'none';
+          }
+        });
+    </script>
+    <script>
+        var selectElement = document.getElementById('presumtive');
+
+        var hiddenDiv = document.getElementById('presumtiveLink');
+        selectElement.addEventListener('change', function() {
+          if (this.value === '4') {
+            hiddenDiv.style.display = 'block';
+          } else {
+            hiddenDiv.style.display = 'none';
+          }
+        });
+>>>>>>> SM
     </script>
     <script>
             function create_tr(table_id) {
@@ -1530,6 +1929,7 @@
         }
     </script>
     <!-- ================== -->
+<<<<<<< HEAD
     <script>
         function readURL(input) {
         if (input.files && input.files[0]) {
@@ -1565,6 +1965,8 @@
         });
     
     </script>
+=======
+>>>>>>> SM
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>

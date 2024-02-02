@@ -1,0 +1,307 @@
+
+.closed-sidebar.fixed-sidebar .app-main__outer{
+    padding: 0rem;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.app-header.header-shadow{
+    box-shadow: none;
+}
+.custome-header{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 3rem;
+    box-shadow: 5px 5px 10px #2323230d;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+.logo-src{
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: .8px;
+    text-decoration: none;
+    color: #000;
+}
+.logo-src:hover{
+    color: #000;
+    text-decoration: none;
+}
+.logo-src span{
+    color: #f5b402;
+    text-transform: uppercase;
+}
+@media(max-width:768px){
+    .custome-header{
+        padding: 1rem .5rem;
+    }
+}
+.breadcrums-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.breadcrums-box .bar a{
+    color: #26ace3;
+}
+.breadcrums-box .bar i{
+    font-size: 1.2rem;
+    color: #26ace3;
+}
+.custome-breadcrumbs{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.custome-breadcrumbs li{
+    font-weight: 400;
+    color: #000;
+    font-size: .85rem;
+}
+.header-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.header-item .flex-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-item .flex-item h4{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.header-item .flex-item .form-control{
+   width: 7.6rem;
+   margin-left: .8rem;
+   font-size: .85rem;
+   font-weight: 500;
+   letter-spacing: .5px;
+   height: 2rem;
+}
+.header-item .flex-item .form-control:focus{
+    border:1px solid #26ace3;
+    box-shadow:none;
+}
+.header-item .header-btn{
+    border-radius: 4px;
+    padding: .4rem .7rem;
+    font-size: .85rem;
+    letter-spacing: .5px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+.header-item a:nth-of-type(1){
+    background-color: #f5b402;
+}
+.header-item a:nth-of-type(2){
+    background-color: #26ace3;
+}
+@media(max-width: 768px){
+    .header-item{
+        flex-direction: column;
+    }
+    .header-item .flex-item{
+       width: 100%;
+       margin-top: 1rem;
+         }
+}
+@media(max-width: 600px){
+    .header-item .header-btn{
+        padding: .4rem .3rem;
+        font-size: .75rem;
+    }
+}
+.corporate-name{
+    display: flex;
+    align-items: center;
+    margin-top: .4rem;
+}
+.corporate-name span{
+    font-weight: 500;
+    letter-spacing: .4px;
+    font-size: .7rem;
+    margin-left: .5rem;
+}
+.addtional-margin{
+    padding-top: 10rem;
+}
+.custome-container{
+   margin: 0 5rem;
+   font-family: 'Montserrat', sans-serif;
+}
+.custome-container h4{
+   font-weight: 600;
+   font-size: 1.1rem;
+   margin-bottom: .5rem;
+   color: #000;
+ }
+ .custome-container p{
+    font-weight: 500;
+    font-size: .85rem;
+    margin-bottom: .5rem;
+    color: rgb(144, 144, 144);
+  }
+.custome-container .filterBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    margin-bottom: .5rem;
+}
+.custome-container .filterBox span{
+   font-weight: 500;
+   font-size: .8rem;
+   color: #000;
+   letter-spacing: .5px;
+}
+.custome-container .filterBox .indicator{
+    height: 1.4rem;
+    width: 1.4rem;
+    display: inline-block;
+    margin-right: 1rem;
+    border: 1px solid #232323;
+ }
+ .filterBox .indicatorBox{
+    display: flex;
+ }
+ .custome-container .filterBox .prepared {
+    background-color: #d1e7dd;
+ }
+ .custome-container .filterBox .difference {
+    background-color: #f8d7da;
+ }
+ .filterBox .form-check-input{
+    border: 1px solid #23232384;
+    border-radius: 0px;
+    width: 1rem;
+    height: 1rem;
+ }
+ .filterBox .form-check-input:focus{
+   box-shadow: none;
+   border: 1px solid #26ace3;
+ }
+ .filterBox .form-check label{
+   font-weight: 500;
+   font-size: .8rem;
+   color: #000;
+   letter-spacing: .5px;
+  }
+  @media(max-width: 991px){
+    .custome-container .filterBox{
+        flex-direction: column;
+    }
+    .filterBox .form-check{
+        margin-top: 1rem;
+    }
+    .custome-container .filterBox span{
+        font-size: .65rem;
+
+     }
+  }
+  .filterBox .form-check{
+   z-index: 1;
+ }
+  @media(max-width: 768px){
+    .addtional-margin{
+        padding-top: 14rem;
+    }
+    .custome-container{
+       margin: 0 .5rem;
+       font-family: 'Montserrat', sans-serif;
+    }
+    .filterBox .form-check label{
+        font-size: .7rem;
+       }
+
+  }
+
+  /* =========================================Accordian Table============================================ */
+  .table-responsive::-webkit-scrollbar {
+    display: none; 
+ }
+  .table-responsive th {
+    letter-spacing: .5px;
+  }
+  .table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-right-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    background-color: #26ace3;
+    color: #fff;
+    height: 2.5rem;
+    font-weight: 600;
+    font-size: 13px;
+    border-bottom: 0;
+  }
+  .table-header .headerFlexItem span {
+    text-transform: capitalize;
+  }
+  .tableAccordian td a,
+  .tableAccordian td span {
+    cursor: pointer;
+  }
+ 
+  
+  .tableAccordian th {
+    font-size: 11px !important;
+  }
+  .tableAccordian td,
+  .tableAccordian .table-body th {
+    font-size: 10px !important;
+  }
+  .max-width td {
+    width: 100px;
+    max-width: 100%;
+  }
+  .TL_accordion {
+    cursor: pointer;
+  }
+  tr .TL_accordion::before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 12px;
+    margin: 1px 4px 0 0;
+  }
+  .TL_accordionTable {
+    padding: 0;
+    margin: 0;
+  }
+  .TL_accordionrow {
+    padding: 0 !important;
+    margin: 0;
+  }
+  tr[aria-expanded="true"] .TL_accordion::before {
+    content: "\f106";
+    font-family: FontAwesome;
+    margin: 0 4px 0 0;
+  }
+  .openall,
+  .closeall {
+    cursor: pointer;
+  }
+  .closeall {
+    visibility: hidden;
+  }
+   /* ============================================================================================================ */
+   .table-responsive .table .data-width{
+        min-width: 20rem;
+        padding: .5rem;
+   }
+   .bg-grey{
+    background-color: #eaeaea;
+   }
+   .bg-white{
+    background-color: #fff;
+   }
