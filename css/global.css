@@ -70,6 +70,25 @@ html {
     font-size: 1.65rem;
     color: #fff;
 }
+.navbar .navbar-brand:hover{
+    color: #fff;
+}
+.navbar-toggler {
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-image: none;
+    
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
 .navbar .navbar-brand span{
    color: #f5b402;
 }
@@ -100,6 +119,37 @@ html {
     color: #fff;
     padding-left: .7rem;
 }
+.nav-item .dropdown-toggle:hover{
+	background-color: transparent;
+	color: #fff;
+}
+.nav-item .nav-link:hover{
+	background-color: transparent;
+	color: #fff ;
+}
+/*================== */
+.nav-btn{
+	border-radius: 4px;
+	padding: .1rem .4rem;
+	letter-spacing: .5px;
+	border: 1px solid #fff;
+}
+#loginBtn{
+	background-color: #323232;
+	color: #fff;
+	border: 1px solid #323232;
+}
+@media(max-width:991px){
+	.navbar-nav .nav-btn{
+		margin-bottom: 1rem;
+		display: inline-block;
+	}
+}
+@media(min-width:768px){
+	.navbar{
+		padding: .5rem 4rem;
+	}
+}
 /* ========================Footer================================ */
 .footer-row{
 	display: flex;
@@ -110,7 +160,7 @@ ul{
 }
 .footer{
 	background-color: #24262b;
-    padding: 70px 0;
+    padding: 70px 0 35px 0;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -182,7 +232,27 @@ ul{
         margin-bottom: 2rem;
     }
 }
-
+.addressBox{
+	color: #fff;
+	margin-top: .5rem;
+	font-size: .9rem;
+}
+.addressBox p{
+	line-height: 1.4;
+	font-size: 1rem;
+	color: #fff;
+}
+.copyRightText{
+	color: #fff;
+	text-align-last: center;
+	margin-top: 2rem;
+	border-top: 1px solid #fff;
+	padding-top: .8rem;
+}
+.copyRightText p{
+	font-size: .9rem;
+	letter-spacing: .5px;
+}
 #enquiry{
     position: fixed;
     bottom: 40%;
@@ -196,6 +266,7 @@ ul{
 	box-shadow: 5px 5px 10px #26ade3c3;
 	border-radius: 4px;
 	cursor: pointer;
+	z-index: 9999;
 }
 #enquiry a{
 	display: inline-block;

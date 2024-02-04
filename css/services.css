@@ -1,0 +1,166 @@
+#services{
+    margin-top: 5rem;
+}
+#services .tab-btn{
+    border: 1px solid #0dcaf0;
+    font-weight: 500;
+    letter-spacing: .5px;
+    border-radius: 4px;
+}
+#services .servicesBox{
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px #23232340;
+    transition: all .4s ease;
+}
+#services .servicesBox:hover{
+    transform: translate(0, -10px);
+    z-index: 9999;
+    background-color: #fffff4;
+}
+
+#services .servicesBox img{
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+.section-title{
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: .5px;
+}
+.section-para{
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+#services img{
+    border-radius: 20px;
+}
+
+.nav.nav-pills .nav-link.active { 
+    background-color:#0dcaf0;
+    color: #ffffff;
+}
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.text-colored{
+    color: #FF3131;
+}
+
+.nav-service-item{
+    color: #000000!important;
+}
+
+.text-start.nav-link.text-colored.nav-service-item.active{
+    color: #ffffff!important;
+    background-color: #0dcaf0;
+}
+
+#Compliances h4{
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+   display: flex;
+}
+#Compliances h4 span{
+    margin-right: .4rem;
+ }
+@media(max-width:600px){
+    #Compliances h4{
+       font-size: .95rem;
+     }
+}
+@media(max-width:600px){
+    .section-para{
+        font-weight: 500;
+        letter-spacing: .5px;
+        line-height: 1.4;
+        font-size: .9rem;
+    }
+}
+/* =======================Contact-us===================== */
+.contact{
+    padding: 1rem 0;
+}
+.contact h2{
+    text-align: center;
+    
+    margin-bottom: 1rem;
+}
+.contact p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.contact .contact-box{
+    display: flex;
+    align-items: center;
+}
+.contact .contact-box img{
+    max-width: 100%;
+    max-height: 35rem;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+.contact-box input{
+    display: block;
+    outline: none;
+    border: 1px solid #000;
+}
+.contact-box .input-text{
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.contact-box .text-box{
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    width: 100%;
+    min-height: 10rem;
+}
+input:focus { 
+    outline: none !important;
+    border: 1px solid #26ace3;
+    border-color: #26ace3;
+    box-shadow: 0 0 10px #26ade323;
+}
+textarea:focus { 
+    outline: none !important;
+    border: 1px solid #26ace3;
+    border-color: #26ace3;
+    box-shadow: 0 0 10px #26ade323;
+}
+.contact-box ::placeholder{
+   font-weight: 500;
+   color: #000;
+   font-size: .95rem;
+}
+ .contact-box .submit-btn{
+    text-align: center;
+  }
+  .contact-box .submit-btn .submit{
+    /* text-align: center; */
+    display: inline-block;
+    border-radius: 8px;
+    padding: .6rem 1rem;
+    font-weight: 500;
+    background-color: #26ace3;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
