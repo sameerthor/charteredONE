@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/preparegstin.css">
+    <link rel="stylesheet" href="../css/returnRegister.css" />
     <!-- *******************Fontawesome***************************** -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -133,7 +134,7 @@
             </div>
         </div>  
         <!-- ===================Content====================== -->
-        <div class="custome-header-margin">
+        <div class="custome-header-margin app-main__outer gstin3b" id="preparegstin">
                 <div class="app-main__inner">
                     <div class="row">
                         <div class="col-md-12">
@@ -143,6 +144,9 @@
                                         <a href="./gstinsummery.html"><i class="fa-solid fa-angle-left"></i> Back to Dashboard</a>
                                     </div>
                                     <div class="d-flex flex-row">
+                                        <p class="mt-1 fyTxt">
+                                            F.Y.
+                                        </p>
                                         <div class="mr-2">
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>2023 - 24</option>
@@ -151,7 +155,7 @@
                                                 <option value="3">2020 - 21</option>
                                             </select>
                                         </div>
-                                        <div>
+                                        <!-- <div>
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>March</option>
                                                 <option value="1">Apr</option>
@@ -166,29 +170,29 @@
                                                 <option value="10">Jan</option>
                                                 <option value="11">Feb</option>
                                             </select>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             
-                                <div class="card-body">
-                                    <div class="TwoAbtn">
-                                        <h4>Supplier Wise Reco: </h4>
-                                        <a href="./view-gst2A.html" class="selected">By 2A</a>
-                                        <a href="./view-gst2A2B.html" class="">By 2B</a>
-                                    </div>
-                                </div>
+                                <div class="card-body d-flex justify-content-center">
+                                    <h6 class="mt-1">Supplier Wise Reco:&nbsp;&nbsp;</h6>
+                                   <div class="TwoAbtne btn-group bookdata">
+                                       <a href="./view-gst2A.html" class="selected">By 2A</a>
+                                       <a href="./view-gst2B.html">By 2B</a>
+                                   </div>
+                               </div>
                                 <div class="card-body">
                                     <div class="edit-header">
-                                        <div class="customeDropBox">
+                                        <div class="customeDropBox btn-group bookdata">
                                             <div class="dropItem">
                                                 <a href="#000" class="btn">Annual</a>
                                             </div>
                                             <div class="customeDropdown dropItem">
                                                 <div class="dropdown">
-                                                    <button class="btn btn-primary dropdown-toggle custome-toggle" type="button" id="dropdownMenuButton"
+                                                    <a class="btne btn-primarye dropdown-toggle custome-toggle" type="button" id="dropdownMenuButton"
                                                     data-bs-toggle="dropdown" aria-expanded="false">
                                                     Quartely
-                                                    </button>
+                                                </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                         <li>
                                                             <a class="dropdown-item" href="#">
@@ -219,10 +223,10 @@
                                             </div>
                                             <div class="customeDropdown dropItem">
                                                 <div class="dropdown">
-                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                                    <a class="btne btn-primarye dropdown-toggle" type="button" id="dropdownMenuButton"
                                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                                   Monthaly
-                                                    </button>
+                                                   Monthly
+                                                </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                         <li>
                                                             <a class="dropdown-item" href="#">
@@ -301,18 +305,18 @@
                                             </div>
                                         </div>
                                         
-                                        <div class=" lists-btn">
-                                            <a href="#"><i class="fa-solid fa-arrow-down"></i> Monthly Data</a>
-                                            <a href="./supplierEmail.html"><i class="fa-regular fa-envelope"></i> To Suppliers</a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#sendMail"><i class="fa-regular fa-envelope"></i> Complete Data</a>
-                                            <a href="./2AInnovoiceWise.html">Invoice  Wise Reco</a>
+                                        <div class="lists-btne download-btn">
+                                            <a href="#" class="viewgstBtn"><i class="fa-solid fa-arrow-down"></i> Monthly Data</a>
+                                            <a href="./supplierEmail.html" class="viewgstBtn"><i class="fa-regular fa-envelope"></i> To Suppliers</a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#sendMail" class="viewgstBtn"><i class="fa-regular fa-envelope"></i> Complete Data</a>
+                                            <a href="./2AInnovoiceWise.html" class="viewgstBtn">Invoice  Wise Reco</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body gstinSummary">
                                     <div class="edit-data-box">
                                         <div>
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header monthwise-header">
                                                 <span>By 2B</span>
                                             </div>
                                             <div class="table-responsive hideScrollbar">
@@ -495,7 +499,7 @@
         </div>
     </div>
     <!-- =============================send email======================== -->
-    <div class="modal fade" id="sendMail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade gstr_prepare" id="sendMail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">

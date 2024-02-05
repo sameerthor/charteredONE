@@ -1,0 +1,193 @@
+.houseProperty ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 4px;
+}
+.houseProperty ul li{
+    border: 1px solid #ff9800;
+    border-radius: none!important;
+    min-width: 160px;
+    text-align: center;
+    padding: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: space-evenly!important;
+}
+.houseProperty ul li a{
+    color: #ff9800!important;
+
+}
+.houseProperty ul li.active,.houseProperty button.active{
+    color: #fff;
+    background-color: #ff9800;
+}
+.houseProperty ul li.active a{
+    color: #fff!important;
+
+}
+.houseProperty ul li span{
+    font-size: 11px;
+    color: #ff9800;
+}
+
+/* .houseProperty .addPropertyBtn{
+    border-radius: 50px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+    background-color: #ff9800;
+    color: #fff;
+    margin: auto 10px;
+    cursor: pointer;
+} */
+/* .houseProperty .addPropertyBtn i{
+    font-size: 12px;
+} */
+.houseProperty .addPropertyBtn:hover{
+    width: 22px;
+    height: 22px;
+    transition: 0.4s ease-in;
+}
+#PropertyDetails{
+    font-family: inherit!important;
+}
+#PropertyDetails.tab-content{
+       border: none!important;
+}
+#PropertyDetails form{
+    border: 1px solid #ff9800;
+    margin: 10px auto;
+    padding-bottom: 15px;
+    border-radius: 4px;
+}
+#PropertyDetails form legend,.AISBlock legend{
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset:6px;
+    text-decoration-thickness: 0.5px;
+    text-decoration-color:#ff9800;
+    color: #ff9800;
+    letter-spacing: 0.6px;
+}
+#PropertyDetails .tab-pane{
+    margin: 10px 0;
+}
+#PropertyDetails form label{
+    font-size: 11px;
+    color: #777171;
+    font-weight: 500;
+}
+#PropertyDetails form input:focus{
+   box-shadow: none;
+   background: none;
+}
+#PropertyDetails form input::placeholder{
+    font-size:11px;
+ }
+#PropertyDetails .required:after {
+    content:" *";
+    color: red;
+  }
+  #propertyTable.table{
+    border: 1px solid #ff9800;
+    border-radius: 4px;
+  }
+  #propertyTable table th{
+    font-size: 14px!important;
+    font-weight: 700!important;
+  }
+  #propertyTable table th,#propertyTable table td{
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+  }
+  #propertyTable table tr:nth-child(odd){
+   background-color:rgba(0,0,0,.03)
+  }
+  .house-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .selectTypeBlock{
+    margin-left: auto;
+    display: flex;
+  }
+  .selectTypeBlock p{
+    color:#ff9800;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .selectTypeBlock button{
+    outline-color: #31719b!important;
+    border-radius: 40px;
+    padding: 2px 19px 4px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #31719b;
+    color: #ff9800;
+    border: 1px solid #ff9800;
+  }
+  .AISBlock{
+    border: 1px solid #ff9800;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  .AISBlock legend{
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  .AISBlock p{
+    font-size: 13px;
+  }
+  #removeProperty .modal-footer{
+    padding: 5px;
+  }
+  #removeProperty p{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+  #removeProperty button{
+    border-radius: 50px;
+    min-width: 60px;
+    max-width: 100%;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
+  #removeProperty .cancelBtn{
+    background-color: #eee;
+    color:#000 ;
+  }
+
+  @media(max-width:768px) {
+    .selectTypeBlock{
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .selectTypeBlock p{
+        margin-bottom: 5px;
+    }
+    .selectTypeBlock button{
+        margin-bottom: 10px;
+    }
+  }
+  @media(max-width:356px){
+    .houseProperty ul li{
+        width: 100%;
+    }
+  }
+    

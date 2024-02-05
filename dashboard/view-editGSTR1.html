@@ -132,7 +132,7 @@
             </div>
         </div>  
         <!-- ===================Content====================== -->
-        <div class="app-main__outer custome-header-margin">
+        <div class="app-main__outer custome-header-margin gstin3b" id="preparegstin">
                 <div class="app-main__inner">
                     <div class="row">
                         <div class="col-md-12">
@@ -230,10 +230,12 @@
                                 <div class="card-body">
                                     <div class="edit-data-box">
                                         <div id="B2B" class="content-div">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>B2B</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -358,10 +360,12 @@
                                         </div>
                                         <!-- ======================== -->
                                         <div id="B2CS" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>B2CS</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -445,10 +449,12 @@
                                         </div>
                                         <!-- ===================== -->
                                         <div id="B2CL" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>B2CL</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -527,7 +533,7 @@
                                                         </tr>
                                                     </tbody>
                                                     <tbody>
-                                                        <tr class="totalCount">
+                                                        <tr class="totalCount heading">
                                                             <th colspan="1">Total <i class="fa-solid fa-angle-right"></i></th>
                                                             <td colspan="3">0</td>
                                                             <td>0.00</td>
@@ -542,10 +548,12 @@
                                         </div>
                                         <!-- ====================== -->
                                         <div id="CNDN" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>CN/DN Registered</span>
+                                                </div>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -675,10 +683,12 @@
                                                     </tbody> 
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
                                                 <span>CN/DN Unregistered</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -788,10 +798,12 @@
                                         </div>
                                         <!-- ========================== -->
                                         <div id="Export" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>Export</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -902,10 +914,12 @@
                                         </div>
                                         <!-- ====================== -->
                                         <div id="NillExemp" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>Nill, Exemp</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                     <thead>
                                                         <tr>
@@ -936,21 +950,57 @@
                                                         </tr>
                                                         <tr>
                                                             <th>Intra-State Supplies to Registered Persons</th>
-                                                            <td>0.00</td>
-                                                            <td>0.00</td>
-                                                            <td>0.00</td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <th>Inter-State Supplies to Un-registered Persons</th>
-                                                            <td>0.00</td>
-                                                            <td>0.00</td>
-                                                            <td>0.00</td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <th>Intra-State Supplies to Un-registered Persons</th>
-                                                            <td>0.00</td>
-                                                            <td>0.00</td>
-                                                            <td>0.00</td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0.00">
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     <tbody>
@@ -966,10 +1016,12 @@
                                         </div>
                                         <!-- ====================== -->
                                         <div id="AdvancesAmend" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>Advance Received</span>   
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1037,10 +1089,12 @@
                                                     </tbody>     
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
-                                                <span>Advance Adjusted</span>   
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
+                                                <span>Advance Adjusted</span> 
+                                            </div>  
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1108,10 +1162,12 @@
                                                     </tbody>     
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
                                                 <span>Advance Received Amendment</span>   
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1199,10 +1255,12 @@
                                                     </tbody>     
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
-                                                <span>AAdvance Adjusted Amendment</span>   
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
+                                                <span>AAdvance Adjusted Amendment</span> 
+                                            </div>  
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1293,10 +1351,12 @@
                                         </div>
                                         <!-- ====================== -->
                                         <div id="Amendments" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>B2B Amendment</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1430,10 +1490,12 @@
                                                     </tbody>     
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
                                                 <span>B2CS Amendment</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1541,10 +1603,12 @@
                                                     </tbody>     
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
                                                 <span>B2CL Amendment</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1647,10 +1711,12 @@
                                                     </tbody>     
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
                                                 <span>EXP Amendment</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1771,10 +1837,12 @@
                                                     </tbody>     
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
                                                 <span>CN / DN Registered Amendment</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -1916,10 +1984,12 @@
                                                     </tbody>     
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
                                                 <span>CN / DN Unregistered Amendment</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -2042,10 +2112,12 @@
                                         </div>
                                         <!-- ====================== -->
                                         <div id="B2CL" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>B2CL</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -2155,10 +2227,12 @@
                                         </div>
                                         <!-- ====================== -->
                                         <div id="HSNSummary" class="content-div hideBox">
-                                            <div class="custome-header">
+                                            <div class="custome-headere card-header liability-breakup bg-light">
+                                                <div>
                                                 <span>Doc Summary</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>
@@ -2234,10 +2308,12 @@
                                                     </tbody>    
                                                 </table>
                                             </div>
-                                            <div class="custome-header mt-5">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-5">
+                                                <div>
                                                 <span>HSN Summary</span>
                                             </div>
-                                            <div class="table-responsive hideScrollbar">
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr>

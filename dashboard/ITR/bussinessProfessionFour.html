@@ -1,0 +1,464 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/dashboardpack.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/itr.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>             
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer custome-header-margin">
+                    <div class="app-main__inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="custome-header">
+                                    <div>
+                                        <div class="header-item">
+                                            <span class="client-name" data-bs-toggle="tooltip" data-bs-placement="top" title="Adem Makaran">Adem Makarum</span>
+                                        </div>
+                                        <div>
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title=" PAN: DIIPM2226">DIIPM2226</span> |
+                                            <span class="header-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Status: Individual">Individual</span> |
+                                            <span class="header-link"><a href="./edit-client.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit Client Info">Residence <i class="fa-solid fa-user-pen" ></i></a></span> |
+                                            <span class="header-link"><a href="https://eportal.incometax.gov.in/iec/foservices/#/login" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="visit IT Portal">IT Portal <img src="../../images/itd-logo.png" height="20" width="28" alt=""></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="custome-dropdowm align-items-center">
+                                       <div class="custome-toggle">
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>PY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label new" for="flexSwitchCheckDefault"><strong>CY Regime: </strong> New</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label old" for="flexSwitchCheckDefault">Old</label>
+                                            </div>
+                                       </div>
+                                        <div class="filling-btn">
+                                            <a href="./e-filing.html">e-Filing</a>
+                                            <a href="./computation.html">Computation</a>
+                                        </div>
+                                        <div class="fy-year">
+                                            <span>A.Y. 2023-24</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="breadcrumbs breadcrumbs-top bg-light mb-3">
+                                        <a href="./client-master-ITR.html"><i class="fa-solid fa-angle-left"></i> Return to Client Master</a>
+                                    </div>
+                                    <div class="group-btn-box">
+                                        <div class="btn-item d-none d-md-flex">
+                                            <a href="./itr-salary.html">Salary</a>
+                                            <a href="./house-property.html">House Property</a>
+                                            <a href="./bussiness-profession.html" class="selected">Business Profession</a>
+                                            <a href="./capital-gain.html">Capital Gain</a>
+                                            <a href="./other-sources.html">Other Sources</a>
+                                            <a href="./exempt-income.html">Exempt Income</a>
+                                            <a href="./clubbing.html">Clubbing</a>
+                                            <a href="./dedection.html">Dedections</a>
+                                            <a href="./losses.html">Losses</a>
+                                            <a href="./schedule-pti.html">Schedule PTI</a>
+                                            <a href="./tax-details.html">Tax Details</a>
+                                            <a href="./schedule-vda.html">Schedule VDA</a>
+                                        </div>
+                                        <div class="offcanvas-btn d-md-none">
+                                            <a href="#000" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><i class="fa-solid fa-bars"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- =============== Stepper===================== -->
+                                    <div class="md-stepper-horizontal active orange">
+                                        <div class="md-step      done editable">
+                                            <a href="./bussiness-profession.html"><div class="md-step-circle"><span>1</span></div></a>
+                                            <a href="./bussiness-profession.html"><div class="md-step-title">Trial Balance</div></a>
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step editable">
+                                            <a href="./bussinessProfessionTwo.html"><div class="md-step-circle"><span>2</span></div></a>
+                                           <a href="./bussinessProfessionTwo.html"> <div class="md-step-title">Financial Statement</div></a>
+                                            <!-- <div class="md-step-optional">Optional</div> -->
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step editable">
+                                          <a href="./bussinessProfessionThree.html"><div class="md-step-circle"><span>3</span></div></a>
+                                          <a href="./bussinessProfessionThree.html"><div class="md-step-title">Consolidate Sch. BP</div></a>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step  active done">
+                                          <a href="./bussinessProfessionFour.html"><div class="md-step-circle"><span>4</span></div></a>
+                                          <a href="./bussinessProfessionFour.html"><div class="md-step-title">Business Information</div></a>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step editable">
+                                            <a href="./bussinessProfessionFive.html"><div class="md-step-circle"><span>4</span></div></a>
+                                            <a href="./bussinessProfessionFive.html"> <div class="md-step-title">Author Information</div></a>
+                                            <div class="md-step-bar-left"></div>
+                                            <div class="md-step-bar-right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="bussiness-info-btn">
+                                            <a href="./bussinessProfessionFour.html" class="selected">Basic Information</a>
+                                            <a href="./gst-details.html">GST Details</a>
+                                            <a href="./business-info-scheduleQd.html" class="">Shedule QD</a>
+                                        </div>
+                                        <div class="edit-data-box">
+                                            <div class="table-header bussiness-info-header">
+                                               <div class="mb-3 mb-md-0">
+                                                    <span>Date of Commencement of Business</span>
+                                               </div>
+                                               <div>
+                                                    <div class="col">
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                               </div>
+                                            </div>
+                                            <div class="bussiness-info-header term px-2 py-2">
+                                                <div class="mb-3 mb-md-0">
+                                                     <span class="">I have Unit in International Financial Services Centre (IFSC)/SEZ Branch, as referred to in sub-section (1A) of section 80LA</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="form-check mr-3">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                         Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                         No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <div class="table-responsive hideScrollbar">
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <thead>
+                                                        <tr class="totalCount">
+                                                            <th></th>
+                                                            <th>
+                                                                <div class="form-check custome-form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-center">Name of Unit</th>
+                                                            <th class="text-center">Flat/Door/Building</th>
+                                                            <th class="text-center">Road/Street/Block/Sector</th>
+                                                            <th class="text-center">PIN Code/ ZIP Code</th>
+                                                            <th class="text-center">Post Office	</th>
+                                                            <th class="text-center">Area/Locality</th>
+                                                            <th class="text-center">Town/City/District</th>
+                                                            <th class="text-center">State</th>
+                                                            <th class="text-center">Country</th>
+                                                            <th class="text-center">Sector</th>
+                                                            <th class="text-center">Sub Sector</th>
+                                                            <td>
+                                                                <div class="action_container" width="50">
+                                                                    <button class="success" onclick="create_tr('table_body')">
+                                                                    <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="table_body">
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>
+                                                                <div class="form-check custome-form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected></option>
+                                                                    <option value="1">Andhra Pradesh</option>
+                                                                    <option value="2">Uttar Pradesh</option>
+                                                                    <option value="3">Rajsthan</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected></option>
+                                                                    <option value="1">India</option>
+                                                                    <option value="2">Afganistan</option>
+                                                                    <option value="3">Australia</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected></option>
+                                                                    <option value="1">Sector 1</option>
+                                                                    <option value="2">Sector 2</option>
+                                                                    <option value="3">Sector 3</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected></option>
+                                                                    <option value="1">00001 - Share of Income from firm onl</option>
+                                                                    <option value="2">01001 - Growing and manufacturing of tea</option>
+                                                                    <option value="3">01002 - Growing and manufacturing of coffee</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <div class="action_container">
+                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                        <i class="fa-solid fa-trash"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>   
+                                            </div>  
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- =============================SIDE OFFCANVAS========================== -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header bg-light">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="canvas-links">
+                <a href="./itr-salary.html" class="">Salary <i class="fa-solid fa-indian-rupee-sign"></i></a>
+                <a href="./house-property.html">House Property <i class="fa-solid fa-house-circle-check"></i></a>
+                <a href="./bussiness-profession.html" class="selected">Business Profession <i class="fa-solid fa-business-time"></i></a>
+                <a href="./capital-gain.html" class="">Capital Gain <i class="fa-solid fa-chart-line"></i></a>
+                <a href="./other-sources.html">Other Sources <i class="fa-brands fa-sourcetree"></i></a>
+                <a href="./exempt-income.html">Exempt Income <i class="fa-solid fa-money-bill-transfer"></i></a>
+                <a href="./clubbing.html">Clubbing <i class="fa-solid fa-people-group"></i></a>
+                <a href="./dedection.html">Deductions <i class="fa-regular fa-money-bill-1"></i></a>
+                <a href="./losses.html">Losses <i class="fa-solid fa-chart-simple"></i></a>
+                <a href="./schedule-pti.html">Schedule PTI <i class="fa-solid fa-building-columns"></i></a>
+                <a href="./tax-details.html">Tax Details <i class="fa-solid fa-money-check-dollar"></i></a>
+                <a href="./schedule-vda.html">Schedule VDA <i class="fa-solid fa-person-circle-check"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeTab(tabNumber) {
+          document.querySelectorAll('.tab-data').forEach(function(content) {
+            content.classList.remove('active');
+          });
+          document.querySelectorAll('.tabBtn').forEach(function(tab) {
+            tab.classList.remove('active');
+          });
+      
+          document.getElementById('tab' + tabNumber + 'Content').classList.add('active');
+          document.querySelector('.tabBtn:nth-child(' + tabNumber + ')').classList.add('active');
+        }
+      </script>
+    <script>
+        function create_tr(table_id) {
+        let table_body = document.getElementById(table_id),
+            first_tr   = table_body.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_body.append(tr_clone);
+
+        clean_first_tr(table_body.firstElementChild);
+        }
+
+    function clean_first_tr(firstTr) {
+        let children = firstTr.children;
+        
+        children = Array.isArray(children) ? children : Object.values(children);
+        children.forEach(x=>{
+            if(x !== firstTr.lastElementChild)
+            {
+                x.firstElementChild.value = '';
+            }
+        });
+    }
+
+    function remove_tr(This) {
+        if(This.closest('tbody').childElementCount == 1)
+        {
+            alert("You don't have permission to Delete this row.");
+        }else{
+            This.closest('tr').remove();
+        }
+    }
+    </script>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../../js/dashboard-pack.js"></script> 
+<script src="../../js/dashboard.js"></script>
+
+</body>
+</html>

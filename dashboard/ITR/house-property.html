@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../../css/dashboardpack.css">
     <link rel="stylesheet" href="../../css/dashboard.css">
     <link rel="stylesheet" href="../../css/itr.css">
+    <link rel="stylesheet" href="../../css/house-property.css">
     <!-- *******************Fontawesome***************************** -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head> 
@@ -352,11 +353,342 @@
                                             <a href="#000" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><i class="fa-solid fa-bars"></i></a>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="main-heading">
-                                            <h4>House Property</h4>
+                                    <div class="card-body houseProperty">
+                                        <div class="house-header">
+                                        <ul class="nav nav-pills" id="list-Property">
+                                            <li class="flex" data-toggle="pill" href="#property_letout"><a>Property 1 <br/> <span>0.00</span></a><span><i class="fa fa-trash-can"  data-toggle="modal" data-target="#removeProperty" onclick="selectTab()"></i></span></li>
+                                            <li class="flex" data-toggle="pill" href="#property_letout"><a>Property 2 <br/> <span>0.00</span></a><span><i class="fa fa-trash-can" data-toggle="modal" data-target="#removeProperty" onclick="selectTab()"></i></span></li>
+                                            <li class="flex" data-toggle="pill" href="#property_deemed"><a>Property 3 <br/> <span>0.00</span></a><span><i class="fa fa-trash-can" data-toggle="modal" data-target="#removeProperty" onclick="selectTab()"></i></span></li>
+                                          </ul>
+                                          &nbsp;&nbsp;<p class="addPropertyBtn" onclick="addProperty()"><i class="fa fa-plus plusIcon"></i></p>&nbsp;&nbsp;
+                                          <div class="selectTypeBlock gap-2">
+                                            <p>Select Type: </p>
+                                            <div class="nav nav-pills">
+                                                <button class="" data-toggle="pill" href="#property_letout">
+                                                    Let Out
+                                                </button>&nbsp;
+                                                <button data-toggle="pill" href="#property_self">
+                                                   Self Occupied
+                                                </button>&nbsp;
+                                                <button data-toggle="pill" href="#property_deemed">
+                                                  Deemed Let Out
+                                                </button>&nbsp;
+                                            </div>
+                                          </div>
                                         </div>
+                                          <div class="row tab-content" id="PropertyDetails">
+                                            <div id="property_letout" class="col-sm-12 tab-pane in">
+                                                <form class="row g-3">
+                                                    <div class="row">
+                                                    <div class="col-sm-6 col-xs-12">
+                                                    <legend>Property Details</legend>
+                                                    </div>
+                                                    <div class="form-check form-switch col-sm-6 col-xs-12 text-right" id="toggleBtn">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="myCheck" onclick="coownerForm()" />
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Is the Property Co-owned?</label>
+                                                  </div>
+                                                    <!-- <label for="myCheck">Checkbox:</label> 
+                                                    <input type="checkbox" id="myCheck"> -->
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                      <label for="Address" class="form-label required" required>Address</label>
+                                                      <input type="text" class="form-control" id="Address">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
+                                                      <input type="number" class="form-control" id="PZ">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Town/City" class="form-label required" required>Town / City</label>
+                                                      <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="State" class="form-label required" required>State</label>
+                                                      <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Country" class="form-label required" required>Country</label>
+                                                        <input type="text" class="form-control" id="Country" placeholder="e.g. India">
+                                                      </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
+                                                      <input type="text" class="form-control" id="OOP" placeholder="e.g. Self">
+                                                    </div>
+                                                  </form>
+                                                  <form class="row g-3 coownedForm"  onsubmit="return false" style="display: none;">
+                                                    <legend>Co-owner Details</legend>
+                                                    <div class="row">
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Assessee % Share in Property" class="form-label">Assessee % Share in Property</label>
+                                                        <input type="text" class="form-control" id="ASIP" value="100.00" disabled>
+                                                      </div>
+                                                    <div class="col-sm-3 col-xs-12 mt-4">
+                                                        <input autocomplete="off" type="checkbox" checked id="select" class="mt-3"> <label for="100% benefit of Interest">100% benefit of Interest</label>
+                                                    </div>
+                                                </div>
+                                                    <div id="coownerRow">
+                                                        <div class="row coownerRowBlock mb-2">
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Co-owner Name" class="form-label required" required>Co-owner Name</label>
+                                                        <input type="text" class="form-control" id="CON">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="PAN" class="form-label required" required>PAN</label>
+                                                        <input type="text" class="form-control" id="PAN">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Aadhaar No" class="form-label">Aadhaar No</label>
+                                                        <input type="text" class="form-control" id="AN">
+                                                      </div>
+                                                      <div class="col-sm-2 col-xs-12">
+                                                        <label for="% of Property of Co-owner" class="form-label required" required>% of Property of Co-owner</label>
+                                                        <input type="text" class="form-control" id="POPOCO">
+                                                      </div>
+                                                      <div class="col-sm-1 col-xs-6 mt-4">
+                                                        <button class="" onclick="create_tr('coownerRow')" style="border: 0;background: none;">
+                                                            <i class="fa fa-plus plusIcon mt-2"></i>
+                                                        </button>
+                                                        <button class="" onclick="remove_tr(this)" style="border: 0;background: none;color: #ff9800;">
+                                                            <i class="fa-solid fa-trash-can mt-2"></i>
+                                                        </button>
+                                                      </div>
+                                                    </div>
+                                                    </div>
+                                                  </form>
+                                                  <form class="row g-3">
+                                                    <legend>Tenant Details</legend>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Actual Rent Received / Receivable" class="form-label required" required>Tenant Name</label>
+                                                      <input type="text" class="form-control" id="ARRR">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="PAN" class="form-label">PAN</label>
+                                                        <input type="text" class="form-control" id="PAN">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Aadhaar No" class="form-label">Aadhaar No</label>
+                                                        <input type="text" class="form-control" id="Aadhaar No">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="PAN/TAN(if TDS credit is claimed)" class="form-label">PAN/TAN(if TDS credit is claimed)</label>
+                                                        <input type="text" class="form-control" id="PT">
+                                                      </div>
+                                                  </form>
+                                                  <form class="row g-3">
+                                                    <legend>Actual Rent Received / Receivable during the Year</legend>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Tenant Name" class="form-label required" required>Actual Rent Received / Receivable</label>
+                                                      <input type="text" class="form-control" id="TN">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Let Out Prd" class="form-label required" required>Let Out Prd</label>
+                                                        <input type="text" class="form-control" id="LOP" placeholder="e.g. 1">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Vacancy Prd" class="form-label">Vacancy Prd</label>
+                                                        <input type="text" class="form-control" id="Vacancy Prd" placeholder="e.g. 1">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Self Occupied Prd" class="form-label">Self Occupied Prd</label>
+                                                        <input type="text" class="form-control" id="SOP" placeholder="e.g. 1">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Unrealized Rent" class="form-label">Unrealized Rent</label>
+                                                        <input type="text" class="form-control" id="UR">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Municipal Taxes" class="form-label">Municipal Taxes</label>
+                                                        <input type="text" class="form-control" id="MT">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Arrear or Unrealized Rent Rcvd" class="form-label">Arrear or Unrealized Rent Rcvd</label>
+                                                        <input type="text" class="form-control" id="AOURR">
+                                                      </div>
+                                                  </form>
+                                                  <form class="row g-3">
+                                                    <legend>Interest Payable on Borrowed Capital</legend>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="PAN/TAN (if TDS credit is claimed)" class="form-label required" required>PAN/TAN  (if TDS credit is claimed)</label>
+                                                      <input type="date" class="form-control" id="P/T">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Total Preconstruction Interest" class="form-label">Total Preconstruction Interest</label>
+                                                        <input type="text" class="form-control" id="TPI">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Current Year Interest on Borrowed Capital" class="form-label">Current Year Interest on Borrowed Capital</label>
+                                                        <input type="text" class="form-control" id="CYIOBC">
+                                                      </div>
+                                                  </form>
+                                            </div>
+                                            <div id="property_self" class="col-sm-12 tab-pane in">
+                                                <form class="row g-3">
+                                                    <div class="d-flex justify-content-center w-100">
+                                                    <legend>Property Details</legend>
+                                                    <!-- <div>Is the Property Co-owned?</div> -->
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                      <label for="Address" class="form-label required" required>Address</label>
+                                                      <input type="text" class="form-control" id="Address">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
+                                                      <input type="number" class="form-control" id="PZ">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Town/City" class="form-label required" required>Town / City</label>
+                                                      <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="State" class="form-label required" required>State</label>
+                                                      <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Country" class="form-label required" required>Country</label>
+                                                        <input type="text" class="form-control" id="Country" placeholder="e.g. India">
+                                                      </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
+                                                      <input type="text" class="form-control" id="OOP" placeholder="e.g. Own">
+                                                    </div>
+                                                  </form>
+                                                  <form class="row g-3">
+                                                    <legend>Actual Rent Received / Receivable during the Year</legend>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Arrear or Unrealized Rent Rcvd" class="form-label required" required>Arrear or Unrealized Rent Rcvd</label>
+                                                        <input type="text" class="form-control" id="AOURR">
+                                                      </div>
+                                                  </form>
+                                                  <form class="row g-3">
+                                                    <legend>Interest Payable on Borrowed Capital</legend>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Date of Completion of Construction" class="form-label required" required>Date of Completion of Construction</label>
+                                                      <input type="date" class="form-control" id="DOCOC">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Total Preconstruction Interest" class="form-label required" required>Total Preconstruction Interest</label>
+                                                        <input type="text" class="form-control" id="TPI">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Current Year Interest on Borrowed Capital" class="form-label required" required>Current Year Interest on Borrowed Capital</label>
+                                                        <input type="text" class="form-control" id="CYIOBC">
+                                                      </div>
+                                                  </form>
+                                            </div>
+                                            <div id="property_deemed" class="col-sm-12 tab-pane in">
+                                                <form class="row g-3">
+                                                    <div class="d-flex justify-content-center w-100">
+                                                    <legend>Property Details</legend>
+                                                    <!-- <div>Is the Property Co-owned?</div> -->
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                      <label for="Address" class="form-label required" required>Address</label>
+                                                      <input type="text" class="form-control" id="Address">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
+                                                      <input type="number" class="form-control" id="PZ">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Town/City" class="form-label required" required>Town / City</label>
+                                                      <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="State" class="form-label required" required>State</label>
+                                                      <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Country" class="form-label required" required>Country</label>
+                                                        <input type="text" class="form-control" id="Country" placeholder="e.g. India">
+                                                      </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
+                                                      <input type="text" class="form-control" id="OOP" placeholder="e.g. Own">
+                                                    </div>
+                                                  </form>
+                                                  <form class="row g-3">
+                                                    <legend>Lettable / Actual Rent Received / Receivable Value</legend>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Actual Rent Received / Receivable" class="form-label required required" required>Actual Rent Received / Receivable</label>
+                                                      <input type="text" class="form-control" id="ARR">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Unrealized Rent" class="form-label required" required>Unrealized Rent</label>
+                                                        <input type="text" class="form-control" id="UR">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Municipal Taxes" class="form-label required" required>Municipal Taxes</label>
+                                                        <input type="text" class="form-control" id="MT">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Arrear or Unrealized Rent Rcvd" class="form-label required" required>Arrear or Unrealized Rent Rcvd</label>
+                                                        <input type="text" class="form-control" id="AOURR">
+                                                      </div>
+                                                  </form>
+                                                  <form class="row g-3">
+                                                    <legend>Interest Payable on Borrowed Capital</legend>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Date of Borrowing" class="form-label required" required>Date of Borrowing</label>
+                                                        <input type="date" class="form-control" id="DOCOC">
+                                                      </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                      <label for="Date of Completion of Construction" class="form-label required" required>Date of Completion of Construction</label>
+                                                      <input type="date" class="form-control" id="DOCOC">
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-12">
+                                                        <label for="Total Preconstruction Interest" class="form-label">Total Preconstruction Interest</label>
+                                                        <input type="text" class="form-control" id="TPI">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Current Year Interest on Borrowed Capital" class="form-label">Current Year Interest</label>
+                                                        <input type="text" class="form-control" id="CYIOBC">
+                                                      </div>
+                                                      <div class="col-sm-3 col-xs-12">
+                                                        <label for="Interest for Repair / Renewable / Recon" class="form-label">Interest for Repair / Renewable / Recon</label>
+                                                        <input type="text" class="form-control" id="IFR">
+                                                      </div>
+                                                  </form>
+                                            </div>
+                                            <!-- <div id="property2" class="tab-pane fade">
+                                              <h3>Menu 1</h3>
+                                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                          </div> -->
                                     </div>
+                                    <div class="table table-responsive" id="propertyTable">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">2024-25</th>
+                                                    <th scope="col">2023-24</th>
+                                                  </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">Gross Annual Value</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">Gross Annual Value</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">Gross Annual Value</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                  </tr>
+                                            </tbody>
+                                        </table>
+                                      </div>
+                                        <div class="AISBlock">
+                                            <form class="row g-3">
+                                                <legend>AIS/26AS</legend>
+                                                    <p class="ml-auto mb-0 mt-2">No AIS data available for this section as of now. We will display the AIS data here once it will be available on ITR Portal !!</p>
+                                            </form>
+                                        </div>
                                     <!-- =============================== -->
                                 </div>
                             </div>
@@ -365,6 +697,21 @@
                 </div>
         </div>
     </div>
+    <!-- =====================Property Remove Modal================================= -->
+    <div class="modal fade" tabindex="-1" id="removeProperty" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <p>Are you sure you want to delete this property ?</p>
+             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary cancelBtn" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-danger">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     <!-- =============================SIDE OFFCANVAS========================== -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header bg-light">
@@ -388,6 +735,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <script>
              // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
@@ -422,12 +770,59 @@
 	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
     });
 	
+    function coownerForm() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementsByClassName("coownedForm");
+    for (var i=0;i<text.length;i+=1){
+        if (checkBox.checked == true){
+        text[i].style.display = "flex";
+    } else {
+        text[i].style.display = "none";
+    }
+    }
+}
+    function create_tr(table_id) {
+        let table_body = document.getElementById(table_id),
+            first_tr   = table_body.firstElementChild
+            tr_clone   = first_tr.cloneNode(true);
+
+            table_body.append(tr_clone);
+
+        clean_first_tr(table_body.firstElementChild);
+    }
+    function remove_tr(This) {
+        if(This.closest('.coownerRowBlock') == 1)
+        {
+            alert("You don't have permission to Delete this row.");
+        }else{
+            This.closest('.coownerRowBlock').remove();
+        }
+    }
+    
+
+ 
 	
 	/* Extra class "tab_last" 
 	   to add border to right side
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
 	
+    // Add Property
+    function addProperty(){
+        var ul = document.getElementById('list-Property');
+        var li = document.createElement("li");
+        li.className='flex';
+        // for(i=0;i<=10;i++){
+        li.innerHTML=`<a data-toggle="pill" href="#property1">Property ${2} <br/> <span>0.00</span></a><span><i class="fa fa-trash-can"></i></span>`
+        // }
+        ul.appendChild(li);
+    }
+    function selectTab(){
+        var list = document.getElementById('list-Property');
+        var classAdd = document.getElementsByTagName('li');
+        classAdd.classList.remove('active')
+        console.log(classAdd);
+    }
     </script>
     <script>
         const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
@@ -479,6 +874,9 @@
                 $('.removeclass'+rid).remove();
             }
     </script>
+=======
+    
+>>>>>>> SM
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
