@@ -96,11 +96,11 @@ body a:hover{
 }
 .breadcrumbs a{
   text-decoration: none;
-  font-weight: 400;
   color: #3f6ad8;
   letter-spacing: .5px;
   display: inline-block;
-  font-size: .85rem;
+  font-size: .88rem;
+  font-weight: 600;
 }
 .para{
     padding: .5rem;
@@ -212,6 +212,25 @@ body a:hover{
   color: #ffffff;
   font-weight: 500;
 }
+#allDeductor table a{
+  font-weight: 700;
+}
+.tdsDeductorBlock .table-header,.tdsDeductorBlock .header-item,.tdsCertificate .header-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border-top-right-radius: 4px !important;
+  border-top-left-radius: 4px !important; */
+  background-color: #26ace3;
+  color: #fff;
+  height: 2.5rem;
+  font-weight: 600;
+  font-size: 13px;
+  border-bottom: 0;
+}
+.tdsDeductorBlock .header-item a{
+  color: #fff;
+}
 @media(max-width:992px){
   .import-sheet{
     flex-direction: column;
@@ -222,7 +241,7 @@ body a:hover{
 /* =========================import modal================== */
 .file-upload {
   background-color: #ffffff;
-  width: 600px;
+  /* width: 600px; */
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -273,14 +292,17 @@ body a:hover{
 
 .image-upload-wrap {
   margin-top: 20px;
-  border: 4px dashed #26ace3;
+  border: 2px dashed #26ace3;
   position: relative;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
   background-color: #26ace3;
-  border: 4px dashed #ffffff;
+  border: 2px dashed #ffffff;
+}
+.image-upload-wrap:hover .drag-text h4{
+  color: #fff;
 }
 .image-title-wrap {
   padding: 0 15px 15px 15px;
@@ -291,11 +313,13 @@ body a:hover{
   text-align: center;
 }
 
-.drag-text h3 {
-  font-weight: 100;
+.drag-text h4 {
+  font-weight: 400;
   text-transform: uppercase;
   color: #15824B;
-  padding: 60px 0;
+  padding: 70px 0;
+  font-size: 20px;
+  margin: 0;
 }
 
 .file-upload-image {
@@ -370,7 +394,7 @@ body a:hover{
   background-color: #f2f2f2;
 }
 .header-item span{
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 @media(max-width:768px){
   .header-item{
@@ -391,12 +415,14 @@ body a:hover{
   flex-wrap: wrap;
   font-weight: 500;
   letter-spacing: .5px;
+  line-height: 22px;
 }
 .group-btn a{
   border: 1px solid #999;
-  padding: .4rem 1rem;
+  padding: 0.4rem 0.85rem;
   text-decoration: none;
   outline: none;
+  font-size: 13px;
 }
 .group-btn .due{
  color: #5676ff;
@@ -418,6 +444,31 @@ body a:hover{
   border-right: none;
   border-left: none;
 }
+#preparegstin .form-select,.header-item .form-select{
+  font-size: 11px!important;
+  box-shadow: none;
+  cursor: pointer;
+}
+.custome-table table a i{
+  font-size: 14px;
+}
+.tdsModal .modal-dialog{
+  max-width: 70%!important;
+}
+.tdsModal .btn-close{
+  box-shadow: none;
+  outline: none;
+}
+.tdsModal .modal-footer button,.verifyPan,.submitBtn{
+  padding: 8px 15px;
+  font-weight: 600;
+}
+.tdsModal input{
+  font-size: 14px;
+}
+.tdsModal .form-select{
+  font-size: 13px;
+}
 @media(max-width:768px){
   .group-btn{
     flex-direction: column;
@@ -434,7 +485,20 @@ body a:hover{
   font-weight: 600;
   color: #000;
   letter-spacing: .5px;
-  font-size: 1.45rem;
+  font-size: 1.35rem;
+}
+.tdsCertificate .rounded-circle{
+  font-weight: 600;
+}
+.tdsCertificate .form-select{
+  font-size: 14px;
+}
+.tdsCertificate .issueSteps .stepper h5{
+  font-size: 18px;
+  font-weight: 600;
+}
+.tdsCertificate .card-body a{
+  font-weight: 600;
 }
 /* =======================Create neww Return modal==================== */
 #createNewReturn .col-form-label{
@@ -512,7 +576,9 @@ body a:hover{
 .canvas-btn{
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 .canvas-btn a{
  padding: .35rem 1rem;
@@ -522,6 +588,7 @@ body a:hover{
  text-decoration: none;
  outline: none;
  color: #fff;
+ font-size: 0.75rem;
 }
 .canvas-btn a:nth-of-type(1){
   background-color: #26ace3;
@@ -940,11 +1007,12 @@ nav .breadcrumb a{
  }
  .certificate-btn a{
   border: 1px solid #999;
-  padding: .5rem 1rem;
+  padding: 0.5rem 0.85rem;
   display: inline-block;
   border-radius: 4px;
   font-weight: 500;
   color: #3f6ad8;
+  font-size: 13px;
  }
  @media(max-width:768px){
   .certificate-btn a{
@@ -956,17 +1024,18 @@ nav .breadcrumb a{
   .line {
     width: 2px;
     background-color: lightgrey !important;
+    height: 72%!important;
   }
   .lead {
-    font-size: 1.1rem;
+    font-size: 0.90rem;
   }
 }
 .raiseRequest{
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   padding: .5rem 1rem;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 0.90rem;
   color: #000;
   background-color: #26ace3;
   border: none;
