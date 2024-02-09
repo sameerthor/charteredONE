@@ -1,0 +1,64 @@
+.stepper .stepperHeading{
+    color:  #000;
+    font-size: .95rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 0rem;
+    margin-top: .25rem;
+}
+.stepper .stepperHeading .paraLead{
+    color:  #666;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-top: 2rem;
+}
+.form-select{
+  border-radius: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: .95rem;
+}
+.form-select:focus{
+    box-shadow: none;
+}
+.sectionHeader{
+    background-color: #26ace3;
+    padding: .5rem 1rem;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+.sectionHeader span{
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .5px;
+    font-size: .9rem;
+}
+.sectionHeading{
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0rem;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+.closeBtn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.closeBtn img{
+    mix-blend-mode: multiply;
+}
+.uiBtn{
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: .5px;
+}

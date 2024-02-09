@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/dashboardpack.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/masterTDS.css">
+    <link rel="stylesheet" href="../css/tdsUI.css">
     <!-- *******************Fontawesome***************************** -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -128,286 +129,7 @@
                     </div>        
                 </div>
             </div>
-        </div>        
-        <div class="ui-theme-settings">
-            <button type="button" id="TooltipDemo" class="btn-open-options btn">
-                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
-            </button>
-            <div class="theme-settings__inner">
-                <div class="scrollbar-container">
-                    <div class="theme-settings__options-wrapper">
-                        <h3 class="themeoptions-heading">Layout Options
-                        </h3>
-                        <div class="p-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <div class="widget-content p-0">
-                                        <div class="widget-content-wrapper">
-                                            <div class="widget-content-left mr-3">
-                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
-                                                    <div class="switch-animate switch-on">
-                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Header
-                                                </div>
-                                                <div class="widget-subheading">Makes the header top fixed, always visible!
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="widget-content p-0">
-                                        <div class="widget-content-wrapper">
-                                            <div class="widget-content-left mr-3">
-                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
-                                                    <div class="switch-animate switch-on">
-                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Sidebar
-                                                </div>
-                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="widget-content p-0">
-                                        <div class="widget-content-wrapper">
-                                            <div class="widget-content-left mr-3">
-                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
-                                                    <div class="switch-animate switch-off">
-                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Footer
-                                                </div>
-                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="themeoptions-heading">
-                            <div>
-                                Header Options
-                            </div>
-                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
-                                Restore Default
-                            </button>
-                        </h3>
-                        <div class="p-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h5 class="pb-2">Choose Color Scheme
-                                    </h5>
-                                    <div class="theme-settings-swatches">
-                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
-                                        </div>
-                                        <div class="divider">
-                                        </div>
-                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="themeoptions-heading">
-                            <div>Sidebar Options</div>
-                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
-                                Restore Default
-                            </button>
-                        </h3>
-                        <div class="p-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h5 class="pb-2">Choose Color Scheme
-                                    </h5>
-                                    <div class="theme-settings-swatches">
-                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
-                                        </div>
-                                        <div class="divider">
-                                        </div>
-                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="themeoptions-heading">
-                            <div>Main Content Options</div>
-                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
-                            </button>
-                        </h3>
-                        <div class="p-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h5 class="pb-2">Page Section Tabs
-                                    </h5>
-                                    <div class="theme-settings-swatches">
-                                        <div role="group" class="mt-2 btn-group">
-                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
-                                                Line
-                                            </button>
-                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
-                                                Shadow
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
+        </div>              
         <div class="app-main">
                 <div class="app-sidebar sidebar-shadow">
                     <div class="app-header__logo">
@@ -584,7 +306,7 @@
                                             </nav>
                                         </div>
                                         <div>
-                                            <h3 class="text-center main-heading">Issue TDS/ TCS Certificates</h3>  
+                                            <h3 class="text-center sectionHeading">Issue TDS/ TCS Certificates</h3>  
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -615,17 +337,16 @@
                                                 </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card-body">
+                                        <!-- ===================Stepper======================= -->
                                         <div class="stepper d-flex flex-column mt-5 ml-2">
                                             <div class="d-flex mb-1">
                                               <div class="d-flex flex-column pr-4 align-items-center">
-                                                <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">1</div>
-                                                <div class="line h-50"></div>
+                                                <div class="rounded-circle py-2 px-3 bg-info text-white mb-1">1</div>
+                                                <div class="line h-75"></div>
                                               </div>
                                               <div>
-                                                <h5 class="text-dark">We have not found any raised request</h5>
-                                                <p class="lead text-muted pb-3">Please start by raising one. Once you raise a request please come Back
+                                                <h5 class="stepperHeading">We have not found any raised request</h5>
+                                                <p class="paraLead text-muted pb-1 mt-2">Please start by raising one. Once you raise a request please come Back
                                                     after 2 hours to check the status and we will send you confirmation at your phone.
                                                 </p>
                                                 <a href="#000" class="raiseRequest" data-bs-toggle="modal" data-bs-target="#raiseRequest">Raise a New Request</a>
@@ -633,45 +354,45 @@
                                             </div>
                                             <div class="d-flex mb-1">
                                               <div class="d-flex flex-column pr-4 align-items-center">
-                                                <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">2</div>
+                                                <div class="rounded-circle py-2 px-3 bg-info text-white mb-1">2</div>
                                                 <div class="line h-50"></div>
                                               </div>
                                               <div>
-                                                <h5 class="text-dark">Check Requset Status</h5>
-                                                <p class="lead text-muted pb-3">Go to your dashboard and clone Git respository from the url in the dashboard of your application</p>
-                                              </div>
-                                            </div>
-                                            <div class="d-flex mb-1">
-                                              <div class="d-flex flex-column pr-4 align-items-center">
-                                                <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">3</div>
-                                                <div class="line h-50 d-none"></div>
-                                              </div>
-                                              <div>
-                                                <h5 class="text-dark">Start PDF Generation</h5>
-                                                <p class="lead text-muted pb-3">Now make changes to your application source code, test it then commit &amp; push</p>
+                                                <h5 class="stepperHeading">Check Requset Status</h5>
+                                                <p class="lead text-muted pb-3"></p>
                                               </div>
                                             </div>
                                             <div class="d-flex mb-1">
                                                 <div class="d-flex flex-column pr-4 align-items-center">
-                                                  <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">4</div>
-                                                  <div class="line h-10 d-none"></div>
+                                                    <div class="rounded-circle py-2 px-3 bg-info text-white mb-1">3</div>
+                                                    <div class="line h-50"></div>
+                                                </div>
+                                              <div>
+                                                <h5 class="stepperHeading">Start PDF Generation</h5>
+                                                <p class="lead text-muted pb-3"></p>
+                                              </div>
+                                            </div>
+                                            <div class="d-flex mb-1">
+                                                <div class="d-flex flex-column pr-4 align-items-center">
+                                                  <div class="rounded-circle py-2 px-3 bg-info text-white mb-1">4</div>
+                                                  <div class="line h-50 d-none"></div>
                                                 </div>
                                                 <div>
-                                                  <h5 class="text-dark">Download/ Email PDF</h5>
-                                                  <p class="lead text-muted pb-3">Now make changes to your application source code, test it then commit &amp; push</p>
+                                                  <h5 class="stepperHeading">Download/ Email PDF</h5>
+                                                  <p class="lead text-muted pb-3"></p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>        
+                                    </div>       
                                     <div class="card-body">
-                                        <div class="card-header bg-light">
+                                        <div class="sectionHeader">
                                             <span class="">Error &amp Warning</span>
                                         </div>
                                         <div class="table-responsive custome-table">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <thead>
                                                     <tr class="text-center">
-                                                       <th>Record Type</th>
+                                                       <th class="text-left">Record Type</th>
                                                        <th>Field Name</th>
                                                        <th>Error Type</th>
                                                        <th>Error Description</th>
@@ -719,8 +440,8 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-center">
-                                        <a href="#000" id="" class="btn btn-success mr-2">Validate Again</a>
-                                        <a href="#000" id="" class="btn btn-info">Download Error File</a>
+                                        <a href="#000" id="" class="btn btn-success uiBtn mr-2">Validate Again <i class="fa-solid fa-arrows-rotate"></i></a>
+                                        <a href="#000" id="" class="btn btn-info uiBtn">Download Error File</a>
                                     </div>
                                     
                                     <div class="card-footer">
@@ -738,8 +459,8 @@
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 fw-bolder" id="staticBackdropLabel">Raise New Request</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5 " id="staticBackdropLabel">Raise New Request</h1>
+              <button type="button" class="closeBtn" data-bs-dismiss="modal" aria-label=""><img src="../images/close-times.png" alt="" width="16" height="16"></button>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -812,7 +533,7 @@
                                 </div>
                             </div>
                             <div class="text-center mt-5">
-                                <a href="#000" class="btn btn-primary">Submit</a>
+                                <a href="#000" class="btn btn-info uiBtn">Submit</a>
                             </div>
                         </div>
                     </div>
@@ -904,15 +625,15 @@
                                 </div>
                             </div>
                             <div class="text-center mt-4">
-                                <a href="#000" class="import-btn">Submit</a>
+                                <a href="#000" class=" btn btn-info uiBtn">Submit</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Proceed</button>
+              <button type="button" class="btn btn-secondary uiBtn" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info uiBtn">Proceed</button>
             </div>
           </div>
         </div>
