@@ -4,19 +4,29 @@ body a{
 body a:hover{
   text-decoration: none;
 }
+.table-responsive table{
+  font-family: 'Montserrat', sans-serif;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 .header-links{
     justify-content: space-between;
   }
 .returnbtn {
     padding: 0.5rem 1rem;
-    border-radius: 6px;
-    background-color: rgb(52, 152, 219);
+    border-radius: 4px;
+    background-color: #ff9800; 
     border: none;
     outline: none;
     text-decoration: none;
     letter-spacing: 0.5px;
     cursor: pointer;
     color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .85rem;
 }
 .returnbtn:hover {
  color: #fff;
@@ -29,7 +39,6 @@ body a:hover{
     flex-wrap: wrap;
 }
   .custome-btn-group a {
-    border: 1px solid #fff;
     padding: .4rem 1rem;
     font-weight: 500;
     text-decoration: none;
@@ -37,6 +46,8 @@ body a:hover{
     background-color: none;
     border: 1px solid #999;
     cursor: pointer;
+    letter-spacing: .5px;
+    font-size: .82rem;
 }
 .custome-btn-group .selected {
     background-color: #26ace3;
@@ -47,6 +58,11 @@ body a:hover{
 }
 .custome-btn-group a:nth-of-type(2) {
   border-left: none;
+ }
+ @media(max-width: 991px){
+  .custome-btn-group a:nth-of-type(3) {
+    border: 1px solid #999;
+   }
  }
 .selected {
   background-color: #3498db;
@@ -124,12 +140,6 @@ body a:hover{
 }
 .custome-table table th{
   vertical-align: top;
-}
-.table-responsive table a{
-  text-decoration: none;
-  font-weight: 500;
-  color: #3f6ad8;
-  letter-spacing: .5px;
 }
 .parent-flex{
   display: flex;
@@ -212,15 +222,18 @@ body a:hover{
   color: #ffffff;
   font-weight: 500;
 }
-#allDeductor table a{
-  font-weight: 700;
+
+.deductorName a{
+  font-weight: 500;
+  color: #3f6ad8;
+  letter-spacing: .6px;
+  font-size: .68rem;
+  font-family: 'Montserrat', sans-serif;
 }
 .tdsDeductorBlock .table-header,.tdsDeductorBlock .header-item,.tdsCertificate .header-item{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* border-top-right-radius: 4px !important;
-  border-top-left-radius: 4px !important; */
   background-color: #26ace3;
   color: #fff;
   height: 2.5rem;
@@ -1102,3 +1115,4 @@ nav .breadcrumb a{
   background-color: #26ace3;
   color: #fff;
 }
+/* ================================UI==================================== */

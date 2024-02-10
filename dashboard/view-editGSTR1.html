@@ -197,6 +197,8 @@
                                                 <option value="Amendments">Amendments</option>
                                                 <option value="AdvancesAmend">Advances &amp; Amend</option>
                                                 <option value="HSNSummary">HSN &amp; DOC Summary</option>
+                                                <option value="suppliesECO">Supplies Through ECO</option>
+                                                <option value="suppliesunderNine">Supplies U/s 9(5)</option>
                                             </select>
                                         </div>
                                         <div class="custome-check">
@@ -2245,14 +2247,14 @@
                                                             <th class="text-center">Net Issued</th>
                                                             <th width="50px">
                                                                 <div class="action_container">
-                                                                    <button class="success" onclick="create_tr('table_bodySixteen')">
+                                                                    <button class="success" onclick="create_tr('table_bodySeventeen')">
                                                                     <i class="fa fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                             </th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody id="table_bodySixteen">
+                                                    <tbody id="table_bodySeventeen">
                                                         <tr>
                                                             <td></td>
                                                             <td>
@@ -2414,6 +2416,435 @@
                                                             <td>0.00</td>
                                                             <td>0.00</td>
                                                             <td>0.00</td>
+                                                        </tr>
+                                                    </tbody>    
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- ====================== -->
+                                        <div id="suppliesECO" class="content-div hideBox">
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-2">
+                                                <div>
+                                                <span>Supplies Through ECO</span>
+                                            </div>
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th class="text-center"></th>
+                                                            <th class="text-center">GSTIN of e-commerce operator</th>
+                                                            <th class="text-center">Trade/Legal Name</th>
+                                                            <th class="text-center">Net value of supplies (₹)</th>
+                                                            <th class="text-center">Integrated tax (₹)</th>
+                                                            <th class="text-center">Central tax (₹)</th>
+                                                            <th class="text-center">State/UT tax (₹)</th>
+                                                            <th class="text-center">Cess (₹)</th>
+                                                            <th width="50px">
+                                                                <div class="action_container">
+                                                                    <button class="success" onclick="create_tr('table_bodyEighteen')">
+                                                                    <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="table_bodyEighteen">
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>
+                                                                <select class="form-select">
+                                                                    <option selected></option>
+                                                                    <option value="1">Liable to collect tax u/s 52 (TCS)</option>
+                                                                    <option value="2">Liable to pay tax u/s 9(5)</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control"  placeholder="Enter GSTIN">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control"  disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="action_container">
+                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                        <i class="fa-solid fa-trash"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr class="totalCount">
+                                                            <th>Total</th>
+                                                            <td class="text-left" colspan="3"></td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                        </tr>
+                                                    </tbody>    
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- ====================== -->
+                                        <div id="suppliesunderNine" class="content-div hideBox">
+                                            <!-- ================Registered to Registered============== -->
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-2">
+                                                <div>
+                                                    <span>Registered to Registered</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th class="text-center">Recipient GSTIN/UIN</th>
+                                                            <th class="text-center">Recipient name</th>
+                                                            <th class="text-center">Document number</th>
+                                                            <th class="text-center">Document date</th>
+                                                            <th class="text-center">Total value of supplies made (₹)</th>
+                                                            <th class="text-center">POS</th>
+                                                            <th class="text-center">Supply Type</th>
+                                                            <th width="50px">
+                                                                <div class="action_container">
+                                                                    <button class="success" onclick="create_tr('table_bodyNineteen')">
+                                                                    <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="table_bodyNineteen">
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control"  disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="date" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option selected></option>
+                                                                    <option value="1">Uttar Pradesh</option>
+                                                                    <option value="2">Rajsthan</option>
+                                                                    <option value="3">Madhya Pradesh</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="Enter-State" disabled>
+                                                                </div>
+                                                            </td>
+                                                            
+                                                            <td>
+                                                                <div class="action_container">
+                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                        <i class="fa-solid fa-trash"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr class="totalCount">
+                                                            <th>Total</th>
+                                                            <td class="text-left" colspan="4"></td>
+                                                            <td colspan="4">0.00</td>
+                                                        </tr>
+                                                    </tbody>    
+                                                </table>
+                                            </div>
+                                            <!-- ================Registered to unregistered============== -->
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-4">
+                                                <div>
+                                                    <span>Registered to Unregistered</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th class="text-center">Supplier  GSTIN/UIN</th>
+                                                            <th class="text-center">Supplier  name</th>
+                                                            <th class="text-center">POS</th>
+                                                            <th class="text-center">Taxable value (₹)</th>
+                                                            <th class="text-center">Supply type</th>
+                                                            <th class="text-center">Rate</th>
+                                                            <th width="50px">
+                                                                <div class="action_container">
+                                                                    <button class="success" onclick="create_tr('table_bodyTwenty')">
+                                                                    <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="table_bodyTwenty">
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control"  disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option selected></option>
+                                                                    <option value="1">Uttar Pradesh</option>
+                                                                    <option value="2">Rajsthan</option>
+                                                                    <option value="3">Madhya Pradesh</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="0">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="date" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option selected></option>
+                                                                    <option value="1">0</option>
+                                                                    <option value="2">0.1</option>
+                                                                    <option value="3">0.25</option>
+                                                                </select>
+                                                            </td>
+                                                            
+                                                            <td>
+                                                                <div class="action_container">
+                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                        <i class="fa-solid fa-trash"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr class="totalCount">
+                                                            <th>Total</th>
+                                                            <td class="text-left" colspan="3"></td>
+                                                            <td colspan="4">0.00</td>
+                                                        </tr>
+                                                    </tbody>    
+                                                </table>
+                                            </div>
+                                            <!-- ================unregistered to registered============== -->
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-4">
+                                                <div>
+                                                    <span>Unregistered to Registered</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th class="text-center">Recipient GSTIN/UIN</th>
+                                                            <th class="text-center">Recipient Name</th>
+                                                            <th class="text-center">Doc Number</th>
+                                                            <th class="text-center">Doc Date</th>
+                                                            <th class="text-center">Total value of supplies made (₹)</th>
+                                                            <th class="text-center">POS</th>
+                                                            <th class="text-center">Supply type</th>
+                                                            <th width="50px">
+                                                                <div class="action_container">
+                                                                    <button class="success" onclick="create_tr('table_bodyTwentyOne')">
+                                                                    <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="table_bodyTwentyOne">
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control"  disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="date" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option selected></option>
+                                                                    <option value="1">Uttar Pradesh</option>
+                                                                    <option value="2">Rajsthan</option>
+                                                                    <option value="3">Madhya Pradesh</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" value="Inter-State" disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="action_container">
+                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                        <i class="fa-solid fa-trash"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr class="totalCount">
+                                                            <th>Total</th>
+                                                            <td class="text-left" colspan="4"></td>
+                                                            <td colspan="4">0.00</td>
+                                                        </tr>
+                                                    </tbody>    
+                                                </table>
+                                            </div>
+                                            <!-- ================Unregistered to Unregistered============== -->
+                                            <div class="custome-headere card-header liability-breakup bg-light mt-4">
+                                                <div>
+                                                    <span>Unregistered to Unregistered</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive hideScrollbar gstin3b_table">
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th class="text-center">POS</th>
+                                                            <th class="text-center">Taxable value (₹)</th>
+                                                            <th class="text-center">Supply Type</th>
+                                                            <th class="text-center">Rate</th>
+                                                            <th width="50px">
+                                                                <div class="action_container">
+                                                                    <button class="success" onclick="create_tr('table_bodyTwentyTwo')">
+                                                                    <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="table_bodyTwentyTwo">
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option selected></option>
+                                                                    <option value="1">Uttar Pradesh</option>
+                                                                    <option value="2">Rajsthan</option>
+                                                                    <option value="3">Madhya Pradesh</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option selected></option>
+                                                                    <option value="1">0.1</option>
+                                                                    <option value="2">0.25</option>
+                                                                    <option value="3">0.5</option>
+                                                                </select>
+                                                            </td>
+                                                           
+                                                            <td>
+                                                                <div class="action_container">
+                                                                    <button class="danger" onclick="remove_tr(this)">
+                                                                        <i class="fa-solid fa-trash"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr class="totalCount">
+                                                            <th>Total</th>
+                                                            <td class="text-left" colspan="1"></td>
+                                                            <td colspan="4">0.00</td>
                                                         </tr>
                                                     </tbody>    
                                                 </table>

@@ -104,7 +104,6 @@
     height: 24px;
     border-radius: 4px;
     box-shadow: none;
-    /* width: 100px; */
 }
 #sendMail.gstr_prepare .form-control{
   height: calc(2.25rem + 2px);
@@ -118,9 +117,7 @@
 
 }
 @media(max-width:768px){
-  #preparegstin .steps{
-    /* display: block; */
-   }
+  
    #preparegstin .steps div{
     flex-grow: 1;
    }
@@ -301,7 +298,6 @@
 .gstin3b_detail{
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-wrap: wrap;
   width: 100%;
 }
@@ -614,7 +610,6 @@
 }
 @media(max-width: 992px){
     .edit-header{
-        /* flex-direction: column; */
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
@@ -689,7 +684,6 @@
    color: #000;
    font-family: 'Montserrat', sans-serif;
    font-size: 10px;
-   /* height: 1.8rem; */
   }
   .edit-data-box .table-responsive .table .form-select{
     border-radius: 2px;
@@ -723,7 +717,7 @@
   input[type='date']:not(:focus):in-range::-webkit-datetime-edit-month-field,
   input[type='date']:not(:focus):in-range::-webkit-datetime-edit-day-field,
   input[type='date']:not(:focus):in-range::-webkit-datetime-edit-text {
- color: transparent;
+     color: transparent;
   }
   .hideScrollbar::-webkit-scrollbar{
     display: none; 
@@ -738,8 +732,6 @@
 @media(max-width:992px){
     .liability-breakup{
        flex-direction: column;
-       /* flex-wrap: wrap; */
-       /* justify-content: center; */
     }
     .liability-breakup div{
         width: auto;
@@ -836,9 +828,7 @@
         font-weight: 500;
         letter-spacing: .5px;
       }
-      .customeDropBox .dropItem a:active{
-        /* background-color: #00bcd4; */
-      }
+  
       .customeDropBox .dropItem .dropdown-item .form-check{
         min-height: 0.5rem;
       }
@@ -931,7 +921,6 @@
         margin-right: 8px;
       }
       /* ===========================Import modal========================= */
-      /* =========================import modal================== */
 .file-upload {
     background-color: #ffffff;
     width: 600px;
@@ -1179,9 +1168,6 @@
     background-color: rgb(47, 137, 252);
   }
   @media(max-width:1291px){
-  .matchingContainer .selectDateBtn {
-      /* margin: 6px; */
-  }
   .matchingContainer .selectDateBtn button {
     padding: 4px 8px;
   }
@@ -1339,3 +1325,17 @@
     font-size:12px;
     font-weight: 500;
   }
+.accordianHeader{
+    padding: .2rem .5rem;
+    background-color: #ebf5e0;
+}
+.accordianHeader span{
+  color: #222;
+  font-weight: 600;
+  font-size: .8rem;
+  letter-spacing: .5px;
+}
+#zeroRadius{
+  border-radius: 0px;
+  border: none;
+}
