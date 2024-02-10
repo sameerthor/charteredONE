@@ -130,8 +130,8 @@
                     </div>        
                 </div>
             </div>
-        </div>              
-        <div class="app-main">
+        </div>        
+     <div class="app-main">
                 <div class="app-sidebar sidebar-shadow">
                     <div class="app-header__logo">
                         <div class="logo-src"></div>
@@ -293,7 +293,7 @@
                     </div>
                 </div>
                 <!-- ===================Content====================== -->
-                <div class="app-main__outer">
+                <div class="app-main__outer tdsDeductorBlock">
                     <div class="app-main__inner"> 
                         <div class="row">
                             <div class="col-md-12">
@@ -349,7 +349,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body" id="preparegstin">
                                         <div class="table-responsive custome-table">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover tableLarge">
                                                 <thead>
@@ -612,7 +612,7 @@
         </div>
     </div>
     <!-- =========================crete new return modal-================================ -->
-    <div class="modal fade" id="createNewReturn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade tdsModal" id="createNewReturn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -676,7 +676,7 @@
         </div>
     </div>
 <!--====================single PAN verify================================ -->
-  <div class="modal fade import-file-modal" id="singlePan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade tdsModal import-file-modal" id="singlePan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -689,7 +689,7 @@
                     <input type="text" class="form-control" placeholder="Eg. DDIPM66E">
                 </div>
                 <div class="col text-center">
-                    <a href="#000" class="btn btn-primary" onclick="verifyPan()">Verify PAN</a>
+                    <a href="#000" class="btn btn-primary verifyPan" onclick="verifyPan()">Verify PAN</a>
                 </div>
                 <div id="verifyPan">
                     <div class="d-flex flex-row">
@@ -714,7 +714,7 @@
     </div>
   </div>
     <!-- ==============================Create New challan Offcanvas==================== -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="createNewChallan" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas tdsModal offcanvas-end" tabindex="-1" id="createNewChallan" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
           <h2 class="offcanvas-title" id="offcanvasRightLabel">Create Challan</h2>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -796,7 +796,7 @@
                     <div class="row">
                         <div class="canvas-btn">
                             <a href="#000">Pay Now</a>
-                            <a href="#000" data-bs-dismiss="offcanvas" aria-label="Close" class="btn btn-secondary">Cancle</a>
+                            <a href="#000" data-bs-dismiss="offcanvas" aria-label="Close" class="btn btn-secondary">Cancel</a>
                         </div>
                     </div>
                 </div>
@@ -904,7 +904,7 @@
         </div>
     </div>
 <!--====================Import Excel and check compliances================================ -->
-  <div class="modal fade import-file-modal" id="checkCompliences" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade tdsModal import-file-modal" id="checkCompliences" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -930,7 +930,7 @@
                     <div class="image-upload-wrap">
                         <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  />
                         <div class="drag-text">
-                        <h3>Drag and drop a file or select add file</h3>
+                        <h4>Drag and drop a file or select add file</h4>
                         </div>
                     </div>
                     <div class="file-upload-content">
@@ -951,7 +951,7 @@
     </div>
   </div> 
   <!--====================Import PAN in bulk Modal Excel================================ -->
-  <div class="modal fade import-file-modal" id="bulkPANImport" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade tdsModal import-file-modal" id="bulkPANImport" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -964,7 +964,7 @@
                     <div class="image-upload-wrap">
                         <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  />
                         <div class="drag-text">
-                        <h3>Drag and drop a file or select add file</h3>
+                        <h4>Drag and drop a file or select add file</h4>
                         </div>
                     </div>
                     <div class="file-upload-content">

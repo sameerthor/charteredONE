@@ -129,7 +129,7 @@
                     </div>        
                 </div>
             </div>
-        </div>              
+        </div>        
         <div class="app-main">
                 <div class="app-sidebar sidebar-shadow">
                     <div class="app-header__logo">
@@ -292,7 +292,7 @@
                     </div>
                 </div>
                 <!-- ===================Content====================== -->
-                <div class="app-main__outer">
+                <div class="app-main__outer tdsCertificate">
                     <div class="app-main__inner"> 
                         <div class="row">
                             <div class="col-md-12">
@@ -337,16 +337,17 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <!-- ===================Stepper======================= -->
-                                        <div class="stepper d-flex flex-column mt-5 ml-2">
+                                    </div>
+                                    <div class="card-body issueSteps">
+                                        <div class="stepper d-flex flex-column ml-2">
                                             <div class="d-flex mb-1">
                                               <div class="d-flex flex-column pr-4 align-items-center">
                                                 <div class="rounded-circle py-2 px-3 bg-info text-white mb-1">1</div>
                                                 <div class="line h-75"></div>
                                               </div>
                                               <div>
-                                                <h5 class="stepperHeading">We have not found any raised request</h5>
-                                                <p class="paraLead text-muted pb-1 mt-2">Please start by raising one. Once you raise a request please come Back
+                                                <h5 class="text-dark">We have not found any raised request</h5>
+                                                <p class="lead text-muted pb-2">Please start by raising one. Once you raise a request please come Back
                                                     after 2 hours to check the status and we will send you confirmation at your phone.
                                                 </p>
                                                 <a href="#000" class="raiseRequest" data-bs-toggle="modal" data-bs-target="#raiseRequest">Raise a New Request</a>
@@ -385,7 +386,7 @@
                                         </div>
                                     </div>       
                                     <div class="card-body">
-                                        <div class="sectionHeader">
+                                        <div class="card-header header-item">
                                             <span class="">Error &amp Warning</span>
                                         </div>
                                         <div class="table-responsive custome-table">
@@ -455,7 +456,7 @@
         </div>
     </div>
     <!-- ================================ -->
-    <div class="modal fade" id="raiseRequest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal tdsModal fade" id="raiseRequest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
@@ -517,14 +518,14 @@
                         </label>
                     </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-0 m-0">
                     <div id="consolidateOne" class="consolidatebox">
                         <div class="file-upload">
                             <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Browse Here</button>
                             <div class="image-upload-wrap">
                                 <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".txt"/>
                                 <div class="drag-text">
-                                <h3>Click here to brows or drag and drop consolidate File</h3>
+                                <h4>Click here to brows or drag and drop consolidate File</h4>
                                 </div>
                             </div>
                             <div class="file-upload-content">
@@ -533,7 +534,7 @@
                                 </div>
                             </div>
                             <div class="text-center mt-5">
-                                <a href="#000" class="btn btn-info uiBtn">Submit</a>
+                                <a href="#000" class="btn btn-primary submitBtn">Submit</a>
                             </div>
                         </div>
                     </div>

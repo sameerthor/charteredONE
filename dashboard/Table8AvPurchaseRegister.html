@@ -3,30 +3,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Language" content="en">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title> Dashboard | CharteredONE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
-    <meta name="msapplication-tap-highlight" content="no">
-     <!-- ***********************************Montserrat********************************** -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-     <!-- *****************************OPENSANS************************ -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Dashboard | CharteredONE</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="This is an example dashboard created using build-in elements and components."
+    />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- ***********************************Montserrat********************************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- *****************************OPENSANS************************ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/dashboardpack.css">
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/masterTDS.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="../css/dashboardpack.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/returnRegister.css" />
+    <link rel="stylesheet" href="../css/preparegstin.css">
     <!-- *******************Fontawesome***************************** -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+    <style>
+        .fixed-sidebar .app-main .app-main__outer{
+            padding: 0!important;
+        }
+        .app-theme-white .app-sidebar{
+            display: none;
+        }
+    </style>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
@@ -293,110 +328,87 @@
                 <!-- ===================Content====================== -->
                 <div class="app-main__outer">
                     <div class="app-main__inner">
+                        <!-- ================create New Client-->   
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-card mb-3 card">
-                                    <div class="card-header d-flex">
-                                        <span>Notices &amp Orders</span>
-                                    </div>
-                                    <div class="breadcrumbs">
-                                        <a href="./masterTDS.html"><i class="fa-solid fa-angle-left"></i> Return to Master TDS</a>
-                                    </div>
-                                    <div class="m-2">
-                                        <div class="table-responsive custome-table">
-                                            <table class="align-middle mb-0 table  table-striped table-hover" border="1">
-                                                <thead>
-                                                    <tr>
-                                                        <th>FY</th>
-                                                        <th>Deductor Name</th>
-                                                        <th class="text-center ">Form | QTR</th>
-                                                        <th class="text-center "> Date</th>
-                                                        <th class="text-center" colspan="2"> Communication Details</th>
-                                                        <th class="text-center">Action</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="4"></td>
-                                                        <th class="text-center">Subject</th>
-                                                        <th class="text-center">Description</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2023-2024</td>
-                                                        <td>
-                                                            <a href="#000">Rochem Seperate PVT LTD.</a>
-                                                        </td>
-                                                        <td>Form QTR</td>
-                                                        <td class="text-center filedreturns">10-OCT-2023</td>
-                                                        <td class="text-center pendindreturns">Subject</td>
-                                                        <td class="text-center">Decription Goes here</td>
-                                                        <td class="text-center"><a href="#000">Do Something</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                    <div class="card-header header-links mt-4">
+                                        <div class="header-links-items  mb-4">
+                                            <span class="matchinHeading">Table 8A v Purchase Register</span>
+                                            <div class="matchingTxt mt-1"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" color="#2F89FC" xmlns="http://www.w3.org/2000/svg" style="color: rgb(47, 137, 252);"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"></path></svg> GSTIN: 36EAVPM2218B1ZP | PAN: EAVPM2218B</div>
                                         </div>
                                     </div>
-                                    <div id="deductorWise" class="content">
-                                        <div class="table-responsive">
-                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="text-center">#TAN</th>
-                                                        <th>Deductor Name/Email</th>
-                                                        <th class="text-center">Mob. No.</th>
-                                                        <th class="text-center">No. of Filed Returns</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="text-center text-muted">#345645</td>
-                                                        <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left flex2">
-                                                                        <div class="widget-heading"><a href="#000" class="company-name" onclick="monthWiseReturnWise()">Rochem Seperate PVT LTD.</a></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center">+91 878863739</td>
-                                                        <td class="text-center">7446</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center text-muted">#345645</td>
-                                                        <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left flex2">
-                                                                        <div class="widget-heading"><a href="#000" class="company-name" onclick="monthWiseReturnWise()">Rochem Seperate PVT LTD.</a></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center">+91 878863739</td>
-                                                        <td class="text-center">7446</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center text-muted">#345645</td>
-                                                        <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left flex2">
-                                                                        <div class="widget-heading"><a href="#000" class="company-name" onclick="monthWiseReturnWise()">Rochem Seperate PVT LTD.</a></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center">+91 878863739</td>
-                                                        <td class="text-center">7446</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                    <div class="matchingContainer">
+                                        <div class="matchingLeftBox">
+                                    <div class="matchingHeader">
+                                        <div class="matchingText">
+                                        <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1549191646_gstn_icon.png" alt="anx2-icon" height="32px" width="32px"> Table-8A
                                         </div>
+                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Apr 22 - Oct 23</span></div>
+                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> 0 Docs</span></div>
+                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO 8A Data</div>
                                     </div>
-                                    <div class="d-block text-center card-footer">
-                                        <div>  
+                                    <div class="VS_img">
+                                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1582750135_group505.svg" alt="vs-Img">
+                                    </div>
+                                    <div class="matchingHeader">
+                                        <div class="matchingText">
+                                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1582749155_asset535x11.svg" alt="anx2-icon" height="32px" width="32px">Purchase Document
                                         </div>
+                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Apr 22 - Oct 23</span></div>
+                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> 0 Docs</span></div>
+                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO PURCHASE DATA</div>
+                                    </div>
+                                    <hr class="seperatorLine">
+                                </div>
+                                    <div class="selectDateBtn">
+                                        <button class="" data-toggle="modal" data-target="#selectDate">Select Dates</button>
+                                    </div>
+                                    </div>
+                                    <div id="matchingBlock">
+                                    <div class="MatchingContainer">
+                                        <div class="flex MatchingBlock">
+                                          <a href="./all-client.html" class="MatchingItem active">
+                                            <img class="matchingImg"
+                                              src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1549191646_gstn_icon.png"
+                                              alt="GSTR"
+                                            />
+                                            <h5 class="matchingHead">Table-8A Data</h5>
+                                            <span class="matchingTxt">You need to download Table-8A data from GSTN to start matching</span>
+                                            <button class="download-btn"><img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608575654_subtractgstn.svg" height="14px" width="14px" alt="data_ico">Download data from GSTN&nbsp;</button>
+                                          </a>
+                                          <div class="dashedLine"></div>
+                                          <div class="matchingLine">
+                                           <span><i class="fa fa-code-compare"> </i> </span>Start Matching
+                                          </div>
+                                          <div class="dashedLine"></div>
+                                          <!-- <a class="MatchingItem">
+                                            <img class="matchingImg"
+                                              src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1601282437_icon_small_matching_2avpr.png"
+                                              alt="2A"
+                                            />
+                                            <h5 class="matchingHead">2A vs PR GSTIN Matching</h5>
+                                            <span class="matchingTxt">Maximise ITC Claim<br/> Ensure Vendor Compliance</span>
+                                          </a>
+                                          <a class="MatchingItem">
+                                            <img class="matchingImg"
+                                              src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1606247708_2bvspr.png"
+                                              alt="2B"
+                                            />
+                                            <h5 class="matchingHead">2B vs PR GSTIN Matching</h5>
+                                            <span class="matchingTxt">Maximise ITC Claim<br/> Ensure Vendor Compliance</span>
+                                          </a> -->
+                                            <a class="MatchingItem">
+                                            <img class="matchingImg"
+                                              src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608546113_icon_small_register_purchase.png"
+                                              alt="GSTR9"
+                                            />
+                                            <h5 class="matchingHead">Purchase register</h5>
+                                            <span class="matchingTxt">You need to upload purchase data to start matching</span>
+                                            <button class="upload-btn"><i class="fa fa-folder"></i>&nbsp;&nbsp; Upload Purchase Data &nbsp;</button>
+                                          </a>
+                                        </div>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
@@ -405,10 +417,71 @@
                 </div>
         </div>
     </div>
+      <!-- ==========================Import book data modal====================== -->
+      <div class="modal fade  gstr_prepare" id="selectDate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Select Dates to filter GSTR-1 and Sales Register data for matching</h1>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="matching1_block">
+                <div>
+                    <div class="modal_title">
+                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1588144894_gstr1_icon.svg" alt=""><span>GSTR-1</span>
+                    </div>
+                    <div>
+                        <form class="row g-3">
+                            <div class="col-sm-6 col-xs-12">
+                              <label for="Return Period" class="form-label required" required>Return Period</label>
+                              <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-12 checkboxDD">
+                                <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                          </form>
+                    </div>
+                </div>
+              <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
+              <div class="downloadData">
+                <p>Download GSTR-1 data from GSTN Portal</p>
+                <button>Download GSTR-1 data</button>
+              </div>
+            </div>
+            <div class="matching2_block mt-4">
+                <div>
+                    <div class="modal_title">
+                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1595250687_sales.png" alt=""><span>GSTR-1</span>
+                    </div>
+                    <div>
+                        <form class="row g-3">
+                            <div class="col-sm-6 col-xs-12">
+                              <label for="Return Period" class="form-label required" required>Return Period</label>
+                              <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-12 checkboxDD">
+                                <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                          </form>
+                    </div>
+                </div>
+              <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
+              <div class="downloadData">
+                <p>Import More Sales Register</p>
+                <button>Import Sales Register</button>
+              </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn matchingBtn">Start Matching</button>
+            </div>
+          </div>
+        </div>
+    </div>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
-<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 <script src="../js/dashboard-pack.js"></script> 
-<script src="../js/dashboard.js"></script>
-
 </body>
 </html>
