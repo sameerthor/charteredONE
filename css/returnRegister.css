@@ -36,6 +36,14 @@ body a:hover {
   box-shadow: none;
   cursor: pointer;
 }
+.header-links-items span.matchinHeading{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.header-links .matchingTxt{
+  color: rgb(130, 137, 153);
+  font-size: 12px;
+}
 .header-links-items a {
   font-weight: 500;
   font-size: 14px;
@@ -562,7 +570,10 @@ tr[aria-expanded="true"] .TL_accordion::before {
 }
 #matchingBlock .matchingTxt{
   font-weight: 600;
-  color: #aaa;
+  color: rgb(144, 144, 144);
+}
+ .matchingTxt svg{
+  font-size: 15px;
 }
 #matchingBlock .quickLinksTabs .link_tab, #matchingBlock .MatchingContainer .MatchingItem{
   align-items: flex-start!important;
@@ -573,10 +584,11 @@ tr[aria-expanded="true"] .TL_accordion::before {
 }
 #matchingBlock .download-btn,#matchingBlock .upload-btn{
   margin: 5px 0;
-  padding: 3px;
+  padding: 7px;
   border: none;
+  height: 32px;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 0.65rem;
   line-height: 12px;
   border-radius: 4px;
   cursor: pointer;
