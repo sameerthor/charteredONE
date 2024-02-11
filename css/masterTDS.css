@@ -123,10 +123,19 @@ body a:hover{
 }
 .para p{
   font-weight: 400;
-  color: #999;
+  color: #666;
   font-size: .85rem;
   letter-spacing: .5px;
-  padding: 0 3rem;
+  padding: 0rem .6rem;
+  margin-bottom: 0rem;
+  
+}
+.justBtn{
+  border-radius: 4px;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .5px;
 }
 /* =====================Table=================== */
 .custome-table table tr{
@@ -465,17 +474,51 @@ body a:hover{
 .custome-table table a i{
   font-size: 14px;
 }
-.tdsModal .modal-dialog{
-  max-width: 70%!important;
-}
+/* .tdsModal .modal-dialog{
+  max-width: 70% !important;
+} */
 .tdsModal .btn-close{
   box-shadow: none;
   outline: none;
 }
-.tdsModal .modal-footer button,.verifyPan,.submitBtn{
-  padding: 8px 15px;
-  font-weight: 600;
+.tdsModal .modal-footer button, .verifyPan, .submitBtn{
+  padding: .5rem 1rem;
+  font-weight: 500;
+  letter-spacing: .6px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
 }
+.modalBtn{
+  padding: .5rem 1rem;
+  font-weight: 500;
+  letter-spacing: .6px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.form-control{
+ height: 1.85rem;
+ border-radius: 2px;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 500;
+ color: #999;
+ letter-spacing: .5px;
+ font-size: .8rem !important;
+
+}
+.form-select{
+  height: 1.85rem;
+  border-radius: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: .5px;
+  font-size: .8rem !important;
+ }
 .tdsModal input{
   font-size: 14px;
 }
@@ -500,16 +543,18 @@ body a:hover{
   letter-spacing: .5px;
   font-size: 1.35rem;
 }
+@media(max-width:600px){
+  .main-heading{
+    font-size: 1.1rem;
+  }
+}
 .tdsCertificate .rounded-circle{
   font-weight: 600;
 }
 .tdsCertificate .form-select{
   font-size: 14px;
 }
-.tdsCertificate .issueSteps .stepper h5{
-  font-size: 18px;
-  font-weight: 600;
-}
+
 .tdsCertificate .card-body a{
   font-weight: 600;
 }
@@ -690,6 +735,7 @@ body a:hover{
 .step {
   --border-size: 2px;
   --inner-circle-w: 0.5rem;
+  margin-bottom: 1rem;
   
   display: flex;
   align-items: center;
@@ -831,6 +877,10 @@ nav .breadcrumb a{
   letter-spacing: .5px;
   font-size: .85rem;
 }
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0rem;
+}  
 .table-responsive .edit-transaction{
   font-weight: 500;
   color: #000;
@@ -980,12 +1030,15 @@ nav .breadcrumb a{
   padding: .5rem 1rem;
   display: inline-block;
   border-radius: 5px;
-  background-color: #3498db;
+  background-color: #26ace3;
   color: #fff !important;
   letter-spacing: .5px;
   cursor: pointer;
   text-decoration: none;
- }
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+}
  #generteFVU{
   background-color: #1b4332;
  }
@@ -1116,3 +1169,146 @@ nav .breadcrumb a{
   color: #fff;
 }
 /* ================================UI==================================== */
+.stepper .stepperHeading{
+  color:  #000;
+  font-size: .95rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 0rem;
+  margin-top: .25rem;
+}
+.stepper .stepperHeading .paraLead{
+  color:  #666;
+  font-size: .8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: .5px;
+  margin-top: 2rem;
+}
+/* =================Global UI===================== */
+.form-select{
+border-radius: 2px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+font-size: .8rem;
+letter-spacing: .5px;
+}
+.form-select:focus{
+  box-shadow: none;
+}
+.sectionHeader{
+  background-color: #26ace3;
+  padding: .5rem 1rem;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionHeader a{
+  color: #fff;
+  letter-spacing: .5px;
+  font-size: .9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sectionHeader span{
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .5px;
+  font-size: .9rem;
+}
+.sectionHeading{
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0rem;
+}
+.btn-close:focus{
+  box-shadow: none;
+}
+.closeBtn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.closeBtn img{
+  mix-blend-mode: multiply;
+}
+.uiBtn{
+  border: none;
+  outline: none;
+  padding: .5rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+.breadcrumb{
+  background-color: transparent;
+}
+.sectionHeader .headerBtn{
+  padding: .5rem 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #222;
+  display: inline-block;
+}
+.card .card-footer{
+  padding-top: 0rem;
+  border-top: none;
+}
+/* ===================== */
+@media(max-width: 768px){
+  .sectionHeader{
+    flex-direction: column;
+  }
+  .sectionHeader span{
+      font-size: .85rem;
+    }
+  nav .breadcrumb a{
+      font-size: .75rem;
+  }
+  .sectionHeading{
+      font-size: 1.1rem;
+  }
+  .sectionHeader .headerBtn{
+     margin-top: .5rem;
+  }
+}
+
+@media (max-width: 768px){
+  .group-btn a {
+      border-radius: 4px;
+      font-size: .8rem;
+      color: #fff;
+  }
+  .sectionHeader a{
+      font-size: .8rem;
+  }
+}
+/* =================================== */
+.group-btn a{
+  display: inline-block;
+}
+
+
+@media(max-width:768px){
+  .col-md-12{
+    padding: 0rem;
+  }
+  .app-main .app-main__inner{
+    padding-top: 0rem;
+  }
+  .para p {
+    padding: 0rem 0.6rem;
+  }
+  .card-body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+}

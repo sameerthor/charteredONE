@@ -19,7 +19,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dashboardpack.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/masterTDS.css">
@@ -310,21 +310,28 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="breadcrumbs">
-                                        <a href="./masterTDS.html"><i class="fa-solid fa-angle-left"></i> Return to Master TDS</a>
+                                    <div class="card-body py-0">
+                                        <div class="d-md-flex align-items-center">
+                                            <nav aria-label="breadcrumb" class="me-auto">
+                                                <ol class="breadcrumb">
+                                                   <li class="breadcrumb-item"><a href="./masterTDS.html"><i class="fa-solid fa-angle-left"></i> Master TDS</a></li>
+                                                   <li class="breadcrumb-item active" aria-current="page">Incomplete Deductor</li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+                                        <div class="para">
+                                            <p class="text-left">
+                                                The deductors are present in the system, but they can't be fully created because of a lack of required information, such as TAN/Username/Password, which you can enter now to add to master.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="para">
-                                        <p class="text-center">
-                                            The deductors are present in the system, but they can't be fully created because of a lack of required information, such as TAN/Username/Password, which you can enter now to add to master.
-                                        </p>
-                                    </div>
-                                    <div class="card-body active-content content" id="allDeductor">
-                                        <div class="table-responsive">
+                                    <div class="card-body active-content content px-md-0">
+                                        <div class="table-responsive  hide-scrollbar">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <thead>
                                                     <tr>
                                                         <th class="text-center">#TAN</th>
-                                                        <th>Deductor Name/Email</th>
+                                                        <th>Deductor Name</th>
                                                         <th class="text-center">ITD Password</th>
                                                         <th class="text-center">Traces Username</th>
                                                         <th class="text-center">Traces Password</th>
@@ -332,16 +339,11 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td class="text-center text-muted">#345645</td>
+                                                        <td class="text-center">#345645</td>
                                                         <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left flex2">
-                                                                        <div class="widget-heading"><a href="#000">Rochem Seperate PVT LTD.</a></div>
-                                                                        <div class="widget-subheading opacity-7">example@emailaddress.com</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <span class="deductorName">
+                                                                <a href="./deductorDashboard.html">Rochem Seperate PVT LTD</a>
+                                                            </span>
                                                         </td>
                                                         <td class="text-center">#FSBS725@#</td>
                                                         <td class="text-center">Incomplete_USER</td>
@@ -350,14 +352,9 @@
                                                     <tr>
                                                         <td class="text-center text-muted">#345645</td>
                                                         <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left flex2">
-                                                                        <div class="widget-heading"><a href="#000">Rochem Seperate PVT LTD.</a></div>
-                                                                        <div class="widget-subheading opacity-7">example@emailaddress.com</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <span class="deductorName">
+                                                                <a href="./deductorDashboard.html">Rochem Seperate PVT LTD</a>
+                                                            </span>
                                                         </td>
                                                         <td class="text-center">#FSBS725@#</td>
                                                         <td class="text-center">Incomplete_USER</td>
@@ -366,14 +363,9 @@
                                                     <tr>
                                                         <td class="text-center text-muted">#345645</td>
                                                         <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left flex2">
-                                                                        <div class="widget-heading"><a href="#000">Rochem Seperate PVT LTD.</a></div>
-                                                                        <div class="widget-subheading opacity-7">example@emailaddress.com</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <span class="deductorName">
+                                                                <a href="./deductorDashboard.html">Rochem Seperate PVT LTD</a>
+                                                            </span>
                                                         </td>
                                                         <td class="text-center">#FSBS725@#</td>
                                                         <td class="text-center">Incomplete_USER</td>
@@ -382,14 +374,9 @@
                                                     <tr>
                                                         <td class="text-center text-muted">#345645</td>
                                                         <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left flex2">
-                                                                        <div class="widget-heading"><a href="#000">Rochem Seperate PVT LTD.</a></div>
-                                                                        <div class="widget-subheading opacity-7">example@emailaddress.com</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <span class="deductorName">
+                                                                <a href="./deductorDashboard.html">Rochem Seperate PVT LTD</a>
+                                                            </span>
                                                         </td>
                                                         <td class="text-center">#FSBS725@#</td>
                                                         <td class="text-center">Incomplete_USER</td>

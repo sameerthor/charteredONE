@@ -19,8 +19,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dashboardpack.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/masterTDS.css">
@@ -302,7 +301,8 @@
                                         <div class="d-md-flex align-items-center">
                                             <nav aria-label="breadcrumb" class="me-auto">
                                                 <ol class="breadcrumb">
-                                                   <li class="breadcrumb-item"><a href="./masterTDS.html"><i class="fa-solid fa-angle-left"></i> Back to Master TDS</a></li>
+                                                   <li class="breadcrumb-item"><a href="./masterTDS.html"><i class="fa-solid fa-angle-left"></i> Master TDS</a></li>
+                                                   <li class="breadcrumb-item active" aria-current="page">Deductor Dashboard</li>
                                                 </ol>
                                             </nav>
                                         </div>
@@ -310,12 +310,14 @@
                                             <h3 class="text-center sectionHeading">Deductor Dashboard</h3>  
                                         </div>
                                     </div>
-                                    <div class="sectionHeader">
-                                        <div class="mb-lg-0 mb-2">
-                                            <span>Returns</span>
-                                        </div>
-                                        <div>
-                                            <span><a href="#000">SR. Technologies PVT LTD</a></span>
+                                    <div class="px-2 px-md-0">
+                                        <div class="sectionHeader">
+                                            <div class="mb-lg-0 mb-2">
+                                                <span>Returns</span>
+                                            </div>
+                                            <div>
+                                                <span><a href="#000">SR. Technologies PVT LTD</a></span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -328,12 +330,14 @@
                                             <a href="#000" class="due" data-bs-toggle="modal" data-bs-target="#singlePan">Verify Single PAN</a>
                                         </div>
                                     </div>
-                                    <div class="sectionHeader">
-                                        <div>
-                                            <span>User Created Returns</span>
-                                        </div>
-                                        <div>
-                                            <a href="#000" data-bs-toggle="modal" data-bs-target="#createNewReturn" class="headerBtn">Create New Returns <i class="fa-solid fa-plus"></i></a>
+                                    <div class="px-2 px-md-0">
+                                        <div class="sectionHeader">
+                                            <div>
+                                                <span>User Created Returns</span>
+                                            </div>
+                                            <div>
+                                                <a href="#000" data-bs-toggle="modal" data-bs-target="#createNewReturn" class="headerBtn">Create New Returns <i class="fa-solid fa-plus"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -350,7 +354,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body" id="preparegstin">
-                                        <div class="table-responsive custome-table">
+                                        <div class="table-responsive custome-table hide-scrollbar">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover tableLarge">
                                                 <thead>
                                                     <tr>
@@ -438,7 +442,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="px-2 px-md-0">
                                         <div class="card-header table-header">
                                             <div class="header-item">
                                                 <div>
@@ -449,7 +453,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="table-responsive custome-table">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive custome-table hide-scrollbar">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <thead>
                                                     <tr>
@@ -494,18 +500,20 @@
                                             <li class="pagebtn"><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
                                         </ul>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="px-2 px-md-0">
                                         <div class="card-header table-header">
                                             <div class="header-item">
                                                 <div>
                                                     <span>Deductee Master</span>
                                                 </div>
                                                 <div>
-                                                    <a href="#000">Create New Deductee <i class="fa-solid fa-plus"></i></a>
+                                                    <a href="./createTDSclient.html">Create New Deductee <i class="fa-solid fa-plus"></i></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="table-responsive custome-table">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive custome-table hide-scrollbar">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <thead>
                                                     <tr>
@@ -548,7 +556,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="px-2 px-md-0">
                                         <div class="card-header table-header">
                                             <div class="header-item">
                                                 <div>
@@ -564,7 +572,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="table-responsive custome-table">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive custome-table hide-scrollbar">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <thead>
                                                     <tr>
@@ -612,7 +622,7 @@
         </div>
     </div>
     <!-- =========================crete new return modal-================================ -->
-    <div class="modal fade tdsModal" id="createNewReturn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade " id="createNewReturn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -669,8 +679,8 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <a type="button" href="./consolidateCheck.html" class="btn btn-primary">Submit</a>
+              <button type="button" class="btn btn-secondary modalBtn" data-bs-dismiss="modal">Close</button>
+              <a type="button" href="./consolidateCheck.html" class="btn btn-info modalBtn">Submit</a>
             </div>
           </div>
         </div>
@@ -689,7 +699,7 @@
                     <input type="text" class="form-control" placeholder="Eg. DDIPM66E">
                 </div>
                 <div class="col text-center">
-                    <a href="#000" class="btn btn-primary verifyPan" onclick="verifyPan()">Verify PAN</a>
+                    <a href="#000" class="btn btn-info verifyPan" onclick="verifyPan()">Verify PAN</a>
                 </div>
                 <div id="verifyPan">
                     <div class="d-flex flex-row">
@@ -916,7 +926,7 @@
                     <p><strong>Step 1:</strong></p>
                     <p>Do you want the resultant excel file to show Names against each of the provided PAN? If you opts YES the excel 
                         file will contain a column containing complete PAN Names.
-                        If you opts no the excel will still contain a column for PAN Names but it will only show the first &amp last letter
+                        If you opts NO the excel will still contain a column for PAN Names but it will only show the first &amp last letter
                         of the first name and last letter of last name.
                     </p>
                     <div class="canvas-btn">
@@ -926,7 +936,7 @@
                 </div>
                 <p><strong>Step 2:</strong></p>
                 <div class="file-upload">
-                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Import File</button>
+                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Choose File</button>
                     <div class="image-upload-wrap">
                         <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  />
                         <div class="drag-text">
@@ -945,7 +955,7 @@
                 </div>
             </div>
             <div class="modal-footer text-center d-flex justify-content-center">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifyEntry" id="liveAlertBtn">Import File</button>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#verifyEntry" id="liveAlertBtn">Import File</button>
             </div>
         </div>
     </div>
@@ -955,21 +965,21 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Import Deductor</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Verify PAN in Bulk</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="file-upload">
-                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Import File</button>
+                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Choose File</button>
                     <div class="image-upload-wrap">
                         <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  />
                         <div class="drag-text">
-                        <h4>Drag and drop a file or select add file</h4>
+                            <h4>Drag and drop a file or select add file</h4>
                         </div>
                     </div>
                     <div class="file-upload-content">
                         <div class="image-title-wrap mt-4">
-                        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded File</span></button>
+                            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded File</span></button>
                         </div>
                     </div>
                 </div>
@@ -979,12 +989,11 @@
                 </div>
             </div>
             <div class="modal-footer text-center d-flex justify-content-center">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifyEntry">Import File</button>
+                <button type="button" class="btn btn-info modalBtn" data-bs-toggle="modal" data-bs-target="#verifyEntry">Import File</button>
             </div>
         </div>
     </div>
   </div>
-<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script>
     document.getElementById('creatChallan').style.display = 'block';
     function toggleContent(divId) {
