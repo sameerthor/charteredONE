@@ -1621,7 +1621,7 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
 .table-accordian .accordion-header button {
   border-radius: 0px !important;
   padding: 0.6rem 1.4rem;
-  background-color: #3cdc9f;
+  background-color: #3cdc9f97;
   font-weight: 600 !important;
   outline: none;
   font-size: 0.7rem;

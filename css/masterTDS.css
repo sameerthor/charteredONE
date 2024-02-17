@@ -586,6 +586,10 @@ body a:hover{
 .challan-details .challan-item{
   border-right: 1px solid #999;
   margin-bottom: 1.2rem;
+  padding: 0rem 1em;
+}
+.challan-details .challan-item:last-child{
+  border-right: none;
 }
 .challan-details h3{
   color: #000;
@@ -1260,6 +1264,16 @@ letter-spacing: .5px;
 .card .card-footer{
   padding-top: 0rem;
   border-top: none;
+}
+.importcheck .form-check-input{
+  width: .8rem;
+  height: .8rem;
+}
+.importcheck .form-check-input:focus{
+    box-shadow: none;
+}
+.form-check .form-check-input:focus {
+ box-shadow: none;
 }
 /* ===================== */
 @media(max-width: 768px){

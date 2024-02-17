@@ -453,6 +453,190 @@
         </div>
     </div>
     <!-- ================================ -->
+    <!-- ================================ -->
+    <div class="modal tdsModal fade" id="raiseRequest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 " id="staticBackdropLabel">Raise New Request</h1>
+              <button type="button" class="closeBtn" data-bs-dismiss="modal" aria-label=""><img src="../images/close-times.png" alt="" width="16" height="16"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="mb-4 col-md-3">
+                        <label for="exampleFormControlInput1" class="form-label">Request For</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose</option>
+                            <option value="1">Consolidate File</option>
+                            <option value="2">Justification Report</option>
+                        </select>
+                    </div>
+                    <div class="mb-4 col-md-3">
+                        <label for="exampleFormControlInput1" class="form-label">Financial Year</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose</option>
+                            <option value="1">2023-24</option>
+                            <option value="2">2022-23</option>
+                            <option value="3">2021-22</option>
+                            <option value="4">2020-21</option>
+                        </select>
+                    </div>
+                    <div class="mb-4 col-md-3">
+                        <label for="exampleFormControlInput1" class="form-label">Form Type</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose</option>
+                            <option value="1">26Q</option>
+                            <option value="2">Bulk Form 16</option>
+                            <option value="3">Bulk Form 16 A</option>
+                            <option value="4">Bulk Form 27D</option>
+                        </select>
+                    </div>
+                    <div class="mb-4 col-md-3">
+                        <label for="exampleFormControlInput1" class="form-label">Quarter</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose</option>
+                            <option value="1">Q1</option>
+                            <option value="2">Q2</option>
+                            <option value="3">Q3</option>
+                            <option value="4">Q4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card-body d-md-flex">
+                    <div class="form-check mr-5">
+                        <input class="form-check-input" type="radio" id="radioContent1" checked onclick="toggleContent('consolidateOne')" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Using FVU Import(Selected)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" id="radioContent2" onclick="toggleContent('consolidateTwo')" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Using Traged Form
+                        </label>
+                    </div>
+                </div>
+                <div class="card-body p-0 m-0">
+                    <div id="consolidateOne" class="consolidatebox">
+                        <div class="file-upload">
+                            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Browse Here</button>
+                            <div class="image-upload-wrap">
+                                <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".txt"/>
+                                <div class="drag-text">
+                                <h4>Click here to brows or drag and drop consolidate File</h4>
+                                </div>
+                            </div>
+                            <div class="file-upload-content">
+                                <div class="image-title-wrap mt-4">
+                                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded File</span></button>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">
+                                <a href="#000" class="btn btn-primary submitBtn">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="consolidateTwo" class="consolidatebox">
+                        <div class="row challan-details">
+                            <div class="col-md-6">
+                                <label for="" class="form-label">Token Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <h3>Challan Details</h3>
+                            <div class="col-lg-4 col-md-6 challan-item">
+                                <div>
+                                    <p><strong>Option:1</strong> Provide any one challan information of the selected return</p>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">BSR Code</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Date of Deposit</label>
+                                        <input type="date" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Challan No.</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label" min="0">Challan Amount</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 challan-item">
+                                <div>
+                                    <p><strong>Option:2</strong> Provide any one challan information of the selected return</p>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Receipt Number</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Date of Deposit</label>
+                                        <input type="date" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">DDO Serial No.</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label" min="0">Transfer Voucher Amount</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 challan-item">
+                                <div>
+                                    <p><strong>Option:3</strong> Provide any one challan information of the selected return</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Nill Challan
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row challan-details">
+                            <h3>Deductee Details</h3>
+                            <div class="col-md-6 challan-item">
+                                <div>
+                                    <p><strong>Option:1</strong> Provide any Deductee Transaction PAN and their Tax Deducted</p>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Pan</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Tax Deducted</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 challan-item">
+                                <div>
+                                    <p><strong>Option:2</strong> Select no valid PAN in case in case no valid PAN exist for the challan entered above the selected return.</p>
+                                    <div class="form-check"> 
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                         Nill Transaction
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="#000" class=" btn btn-info uiBtn">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary uiBtn" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info uiBtn">Proceed</button>
+            </div>
+          </div>
+        </div>
+    </div>
     
 <script>
     document.getElementById('consolidateOne').style.display = 'block';
