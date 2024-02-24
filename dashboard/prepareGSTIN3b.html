@@ -29,17 +29,17 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
     />
-    <link rel="stylesheet" href="../css/dashboardpack.css" />
     <link
       rel="stylesheet"
       href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="../css/dashboardpack.css" />
+
     <link rel="stylesheet" href="../css/dashboard.css" />
     <link rel="stylesheet" href="../css/preparegstin.css" />
     <!-- *******************Fontawesome***************************** -->
@@ -1216,97 +1216,262 @@
                   <div class="card-body">
                     <div class="card-header liability-breakup bg-light">
                       <div>
-                        <span
-                          >3.2 Inter State Supplies (Out of Supplies shown in
-                          3.1 (a))</span
-                        >
+                        <span>3.2 Inter State Supplies (Out of Supplies shown in 3.1 (a))</span>
                       </div>
                     </div>
-                    <div class="table-responsive">
-                      <table
-                        class="_table align-middle mb-0 table table-borderless table-striped table-hover"
-                      >
-                        <thead>
-                          <tr class="thead text-center">
-                            <th class="text-center">POS</th>
-                            <th colspan="2" class="text-center">
-                              Un-Registered Supplies
-                            </th>
-                            <th colspan="2" class="text-center">
-                              Composition Supplies
-                            </th>
-                            <th colspan="2" class="text-center">
-                              UIN Supplies
-                            </th>
-                            <th width="50px">
-                              <div class="action_container">
-                                <button
-                                  class="success"
-                                  onclick="create_tr('table_body')"
-                                >
-                                  <i class="fa fa-plus"></i>
-                                </button>
-                              </div>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th></th>
-                            <th class="text-center">Taxable Amt</th>
-                            <th class="text-center">IGST</th>
-                            <th class="text-center">Taxable Amt</th>
-                            <th class="text-center">IGST</th>
-                            <th class="text-center">Taxable Amt</th>
-                            <th class="text-center">IGST</th>
-                          </tr>
-                        </thead>
-                        <tbody id="table_body">
-                          <tr>
-                            <td>
-                              <select
-                                class="form-select"
-                                aria-label="Default select example"
-                              >
-                                <option selected></option>
-                                <option value="1">Uttar Pradesh</option>
-                                <option value="2">Hariyana</option>
-                                <option value="3">Chhatisgarh</option>
-                                <option value="3">Maharastra</option>
-                                <option value="3">Madhya Pradesh</option>
-                                <option value="3">West Bengal</option>
-                              </select>
-                            </td>
-                            <td>
-                              <input type="text" class="form-control" />
-                            </td>
-                            <td>
-                              <input type="text" class="form-control" />
-                            </td>
-                            <td>
-                              <input type="text" class="form-control" />
-                            </td>
-                            <td>
-                              <input type="text" class="form-control" />
-                            </td>
-                            <td>
-                              <input type="text" class="form-control" />
-                            </td>
-                            <td>
-                              <input type="text" class="form-control" />
-                            </td>
-                            <td>
-                              <div class="action_container">
-                                <button
-                                  class="danger"
-                                  onclick="remove_tr(this)"
-                                >
-                                  <i class="fa-solid fa-trash"></i>
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <!-- ================== -->
+                    <div class="accordion borderLessAccordian mb-3" id="accordionExampleOne">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="multiAccordian">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Supplies made to Unregistered Persons
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExampleOne">
+                          <div class="accordion-body p-0">
+                            <div class="table-responsive">
+                              <table class="_table align-middle mb-0 table table-borderless table-striped table-hover">
+                                <thead>
+                                  <tr class="thead text-center">
+                                    <th class="text-left" width="100">
+                                      <div class="delete-with-checks">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          </div>
+                                          <div>
+                                              <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                          </div>
+                                      </div>
+                                    </th>
+                                    <th class="text-center">Place of Supply (State/UT)</th>
+                                    <th class="text-center">Total Taxable value (₹)</th>
+                                    <th class="text-center">Amount of Integrated Tax (₹)</th>
+                                    <th width="50px">
+                                      <div class="action_container">
+                                        <button
+                                          class="success"onclick="create_tr('table_body')">
+                                          <i class="fa fa-plus"></i>
+                                        </button>
+                                      </div>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody id="table_body">
+                                  <tr>
+                                    <th class="text-left" width="60">
+                                      <div class="delete-with-checks">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          </div>
+                                          <div>
+                                              <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                          </div>
+                                      </div>
+                                    </th>
+                                    <td>
+                                      <select class="form-control"aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">Uttar Pradesh</option>
+                                        <option value="2">Hariyana</option>
+                                        <option value="3">Chhatisgarh</option>
+                                        <option value="3">Maharastra</option>
+                                        <option value="3">Madhya Pradesh</option>
+                                        <option value="3">West Bengal</option>
+                                      </select>
+                                    </td>
+                                    <td>
+                                      <input type="text" class="form-control" />
+                                    </td>
+                                    <td>
+                                      <input type="text" class="form-control" />
+                                    </td>
+                                    <td>
+                                      <div class="action_container">
+                                        <button
+                                          class="danger"
+                                          onclick="remove_tr(this)"
+                                        >
+                                          <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <!-- =================== -->
+                    <div class="accordion mb-3 borderLessAccordian" id="accordionExampleTwo">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="multiAccordian">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                            Supplies made to Composition Taxable Persons
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExampleTwo">
+                          <div class="accordion-body p-0">
+                            <div class="table-responsive">
+                              <table class="_table align-middle mb-0 table table-borderless table-striped table-hover">
+                                <thead>
+                                  <tr class="thead text-center">
+                                    <th class="text-left" width="100">
+                                      <div class="delete-with-checks">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          </div>
+                                          <div>
+                                              <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                          </div>
+                                      </div>
+                                    </th>
+                                    <th class="text-center">Place of Supply (State/UT)</th>
+                                    <th class="text-center">Total Taxable value (₹)</th>
+                                    <th class="text-center">Amount of Integrated Tax (₹)</th>
+                                    <th width="50px">
+                                      <div class="action_container">
+                                        <button
+                                          class="success"onclick="create_tr('table_bodyTwo')">
+                                          <i class="fa fa-plus"></i>
+                                        </button>
+                                      </div>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody id="table_bodyTwo">
+                                  <tr>
+                                    <th class="text-left" width="60">
+                                      <div class="delete-with-checks">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          </div>
+                                          <div>
+                                              <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                          </div>
+                                      </div>
+                                    </th>
+                                    <td>
+                                      <select class="form-control"aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">Uttar Pradesh</option>
+                                        <option value="2">Hariyana</option>
+                                        <option value="3">Chhatisgarh</option>
+                                        <option value="3">Maharastra</option>
+                                        <option value="3">Madhya Pradesh</option>
+                                        <option value="3">West Bengal</option>
+                                      </select>
+                                    </td>
+                                    <td>
+                                      <input type="text" class="form-control" />
+                                    </td>
+                                    <td>
+                                      <input type="text" class="form-control" />
+                                    </td>
+                                    <td>
+                                      <div class="action_container">
+                                        <button
+                                          class="danger"
+                                          onclick="remove_tr(this)"
+                                        >
+                                          <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ================ -->
+                    <div class="accordion  borderLessAccordian" id="accordionExampleThree">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="multiAccordian">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                            Supplies made to UIN holders
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleThree">
+                          <div class="accordion-body p-0">
+                            <div class="table-responsive">
+                              <table class="_table align-middle mb-0 table table-borderless table-striped table-hover">
+                                <thead>
+                                  <tr class="thead text-center">
+                                    <th class="text-left" width="100">
+                                      <div class="delete-with-checks">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          </div>
+                                          <div>
+                                              <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                          </div>
+                                      </div>
+                                    </th>
+                                    <th class="text-center">Place of Supply (State/UT)</th>
+                                    <th class="text-center">Total Taxable value (₹)</th>
+                                    <th class="text-center">Amount of Integrated Tax (₹)</th>
+                                    <th width="50px">
+                                      <div class="action_container">
+                                        <button
+                                          class="success"onclick="create_tr('table_bodyThree')">
+                                          <i class="fa fa-plus"></i>
+                                        </button>
+                                      </div>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody id="table_bodyThree">
+                                  <tr>
+                                    <th class="text-left" width="60">
+                                      <div class="delete-with-checks">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          </div>
+                                          <div>
+                                              <a href="#000"><i class="fa-solid fa-trash-can"></i></a>
+                                          </div>
+                                      </div>
+                                    </th>
+                                    <td>
+                                      <select class="form-control"aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">Uttar Pradesh</option>
+                                        <option value="2">Hariyana</option>
+                                        <option value="3">Chhatisgarh</option>
+                                        <option value="3">Maharastra</option>
+                                        <option value="3">Madhya Pradesh</option>
+                                        <option value="3">West Bengal</option>
+                                      </select>
+                                    </td>
+                                    <td>
+                                      <input type="text" class="form-control" />
+                                    </td>
+                                    <td>
+                                      <input type="text" class="form-control" />
+                                    </td>
+                                    <td>
+                                      <div class="action_container">
+                                        <button
+                                          class="danger"
+                                          onclick="remove_tr(this)"
+                                        >
+                                          <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ================ -->
                   </div>
                   <!-- ======================== -->
                   <div class="card-body">
