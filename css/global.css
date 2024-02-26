@@ -156,6 +156,15 @@ html {
 	letter-spacing: .5px;
 	border: 1px solid #fff;
 }
+.nav-btn:hover{
+	opacity: 0.7;
+}
+#enquiry a:hover{
+	opacity: 0.7;
+}
+.sendbtn:hover{
+	opacity: 0.9;
+}
 .nav-btn .nav-link{
 	font-size:14.5px;
 }
