@@ -57,7 +57,7 @@ html {
     width:100%;
     z-index: 1000000;
     top:0;
-    background-color: #26ace3;
+    background-color: #000;
     color: #fff;
 }
 .nav-item a{
@@ -66,7 +66,7 @@ html {
 .navbar .nav-link{
     font-weight: 600;
     color: #fff;
-	font-size: 14px;
+	font-size: 16.5px;
 }
 .navbar .nav-link:hover{
 	color:#fff;
@@ -78,8 +78,9 @@ html {
 .navbar .navbar-brand{
     font-weight: 700;
     letter-spacing: 1.5px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 .navbar .navbar-brand:hover{
     color: #fff;
@@ -150,10 +151,17 @@ html {
 	letter-spacing: .5px;
 	border: 1px solid #fff;
 }
+.nav-btn .nav-link{
+	font-size:14.5px;
+}
 #loginBtn{
-	background-color: #323232;
+	background-color: #fff;
 	color: #fff;
-	border: 1px solid #323232;
+	border: 1px solid #fff;
+}
+#loginBtn .nav-link{
+	color:#000!important;
+	font-size:14.5px;
 }
 @media(max-width:991px){
 	.navbar-nav .nav-btn{
@@ -254,8 +262,8 @@ ul{
 	font-size: .9rem;
 }
 .addressBox p{
-	line-height: 1.4;
-	font-size: 1rem;
+	line-height: 1.6;
+	font-size: 0.95rem;
 	color: #fff;
 }
 .copyRightText{
@@ -274,12 +282,12 @@ ul{
     bottom: 40%;
     right: 0px;
     border-radius: 0px;
-    background-color: #26ace3;
+    background-color: #000;
     border: none;
     outline: none;
     cursor: pointer;
     color: #fff;
-	box-shadow: 5px 5px 10px #26ade3c3;
+	box-shadow: 5px 5px 10px #aaa;
 	/* border-radius: 4px; */
 	border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
