@@ -64,22 +64,53 @@
     box-sizing: border-box;
 }
 .banner{
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
-    background-position: center;
-    background-size: center;
+    background-size: contain;
+    background-position: center; */
+    background-image: url('../images/homeimg-bg.jpg');
+    background-size: cover;
+    color: #ffffff;
+    text-align: right;
+    padding-top: 68px;
+}
+.banner h4{
+    color: #000;
+}
+.bannerBlock{
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+.bannerBlock .leftBlock{
+  flex: 4;
+  background-color: #1142617a;
+  padding: 20px;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+  display: inherit;
+  text-align: left;
+}
+.bannerBlock .rightBlock{
+  flex: 8;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
 }
 li a:hover{
     background: white;
     transition: 0.6s;
+    opacity: 0.9;
+
 }
 .navbar a:hover{
     color: black;
 }
 .content{
     text-align: center;
-    border-radius: 10px;
-    background-color: #2323236a;
+    border-radius: 4px;
+    /* background-color: #2323236a; */
     margin-top: 6rem;
 }
 .content h1{
@@ -88,24 +119,38 @@ li a:hover{
     font-weight: 800;
 }
 .content button{
-    width: 200px;
+    /* width: 150px;
     padding: 15px;
     margin: 20px 5px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 4px;
     color: black;
     border: 2px;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     background: rgb(0, 192, 226);
     color: #fff;
     transition: all .3s ease;
-    letter-spacing: .5px;
+    letter-spacing: .5px; */
+    display: inline-block;
+    border: none;
+    background-color: #01010145;
+    color: #ffffffbd !important;
+    padding: 10px 35px;
+    text-decoration: none !important;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 20px;
+    letter-spacing: 0.8px;
+    border-style: solid;
 }
 .content button:hover{
-   background-color: #fff;
-   color: #000;
+   /* background-color: #fff;
+   color: #000; */
+   background-color: #010101;
+   border-style: solid;
 }
 .banner video{
     position: absolute;
@@ -121,19 +166,20 @@ li a:hover{
 }
 /* =============================Animated text=================== */
 .text {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     margin-left: -225px;
     height: 40px;
     top: 40%;
     margin-top: -20px;
-    text-align: left;
+    text-align: left; */
+    line-height: 50px;
   }
   
  .text p {
     display: block;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 2rem;
     letter-spacing: .5px;
     width: 100%;
     color:#fff;
@@ -206,16 +252,28 @@ li a:hover{
   /* =====================servises=========================== */
   .services .service-box{
     background-color: #fff;
-    box-shadow: 5px 5px 10px #b1b0b0;
+    /* box-shadow: 5px 5px 10px #b1b0b0; */
     border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all .5s;
   }
   .services h2{
-   font-weight: 500;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #26ace3;
+  }
+  .services h2::after,.site-heading h2:after,.section-heading::after{
+    content: "";
+    background-color: #26ace3;
+    height: 0.2rem;
+    width: 7rem;
+    display: block;
+    margin: 10px auto;
   }
   .services h2 .rotate{
     padding: .5rem;
-    font-size: 3.2rem;
+    font-size: 1.5rem;
     display: inline-block;
     animation: rotation 2s infinite linear;
     transition: .3s ease;
@@ -240,11 +298,12 @@ li a:hover{
     margin: auto;
     padding: 1rem .2rem;
     border-radius: 10px 10px 0px 0px;
-    width: 60%;
+    width: 80px;
   }
   .services .service-box:hover {
     border-radius: 10px;
     transform: scale(1.06);
+    transition: 0.1s ease-in-out;
 }
   .services .service-box a{
    display: block;
@@ -252,8 +311,8 @@ li a:hover{
    color: #000;
   }
   .service-box .service-title{
-    font-size: 1.4rem;
-    padding: 1rem;
+    font-size: 0.90rem;
+    padding: 0.85rem;
     color: #000;
     font-weight: 600;
     letter-spacing: .5px;
@@ -286,18 +345,83 @@ li a:hover{
     width: calc(250px * 14);
 }
 .slide {
-    height: 100px;
-    width: 250px;
+    /* height: 100px;
+    width: 200px; */
 }
-
+.slide img{
+    object-fit: contain;
+    width: 175px;
+}
+.carousel.slide img {
+    /* width:100%;
+    height:auto; */
+}
+#latestNewsSlider .carousel-control-prev i,#latestNewsSlider .carousel-control-next i{
+    color: #000;
+    font-size: 30px;
+}
+#myCarousel img {
+    max-width: 100%;
+  }
+ #myCarousel  .slide-wrapper {
+    text-align: center;
+  }
 .slider-box{
     padding: 2rem 0;
     background-color: #fff;
 }
 .slider-box h2{
     text-align: center;
-    color: #000;
-    font-weight: 500;
+    /* color: #000; */
+    color:#26ace3;
+    font-weight: 600;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 15px;
+}
+.carousel-control-next{
+    right: 10px;
+}
+.carousel-control-prev{
+    left: 10px;
+}
+.slick-initialized .slick-slide{
+  margin-left: 10px;
+}
+.slick-prev,.slick-next{
+  width: 30px;
+  height: 30px;
+  background-color: #26ace3;
+  border-radius: 50px;
+  line-height: 35px;
+  z-index: 1000;
+}
+.slick-prev{
+  left: 0;
+}
+.slick-prev:hover,.slick-next:hover{
+  background-color: #26ace3;
+  color: #fff;
+  opacity: 0.8;
+}
+.slick-next{
+  /* right: 0; */
+}
+.slick-prev:before,.slick-next:before {
+  content: "<";
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  opacity: 1!important;
+}
+.slick-prev:before{
+  margin-right:2px
+}
+.slick-next:before {
+  content: ">";
+  margin-left: 2px;
 }
 /* =======================Contact-us===================== */
 .contact{
@@ -305,36 +429,40 @@ li a:hover{
 }
 .contact h2{
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 .contact p{
     text-align: center;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 .contact .contact-box{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 .contact .contact-box img{
     max-width: 100%;
-    max-height: 35rem;
+    max-height: 25rem;
     object-fit: contain;
     display: block;
     margin: auto;
 }
-.contact-box input{
+.contact-box input,.contact-box textarea{
     display: block;
     outline: none;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
 }
 .contact-box .input-text{
-    padding: 1rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
     width: 100%;
+}
+.contact-box .input-text::placeholder,.contact-box textarea::placeholder{
+    font-size: 11px;
+    color: grey;
 }
 .contact-box .text-box{
     padding: 1rem;
@@ -366,7 +494,8 @@ textarea:focus {
   .contact-box .submit-btn .submit{
     /* text-align: center; */
     display: inline-block;
-    border-radius: 8px;
+    font-size: 12px;
+    border-radius: 4px;
     padding: .6rem 1rem;
     font-weight: 500;
     background-color: #26ace3;
@@ -379,10 +508,10 @@ textarea:focus {
   }
   /* ============================number counter============================ */
  .counter{
-    background-color: #26ace3;
+    background-color: #f5f5f5;
     color: #fff;
     padding: 2.5rem 0;
-    margin-top: 1.2rem;
+    /* margin-top: 1.2rem; */
  }
  .counter .space-area{
     margin-bottom: 2rem;
@@ -390,27 +519,38 @@ textarea:focus {
 .counter .container .count-area-content{
     text-align: center;
     margin-bottom: 2rem;
-    border-radius: 2ch;
-    padding: 3ch;
+    border-radius: 0.8ch;
+    padding: 1.5ch;
     background-color: #fff;
     color: #2980b9;
 }
 .count-area-content .count-icon i{
     font-weight: 600;
     color: #000;
-    font-size: 3.5rem;
-    color: #2980b9;
+    font-size: 2.5rem;
+    /* color: #2980b9; */
+    color: #26ace3;
 }
 .count-area-content .count-digit{
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 1.4rem;
+    color: #26ace3;
 }
 .count-area-content .count-title{
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 0.90rem;
+    color: #26ace3;
+ }
+ @media(max-width:1024px){
+  .slick-prev{
+    left:-10px;
+  }
+  .slick-next{
+    right: -10px;
+  }
  }
  @media(max-width:768px){
     .counter .container .count-area-content{
@@ -425,18 +565,54 @@ textarea:focus {
     .count-area-content .count-title{
         font-size: 1.1rem;
      }
+     .bannerBlock .leftBlock{
+      flex: 6;
+    }
+    .bannerBlock .rightBlock{
+      flex: 6;
+    }
+    .banner{
+      padding-top: 50px;
+  }
+
  }
  @media(min-width:300px) and (max-width:575px){
-    .counter .count-area{
+    .counter .count-area,.our-offer-items.less-carousel,.contact{
        padding: 0rem 2rem;
      }
+     .footer{
+      padding: 40px!important;
+     }
+     .footer-col ul li a{
+      font-size: 14px;
+      font-weight: 600;
+     }
+     .addressBox p{
+      font-size: 0.8rem;
+     }
+     .copyRightText p{
+      font-size: 0.7rem;
+     }
+     .bannerBlock .leftBlock{
+      flex: 12;
+    }
+    .bannerBlock .rightBlock{
+      flex: 0;
+    }
+    .slick-prev{
+      left:15px;
+    }
+    .slick-next{
+      right: 0px;
+    }
  }
  .section-heading{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight:600;
     letter-spacing: .5px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    color: #26ace3;
 }
  @media(max-width:600px){
     .section-heading{
@@ -452,16 +628,16 @@ textarea:focus {
 }
 /* ============================Why Choose US!=================== */
 .why-choose-us{
-    background-color: #fffff4;
+    background-color: #f5f5f5;
     padding: 4rem 0rem;
     font-family: 'Montserrat', sans-serif;
 }
 .equal-height h4{
     margin-bottom: .5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .equal-height p{
-    font-size: .9rem;
+    font-size: .72rem;
     line-height: 1.5;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -472,9 +648,10 @@ textarea:focus {
 
 .site-heading h2 {
   display: block;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 10px;
   text-transform: uppercase;
+  color:#26ace3;
 }
 
 .site-heading h2 span {
@@ -501,7 +678,7 @@ textarea:focus {
 }
 
 .site-heading {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   overflow: hidden;
   margin-top: -5px;
 }
@@ -532,7 +709,7 @@ textarea:focus {
   -o-box-shadow: 0 0 10px #cccccc;
   box-shadow: 0 0 10px #cccccc;
   overflow: hidden;
-  padding: 30px;
+  padding: 25px;
   position: relative;
   z-index: 1;
 }
@@ -540,7 +717,7 @@ textarea:focus {
 .we-offer-area.text-center .item {
   background: #ffffff none repeat scroll 0 0;
   border: medium none;
-  padding: 67px 40px 64px;
+  /* padding: 67px 40px 64px; */
 }
 
 .we-offer-area.text-center .item i {
@@ -549,12 +726,12 @@ textarea:focus {
   -moz-border-radius: 50%;
   border-radius: 50%;
   color: #ffffff;
-  font-size: 40px;
-  height: 80px;
-  line-height: 80px;
+  font-size: 28px;
+  height: 60px;
+  line-height: 60px;
   position: relative;
   text-align: center;
-  width: 80px;
+  width: 60px;
   z-index: 1;
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -570,11 +747,11 @@ textarea:focus {
   -moz-border-radius: 50%;
   border-radius: 50%;
   content: "";
-  height: 90px;
+  height: 70px;
   left: -5px;
   position: absolute;
   top: -5px;
-  width: 90px;
+  width: 70px;
   z-index: -1;
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -602,6 +779,7 @@ textarea:focus {
 .we-offer-area .item h4 {
   font-weight: 600;
   text-transform: capitalize;
+  color: #26ace3;
 }
 
 .we-offer-area .item p {
@@ -693,6 +871,7 @@ textarea:focus {
 .testim {
         background-color: #f5f5f5;
         padding: 4rem 0 1rem 0;
+        display: none;
 }
 
 .testim .wrap {
@@ -706,9 +885,9 @@ textarea:focus {
 .testim .arrow {
     display: block;
     position: absolute;
-    color: #99999940;
+    color: #26ace3;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.8em;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -755,8 +934,8 @@ textarea:focus {
 .testim .dots .dot {
     list-style-type: none;
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     border: 1px solid #999;
     margin: 0 10px;
@@ -808,8 +987,8 @@ textarea:focus {
 }
 .testim .cont div .img img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: auto;
     border-radius: 50%;
     object-fit: cover;
@@ -818,19 +997,19 @@ textarea:focus {
 .testim .cont div h2 {
     color: #26ace3;
     margin: 15px 0;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: .4px;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .testim .cont div p {
-    font-size: 1.15em;
+    font-size: 0.80em;
     color: #eee;
     width: 80%;
     margin: auto;
-    color: #999;
+    color: #000;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.8;
     letter-spacing: .5px;
 }
 
@@ -1302,8 +1481,8 @@ textarea:focus {
   .card {
     align-self: flex-start;
     position: relative;
-    width: 325px;
-    min-width: 275px;
+    /* width: 325px;
+    min-width: 275px; */
     margin: 1.25rem 0.75rem;
     background: white;
     transition: all 300ms ease-in-out;
@@ -1315,6 +1494,7 @@ textarea:focus {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
+      border-radius: 4px;
     }
   
     .card-img-hovered {
@@ -1349,7 +1529,7 @@ textarea:focus {
           width: 60px;
           max-width: 100px;
           padding: 0.2rem 0.5rem;
-          font-size: 12px;
+          font-size: 11px;
           text-align: center;
           text-transform: uppercase;
           letter-spacing: 1px;
@@ -1373,7 +1553,7 @@ textarea:focus {
   
       .card-title {
         z-index: 10;
-        font-size: 1.5rem;
+        font-size: 0.80rem;
         padding-bottom: 0.75rem;
         transition: all 350ms ease-in-out;
       }
@@ -1381,9 +1561,13 @@ textarea:focus {
       .card-creator {
         padding-bottom: 0.75rem;
         transition: all 250ms ease-in-out;
+        font-size: 12px;
+        font-weight: 600;
       }
     }
-  
+  .card-time{
+    font-size: 12px;
+  }
     &:hover {
       cursor: pointer;
       box-shadow: 0px 15px 35px rgba(227, 252, 239, 0.1),
@@ -1397,6 +1581,7 @@ textarea:focus {
           rgba(0, 0, 0, 0.65)
         );
         height: 100%;
+            border-radius: 4px;
       }
   
       .card-about,
