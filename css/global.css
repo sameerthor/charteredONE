@@ -136,6 +136,11 @@ html {
     color: #fff;
     padding-left: .7rem;
 }
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color: #fff;
+	opacity: 0.8;
+}
 .nav-item .dropdown-toggle:hover{
 	background-color: transparent;
 	color: #fff;
