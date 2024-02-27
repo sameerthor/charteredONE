@@ -59,6 +59,7 @@ html {
     top:0;
     background-color: #000;
     color: #fff;
+	transition: top 0.3s;
 }
 .nav-item a{
 	cursor: pointer!important;
@@ -69,7 +70,7 @@ html {
 	font-size: 16.5px;
 }
 .navbar .nav-link:hover{
-	color:#fff;
+	color:#f5b402!important;
 	border-bottom: 4px solid #f5b402;
     line-height: 20px;
 
@@ -77,6 +78,7 @@ html {
 .navbar-nav  .nav-btn .nav-link:hover{
 	border:none;
 	line-height: normal;
+	color: #fff!important;
 }
 .navbar .nav-link i{
 	font-size: 12px;
