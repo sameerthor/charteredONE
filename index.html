@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate World - SEBI Registered Fintech Company</title>
+    <title>CharteredOne: One destination for  all your fintech solutions</title>
     <link rel="shortcut icon" href="./images/bigaffilogo.jpeg" type="image/x-icon">
      <!-- ***********************************Montserrat********************************** -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,41 +27,129 @@
 </head>
 <body>
     <!-- ==============================Navbar======================================= -->
-    <nav class="navbar navbar-expand-lg text-dark" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">Chartered<span>ONE</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-                <img src="./images/menu-bar.png" alt="menu-bar-icon" width="20" height="20">
-            </button>
-            <div class="collapse navbar-collapse" id="main_nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Introduction</a></li>
-                            <li><a class="dropdown-item" href="#">Out Team</a></li>
-                            <li><a class="dropdown-item" href="#">Why Choose Us ?</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./services.html">Income Tax Filling</a></li>
-                            <li><a class="dropdown-item" href="./services.html">GST Solutions</a></li>
-                            <li><a class="dropdown-item" href="./services.html">Compliances</a></li>
-                            <li><a class="dropdown-item" href="./services.html">Audit Reports</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
-                    <li class="nav-item nav-btn"><a class="nav-link" href="./register.html">Free Trail</a></li>
-                    <li class="nav-item nav-btn" id="loginBtn"><a class="nav-link" href="./login.html">Login <i class="fa-solid fa-lock"></i></a></li>
-                </ul>
-            </div>
+    <nav class="autohide customeNav fixed-top">
+        <div class="wrapper">
+          <div class="logo"><a href="/">Chartered<span>ONE</span></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li>
+                <a href="#" class="desktop-item" class="border_bottom">About</a>
+                <input type="checkbox" id="showMega">
+                <div class="mega-box">
+                  <div class="megaContent">
+                    <div class="row column--shrunk">
+                      <header>About Us</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Who we are?</a></li>
+                        <li><a href="#">Our Vision</a></li>
+                        <li><a href="#">Founder Note</a></li>
+                        <li><a href="#">Key People</a></li>
+                        <li><a href="#">Became Member</a></li>
+                      </ul>
+                    </div>
+                    <div class="row navBlogRow">
+                        <div id="navBlog">
+                            <img src="./images/iphone1.webp" id="image" alt="charteredOne">
+                            <div class="navBlogText">
+                                <a href="#" id="navBlogTitle">Doing Business in the USA with Water & Shark</a>
+                                <p class="navBlogDesc">The LLC, partnership, and branch are tax transparent, although the LLC is eligible to elect its entity..</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row navBlogRow">
+                        <div id="navBlog">
+                            <img src="./images/man-with-laptop.jpg" id="image" alt="charteredOne">
+                            <div class="navBlogText">
+                                <a href="#" id="navBlogTitle">Doing Business in the USA with Water & Shark</a>
+                                <p class="navBlogDesc">The LLC, partnership, and branch are tax transparent, although the LLC is eligible to elect its entity..</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row navBlogRow">
+                        <div id="navBlog">
+                            <img src="./images/vision-pro-display.webp" id="image" alt="charteredOne">
+                            <div class="navBlogText">
+                                <a href="#" id="navBlogTitle">Doing Business in the USA with Water & Shark</a>
+                                <p class="navBlogDesc">The LLC, partnership, and branch are tax transparent, although the LLC is eligible to elect its entity..</p>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </li>
+            <li>
+              <a href="#" class="desktop-item" class="border_bottom">Our Services</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Our Services</label>
+              <div class="mega-box">
+                <div class="megaContent">
+                  <div class="row navBlogRow">
+                    <div id="navBlog">
+                        <img src="./images/vision-pro-display.webp" id="image" alt="charteredOne">
+                        <div class="navBlogText">
+                            <a href="#" id="navBlogTitle">Doing Business in the USA with Water & Shark</a>
+                            <p class="navBlogDesc">The LLC, partnership, and branch are tax transparent, although the LLC is eligible to elect its entity..</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row serviceMargin column--shrunk">
+                    <header>Advisory</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Business Setup</a></li>
+                      <li><a href="#">Management Consulting</a></li>
+                      <li><a href="#">Financial Advisory</a></li>
+                      <li><a href="#">Technology Advisory</a></li>
+                      <li><a href="#">Risk Advisory</a></li>
+                      <li><a href="#">Merger & Acquisition</a></li>
+                      <li><a href="#">Insolvency</a></li>
+                      <li><a href="#">Due Dilligence</a></li>
+                    </ul>
+                  </div>
+                  <div class="row column--shrunk">
+                    <header>Audit &amp; Assurance</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Financial Statement Audit</a></li>
+                      <li><a href="#">IFRS Reporting</a></li>
+                      <li><a href="#">Risk Assurance</a></li>
+                      <li><a href="#">Internal Audit</a></li>
+                      <li><a href="#">Global Audit</a></li>
+                    </ul>
+                  </div>
+                  <div class="row column--shrunk">
+                    <header>Tax</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Dispute Resolution & Controversy</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">International Tax</a></li>
+                      <li><a href="#">Private Client</a></li>
+                      <li><a href="#">Global R &amp; D</a></li>
+                      <li><a href="#">Corporate Tax</a></li>
+                    </ul>
+                  </div>
+                  <div class="row column--shrunk">
+                    <header>Legal</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Legal Advisory Services</a></li>
+                      <li><a href="#">Legal Managed Services</a></li>
+                      <li><a href="#">Legal Management Consulting</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" class="border_bottom">News</a></li>
+            <li><a href="#" class="border_bottom">Careers</a></li>
+            <li><a href="./blog.html" class="border_bottom">Blogs</a></li>
+            <li><a href="./contact.html" class="border_bottom">Contact</a></li>
+            <li class="nav-item"><a class="nav-btn" href="./register.html">Free Trail</a></li>
+            <li class="nav-item"><a class="nav-btn" id="loginBtn" href="./login.html">Login <i class="fa-solid fa-lock"></i></a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
+    <!-- ======================= -->
     <div class="banner">
     <div class="bannerBlock">
         <div class="leftBlock">

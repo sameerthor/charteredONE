@@ -1,33 +1,27 @@
-window.addEventListener("resize", function() {
-    "use strict"; window.location.reload(); 
-});
-document.addEventListener("DOMContentLoaded", function(){
-    if (window.innerWidth > 992) {
+// Navbar scrollUp and down
+  document.addEventListener("DOMContentLoaded", function(){
 
-        document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
-            
-            everyitem.addEventListener('mouseover', function(e){
+  el_autohide = document.querySelector('.autohide');
 
-                let el_link = this.querySelector('a[data-bs-toggle]');
+  navbar_height = document.querySelector('.customeNav').offsetHeight;
+  document.body.style.paddingTop = navbar_height + 'px';
 
-                if(el_link != null){
-                    let nextEl = el_link.nextElementSibling;
-                    el_link.classList.add('show');
-                     nextEl.classList.add('show');
-                }
-            });
-            everyitem.addEventListener('mouseleave', function(e){
-                 let el_link = this.querySelector('a[data-bs-toggle]');
-                
-                if(el_link != null){
-                    let nextEl = el_link.nextElementSibling;
-                    el_link.classList.remove('show');
-                     nextEl.classList.remove('show');
-                }
-            })
-        });
-    }
-}); 
+  if(el_autohide){
+  var last_scroll_top = 0;
+  window.addEventListener('scroll', function() {
+          let scroll_top = window.scrollY;
+      if(scroll_top < last_scroll_top) {
+              el_autohide.classList.remove('scrolled-down');
+              el_autohide.classList.add('scrolled-up');
+          }
+          else {
+              el_autohide.classList.remove('scrolled-up');
+              el_autohide.classList.add('scrolled-down');
+          }
+          last_scroll_top = scroll_top;
+  }); 
+  }
+  }); 
 //logo Slider.......
 $(document).ready(function() {
     $('#logo-slider').slick({
