@@ -70,12 +70,20 @@ html {
 }
 .navbar .nav-link:hover{
 	color:#fff;
+	border-bottom: 4px solid #f5b402;
+    line-height: 20px;
+
+}
+.navbar-nav  .nav-btn .nav-link:hover{
+	border:none;
+	line-height: normal;
 }
 .navbar .nav-link i{
 	font-size: 12px;
     margin-left: 2px;
 }
-.navbar .navbar-brand{
+
+.navbar .navbar-brand,.copyRightText .navbar-brand{
     font-weight: 700;
     letter-spacing: 1.5px;
     font-size: 1.8rem;
@@ -101,7 +109,7 @@ html {
       box-shadow: none;
     }
   }
-.navbar .navbar-brand span{
+.navbar .navbar-brand span, .copyRightText .navbar-brand span{
    color: #f5b402;
 }
 .navbar .nav-item{
@@ -120,6 +128,7 @@ html {
     border-radius: 0;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.28);  
 	padding: 0;
+	line-height: 15px;
 }
 .dropdown-menu .dropdown-item{
    padding-top: 1rem;
@@ -192,13 +201,18 @@ html {
 .footer-row{
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 30px
 }
 ul{
 	list-style: none;
+	line-height: 30px;
+}
+ul.navbar-nav{
+	line-height: normal;
 }
 .footer{
 	background-color: #24262b;
-    padding: 70px 0 35px 0;
+    padding: 80px 0 35px 0;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -213,7 +227,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #26ace3;
+	background-color: #f5b402;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -285,7 +299,7 @@ ul{
 	text-align-last: center;
 	margin-top: 2rem;
 	border-top: 1px solid #fff;
-	padding-top: .8rem;
+	padding-top: 2rem;
 }
 .copyRightText p{
 	font-size: .9rem;

@@ -721,11 +721,12 @@ textarea:focus {
 .we-offer-area.text-center .item {
   background: #ffffff none repeat scroll 0 0;
   border: medium none;
+  border-bottom: 4px solid #f5b402
   /* padding: 67px 40px 64px; */
 }
 
 .we-offer-area.text-center .item i {
-  background: #000 none repeat scroll 0 0;
+  background: #f5b402 none repeat scroll 0 0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -746,7 +747,7 @@ textarea:focus {
 }
 
 .we-offer-area.text-center .item i::after {
-  border: 2px solid #000;
+  border: 2px solid #f5b402;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -801,7 +802,7 @@ textarea:focus {
 }
 
 .we-offer-area .item::after {
-  background: #26ace3 none repeat scroll 0 0;
+  background: #f5b402 none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: -100%;
@@ -816,7 +817,7 @@ textarea:focus {
   z-index: -1;
 }
 
-.we-offer-area .item:hover::after {
+/* .we-offer-area .item:hover::after {
   left: 0;
 }
 
@@ -832,9 +833,12 @@ textarea:focus {
 
 .we-offer-area.text-center .item:hover i {
   background-color: #ffffff !important;
-  color: #26ace3 !important;
+  color: #f5b402 !important;
 }
 
+.we-offer-area.text-center .item:hover{
+  border-bottom: 4px solid #fff;
+} */
 .we-offer-area.text-left .item i {
   background: #26ace3 none repeat scroll 0 0;
   -webkit-border-radius: 50%;
