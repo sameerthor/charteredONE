@@ -27,7 +27,7 @@
 </head>
 <body>
     <!-- ==============================Navbar======================================= -->
-    <nav class="navbar navbar-expand-lg text-dark">
+    <nav class="navbar navbar-expand-lg text-dark" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">Chartered<span>ONE</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./services.html">Incom Tax Filling</a></li>
+                            <li><a class="dropdown-item" href="./services.html">Income Tax Filling</a></li>
                             <li><a class="dropdown-item" href="./services.html">GST Solutions</a></li>
                             <li><a class="dropdown-item" href="./services.html">Compliances</a></li>
                             <li><a class="dropdown-item" href="./services.html">Audit Reports</a></li>
@@ -103,31 +103,31 @@
         </div>
     </div> -->
     <!-- =======================Services Section===================================== -->
-    <section class="container-fluid services">
+    <section class="container-fluid services mt-4">
         <div class="container">
             <h2 class="display-5 text-center">Our Services <i class="fa-solid fa-gear rotate"></i></h2>
             <div class="row mt-5">
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                     <div class="service-box">
-                       <a href="#000"><img src="./images/tax.png" alt=""></a>
+                       <a href="#000"><img src="./images/taxes.png" alt=""></a>
                         <a href="#000" class="service-title">Taxes</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                     <div class="service-box">
-                       <a href="#000"><img src="./images/audit.png" alt=""></a>
+                       <a href="#000"><img src="./images/audit1.png" alt=""></a>
                         <a href="#000" class="service-title">Audit</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                     <div class="service-box">
-                       <a href="#000"><img src="./images/compliant.png" alt=""></a>
+                       <a href="#000"><img src="./images/compliance1.png" alt=""></a>
                         <a href="#000" class="service-title">Compliances</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                     <div class="service-box">
-                       <a href="#000"><img src="./images/financial-advisor.png" alt=""></a>
+                       <a href="#000"><img src="./images/gst.png" alt=""></a>
                         <a href="#000" class="service-title">GST Solution</a>
                     </div>
                 </div>
@@ -514,8 +514,9 @@
                 </div>
             </div>
         </div>
-        <div class="copyRightText">
-            <p>&copy; 2024 CharteredOne.com | All Right Reserved</p>
+        <div class="copyRightText mt-2">
+            <a class="navbar-brand" href="./index.html">Chartered<span>ONE</span></a>
+            <p class="mt-3">&copy; 2024 CharteredOne.com | All Right Reserved</p>
         </div>
     </footer>
    
@@ -563,7 +564,19 @@
     <script src="./js/home.js"></script>
     <!-- *******************Bootstrap Script ***************-->
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        
       $('.card-container').slick({
   dots: true,
   infinite: false,

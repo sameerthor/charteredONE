@@ -1,3 +1,7 @@
+/* all */
+body{
+  font-family: "Californian FB",serif;
+}
 /* ===============testimonial============ */
 .rating i{
     color: #fabb05;
@@ -60,7 +64,7 @@
  *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     box-sizing: border-box;
 }
 .banner{
@@ -259,13 +263,13 @@ li a:hover{
     transition: all .5s;
   }
   .services h2{
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: #26ace3;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #000;
   }
   .services h2::after,.site-heading h2:after,.section-heading::after{
     content: "";
-    background-color: #26ace3;
+    background-color: #000;
     height: 0.2rem;
     width: 7rem;
     display: block;
@@ -277,7 +281,7 @@ li a:hover{
     display: inline-block;
     animation: rotation 2s infinite linear;
     transition: .3s ease;
-    color: #26ace3;
+    color: #000;
   }
   @keyframes rotation {
     50% {
@@ -311,7 +315,7 @@ li a:hover{
    color: #000;
   }
   .service-box .service-title{
-    font-size: 0.90rem;
+    font-size: 1rem;
     padding: 0.85rem;
     color: #000;
     font-weight: 600;
@@ -391,7 +395,7 @@ li a:hover{
 .slick-prev,.slick-next{
   width: 30px;
   height: 30px;
-  background-color: #26ace3;
+  background-color: #000;
   border-radius: 50px;
   line-height: 35px;
   z-index: 1000;
@@ -400,7 +404,7 @@ li a:hover{
   left: 0;
 }
 .slick-prev:hover,.slick-next:hover{
-  background-color: #26ace3;
+  background-color: #000;
   color: #fff;
   opacity: 0.8;
 }
@@ -461,7 +465,7 @@ li a:hover{
     width: 100%;
 }
 .contact-box .input-text::placeholder,.contact-box textarea::placeholder{
-    font-size: 11px;
+    font-size: 12px;
     color: grey;
 }
 .contact-box .text-box{
@@ -497,8 +501,8 @@ textarea:focus {
     font-size: 12px;
     border-radius: 4px;
     padding: .6rem 1rem;
-    font-weight: 500;
-    background-color: #26ace3;
+    font-weight: 600;
+    background-color: #000;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .4px;
@@ -522,27 +526,27 @@ textarea:focus {
     border-radius: 0.8ch;
     padding: 1.5ch;
     background-color: #fff;
-    color: #2980b9;
+    color: #000;
 }
 .count-area-content .count-icon i{
     font-weight: 600;
     color: #000;
     font-size: 2.5rem;
     /* color: #2980b9; */
-    color: #26ace3;
+    color: #000;
 }
 .count-area-content .count-digit{
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.4rem;
-    color: #26ace3;
+    font-size: 1.6rem;
+    color: #000;
 }
 .count-area-content .count-title{
     font-weight: 600;
-    font-size: 0.90rem;
-    color: #26ace3;
+    font-size: 1rem;
+    color: #000;
  }
  @media(max-width:1024px){
   .slick-prev{
@@ -607,12 +611,12 @@ textarea:focus {
     }
  }
  .section-heading{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight:600;
     letter-spacing: .5px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #26ace3;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #000;
 }
  @media(max-width:600px){
     .section-heading{
@@ -620,7 +624,7 @@ textarea:focus {
     }
  }
  .section-span{
-    background-color: #26ace3;
+    background-color: #000;
     height: .2rem;
     width: 8rem;
     display: inline-block
@@ -630,15 +634,15 @@ textarea:focus {
 .why-choose-us{
     background-color: #f5f5f5;
     padding: 4rem 0rem;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 .equal-height h4{
     margin-bottom: .5rem;
     font-size: 1rem;
 }
 .equal-height p{
-    font-size: .72rem;
-    line-height: 1.5;
+    font-size: .75rem;
+    line-height: 1.6;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -651,7 +655,7 @@ textarea:focus {
   font-weight: 600;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color:#26ace3;
+  color:#000;
 }
 
 .site-heading h2 span {
@@ -717,11 +721,12 @@ textarea:focus {
 .we-offer-area.text-center .item {
   background: #ffffff none repeat scroll 0 0;
   border: medium none;
+  border-bottom: 4px solid #f5b402
   /* padding: 67px 40px 64px; */
 }
 
 .we-offer-area.text-center .item i {
-  background: #26ace3 none repeat scroll 0 0;
+  background: #f5b402 none repeat scroll 0 0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -742,7 +747,7 @@ textarea:focus {
 }
 
 .we-offer-area.text-center .item i::after {
-  border: 2px solid #26ace3;
+  border: 2px solid #f5b402;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -779,7 +784,7 @@ textarea:focus {
 .we-offer-area .item h4 {
   font-weight: 600;
   text-transform: capitalize;
-  color: #26ace3;
+  color: #000;
 }
 
 .we-offer-area .item p {
@@ -797,7 +802,7 @@ textarea:focus {
 }
 
 .we-offer-area .item::after {
-  background: #26ace3 none repeat scroll 0 0;
+  background: #f5b402 none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: -100%;
@@ -812,7 +817,7 @@ textarea:focus {
   z-index: -1;
 }
 
-.we-offer-area .item:hover::after {
+/* .we-offer-area .item:hover::after {
   left: 0;
 }
 
@@ -828,9 +833,12 @@ textarea:focus {
 
 .we-offer-area.text-center .item:hover i {
   background-color: #ffffff !important;
-  color: #26ace3 !important;
+  color: #f5b402 !important;
 }
 
+.we-offer-area.text-center .item:hover{
+  border-bottom: 4px solid #fff;
+} */
 .we-offer-area.text-left .item i {
   background: #26ace3 none repeat scroll 0 0;
   -webkit-border-radius: 50%;
@@ -1529,7 +1537,7 @@ textarea:focus {
           width: 60px;
           max-width: 100px;
           padding: 0.2rem 0.5rem;
-          font-size: 11px;
+          font-size: 12px;
           text-align: center;
           text-transform: uppercase;
           letter-spacing: 1px;
@@ -1553,7 +1561,7 @@ textarea:focus {
   
       .card-title {
         z-index: 10;
-        font-size: 0.80rem;
+        font-size: .9rem;
         padding-bottom: 0.75rem;
         transition: all 350ms ease-in-out;
       }
@@ -1561,7 +1569,7 @@ textarea:focus {
       .card-creator {
         padding-bottom: 0.75rem;
         transition: all 250ms ease-in-out;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 600;
       }
     }

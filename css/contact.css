@@ -1,4 +1,6 @@
-
+body{
+    font-family: "Californian FB",serif;
+  }
 .container {
     max-width: 1200px;
     width: 90%;
@@ -63,11 +65,12 @@
 
 .form .form-details input[type="text"],
 .form .form-details input[type="email"] {
-    padding: 15px 20px;
+    padding: 13px 18px;
+    border-radius: 4px;
     color: var(--black);
     outline: none;
     border: 1px solid var(--grey);
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 2rem auto;
     font-size: 14px;
     width: 100%;
     display: block;
@@ -86,14 +89,16 @@
 }
 
 .form .form-details .sendbtn {
-    padding: 15px 25px;
+    padding: 13px 16px;
+    border-radius: 4px;
     color: var(--white);
     font-weight: 500;
     background: #26ace3;
     outline: none;
     border: none;
     margin: 15px;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
     letter-spacing: 2px;
     cursor: pointer;
     display: inline-block;
