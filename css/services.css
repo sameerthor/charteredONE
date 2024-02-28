@@ -25,6 +25,7 @@ body{
     margin-bottom: 15px;
     font-weight: 600;
     color: #0dcaf0;
+    letter-spacing: .7px;
 }
 
 
@@ -35,20 +36,22 @@ body{
     margin: auto;
 }
 #services .servicesBox h5{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #0dcaf0;
     font-weight: 600;
 }
 .section-title{
     font-weight: 600;
-    font-size:2rem;
+    font-size: 2.6rem;
     letter-spacing: .5px;
     margin: auto;
+    text-align: left;
+    padding-left: 20px;
 }
 .contact .section-title{
     font-size: 1.8rem;
     font-weight:600;
-    letter-spacing: .5px;
+    letter-spacing: 1.8px;
     text-align: center;
     /* font-family: 'Montserrat', sans-serif; */
     color: #000;
@@ -66,7 +69,16 @@ body{
     font-weight: 600;
     letter-spacing: .5px;
     line-height: 1.7;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
+}
+ul.section-para{
+margin-left: 25px;
+line-height: 28px;
+
+}
+ul.section-para li{
+list-style-type:disc;
+padding-left: 10px;
 }
 #services img{
     border-radius: 20px;
@@ -100,6 +112,47 @@ body{
 }
 #Compliances h4 span{
     margin-right: .4rem;
+ }
+ #services_content aside h3{
+    letter-spacing: 0.95px;
+    font-weight: 600;
+    background-color: #0dcaf0;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+ }
+ #services_content .accordion .accordion-button{
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+ }
+ #services_content .accordion-body{
+    padding-top: 5px;
+ }
+ #services_content .accordion-body ul{
+    line-height: 45px;
+ }
+ #services_content .accordion-body ul li a{
+    color: #000;
+    letter-spacing: 0.6px;
+    font-weight: 800;
+ }
+ #services_content .accordion-body ul li a:hover{
+    color: #0dcaf0;
+ }
+ #services_content .accordion-button::after{
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: bold;
+   font-size: 22px;
+   background-image: none;
+
  }
 @media(max-width:600px){
     #Compliances h4{
