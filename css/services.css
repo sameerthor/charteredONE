@@ -24,8 +24,12 @@ body{
     font-size: 30px;
     margin-bottom: 15px;
     font-weight: 600;
-    color: #0dcaf0;
+    color: #000;
     letter-spacing: .7px;
+}
+#services .due_dillegence_services-head{
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
@@ -36,8 +40,8 @@ body{
     margin: auto;
 }
 #services .servicesBox h5{
-    font-size: 1.1rem;
-    color: #0dcaf0;
+    font-size: 1.5rem;
+    color: #000;
     font-weight: 600;
 }
 .section-title{
@@ -113,13 +117,16 @@ padding-left: 10px;
 #Compliances h4 span{
     margin-right: .4rem;
  }
+ #services_content .banner{
+    padding-top: 0;
+ }
  #services_content aside h3{
     letter-spacing: 0.95px;
     font-weight: 600;
-    background-color: #0dcaf0;
+    background-color:#f5b402;
     color: white;
     padding: 15px;
-    font-size: 20px;
+    font-size: 22px;
  }
  #services_content .accordion .accordion-button{
     border-radius: 0;
@@ -141,7 +148,7 @@ padding-left: 10px;
     font-weight: 800;
  }
  #services_content .accordion-body ul li a:hover{
-    color: #0dcaf0;
+    color: #f5b402;
  }
  #services_content .accordion-button::after{
     content: '\f107';
