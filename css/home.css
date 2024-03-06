@@ -139,7 +139,7 @@ body {
 }
 #newsCard.blog-box .card-content .card-title {
   font-size: 20px !important;
-  color: #0d6efd;
+  color: #26ace3;
   line-height: 32px;
 }
 #newsCard.blog-box .card-content p {
@@ -150,8 +150,8 @@ body {
   font-weight: 400;
   width: 100%;
   font-size: 16px;
-  color: #0d6efd;
-  border: 2px solid #0d6efd;
+  color: #26ace3;
+  border: 2px solid #26ace3;
   padding: 10px 20px;
   display: inline-block;
   margin-top: 20px;
@@ -161,13 +161,13 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   z-index: 10;
-  background-image: linear-gradient(to left, #0d6efd 50%, transparent 50%);
+  background-image: linear-gradient(to left, #26ace3 50%, transparent 50%);
   background-size: 250% 150%;
   background-position: left bottom;
   transition: all 0.6s ease-out;
 }
 #newsCard.blog-box .read-more-btn:hover {
-  box-shadow: inset 350px 0 0 0 #0d6efd;
+  box-shadow: inset 350px 0 0 0 #26ace3;
   color: #fff;
 }
 #newsCard .newscard{
