@@ -1384,3 +1384,13 @@
   border-bottom-right-radius: 0px !important;
   border: none;
  }
+
+ .hidden {
+  display: none;
+}
+.nobordertd td{
+  border: none !important;
+}
+.nobordertd th{
+  border: none !important;
+}

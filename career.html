@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@800&display=swap" rel="stylesheet">
     <!-- ******************Local Stylesheet************************* -->
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/careers.css">
 </head>
 <body>
     <!-- ==============================Navbar======================================= -->
@@ -267,7 +267,7 @@
                 </div>
               </div>
             </li>
-            <li><a href="./news.html" class="border_bottom">News</a></li>
+            <li><a href="#" class="border_bottom">News</a></li>
             <li><a href="#" class="border_bottom">Careers</a></li>
             <li><a href="./blog.html" class="border_bottom">Blogs</a></li>
             <li><a href="./contact.html" class="border_bottom">Contact</a></li>
@@ -277,36 +277,46 @@
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
-    <!-- =======================contact===================================== -->
-    <div class="contact container">
-        <form>
-            <div class="form">
-                <div class="form-txt">
-                    <h1>Contact Us</h1>
-                    <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict
-                    attention.</p>
-                    <h3>India</h3>
-                    <p class="mb-2"><i class="fa-solid fa-phone"></i> +91 63003 47380</p>
-                    <p>Floor 405, Maheshwari Chambers, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana. </br>500082</p>
-                    <p>Also Associates in Bangalore, Delhi & Mumbai</p>
-                    <div class="social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/Chartered_ONE" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://instagram.com/charteredone" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
+    <!-- =============================Blog===================================== -->
+    <section class="careersSection" style="background-image: url(./images/rocket.jpg);">
+       <div class="container">
+          <div class="row">
+             <div class="careerContent col-lg-8 col-sm-12">
+                <h2>Join Our Dynamic Team !</h2>
+                <p>
+                    Step into a vibrant team where innovation flourishes and creativity knows no bounds. We cultivate a culture of growth, collaboration, and meaningful impact. Join us in shaping the future and unleashing your full potential!
+                </p>
+             </div>
+          </div>
+       </div>
+    </section>
+    <!-- ==================Form================== -->
+    <section>
+        <div class="container">
+            <div class="row careerForm">
+                <div class="col-lg-6">
+                    <img src="./images/join-team.png" alt="">
                 </div>
-                <div class="form-details">
-                    <input type="text" name="name" id="name" placeholder="Name" required>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea>
-                    <div class="text-center">
-                        <a href="" class="sendbtn">Send Message</a>
-                    </div>
+                <div class="col-lg-6 col-sm-12 formInfo">
+                    <h4>Lets Start!</h4>
+                    <p>CareFully read and fill up all the inputs with your original information.</p>
+                    <form action="someWhere" method="POST">
+                        <input type="text" placeholder="Your Name" class="inputField" name="userName" required/>
+                        <input type="email" placeholder="Email Address" class="inputField" name="userEmail" inputmode="email" required/>
+                        <input type="text" placeholder="Contact Number" class="inputField" name="phoneNumber" inputmode="tel" required/>
+                        <input type="text" placeholder="Years of Experience" class="inputField" name="experience" inputmode="numeric" required/>
+                        <input type="text" placeholder="Highest Qualification" class="inputField" name="qualification"/ required>
+                        <textarea name="bio" id="" cols="" rows="5" class="inputField" placeholder="About Yourself (optional)"></textarea>
+                        <label for="">Upload CV/Resume</label>
+                        <input type="file" class="inputField" accept=".pdf, docs, doc">
+                        <div class="submitBtn">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
                 </div>
             </div>
-        </form>
-    </div>
+        </div>
+    </section>
     <!-- ======================Footer=========================================== -->
     <footer class="footer">
         <div class="footer-box container">
@@ -397,6 +407,7 @@
     <!-- ==========================Local Script================================ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/navbar.js"></script>
+    <script src="./js/home.js"></script>
     <!-- *******************Bootstrap Script ***************-->
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
