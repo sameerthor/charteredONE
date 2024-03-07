@@ -31,8 +31,44 @@ body{
     font-size: 18px;
     font-weight: 600;
 }
-
-
+#services .servicesBox .key_people_card{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+#services .servicesBox .overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity: 1;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+#services .servicesBox img{
+    display: block;
+    width: 100%;
+}
+#services .servicesBox .name{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    padding-bottom: 5px;
+}
+#services .servicesBox .post{
+    width: 100%;
+    /* display: none; */
+    font-size: 14px;
+    text-transform: uppercase;
+}
 #services .servicesBox img{
     max-width: 100%;
     object-fit: contain;
@@ -136,6 +172,10 @@ padding-left: 10px;
     font-size: 18px;
     border-bottom: 1px solid #eee;
  }
+ #services_content .accordion-item{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+ }
  #services_content .accordion-body{
     padding-top: 5px;
  }
@@ -147,7 +187,7 @@ padding-left: 10px;
     letter-spacing: 0.6px;
     font-weight: 800;
  }
- #services_content .accordion-body ul li a:hover{
+ #services_content .accordion-body ul li a:hover,#services_content .accordion-body ul li a:active{
     color: #f5b402;
  }
  #services_content .accordion-button::after{
@@ -160,6 +200,12 @@ padding-left: 10px;
    font-size: 22px;
    background-image: none;
 
+ }
+ #services_content .aboutTitle{
+    font-size: 18px;
+    /* color: #f5b402; */
+    margin-bottom: 10px;
+    font-weight: 600;
  }
 @media(max-width:600px){
     #Compliances h4{
