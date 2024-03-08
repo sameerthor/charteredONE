@@ -85,7 +85,7 @@ nav{
   .nav-links li a{
 	color: #f2f2f2;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 1.1rem;
 	font-weight: 500;
 	padding: 5px 10px 5px 10px;
 	border-radius: 5px;
@@ -93,6 +93,10 @@ nav{
   }
   .nav-links li a:hover{
 	color: #f5b402;
+  }
+  .nav-links li.nav-item a:hover{
+	color: #fff;
+	opacity: 0.8;
   }
   .nav-links .mobile-item{
 	display: none;
@@ -349,8 +353,8 @@ nav{
 	flex-direction: column;
 	background-color: #fbfbfb;
 	color: #000;
-	line-height: 1.4;
-	padding: .6rem .2rem
+	line-height: 1.6;
+	padding: 10px;
   }
    .megaBlogBox .megaBlogInfo a{
 	padding: 0rem;

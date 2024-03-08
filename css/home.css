@@ -75,6 +75,9 @@ body {
 #newsBanner {
   background-image: url("https://www.waterandshark.com/assets/img/new-banners/news_1.png");
 }
+#blogBanner {
+  background-image: url('https://www.waterandshark.com/assets/img/new-banners/Blogs_final.png');
+}
 .banner h4 {
   color: #000;
 }
@@ -108,6 +111,13 @@ body {
 #newsBanner .newsBlock .content {
   margin-top: 2rem;
 }
+#blogBanner .content{
+  margin-top: 1rem;
+  text-align: left;
+}
+#blogBanner .content button{
+  margin: 0;
+}
 .content h1 {
   margin-top: 80px;
   font-size: 90px;
@@ -137,16 +147,16 @@ body {
   bottom: 0;
   z-index: -1;
 }
-#newsCard.blog-box .card-content .card-title {
+#newsCard.blog-box .card-content .card-title,#blogCard.blog-box .card-content .card-title {
   font-size: 20px !important;
   color: #26ace3;
   line-height: 32px;
 }
-#newsCard.blog-box .card-content p {
+#newsCard.blog-box .card-content p,#blogCard.blog-box .card-content p {
   font-size: 16px !important;
   line-height: 25px;
 }
-#newsCard.blog-box .read-more-btn {
+#newsCard.blog-box .read-more-btn,#blogCard.blog-box .read-more-btn {
   font-weight: 400;
   width: 100%;
   font-size: 16px;
@@ -166,23 +176,34 @@ body {
   background-position: left bottom;
   transition: all 0.6s ease-out;
 }
-#newsCard.blog-box .read-more-btn:hover {
+#newsCard.blog-box .read-more-btn:hover,#blogCard.blog-box .read-more-btn:hover {
   box-shadow: inset 350px 0 0 0 #26ace3;
   color: #fff;
 }
-#newsCard .newscard{
+#newsCard .newscard,#blogCard .blogCard{
   border: 1px solid #ddd;
   border-radius: 6px;
 }
-#newsCard .card-img{
+#newsCard .card-img,#blogCard .card-img{
   background-image: url('../images/homeimg-bg.jpg');
   object-fit: contain;
-  height: 250px;
+  height: 160px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-#newsCard .card-content{
+#blogCard .card-img{
+  height: 250px;
+  background-image: url('https://www.waterandshark.com/assets/img/blog/blog103/1_x1_HOW_TO_TRADE_IN_DUBAI,_UAE_low_size.jpg');
+}
+#newsCard .card-content,#blogCard .card-content{
   padding: 10px;
+}
+#blogCard h6{
+  font-size: 14px;
+  font-weight: 600;
 }
 @media (min-aspect-ratio: 16/9) {
   .banner video {
@@ -504,7 +525,7 @@ textarea:focus {
   border-color: #26ace3;
   box-shadow: 0 0 10px #26ade323;
 }
-.contact-box ::placeholder {
+.contact-box::placeholder {
   font-weight: 500;
   color: #000;
   font-size: 0.95rem;
