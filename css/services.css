@@ -11,7 +11,118 @@ body{
 #services .container{
  max-width: 100%;
 }
+#services .first-quarter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #114261cf;
 
+}
+#services .quarter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+#services .quarter .quarterPara{
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    margin: 1.5rem auto;
+}
+#services .quarter .quarterBtn{
+    display: block;
+    padding: .8rem 2.4rem;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    margin:  auto;
+    text-align: center;
+    letter-spacing: .5px;
+}
+#services #advisory .quarterBtn{
+    border: 3px solid #0079c1;
+    color: #0079c1;
+    background-color: #fff;
+}
+#services .quaterBig {
+    padding: 2rem 6rem;
+}
+
+#services #auditBig{
+    background-color: #0079c1;
+    color: #fff;
+ }
+ #services #taxBig{
+    background-color: #222;
+    color: #fff;
+ }
+ #services #legalBig{
+    background-color: #fffff2;
+ }
+#services .quaterBig ul{
+    list-style-type: square;
+    list-style-type: square;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 380px;
+    margin: 0;
+    max-width: 100%;
+}
+#services #auditBig ul{
+    max-height: 250px;
+}
+#services #taxBig ul{
+    max-height: 250px;
+}
+#services .quaterBig ul li{
+    margin: 10px;
+    height: 52px;
+    line-height: 52px;
+
+}
+#services .quaterBig ul li a{
+   text-decoration: none;
+   cursor: pointer;
+
+}
+#services #advisory{
+    background-color: #f5f3f5;
+}
+#services #audit{
+    background-color: #178ed5;
+    color: #fff;
+}
+#services #tax{
+    background-color: #4d4d4d;
+    color: #fff;
+}
+#services #legal{
+    background-color: #e2e2e2;
+    color: #222;
+}
+#services #audit .quarterBtn{
+    border: 3px solid #0079c1;
+    color: #0079c1;
+    background-color: #fff;
+}
+#services #tax .quarterBtn{
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #333333;
+}
+#services #legal .quarterBtn{
+    border: 3px solid #0079c1;
+    color: #0079c1;
+    background-color: #fff;
+}
+#services .first-quarter p{
+    text-align: center;
+    margin-top: 1rem;
+
+}
 #services .tab-btn{
     font-weight: 500;
     letter-spacing: .5px;
@@ -33,31 +144,19 @@ body{
 }
 
 
-#services .servicesBox img{
-    max-width: 100%;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-}
-#services .servicesBox h5{
-    font-size: 1.5rem;
-    color: #000;
-    font-weight: 600;
-}
+
+
 .section-title{
     font-weight: 600;
     font-size: 2.6rem;
     letter-spacing: .5px;
     margin: auto;
-    text-align: left;
-    padding-left: 20px;
 }
 .contact .section-title{
     font-size: 1.8rem;
     font-weight:600;
     letter-spacing: 1.8px;
     text-align: center;
-    /* font-family: 'Montserrat', sans-serif; */
     color: #000;
 }
 .contact .section-title::after{
@@ -70,38 +169,10 @@ body{
   }
 .section-para{
     color: #000;
-    /* font-weight: 600; */
     letter-spacing: .5px;
     line-height: 1.8;
     font-size: 1.1rem;
 }
-ul.section-para{
-margin-left: 25px;
-line-height: 34px;
-
-}
-ul.section-para li{
-list-style-type:disc;
-padding-left: 10px;
-}
-#services img{
-    border-radius: 20px;
-}
-
-.nav.nav-pills .nav-link.active { 
-    background-color:#0dcaf0;
-    color: #ffffff;
-}
-.nav .nav-link,
-.navbar-brand,
-.navbar-brand:hover{
-    color: #fff;
-}
-
-.text-colored{
-    color: #FF3131;
-}
-
 
 .text-start.nav-link.text-colored.nav-service-item.active{
     color: #ffffff!important;
@@ -170,4 +241,25 @@ padding-left: 10px;
     .section-para{
         font-size: .9rem;
     }
+}
+@media(max-width: 600px){
+    #services .quaterBig {
+        padding: 2rem 3rem;
+    }
+    #services .quaterBig ul{
+        max-height: 1000px;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    #services .first-quarter {
+       padding: 2rem .5rem;
+    }
+    #services #auditBig ul{
+        max-height: 500px;
+    }
+    #services #taxBig ul{
+        max-height: 500px;
+    }
+    
 }

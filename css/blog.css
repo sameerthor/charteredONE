@@ -1,3 +1,6 @@
+body{
+  font-family: "Californian FB", serif;
+}
 .breadcrumbs{
     margin-bottom: 1rem;
     max-width: 100%;
@@ -12,7 +15,7 @@
 }
 .blogSection{
     margin: 2rem .5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Californian FB", serif;
 }
 .blogBox{
     padding: .4rem .8rem;
@@ -29,6 +32,7 @@
     font-weight: 500;
     letter-spacing: .5px;
     margin-bottom: 1.2rem;
+    color: #fb5326;
 }
 .blogBox .authorBox{
     display: flex;
@@ -95,6 +99,10 @@
     margin: auto;
     border-radius: 5px;
   }
+  .blogSection .blogContent ul li{
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
   .blogContent .blogHeading{
     font-weight: 600;
     font-size: 1.4rem;
@@ -104,7 +112,7 @@
     color: #232a31;
     font-weight: 500;
     line-height: 1.4;
-    font-size: 1rem;
+    font-size: 1rem; 
     letter-spacing: .5px;
     margin-bottom: 1rem;
   }
@@ -420,7 +428,6 @@ body{
  }
  @media(max-width: 991px){
   .sidebar{
-    border: 2px solid red;
     padding: 0.4rem 0.8rem;
   }
   .rightSidebar .scrollSidebar{
@@ -428,3 +435,71 @@ body{
     overflow-y: scroll;
   }
  }
+  .stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.stars i {
+  font-size: 20px;
+  color: #b5b8b1;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.stars i.active {
+  color: #ffb851;
+  transform: scale(1.2);
+}
+
+/* responsive table */
+.table-section{
+  overflow: auto;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.table-section table{
+  width: 100%;
+  min-width: 768px;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.table-section thead th{
+  position: sticky;
+  top: 0;
+  background-color: #f1f7e9;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+table th, table td{
+ padding: .5rem;
+ word-break: break-all;
+ text-align: left;
+ font-weight: 500;
+ font-size: .85rem;
+ color: #222;
+ letter-spacing: .6px;
+ line-height: 1.5;
+ min-width: 50px;
+}
+table tbody tr:nth-of-type(2n){
+  background-color: #f2f2f2;
+}
+table th, table td a{
+  text-decoration: none;
+}
+.table-section::-webkit-scrollbar{
+  height: 5px;
+  width: 5px;
+}
+.table-section::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.table-section::-webkit-scrollbar-thumb{
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+table, th, td {
+  border: 1px solid #e5e1e1;
+}
+
