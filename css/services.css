@@ -142,10 +142,62 @@ body{
     font-size: 18px;
     font-weight: 600;
 }
+<<<<<<< HEAD
 
 
 
 
+=======
+#services .servicesBox .key_people_card{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+#services .servicesBox .overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity: 1;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+#services .servicesBox img{
+    display: block;
+    width: 100%;
+}
+#services .servicesBox .name{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    padding-bottom: 5px;
+}
+#services .servicesBox .post{
+    width: 100%;
+    /* display: none; */
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#services .servicesBox img{
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+#services .servicesBox h5{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+}
+>>>>>>> f967294d4cf6cee3969d5f32d67c82c0bd3c8e43
 .section-title{
     font-weight: 600;
     font-size: 2.6rem;
@@ -207,6 +259,10 @@ body{
     font-size: 18px;
     border-bottom: 1px solid #eee;
  }
+ #services_content .accordion-item{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+ }
  #services_content .accordion-body{
     padding-top: 5px;
  }
@@ -218,7 +274,7 @@ body{
     letter-spacing: 0.6px;
     font-weight: 800;
  }
- #services_content .accordion-body ul li a:hover{
+ #services_content .accordion-body ul li a:hover,#services_content .accordion-body ul li a:active{
     color: #f5b402;
  }
  #services_content .accordion-button::after{
@@ -231,6 +287,12 @@ body{
    font-size: 22px;
    background-image: none;
 
+ }
+ #services_content .aboutTitle{
+    font-size: 18px;
+    /* color: #f5b402; */
+    margin-bottom: 10px;
+    font-weight: 600;
  }
 @media(max-width:600px){
     #Compliances h4{

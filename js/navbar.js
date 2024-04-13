@@ -4,7 +4,7 @@
   el_autohide = document.querySelector('.autohide');
 
   navbar_height = document.querySelector('.customeNav').offsetHeight;
-  document.body.style.paddingTop = navbar_height + 'px';
+  document.body.style.paddingTop = navbar_height + '-2px';
 
   if(el_autohide){
   var last_scroll_top = 0;
