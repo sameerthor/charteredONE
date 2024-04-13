@@ -1,0 +1,241 @@
+.stepper{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 2rem;
+	background-color: #f7f5fd;
+	overflow: auto;
+}
+.stepper::-webkit-scrollbar{
+	display: none;
+}
+.stepperBox{
+	margin: 4rem 10rem;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.stepper .step{
+	margin: 0 .5rem;
+}
+.stepper .hr{
+	min-width: 4rem;
+	border-bottom: 2px solid #999;
+	position: relative;
+	top: 0;
+}
+.stepperBox .stepContent{
+	padding: 2rem 6rem;
+}
+.stepperBox .step-description{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+ .step-description a{
+	color: #999
+}
+.step-description a:nth-of-type(1){
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #999;
+	border-radius: 50%;
+	height: 1.4rem;
+	width: 1.4rem;
+}
+.step-description a i{
+	font-size: 1.45rem;
+}
+ .step-description small{
+	font-size: .8rem;
+	font-weight: 500;
+	letter-spacing: .5px;
+	color: #999;
+	display: block;
+	text-align: center;
+	margin-top: .5rem;
+}
+.stepperBox .stepper .step.completed a:nth-of-type(1) {
+	color: #f5b402;
+	border: 1px solid #f5b402
+}
+.stepperBox .stepper .step.completed a{
+	color: #f5b402
+}
+.stepperBox .stepper .step.completed a small {
+	color: #f5b402
+}
+.stepper .hr.completed{
+	border-bottom: 2px solid #f5b402;
+}
+.stepContent{
+	padding: 0 3rem;
+}
+.stepContent .docRequired{
+	padding: 0 2rem;
+}
+.stepContent .docRequired h2{
+	font-weight: 600;
+	letter-spacing: .5px;
+	font-size: 1.2rem;
+}
+.stepContent .docRequired .docBox{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f1f2f5;
+	margin: 1.6rem auto;
+   padding: .8rem 1rem;
+   border-radius: 4px;
+}
+.docName p{
+	font-weight: 500;
+	letter-spacing: .5px;
+	color: #222;
+	font-size: .9rem;
+}
+
+.upload-wrapper{
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.upload-wrapper header{
+  color: #6990F2;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+.upload-wrapper form{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 4px;
+  padding: .2rem .5rem;
+}
+form :where(i, p){
+  color: #000;
+}
+form i{
+  font-size: 24px;
+}
+form p{
+    margin-left: .5rem;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+section .row{
+  margin-bottom: 10px;
+  background: #E9F0FF;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .row i{
+  color: #000;
+  font-size: 30px;
+}
+section .details span{
+  font-size: 14px;
+}
+.progress-area .row .content{
+  width: 100%;
+  margin-left: 15px;
+}
+.progress-area .details{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  justify-content: space-between;
+}
+.progress-area .content .progress-bar{
+  height: 6px;
+  width: 100%;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 30px;
+}
+.content .progress-bar .progress{
+  height: 100%;
+  width: 0%;
+  background: #6990F2;
+  border-radius: inherit;
+}
+.uploaded-area{
+  max-height: 232px;
+  overflow-y: scroll;
+}
+.uploaded-area.onprogress{
+  max-height: 150px;
+}
+.uploaded-area::-webkit-scrollbar{
+  width: 0px;
+}
+.uploaded-area .row .content{
+  display: flex;
+  align-items: center;
+}
+.uploaded-area .row .details{
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+.uploaded-area .row .details .size{
+  color: #404040;
+  font-size: 11px;
+}
+.uploaded-area i.fa-check{
+  font-size: 16px;
+}
+
+.uploadBtn{
+	border: none;
+	outline: none;
+	background-color: #f5b402;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: .5px;
+	padding: .5rem 0;
+	border-radius: 4px;
+	margin-top: .5rem;
+}
+@media(max-width: 1100px){
+	.stepperBox .stepContent {
+		padding: 2rem 0rem;
+	}
+}
+@media(max-width: 991px) and (min-width: 768px){
+	.stepperBox {
+		margin: 4rem 5rem;
+	}	
+}
+
+@media(max-width: 768px){
+	.stepperBox {
+		margin: 1rem 1rem;
+	}
+	.stepper {
+		padding: 2rem .5rem;
+	}
+	.stepContent .docRequired {
+		padding: 0 .5rem;
+	}
+}
+@media(max-width: 600px){
+	.stepContent .docRequired .docBox {
+		flex-direction: column;
+		justify-content: left;
+		align-items: flex-start;
+	}
+	.docName{
+		margin-bottom: .6rem;
+	}
+}
