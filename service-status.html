@@ -1,0 +1,517 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/dashboardpack.css">
+    <link rel="stylesheet" href="./css/dashboard-individual.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src">
+                    Chartered<span>ONE</span>
+                </div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left  mr-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Rachin Ravindra
+                                    </div>
+                                </div>
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="40" height="40" class="rounded-circle" src="./images/user_847969.png" alt="user-icon">
+                                            
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>               
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>    
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li>
+                                <a href="./dashboard-individual.html">
+                                    <i class="metismenu-icon fa-solid fa-home">
+                                    </i>Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./enrolled-services.html">
+                                    <i class="metismenu-icon fa-solid fa-users-gear">
+                                    </i>Our Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="metismenu-icon fa-solid fa-calendar">
+                                    </i>Compliances
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./enrolled-services.html">
+                                    <i class="metismenu-icon fa-solid fa-calendar">
+                                    </i>Enrolled Services
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="row">
+                        <div class="col-lg-8 mb-4">
+                            <div class="right">
+                                <div class="stepperBox">
+                                    <div id="container" class="container mt-5">
+                                        <div class="stepOverflow">
+                                            <div class="progress px-1" style="height: 3px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                              <div class="step-container d-flex justify-content-between">
+                                                <div id="trigger1" class="step-circle" onclick="displayStep(1)"><span><i class="fa-solid fa-check"></i></span><small>Overview</small></div>
+                                                <div id="trigger2" class="step-circle" onclick="displayStep(2)"><span><i class="fa-solid fa-check"></i></span><small> Process &amp; Document required</small></div>
+                                                <div id="trigger3" class="step-circle" onclick="displayStep(3)"><span><i class="fa-solid fa-check"></i></span><small>Payment</small></div>
+                                                <div id="trigger4" class="step-circle" onclick="displayStep(4)"><span><i class="fa-solid fa-check"></i></span><small>Upload Documents</small></div>
+                                                <div id="trigger5" class="step-circle" onclick="displayStep(5)"><span><i class="fa-solid fa-xmark"></i></span><small>CA/Expert Assigned</small></div>
+                                                <div id="trigger6" class="step-circle" onclick="displayStep(6)"><span><i class="fa-solid fa-xmark"></i></span><small>Delivery</small></div>
+                                              </div>
+                                        </div>
+                                        <form id="multi-step-form">
+                                          <div class="step step-1 content active" id="content1">
+                                            <h3>Overview</h3>
+                                            <h4>Benefits</h4>
+                                            <ol>
+                                                <li>There is a Limited risk to personal assets in Private Limited Company.</li>
+                                                <li>Trading as a limited company helps to portray a professional image and enhance your reputation.</li>
+                                            </ol>
+                                            <h4>Description</h4>
+                                            <p>
+                                                Private limited company is the best option for entrepreneurs who have big dreams for their business. We can help you register your Pvt ltd company without hassle! With us, the entire process is online and you get guidance throughout the process. All you need to do is provide a few details and upload some documents, we will take care of the rest. We even get you PAN and TAN. Make sure you have a minimum of 2 directors to get started.
+                                            </p>
+                                          </div>
+                                      
+                                          <div class="step step-2 content" id="content2">
+                                            <h3>Documents required</h3>
+                                            <p>Scanned copies of:</p>
+                                            <ol>
+                                                <li>PAN</li>
+                                                <li>ID Proof -Any One are accepted: Aadhaar card, Voters ID , passport (front & back), driving license (front & back) - Must not be Expired proof</li>
+                                                <li> Address Proof-Any one of this are accepted (Self-attested): Bank statement / Mobile bill / Telephone bill / Electricity bill - It must be the Current month (Not more than 30 days old)</li>
+                                                <li>Registered Office Address Proof- Electricity Bill /Gas Bill / Postpaid Mobile//Jio Prepaid Bill - Must be current month / period (Not more than 30 days old)</li>
+                                                <li>Passport size photograph</li>
+                                                <li>Specimen signature</li>
+                                            </ol>
+                                            <h4>Deliverables</h4>
+                                            <ol>
+                                                <li> Directors Identification Number (Max 3 )</li>
+                                                <li> Digital Signature Certificate for directors and shareholders</li>
+                                                <li>Memorandum of Association and Articles of Association</li>
+                                                <li>PAN Number</li>
+                                                <li>TAN Number</li>
+                                                <li>Certificate of Incorporation.</li>
+                                                <li>Name approval certificate</li>
+                                                <li>Provident Fund Registration for Employer</li>
+                                                <li>Employee State Insurance Registration for Employer</li>
+                                                <li>Professional Tax Registration {Applicable only for Karnataka & Maharashtra}</li>
+                                            </ol>
+                                          </div>
+                                      
+                                          <div class="step step-3 content" id="content3">
+                                            <h3>Payment</h3>
+                                            <div class="paymentBox">
+                                                <div class="companyName">
+                                                    <img src="./images/pvt-ltd.png" alt="private-limited" height="30" width="30">
+                                                    <p>Private Limited Company</p>
+                                                </div>
+                                                <div class="price">
+                                                    <span>₹9999/-</span>
+                                                    <small>+Taxes</small>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#000" class="payNow">Pay Now</a>
+                                            </div>
+                                          </div>
+                                          <div class="step step-4 content" id="content4">
+                                            <div class="stepContent">
+                                                <div class="docRequired ">
+                                                    <h2>Required Document</h2>
+                                                    <div class="docBox">
+                                                        <div class="docName">
+                                                            <p>Form 16 (part A, part B & part 18A)</p>
+                                                        </div>
+                                                        <div class="upload-wrapper">
+                                                            <form action="#">
+                                                                <input class="file-input" type="file" name="file" hidden>
+                                                                <i class="fas fa-cloud-upload-alt"></i>
+                                                                <p>Browse File to Upload</p>
+                                                            </form>
+                                                            <section class="progress-area"></section>
+                                                            <section class="uploaded-area"></section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="docBox">
+                                                        <div class="docName">
+                                                            <p>Form 16 (part A, part B & part 18A)</p>
+                                                        </div>
+                                                        <div class="upload-wrapper">
+                                                            <form action="#">
+                                                                <input class="file-input" type="file" name="file" hidden>
+                                                                <i class="fas fa-cloud-upload-alt"></i>
+                                                                <p>Browse File to Upload</p>
+                                                            </form>
+                                                            <section class="progress-area"></section>
+                                                            <section class="uploaded-area"></section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="step step-5 content" id="content5">
+                                            <h3>CA/Expert Assigned</h3>
+                                          </div>
+                                          <div class="step step-6 content" id="content6">
+                                            <h3>Delivery</h3>
+                                          </div>
+                                        </form>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="left">
+                                <div class="leftHeader">
+                                      <div class="headerLink">
+                                          <a href="#000">Bussiness</a>
+                                      </div>
+                                      <div class="searchContainer">
+                                           <img src="./images/IconsSearch.svg" alt="">
+                                           <input type="search" placeholder="search company-registration">
+                                      </div>
+                                </div>
+                                <div class="serviceContainer">
+                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                          <div class="serviceName">
+                                              <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                              <span>Private Limited Company Registration</span>
+                                          </div>
+                                          <div>
+                                              <img src="./images/iconRights.svg" alt="angle-right">
+                                          </div>
+                                      </a>
+                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                        <div class="serviceName">
+                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                            <span>Private Limited Company Registration</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/iconRights.svg" alt="angle-right">
+                                        </div>
+                                      </a>
+                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                        <div class="serviceName">
+                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                            <span>Private Limited Company Registration</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/iconRights.svg" alt="angle-right">
+                                        </div>
+                                      </a>
+                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                        <div class="serviceName">
+                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                            <span>Private Limited Company Registration</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/iconRights.svg" alt="angle-right">
+                                        </div>
+                                      </a>
+                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                        <div class="serviceName">
+                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                            <span>Private Limited Company Registration</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/iconRights.svg" alt="angle-right">
+                                        </div>
+                                     </a>
+                                     <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                        <div class="serviceName">
+                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                            <span>Private Limited Company Registration</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/iconRights.svg" alt="angle-right">
+                                        </div>
+                                     </a>
+                                     <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                        <div class="serviceName">
+                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                            <span>Private Limited Company Registration</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/iconRights.svg" alt="angle-right">
+                                        </div>
+                                    </a>
+                                    <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                        <div class="serviceName">
+                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                            <span>Private Limited Company Registration</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/iconRights.svg" alt="angle-right">
+                                        </div>
+                                    </a>
+                                    <a class="serviceBox" href="#" onclick="showStepperBox(event)">
+                                        <div class="serviceName">
+                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
+                                            <span>Private Limited Company Registration</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/iconRights.svg" alt="angle-right">
+                                        </div>
+                                    </a>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- File Upload -->
+    <script>
+        const forms = document.querySelectorAll("form");
+        const fileInputs = document.querySelectorAll(".file-input");
+        const progressAreas = document.querySelectorAll(".progress-area");
+        const uploadedAreas = document.querySelectorAll(".uploaded-area");
+    
+        forms.forEach((form, index) => {
+            form.addEventListener("click", () =>{
+                fileInputs[index].click();
+            });
+    
+            fileInputs[index].onchange = ({target})=>{
+                let files = target.files;
+                Array.from(files).forEach(file => {
+                    let fileName = file.name;
+                    if(fileName.length >= 12){
+                        let splitName = fileName.split('.');
+                        fileName = splitName[0].substring(0, 13) + "... ." + splitName[1];
+                    }
+                    uploadFile(fileName, index);
+                });
+            }
+        });
+    
+        function uploadFile(name, index){
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "php/upload.php");
+            xhr.upload.addEventListener("progress", ({loaded, total}) =>{
+                let fileLoaded = Math.floor((loaded / total) * 100);
+                let fileTotal = Math.floor(total / 1000);
+                let fileSize;
+                (fileTotal < 1024) ? fileSize = fileTotal + " KB" : fileSize = (loaded / (1024*1024)).toFixed(2) + " MB";
+                let progressHTML = `<li class="row">
+                                      <i class="fas fa-file-alt"></i>
+                                      <div class="content">
+                                        <div class="details">
+                                          <span class="name">${name} • Uploading</span>
+                                          <span class="percent">${fileLoaded}%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                          <div class="progress" style="width: ${fileLoaded}%"></div>
+                                        </div>
+                                      </div>
+                                    </li>`;
+                uploadedAreas[index].classList.add("onprogress");
+                progressAreas[index].innerHTML += progressHTML;
+                if(loaded == total){
+                    progressAreas[index].innerHTML = "";
+                    let uploadedHTML = `<li class="row">
+                                          <div class="content upload">
+                                            <i class="fas fa-file-alt"></i>
+                                            <div class="details">
+                                              <span class="name">${name}</span>
+                                              <span class="size">${fileSize}</span>
+                                            </div>
+                                          </div>
+                                          <button class="uploadBtn">Upload</button>
+                                        </li>`;
+                    uploadedAreas[index].classList.remove("onprogress");
+                    uploadedAreas[index].insertAdjacentHTML("afterbegin", uploadedHTML);
+                }
+            });
+            let data = new FormData(forms[index]);
+            xhr.send(data);
+        }
+    </script>
+<script src="./js/dashboard-pack.js"></script>
+<script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script>
+var currentStep = 1;
+var updateProgressBar;
+
+function displayStep(stepNumber) {
+  if (stepNumber >= 1 && stepNumber <= 6) {
+    $(".step-" + currentStep).hide();
+    $(".step-" + stepNumber).show();
+    currentStep = stepNumber;
+    updateProgressBar();
+  }
+}
+
+  $(document).ready(function() {
+    $('#multi-step-form').find('.step').slice(1).hide();
+  
+    $(".next-step").click(function() {
+      if (currentStep < 6) {
+        $(".step-" + currentStep).addClass("animate__animated animate__fadeOutLeft");
+        currentStep++;
+        setTimeout(function() {
+          $(".step").removeClass("animate__animated animate__fadeOutLeft").hide();
+          $(".step-" + currentStep).show().addClass("animate__animated animate__fadeInRight");
+          updateProgressBar();
+        }, 500);
+      }
+    });
+
+    $(".prev-step").click(function() {
+      if (currentStep > 1) {
+        $(".step-" + currentStep).addClass("animate__animated animate__fadeOutRight");
+        currentStep--;
+        setTimeout(function() {
+          $(".step").removeClass("animate__animated animate__fadeOutRight").hide();
+          $(".step-" + currentStep).show().addClass("animate__animated animate__fadeInLeft");
+          updateProgressBar();
+        }, 500);
+      }
+    });
+
+    updateProgressBar = function() {
+      var progressPercentage = ((currentStep - 1) / 5) * 100;
+      $(".progress-bar").css("width", progressPercentage + "%");
+    }
+  });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var triggers = document.querySelectorAll('[id^="trigger"]');
+        var contents = document.querySelectorAll('[id^="content"]');
+
+        triggers.forEach(function(trigger, index) {
+            trigger.addEventListener('click', function() {
+                hideAllContents();
+                contents[index].style.display = 'block';
+            });
+        });
+
+        function hideAllContents() {
+            contents.forEach(function(content) {
+                content.style.display = 'none';
+            });
+        }
+    });
+</script>
+</body>
+</html>
