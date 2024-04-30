@@ -607,3 +607,18 @@ ul.navbar-nav{
 #enquiryModal .modal-content .btns .sendmsg{
 	background-color: #26ace3;
 } 
+
+/*   toglle visibility over hover */
+.serviceBox .toggle-menuItem{
+	margin-bottom: 1rem;
+	border-radius: 4px;
+	padding: .25rem .5rem;
+}
+.serviceBox .toggle-menuItem.active{
+	background-color: #222;
+}
+.serviceBox .toggle-menuItem img{
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: .5rem;
+}

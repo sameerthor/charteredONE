@@ -64,5 +64,31 @@ $('.count-digit').each(function () {
 });
     }
 })
+// toggle visibility on hover
+		document.addEventListener("DOMContentLoaded", function() {
+        const toggleDivs = document.querySelectorAll('.toggle-menuItem');
 
+        toggleDivs.forEach(function(toggleDiv) {
+          toggleDiv.addEventListener("mouseover", function() {
+            const targetId = toggleDiv.getAttribute('data-target');
+            const targetDiv = document.getElementById(targetId);
+
+            // Hide all other divs
+            document.querySelectorAll('.toggle-content').forEach(function(div) {
+              if (div !== targetDiv) {
+                div.style.display = 'none';
+              }
+            });
+
+            // Show target div
+            targetDiv.style.display = 'block';
+             // Show target div
+             targetDiv.style.display = 'block';
+             document.querySelectorAll('.toggle-menuItem').forEach(function(anchor) {
+                anchor.classList.remove('active');
+              });
+              toggleDiv.classList.add('active');
+          });
+        });
+      });
     
