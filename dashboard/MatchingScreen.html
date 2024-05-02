@@ -405,7 +405,7 @@
                                             />
                                             <h5 class="matchingHead">Sales register</h5>
                                             <span class="matchingTxt">You need to upload sales data to start matching</span>
-                                            <button class="upload-btn"><img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608575654_subtractgstn.svg" height="14px" width="14px" alt="data_ico">Download data from GSTN&nbsp;</button>
+                                            <button data-bs-toggle="modal" data-bs-target="#uploadSalesData" class="upload-btn"><img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608575654_subtractgstn.svg" height="14px" width="14px" alt="data_ico">Download data from GSTN&nbsp;</button>
                                           </a>
                                         </div>
                                       </div>
@@ -417,6 +417,33 @@
                 </div>
         </div>
     </div>
+      <!-- ==============upload sales data=============== -->
+      <div class="modal fade" id="uploadSalesData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Import Data</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="col-12">
+                <label for="form-select" class="form-label">Select a Return Period</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>May 24</option>
+                    <option value="1">Apr 24</option>
+                    <option value="2">Mar 24</option>
+                    <option value="3">Feb 24</option>
+                    <option value="3">Jan 24</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button onclick="window.location.href='./importSalesData-gstr1.html'" type="button" class="btn btn-primary">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ==========================Import book data modal====================== -->
       <div class="modal fade  gstr_prepare" id="selectDate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -483,5 +510,6 @@
     </div>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script src="../js/dashboard-pack.js"></script> 
+<script src="../dashboard/../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,449 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Dashboard | CharteredONE</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="This is an example dashboard created using build-in elements and components."
+    />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- ***********************************Montserrat********************************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- *****************************OPENSANS************************ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="../css/dashboardpack.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/returnRegister.css" />
+    <link rel="stylesheet" href="../css/preparegstin.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+    <style>
+        .fixed-sidebar .app-main .app-main__outer{
+            padding: 0!important;
+        }
+        .app-theme-white .app-sidebar{
+            display: none;
+        }
+    </style>
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="./dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="./community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================create New Client-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header header-links mt-4">
+                                        <div class="header-links-items  mb-4">
+                                            <span class="matchinHeading"> <a href="./importSalesData-gstr1.html"><svg width="30" height="30" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg></a> <img class="mr-2" src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1580894573_gstmobileappgstgovcoin1.svg" alt="" height="40" width="40">Import Government Excel</span>
+                                            <div class="matchingTxt mt-1"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" color="#2F89FC" xmlns="http://www.w3.org/2000/svg" style="color: rgb(47, 137, 252);"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"></path></svg> Rudresh Dubey | Uttar Pradesh | GSTIN: 36EAVPM2218B1ZP | Sales |  May 24</div>
+                                        </div>
+                                    </div>
+                                    <div class="importBox">
+                                        <div>
+                                            <h2>If you have prepared your data on a Government Excel Template, please click below to import the file</h2>
+                                        </div>
+                                        <div class="uploadbox">
+                                            <div class="">
+                                                <div class="uploadInner" onclick="triggerUpload()">
+                                                    <input accept=".xlsx,.xls,.xlsm" type="file" autocomplete="off" tabindex="-1"  id="fileInput" style="display: none;" onchange="handleFileUpload(event)">
+                                                    <button>
+                                                        <span>
+                                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path>
+                                                            </svg>
+                                                        </span>Select file from your computer
+                                                        <span>
+                                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="downloadTemplete">
+                                            <h4>Need the Government Excel for filing GSTR-1 data offline? <a href="#">Download it here</a></h4>
+                                        </div>
+                                        <div class="mt-4">
+                                            <h2>More Import Options</h2>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                                                <a class="importMethod" href="#">
+                                                    <div>
+                                                        <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1571219536_json.svg" alt="">
+                                                    </div>
+                                                    <div class="importType">
+                                                        <h4>JSON File</h4>
+                                                    </div>
+                                                    <div class="importDesc">
+                                                        <p>Import data prepared as JSON using Govt utility/Tally</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                                                <a class="importMethod" href="">
+                                                    <div>
+                                                        <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1571219418_tally.svg" alt="">
+                                                    </div>
+                                                    <div class="importType">
+                                                        <h4>Tally Connector</h4>
+                                                    </div>
+                                                    <div class="importDesc">
+                                                        <p>Directly Import data into ClearTax from Tally</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                                                <a class="importMethod" href="">
+                                                    <div>
+                                                        <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1575546007_cticon.svg" alt="">
+                                                    </div>
+                                                    <div class="importType">
+                                                        <h4>CharteredOne Template</h4>
+                                                    </div>
+                                                    <div class="importDesc">
+                                                        <p>Simplest way to prepare & import data 5x faster!</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                                                <a class="importMethod" href="">
+                                                    <div>
+                                                        <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1571219724_typein.svg" alt="">
+                                                    </div>
+                                                    <div class="importType">
+                                                        <h4>Type in or Copy/Paste</h4>
+                                                    </div>
+                                                    <div class="importDesc">
+                                                        <p>Directly type in or copy paste your B2B/B2C invoices</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<!-- file upload -->
+<script>
+    function triggerUpload() {
+      var fileInput = document.getElementById('fileInput');
+      fileInput.click();
+    }
+  
+    function handleFileUpload(event) {
+      // Handle file upload logic here
+      console.log("File uploaded:", event.target.files[0]);
+    }
+</script>
+<script src="../js/dashboard-pack.js"></script> 
+<script src="../dashboard/../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
