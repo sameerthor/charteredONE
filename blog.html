@@ -24,6 +24,7 @@
     <!-- ******************Local Stylesheet************************* -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/blog.css">
 </head>
 <body>
     <!-- ==============================Navbar======================================= -->
@@ -279,7 +280,6 @@
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
-<<<<<<< HEAD
     <!-- =============================Blog===================================== -->
     <section class="blogSection">
        <div class="row">
@@ -570,7 +570,6 @@
                             </form>
                         </div>
                     </div>
-=======
     <!-- ======================= -->
     <div class="banner" id="blogBanner">
     <div class="bannerBlock">
@@ -619,7 +618,6 @@
             <div class="blogCard col-lg-3 col-md-6">
               <a href="./blog.html" class="card-link">
                 <div class="card-img">
->>>>>>> f967294d4cf6cee3969d5f32d67c82c0bd3c8e43
                 </div>
               </a>
               <div class="card-info">
@@ -661,7 +659,6 @@
                         <li><a href="/s/advance-tax" title=" Advance Tax"> Advance Tax</a></li><li><a href="/s/income-tax-for-nri" title="NRI">NRI</a></li>
                         <li><a href="/s/huf-hindu-undivided-family" title="HUF">HUF</a></li><li><a href="/s/income-tax-notices" title="Income Tax Notices">Income Tax Notices</a></li>
                     </ul>
-=======
             </div>
 
             <div class="blogCard col-lg-3 col-md-6">
@@ -678,7 +675,6 @@
                         Read More
                     </button>
                     </a>
->>>>>>> f967294d4cf6cee3969d5f32d67c82c0bd3c8e43
                 </div>
               </div>
             </div>
@@ -814,7 +810,6 @@
     <script src="./js/home.js"></script>
     <!-- *******************Bootstrap Script ***************-->
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
-<<<<<<< HEAD
     <script>
             // ---- ---- Star Ratings ---- ---- //
         const stars = document.querySelectorAll('.stars i');
@@ -831,71 +826,60 @@
         });
 
 
-        // Find all tables in the document
 var tables = document.querySelectorAll('table');
 
-// Loop through each table found
 tables.forEach(function(table) {
-    // Create a new div element
     var div = document.createElement('div');
-    // Add class name 'table-section' to the div
     div.className = 'table-section';
-    // Wrap the table inside the newly created div
     table.parentNode.insertBefore(div, table);
     div.appendChild(table);
 });
-
-=======
-    
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-80px";
-          }
-          prevScrollpos = currentScrollPos;
+ </script>
+<script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+            
+        $('.card-container').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+        {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
         }
         
-      $('.card-container').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-	
->>>>>>> f967294d4cf6cee3969d5f32d67c82c0bd3c8e43
+    ]
+    });
     </script>
 </body>
 </html>

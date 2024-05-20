@@ -158,220 +158,250 @@
             <div class="app-main__outer">
                 <div class="app-main__inner">
                     <div class="row">
-                        <div class="col-lg-8 mb-4">
-                            <div class="right">
-                                <div class="stepperBox">
-                                    <div id="container" class="container mt-5">
-                                        <div class="stepOverflow">
-                                            <div class="progress px-1" style="height: 3px;">
-                                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                              </div>
-                                              <div class="step-container d-flex justify-content-between">
-                                                <div id="trigger1" class="step-circle" onclick="displayStep(1)"><span><i class="fa-solid fa-check"></i></span><small>Overview</small></div>
-                                                <div id="trigger2" class="step-circle" onclick="displayStep(2)"><span><i class="fa-solid fa-check"></i></span><small> Process &amp; Document required</small></div>
-                                                <div id="trigger3" class="step-circle" onclick="displayStep(3)"><span><i class="fa-solid fa-check"></i></span><small>Payment</small></div>
-                                                <div id="trigger4" class="step-circle" onclick="displayStep(4)"><span><i class="fa-solid fa-check"></i></span><small>Upload Documents</small></div>
-                                                <div id="trigger5" class="step-circle" onclick="displayStep(5)"><span><i class="fa-solid fa-xmark"></i></span><small>CA/Expert Assigned</small></div>
-                                                <div id="trigger6" class="step-circle" onclick="displayStep(6)"><span><i class="fa-solid fa-xmark"></i></span><small>Delivery</small></div>
-                                              </div>
-                                        </div>
-                                        <form id="multi-step-form">
-                                          <div class="step step-1 content active" id="content1">
-                                            <h3>Overview</h3>
-                                            <h4>Benefits</h4>
-                                            <ol>
-                                                <li>There is a Limited risk to personal assets in Private Limited Company.</li>
-                                                <li>Trading as a limited company helps to portray a professional image and enhance your reputation.</li>
-                                            </ol>
-                                            <h4>Description</h4>
-                                            <p>
-                                                Private limited company is the best option for entrepreneurs who have big dreams for their business. We can help you register your Pvt ltd company without hassle! With us, the entire process is online and you get guidance throughout the process. All you need to do is provide a few details and upload some documents, we will take care of the rest. We even get you PAN and TAN. Make sure you have a minimum of 2 directors to get started.
-                                            </p>
-                                          </div>
-                                      
-                                          <div class="step step-2 content" id="content2">
-                                            <h3>Documents required</h3>
-                                            <p>Scanned copies of:</p>
-                                            <ol>
-                                                <li>PAN</li>
-                                                <li>ID Proof -Any One are accepted: Aadhaar card, Voters ID , passport (front & back), driving license (front & back) - Must not be Expired proof</li>
-                                                <li> Address Proof-Any one of this are accepted (Self-attested): Bank statement / Mobile bill / Telephone bill / Electricity bill - It must be the Current month (Not more than 30 days old)</li>
-                                                <li>Registered Office Address Proof- Electricity Bill /Gas Bill / Postpaid Mobile//Jio Prepaid Bill - Must be current month / period (Not more than 30 days old)</li>
-                                                <li>Passport size photograph</li>
-                                                <li>Specimen signature</li>
-                                            </ol>
-                                            <h4>Deliverables</h4>
-                                            <ol>
-                                                <li> Directors Identification Number (Max 3 )</li>
-                                                <li> Digital Signature Certificate for directors and shareholders</li>
-                                                <li>Memorandum of Association and Articles of Association</li>
-                                                <li>PAN Number</li>
-                                                <li>TAN Number</li>
-                                                <li>Certificate of Incorporation.</li>
-                                                <li>Name approval certificate</li>
-                                                <li>Provident Fund Registration for Employer</li>
-                                                <li>Employee State Insurance Registration for Employer</li>
-                                                <li>Professional Tax Registration {Applicable only for Karnataka & Maharashtra}</li>
-                                            </ol>
-                                          </div>
-                                      
-                                          <div class="step step-3 content" id="content3">
-                                            <h3>Payment</h3>
-                                            <div class="paymentBox">
-                                                <div class="companyName">
-                                                    <img src="./images/pvt-ltd.png" alt="private-limited" height="30" width="30">
-                                                    <p>Private Limited Company</p>
+                        <div class="col-12">
+                            <div class="row right pt-4">
+                                <div class="col-3">
+                                    <div class="pageUpdate">
+                                        <div class="container p-0">
+                                              <div class="step">
+                                                <div class="v-stepper">
+                                                  <div class="circle" id="trigger1" onclick="displayStep(1)">
+                                                    <svg width="14" height="14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"></path>
+                                                    </svg>
+                                                  </div>
+                                                  <div class="line"></div>
                                                 </div>
-                                                <div class="price">
-                                                    <span>₹9999/-</span>
-                                                    <small>+Taxes</small>
-                                                </div>
-                                            </div>
-                                            <div class="text-center">
-                                                <a href="#000" class="payNow">Pay Now</a>
-                                            </div>
-                                          </div>
-                                          <div class="step step-4 content" id="content4">
-                                            <div class="stepContent">
-                                                <div class="docRequired ">
-                                                    <h2>Required Document</h2>
-                                                    <div class="docBox">
-                                                        <div class="docName">
-                                                            <p>Form 16 (part A, part B & part 18A)</p>
-                                                        </div>
-                                                        <div class="upload-wrapper">
-                                                            <form action="#">
-                                                                <input class="file-input" type="file" name="file" hidden>
-                                                                <i class="fas fa-cloud-upload-alt"></i>
-                                                                <p>Browse File to Upload</p>
-                                                            </form>
-                                                            <section class="progress-area"></section>
-                                                            <section class="uploaded-area"></section>
-                                                        </div>
-                                                    </div>
-                                                    <div class="docBox">
-                                                        <div class="docName">
-                                                            <p>Form 16 (part A, part B & part 18A)</p>
-                                                        </div>
-                                                        <div class="upload-wrapper">
-                                                            <form action="#">
-                                                                <input class="file-input" type="file" name="file" hidden>
-                                                                <i class="fas fa-cloud-upload-alt"></i>
-                                                                <p>Browse File to Upload</p>
-                                                            </form>
-                                                            <section class="progress-area"></section>
-                                                            <section class="uploaded-area"></section>
-                                                        </div>
+                                          
+                                                <div class="d-flex flex-row">
+                                                    <div class="content">
+                                                        <p>
+                                                            Overview
+                                                        </p>
+                                                        <span class="date">
+                                                            13 May 2024, 4:53 PM
+                                                        </span>
                                                     </div>
                                                 </div>
-                                             </div>
+                                            </div>
+                                            
+                                            <div class="step">
+                                              <div class="v-stepper" id="trigger2" onclick="displayStep(2)">
+                                                <div class="circle">
+                                                    <svg width="14" height="14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="line"></div>
+                                              </div>
+                                          
+                                              <div class="content">
+                                                <p>
+                                                    Process &apm Document Required
+                                                </p>
+                                                <span class="date">
+                                                    13 May 2024, 4:53 PM
+                                                </span>
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="step">
+                                                <div class="v-stepper">
+                                                  <div class="circle" id="trigger3" onclick="displayStep(3)">
+                                                    <svg width="14" height="14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"></path>
+                                                    </svg>
+                                                  </div>
+                                                  <div class="line"></div>
+                                                </div>
+                                          
+                                                <div class="content">
+                                                    <p>
+                                                       Payment
+                                                    </p>
+                                                    <span class="date">
+                                                        13 May 2024, 4:53 PM
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="step">
+                                                <div class="v-stepper">
+                                                  <div class="circle" id="trigger4" onclick="displayStep(4)">
+                                                    <svg width="14" height="14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"></path>
+                                                    </svg>
+                                                  </div>
+                                                  <div class="line"></div>
+                                                </div>
+                                          
+                                                <div class="content">
+                                                    <p>
+                                                        Upload Document
+                                                    </p>
+                                                    <span class="date">
+                                                        13 May 2024, 4:53 PM
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="v-stepper">
+                                                  <div class="circle" id="trigger5" onclick="displayStep(5)">
+                                                    <svg width="14" height="14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"></path>
+                                                    </svg>
+                                                  </div>
+                                                  <div class="line"></div>
+                                                </div>
+                                          
+                                                <div class="content">
+                                                    <p>
+                                                        CA /Expert Assigned
+                                                    </p>
+                                                    <span class="date">
+                                                        13 May 2024, 4:53 PM
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="v-stepper">
+                                                  <div class="circle id="trigger6" onclick="displayStep(6)"">
+                                                    <svg width="14" height="14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"></path>
+                                                    </svg>
+                                                  </div>
+                                                  <div class="line"></div>
+                                                </div>
+                                          
+                                                <div class="content">
+                                                    <p>
+                                                       Delivery 
+                                                    </p>
+                                                    <span class="date">
+                                                        13 May 2024, 4:53 PM
+                                                    </span>
+                                                </div>
+                                            </div>
                                           </div>
-                                          <div class="step step-5 content" id="content5">
-                                            <h3>CA/Expert Assigned</h3>
+                                    </div>
+                                </div>
+                                <div class=" col-9">
+                                    <div class="stepperBox">
+                                        <div id="container" class="container p-0">
+                                            <form id="multi-step-form">
+                                              <div class="step step-1 content active" id="content1">
+                                                <h3>Overview</h3>
+                                                <h4>Benefits</h4>
+                                                <ol>
+                                                    <li>There is a Limited risk to personal assets in Private Limited Company.</li>
+                                                    <li>Trading as a limited company helps to portray a professional image and enhance your reputation.</li>
+                                                </ol>
+                                                <h4>Description</h4>
+                                                <p>
+                                                    Private limited company is the best option for entrepreneurs who have big dreams for their business. We can help you register your Pvt ltd company without hassle! With us, the entire process is online and you get guidance throughout the process. All you need to do is provide a few details and upload some documents, we will take care of the rest. We even get you PAN and TAN. Make sure you have a minimum of 2 directors to get started.
+                                                </p>
+                                              </div>
+                                          
+                                              <div class="step step-2 content" id="content2">
+                                                <h3>Documents required</h3>
+                                                <p>Scanned copies of:</p>
+                                                <ol>
+                                                    <li>PAN</li>
+                                                    <li>ID Proof -Any One are accepted: Aadhaar card, Voters ID , passport (front & back), driving license (front & back) - Must not be Expired proof</li>
+                                                    <li> Address Proof-Any one of this are accepted (Self-attested): Bank statement / Mobile bill / Telephone bill / Electricity bill - It must be the Current month (Not more than 30 days old)</li>
+                                                    <li>Registered Office Address Proof- Electricity Bill /Gas Bill / Postpaid Mobile//Jio Prepaid Bill - Must be current month / period (Not more than 30 days old)</li>
+                                                    <li>Passport size photograph</li>
+                                                    <li>Specimen signature</li>
+                                                </ol>
+                                                <h4>Deliverables</h4>
+                                                <ol>
+                                                    <li> Directors Identification Number (Max 3 )</li>
+                                                    <li> Digital Signature Certificate for directors and shareholders</li>
+                                                    <li>Memorandum of Association and Articles of Association</li>
+                                                    <li>PAN Number</li>
+                                                    <li>TAN Number</li>
+                                                    <li>Certificate of Incorporation.</li>
+                                                    <li>Name approval certificate</li>
+                                                    <li>Provident Fund Registration for Employer</li>
+                                                    <li>Employee State Insurance Registration for Employer</li>
+                                                    <li>Professional Tax Registration {Applicable only for Karnataka & Maharashtra}</li>
+                                                </ol>
+                                              </div>
+                                          
+                                              <div class="step step-3 content" id="content3">
+                                                <h3>Payment</h3>
+                                                <div class="paymentBox">
+                                                    <div class="companyName">
+                                                        <img src="./images/pvt-ltd.png" alt="private-limited" height="30" width="30">
+                                                        <p>Private Limited Company</p>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>₹9999/-</span>
+                                                        <small>+Taxes</small>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <a href="#000" class="payNow">Pay Now</a>
+                                                </div>
+                                              </div>
+                                              <div class="step step-4 content" id="content4">
+                                                <div class="stepContent">
+                                                    <div class="docRequired ">
+                                                        <h2>Required Document</h2>
+                                                        <div class="docBox">
+                                                            <div class="docName">
+                                                                <p>Form 16 (part A, part B & part 18A)</p>
+                                                            </div>
+                                                            <div>
+                                                                <input type="file" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="docBox">
+                                                            <div class="docName">
+                                                                <p>Form 16 (part A, part B & part 18A)</p>
+                                                            </div>
+                                                            <div>
+                                                                <input type="file" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="docBox">
+                                                            <div class="docName">
+                                                                <p>Form 16 (part A, part B & part 18A)</p>
+                                                            </div>
+                                                            <div>
+                                                                <input type="file" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <h2>Upload More Docs if required</h2>
+                                                        <div class="docBox">
+                                                            <div class="inputSection">
+                                                                <div class="inputContainer">
+                                                                  <div class="inputField initialInputField custom-class mb-3">
+                                                                    <input type="text" id="" class="textInput form-control" placeholder="Enter Document Name">
+                                                                    <input type="file" id="" class="clonableInput form-control">
+                                                                    <button class="addInputBtn">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path>
+                                                                        </svg>
+                                                                    </button>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="step step-5 content" id="content5">
+                                                <h3>CA/Expert Assigned</h3>
+                                              </div>
+                                              <div class="step step-6 content" id="content6">
+                                                <h3>Delivery</h3>
+                                              </div>
+                                            </form>
                                           </div>
-                                          <div class="step step-6 content" id="content6">
-                                            <h3>Delivery</h3>
-                                          </div>
-                                        </form>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="left">
-                                <div class="leftHeader">
-                                      <div class="headerLink">
-                                          <a href="#000">Bussiness</a>
-                                      </div>
-                                      <div class="searchContainer">
-                                           <img src="./images/IconsSearch.svg" alt="">
-                                           <input type="search" placeholder="search company-registration">
-                                      </div>
-                                </div>
-                                <div class="serviceContainer">
-                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                          <div class="serviceName">
-                                              <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                              <span>Private Limited Company Registration</span>
-                                          </div>
-                                          <div>
-                                              <img src="./images/iconRights.svg" alt="angle-right">
-                                          </div>
-                                      </a>
-                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                        <div class="serviceName">
-                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                            <span>Private Limited Company Registration</span>
-                                        </div>
-                                        <div>
-                                            <img src="./images/iconRights.svg" alt="angle-right">
-                                        </div>
-                                      </a>
-                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                        <div class="serviceName">
-                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                            <span>Private Limited Company Registration</span>
-                                        </div>
-                                        <div>
-                                            <img src="./images/iconRights.svg" alt="angle-right">
-                                        </div>
-                                      </a>
-                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                        <div class="serviceName">
-                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                            <span>Private Limited Company Registration</span>
-                                        </div>
-                                        <div>
-                                            <img src="./images/iconRights.svg" alt="angle-right">
-                                        </div>
-                                      </a>
-                                      <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                        <div class="serviceName">
-                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                            <span>Private Limited Company Registration</span>
-                                        </div>
-                                        <div>
-                                            <img src="./images/iconRights.svg" alt="angle-right">
-                                        </div>
-                                     </a>
-                                     <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                        <div class="serviceName">
-                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                            <span>Private Limited Company Registration</span>
-                                        </div>
-                                        <div>
-                                            <img src="./images/iconRights.svg" alt="angle-right">
-                                        </div>
-                                     </a>
-                                     <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                        <div class="serviceName">
-                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                            <span>Private Limited Company Registration</span>
-                                        </div>
-                                        <div>
-                                            <img src="./images/iconRights.svg" alt="angle-right">
-                                        </div>
-                                    </a>
-                                    <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                        <div class="serviceName">
-                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                            <span>Private Limited Company Registration</span>
-                                        </div>
-                                        <div>
-                                            <img src="./images/iconRights.svg" alt="angle-right">
-                                        </div>
-                                    </a>
-                                    <a class="serviceBox" href="#" onclick="showStepperBox(event)">
-                                        <div class="serviceName">
-                                            <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                            <span>Private Limited Company Registration</span>
-                                        </div>
-                                        <div>
-                                            <img src="./images/iconRights.svg" alt="angle-right">
-                                        </div>
-                                    </a>
-                                </div>
-                          </div>
                         </div>
                     </div>
                 </div>
@@ -380,72 +410,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- File Upload -->
-    <script>
-        const forms = document.querySelectorAll("form");
-        const fileInputs = document.querySelectorAll(".file-input");
-        const progressAreas = document.querySelectorAll(".progress-area");
-        const uploadedAreas = document.querySelectorAll(".uploaded-area");
-    
-        forms.forEach((form, index) => {
-            form.addEventListener("click", () =>{
-                fileInputs[index].click();
-            });
-    
-            fileInputs[index].onchange = ({target})=>{
-                let files = target.files;
-                Array.from(files).forEach(file => {
-                    let fileName = file.name;
-                    if(fileName.length >= 12){
-                        let splitName = fileName.split('.');
-                        fileName = splitName[0].substring(0, 13) + "... ." + splitName[1];
-                    }
-                    uploadFile(fileName, index);
-                });
-            }
-        });
-    
-        function uploadFile(name, index){
-            let xhr = new XMLHttpRequest();
-            xhr.open("POST", "php/upload.php");
-            xhr.upload.addEventListener("progress", ({loaded, total}) =>{
-                let fileLoaded = Math.floor((loaded / total) * 100);
-                let fileTotal = Math.floor(total / 1000);
-                let fileSize;
-                (fileTotal < 1024) ? fileSize = fileTotal + " KB" : fileSize = (loaded / (1024*1024)).toFixed(2) + " MB";
-                let progressHTML = `<li class="row">
-                                      <i class="fas fa-file-alt"></i>
-                                      <div class="content">
-                                        <div class="details">
-                                          <span class="name">${name} • Uploading</span>
-                                          <span class="percent">${fileLoaded}%</span>
-                                        </div>
-                                        <div class="progress-bar">
-                                          <div class="progress" style="width: ${fileLoaded}%"></div>
-                                        </div>
-                                      </div>
-                                    </li>`;
-                uploadedAreas[index].classList.add("onprogress");
-                progressAreas[index].innerHTML += progressHTML;
-                if(loaded == total){
-                    progressAreas[index].innerHTML = "";
-                    let uploadedHTML = `<li class="row">
-                                          <div class="content upload">
-                                            <i class="fas fa-file-alt"></i>
-                                            <div class="details">
-                                              <span class="name">${name}</span>
-                                              <span class="size">${fileSize}</span>
-                                            </div>
-                                          </div>
-                                          <button class="uploadBtn">Upload</button>
-                                        </li>`;
-                    uploadedAreas[index].classList.remove("onprogress");
-                    uploadedAreas[index].insertAdjacentHTML("afterbegin", uploadedHTML);
-                }
-            });
-            let data = new FormData(forms[index]);
-            xhr.send(data);
-        }
-    </script>
 <script src="./js/dashboard-pack.js"></script>
 <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 <script>
@@ -513,5 +477,69 @@ function displayStep(stepNumber) {
         }
     });
 </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const inputSections = document.querySelectorAll('.inputSection');
+  
+      inputSections.forEach(section => {
+        const inputContainer = section.querySelector('.inputContainer');
+        const initialInputField = inputContainer.querySelector('.initialInputField');
+  
+        initialInputField.querySelector('.addInputBtn').addEventListener('click', function(event) {
+          event.preventDefault();
+          addNewInputField(inputContainer, initialInputField);
+        });
+      });
+  
+      function addNewInputField(container, referenceInputField) {
+        const inputField = document.createElement('div');
+        inputField.className = referenceInputField.className; // Clone classes
+  
+        const fileId = `fileInput_${Date.now()}`; // Generate unique ID for file input
+        const textId = `textInput_${Date.now()}`; // Generate unique ID for text input
+  
+        const label = document.createElement('label');
+        label.setAttribute('for', fileId);
+        label.textContent = 'Choose a file:';
+  
+        const textInput = document.createElement('input');
+        textInput.type = 'text';
+        textInput.id = textId;
+        textInput.className = referenceInputField.querySelector('.textInput').className; // Clone text input class
+        textInput.placeholder = 'Enter Document Name';
+  
+        const fileInput = document.createElement('input');
+        fileInput.type = 'file';
+        fileInput.id = fileId;
+        fileInput.className = referenceInputField.querySelector('.clonableInput').className; // Clone file input class
+  
+        const addBtn = document.createElement('button');
+        addBtn.textContent = 'Add Input Field';
+        addBtn.classList.add('addInputBtn');
+        addBtn.addEventListener('click', function(event) {
+          event.preventDefault();
+          addNewInputField(container, inputField);
+        });
+  
+        const deleteBtn = document.createElement('button');
+        deleteBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
+  <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
+</svg>`;
+        deleteBtn.classList.add('deleteInputBtn');
+        deleteBtn.addEventListener('click', function(event) {
+          event.preventDefault();
+          container.removeChild(inputField);
+        });
+  
+        inputField.appendChild(textInput);
+        inputField.appendChild(fileInput);
+        inputField.appendChild(deleteBtn);
+        container.appendChild(inputField);
+      }
+    });
+  </script>
 </body>
 </html>

@@ -365,7 +365,6 @@ body{
   background-color: #fff;
 }
 
-/* Set the color and style of the scrollbar corner */
 .rightSidebar ::-webkit-scrollbar-corner {
   background-color: #888;
 }

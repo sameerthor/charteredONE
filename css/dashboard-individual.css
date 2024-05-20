@@ -782,3 +782,358 @@ section .details span{
     width: calc(95%/2);
   }
 }
+ /* Add service floating button */
+#createService{
+  position: fixed;
+  top: 80%;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  z-index: 999;
+}
+#createService i{
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+@media(max-width:700px){
+  #createService{
+      bottom: 50px;
+  }
+}
+#createService:active{
+  background-color: #3e3e3e;
+}
+/* create service Modal */
+.modal .modal-title{
+  font-weight: 600;
+  color: #2e2e2e;
+  font-size: 1.6rem;
+}
+.modal .form-label{
+  font-weight: 600;
+  color: #2e2e2e;
+}
+.modal .form-control::placeholder{
+  font-weight: 500;
+  color: #2e2e2e;
+  font-size: .9rem;
+}
+.modal .form-control{
+  font-weight: 500;
+  color: #2e2e2e;
+  font-size: .9rem;
+  box-shadow: none;
+}
+.modal .btn-close{
+  box-shadow: none;
+}
+
+#addService .modal-header{
+  padding: .5rem;
+}
+/* Add/Edit Offcanvas */
+#editService{
+  width: 500px;
+  max-width: 100%;
+
+}
+.offcanvas-header {
+  background-color: #f9f9f9;
+}
+.offcanvas-header .offcanvas-title{
+  font-weight: 600;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+}
+.offcanvas-header .btn-close{
+  box-shadow: none;
+}
+.serviceRequest h2{
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #2e2e2e;
+}
+.offcanvas .initialInputField{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offcanvas .clonableInput{
+  margin-right: .5rem;
+  box-shadow: none;
+}
+.offcanvas .deleteInputBtn, .offcanvas .addInputBtn{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px
+}
+ .offcanvas .addInputBtn{
+ background-color: #52cc8f;
+}
+
+.offcanvas .deleteInputBtn{
+  background-color: #cd1c1f;
+}
+.offcanvas .form-label{
+  font-weight: 600;
+  color: #2e2e2e;
+  text-align: left;
+  font-size: .9rem;
+}
+.offcanvas .form-control{
+  box-shadow: none;
+}
+
+
+/* Additional file Field */
+.inputField{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inputField .form-control{
+  margin-right: .5rem;
+}
+
+
+
+.docBox .deleteInputBtn, .docBox .addInputBtn{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px
+}
+ .docBox .addInputBtn{
+ background-color: #52cc8f;
+}
+
+.docBox .deleteInputBtn{
+  background-color: #cd1c1f;
+}
+.docBox .form-label{
+  font-weight: 600;
+  color: #2e2e2e;
+  text-align: left;
+  font-size: .9rem;
+}
+.docBox .form-control{
+  box-shadow: none;
+}
+
+
+/* page update */
+/* .pageUpdate{
+  max-height: 30rem;
+  overflow: auto;
+}
+.pageUpdate::-webkit-scrollbar{
+ display: none;
+} */
+
+.step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.v-stepper {
+  position: relative;
+}
+
+
+/* regular step */
+.step .circle {
+  border: 2px solid #e2e2e2;
+  border-radius: 100%;
+  width: 25px;   
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.step .line {
+    top: 23px;
+  left: 12px;
+  height: 100%;
+    
+    position: absolute;
+    border-left: 1px solid #e2e2e2;
+}
+
+
+
+.step.completed .line {
+  border-left: 3px solid rgb(6,150,215);
+}
+
+.step.active .circle {
+visibility: visible;
+  border-color: rgb(6,150,215);
+}
+
+.step.empty .circle {
+    visibility: hidden;
+}
+
+.step.empty .line {
+  top: 0;
+  height: 150%;
+}
+
+
+.step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1; 
+}
+.content  {
+  margin-left: 10px;
+  display: inline-block;
+}
+.content p {
+  display: inline-block;
+  color: #2e2e2e;
+  font-size: .85rem;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: .1rem;
+}
+.content .date{
+  color: #999;
+  display: block;
+  margin-top: .4rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+.latestTag span{
+  display: inline-flex;
+ height: 2rem;
+ width: 3.5rem;
+ align-items: center;
+ justify-content: center;
+ font-size: .85rem;
+ border-radius: 4px;
+ font-weight: 500;
+ color: rgb(30 66 159);
+ background-color: rgb(225 239 254);
+ margin-left: .2rem;
+}
+/* Explore Service Modal */
+#exploreService h2{
+  font-weight: 500;
+  color: #2e2e2e;
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+}
+#exploreService h3{
+  font-weight: 500;
+  color: #2e2e2e;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+#exploreService .whatNeed ul li{
+  list-style-type: disc;
+  font-weight: 500;
+  font-size: .85rem;
+  margin-bottom: .5rem;
+}
+#exploreService .processingTime{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#exploreService .modal-body{
+ padding: 1rem 2rem;
+}
+#exploreService .processingTime div{
+  margin-right: 1rem;
+  border-right: 1px solid #e2e2e2;
+  padding: .5rem;
+ }
+#exploreService .processingTime p{
+ margin-bottom: 0;
+ font-weight: 600;
+ color: #232323;
+ font-size: .9rem;
+
+
+}
+#exploreService .processingTime span{
+ display: block;
+ color: #999;
+ font-weight: 500;
+ font-size: .75rem;
+ }
+ #exploreService .pageUpdate{
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  width: 220px;
+  padding: .5rem .4rem 0 0;
+ }
+ #exploreService .pageUpdate .step{
+  padding-left: .2rem;
+  padding-right: .2rem;
+ }
+ #exploreService .creterequest{
+  display: inline-block;
+  margin-top: .5rem;
+  width: 220px;
+  text-align: center;
+  padding: .5rem .5rem; 
+  border-radius: 2px;
+  background-color: #e0e0e0;
+  font-weight: 500;
+  color: #999;
+ }
+ #exploreService .creterequest{
+  display: block;
+  margin-top: .5rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 0;
+ }
+ #exploreService .creterequest a{
+  color: #999;
+  text-transform: uppercase;
+  font-size: .8rem;
+  cursor: pointer;
+  letter-spacing: .5px;
+  display: block;
+  width: 220px;
+  color: #999;
+  background-color: #e0e0e0;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: .5rem 1rem;
+  transition: .3s ease;
+
+ }
+ #exploreService .creterequest a:hover{
+  color: #fff;
+  background-color: #2e2e2e;
+  text-decoration: none;
+ }
+ #exploreService .modal-header{
+  padding:  .5rem;
+ }
