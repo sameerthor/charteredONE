@@ -1137,3 +1137,43 @@ visibility: visible;
  #exploreService .modal-header{
   padding:  .5rem;
  }
+
+ .recommendations {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+}
+@media(min-width:991px){
+  .recommendations{
+    width: 60%;
+    margin: auto;
+  }
+}  
+.searchContainer {
+  position: relative;
+}
+.recommendation {
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #2e2e2e;
+  border-bottom: 1px solid #e2e2e2;
+}
+.recommendations .recommendation:first-child{
+  border-radius: 10px 10px 0 0;
+}
+.recommendations .recommendation:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+.recommendation:hover {
+  background: #f0f0f0;
+}

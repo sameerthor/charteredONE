@@ -163,10 +163,19 @@
                                 <div>
                                     <h4>Search for your desired services</h4>
                                 </div>
-                                <form class="search-bussiness">
-                                    <input type="text" placeholder="search company registration" required/>
-                                    <button><img src="./images/IconsSearch.svg" alt=""></button>
-                                </form>
+                                <div class="searchContainer">
+                                    <form class="search-bussiness">
+                                        <input class="search-input" type="text" placeholder="search company registration" required/>
+                                        <button><img src="./images/IconsSearch.svg" alt=""></button>
+                                    </form>
+                                    <div class="recommendations">
+                                        <div class="recommendation">Recommendation 1</div>
+                                        <div class="recommendation">Recommendation 2</div>
+                                        <div class="recommendation">Recommendation 3</div>
+                                        <div class="recommendation">Recommendation 4</div>
+                                        <div class="recommendation">Recommendation 5</div>
+                                    </div>
+                                </div>
                                 <div>
                                     <h5 class="trandingSearch">Tranding Searches:</h5>
                                 </div>
@@ -1038,6 +1047,71 @@
         inputField.appendChild(deleteBtn);
   
         container.appendChild(inputField);
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const searchInput = document.querySelector('.search-input');
+      const recommendationsContainer = document.querySelector('.recommendations');
+  
+      const data = [
+        'Insurance Company Registration',
+        'NBFC Company Registration',
+        'LLP Registration',
+        'Trade License',
+        'Private Limited Company Registration',
+        'FSSAI Registration',
+        'Digital Signature Certificate',
+        'ISO Registration',
+        'GST Registration',
+        'GST Return Filing',
+        'GST Nil Return Filing',
+        'Pvt. Ltd. Winding up',
+        'LLP Winding Up'
+      ];
+  
+      searchInput.addEventListener('focus', function() {
+        filterRecommendations(searchInput.value);
+      });
+  
+      searchInput.addEventListener('blur', function() {
+        setTimeout(function() {
+          recommendationsContainer.style.display = 'none';
+        }, 200);
+      });
+  
+      searchInput.addEventListener('input', function() {
+        filterRecommendations(this.value);
+      });
+  
+      function filterRecommendations(keyword) {
+        recommendationsContainer.innerHTML = ''; // Clear previous recommendations
+        if (keyword.trim() === '') {
+          recommendationsContainer.style.display = 'none';
+          return;
+        }
+        const filteredData = data.filter(item => item.toLowerCase().includes(keyword.toLowerCase()));
+        
+        if (filteredData.length > 0) {
+          filteredData.forEach(function(item) {
+            const recommendationItem = document.createElement('div');
+            recommendationItem.className = 'recommendation';
+            recommendationItem.textContent = item;
+            recommendationItem.addEventListener('click', function() {
+              searchInput.value = this.textContent;
+              recommendationsContainer.style.display = 'none';
+            });
+            recommendationsContainer.appendChild(recommendationItem);
+          });
+          recommendationsContainer.style.display = 'block';
+        } else {
+          const noResultsItem = document.createElement('div');
+          noResultsItem.className = 'no-results';
+          noResultsItem.textContent = 'No results found';
+          recommendationsContainer.appendChild(noResultsItem);
+          recommendationsContainer.style.display = 'block';
+        }
       }
     });
   </script>
