@@ -532,26 +532,26 @@ section .details span{
     padding-bottom: 2rem;
 
 }
-.stepperBox .content h3{
+.stepperBox  h3{
     color: #2e2e2e;
     font-size: 1.35rem;
     font-weight: 600;
     letter-spacing: .5px;
 }
-.stepperBox .content h4{
+.stepperBox  h4{
     color: #2e2e2e;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: .5px;
 }
-.stepperBox .content ol li{
+.stepperBox  ol li{
     color: #2e2e2e;
     font-size: .8rem;
     font-weight: 500;
     color: #2e2e2e;
     margin-bottom: .5rem;
 }
-.stepperBox .content p{
+.stepperBox  p{
     color: #2e2e2e;
     font-size: .78rem;
     font-weight: 500;
@@ -563,6 +563,7 @@ section .details span{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 .stepperBox .paymentBox .companyName p{
     color: #222;
@@ -938,25 +939,12 @@ section .details span{
   box-shadow: none;
 }
 
-
-/* page update */
-/* .pageUpdate{
-  max-height: 30rem;
-  overflow: auto;
-}
-.pageUpdate::-webkit-scrollbar{
- display: none;
-} */
-
-.step {
-  padding: 10px;
+.paymentBox .companyName{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
-
-.v-stepper {
-  position: relative;
+.paymentBox .companyName img{
+  margin-right: .5rem;
 }
 
 
@@ -976,7 +964,6 @@ section .details span{
     top: 23px;
   left: 12px;
   height: 100%;
-    
     position: absolute;
     border-left: 1px solid #e2e2e2;
 }
@@ -1176,4 +1163,41 @@ visibility: visible;
 }
 .recommendation:hover {
   background: #f0f0f0;
+}
+.nxt-previousBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.nxt-previousBtn a{
+  padding: .4rem .8rem;
+  width: 8rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  background-color: #f5b402;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nxt-previousBtn a svg{
+  margin: 0 .2rem;
+}
+.nxt-previousBtn a:hover{
+  text-decoration: none;
+}
+
+.app-theme-white .app-sidebar {
+  min-width: 200px !important;
+  width: 200px;
+}
+.fixed-sidebar .app-main .app-main__outer {
+  z-index: 9;
+  padding-left: 200px;
 }

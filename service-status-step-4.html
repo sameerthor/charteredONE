@@ -157,95 +157,78 @@
             </div>    
             <div class="app-main__outer">
                 <div class="app-main__inner">
-                    <div class="row enrolled">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Enrolled</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                <div class="left">
-                                    <div class="leftHeader">
-                                          <div class="headerLink">
-                                              <a href="#000">Bussiness</a>
-                                          </div>
-                                          <div class="searchContainer">
-                                               <img src="./images/IconsSearch.svg" alt="">
-                                               <input type="search" placeholder="search your bussiness">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row right pt-4">
+                                <div class="col-12">
+                                    <div class="stepperBox">
+                                        <div id="container" class="container p-0">
+                                            <form id="multi-step-form">
+                                              <div class="step step-4" id="content4">
+                                                <div class="stepContent">
+                                                    <div class="docRequired ">
+                                                        <h2>Required Document</h2>
+                                                        <div class="docBox">
+                                                            <div class="docName">
+                                                                <p>Form 16 (part A, part B & part 18A)</p>
+                                                            </div>
+                                                            <div>
+                                                                <input type="file" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="docBox">
+                                                            <div class="docName">
+                                                                <p>Form 16 (part A, part B & part 18A)</p>
+                                                            </div>
+                                                            <div>
+                                                                <input type="file" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="docBox">
+                                                            <div class="docName">
+                                                                <p>Form 16 (part A, part B & part 18A)</p>
+                                                            </div>
+                                                            <div>
+                                                                <input type="file" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <h2>Upload More Docs if required</h2>
+                                                        <div class="docBox">
+                                                            <div class="inputSection">
+                                                                <div class="inputContainer">
+                                                                  <div class="inputField initialInputField custom-class mb-3">
+                                                                    <input type="text" id="" class="textInput form-control" placeholder="Enter Document Name">
+                                                                    <input type="file" id="" class="clonableInput form-control">
+                                                                    <button class="addInputBtn">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path>
+                                                                        </svg>
+                                                                    </button>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 </div>
+                                                 <div class="nxt-previousBtn mb-4">
+                                                    <a href="./service-status-step-3.html">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="#fff">
+                                                            <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/>
+                                                        </svg> 
+                                                        Previous
+                                                    </a>
+                                                    <a href="./service-status-step-5.html">
+                                                        Next
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="#fff">
+                                                            <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </form>
                                           </div>
                                     </div>
-                                    <div class="serviceContainer">
-                                         <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                    </div>
-                              </div>
-                            </div>
-                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="closed-tab-pane" role="tabpanel" aria-labelledby="colsed-tab" tabindex="0">
-                                Closed
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -254,7 +237,71 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- File Upload -->
 <script src="./js/dashboard-pack.js"></script>
 <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const inputSections = document.querySelectorAll('.inputSection');
+  
+      inputSections.forEach(section => {
+        const inputContainer = section.querySelector('.inputContainer');
+        const initialInputField = inputContainer.querySelector('.initialInputField');
+  
+        initialInputField.querySelector('.addInputBtn').addEventListener('click', function(event) {
+          event.preventDefault();
+          addNewInputField(inputContainer, initialInputField);
+        });
+      });
+  
+      function addNewInputField(container, referenceInputField) {
+        const inputField = document.createElement('div');
+        inputField.className = referenceInputField.className; 
+  
+        const fileId = `fileInput_${Date.now()}`; 
+        const textId = `textInput_${Date.now()}`; 
+  
+        const label = document.createElement('label');
+        label.setAttribute('for', fileId);
+        label.textContent = 'Choose a file:';
+  
+        const textInput = document.createElement('input');
+        textInput.type = 'text';
+        textInput.id = textId;
+        textInput.className = referenceInputField.querySelector('.textInput').className;
+        textInput.placeholder = 'Enter Document Name';
+  
+        const fileInput = document.createElement('input');
+        fileInput.type = 'file';
+        fileInput.id = fileId;
+        fileInput.className = referenceInputField.querySelector('.clonableInput').className;
+  
+        const addBtn = document.createElement('button');
+        addBtn.textContent = 'Add Input Field';
+        addBtn.classList.add('addInputBtn');
+        addBtn.addEventListener('click', function(event) {
+          event.preventDefault();
+          addNewInputField(container, inputField);
+        });
+  
+        const deleteBtn = document.createElement('button');
+        deleteBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
+  <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
+</svg>`;
+        deleteBtn.classList.add('deleteInputBtn');
+        deleteBtn.addEventListener('click', function(event) {
+          event.preventDefault();
+          container.removeChild(inputField);
+        });
+  
+        inputField.appendChild(textInput);
+        inputField.appendChild(fileInput);
+        inputField.appendChild(deleteBtn);
+        container.appendChild(inputField);
+      }
+    });
+  </script>
+
 </body>
 </html>

@@ -157,95 +157,47 @@
             </div>    
             <div class="app-main__outer">
                 <div class="app-main__inner">
-                    <div class="row enrolled">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Enrolled</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                <div class="left">
-                                    <div class="leftHeader">
-                                          <div class="headerLink">
-                                              <a href="#000">Bussiness</a>
-                                          </div>
-                                          <div class="searchContainer">
-                                               <img src="./images/IconsSearch.svg" alt="">
-                                               <input type="search" placeholder="search your bussiness">
-                                          </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row right pt-4">
+                                <div class="col-12">
+                                    <div class="stepperBox">
+                                        <div id="container" class="container p-0">
+                                            <form id="multi-step-form">
+                                              <div class="step step-3" id="content3">
+                                                <h3>Payment</h3>
+                                                <div class="paymentBox">
+                                                    <div class="companyName">
+                                                        <img src="./images/pvt-ltd.png" alt="private-limited" height="30" width="30">
+                                                        <p>Private Limited Company</p>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>₹9999/-</span>
+                                                        <small>+Taxes</small>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <a href="#000" class="payNow">Pay Now</a>
+                                                </div>
+                                                <div class="nxt-previousBtn mb-4">
+                                                    <a href="./service-status-step-2.html">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="#fff">
+                                                            <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/>
+                                                        </svg> 
+                                                        Previous
+                                                    </a>
+                                                    <a href="./service-status-step-4.html">
+                                                        Next
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="#fff">
+                                                            <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </form>
+                                        </div>
                                     </div>
-                                    <div class="serviceContainer">
-                                         <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                          <a class="serviceBox" href="service-status.html">
-                                            <div class="serviceName">
-                                                <img src="./images/pvt-ltd.png" alt="private_limited" height="28" width="28">
-                                                <span>Private Limited Company Registration</span>
-                                            </div>
-                                            <div>
-                                                <img src="./images/iconRights.svg" alt="angle-right">
-                                            </div>
-                                          </a>
-                                    </div>
-                              </div>
-                            </div>
-                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="closed-tab-pane" role="tabpanel" aria-labelledby="colsed-tab" tabindex="0">
-                                Closed
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -254,7 +206,9 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- File Upload -->
 <script src="./js/dashboard-pack.js"></script>
 <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
