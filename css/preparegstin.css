@@ -1,8 +1,16 @@
-#preparegstin .steps a,.download-btn a{
+#preparegstin .steps a, .download-btn a{
     text-decoration: none;
     color: #26ace3;
     font-size: 14px;
     font-weight: 600;
+}
+
+body a{
+  text-decoration: none;
+}
+body a:hover{
+  text-decoration: none;
+
 }
 #preparegstin a:hover{
     text-decoration: none;
@@ -60,7 +68,7 @@
 .table-responsive td .dropdown-toggle{
   font-weight: 500;
 }
-.table-responsive .dropdown-toggle:hover,.table-responsive .dropdown-toggle:active{
+.table-responsive .dropdown-toggle:hover, .table-responsive .dropdown-toggle:active{
   background-color: inherit!important;
 }
 .table-responsive .dropdown-menu .dropdown-item{

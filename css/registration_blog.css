@@ -1,0 +1,323 @@
+.registrationHeader .container{
+    max-width: 1200px;
+}
+.registrationHeader{
+    padding-top: 6rem;
+}
+.registrationHeader .pageTitle{
+    color: #2e2e2e;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.registrationHeader .imgBox img{
+    max-width: 100%;
+}
+.registrationHeader .pageDesc{
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #2e2e2e;
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+.registrationHeader .headerBtn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2e2e2e;
+    border-radius: 1.76rem;
+    padding: .8rem 2rem;
+    font-weight: 500;
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.registrationHeader .headerBtn.expertBtn{
+   background-color: #f5b402;
+   border: 2px solid #f5b402;
+   color: #fff;
+   margin-right: 1rem;
+}
+.registrationHeader .headerBtn svg{
+    margin: 0 .5rem;
+}
+.registrationHeader .contactBtn:hover{
+    background-color: #f5b402;
+    border: 2px solid #f5b402;
+    color: #fff;
+}
+.registrationHeader .googleReview{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.registrationHeader .googleReview a{
+   font-weight: 600;
+   color: #2e2e2e;
+   font-size: 1.1rem;
+   text-decoration: none;
+}
+.registrationHeader .googleReview .reviewImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.registrationHeader .googleReview .reviewImg img{
+    margin-right: 1rem;
+}
+@media(max-width: 600px){
+    .registrationHeader .googleReview{
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .registrationHeader .googleReview .reviewImg{
+       margin-bottom: .5rem;
+    }
+}
+@media(max-width: 480px){
+    .registrationHeader .headerBtn.expertBtn{
+        margin-right: 0;
+     }
+}
+.whyRegistar{
+    background-color: #2e2e2e;
+    padding: 4rem 0;
+}
+.whyRegistar .container{
+    max-width: 1200px;
+}
+.whyRegistar h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.whyRegistar .whyRegisterItem{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    min-height: 23rem;
+}
+.whyRegistar .whyRegisterItem  img{
+    width: 100%;
+    max-height:  10rem;
+    object-fit: contain;
+}
+.whyRegistar .whyRegisterItem  .cardHeading{
+    color: #2e2e2e;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+
+.whyRegistar .whyRegisterItem  .cardDesc{
+    width: 100%;
+}
+.whyRegistar .whyRegisterItem  .cardDesc ul{
+    margin-left: 1rem;
+}
+.whyRegistar .whyRegisterItem  .cardDesc ul li{
+    list-style-type: disc;
+    margin-bottom: .6rem;
+    color: #2e2e2e;
+    font-weight: 500;
+    font-size: 1rem;
+}
+@media(max-width: 575px){
+    .whyRegistar .whyRegisterItem{
+        min-height: fit-content;
+    }
+}
+
+.choosePlan{
+    padding: 4rem 0;
+}
+.choosePlan .container{
+   max-width: 1200px;
+   border: 2px solid #B8DFE5;
+   padding: 2rem  1rem;
+   border-radius: 10px;
+}
+.choosePlan h2{
+   font-weight: 600;
+   color: #2e2e2e;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+}
+.choosePlan .planName{
+    border-bottom: 2px solid #B8DFE5;  
+}
+.choosePlan .planName h4{
+    font-weight: 600;
+    color: #2e2e2e;
+    font-size: 1.4rem;
+}
+.choosePlan .planValue{
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: .9rem;
+}
+.choosePlan .buyPlan{
+    display: inline-flex;
+    padding: .6rem 1.2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #f5b402;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.choosePlan  table td .fa-check{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #52cc8f;
+}
+.choosePlan  table td .fa-xmark{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f01111;
+}
+.choosePlan  table .btnTd{
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+.choosePlan  table .btnTd button{
+    font-weight: 600;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-right: .5rem;
+}
+.choosePlan  table td{
+   font-weight: 500;
+   color: #2e2e2e;
+   font-size: .9rem;
+}
+.choosePlan table .essentials{
+     border-radius: 10px 10px 0 0;
+     display: flex;
+     flex-direction: column;
+     padding: .5rem;
+     background-color: #dbe8f3;
+}
+.choosePlan table .popularBox{
+    border-radius: 10px 10px 0 0;
+   background-color: #8ec6644b;
+}
+.choosePlan table .fullCompliance{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+.choosePlan table .mostPopular{
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    background-color: #8fc664;
+    font-weight: 600;
+}
+.choosePlan .container{
+    min-width: 300px;
+    overflow: auto;
+    padding: 1.4rem 0;
+}
+@media(max-width: 600px){
+    .choosePlan .container{
+       border: none;
+       padding: .5rem 0;
+    }
+    .choosePlan h2 {
+        font-size: 1.6rem;
+    }
+}
+/* Ad Service */
+.adService{
+   padding: 3rem 0;
+}
+.adService .container{
+    max-width: 1200px;
+ }
+.adService h2{
+    text-align: center;
+    font-weight: 600;
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.adService .adServiceBox{
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 2px solid #B8DFE5;  
+    text-align: center;
+}
+.adService .adServiceBox h4{
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin-bottom: .5rem;
+   text-align: center;
+}
+.adService .adServiceBox p{
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+ }
+ @media(max-width: 600px){
+    .adService{
+        padding-top: 0;
+    }
+    .adService .container{
+       padding: 0 1.4rem;
+    }
+    .adService h2{
+        font-size: 1.4rem;
+     }
+ }
+ /* Doc req */
+
+ .dcoRequired{
+    background-color: #e7f6ff;
+    padding: 3rem 0;
+ }
+ .dcoRequired .container{
+    max-width: 1200px;
+ }
+ .dcoRequired h2{
+    font-weight: 600;
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    margin-bottom: 2.6rem;
+ }
+ .dcoRequired ul li{
+    margin-bottom: 1.2rem;
+    display: flex;
+    font-weight: 500;
+    color: #2e2e2e;
+    font-size: 1rem;
+    align-items: flex-start;
+    justify-content: left;
+ }
+ .dcoRequired ul li svg{
+    margin-right: .5rem;
+    fill: #52cc8f;
+ }

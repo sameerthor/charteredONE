@@ -1201,3 +1201,86 @@ visibility: visible;
   z-index: 9;
   padding-left: 200px;
 }
+/* Page Update */
+.pageUpdate .step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pageUpdate .v-stepper {
+  position: relative;
+}
+
+
+/* regular step */
+.pageUpdate .step .circle {
+  border: 2px solid #e2e2e2;
+  border-radius: 100%;
+  width: 25px;   
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageUpdate .step .line {
+    top: 23px;
+  left: 12px;
+  height: 100%;
+    
+    position: absolute;
+    border-left: 1px solid #e2e2e2;
+}
+
+.pageUpdate .step.active .circle {
+visibility: visible;
+  border-color: rgb(6,150,215);
+}
+
+.pageUpdate .step.empty .circle {
+    visibility: hidden;
+}
+
+.pageUpdate .step.empty .line {
+  top: 0;
+  height: 150%;
+}
+
+
+.pageUpdate .step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1; 
+}
+.pageUpdate .content  {
+  margin-left: 10px;
+  display: inline-block;
+}
+.pageUpdate .content p {
+  display: inline-block;
+  color: #2e2e2e;
+  font-size: .85rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.pageUpdate .content .date{
+  color: #999;
+  display: block;
+  margin-top: .4rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+.pageUpdate .latestTag span{
+  display: inline-flex;
+ height: 2rem;
+ width: 3.5rem;
+ align-items: center;
+ justify-content: center;
+ font-size: .85rem;
+ border-radius: 4px;
+ font-weight: 500;
+ color: rgb(30 66 159);
+ background-color: rgb(225 239 254);
+ margin-left: .2rem;
+}
