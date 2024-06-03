@@ -1284,3 +1284,91 @@ visibility: visible;
  background-color: rgb(225 239 254);
  margin-left: .2rem;
 }
+.stepperBox ol{
+  padding-left: 1rem;
+}
+.appendserviesdata ul{
+  padding-left: 1rem;
+}
+.docFormat img{
+  max-width: 100%;
+}
+.docFormat h4{
+ font-weight: 600;
+ color: #2e2e2e;
+ font-size: 1.6rem;
+ margin-bottom: .5rem;
+}
+.docFormat .formatLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+}
+.docFormat .formatLink span{
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  background-color: #f5b4022c;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 4px;
+  width: 350px;
+  max-width: 90%;
+}
+.docFormat .formatLink span small{
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #2e2e2e;
+}
+.docFormat .formatLink span svg{
+  margin-left: .5rem;
+}
+@media(max-width: 440px){
+  .docFormat .formatLink span{
+    width: 98%;
+  }
+  .docFormat .formatLink span small{
+    font-size: 1.2rem;
+  }
+}
+#viewSampleCertificate .completeView{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#viewSampleCertificate .completeView img{
+  max-width: 100%;
+}
+#viewSampleCertificate .collapseModal{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+#viewSampleCertificate .footerBtn{
+ padding: .3rem .9rem;
+ font-weight: 500;
+ font-size: 1rem;
+ border-radius: 4px;
+ text-transform: uppercase;
+ letter-spacing: .5px;
+}
+#viewSampleCertificate .footerBtn.btn-warning{
+  color: #fff;
+ }
+#viewSampleCertificate .modal-header{
+  padding: .5rem 1rem;
+ }
+#viewSampleCertificate .modal-footer{
+  padding: .2rem 1rem;
+ }
+ .modal-dialog-centered{
+  box-shadow: none;
+ }
