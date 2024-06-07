@@ -1372,3 +1372,10 @@ visibility: visible;
  .modal-dialog-centered{
   box-shadow: none;
  }
+
+ .serviceContent {
+  display: none;
+}
+.serviceContent.active {
+  display: block;
+}
