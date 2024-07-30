@@ -1379,3 +1379,7 @@ visibility: visible;
 .serviceContent.active {
   display: block;
 }
+
+.pageUpdate .step{
+  cursor: pointer;
+}
