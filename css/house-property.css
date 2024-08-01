@@ -1,3 +1,13 @@
+.houseProperty .toggleProperty{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.houseProperty .toggleArrow{
+  gap: 0;
+  padding: 0;
+  margin: 0;
+ }
 .houseProperty ul{
     display: flex;
     justify-content: flex-start;
@@ -11,21 +21,59 @@
     flex-wrap: wrap;
     border-radius: 4px;
 }
+.houseProperty #list-Property{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 300px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.houseProperty #list-Property::-webkit-scrollbar{
+  display: none;
+}
+.houseProperty .addEmp a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  background-color: #ff9800;
+}
 .houseProperty ul li{
-    border: 1px solid #ff9800;
-    border-radius: none!important;
-    min-width: 160px;
-    text-align: center;
-    padding: 2px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    justify-content: space-evenly!important;
+  border: 1px solid #ff9800;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ff9800;
+  justify-content: space-evenly;
+  padding: .2rem .5rem;
+  border-radius: 0px;
+  white-space: nowrap;
+  min-width: fit-content;
 }
-.houseProperty ul li a{
-    color: #ff9800!important;
+.houseProperty ul li.active{
+  background-color: #ff9800;
+  color: #fff;
+}
+.houseProperty ul li.active svg{
+ fill: #fff;
+}
+.houseProperty .toggleProperty .toggleArrow .left{
+  border: 0;
+ }
+ .houseProperty .toggleProperty .toggleArrow .right{
+  border: 0;
+ }
 
+.houseProperty ul li a svg{
+ fill: #ff9800;
 }
+
 .houseProperty ul li.active,.houseProperty button.active{
     color: #fff;
     background-color: #ff9800;
@@ -39,20 +87,6 @@
     color: #ff9800;
 }
 
-/* .houseProperty .addPropertyBtn{
-    border-radius: 50px;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    line-height: 16px;
-    background-color: #ff9800;
-    color: #fff;
-    margin: auto 10px;
-    cursor: pointer;
-} */
-/* .houseProperty .addPropertyBtn i{
-    font-size: 12px;
-} */
 .houseProperty .addPropertyBtn:hover{
     width: 22px;
     height: 22px;
@@ -70,7 +104,7 @@
     padding-bottom: 15px;
     border-radius: 4px;
 }
-#PropertyDetails form legend,.AISBlock legend{
+#PropertyDetails form legend, .AISBlock legend{
     font-size: 16px;
     text-decoration: underline;
     text-underline-offset:6px;

@@ -375,6 +375,9 @@ nav .breadcrumb a {
   font-size: 0.65rem;
   color: #000;
 }
+.custome-toggle input {
+  box-shadow: none;
+}
 .filling-btn {
   margin: 0 0.5rem;
 }
@@ -387,6 +390,9 @@ nav .breadcrumb a {
   cursor: pointer;
   color: #fff;
   border-radius: 4px;
+}
+.empEntry .form-control{
+  box-shadow: none;
 }
 .filling-btn a:nth-of-type(1) {
   background-color: #26ace3;
@@ -484,6 +490,26 @@ nav .breadcrumb a {
   display: flex;
   flex-direction: row;
 }
+.emlpoyer-type select{
+ box-shadow: none;
+ padding: 0.4rem 1rem;
+ border-radius: 4px;
+ font-weight: 500;
+ letter-spacing: 0.5px;
+ font-family: "Montserrat", sans-serif;
+ border: 1px solid #ff9800;
+ color: #ff9800;
+}
+.emlpoyer-type select:focus{
+  box-shadow: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #ff9800;
+  color: #ff9800;
+ }
 .emlpoyer-type a {
   min-width: fit-content;
   vertical-align: middle;
@@ -499,9 +525,9 @@ nav .breadcrumb a {
   border: 1px solid #ff9800;
   color: #ff9800;
 }
-.emlpoyer-type .selected {
-  background-color: #26ace3;
-  border: 1px solid #26ace3;
+.emlpoyer-type a.active {
+  background-color: #ff9800;
+  border: 1px solid #ff9800;
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -2096,3 +2122,199 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
   letter-spacing: .5px;
   font-family: 'Montserrat', sans-serif;
 }
+
+.asiTable .table-responsive .table{
+  min-width: 300px;
+}
+.asiTable .table-responsive::-webkit-scrollbar{
+  display: none;
+}
+.grossSalary{
+  width: 900px;
+  max-width: 100%;
+}
+.grossSalary .accordion .accordion-item{
+  border: none;
+}
+.grossSalary .accordion-item .accordion-header .accordion-button{
+  font-weight: 600;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  padding-left: 0;
+}
+.grossSalary .accordion-item .accordion-header .accordion-button span{
+  display: inline-flex;
+  align-items: center;
+}
+.grossSalary .accordion-item .accordion-header .accordion-button span:nth-of-type(2){
+  min-width: 100px;
+}
+.grossSalary .accordion-item .accordion-header .accordion-button span p{
+   margin-bottom: 0;   
+   margin-left: .5rem;                                                                                                                                                                                                                                                        
+}
+
+.grossSalary .accordion-item .accordion-header .accordion-button span small{
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  color: #93979b;
+  font-size: .95rem;
+}
+.grossSalary .accordion-item .accordion-header .accordion-button .form-control{
+  box-shadow: none;
+}
+.grossSalary .accordion-item .form-control{
+  box-shadow: none;
+  height: 30px;
+  max-width: 200px;
+}
+.grossSalary table, .grossSalary th, .grossSalary td {
+ border: none;
+}
+.grossSalary .table-responsive table th, .grossSalary .table-responsive table td {
+  padding-bottom: .1rem;
+ }
+ .grossSalary .table-responsive table th{
+  font-size: .75rem;
+ }
+.accordion-item:last-of-type .accordion-button.collapsed {
+  background-image: none;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.grossSalary .accordion-button.collapsed::after{
+  display: none;
+}
+.grossSalary .accordion-item .accordion-header .accordion-button strong{
+  font-weight: 700;
+  color: #000;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  display: inline-block;
+}
+.grossSalary table .tableAnchor{
+  margin-left: .2rem;
+  font-size: .7rem;
+  border-radius: 1.7rem;
+  background-color: #ebba33;
+  color: #232323;
+  padding: .1rem .4rem;
+  font-weight: 500;
+}
+.grossSalary .form-control{
+  box-shadow: none;
+  max-width: 300px;
+}
+.grossSalary .accordion-button:not(.collapsed){
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.grossSalary .accordion-button:not(.collapsed)::before {
+ display: none;
+}
+.grossSalary .accordion-button:not(.collapsed)::after {
+  display: none;
+ }
+ .grossSalary .accordion-button.collapsed::after {
+  background-image: none;
+}
+.modal-backdrop.fade.show{
+  display: none;
+}
+.calcModal .modal-content{
+    box-shadow: 0 2px 11px rgba(32, 33, 36, .28);
+    border: 1px solid #eee;
+    background-color: #fff;
+    max-width: 300px;
+    margin: auto;
+}
+.calcModal .modal-content table .table-responsive::-webkit-scrollbar{
+  display: none;
+ }
+.calcModal .modal-content table{
+ min-width: 50px;
+ border: none
+}
+.calcModal h2{
+  font-weight: 600;
+  font-size: .95rem;
+  color: #000;
+  margin-bottom: 1rem;
+ }
+.calcModal .modal-content table .form-control{
+  width: 180px;
+  box-shadow: none;
+  height: 25px;
+  border-radius: 0;
+ }
+
+ .calcModal .modal-content table th{
+ padding-left: 0;
+ padding-top: 0;
+ padding-bottom: .5;
+ font-size: .8rem;
+ }
+ .calcModal .modal-content table td{
+  padding-top: 0;
+  padding-bottom: .5rem;
+}
+.calcModal .modal-content button{
+ border-radius: 1.7rem;
+ font-weight: 500;
+ background-color: transparent;
+ padding: .2rem .6rem;
+ letter-spacing: .5px;
+ font-size: .75rem;
+ border: none;
+ outline: none;
+ margin: .5rem;
+}
+.calcModal .modal-content button.warning{
+  background-color: #ebba33;
+ }
+ .calcModal .modal-content button.cancle{
+  background-color: #e8ecef;
+ }
+
+ #overAllHouseRent.calcModal .modal-content{
+  width: 600px;
+  max-width: 100%;
+}
+#overAllHouseRent.calcModal .modal-content table .form-control{
+  width: 120px;
+  box-shadow: none;
+  height: 25px;
+  border-radius: 0;
+ }
+ #overAllHouseRent.calcModal .modal-content table td{
+ padding-left: 0;
+}
+#overAllHouseRent.calcModal .modal-content .form-check .form-check-input{
+  border-radius: 0px;
+  width: 26px;
+  height: 26px;
+  box-shadow: none;
+ }
+ #childEduAllowance.calcModal .modal-content{
+  width: 600px;
+  max-width: 100%;
+ }
+ #childEduAllowance.calcModal .modal-content .form-control{
+  box-shadow: none;
+  border-radius: 0px;
+  height: 28px;
+ }
+ #childEduAllowance.calcModal .modal-content label{
+  font-size: 11px;
+  color: #777171;
+  font-weight: 500;
+ }
