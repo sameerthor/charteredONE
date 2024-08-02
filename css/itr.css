@@ -2304,17 +2304,33 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
   height: 26px;
   box-shadow: none;
  }
- #childEduAllowance.calcModal .modal-content{
+ .childAllowance.calcModal .modal-content{
   width: 600px;
   max-width: 100%;
  }
- #childEduAllowance.calcModal .modal-content .form-control{
+ .childAllowance.calcModal .modal-content .form-control{
   box-shadow: none;
   border-radius: 0px;
   height: 28px;
  }
- #childEduAllowance.calcModal .modal-content label{
+ .childAllowance.calcModal .modal-content label{
   font-size: 11px;
   color: #777171;
   font-weight: 500;
+ }
+ .childAllowance.calcModal .modal-content{
+  width: 600px;
+  max-width: 100%;
+ }
+
+ @media(min-width:991px){
+  .fixedAISBlock{
+    padding-left: 0;
+    position: sticky;
+    top: 60px;
+    max-height: 600px;
+   }
+ }
+ .custome-toggle .form-switch .form-check-input{
+    box-shadow: none;
  }

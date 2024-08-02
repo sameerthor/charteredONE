@@ -557,7 +557,7 @@
                                                         <div class="accordion-item">
                                                           <h2 class="accordion-header" id="flush-headingOne">
                                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exemptAllowance" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                                <span>Exempt Allowance u/s 10 <strong>+</strong></span>
+                                                                <span>Exempt Allowance u/s 10 <strong>+</strong></span> <span><small>Total:</small> <p class="totalValue">5,232</p></span>
                                                             </button>
                                                           </h2>
                                                           <div id="exemptAllowance" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -586,64 +586,72 @@
                                                                             <tr>
                                                                                 <th>Hostel Expenditure Allowance</th>
                                                                                 <td>
-                                                                                    <div class="col">
+                                                                                    <div class="col d-inline-flex align-items-center">
                                                                                         <input type="text" class="form-control" value="0.00">
+                                                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#hostleExpAllow"><img src="../../images/calculator.svg" alt="calc" width="26"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Leave Travel Concession</th>
                                                                                 <td>
-                                                                                    <div class="col">
+                                                                                    <div class="col d-inline-flex align-items-center">
                                                                                         <input type="text" class="form-control" value="0.00">
+                                                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#travelConcession"><img src="../../images/calculator.svg" alt="calc" width="26"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Conveyance Allowance</th>
                                                                                 <td>
-                                                                                    <div class="col">
+                                                                                    <div class="col d-inline-flex align-items-center">
                                                                                         <input type="text" class="form-control" value="0.00">
+                                                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#conveyanceAllowance"><img src="../../images/calculator.svg" alt="calc" width="26"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Leave Encashment</th>
                                                                                 <td>
-                                                                                    <div class="col">
+                                                                                    <div class="col d-inline-flex align-items-center">
                                                                                         <input type="text" class="form-control" value="0.00">
+                                                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#leaveEncashment"><img src="../../images/calculator.svg" alt="calc" width="26"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Gratuity</th>
                                                                                 <td>
-                                                                                    <div class="col">
+                                                                                    <div class="col d-inline-flex align-items-center">
                                                                                         <input type="text" class="form-control" value="0.00">
+                                                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#gratuity"><img src="../../images/calculator.svg" alt="calc" width="26"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Commuted Pension</th>
                                                                                 <td>
-                                                                                    <div class="col">
+                                                                                    <div class="col d-inline-flex align-items-center">
                                                                                         <input type="text" class="form-control" value="0.00">
+                                                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#commutedPension"><img src="../../images/calculator.svg" alt="calc" width="26"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Voluntary Retirement Scheme</th>
                                                                                 <td>
-                                                                                    <div class="col">
+                                                                                    <div class="col d-inline-flex align-items-center">
                                                                                         <input type="text" class="form-control" value="0.00">
+                                                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#voluntaryRetirementScheme"><img src="../../images/calculator.svg" alt="calc" width="26"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Retrenchment Compensation</th>
                                                                                 <td>
-                                                                                    <div class="col">
+                                                                                    <div class="col d-inline-flex align-items-center">
                                                                                         <input type="text" class="form-control" value="0.00">
+                                                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#retrenchmentCompensation"><img src="../../images/calculator.svg" alt="calc" width="26"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
@@ -656,8 +664,14 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Total</th>
+                                                                                <th>
+                                                                                    <label for="">Other</label>
+                                                                                    <div class="col p-0">
+                                                                                        <input type="text" class="form-control" placeholder="description">
+                                                                                    </div>
+                                                                                </th>
                                                                                 <td>
+                                                                                    <label for="" class="pl-3">Value</label>
                                                                                     <div class="col">
                                                                                         <input type="text" class="form-control" value="0.00">
                                                                                     </div>
@@ -672,7 +686,7 @@
                                                         <div class="accordion-item">
                                                           <h2 class="accordion-header" id="flush-headingTwo">
                                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Deductionu" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                                <span>Deduction u/s 16 <strong>+</strong></span>
+                                                                <span>Deduction u/s 16 <strong>+</strong></span> <span><small>Total:</small> <p class="totalValue">5,232</p></span>
                                                             </button>
                                                           </h2>
                                                           <div id="Deductionu" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -717,8 +731,8 @@
                                         </div>
                                     </div>  
                                 </div>
-                                <div class="col-lg-3 pr-4">
-                                    <div class="mt-4 asiTable">
+                                <div class="col-lg-3 pr-4 fixedAISBlock">
+                                    <div class="pt-3 asiTable">
                                         <div class="table-responsive active-content content">
                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                                 <tbody>
@@ -819,7 +833,388 @@
        </div>
     </div>
     <!-- ==============Modals================== -->
-     <!-- Modal  overAllHouseRent -->
+    <!-- Modal  Retrenchment Compensation -->
+    <div class="modal fade calcModal childAllowance" id="retrenchmentCompensation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered shadow-none">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h2>Retrenchment Compensation</h2>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div> 
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Dt of Joining</label>
+                        <input type="date" class="form-control text-right">
+                    </div> 
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Dt of Relieving / Retirem...</label>
+                        <input type="date" class="form-control text-right">
+                    </div>    
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Completed Yr of Service</label>
+                        <input type="text" class="form-control text-right" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Last Drawn Salary</label>
+                        <input type="text" class="form-control text-right">
+                    </div> 
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Exempted Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Taxable Amt</label>
+                        <input type="text" class="form-control text-right" value="0.00" disabled>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="warning">Done or Press esc</button>
+                    <button class="cancle" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal  Voluntary Retirement Scheme -->
+    <div class="modal fade calcModal childAllowance" id="voluntaryRetirementScheme" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered shadow-none">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h2>U/S 10(10C)- Voluntary Retirement Scheme</h2>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>    
+                    
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Exempted Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Taxable Amt</label>
+                        <input type="text" class="form-control text-right" value="0.00" disabled>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="warning">Done or Press esc</button>
+                    <button class="cancle" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal  Commuted Pension -->
+    <div class="modal fade calcModal childAllowance" id="commutedPension" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered shadow-none">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h2>Commuted Pension</h2>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>    
+                    <div class="col-sm-4 mb-3">
+                        <label for="">No. of % of Pension</label>
+                        <input type="text" class="form-control text-right" value="0">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Total Pension</label>
+                        <input type="text" class="form-control text-right" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Gratuity Rcvd</label>
+                        <select name="" id="" class="form-control">
+                                <option value="1">No</option>
+                                <option value="2">Yes</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Exempted Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Taxable Amt</label>
+                        <input type="text" class="form-control text-right" value="0.00" disabled>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="warning">Done or Press esc</button>
+                    <button class="cancle" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal  Gratuity -->
+    <div class="modal fade calcModal childAllowance" id="gratuity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered shadow-none">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h2>Gratuity</h2>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Gratuity Act 1972 Applic...</label>
+                        <select name="" id="" class="form-control">
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Date of Joining</label>
+                        <input type="date" class="form-control">
+                    </div>
+                
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Date of Retirement</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Completed Yr of Service</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Last Drawn Salary</label>
+                        <input type="text" class="form-control text-right">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Leave Entitled in a Yr</label>
+                        <input type="text" class="form-control text-right">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Previously Exempt Amt</label>
+                        <input type="text" class="form-control text-right" value="0">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Exempted Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Taxable Amt</label>
+                        <input type="text" class="form-control text-right" value="0.00" disabled>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="warning">Done or Press esc</button>
+                    <button class="cancle" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal  Leave Encashment -->
+    <div class="modal fade calcModal childAllowance" id="leaveEncashment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered shadow-none">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h2>Leave Encashment</h2>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Dt of Joining</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Dt of Retirement</label>
+                        <input type="date" class="form-control">
+                    </div>
+                
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Completed Yr of Service</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Avg Monthly Salary</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">10 Months Avg Salary</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Leave Entitled in a Yr</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">eave Entitled in a Yr</label>
+                        <input type="text" class="form-control text-right" value="0">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Unutilized Leave During....</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Exempted Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Taxable Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="warning">Done or Press esc</button>
+                    <button class="cancle" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal  Conveyance Allowance -->
+    <div class="modal fade calcModal childAllowance" id="conveyanceAllowance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered shadow-none">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h2>Conveyance Allowance (u/s 10 (14) (i) rule 2BB (1))</h2>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Employer 1:</label>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Expenditure</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Employer 2:</label>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Expenditure</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Exempted Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Taxable Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="warning">Done or Press esc</button>
+                    <button class="cancle" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal  travelConcession -->
+    <div class="modal fade calcModal childAllowance" id="travelConcession" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered shadow-none">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h2>Leave Travel Concession</h2>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Employer 1:</label>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Expenditure</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Employer 2:</label>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Actual Expenditure</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Exempted Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="">Taxable Amt</label>
+                        <input type="text" class="form-control text-right" value="0" disabled>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="warning">Done or Press esc</button>
+                    <button class="cancle" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal  overAllHouseRent -->
+    <div class="modal fade calcModal childAllowance" id="hostleExpAllow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered shadow-none">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h2>Hostel Expenditure Allowance</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <label for="">Actual Amt Rcvd</label>
+                        <input type="text" class="form-control" disabled>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <label for="">No of Months</label>
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>12</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <label for="">No of Children</label>
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>select child</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <label for="">Exempted Amt</label>
+                        <input type="text" class="form-control" value="0" disabled>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <label for="">Taxable Amt</label>
+                        <input type="text" class="form-control" value="0" disabled>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="warning">Done or Press esc</button>
+                    <button class="cancle" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal  overAllHouseRent -->
     <div class="modal fade calcModal childAllowance" id="childEduAllowance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered shadow-none">
           <div class="modal-content">
