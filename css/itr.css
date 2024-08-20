@@ -530,6 +530,14 @@ nav .breadcrumb a {
   border: 1px solid #ff9800;
   color: #fff;
 }
+.emlpoyer-type select {
+  min-width: 160px;
+}
+.emlpoyer-type select.active {
+  background-color: #ff9800;
+  border: 1px solid #ff9800;
+  color: #fff;
+}
 @media (max-width: 768px) {
   .add-new-btn {
     flex-direction: column;
@@ -2368,6 +2376,7 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
    overflow-x: auto;
    flex-wrap: nowrap;
    position: relative;
+   max-width: 215px;
  }
  .houseProperty #list-Property::-webkit-scrollbar{
    display: none;
@@ -2394,6 +2403,7 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
    border-radius: 0px;
    white-space: nowrap;
    min-width: fit-content;
+   max-width: 50px;
  }
  .houseProperty ul li.active{
    background-color: #ff9800;
@@ -2586,6 +2596,11 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
     border: none;
     border-radius: 0;
   }
-  
+
+
+#list-Property .hidden {
+    display: none;
+}
+ 
      
  
