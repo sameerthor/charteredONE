@@ -236,15 +236,6 @@
                                                             </svg>
                                                         </a>
                                                     </li>
-                                                    <li class="flex">
-                                                        Employer-4
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deleteEmployee">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14" height="14">
-                                                                <path d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <!-- Add more li tags as needed -->
                                                 </ul>
                                                 <ul class="toggleArrow">
                                                     <li class="right">
@@ -1796,8 +1787,9 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- add active class on emp type btn -->
-     <script>
+    <script>
             document.addEventListener('DOMContentLoaded', function () {
             const employerTypeDiv = document.querySelector('.emlpoyer-type');
             const anchorTags = employerTypeDiv.querySelectorAll('a');
@@ -1824,40 +1816,59 @@
     </script>
     <!-- slide emp btn -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const list = document.getElementById('list-Property');
-            const leftArrow = document.querySelector('.toggleArrow .left');
-            const rightArrow = document.querySelector('.toggleArrow .right');
-            let scrollAmount = 0;
-            const scrollStep = list.querySelector('li').offsetWidth;
+      $(document).ready(function () {
+        const $list = $('#list-Property');
+        const $leftArrow = $('.toggleArrow .left');
+        const $rightArrow = $('.toggleArrow .right');
+        const $listItems = $list.find('li');
+        let scrollAmount = 0;
+        const scrollStep = $listItems.outerWidth();
+        if ($listItems.length === 1) {
+            $leftArrow.remove();
+            $rightArrow.remove();
+        } else {
+        
+        $leftArrow.find('a, svg').on('click', function (event) {
+            event.preventDefault();
+        });
 
-            [leftArrow, rightArrow].forEach(arrow => {
-                arrow.querySelector('a').addEventListener('click', function (event) {
-                    event.preventDefault();
-                });
-            });
+        $rightArrow.find('a, svg').on('click', function (event) {
+            event.preventDefault();
+        });
 
-            rightArrow.addEventListener('click', () => {
-                list.scrollBy({ left: scrollStep, behavior: 'smooth' });
-                scrollAmount += scrollStep;
+        $rightArrow.on('click', function () {
+            const maxScrollLeft = $list[0].scrollWidth - $list.outerWidth();
+            const newScrollAmount = Math.min(scrollAmount + scrollStep, maxScrollLeft);
+            $list.animate({ scrollLeft: newScrollAmount }, 300, function () {
+                scrollAmount = newScrollAmount;
                 toggleArrows();
             });
+        });
 
-            leftArrow.addEventListener('click', () => {
-                list.scrollBy({ left: -scrollStep, behavior: 'smooth' });
-                scrollAmount -= scrollStep;
+        $leftArrow.on('click', function () {
+            const newScrollAmount = Math.max(scrollAmount - scrollStep, 0);
+            $list.animate({ scrollLeft: newScrollAmount }, 300, function () {
+                scrollAmount = newScrollAmount;
                 toggleArrows();
             });
+        });
 
-            function toggleArrows() {
-                leftArrow.style.visibility = scrollAmount <= 0 ? 'hidden' : 'visible';
-                rightArrow.style.visibility = (scrollAmount + list.offsetWidth) >= list.scrollWidth ? 'hidden' : 'visible';
-            }
+        function toggleArrows() {
+            const maxScrollLeft = $list[0].scrollWidth - $list.outerWidth();
+            $leftArrow.css('visibility', scrollAmount <= 0 ? 'hidden' : 'visible');
+            $rightArrow.css('visibility', scrollAmount >= maxScrollLeft ? 'hidden' : 'visible');
+        }
+        toggleArrows();
 
+        $(window).on('resize', function() {
             toggleArrows();
-        });    
+        });
+    }
+});
     </script>
+   <!-- alert -->
     <script>
+
         const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
         const appendAlert = (message, type) => {
         const wrapper = document.createElement('div')
@@ -1878,6 +1889,7 @@
         })
         }
     </script>
+
     <script type="text/javascript">
         window.alert = function(){};
         var defaultCSS = document.getElementById('bootstrap-css');
@@ -1907,8 +1919,6 @@
                 $('.removeclass'+rid).remove();
             }
     </script>
-<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
-<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="../../js/dashboard-pack.js"></script> 
 <script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 <script src="../../js/dashboard.js"></script>

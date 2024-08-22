@@ -2403,7 +2403,6 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
    border-radius: 0px;
    white-space: nowrap;
    min-width: fit-content;
-   max-width: 50px;
  }
  .houseProperty ul li.active{
    background-color: #ff9800;
@@ -2602,5 +2601,7 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
     display: none;
 }
  
-     
+.add-sal-emp .addEmp{
+  margin-left: .5rem;
+}     
  
