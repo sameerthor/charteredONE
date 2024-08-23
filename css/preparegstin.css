@@ -1671,3 +1671,42 @@ body a:hover{
 .sectionWiseDropdown:hover .dropdown-content {
   display: block;
 }
+.bluredSection{
+  position: relative;
+ 
+}
+.bluredSection .bluredBtn{
+  position: absolute;
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.bluredSection .bluredTable{
+  filter: blur(10px); 
+}
+.bluredSection .bluredBtnInner{
+  padding: 4rem 5rem;
+  background-color: #f3f3f336;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.bluredSection .bluredBtn button{
+border: none;
+outline: none;
+background-color: #2e2e2e;
+color: #fff;
+font-weight: 500;
+padding: .6rem 1rem;
+border-radius: 5px;
+letter-spacing: .5px;
+
+}
