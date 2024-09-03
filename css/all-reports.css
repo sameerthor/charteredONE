@@ -669,6 +669,7 @@ text-decoration: none;
   .mglass {
     display: inline-block;
     pointer-events: none;
+    transform: rotate();
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
