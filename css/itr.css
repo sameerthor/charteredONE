@@ -1657,7 +1657,7 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
 .table-accordian .accordion-header button {
   border-radius: 0px !important;
   padding: 0.6rem 1.4rem;
-  background-color: #3cdc9f97;
+  /* background-color: #3cdc9f97; */
   font-weight: 600 !important;
   outline: none;
   font-size: 0.7rem;
@@ -2604,4 +2604,17 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
 .add-sal-emp .addEmp{
   margin-left: .5rem;
 }     
- 
+.edit-data-box .table-responsive table tr.bgGreen th{
+  padding: .2rem 0.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: .8rem;
+}
+.edit-data-box .accordion-item{
+  border-radius: 0;
+  border: 1px solid #e2e2e2;
+}
+.edit-data-box .accordion-button.collapsed::before {
+  content: "\f107";
+  font-family: FontAwesome;
+  margin: 0 10px 0 0;
+}
