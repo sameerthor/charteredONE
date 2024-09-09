@@ -196,10 +196,10 @@
                                    <div class="card-body">
                                         <ul class="tabs">
                                             <li data-tab-target="#basicInfo" class="active tab">Basic Information</li>
-                                            <li data-tab-target="#residentialStatus" class="tab">residentail Status</li>
+                                            <li data-tab-target="#residentialStatus" class="tab">Residential Status</li>
                                             <li data-tab-target="#shareholdingDetails" class="tab">DIR/Shareholding Details</li>
                                             <li data-tab-target="#scheduleFa" class="tab">Schedule FA</li>
-                                            <li data-tab-target="#residentialStatusTwo" class="tab">residentail Status</li>
+                                            <li data-tab-target="#scheduleAl" class="tab">Schedule AL</li>
                                         </ul>
                                         
                                         <div class="tab-content">
@@ -1905,7 +1905,390 @@
                     </div>
                 </div>
         </div>
-    </div>
+                                                </div>
+                                            </div> 
+                                            <!-- ========================= -->
+                                            <div id="scheduleAl" data-tab-content>
+                                                <div class="card-header bg-light mt-5">
+                                                    <span>Asset and Liability at the end of the year (other than those included in Part A- BS) (applicable in a case where total income exceeds ₹50 lakh)</span>
+                                                </div>
+                                                <div class="accordion mb-3" id="ExamplescheduleOne">
+                                                    <div class="accordion-item"> 
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScheduleOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            <strong>A. </strong> Details of Immovable Asset
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseScheduleOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#ExamplescheduleOne">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive padding-less-input samll-font-table">
+                                                                    <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th></th>
+                                                                                <th class="text-center">Description</th>
+                                                                                <th class="text-center">Flat/Door/Block No.</th>
+                                                                                <th class="text-center">Name of Premises/Building/Village</th>
+                                                                                <th class="text-center">Road/Street/Post Office</th>
+                                                                                <th class="text-center">Area/Locality</th>
+                                                                                <th class="text-center">Town/City/District</th>
+                                                                                <th class="text-center">PIN code/ZIP Code</th>
+                                                                                <th class="text-center">State</th>
+                                                                                <th class="text-center">Country/Region</th>
+                                                                                <th class="text-center">Amount (Cost)</th>
+                                                                                <th width="50px">
+                                                                                    <div class="action_container">
+                                                                                        <button class="success" onclick="create_tr('tableScheduleOne')">
+                                                                                        <i class="fa fa-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="tableScheduleOne">
+                                                                            <tr class="text-center">
+                                                                                <th width="50">
+                                                                                    <div class="deleteTableRow">
+                                                                                        <div class="deleteIcon">
+                                                                                            <a href="#">
+                                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" fill="#f96302">
+                                                                                                    <path d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+                                                                                                </svg>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="form-check align-items-center">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <select class="form-control pl-1" aria-label="Default select example">
+                                                                                        <option selected>Select</option>
+                                                                                        <option value="1">Owner</option>
+                                                                                        <option value="2">Beneficial Owner</option>
+                                                                                        <option value="2">Beneficiary </option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <select class="form-control pl-1" aria-label="Default select example">
+                                                                                        <option selected>Select</option>
+                                                                                        <option value="1">Owner</option>
+                                                                                        <option value="2">Beneficial Owner</option>
+                                                                                        <option value="2">Beneficiary </option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>  
+                                                                        <tbody>
+                                                                            <tr class="total">
+                                                                                <td colspan="11">Total</td>
+                                                                                <td class="text-center">0.00</td>
+                                                                            </tr>
+                                                                        </tbody>  
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ========== -->
+                                                <div class="accordion mb-3" id="ExamplescheduleTwo">
+                                                    <div class="accordion-item"> 
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScheduleTwo" aria-expanded="true" aria-controls="collapseOne">
+                                                            <strong>B. </strong> Details of movable Asset
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseScheduleTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#ExamplescheduleTwo">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive padding-less-input samll-font-table">
+                                                                    <table class="_table align-middle mb-0 table  table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th class="text-center">Description</th>
+                                                                                <th class="text-center">Amount</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Jewellery, bullion etc.</td>
+                                                                                <td width="250">
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control text-right" value="0">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Archaeological collections, drawings, painting, sculpture or any work of art</td>
+                                                                                <td width="250">
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control text-right" value="0">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Vehicles, yachts, boats and aircrafts</td>
+                                                                                <td width="250">
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control text-right" value="0">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Bank (including all deposits)</td>
+                                                                                <td width="250">
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control text-right" value="0">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Shares and securities</td>
+                                                                                <td width="250">
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control text-right" value="0">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Insurance policies</td>
+                                                                                <td width="250">
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control text-right" value="0">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Loans and advances given</td>
+                                                                                <td width="250">
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control text-right" value="0">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Cash in hand</td>
+                                                                                <td width="250">
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control text-right" value="0">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="total">
+                                                                                <th>Total</th>
+                                                                                <td class="text-right">0.00</td>
+                                                                            </tr>
+                                                                        </tbody> 
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ========== -->
+                                                <div class="accordion mb-3" id="ExamplescheduleThree">
+                                                    <div class="accordion-item"> 
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScheduleThree" aria-expanded="true" aria-controls="collapseOne">
+                                                            <strong>C. </strong> Interest held in the assets of a firm or association of persons (AOP) as a partner or member thereof
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseScheduleThree" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#ExamplescheduleThree">
+                                                            <div class="accordion-body">
+                                                                <div class="table-responsive padding-less-input samll-font-table">
+                                                                    <table class="_table align-middle mb-0 table  table-striped" border="1">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th></th>
+                                                                                <th class="text-center">Name of Firm/AOP</th>
+                                                                                <th class="text-center">PAN of Firm/AOP</th>
+                                                                                <th class="text-center">Flat/Door/Block No.</th>
+                                                                                <th class="text-center">Name of Premises/Building/Village</th>
+                                                                                <th class="text-center">Road/Street/Post Office</th>
+                                                                                <th class="text-center">Area/Locality</th>
+                                                                                <th class="text-center">Town/City/District</th>
+                                                                                <th class="text-center">Pin code/Zip Code</th>
+                                                                                <th class="text-center">State</th>
+                                                                                <th class="text-center">Country/Region</th>
+                                                                                <th class="text-center">Assessee’ s investment in the firm/ AOP on cost basis</th>
+                                                                                <th width="50px">
+                                                                                    <div class="action_container">
+                                                                                        <button class="success" onclick="create_tr('tableScheduleTwo')">
+                                                                                        <i class="fa fa-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="tableScheduleTwo">
+                                                                            <tr class="text-center">
+                                                                                <th width="50">
+                                                                                    <div class="deleteTableRow">
+                                                                                        <div class="deleteIcon">
+                                                                                            <a href="#">
+                                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" fill="#f96302">
+                                                                                                    <path d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+                                                                                                </svg>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="form-check align-items-center">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <select class="form-control pl-1" aria-label="Default select example">
+                                                                                        <option selected>Select</option>
+                                                                                        <option value="1">Owner</option>
+                                                                                        <option value="2">Beneficial Owner</option>
+                                                                                        <option value="2">Beneficiary </option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td width="150">
+                                                                                    <select class="form-control pl-1" aria-label="Default select example">
+                                                                                        <option selected>Select</option>
+                                                                                        <option value="1">Owner</option>
+                                                                                        <option value="2">Beneficial Owner</option>
+                                                                                        <option value="2">Beneficiary </option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    <div class="action_container">
+                                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                                            <i class="fa-solid fa-trash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>  
+                                                                        <tbody>
+                                                                            <tr class="total">
+                                                                                <th colspan="12">Total</th>
+                                                                                <td class="text-center">0.00</td>
+                                                                            </tr>
+                                                                        </tbody>  
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ============ -->
+                                                <div class="table-responsive padding-less-input samll-font-table">
+                                                    <table class="_table align-middle mb-0 table  table-striped" border="1"> 
+                                                        <tbody>
+                                                            <tr class="total">
+                                                                <th colspan="12">D. Liability in relation to Assets at (A + B + C)</th>
+                                                                <td class="text-center" width="250">
+                                                                    <div>
+                                                                        <input type="text" class="form-control text-right" value="0.00">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>  
+                                                    </table>
+                                                </div>
+                                            </div> 
+                                        </div>  
+                                    </div>         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
     <!-- =================Add new Rows in tables=================== -->
     <script>
         function create_tr(table_id) {

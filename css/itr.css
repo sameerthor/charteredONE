@@ -1200,9 +1200,7 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
     margin-top: 0.2rem;
   }
 }
-.responsive-tabs {
-  border: 1px solid red;
-}
+
 /* ======================Export btn============== */
 .export-btn {
   display: grid;
@@ -2618,3 +2616,103 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
   font-family: FontAwesome;
   margin: 0 10px 0 0;
 }
+
+.empEntry .input-group small{
+  font-weight: 500;
+  display: block;
+  margin-bottom: .2rem;
+  color: #2e2e2e;
+  font-size: .8rem;
+}
+.empEntry .input-group{
+  margin-bottom: 1rem;
+}
+.empEntry  h3{
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+}
+.stickyBlock{
+  position: sticky;
+  top: 70px;
+}
+.stickyBlock .table-responsive table{
+ min-width: 200px;
+ max-width: 100%;
+}
+.stickyBlock .table-responsive::-webkit-scrollbar{
+ display: none;
+ }
+ .form-control{
+  box-shadow: none;
+ }
+ .deleteTableRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .deleteTableRow .form-check{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .deleteTableRow .deleteIcon {
+   display: block;
+   margin-right: .4rem;
+ }
+ .deleteTableRow .deleteIcon{
+  display: block;
+  margin-right: .4rem;
+}
+.deleteTableRow  .form-check-input{
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid #e2e2e2;
+}
+.tab-content .table-responsive .table .form-control{
+   border-radius: 0;
+   height: 1.5rem;
+   padding: 0 .25rem;
+   box-shadow: none;
+}
+.tab-content .table-responsive .table .form-select{
+  border-radius: 0;
+  height: 1.5rem;
+  padding: 0 .25rem;
+  box-shadow: none;
+}
+.tab-content .accordion-content{
+  border-radius: 0;
+}
+.tab-content .accordion  .accordion-button{
+  border-radius: 0;
+}
+.tab-content .accordion .accordion-item{
+  border-radius: 0;
+}
+.tab-content .accordion-button.collapsed::before {
+  content: "\f107";
+  font-family: FontAwesome;
+  margin: 0 10px 0 0;
+}
+.tab-content .accordion .accordion-header .accordion-button{
+  background-color: #eee;
+  border-radius: 0;
+  font-weight: 600;
+}
+.tab-content .accordion-button:not(.collapsed)::after {
+background-image: none;
+}
+.tab-content button.collapsed::after {
+ background-image: none;
+}
+.tab-content .table .total{
+  background-color: #ecf5e0; 
+ }
+ .tab-content .table .total th{
+  color:  #426c7c;
+ }
+ 
