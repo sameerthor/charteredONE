@@ -2444,13 +2444,13 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
  #PropertyDetails.tab-content{
         border: none!important;
  }
- #PropertyDetails form{
+ .houseProperty .formBox{
      border: 1px solid #ff9800;
      margin: 10px auto;
      padding-bottom: 15px;
      border-radius: 4px;
  }
- #PropertyDetails form legend, .AISBlock legend{
+ .houseProperty  legend, .AISBlock legend{
      font-size: 16px;
      text-decoration: underline;
      text-underline-offset:6px;
@@ -2462,21 +2462,24 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
  #PropertyDetails .tab-pane{
      margin: 10px 0;
  }
- #PropertyDetails form label{
+ .houseProperty  label{
      font-size: 11px;
      color: #777171;
      font-weight: 500;
  }
- #PropertyDetails form input:focus{
+ .houseProperty  .form-control:focus{
     box-shadow: none;
     background: none;
  }
- #PropertyDetails form input::placeholder{
+ .houseProperty  form-control::placeholder{
      font-size:11px;
   }
- #PropertyDetails .required:after {
+ .houseProperty .required:after {
      content:" *";
      color: red;
+   }
+   .houseProperty .form-check-input{
+    box-shadow: none;
    }
    #propertyTable.table{
      border: 1px solid #ff9800;

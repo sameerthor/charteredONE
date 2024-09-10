@@ -409,7 +409,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                     
                                           <div class="selectTypeBlock gap-2">
                                             <p>Select Type: </p>
                                             <div class="nav nav-pills">
@@ -426,280 +425,243 @@
                                           </div>
                                         </div>
                                     <div class="row tab-content" id="PropertyDetails">
-                                        <div class="col-lg-8">
-                                            <div id="property_letout" class="col-sm-12 tab-pane in">
-                                                <form class="row g-3">
-                                                    <div class="row">
-                                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="col-lg-9">
+                                            <div class="row g-3 formBox">
+                                                <div class="col-sm-6 col-xs-12">
                                                     <legend>Property Details</legend>
-                                                    </div>
-                                                    <div class="form-check form-switch col-sm-6 col-xs-12 text-right" id="toggleBtn">
+                                                </div>
+                                                <div class="form-check form-switch col-sm-6 col-xs-12 text-right" id="toggleBtn">
                                                     <input class="form-check-input" type="checkbox" role="switch" id="myCheck" onclick="coownerForm()" />
                                                     <label class="form-check-label" for="flexSwitchCheckChecked">Is the Property Co-owned?</label>
-                                                    </div>
-                                                   
-                                                    </div>
-                                                    <div class="col-sm-6 col-xs-12">
-                                                        <label for="Address" class="form-label required" required>Address</label>
-                                                        <input type="text" class="form-control" id="Address">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
-                                                        <input type="number" class="form-control" id="PZ">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Town/City" class="form-label required" required>Town / City</label>
-                                                        <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="State" class="form-label required" required>State</label>
-                                                        <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Country" class="form-label required" required>Country</label>
-                                                        <input type="text" class="form-control" id="Country" placeholder="e.g. India">
-                                                        </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
-                                                        <input type="text" class="form-control" id="OOP" placeholder="e.g. Self">
-                                                    </div>
-                                                    </form>
-                                                    <form class="row g-3 coownedForm"  onsubmit="return false" style="display: none;">
-                                                    <legend>Co-owner Details</legend>
-                                                    <div class="row">
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <label for="Address" class="form-label required" required>Address</label>
+                                                    <input type="text" class="form-control" id="Address">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
+                                                    <input type="number" class="form-control" id="PZ">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Town/City" class="form-label required" required>Town / City</label>
+                                                    <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="State" class="form-label required" required>State</label>
+                                                    <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Country" class="form-label required" required>Country</label>
+                                                    <input type="text" class="form-control" id="Country" placeholder="e.g. India">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
+                                                    <input type="text" class="form-control" id="OOP" placeholder="e.g. Self">
+                                                </div>
+                                            </div>    
+                                            <div class="row g-3 coownedForm formBox">
+                                                <legend>Co-owner Details</legend>
+                                                <div class="row">
                                                     <div class="col-sm-3 col-xs-12">
                                                         <label for="Assessee % Share in Property" class="form-label">Assessee % Share in Property</label>
                                                         <input type="text" class="form-control" id="ASIP" value="100.00" disabled>
-                                                        </div>
+                                                    </div>
                                                     <div class="col-sm-3 col-xs-12 mt-4">
                                                         <input autocomplete="off" type="checkbox" checked id="select" class="mt-3"> <label for="100% benefit of Interest">100% benefit of Interest</label>
                                                     </div>
                                                 </div>
-                                                    <div id="coownerRow">
-                                                        <div class="row coownerRowBlock mb-2">
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Co-owner Name" class="form-label required" required>Co-owner Name</label>
-                                                        <input type="text" class="form-control" id="CON">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="PAN" class="form-label required" required>PAN</label>
-                                                        <input type="text" class="form-control" id="PAN">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Aadhaar No" class="form-label">Aadhaar No</label>
-                                                        <input type="text" class="form-control" id="AN">
-                                                        </div>
-                                                        <div class="col-sm-2 col-xs-12">
-                                                        <label for="% of Property of Co-owner" class="form-label required" required>% of Property of Co-owner</label>
-                                                        <input type="text" class="form-control" id="POPOCO">
-                                                        </div>
-                                                        <div class="col-sm-1 col-xs-6 mt-4">
-                                                        <button class="" onclick="create_tr('coownerRow')" style="border: 0;background: none;">
-                                                            <i class="fa fa-plus plusIcon mt-2"></i>
-                                                        </button>
-                                                        <button class="" onclick="remove_tr(this)" style="border: 0;background: none;color: #ff9800;">
-                                                            <i class="fa-solid fa-trash-can mt-2"></i>
-                                                        </button>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    </form>
-                                                    <form class="row g-3">
-                                                    <legend>Tenant Details</legend>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Actual Rent Received / Receivable" class="form-label required" required>Tenant Name</label>
-                                                        <input type="text" class="form-control" id="ARRR">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="PAN" class="form-label">PAN</label>
-                                                        <input type="text" class="form-control" id="PAN">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Aadhaar No" class="form-label">Aadhaar No</label>
-                                                        <input type="text" class="form-control" id="Aadhaar No">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="PAN/TAN(if TDS credit is claimed)" class="form-label">PAN/TAN(if TDS credit is claimed)</label>
-                                                        <input type="text" class="form-control" id="PT">
-                                                        </div>
-                                                    </form>
-                                                    <form class="row g-3">
-                                                    <legend>Actual Rent Received / Receivable during the Year</legend>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Tenant Name" class="form-label required" required>Actual Rent Received / Receivable</label>
-                                                        <input type="text" class="form-control" id="TN">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Let Out Prd" class="form-label required" required>Let Out Prd</label>
-                                                        <input type="text" class="form-control" id="LOP" placeholder="e.g. 1">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Vacancy Prd" class="form-label">Vacancy Prd</label>
-                                                        <input type="text" class="form-control" id="Vacancy Prd" placeholder="e.g. 1">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Self Occupied Prd" class="form-label">Self Occupied Prd</label>
-                                                        <input type="text" class="form-control" id="SOP" placeholder="e.g. 1">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Unrealized Rent" class="form-label">Unrealized Rent</label>
-                                                        <input type="text" class="form-control" id="UR">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Municipal Taxes" class="form-label">Municipal Taxes</label>
-                                                        <input type="text" class="form-control" id="MT">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Arrear or Unrealized Rent Rcvd" class="form-label">Arrear or Unrealized Rent Rcvd</label>
-                                                        <input type="text" class="form-control" id="AOURR">
-                                                        </div>
-                                                    </form>
-                                                    <form class="row g-3">
-                                                    <legend>Interest Payable on Borrowed Capital</legend>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="PAN/TAN (if TDS credit is claimed)" class="form-label required" required>PAN/TAN  (if TDS credit is claimed)</label>
-                                                        <input type="date" class="form-control" id="P/T">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Total Preconstruction Interest" class="form-label">Total Preconstruction Interest</label>
-                                                        <input type="text" class="form-control" id="TPI">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Current Year Interest on Borrowed Capital" class="form-label">Current Year Interest on Borrowed Capital</label>
-                                                        <input type="text" class="form-control" id="CYIOBC">
-                                                        </div>
-                                                    </form>
                                             </div>
-                                            <div id="property_self" class="col-sm-12 tab-pane in">
-                                                <form class="row g-3">
-                                                    <div class="d-flex justify-content-center w-100">
-                                                    <legend>Property Details</legend>
-                                                    <!-- <div>Is the Property Co-owned?</div> -->
-                                                    </div>
-                                                    <div class="col-sm-6 col-xs-12">
-                                                        <label for="Address" class="form-label required" required>Address</label>
-                                                        <input type="text" class="form-control" id="Address">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
-                                                        <input type="number" class="form-control" id="PZ">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Town/City" class="form-label required" required>Town / City</label>
-                                                        <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="State" class="form-label required" required>State</label>
-                                                        <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Country" class="form-label required" required>Country</label>
-                                                        <input type="text" class="form-control" id="Country" placeholder="e.g. India">
-                                                        </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
-                                                        <input type="text" class="form-control" id="OOP" placeholder="e.g. Own">
-                                                    </div>
-                                                    </form>
-                                                    <form class="row g-3">
-                                                    <legend>Actual Rent Received / Receivable during the Year</legend>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Arrear or Unrealized Rent Rcvd" class="form-label required" required>Arrear or Unrealized Rent Rcvd</label>
-                                                        <input type="text" class="form-control" id="AOURR">
-                                                        </div>
-                                                    </form>
-                                                    <form class="row g-3">
-                                                    <legend>Interest Payable on Borrowed Capital</legend>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Date of Completion of Construction" class="form-label required" required>Date of Completion of Construction</label>
-                                                        <input type="date" class="form-control" id="DOCOC">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Total Preconstruction Interest" class="form-label required" required>Total Preconstruction Interest</label>
-                                                        <input type="text" class="form-control" id="TPI">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Current Year Interest on Borrowed Capital" class="form-label required" required>Current Year Interest on Borrowed Capital</label>
-                                                        <input type="text" class="form-control" id="CYIOBC">
-                                                        </div>
-                                                    </form>
+                                            <!-- ====== -->
+                                            <div class="row g-3 formBox">
+                                                <legend>Tenant Details</legend>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Actual Rent Received / Receivable" class="form-label required" required>Tenant Name</label>
+                                                    <input type="text" class="form-control" id="ARRR">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="PAN" class="form-label">PAN</label>
+                                                    <input type="text" class="form-control" id="PAN">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Aadhaar No" class="form-label">Aadhaar No</label>
+                                                    <input type="text" class="form-control" id="Aadhaar No">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="PAN/TAN(if TDS credit is claimed)" class="form-label">PAN/TAN(if TDS credit is claimed)</label>
+                                                    <input type="text" class="form-control" id="PT">
+                                                </div>
                                             </div>
-                                            <div id="property_deemed" class="col-sm-12 tab-pane in">
-                                                <form class="row g-3">
-                                                    <div class="d-flex justify-content-center w-100">
+                                            <div class="row g-3 formBox">
+                                                <legend>Actual Rent Received / Receivable during the Year</legend>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Tenant Name" class="form-label required" required>Actual Rent Received / Receivable</label>
+                                                    <input type="text" class="form-control" id="TN">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Let Out Prd" class="form-label required" required>Let Out Prd</label>
+                                                    <input type="text" class="form-control" id="LOP" placeholder="e.g. 1">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Vacancy Prd" class="form-label">Vacancy Prd</label>
+                                                    <input type="text" class="form-control" id="Vacancy Prd" placeholder="e.g. 1">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Self Occupied Prd" class="form-label">Self Occupied Prd</label>
+                                                    <input type="text" class="form-control" id="SOP" placeholder="e.g. 1">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Unrealized Rent" class="form-label">Unrealized Rent</label>
+                                                    <input type="text" class="form-control" id="UR">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Municipal Taxes" class="form-label">Municipal Taxes</label>
+                                                    <input type="text" class="form-control" id="MT">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Arrear or Unrealized Rent Rcvd" class="form-label">Arrear or Unrealized Rent Rcvd</label>
+                                                    <input type="text" class="form-control" id="AOURR">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 formBox">
+                                                <legend>Interest Payable on Borrowed Capital</legend>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <label for="PAN/TAN (if TDS credit is claimed)" class="form-label required" required>PAN/TAN  (if TDS credit is claimed)</label>
+                                                    <input type="date" class="form-control" id="P/T">
+                                                </div>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <label for="Total Preconstruction Interest" class="form-label">Total Preconstruction Interest</label>
+                                                    <input type="text" class="form-control" id="TPI">
+                                                </div>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <label for="Current Year Interest on Borrowed Capital" class="form-label">Current Year Interest on Borrowed Capital</label>
+                                                    <input type="text" class="form-control" id="CYIOBC">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 formBox">
+                                                <div class="d-flex justify-content-center w-100">
                                                     <legend>Property Details</legend>
-                                                    <!-- <div>Is the Property Co-owned?</div> -->
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <label for="Address" class="form-label required" required>Address</label>
+                                                    <input type="text" class="form-control" id="Address">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
+                                                    <input type="number" class="form-control" id="PZ">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Town/City" class="form-label required" required>Town / City</label>
+                                                    <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="State" class="form-label required" required>State</label>
+                                                    <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Country" class="form-label required" required>Country</label>
+                                                    <input type="text" class="form-control" id="Country" placeholder="e.g. India">
                                                     </div>
-                                                    <div class="col-sm-6 col-xs-12">
-                                                        <label for="Address" class="form-label required" required>Address</label>
-                                                        <input type="text" class="form-control" id="Address">
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
+                                                    <input type="text" class="form-control" id="OOP" placeholder="e.g. Own">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 formBox">
+                                                <legend>Actual Rent Received / Receivable during the Year</legend>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Arrear or Unrealized Rent Rcvd" class="form-label required" required>Arrear or Unrealized Rent Rcvd</label>
+                                                    <input type="text" class="form-control" id="AOURR">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 formBox">
+                                                <legend>Interest Payable on Borrowed Capital</legend>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <label for="Date of Completion of Construction" class="form-label required" required>Date of Completion of Construction</label>
+                                                    <input type="date" class="form-control" id="DOCOC">
+                                                </div>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <label for="Total Preconstruction Interest" class="form-label required" required>Total Preconstruction Interest</label>
+                                                    <input type="text" class="form-control" id="TPI">
+                                                </div>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <label for="Current Year Interest on Borrowed Capital" class="form-label required" required>Current Year Interest on Borrowed Capital</label>
+                                                    <input type="text" class="form-control" id="CYIOBC">
+                                                </div>
+                                            </div> 
+                                            <!-- ========== -->
+                                            <div class="row g-3 formBox">
+                                                <div class="d-flex justify-content-center w-100">
+                                                    <legend>Property Details</legend>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <label for="Address" class="form-label required" required>Address</label>
+                                                    <input type="text" class="form-control" id="Address">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
+                                                    <input type="number" class="form-control" id="PZ">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Town/City" class="form-label required" required>Town / City</label>
+                                                    <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="State" class="form-label required" required>State</label>
+                                                    <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Country" class="form-label required" required>Country</label>
+                                                    <input type="text" class="form-control" id="Country" placeholder="e.g. India">
                                                     </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Pincode/Zipcode" class="form-label required" required>Pincode / Zipcode</label>
-                                                        <input type="number" class="form-control" id="PZ">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Town/City" class="form-label required" required>Town / City</label>
-                                                        <input type="text" class="form-control" id="TC" placeholder="1234 Main St">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="State" class="form-label required" required>State</label>
-                                                        <input type="text" class="form-control" id="State" placeholder="e.g. Rajasthan">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Country" class="form-label required" required>Country</label>
-                                                        <input type="text" class="form-control" id="Country" placeholder="e.g. India">
-                                                        </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
-                                                        <input type="text" class="form-control" id="OOP" placeholder="e.g. Own">
-                                                    </div>
-                                                    </form>
-                                                    <form class="row g-3">
-                                                    <legend>Lettable / Actual Rent Received / Receivable Value</legend>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Actual Rent Received / Receivable" class="form-label required required" required>Actual Rent Received / Receivable</label>
-                                                        <input type="text" class="form-control" id="ARR">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Unrealized Rent" class="form-label required" required>Unrealized Rent</label>
-                                                        <input type="text" class="form-control" id="UR">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Municipal Taxes" class="form-label required" required>Municipal Taxes</label>
-                                                        <input type="text" class="form-control" id="MT">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Arrear or Unrealized Rent Rcvd" class="form-label required" required>Arrear or Unrealized Rent Rcvd</label>
-                                                        <input type="text" class="form-control" id="AOURR">
-                                                        </div>
-                                                    </form>
-                                                    <form class="row g-3">
-                                                    <legend>Interest Payable on Borrowed Capital</legend>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Date of Borrowing" class="form-label required" required>Date of Borrowing</label>
-                                                        <input type="date" class="form-control" id="DOCOC">
-                                                        </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Date of Completion of Construction" class="form-label required" required>Date of Completion of Construction</label>
-                                                        <input type="date" class="form-control" id="DOCOC">
-                                                    </div>
-                                                    <div class="col-sm-3 col-xs-12">
-                                                        <label for="Total Preconstruction Interest" class="form-label">Total Preconstruction Interest</label>
-                                                        <input type="text" class="form-control" id="TPI">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Current Year Interest on Borrowed Capital" class="form-label">Current Year Interest</label>
-                                                        <input type="text" class="form-control" id="CYIOBC">
-                                                        </div>
-                                                        <div class="col-sm-3 col-xs-12">
-                                                        <label for="Interest for Repair / Renewable / Recon" class="form-label">Interest for Repair / Renewable / Recon</label>
-                                                        <input type="text" class="form-control" id="IFR">
-                                                        </div>
-                                                    </form>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Owner of Property" class="form-label required" required>Owner of Property</label>
+                                                    <input type="text" class="form-control" id="OOP" placeholder="e.g. Own">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 formBox">
+                                                <legend>Lettable / Actual Rent Received / Receivable Value</legend>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Actual Rent Received / Receivable" class="form-label required required" required>Actual Rent Received / Receivable</label>
+                                                    <input type="text" class="form-control" id="ARR">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Unrealized Rent" class="form-label required" required>Unrealized Rent</label>
+                                                    <input type="text" class="form-control" id="UR">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Municipal Taxes" class="form-label required" required>Municipal Taxes</label>
+                                                    <input type="text" class="form-control" id="MT">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Arrear or Unrealized Rent Rcvd" class="form-label required" required>Arrear or Unrealized Rent Rcvd</label>
+                                                    <input type="text" class="form-control" id="AOURR">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 formBox">
+                                                <legend>Interest Payable on Borrowed Capital</legend>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Date of Borrowing" class="form-label required" required>Date of Borrowing</label>
+                                                    <input type="date" class="form-control" id="DOCOC">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Date of Completion of Construction" class="form-label required" required>Date of Completion of Construction</label>
+                                                    <input type="date" class="form-control" id="DOCOC">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Total Preconstruction Interest" class="form-label">Total Preconstruction Interest</label>
+                                                    <input type="text" class="form-control" id="TPI">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Current Year Interest on Borrowed Capital" class="form-label">Current Year Interest</label>
+                                                    <input type="text" class="form-control" id="CYIOBC">
+                                                </div>
+                                                <div class="col-sm-3 col-xs-12">
+                                                    <label for="Interest for Repair / Renewable / Recon" class="form-label">Interest for Repair / Renewable / Recon</label>
+                                                    <input type="text" class="form-control" id="IFR">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-3">
                                             <div class="stickyBlock">
                                                 <div class="table table-responsive" id="propertyTable">
                                                     <table>
@@ -730,10 +692,10 @@
                                                     </table>
                                                 </div>
                                                 <div class="AISBlock">
-                                                    <form class="row g-3">
+                                                    <div class="row g-3">
                                                         <legend>AIS/26AS</legend>
-                                                            <p class="ml-auto mb-0 mt-2">No AIS data available for this section as of now. We will display the AIS data here once it will be available on ITR Portal !!</p>
-                                                    </form>
+                                                        <p class="ml-auto mb-0 mt-2">No AIS data available for this section as of now. We will display the AIS data here once it will be available on ITR Portal!</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
