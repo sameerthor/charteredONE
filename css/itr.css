@@ -2718,4 +2718,52 @@ background-image: none;
  .tab-content .table .total th{
   color:  #426c7c;
  }
- 
+ .responsiveRadio .radioList{
+  padding: 1rem;
+  background-color: #ff990012;
+  margin-bottom: 1rem;
+ }
+ .responsiveRadio .radioList .form-check .form-check-input{
+  box-shadow: none;
+ }
+ .responsiveRadio .radioList .form-check .form-check-label{
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-size: .85rem;
+ }
+ .responsiveRadio .radioList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ .responsiveRadio .radioList .form-check{
+  margin-right: 1.4rem;
+ }
+ @media(max-width:600px){
+  .responsiveRadio .radioList{
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .responsiveRadio .radioList .form-check{
+    margin-right: 0;
+    margin-bottom: 1rem;
+   }
+ }
+
+ .responsiveRadio .radioContent{
+  margin-bottom: 1rem;
+ }
+ .responsiveRadio .radioContent{
+  display: none;
+ }
+ .responsiveRadio .radioContent.active{
+  display: block;
+ }
+ .responsiveRadio .table-responsive .total{
+  border-radius: 0px;
+  background-color: #ebf5e0;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-size: 0.85rem;
+ }
