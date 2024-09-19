@@ -2767,3 +2767,15 @@ background-image: none;
   color: #000;
   font-size: 0.85rem;
  }
+ .houseProperty .formBox .form-label{
+  display: block;
+  margin-bottom: .25rem;
+ }
+ .table-responsive small.required{
+  color: #ff0000;
+ }
+ .buyDetails{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+ }
