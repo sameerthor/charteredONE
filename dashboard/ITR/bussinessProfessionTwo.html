@@ -3088,11 +3088,211 @@
                                                                 <th class="">0.00</th>
                                                             </tr>
                                                         </thead>
+                                                    </table>
+                                                </div>
+                                                <!-- ============================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(16) Freight outward</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('freightOutward')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="freightOutward">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="_table align-middle mb-0 table table-borderless  table-striped">
                                                         <tbody>
                                                                 <tr>
                                                                     <th><span>(17) Consumption of stores and spare parts</span></th>
                                                                     <td>0.00</td>
                                                                 </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span> (18) Power and fuel</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('powerAndFuel')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="powerAndFuel">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span> (19) Rents</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('19Rents')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="19Rents">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span> (20) Repairs to building</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('repairsBuilding')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="repairsBuilding">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span> (21) Repairs to machinery</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('repairsMachinery')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="repairsMachinery">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -3697,6 +3897,240 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(24) Workmen and staff welfare expenses</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('WorkmenStaff')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="WorkmenStaff">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(25) Entertainment</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('25Entertainment')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="25Entertainment">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(26) Hospitality</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('26Hospitality')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="26Hospitality">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(27) Conference</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('27Conference')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="27Conference">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(28) Sales promotion including publicity (other than advertisement)</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('28SalesPromotion')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="28SalesPromotion">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(29) Advertisement</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('29Advertisement')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="29Advertisement">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <!-- =============== -->
                                                 <div class="accordion table-accordian" id="accordionExampleSeven">
                                                     <div class="accordion-item">
@@ -3999,6 +4433,435 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>33 Hotel, boarding and Lodging</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('33HotelBoarding')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="33HotelBoarding">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>34 Traveling expenses other than on foreign traveling</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('34TravellingExp')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="34TravellingExp">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(35) Foreign travelling expenses</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('35ForeignTra')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="35ForeignTra">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(36) Conveyance expenses</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('36Conveyance')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="36Conveyance">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(37) 	Telephone expenses</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('37Telephone')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="37Telephone">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(38) Guest House expenses</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('38GuestHouse')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="38GuestHouse">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(39) 	Club expenses</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('39ClubExpenses')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="39ClubExpenses">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(40) Festival celebration expenses</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('40Festival')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="40Festival">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(41) Scholarship</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('41Scholarship')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="41Scholarship">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(42) Gift</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('42Gift')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="42Gift">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(43) Donation</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('43Donation')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="43Donation">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                                 <!-- =============== -->
                                                 <div class="accordion table-accordian" id="accordionExampleTen">
@@ -4367,6 +5230,84 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(45) Audit fee</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('45Auditfee')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="45Auditfee">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(46) Other expenses (specify nature and amount)</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('46Otherexpenses')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="46Otherexpenses">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <!-- =============== -->
                                                 <div class="table-responsive hideScrollbar">
                                                     <table class="_table align-middle mb-0 table table-borderless  table-striped">
@@ -4376,6 +5317,89 @@
                                                                 <th class="">0.00</th>
                                                             </tr>
                                                         </thead>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(48) Provision for bad and doubtful debts</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('48provisiondoubtful')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="48provisiondoubtful">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(49) Other provisions</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('49Otherprovisions')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="49Otherprovisions">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- ====================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="_table align-middle mb-0 table table-borderless  table-striped">
                                                         <tbody>
                                                                 <tr>
                                                                     <th><span> (50) Profit before interest, depreciation and taxes [15 – (16 to 21 + 22xi + 23v + 24 to 29 + 30iii + 31iii + 32iii + 33 to 43 + 44x + 45 + 46 + 47iii + 48iv + 49 )]	</span></th>
@@ -4484,6 +5508,45 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <!-- =================== -->
+                                                <div class="table-responsive hideScrollbar">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="500"><span>(52) Depreciation and amortization</span></th>
+                                                                <td class="text-right">0</td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('52Depreciation')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </thead> 
+                                                        <tbody id="52Depreciation">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="col">
+                                                                        <input type="number" onkeypress="return event.charCode >= 48" min="1" class="form-control text-right">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                                 <!-- ======================================= -->
                                                 <div class="table-responsive hideScrollbar">
@@ -5240,7 +6303,7 @@
                                                                 </tbody>
                                                                 <thead>
                                                                     <tr>
-                                                                        <td class="pl-5"><span>(c) Net Block(a-b)</span></td>
+                                                                        <th class="pl-5"><span>(c) Net Block(a-b)</span></th>
                                                                         <td>0.00</td>
                                                                     </tr>
                                                                 </thead>
@@ -5427,7 +6490,7 @@
                                                                                                             <td>0.00</td>
                                                                                                         </tr>
                                                                                                         <tr class="totalCount">
-                                                                                                            <td><span> (H) Total Inventories (A+B+C+D)</span></td>
+                                                                                                            <td><span> (E) Total Inventories (A+B+C+D)</span></td>
                                                                                                             <td>0.00</td>
                                                                                                         </tr>
                                                                                                 </tbody>

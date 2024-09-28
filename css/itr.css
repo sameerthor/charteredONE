@@ -1623,7 +1623,7 @@ input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
   align-items: center;
 }
 .table-responsive .table .flex-table-row {
-  background-color: #c2f8cb;
+  background-color: #16a8ff21;
 }
 .table-responsive .table .flex-table-row td span {
   color: #000;
@@ -3194,3 +3194,108 @@ background-image: none;
 .bnusinessModelas .modal-header button{
   box-shadow: none;
 }
+.businessProfesionPage.pageSiderbar{
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+  overflow-y: auto;
+}
+.businessProfesionPage.pageSiderbar .table-responsive .table{
+ min-width: 200px;
+}
+.trialBalance .trailCurrent{
+  background-color: #fdf3e7;
+}
+.trialBalance .trailPrev{
+  background-color: #f3f3f3;
+}
+.trialBalance .table-responsive .table th.diff{
+  font-size: .85rem;
+}
+.trialBalance .table-responsive .table th.diff span{
+  font-size: .7rem;
+  color: #3681b8;
+}
+.trialBalance .table-responsive .table th.diff small{
+  font-size: .7rem;
+  color: #097809;
+}
+
+.trialBalance  input[type=number]::-webkit-inner-spin-button, 
+.trialBalance  input[type=number]::-webkit-outer-spin-button { 
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   margin: 0; 
+}
+.trialBalance .traialHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .6rem .8rem;
+  background-color: #f965021f;
+}
+.trialBalance .traialHeader h3{
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: .5px;
+}
+.trialBalance .traialHeader .form-label{
+ text-wrap: nowrap;
+ font-weight: 500;
+ color: #000;
+ margin-right: .5rem;
+ margin-bottom: 0;
+ font-size: .8rem;
+}
+.trialBalance .traialHeader .form-control{
+  box-shadow: none;
+  border-radius: 0;
+  height: 1.6rem;
+ }
+ .trialBalance .traialHeader a{
+ display: inline-block;
+ }
+ .trialBalance .traialHeader .form-check-label{
+  text-wrap: nowrap;
+  font-weight: 400;
+  color: #000;
+  margin-right: .5rem;
+  margin-bottom: 0;
+  font-size: .8rem;
+  letter-spacing: .5px;
+ }
+ .trialBalance .traialHeader .form-check-input{
+  box-shadow: none;
+ }
+ .trialBalance .traialHeader a svg{
+  height: 16px;
+  width: 16px;
+  fill: #ff0000;
+  }
+  .trialBalance .traialHeader .form-check{
+    padding-left: .5rem;
+  }
+  .trialBalance .table-responsive .table .consolidated{
+    background-color: #ecf5e0;
+   }
+   .table-accordian .accordion-button:not(.collapsed){
+    background-color: #eaeaea;
+   }
+   .table-accordian .accordion-button::after{
+    display: none;
+   }
+   .table-accordian .accordion-button:not(.collapsed)::after {
+    display: none;
+   }
+   .table-accordian .accordion-item:last-of-type .accordion-button.collapsed {
+    justify-content: left;
+   }
+   .modalCustomHeight .modal-dialog{
+    height: fit-content;
+    min-height: 300px;
+    background-color: #fff;
+    max-width: 97%;
+   }
