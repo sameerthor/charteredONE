@@ -353,29 +353,51 @@
                                         </div>
                                     </div>
                                    <div class="card-body">
-                                    <div class="row my-4 input-group schedule-ptiTable">
-                                    <h6 class="mb-4" style="color: #ff9800;">Pass Through Income Details from Business Trust or Investment Fund as per Section 115U</h6>
-                                        <div class="col-lg-5 col-md-6 col-sm-6 mb-3 mt-1 nopadding">
-                                            <label for="" class="form-label d-flex justify-content-start gap-2 align-items-center if_input"><span class="d-flex align-items-center"><i class="fa fa-plus plusIcon"></i>&nbsp;<i class="fa fa-trash-can" style="color: #ff9800;"></i></span><span>Name of Bussines Trust / Investment Fund</span></label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="col-lg-2 col-md-3 col-sm-6 mb-3 nopadding">
-                                            <label for="" class="form-label">PAN</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-6 mb-3 nopadding">
-                                            <label for="" class="form-label">Section</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Uttar Pradesh</option>
-                                                <option value="1">Madhya Pradesh</option>
-                                                <option value="2">Rajsthan</option>
-                                                <option value="3">Chhatisgarh</option>
-                                                <option value="4">Other</option>
-                                            </select>
-                                        </div>
+                                        <div class="my-4 input-group schedulePtiTable">
+                                                <h2> Pass Through Income Details from Business Trust or Investment Fund as per Section 115U</h2>
+                                                <div class="table-responsive mt-2 hideScrollbar">
+                                                    <table class="_table align-middle table" border="1">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-left">Name of Bussines Trust / Investment Fund  <i class="fa fa-plus plusIcon" onclick="create_tr('table_body')"></i></th>
+                                                                <th class="text-left">PAN</th>
+                                                                <th class="text-left">Section</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="table_body">
+                                                            <tr class="clubbingRow">
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="creteRowBtn mr-2">
+                                                                            <button class="danger" onclick="remove_tr(this)">
+                                                                                <i class="fa-solid fa-x"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div style="width: 100%;">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </td>
+                                                                
+                                                                <td>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option selected=""></option>
+                                                                        <option value="1">115UA Business Trust</option>
+                                                                        <option value="2">115UB Investment Trust</option>
+                                                                    </select>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>    
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>

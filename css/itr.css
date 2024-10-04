@@ -62,6 +62,9 @@ body a:hover {
 .if_input span {
   color: #000 !important;
 }
+.schedulePtiTable{
+  max-width: 1200px;
+}
 .scheduleVdatable .scheduleVdatableTh {
   font-size: 13px !important;
   background-color: #f9630233;
@@ -71,6 +74,7 @@ body a:hover {
   font-size: 11px !important;
   vertical-align: middle;
 }
+
 .scheduleVdatable table td {
   font-size: 10px !important;
 }
@@ -91,6 +95,23 @@ body a:hover {
 }
 .schedule-ptiTable select {
   font-size: 12px;
+}
+.schedulePtiTable .table-responsive .table td, .schedulePtiTable .table-responsive .table td,
+ .schedulePtiTable .table-responsive .table, .schedulePtiTable .table-responsive .table th{
+  border: none;
+  background-color: none;
+}
+.schedulePtiTable h2{
+  font-size: 15px ;
+  background-color: #f9630233;
+  font-weight: 600;
+  width: 100%;
+  padding: .6rem 1rem;
+  color: #000;
+}
+.schedulePtiTable .table-responsive .table .form-control, 
+.schedulePtiTable .table-responsive .table .form-control{
+  height: 2rem;
 }
 
 #TDS_table_RuleBtn {
@@ -3359,4 +3380,16 @@ background-image: none;
     box-shadow: none;
     height: 2rem;
     border-radius: 2px;
+   }
+   .form-control{
+    border-radius: 0;
+   }
+   .form-select{
+    border-radius: 0;
+   }
+   .form-control:focus{
+    box-shadow: none;
+   }
+   .form-select:focus{
+    box-shadow: none;
    }
