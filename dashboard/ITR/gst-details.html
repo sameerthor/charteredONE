@@ -235,28 +235,41 @@
                                             <div class="table-header">
                                                 <span>Import GSTIN Data *</span>
                                             </div>
-                                            <div class="row gst-details-box mt-2 d-flex align-items-center">
+                                            <div class="row gst-details-box mt-2">
                                                 <div class="col-md-3">
-                                                    <div class="col">
-                                                        <label for="form-label">Pan</label>
-                                                        <input type="text" class="form-control" value="DIIPM9353" disabled>
+                                                    <label for="form-label">Pan*</label>
+                                                    <input type="text" class="form-control" value="DIIPM9353" disabled>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="form-label">Captcha</label>
+                                                    <div class="captchaBox">
+                                                        <img src="../../images/captcha-copy.png" class="mb-1" alt="captcha-copy" width="120">
+                                                        <p>Can't read the captcha? <a href="#">click here</a> to refresh</p>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <div class="col">
-                                                        <a href="#000" class="btn btn-warning">Import GSTIN</a>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="mr-3">
+                                                            <label for="form-label">Enter Captcha*</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="mt-4 captchaBtn">
+                                                            <button class="btn">Import GSTIN</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!--=====================  -->
-                                            <div class="table-responsive hideScrollbar mt-3">
+                                            <div class="table-responsive hideScrollbar importGstinTable mt-3">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
                                                         <tr class="totalCount">
-                                                            <th class="text-center">GSTN*</th>
-                                                            <th class="text-center">GSTN Username*</th>
-                                                            <th class="text-center">GSTN Password*</th>
-                                                            <th class="text-center">Turnover/ Gross Receipt as per return filed*</th>
+                                                            <th class="text-left">GSTN*</th>
+                                                            <th class="text-left">GSTN Username*</th>
+                                                            <th class="text-left">GSTN Password*</th>
+                                                            <th>Captcha</th>
+                                                            <th> Enter Captcha*</th>
+                                                            <th class="text-left">Turnover/ Gross Receipt as per return filed*</th>
                                                             <td>
                                                                 <div class="action_container" width="50">
                                                                     <button class="success" onclick="create_tr('table_body')">
@@ -269,22 +282,50 @@
                                                     <tbody id="table_body">
                                                         <tr>
                                                             <td>
-                                                                <div class="col">
+                                                                <div>
                                                                     <input type="text" class="form-control">
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="col">
+                                                                <div>
                                                                     <input type="text" class="form-control">
                                                                 </div>
                                                             </td>
-                                                            <td>
-                                                                <div class="col">
-                                                                    <input type="password" class="form-control">
+                                                            <td width="310">
+                                                                <div class="d-flex align-items-center passBox">
+                                                                   <div>
+                                                                        <input type="password" class="form-control  password-input">
+                                                                   </div>
+                                                                    <div class="showPass form-control">
+                                                                       <a href="#" title="show password">
+                                                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eye" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="16" width="16">
+                                                                                <path fill="currentColor" d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"></path>
+                                                                            </svg>
+                                                                       </a>
+                                                                    </div>
+                                                                    <div class="captchaBtn ms-2">
+                                                                        <button class="btn">Get Captcha</button>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td width="300">
+                                                                <div class="captchaBox" style="display: none;">
+                                                                    <img src="../../images/captcha-copy.png" class="mb-1" alt="captcha-copy" width="100">
+                                                                    <p class="mb-0">Can't read the captcha? <a href="#">click here</a> to refresh</p>
+                                                                </div>
+                                                            </td>
+                                                            <td width="280">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                    <div class="verify ms-2">
+                                                                        <button class="btn">Verify</button>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="col">
+                                                                <div>
                                                                     <input type="text" class="form-control">
                                                                 </div>
                                                             </td>
@@ -299,10 +340,10 @@
                                                     </tbody>
                                                 </table>   
                                             </div>
-                                            <div class="row">
-                                                <div class="done-btn">
-                                                    <a href="#000" class="">Done or press esc</a>
-                                                    <a href="#000" class="">Cancle</a>
+                                            <div class="importGstinTable">
+                                                <div class="doneBtn">
+                                                    <button class="btn">Done or press esc</button>
+                                                    <button class="btn">Cancle</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -337,19 +378,52 @@
             </div>
         </div>
     </div>
-    <script>
-        function changeTab(tabNumber) {
-          document.querySelectorAll('.tab-data').forEach(function(content) {
-            content.classList.remove('active');
-          });
-          document.querySelectorAll('.tabBtn').forEach(function(tab) {
-            tab.classList.remove('active');
-          });
-      
-          document.getElementById('tab' + tabNumber + 'Content').classList.add('active');
-          document.querySelector('.tabBtn:nth-child(' + tabNumber + ')').classList.add('active');
+<script>
+const table = document.querySelector('table');
+
+table.addEventListener('click', function(event) {
+    if (event.target.closest('.showPass a')) {
+        const showPassLink = event.target.closest('.showPass a');
+
+        const tr = showPassLink.closest('tr');
+        const passwordInput = tr.querySelector('.password-input');
+
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            showPassLink.title = "hide password";
+        } else {
+            passwordInput.type = 'password';
+            showPassLink.title = "show password"; 
         }
-      </script>
+
+        event.preventDefault();
+    }
+    
+    if (event.target.closest('.captchaBtn .btn')) {
+        const button = event.target.closest('.captchaBtn .btn');
+
+        const tr = button.closest('tr');
+        const captchaBox = tr.querySelector('.captchaBox');
+        captchaBox.style.display = (captchaBox.style.display === 'none' || captchaBox.style.display === '') ? 'block' : 'none';
+    }
+});
+</script>
+    <!-- <script>
+        const table = document.querySelector('table');
+        table.addEventListener('click', function(event) {
+            if (event.target.closest('.captchaBtn .btn')) {
+                const button = event.target.closest('.captchaBtn .btn');
+                const tr = button.closest('tr');
+                const captchaBox = tr.querySelector('.captchaBox');
+
+                if (captchaBox.style.display === 'block') {
+                    captchaBox.style.display = 'none';
+                } else {
+                    captchaBox.style.display = 'block';
+                }
+            }
+        });
+    </script> -->
     <script>
         function create_tr(table_id) {
         let table_body = document.getElementById(table_id),
