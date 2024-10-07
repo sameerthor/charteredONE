@@ -790,7 +790,7 @@
                                                                     0.00
                                                                 </td>
                                                                 <td class="text-right">
-                                                                    <a href="#000"><img src="../../images/calculator.svg" height="20" width="20" alt=""></a>
+                                                                    <a href="#000" data-bs-toggle="modal" data-bs-target="#expAllow2729"><img src="../../images/calculator.svg" height="20" width="20" alt=""></a>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -814,8 +814,8 @@
                                                         <table class="align-middle mb-0 table table-borderless table-striped">
                                                             <thead>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="text-left">0.00</td>
+                                                                    <td width="600"></td>
+                                                                    <td class="text-right" width="200">0.00</td>
                                                                     <td class="text-right">
                                                                         <a href="#000" data-bs-toggle="modal" data-bs-target="#modalSeven"><img src="../../images/calculator.svg" height="20" width="20" alt=""></a>
                                                                     </td>
@@ -823,8 +823,8 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr class="totalCount">
-                                                                    <td class="pl-4"><span>Any amount disallowed under section 40 in any precedi... (8B of Part A -OI)</span></td>
-                                                                    <td class="text-left">
+                                                                    <td class="pl-4" width="600"><span>Any amount disallowed under section 40 in any precedi... (8B of Part A -OI)</span></td>
+                                                                    <td class="text-right" width="200">
                                                                         0.00
                                                                     </td>
                                                                     <td class="text-left">
@@ -833,7 +833,7 @@
                                                                 </tr>
                                                                 <tr class="totalCount">
                                                                     <td class="pl-4"><span>Any amount disallowed under section 43B in any precedi...(10h of Part A - OI)</span></td>
-                                                                    <td class="text-left">
+                                                                    <td class="text-right">
                                                                         0.00
                                                                     </td>
                                                                     <td class="text-right">
@@ -843,8 +843,8 @@
                                                                 <tr class="totalCount">
                                                                     <td class="pl-4"><span>(+) Any other item of Deduction under section 28 to 44DA</span></td>
                                                                     <td class="text-right">
-                                                                        <div class="col-md-6 mx-auto">
-                                                                            <input type="text" class="form-control" value="0.00">
+                                                                        <div class="d-block flex-start">
+                                                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0.00">
                                                                         </div>
                                                                     </td>
                                                                     <td class="text-right">
@@ -926,7 +926,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="pl-4"><span>(+) Section 44AE</span></td>
+                                                    <td class="pl-4"><span>(+) Section 44BB</span></td>
                                                     <td class="text-left">
                                                     <div class="col">
                                                             <input type="text" class="form-control" value="0">
@@ -1009,6 +1009,17 @@
                                                         
                                                     </td>
                                                 </tr>
+                                                <tr>
+                                                    <td class="pl-4"><span>(f)  Income other than Rule 7A, 7B &amp; 8</span></td>
+                                                    <td class="text-left">
+                                                    <div class="col">
+                                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control" value="0">
+                                                    </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        
+                                                    </td>
+                                                </tr>
                                                 <tr class="">
                                                     <td><span>Balance of income deemed to be from agriculture, after applying Rule 7, 7A, 7B(1), 7B(1A) and Rule 8 for the purpose of aggregation of income as per Finance Act</span></td>
                                                     <td class="text-left">
@@ -1067,55 +1078,7 @@
                                                         0
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <th><span>Income from Specified Activity</span></th>
-                                                    <td class="text-left">
-                                                    
-                                                    </td>
-                                                    <td class="text-right">
-                                                    
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pl-4"><span>Net Profit or Loss</span></td>
-                                                    <td class="text-left">
-                                                    0
-                                                    </td>
-                                                    <td class="text-right">
-                                                        <a href="#000"><img src="../../images/calculator.svg" height="20" width="20" alt=""></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pl-4"><span>Any other item of Deduction under section 28 to 44DA</span></td>
-                                                    <td class="text-left">
-                                                    <div class="col">
-                                                            <input type="text" class="form-control" value="0">
-                                                    </div>
-                                                    </td>
-                                                    <td class="text-right">
-                                                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pl-4"><span>Any other item of Deduction under section 28 to 44DA</span></td>
-                                                    <td class="text-left">
-                                                    <div class="col">
-                                                            <input type="text" class="form-control" value="0">
-                                                    </div>
-                                                    </td>
-                                                    <td class="text-right">
-                                                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="pl-4"><span>Adjusted Profit and Loss</span></th>
-                                                    <td class="text-left">
-                                                    
-                                                    </td>
-                                                    <td class="text-right">
-                                                        0
-                                                    </td>
-                                                </tr>
+        
                                                 <tr>
                                                     <th><span>Income from Specified Activity</span></th>
                                                     <td class="text-left">
@@ -1470,7 +1433,7 @@
                 </div>
                 <div class="modal-body edit-data-box">
                     <div class="row grossReceipts mb-4">
-                        <h2>Gross Receipts</h2>
+                        <h2>Gross Receipts for Proprietor</h2>
                         <div class="col-md-5">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -1636,7 +1599,7 @@
                 </div>
                 <div class="modal-body edit-data-box">
                     <div class="row grossReceipts mb-4">
-                        <h2>Gross Receipts</h2>
+                        <h2>Gross Receipts for Business</h2>
                         <div class="col-md-5">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -1813,38 +1776,38 @@
                                 <tr>
                                     <td>(1) Net profit or loss from specified business as per profit or loss account</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control text-right" value="0" disabled>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>(2) Additions in accordance with section 28 to 44DA</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control text-right" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>(3) Additions in accordance with section 28 to 44DA</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(4)  Profit or loss from specified business (1 + 2 -3)</td>
                                     <td class="text-right">
                                         0
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>(4)  Profit or loss from specified business (1 + 2 -3)</td>
-                                    <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control text-right" value="0">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td>(5) Deductions in accordance with section 35AD(1)</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control text-right" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2740,10 +2703,21 @@
                     <div class="table-responsive hideScrollbar">
                         <table class="aalign-middle mb-0 table table-borderless table-striped">
                             <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Particulars</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <thead>
                                 <tr class="totalCount">
-                                    <th class="text-left pl-2">SN. No.</th>
-                                    <th class="text-left">Particulars</th>
-                                    <th class="text-center">Amount</th>
+                                    <th class="text-left" width="70">SN. No.</th>
+                                    <th class="text-left" width="500">ICDS</th>
+                                    <th class="text-center">Increase in Profit</th>
+                                    <th class="text-center">Decrease in Profit</th>
+                                    <th class="text-center">Net Effect</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -2751,8 +2725,18 @@
                                     <td class="pl-2">(I)</td>
                                     <td class="text-left">Accounting Policies</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2760,8 +2744,18 @@
                                     <td class="pl-2">(II)</td>
                                     <td class="text-left">Valuation of Inventories other than the effect of change in method of valuation u/s 145A, if the same is separately reported at col. 4d or 4e of Part A-</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2769,8 +2763,18 @@
                                     <td class="pl-2">(III)</td>
                                     <td class="text-left">Construction Contracts</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2778,8 +2782,18 @@
                                     <td class="pl-2">(IV)</td>
                                     <td class="text-left">Revenue Recognition</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2787,8 +2801,18 @@
                                     <td class="pl-2">(V)</td>
                                     <td class="text-left">Tangible Fixed Assets</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2796,8 +2820,18 @@
                                     <td class="pl-2">(VI)</td>
                                     <td class="text-left">Changes in Foreign Exchange Rates</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2805,8 +2839,18 @@
                                     <td class="pl-2">(VII)</td>
                                     <td class="text-left">Government Grants</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2814,8 +2858,18 @@
                                     <td class="pl-2">(VIII)</td>
                                     <td class="text-left">Securities (other than the effect of change in method of valuation u/s 145A, if the same is separately reported at col. 4d or 4e of Part A-OI)</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2823,8 +2877,18 @@
                                     <td class="pl-2">(IX)</td>
                                     <td class="text-left">	Borrowing Costs</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -2832,26 +2896,34 @@
                                     <td class="pl-2">(X)</td>
                                     <td class="text-left">Provisions, Contingent Liabilities and Contingent Assets</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pl-2">(XIa)</td>
+                                    <td class="pl-2">(XI)</td>
                                     <td class="text-left">Total effect of ICDS adjustments on profit (If Positive)</td>
                                     <td class="text-right">
                                         0
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td class="pl-2">(XIb)</td>
-                                    <td class="text-left">Total effect of ICDS adjustments on profit (If Positive)</td>
                                     <td class="text-right">
                                         0
                                     </td>
-                                </tr>
-                                
+                                    <td class="text-right">
+                                        0
+                                    </td>
+                                </tr>    
                             </tbody>
                         </table>
                     </div>
@@ -2863,7 +2935,7 @@
             </div>
         </div>
     </div>
-     <!-- ============================= Expenses Allowed as per Part A - OI (30 & 31)===================================== -->
+    <!-- ============================= Expenses Allowed as per Part A - OI (30 & 31)===================================== -->
     <div class="modal fade bnusinessModelas" id="modalSeven" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -2879,8 +2951,8 @@
                                     <td class="pl-2">(8B)</td>
                                     <td class="text-left">Any amount disallowed under section 40 in any preceding previous year but allowable during the previous year</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2895,8 +2967,8 @@
                                     <td></td>
                                     <td class="text-left"> (a) Any sum in the nature of tax, duty, cess or fee under any law</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2904,8 +2976,8 @@
                                     <td></td>
                                     <td class="text-left"> (b) Any sum payable by way of contribution to any provident fund or superannuation fund or gratuity fund or any other fund for the welfare of employees	</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2913,8 +2985,8 @@
                                     <td></td>
                                     <td class="text-left"> (c) Any sum payable to an employee as bonus or commission for services rendered</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2922,8 +2994,8 @@
                                     <td></td>
                                     <td class="text-left"> (d) Any sum payable as interest on any loan or borrowing from any public financial institution or a State financial </td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2931,8 +3003,8 @@
                                     <td></td>
                                     <td class="text-left pl-4"> (a) Any sum payable as interest on any loan or borrowing from a deposit taking non-banking financial company or systemically important non-deposit taking non-banking financial company	</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2940,8 +3012,8 @@
                                     <td></td>
                                     <td class="text-left"> (e) Any sum payable as interest on any loan or borrowing from any scheduled bank or a co-operative bank </td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2949,8 +3021,8 @@
                                     <td></td>
                                     <td class="text-left"> (f) Any sum payable towards leave encashment</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2958,8 +3030,8 @@
                                     <td></td>
                                     <td class="text-left"> (g) Any sum payable to the Indian Railways for the use of railway assets</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
                                         </div>
                                     </td>
                                 </tr>
@@ -2967,7 +3039,7 @@
                                     <td></td>
                                     <td class="text-left"> (h) Type Amount allowable under section 43B (Type of 10a to 10g)</td>
                                     <td class="text-right">
-                                    0
+                                        0
                                     </td>
                                 </tr>
                             </tbody>
@@ -2981,7 +3053,7 @@
             </div>
         </div>
     </div>
-    <!-- ============================= Increase in Profit as per Sch. ICDS===================================== -->
+    <!-- ============================= ===================================== -->
     <div class="modal fade bnusinessModelas" id="modalSix" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -2993,10 +3065,21 @@
                     <div class="table-responsive hideScrollbar">
                         <table class="aalign-middle mb-0 table table-borderless table-striped">
                             <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Particulars</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <thead>
                                 <tr class="totalCount">
-                                    <th class="text-left pl-2">SN. No.</th>
-                                    <th class="text-left">Particulars</th>
-                                    <th class="text-center">Amount</th>
+                                    <th class="text-left" width="70">SN. No.</th>
+                                    <th class="text-left" width="500">ICDS</th>
+                                    <th class="text-center">Increase in Profit</th>
+                                    <th class="text-center">Decrease in Profit</th>
+                                    <th class="text-center">Net Effect</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -3004,8 +3087,18 @@
                                     <td class="pl-2">(I)</td>
                                     <td class="text-left">Accounting Policies</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3013,8 +3106,18 @@
                                     <td class="pl-2">(II)</td>
                                     <td class="text-left">Valuation of Inventories other than the effect of change in method of valuation u/s 145A, if the same is separately reported at col. 4d or 4e of Part A-</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3022,8 +3125,18 @@
                                     <td class="pl-2">(III)</td>
                                     <td class="text-left">Construction Contracts</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3031,8 +3144,18 @@
                                     <td class="pl-2">(IV)</td>
                                     <td class="text-left">Revenue Recognition</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3040,8 +3163,18 @@
                                     <td class="pl-2">(V)</td>
                                     <td class="text-left">Tangible Fixed Assets</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3049,8 +3182,18 @@
                                     <td class="pl-2">(VI)</td>
                                     <td class="text-left">Changes in Foreign Exchange Rates</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3058,8 +3201,18 @@
                                     <td class="pl-2">(VII)</td>
                                     <td class="text-left">Government Grants</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3067,8 +3220,18 @@
                                     <td class="pl-2">(VIII)</td>
                                     <td class="text-left">Securities (other than the effect of change in method of valuation u/s 145A, if the same is separately reported at col. 4d or 4e of Part A-OI)</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3076,8 +3239,18 @@
                                     <td class="pl-2">(IX)</td>
                                     <td class="text-left">	Borrowing Costs</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -3085,26 +3258,211 @@
                                     <td class="pl-2">(X)</td>
                                     <td class="text-left">Provisions, Contingent Liabilities and Contingent Assets</td>
                                     <td>
-                                        <div class="col">
-                                            <input type="text" class="form-control" value="0">
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0" disabled>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pl-2">(XIa)</td>
+                                    <td class="pl-2">(XI)</td>
                                     <td class="text-left">Total effect of ICDS adjustments on profit (If Positive)</td>
                                     <td class="text-right">
                                         0
                                     </td>
+                                    <td class="text-right">
+                                        0
+                                    </td>
+                                    <td class="text-right">
+                                        0
+                                    </td>
+                                </tr>    
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center modal-btn-group">
+                        <a href="#000" class="btn btn-info">Done or Press ESC</a>
+                        <a href="#000" data-bs-dismiss="modal" class="btn btn-secondary">Cancle</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================= Increase in Profit as per Sch. ICDS===================================== -->
+    <div class="modal fade bnusinessModelas" id="expAllow2729" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="staticBackdropLabel">Schedule ESR</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body edit-data-box">
+                    <div class="modalTableHeader">
+                        <h2>Expenditure on Scientific Research etc. (Deduction under section 35CCC or 35CCD)</h2>
+                    </div>
+                    <div class="table-responsive hideScrollbar">
+                        <table class="aalign-middle mb-0 table table-borderless table-striped">
+                            <thead>
+                                <tr class="totalCount">
+                                    <th class="text-center" width="70">SN. No.</th>
+                                    <th class="text-center">Expenditure of the nature referred to in section</th>
+                                    <th class="text-center" width="300">Amount, if any, debited to profit and loss account</th>
+                                    <th class="text-center" width="300">Amount of deduction allowable</th>
+                                    <th class="text-center">Amount of deduction in excess of the amount debited to profit and loss account</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">(I)</td>
+                                    <td class="text-center">35(1)(i)</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
                                 </tr>
                                 <tr>
-                                    <td class="pl-2">(XIb)</td>
-                                    <td class="text-left">Total effect of ICDS adjustments on profit (If Positive)</td>
-                                    <td class="text-right">
-                                        0
+                                    <td class="text-center">(II)</td>
+                                    <td class="text-center">35(1)(ii)</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
                                     </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
                                 </tr>
-                                
+                                <tr>
+                                    <td class="text-center">(III)</td>
+                                    <td class="text-center">35(1)(iia)</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">(IV)</td>
+                                    <td class="text-center">35(1)(iii)</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">V</td>
+                                    <td class="text-center">35(1)(iv)</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">(VI)</td>
+                                    <td class="text-center">35(2AA)</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">(VII)</td>
+                                    <td class="text-center">35(2AB)</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">(VIII)</td>
+                                    <td class="text-center">35CCC</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">(IX)</td>
+                                    <td class="text-center">35CCD</td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="number"  onkeypress="return event.charCode >= 48" min="1" class="form-control text-right" value="0">
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr class="totalCount">
+                                    <td class="text-center">(X)</td>
+                                    <td class="text-center">Total</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

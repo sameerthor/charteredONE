@@ -3081,9 +3081,9 @@ background-image: none;
 }
 .accordion-button.collapsed::after {
   background-image: none !important;
-  display: none;
+  
 }
-.accordion-button.collapsed::before {
+.accordion-button.collapsed::after {
   content: "\f107";
   font-family: FontAwesome;
   margin: 0 10px 0 0;
@@ -3392,4 +3392,10 @@ background-image: none;
    }
    .form-select:focus{
     box-shadow: none;
+   }
+   .modalTableHeader h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: .8rem;
    }
