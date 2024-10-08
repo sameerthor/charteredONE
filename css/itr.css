@@ -3476,3 +3476,7 @@ background-image: none;
   color: #636363;
   border: 1px solid #ddd;
  }
+ .form-check .form-check-input{
+  box-shadow: none;
+  cursor: pointer;
+ }
