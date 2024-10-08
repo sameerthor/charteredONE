@@ -3480,3 +3480,9 @@ background-image: none;
   box-shadow: none;
   cursor: pointer;
  }
+ .auditorTable .table .form-check-input{
+  margin-top: 0;
+ }
+ .auditorTable .table .form-control, .auditorTable .table .form-select{
+ max-width: 10rem;
+ }

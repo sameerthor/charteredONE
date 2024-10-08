@@ -238,77 +238,134 @@
                                             <!-- ============================ -->
                                            
                                             <div class="edit-data-box">
-                                                <div class="table-responsive" id="">
+                                                <div class="table-responsive auditorTable">
                                                     <table class="align-middle mb-0 table table-borderless table-striped">
                                                         <tbody>
                                                             <tr>
                                                                 <td>Are you liable to maintain accounts as per section 44AA?</td>
                                                                 <td class="text-right">
-                                                                    <div class="button-group col" data-group="group20">
-                                                                        <button class="button active" onclick="highlightButton(this)">Yes</button>
-                                                                        <button class="button" onclick="highlightButton(this)">No</button>
+                                                                    <div class="button-group">
+                                                                        <button class="button" onclick="toggleRows(this, true)">Yes</button>
+                                                                        <button class="button" onclick="toggleRows(this, false)">No</button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Whether assessee is declaring income only under section 44AE/44B/44BB/44AD/44ADA/44BBA</td>
                                                                 <td class="text-right">
-                                                                    <div class="button-group col" data-group="group21">
-                                                                        <button class="button"  onclick="highlightButton(this); disableInput();">Yes</button>
-                                                                        <button  class="button active" onclick="highlightButton(this); enableInput();">No</button>
+                                                                    <div class="button-group">
+                                                                        <button class="button" data-target="row1" data-action="hide" onclick="toggleRows(this)">Yes</button>
+                                                                        <button class="button" data-target="row1" data-action="show" onclick="toggleRows(this)">No</button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <td>Total sales/turnover/gross receipts of business <small>(Not Applicable if Yes)</small></td>
+                                                            <tr data-row="row1">
+                                                                <td>Total sales/turnover/gross receipts of business</td>
                                                                 <td class="text-right">
-                                                                    <select class="form-select" aria-label="Default select example" id="myInput">
-                                                                        <option selected>Select</option>
-                                                                        <option value="1">Between 1 to 10 Cr</option>
-                                                                        <option value="2"> <1CR </option>
-                                                                        <option value="3">>1CR</option>
-                                                                    </select>
+                                                                    <div class="d-flex justify-content-end">
+                                                                        <select class="form-select" aria-label="Default select example" id="myInput">
+                                                                            <option selected>Select</option>
+                                                                            <option value="1">Between 1 to 10 Cr</option>
+                                                                            <option value="2"> < 1CR </option>
+                                                                            <option value="3"> > 1CR</option>
+                                                                        </select>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Are you liable for audit under section 44AB?</td>
                                                                 <td class="text-right">
-                                                                    <div class="button-group col" data-group="group22">
-                                                                        <button class="button"  onclick="highlightButton(this);">Yes</button>
-                                                                        <button  class="button active" onclick="highlightButton(this);">No</button>
+                                                                    <div class="button-group">
+                                                                        <button class="button" data-target="row2,row3" data-action="show" onclick="toggleRows(this)">Yes</button>
+                                                                        <button class="button" data-target="row2,row3" data-action="hide" onclick="toggleRows(this)">No</button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td>Whether the accounts have been audited by an accountant? <small>(Applicable only if above row is Yes)</small></td>
+                                                                <td>Whether the accounts have been audited by an accountant?</td>
                                                                 <td class="text-right">
-                                                                    <div class="button-group col" data-group="group24">
-                                                                        <button class="button"  onclick="highlightButton(this);">Yes</button>
-                                                                        <button  class="button active" onclick="highlightButton(this);">No</button>
+                                                                    <div class="button-group">
+                                                                        <button class="button" onclick="toggleRows(this)">Yes</button>
+                                                                        <button class="button" onclick="toggleRows(this)">No</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-row="row2">
+                                                                <td>Sales, turnover or gross receipts exceed the limits specified u/s 44AB</td>
+                                                                <td class="text-right">
+                                                                    <div class="button-group">
+                                                                        <button class="button" onclick="toggleRows(this)">Yes</button>
+                                                                        <button class="button" onclick="toggleRows(this)">No</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                            <tr data-row="row3">
+                                                                <td>Assessee falling under section but not offering income on a presumptive basis</td>
+                                                                <td class="text-right">
+                                                                    <div class="checksGroup d-flex flex-row justify-content-end pr-2">
+                                                                        <div class="form-check form-switch align-items-center d-flex mr-4">
+                                                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                                            <label class="form-check-label" for="flexSwitchCheckDefault">44AD</label>
+                                                                        </div>
+                                                                        <div class="form-check form-switch align-items-center d-flex mr-4">
+                                                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                                            <label class="form-check-label" for="flexSwitchCheckDefault">44ADA </label>
+                                                                        </div>
+                                                                        <div class="form-check form-switch align-items-center d-flex mr-4">
+                                                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                                            <label class="form-check-label" for="flexSwitchCheckDefault">44AE </label>
+                                                                        </div>
+                                                                        <div class="form-check form-switch align-items-center d-flex mr-4">
+                                                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                                            <label class="form-check-label" for="flexSwitchCheckDefault">44BB </label>
+                                                                        </div>
+                                                                        <div class="form-check form-switch align-items-center d-flex">
+                                                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                                            <label class="form-check-label" for="flexSwitchCheckDefault">Other</label>
+                                                                        </div>
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Date of furnishing of the audit report</td>
                                                                 <td class="text-right">
-                                                                    <div class="col">
+                                                                    <div class="d-flex justify-content-end">
                                                                         <input type="date" class="form-control"> 
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Acknowledgement No.</td>
+                                                                <td class="text-right">
+                                                                    <div class="d-flex justify-content-end">
+                                                                        <input type="text" class="form-control" placeholder="Enter Ack No."> 
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>AUDIN</td>
+                                                                <td class="text-right">
+                                                                    <div class="d-flex justify-content-end">
+                                                                        <input type="text" class="form-control" placeholder="Enter UDIN No."> 
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Name of the auditor signing the tax audit report</td>
                                                                 <td class="text-right">
-                                                                    <select class="form-select" aria-label="Default select example" id="myInput">
-                                                                        <option selected></option>
-                                                                        <option value="auditorMaster.html">Add New</option>
-                                                                    </select>
+                                                                    <div class="d-flex justify-content-end">
+                                                                        <select class="form-select" aria-label="Default select example" id="myInput">
+                                                                            <option selected></option>
+                                                                            <option value="auditorMaster.html">Add New</option>
+                                                                        </select>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Date of report of the audit</small></td>
                                                                 <td class="text-right">
-                                                                    <div class="col">
+                                                                    <div class="d-flex justify-content-end">
                                                                         <input type="date" class="form-control"> 
                                                                     </div>
                                                                 </td>
@@ -316,42 +373,50 @@
                                                             <tr>
                                                                 <td>Are you liable for Audit u/s 92E?</td>
                                                                 <td class="text-right">
-                                                                    <div class="button-group col" data-group="group25">
-                                                                        <button class="button active"  onclick="highlightButton(this);">Yes</button>
-                                                                        <button  class="button " onclick="highlightButton(this);">No</button>
+                                                                    <div class="button-group">
+                                                                        <button class="button" data-target="row4" data-action="show" onclick="toggleRows(this)">Yes</button>
+                                                                        <button class="button" data-target="row4" data-action="hide" onclick="toggleRows(this)">No</button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <td>Whether the accounts have been audited u/s 92E?<small>(Applicable only if above row is Yes)</small></td>
+                                                            <tr data-row="row4">
+                                                                <td>Whether the accounts have been audited u/s 92E</td>
                                                                 <td class="text-right">
-                                                                    <div class="button-group col" data-group="group26">
-                                                                        <button class="button active"  onclick="highlightButton(this);">Yes</button>
-                                                                        <button  class="button " onclick="highlightButton(this);">No</button>
+                                                                    <div class="button-group">
+                                                                        <button class="button" data-target="row5,row6" data-action="show" onclick="toggleRows(this)">Yes</button>
+                                                                        <button class="button" data-target="row5,row6" data-action="hide" onclick="toggleRows(this)">No</button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <td>Date of furnishing of the audit report<small>(Applicable only if above row is Yes)</small></td>
+                                                            <tr data-row="row5">
+                                                                <td>Date of furnishing of the audit report</td>
                                                                 <td class="text-right">
-                                                                    <div class="col">
+                                                                    <div class="d-flex justify-content-end">
                                                                         <input type="date" class="form-control"> 
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-row="row6">
+                                                                <td>Acknowledgement No.</td>
+                                                                <td class="text-right">
+                                                                    <div class="d-flex justify-content-end">
+                                                                        <input type="text" class="form-control" placeholder="Enter Ack. No."> 
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>If liable to furnish other audit report under the Income-tax Act/Other Act, mention whether have you furnished such report. If yes, please provide the details as under</td>
                                                                 <td class="text-right">
-                                                                    <div class="button-group col" data-group="group27">
-                                                                        <button class="button active"  onclick="highlightButton(this);">Yes</button>
-                                                                        <button  class="button " onclick="highlightButton(this);">No</button>
+                                                                    <div class="button-group">
+                                                                        <button class="button" data-target="responsiveTable" data-action="show" onclick="toggleRows(this)">Yes</button>
+                                                                        <button class="button" data-target="responsiveTable" data-action="hide" onclick="toggleRows(this)">No</button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                <div class="table-responsive" id="">
+                                                <div class="table-responsive" data-div="responsiveTable">
                                                     <table class="align-middle mb-0 table table-borderless table-striped">
                                                         <thead class="totalCount">
                                                             <th class="text-left">
@@ -364,11 +429,12 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-                                                            <th class="text-center">Act</th>
+                                                            <th class="text-center" width="300">Act</th>
                                                             <th class="text-center">Section Code</th>
                                                             <th class="text-center">Description</th>
                                                             <th class="text-center">Date</th>
-                                                            <td class="text-center">
+                                                            <th class="text-center">Acknowledgement No.</th>
+                                                            <td class="text-right">
                                                                 <div class="action_container" width="50">
                                                                     <button class="success" onclick="create_tr('table_bodyOne')">
                                                                     <i class="fa fa-plus"></i>
@@ -393,12 +459,7 @@
                                                                     </select>
                                                                 </td>
                                                                 <td>
-                                                                    <select class="form-select" aria-label="Default select example">
-                                                                        <option selected></option>
-                                                                        <option value="1">10A</option>
-                                                                        <option value="2">10AA</option>
-                                                                        <option value="3">10(4D)</option>
-                                                                    </select>
+                                                                    <input type="text" class="form-control">
                                                                 </td>
                                                                 <td class="text-center">
                                                                     <span>--</span>
@@ -409,6 +470,9 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="text-center">
+                                                                    <span>--</span>
+                                                                </td>
+                                                                <td class="text-right">
                                                                     <div class="action_container">
                                                                         <button class="danger" onclick="remove_tr(this)">
                                                                             <i class="fa-solid fa-trash"></i>
@@ -419,7 +483,6 @@
                                                     </table>
                                                 </div>        
                                                 <!-- ============================================= -->
-                                                
                                             </div>
                                         </div>
                                     </div>                                
@@ -454,25 +517,56 @@
         </div>
     </div>
     <script>
-        function highlightButton(clickedButton) {
-            const group = clickedButton.parentNode.getAttribute('data-group');
-            const buttonsInGroup = document.querySelectorAll(`.button-group[data-group="${group}"] .button`);
+      function toggleRows(button) {
+        const targetAttr = button.getAttribute('data-target');
+        const action = button.getAttribute('data-action');
 
-            buttonsInGroup.forEach(button => {
-            button.classList.remove('active');
+        if (targetAttr) {
+            const targets = targetAttr.split(',');
+            targets.forEach(target => {
+                const row = document.querySelector(`tr[data-row="${target}"]`);
+                const div = document.querySelector(`div[data-div="${target}"]`);
+                
+                if (row) {
+                    row.style.display = action === 'show' ? 'table-row' : 'none';
+                } else if (div) {
+                    div.style.display = action === 'show' ? 'block' : 'none';
+                } else {
+                    console.warn(`No element found with data-row or data-div="${target}"`);
+                }
             });
+        }
+        const buttons = button.parentElement.querySelectorAll('.button');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    }
+    function initializeToggleElements() {
+        document.querySelectorAll('tr[data-row], div[data-div]').forEach(element => {
+            element.style.display = 'none';
+        });
 
-            clickedButton.classList.add('active');
-        }
-    </script>
-    <script>
-        function enableInput() {
-          document.getElementById("myInput").disabled = false;
-        }
-    
-        function disableInput() {
-          document.getElementById("myInput").disabled = true;
-        }
+        document.querySelectorAll('.button.active').forEach(button => {
+            const targetAttr = button.getAttribute('data-target');
+            const action = button.getAttribute('data-action');
+            
+            if (targetAttr) {
+                const targets = targetAttr.split(',');
+                targets.forEach(target => {
+                    const row = document.querySelector(`tr[data-row="${target}"]`);
+                    const div = document.querySelector(`div[data-div="${target}"]`);
+                    
+                    if (row) {
+                        row.style.display = action === 'show' ? 'table-row' : 'none';
+                    } else if (div) {
+                        div.style.display = action === 'show' ? 'block' : 'none';
+                    }
+                });
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', initializeToggleElements);
+
     </script>
     <script>
         function create_tr(table_id) {
