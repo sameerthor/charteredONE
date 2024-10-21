@@ -1553,7 +1553,7 @@
                                             <div class="accordion table-accordian" id="accordionExampleOne">
                                                 <div class="accordion-item">
                                                   <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#revenueFromOpration" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <button class="accordion-button collapsed d-flex pl-1" type="button" data-bs-toggle="collapse" data-bs-target="#revenueFromOpration" aria-expanded="false" aria-controls="collapseTwo">
                                                         <span class="me-auto">(4) Revenue from operations</span>
                                                         <span class="ms-auto">0.00</span>
                                                     </button>
@@ -2053,78 +2053,84 @@
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table> 
-                                                                    </div>       
+                                                                    </div>                   
                                                                 </div>
+                                                            </div>
+                                                            <div class="table-responsive hideScrollbar">
+                                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="pl-4"> <span>(D)  Total Revenue from operations (Aiv + B +Cix)</span></th>
+                                                                            <td>0.00</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
                                                             </div>
                                                             </div>
                                                         </div>
                                                         <!-- ======= -->
-                                                        <!-- ========== -->
-                                                        <div class="table-responsive hideScrollbar">
-                                                            <table class="align-middle mb-0 table table-borderless table-striped">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th class="pl-5"> <span>(D)  Total Revenue from operations (Aiv + B +Cix)</span></th>
-                                                                        <td>0.00</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><span> (5) Closing Stock of Finished Goods</span></th>
-                                                                        <td>0.00</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><span>(6) Total of credits to Trading Account (4D + 5)</span></th>
-                                                                        <td>0.00</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th> <span>(7) Opening Stock of Finished Goods</span></th>
-                                                                        <td>0.00</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <table class="align-middle mb-0 table table-borderless table-striped">
-                                                                <thead>
-                                                                    <tr class="flex-table-row">
-                                                                        <td><span>(8) Purchases (net of refunds and duty or tax, if any)</span></td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div>
-                                                                                <span>0.00</span>
-                                                                                </div>
-                                                                                <div class="action_container" width="50">
-                                                                                    <button class="success" onclick="create_tr('table_bodyThirtySeven')">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </thead> 
-                                                                <tbody id="table_bodyThirtySeven">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div class="col">
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                                <div class="action_container">
-                                                                                    <button class="danger" onclick="remove_tr(this)">
-                                                                                        <i class="fa-solid fa-trash"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
                                                     </div>
                                                   </div>
                                                 </div>
+                                            </div>
+                                            <!-- ========== -->
+                                            <div class="table-responsive hideScrollbar">
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th><span> (5) Closing Stock of Finished Goods</span></th>
+                                                            <td>0.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th><span>(6) Total of credits to Trading Account (4D + 5)</span></th>
+                                                            <td>0.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th> <span>(7) Opening Stock of Finished Goods</span></th>
+                                                            <td>0.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="align-middle mb-0 table table-borderless table-striped">
+                                                    <thead>
+                                                        <tr class="flex-table-row">
+                                                            <td><span>(8) Purchases (net of refunds and duty or tax, if any)</span></td>
+                                                            <td>
+                                                                <div class="table-flex">
+                                                                    <div>
+                                                                    <span>0.00</span>
+                                                                    </div>
+                                                                    <div class="action_container" width="50">
+                                                                        <button class="success" onclick="create_tr('table_bodyThirtySeven')">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </thead> 
+                                                    <tbody id="table_bodyThirtySeven">
+                                                        <tr>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="table-flex">
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                    <div class="action_container">
+                                                                        <button class="danger" onclick="remove_tr(this)">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                             <!-- ================================= -->
                                             <div class="accordion table-accordian" id="accordionExampleTwo">
