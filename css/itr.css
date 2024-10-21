@@ -3486,3 +3486,13 @@ background-image: none;
  .auditorTable .table .form-control, .auditorTable .table .form-select{
  max-width: 10rem;
  }
+ .table-responsive .borderLessTable.table{
+  border: none;
+ }
+ .table-responsive .borderLessTable.table td{
+  border: none;
+ } 
+ .table-responsive .borderLessTable.table th{
+  border: none 
+ }
+ 

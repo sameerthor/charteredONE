@@ -1539,6 +1539,7 @@
                                             <div class="table-header">
                                                 <span>Trading Account</span>
                                             </div>
+                                            <!-- ====== -->
                                             <div class="table-responsive hideScrollbar">
                                                 <table class="align-middle mb-0 table table-borderless table-striped">
                                                     <thead>
@@ -1547,337 +1548,543 @@
                                                             <th class="text-center">Total</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                                <th> (4) Revenue from operations</th>
-                                                                <td>0.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th class="pl-4" colspan="2">  (A)   Sales/ Gross receipts of business (net of returns and refunds and duty or tax, if any)</th>
-                                                            </tr>
-                                                    </tbody>
-                                                    <thead>
-                                                        <tr class="flex-table-row">
-                                                            <td class="pl-4"><span>(B) Gross receipts from Profession</span></td>
-                                                            <td>
-                                                                <div class="table-flex">
-                                                                    <div>
-                                                                        <span>0.00</span>
-                                                                    </div>
-                                                                    <div class="action_container" width="50">
-                                                                        <button class="success" onclick="create_tr('table_bodyTwentyNine')">
-                                                                        <i class="fa fa-plus"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="table_bodyTwentyNine">
-                                                        <tr>
-                                                            <td>
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control" value="0">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="table-flex">
-                                                                    <div class="col">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
-                                                                    <div class="action_container">
-                                                                        <button class="danger" onclick="remove_tr(this)">
-                                                                            <i class="fa-solid fa-trash"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody> 
-                                                </table>
-                                            </div>
-                                            <!-- ================================= -->
+                                                </table>  
+                                            </div>     
                                             <div class="accordion table-accordian" id="accordionExampleOne">
                                                 <div class="accordion-item">
                                                   <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
-                                                        (C)   Duties, taxes and cess received or receivable in respect of goods and services sold or supplied
+                                                    <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#revenueFromOpration" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <span class="me-auto">(4) Revenue from operations</span>
+                                                        <span class="ms-auto">0.00</span>
                                                     </button>
                                                   </h2>
-                                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleOne">
+                                                  <div id="revenueFromOpration" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleOne">
                                                     <div class="accordion-body">
+                                                        <!-- === -->
+                                                        <div class="accordion table-accordian" id="accordionExampleOne">
+                                                            <div class="accordion-item">
+                                                              <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#revenueFromOpration" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    <span class="me-3">A</span>    Sales/ Gross receipts of business (net of returns and refunds and duty or tax, if any)
+                                                                </button>
+                                                              </h2>
+                                                              <div id="revenueFromOpration" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleOne">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive mt-2 hideScrollbar ps-5" style="max-width: 100%;">
+                                                                        <table class="_table align-middle table borderLessTable">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left" width="550"><i class="fa fa-plus plusIcon" onclick="create_tr('saleOfGoods')"></i> <span class="ps-2">(i) Sale of goods</span></th>
+                                                                                    <th class="text-left"></th>
+                                                                                    <th class="text-right pe-5">0</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody id="saleOfGoods">
+                                                                                <tr class="clubbingRow">
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <div class="creteRowBtn mr-2">
+                                                                                                <button class="danger ms-0" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-x"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <div style="width: 100%;">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div>
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    
+                                                                                    <td>
+                                                                                        
+                                                                                    </td>
+                                                                                  </tr>
+                                                                                </tbody>    
+                                                                        </table>
+                                                                        <!-- -====== -->
+                                                                        <table class="_table align-middle table borderLessTable">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left" width="550"><i class="fa fa-plus plusIcon" onclick="create_tr('saleOfServies')"></i> <span class="ps-2">(ii) Sale of service</span></th>
+                                                                                    <th class="text-left"></th>
+                                                                                    <th class="text-right pe-5">0</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody id="saleOfServies">
+                                                                                <tr class="clubbingRow">
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <div class="creteRowBtn mr-2 ml-0">
+                                                                                                <button class="danger ms-0" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-x"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <div style="width: 100%;">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div>
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    
+                                                                                    <td>
+                                                                                        
+                                                                                    </td>
+                                                                                  </tr>
+                                                                                </tbody>    
+                                                                        </table>
+                                                                        <!-- -====== -->
+                                                                        <table class="_table align-middle table borderLessTable">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left" width="550"><i class="fa fa-plus plusIcon" onclick="create_tr('operatingRevenue')"></i> <span class="ps-2">(iii) Other operating revenues (specify nature and amount)</span></th>
+                                                                                    <th class="text-left"></th>
+                                                                                    <th class="text-right pe-5">0</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody id="operatingRevenue">
+                                                                                <tr class="clubbingRow">
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <div class="creteRowBtn mr-2 ml-0">
+                                                                                                <button class="danger ms-0" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-x"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <div style="width: 100%;">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div>
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    
+                                                                                    <td>
+                                                                                        
+                                                                                    </td>
+                                                                                  </tr>
+                                                                            </tbody>
+                                                                            <tbody>
+                                                                                <tr class="totalCount">
+                                                                                    <th>Total(iii)</th>
+                                                                                    <th></th>
+                                                                                    <th class="text-right pe-5">0</th>
+                                                                                </tr>
+                                                                                <tr class="totalCount">
+                                                                                    <th>Total (i + ii + iii )</th>
+                                                                                    <th></th>
+                                                                                    <th class="text-right pe-5">0</th>
+                                                                                </tr>
+                                                                            </tbody>       
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- ====== -->
+                                                        <div class="table-responsive hideScrollbar ps-5">
+                                                            <table class="_table align-middle table borderLessTable">
+                                                                <thead class="bg-light">
+                                                                    <tr>
+                                                                        <th class="text-left" width="550"><span class="pe-2">(B) Gross receipts from Profession</span> <i class="fa fa-plus plusIcon" onclick="create_tr('grossReceipts')"></i></th>
+                                                                        <th class="text-left"></th>
+                                                                        <th class="text-right pe-5">0</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody id="grossReceipts">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center">
+                                                                                <div class="creteRowBtn mr-2 ml-0">
+                                                                                    <button class="danger ms-0" onclick="remove_tr(this)">
+                                                                                        <i class="fa-solid fa-x"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div style="width: 100%;">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        
+                                                                        <td>
+                                                                            
+                                                                        </td>
+                                                                      </tr>
+                                                                </tbody>    
+                                                            </table>
+                                                        </div>
+                                                         <!-- ================================= -->
+                                                        <div class="accordion table-accordian" id="accordionExampleTwo">
+                                                            <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dutiesTaxes" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    (C)   Duties, taxes and cess received or receivable in respect of goods and services sold or supplied
+                                                                </button>
+                                                            </h2>
+                                                            <div id="dutiesTaxes" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive hideScrollbar">
+                                                                        <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                            <thead>
+                                                                                <tr class="flex-table-row">
+                                                                                    <td class="pl-5"><span>(i) Union Excise duties</span></td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div>
+                                                                                            <span>0.00</span>
+                                                                                            </div>
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyThirty')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead> 
+                                                                            <tbody id="table_bodyThirty">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="col">
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <div class="action_container">
+                                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            
+                                                                            <thead>
+                                                                                <tr class="flex-table-row">
+                                                                                    <td class="pl-5"><span>(ii) Service tax</span></td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div>
+                                                                                            <span>0.00</span>
+                                                                                            </div>
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyThirtyOne')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead> 
+                                                                            <tbody id="table_bodyThirtyOne">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="col">
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <div class="action_container">
+                                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <thead>
+                                                                                <tr class="flex-table-row">
+                                                                                    <td class="pl-5"><span>(iii) VAT/ Sales tax</span></td> 
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div>
+                                                                                            <span>0.00</span>
+                                                                                            </div>
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyThirtyTwo')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead> 
+                                                                            <tbody id="table_bodyThirtyTwo">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="col">
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <div class="action_container">
+                                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <thead>
+                                                                                <tr class="flex-table-row">
+                                                                                    <td class="pl-5"><span>(iv) Central Goods & Service Tax (CGST)</span></td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div>
+                                                                                            <span>0.00</span>
+                                                                                            </div>
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyThirtyThree')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead> 
+                                                                            <tbody id="table_bodyThirtyThree">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="col">
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <div class="action_container">
+                                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <thead>
+                                                                                <tr class="flex-table-row">
+                                                                                    <td class="pl-5"><span>(v) State Goods & Services Tax (SGST)</span></td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div>
+                                                                                            <span>0.00</span>
+                                                                                            </div>
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyThirtyFour')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead> 
+                                                                            <tbody id="table_bodyThirtyFour">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="col">
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <div class="action_container">
+                                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <thead>
+                                                                                <tr class="flex-table-row">
+                                                                                    <td class="pl-5"><span>(vi) Integrated Goods & Services Tax (IGST)</span></td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div>
+                                                                                            <span>0.00</span>
+                                                                                            </div>
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyThirtyFive')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead> 
+                                                                            <tbody id="table_bodyThirtyFive">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="col">
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <div class="action_container">
+                                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <thead>
+                                                                                <tr class="flex-table-row">
+                                                                                    <td class="pl-5"><span>(vii) Union Territory Goods & Services Tax (UTGST)</span></td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div>
+                                                                                            <span>0.00</span>
+                                                                                            </div>
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyThirtySix')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead> 
+                                                                            <tbody id="table_bodyThirtySix">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="col">
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <div class="action_container">
+                                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <thead>
+                                                                                <tr class="flex-table-row">
+                                                                                    <td class="pl-5"><span>(viii) Any other duty, tax and cess</span></td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div>
+                                                                                            <span>0.00</span>
+                                                                                            </div>
+                                                                                            <div class="action_container" width="50">
+                                                                                                <button class="success" onclick="create_tr('table_bodyThirtySeven')">
+                                                                                                <i class="fa fa-plus"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead> 
+                                                                            <tbody id="table_bodyThirtySeven">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="col">
+                                                                                            <input type="text" class="form-control">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="table-flex">
+                                                                                            <div class="col">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <div class="action_container">
+                                                                                                <button class="danger" onclick="remove_tr(this)">
+                                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tbody>
+                                                                                <tr class="totalCount">
+                                                                                    <th class="pl-5">Total (i + ii + iii + iv +v+ vi+vii+viii)</th>
+                                                                                    <td>0.00</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table> 
+                                                                    </div>       
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- ======= -->
+                                                        <!-- ========== -->
                                                         <div class="table-responsive hideScrollbar">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="pl-5"> <span>(D)  Total Revenue from operations (Aiv + B +Cix)</span></th>
+                                                                        <td>0.00</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><span> (5) Closing Stock of Finished Goods</span></th>
+                                                                        <td>0.00</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><span>(6) Total of credits to Trading Account (4D + 5)</span></th>
+                                                                        <td>0.00</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th> <span>(7) Opening Stock of Finished Goods</span></th>
+                                                                        <td>0.00</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                             <table class="align-middle mb-0 table table-borderless table-striped">
                                                                 <thead>
                                                                     <tr class="flex-table-row">
-                                                                        <td class="pl-5"><span>(i) Union Excise duties</span></td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div>
-                                                                                <span>0.00</span>
-                                                                                </div>
-                                                                                <div class="action_container" width="50">
-                                                                                    <button class="success" onclick="create_tr('table_bodyThirty')">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </thead> 
-                                                                <tbody id="table_bodyThirty">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div class="col">
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                                <div class="action_container">
-                                                                                    <button class="danger" onclick="remove_tr(this)">
-                                                                                        <i class="fa-solid fa-trash"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                
-                                                                <thead>
-                                                                    <tr class="flex-table-row">
-                                                                        <td class="pl-5"><span>(ii) Service tax</span></td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div>
-                                                                                <span>0.00</span>
-                                                                                </div>
-                                                                                <div class="action_container" width="50">
-                                                                                    <button class="success" onclick="create_tr('table_bodyThirtyOne')">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </thead> 
-                                                                <tbody id="table_bodyThirtyOne">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div class="col">
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                                <div class="action_container">
-                                                                                    <button class="danger" onclick="remove_tr(this)">
-                                                                                        <i class="fa-solid fa-trash"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <thead>
-                                                                    <tr class="flex-table-row">
-                                                                        <td class="pl-5"><span>(iii) VAT/ Sales tax</span></td> 
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div>
-                                                                                <span>0.00</span>
-                                                                                </div>
-                                                                                <div class="action_container" width="50">
-                                                                                    <button class="success" onclick="create_tr('table_bodyThirtyTwo')">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </thead> 
-                                                                <tbody id="table_bodyThirtyTwo">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div class="col">
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                                <div class="action_container">
-                                                                                    <button class="danger" onclick="remove_tr(this)">
-                                                                                        <i class="fa-solid fa-trash"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <thead>
-                                                                    <tr class="flex-table-row">
-                                                                        <td class="pl-5"><span>(iv) Central Goods & Service Tax (CGST)</span></td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div>
-                                                                                <span>0.00</span>
-                                                                                </div>
-                                                                                <div class="action_container" width="50">
-                                                                                    <button class="success" onclick="create_tr('table_bodyThirtyThree')">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </thead> 
-                                                                <tbody id="table_bodyThirtyThree">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div class="col">
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                                <div class="action_container">
-                                                                                    <button class="danger" onclick="remove_tr(this)">
-                                                                                        <i class="fa-solid fa-trash"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <thead>
-                                                                    <tr class="flex-table-row">
-                                                                        <td class="pl-5"><span>(v) State Goods & Services Tax (SGST)</span></td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div>
-                                                                                <span>0.00</span>
-                                                                                </div>
-                                                                                <div class="action_container" width="50">
-                                                                                    <button class="success" onclick="create_tr('table_bodyThirtyFour')">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </thead> 
-                                                                <tbody id="table_bodyThirtyFour">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div class="col">
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                                <div class="action_container">
-                                                                                    <button class="danger" onclick="remove_tr(this)">
-                                                                                        <i class="fa-solid fa-trash"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <thead>
-                                                                    <tr class="flex-table-row">
-                                                                        <td class="pl-5"><span>(vi) Integrated Goods & Services Tax (IGST)</span></td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div>
-                                                                                <span>0.00</span>
-                                                                                </div>
-                                                                                <div class="action_container" width="50">
-                                                                                    <button class="success" onclick="create_tr('table_bodyThirtyFive')">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </thead> 
-                                                                <tbody id="table_bodyThirtyFive">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div class="col">
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                                <div class="action_container">
-                                                                                    <button class="danger" onclick="remove_tr(this)">
-                                                                                        <i class="fa-solid fa-trash"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <thead>
-                                                                    <tr class="flex-table-row">
-                                                                        <td class="pl-5"><span>(vii) Union Territory Goods & Services Tax (UTGST)</span></td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div>
-                                                                                <span>0.00</span>
-                                                                                </div>
-                                                                                <div class="action_container" width="50">
-                                                                                    <button class="success" onclick="create_tr('table_bodyThirtySix')">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </thead> 
-                                                                <tbody id="table_bodyThirtySix">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <div class="table-flex">
-                                                                                <div class="col">
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                                <div class="action_container">
-                                                                                    <button class="danger" onclick="remove_tr(this)">
-                                                                                        <i class="fa-solid fa-trash"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <thead>
-                                                                    <tr class="flex-table-row">
-                                                                        <td class="pl-5"><span>(viii) Any other duty, tax and cess</span></td>
+                                                                        <td><span>(8) Purchases (net of refunds and duty or tax, if any)</span></td>
                                                                         <td>
                                                                             <div class="table-flex">
                                                                                 <div>
@@ -1913,80 +2120,11 @@
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
-                                                                <tbody>
-                                                                    <tr class="totalCount">
-                                                                        <th class="pl-5">Total (i + ii + iii + iv +v+ vi+vii+viii)</th>
-                                                                        <td>0.00</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table> 
-                                                        </div>       
+                                                            </table>
+                                                        </div>
                                                     </div>
                                                   </div>
                                                 </div>
-                                            </div>
-                                            <!-- ========== -->
-                                            <div class="table-responsive hideScrollbar">
-                                                <table class="align-middle mb-0 table table-borderless table-striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <th class="pl-4"> <span>(D)  Total Revenue from operations (Aiv + B +Cix)</span></th>
-                                                            <td>0.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th><span> (5) Closing Stock of Finished Goods</span></th>
-                                                            <td>0.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th><span>(6) Total of credits to Trading Account (4D + 5)</span></th>
-                                                            <td>0.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th> <span>(7) Opening Stock of Finished Goods</span></th>
-                                                            <td>0.00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <table class="align-middle mb-0 table table-borderless table-striped">
-                                                    <thead>
-                                                        <tr class="flex-table-row">
-                                                            <td><span>(8) Purchases (net of refunds and duty or tax, if any)</span></td>
-                                                            <td>
-                                                                <div class="table-flex">
-                                                                    <div>
-                                                                    <span>0.00</span>
-                                                                    </div>
-                                                                    <div class="action_container" width="50">
-                                                                        <button class="success" onclick="create_tr('table_bodyThirtySeven')">
-                                                                        <i class="fa fa-plus"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </thead> 
-                                                    <tbody id="table_bodyThirtySeven">
-                                                        <tr>
-                                                            <td>
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="table-flex">
-                                                                    <div class="col">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
-                                                                    <div class="action_container">
-                                                                        <button class="danger" onclick="remove_tr(this)">
-                                                                            <i class="fa-solid fa-trash"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
                                             </div>
                                             <!-- ================================= -->
                                             <div class="accordion table-accordian" id="accordionExampleTwo">
