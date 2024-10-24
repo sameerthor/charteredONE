@@ -3495,4 +3495,6 @@ background-image: none;
  .table-responsive .borderLessTable.table th{
   border: none 
  }
- 
+ .card-header .form-check-input{
+  cursor: pointer;
+ }

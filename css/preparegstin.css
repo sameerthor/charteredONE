@@ -1707,5 +1707,7 @@ font-weight: 500;
 padding: .6rem 1rem;
 border-radius: 5px;
 letter-spacing: .5px;
-
 }
+.form-check-input{
+  cursor: pointer;
+ }
