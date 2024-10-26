@@ -2920,7 +2920,7 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
@@ -3341,39 +3341,28 @@ $(".closeall").click(function () {
       });
     </script>
     <script>
-          // Select the carousel element
 const carouselElement = document.querySelector('#carouselExampleAutoplaying');
-
-// Initialize the carousel without automatic autoplay
 const carousel = new bootstrap.Carousel(carouselElement, {
-  interval: 6000,  // Set interval for autoplay (in ms) if autoplay is turned on
-  ride: false      // Set to 'carousel' for autoplay or leave as false for manual control
+  interval: 6000,  
+  ride: false    
 });
 
-// Function to toggle autoplay
 function toggleAutoplay(shouldAutoplay) {
   if (shouldAutoplay) {
-    carousel.cycle();  // Start autoplaying
+    carousel.cycle();  
   } else {
-    carousel.pause();  // Stop autoplaying
+    carousel.pause(); 
   }
 }
 
-// Example usage
-toggleAutoplay(false);  // Start autoplay
-// toggleAutoplay(false); // Stop autoplay
+toggleAutoplay(true); 
 
-    </script>
-
-    <script>
-
+//
 const slides = carouselElement.querySelectorAll('.carousel-item');
-const indicatorsContainer = document.querySelector('.carousel-indicators'); // Select outside the carousel
+const indicatorsContainer = document.querySelector('.carousel-indicators');
 
-// Clear existing dots (if any)
 indicatorsContainer.innerHTML = '';
 
-// Create dots dynamically based on the number of slides
 slides.forEach((slide, index) => {
   const dot = document.createElement('button');
   dot.type = 'button';
@@ -3381,35 +3370,27 @@ slides.forEach((slide, index) => {
   dot.setAttribute('data-bs-slide-to', index);
   dot.setAttribute('aria-label', `Slide ${index + 1}`);
   
-  // Set the first dot as active
   if (index === 0) {
     dot.classList.add('active');
     dot.setAttribute('aria-current', 'true');
   }
 
-  // Append the dot to the indicators container
   indicatorsContainer.appendChild(dot);
 });
 
-// Add event listener to update active class on slide change
 carouselElement.addEventListener('slid.bs.carousel', function () {
-  // Remove active class from all dots
   indicatorsContainer.querySelectorAll('button').forEach(dot => {
     dot.classList.remove('active');
     dot.removeAttribute('aria-current');
   });
 
-  // Get the index of the current active slide
   const activeIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-
-  // Add active class to the corresponding dot
   const activeDot = indicatorsContainer.querySelector(`[data-bs-slide-to="${activeIndex}"]`);
   if (activeDot) {
     activeDot.classList.add('active');
     activeDot.setAttribute('aria-current', 'true');
   }
 });
-
 
     </script>
   </body>
