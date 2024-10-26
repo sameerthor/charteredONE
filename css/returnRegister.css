@@ -722,3 +722,204 @@ tr[aria-expanded="true"] .TL_accordion::before {
         width: 100%;
     }
 }
+.headerLogo{
+  object-fit: contain;
+}
+.clientIdOnHeader {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.clientIdOnHeader span{
+  font-weight: 600;
+  color: rgb(49, 113, 155);
+  font-size: .9rem;
+  display: inline-block;
+  margin-bottom: .4rem;
+}
+.clientIdOnHeader small{
+  font-weight: 500;
+  color: rgb(49, 113, 155);
+  font-size: .8rem;
+}
+.gstInsightModal .modal-content{
+  width: 1000px;
+  max-width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+  outline: 0;
+  height: calc(100vh - 10vh);
+  overflow-y: auto;
+}
+.gstInsightModal .modal-content::-webkit-scrollbar{
+ display: none;
+}
+.gstInsightModal .modal-dialog{
+  max-width: 100%;
+  margin: auto;
+  justify-content: center;
+  box-shadow: none;
+  height: 100vh;
+}
+.gstInsightModal .insignAnimation img{
+  max-width: 100%;
+}
+.gstInsightModal h3{
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  line-height: 28px;
+  font-weight: 600;
+  text-align: left;
+  color: #31719b;
+}
+.gstInsightModal .basicDetailsHeading{
+ display: flex;
+ align-items: center;
+}
+.gstInsightModal .basicDetailsHeading span{
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 28px;
+  font-weight: 600;
+  text-align: left;
+  color: #31719b;
+}
+.gstInsightModal .basicDetailsHeading .svgBox{
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  padding: 3px 5px;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px #e8e6ff;
+  color: #31719b;
+  margin-right: .5rem;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.gstInsightModal .basicDetailsHeading .svgBox svg{
+  fill: #31719b;
+  width: 18px;
+  height: 18px;
+}
+.gstInsightModal .basicDetails li{
+  padding-left: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 28px;
+  font-weight: 600;
+  text-align: left;
+  color: #ff9800;
+  margin-bottom: 1rem;
+}
+.gstInsightModal ol.basicDetails{
+  padding-left: 60px;
+ }
+.gstInsightModal ol.basicDetails li{
+ list-style-type: decimal;
+ margin-bottom: .5rem;
+}
+.gstInsightModal .basicDetails li a{
+  color: #007bff;
+}
+.gstInsightModal .basicDetails li span{
+  color: #31719b;
+}
+.gstInsightModal .tableBox{
+  display: block;
+  width: 500px;
+  overflow-x: auto;
+  padding: 8px 5px;
+  border-radius: 17px;
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 15px 0;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+.gstInsightModal .tableBox::-webkit-scrollbar{
+ display: none;
+}
+.gstInsightModal .tableBox table{
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+.gstInsightModal .tableBox table thead th{
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  border-top: 0;
+  font-size: 13.5px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 0;
+  color: #31719b;
+}
+.gstInsightModal .tableBox table tr td{
+  font-size: 12px;
+  font-weight: 500;
+  padding: .3rem .75rem;
+  color: #ff9800;
+  background-color: #fff;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.gstInsightModal .modal-footer{
+ display: flex;
+ flex-direction: column;
+ padding-top: .5rem;
+ border-top: 0;
+ padding-left: 4rem;
+ padding-right: 4rem;
+}
+.gstInsightModal .modal-footer .progress{
+  width: 100%;
+  margin-bottom: 1rem;
+ }
+ .gstInsightModal .modal-footer .progress-bar{
+  background-color: #ff9800;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: .5px;
+ }
+ .gstInsightModal .modal-footer .closeBtn{
+ border-radius: 1.7rem;
+ color: #fff;
+ font-weight: 500;
+ text-align: center;
+ padding: .4rem 1.2rem;
+ background-color: #ff9800;
+ border: none;
+ outline: none;
+ letter-spacing: .5px;
+ }
+/* carousel */
+/* .gstInsightModal .carousel-inner{
+  padding: 1rem;
+} */
+
+#carouselExampleAutoplaying{
+  position: relative;
+}
+.gstInsightModal .carousel-indicators{
+  position: absolute;
+  top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  left: 96%;
+  flex-direction: column;
+  align-items: right;
+  gap: 10px;
+  vertical-align: middle;
+}
+.gstInsightModal .carousel-indicators button{
+  width: .8rem;
+  height: .8rem;
+  background-color: #ff9800;
+  border: none;
+  outline: none;
+}
