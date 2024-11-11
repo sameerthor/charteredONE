@@ -338,6 +338,22 @@
                                             <div class="matchingTxt mt-1"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" color="#2F89FC" xmlns="http://www.w3.org/2000/svg" style="color: rgb(47, 137, 252);"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"></path></svg> GSTIN: 36EAVPM2218B1ZP | PAN: EAVPM2218B</div>
                                         </div>
                                     </div>
+                                    <div class="matchStep">
+                                        <div class="matchBlock">
+                                             <h2>Match and Reconcile</h2>
+                                        </div>
+                                        <div class="steps matchBlock">
+                                            <a class="step active" href="./2bVsPrMatching-summary.html">
+                                                <small>1</small>
+                                                <span>Matching</span>
+                                            </a>
+                                            <a class="step" href="./2bVsPrMatching-details.html">
+                                                <small>2</small>
+                                                <span>View in Detail</span>
+                                            </a>
+                                        </div>
+                                        <div class="matchBlock"> <button>Generate Report <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#fff" height="16" width="16"><path d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"/></svg></button></div>
+                                    </div>
                                     <div class="matchingContainer">
                                         <div class="matchingLeftBox">
                                     <div class="matchingHeader">
@@ -365,35 +381,125 @@
                                         <button class="" data-toggle="modal" data-target="#selectDate">Select Dates</button>
                                     </div>
                                     </div>
-                                    <div id="matchingBlock">
-                                    <div class="MatchingContainer">
-                                        <div class="flex MatchingBlock">
-                                          <a href="./all-client.html" class="MatchingItem active">
-                                            <img class="matchingImg"
-                                              src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608540499_icon_small_filing_gstr2a.png"
-                                              alt="GSTR"
-                                            />
-                                            <h5 class="matchingHead">Supplier Data</h5>
-                                            <span class="matchingTxt">You need to download 2A data from GSTN to start matching</span>
-                                            <button class="download-btn"><img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608575654_subtractgstn.svg" height="14px" width="14px" alt="data_ico">Download data from GSTN&nbsp;</button>
-                                          </a>
-                                          <div class="dashedLine"></div>
-                                          <a class="matchingLine" href="./2bVsPrMatching-summary.html">
-                                           <span><i class="fa fa-code-compare"> </i> </span>Start Matching
-                                          </a>
-                                          <div class="dashedLine"></div>
-                                         
-                                            <a class="MatchingItem">
-                                            <img class="matchingImg"
-                                              src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608546113_icon_small_register_purchase.png"
-                                              alt="GSTR9"
-                                            />
-                                            <h5 class="matchingHead">Purchase register</h5>
-                                            <span class="matchingTxt">You need to upload purchase data to start matching</span>
-                                            <button class="upload-btn">&nbsp;<i class="fa fa-folder"></i>&nbsp;&nbsp;Purchase Data&nbsp;</button>
-                                          </a>
-                                        </div>
-                                      </div>
+                                    <div class="matchingSummary">
+                                       <div class="summaryHeader">
+                                            <h4>Matching Summary</h4>
+                                            <div>
+                                                <a href="./2bVsPrMatching-details.html">View Result in detail</a>
+                                            </div>
+                                       </div>
+                                       <div class="docType">
+                                            <p>Type of document:</p>
+                                            <div class="radioBtns">
+                                                <div class="form-check me-4">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                      Innovice
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                      CDN
+                                                    </label>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <div class="table-responsive hideScrollbar docTypeTable">
+                                        <table class="align-middle mb-0 table table-borderless table-striped twoATwobTable">
+                                            <thead>
+                                                <tr class="table-head">
+                                                    <th class="text-left">Match Type</th>
+                                                    <th class="text-left">Description</th>
+                                                    <th class="text-center">No. of Document(2A)</th>
+                                                    <th class="text-center">No. of Document(PR)</th>
+                                                    <th class="text-center">Tax Diff(2A-PR)</th>
+                                                    <th class="text-center">Ation Taken</th>
+                                                    <th class="text-center matched"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left  matched"> Matched (82.43%)</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4"> Exact Match</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left  qrmp pl-4"> mismatched (0.43%)</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left  partiallyMatched"> Missing (10%)</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left pl-4">Missing in 2A</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left pl-4">Missing in PR</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>   
+                                        </table>
+                                    </div>
                                     </div>
                                 </div>
                             </div>

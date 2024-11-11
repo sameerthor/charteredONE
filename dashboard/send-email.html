@@ -37,6 +37,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
     />
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dashboardpack.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
     <link
@@ -331,77 +332,242 @@
                         <!-- ================create New Client-->   
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="main-card mb-3 card">
-                                    <div class="card-header header-links mt-4">
-                                        <div class="header-links-items  mb-4">
-                                            <span class="matchinHeading">GSTR 2A v Purchase Register</span>
-                                            <div class="matchingTxt mt-1"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" color="#2F89FC" xmlns="http://www.w3.org/2000/svg" style="color: rgb(47, 137, 252);"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"></path></svg> GSTIN: 36EAVPM2218B1ZP | PAN: EAVPM2218B</div>
+                               <div class="card">
+                                    <div class="sendEmailPage">
+                                        <div class="emailHeader">
+                                            <div class="col-lg-3 mb-5">
+                                                <h2>Send Email for selected templet</h2>
+                                                <div>
+                                                    <label for="" class="form-label">Select a Templet</label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">Missing</option>
+                                                        <option value="2">Missing in purchase register</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="" class="form-label">Receive replies on email ID</label>
+                                                    <input type="text" class="form-control" placeholder="enter email id here">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="" class="form-label">Send a copy (in case of bulk email, the recipient would be cc'ed for all emails)</label>
+                                                    <input type="text" class="form-control" placeholder="Type email and press enter">
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-end">
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="" class="form-label">Recipients</label>
+                                                    <input type="text" class="form-control" placeholder="sending to 1 contact" disabled>
+                                                </div>
+                                                <div class="col-md-6 mb-3 emailBtns">
+                                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#viewEmail">View Email Address</button>
+                                                    <button class="btn">Edit Contact Master</button>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-end">
+                                                <div class="col-md-9 mb-3">
+                                                    <label for="" class="form-label">Subject</label>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="col-md-9 mb-3">
+                                                    <label for="" class="form-label">Message</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row sentEmail mb-5">
+                                                <button class="btn">Send</button>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="matchingContainer">
-                                        <div class="matchingLeftBox">
-                                    <div class="matchingHeader">
-                                        <div class="matchingText">
-                                        <img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608540499_icon_small_filing_gstr2a.png" alt="anx2-icon" height="32px" width="32px"> GSTR-2A
-                                        </div>
-                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Apr 23 - Feb 24</span></div>
-                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> 0  Docs</span></div>
-                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO SUPPLIER DATA (GSTR-2A)</div>
-                                    </div>
-                                    <div class="VS_img">
-                                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1582750135_group505.svg" alt="vs-Img">
-                                    </div>
-                                    <div class="matchingHeader">
-                                        <div class="matchingText">
-                                        <img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608546113_icon_small_register_purchase.png" alt="anx2-icon" height="32px" width="32px"> Purchase Document
-                                        </div>
-                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Apr 23 - Feb 24</span></div>
-                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> 0 Docs</span></div>
-                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO PURCHASE DATA</div>
-                                    </div>
-                                    <hr class="seperatorLine">
-                                </div>
-                                    <div class="selectDateBtn">
-                                        <button class="" data-toggle="modal" data-target="#selectDate">Select Dates</button>
-                                    </div>
-                                    </div>
-                                    <div id="matchingBlock">
-                                    <div class="MatchingContainer">
-                                        <div class="flex MatchingBlock">
-                                          <a href="./all-client.html" class="MatchingItem active">
-                                            <img class="matchingImg"
-                                              src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608540499_icon_small_filing_gstr2a.png"
-                                              alt="GSTR"
-                                            />
-                                            <h5 class="matchingHead">Supplier Data</h5>
-                                            <span class="matchingTxt">You need to download 2A data from GSTN to start matching</span>
-                                            <button class="download-btn"><img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608575654_subtractgstn.svg" height="14px" width="14px" alt="data_ico">Download data from GSTN&nbsp;</button>
-                                          </a>
-                                          <div class="dashedLine"></div>
-                                          <a class="matchingLine" href="./2bVsPrMatching-summary.html">
-                                           <span><i class="fa fa-code-compare"> </i> </span>Start Matching
-                                          </a>
-                                          <div class="dashedLine"></div>
-                                         
-                                            <a class="MatchingItem">
-                                            <img class="matchingImg"
-                                              src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608546113_icon_small_register_purchase.png"
-                                              alt="GSTR9"
-                                            />
-                                            <h5 class="matchingHead">Purchase register</h5>
-                                            <span class="matchingTxt">You need to upload purchase data to start matching</span>
-                                            <button class="upload-btn">&nbsp;<i class="fa fa-folder"></i>&nbsp;&nbsp;Purchase Data&nbsp;</button>
-                                          </a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
+                               </div>
                             </div>
                         </div>
                     </div>
                 </div>
         </div>
     </div>
+     <!-- view email modal -->
+     <div class="modal fade viewEmailModal" id="viewEmail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive hideScrollbar  mb-4 tablechecks">
+                    <table class="align-middle mb-0 table table-borderless">
+                        <thead>
+                               <tr>
+                                    <th width="50" class="text-center">
+                                        <div class="form-check me-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </th>
+                                    <th>Vendor GSTIN</th>
+                                    <th>Vendor Name</th>
+                                    <th>Email ID</th>
+                                    <th width="100">Role</th>
+                               </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="50" class="text-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </th>
+                                <td>GSTIN733222</td>
+                                <td>Lahiruth Thirmane</td>
+                                <td>thirmane@gamil.com</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>To</option>
+                                        <option value="1">From</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning me-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM504 312l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>Add More Contact</button>
+              <button type="button" class="btn btn-primary">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ==========================Import book data modal====================== -->
       <div class="modal fade  gstr_prepare" id="selectDate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -467,6 +633,11 @@
         </div>
     </div>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
 <script src="../js/dashboard-pack.js"></script> 
+<script src="../js/dashboard.js"></script>
+
+
 </body>
 </html>

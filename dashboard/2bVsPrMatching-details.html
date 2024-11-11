@@ -1,0 +1,1123 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Dashboard | CharteredONE</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="This is an example dashboard created using build-in elements and components."
+    />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- ***********************************Montserrat********************************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- *****************************OPENSANS************************ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboardpack.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/returnRegister.css" />
+    <link rel="stylesheet" href="../css/preparegstin.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+    <style>
+        .fixed-sidebar .app-main .app-main__outer{
+            padding: 0!important;
+        }
+        .app-theme-white .app-sidebar{
+            display: none;
+        }
+    </style>
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="./dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="./community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================create New Client-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header header-links mt-4">
+                                        <div class="header-links-items  mb-4">
+                                            <span class="matchinHeading">GSTR 2A v Purchase Register</span>
+                                            <div class="matchingTxt mt-1"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" color="#2F89FC" xmlns="http://www.w3.org/2000/svg" style="color: rgb(47, 137, 252);"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"></path></svg> GSTIN: 36EAVPM2218B1ZP | PAN: EAVPM2218B</div>
+                                        </div>
+                                    </div>
+                                    <div class="matchStep">
+                                        <div class="matchBlock">
+                                             <h2>Match and Reconcile</h2>
+                                        </div>
+                                        <div class="steps matchBlock">
+                                            <a class="step" href="./2bVsPrMatching-summary.html">
+                                                <small>1</small>
+                                                <span>Matching</span>
+                                            </a>
+                                            <a class="step active" href="./2bVsPrMatching-details.html">
+                                                <small>2</small>
+                                                <span>View in Detail</span>
+                                            </a>
+                                        </div>
+                                        <div class="matchBlock"> <button>Generate Report <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#fff" height="16" width="16"><path d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"/></svg></button></div>
+                                    </div>
+                                    <div class="matchingContainer">
+                                        <div class="matchingLeftBox">
+                                            <div class="matchingHeader">
+                                                <div class="matchingText">
+                                                <img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608540499_icon_small_filing_gstr2a.png" alt="anx2-icon" height="32px" width="32px"> GSTR-2A
+                                                </div>
+                                                <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Apr 23 - Feb 24</span></div>
+                                                <div class="matchingDoc"><span><i class="fa fa-file-text"></i> 0  Docs</span></div>
+                                                <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO SUPPLIER DATA (GSTR-2A)</div>
+                                            </div>
+                                            <div class="VS_img">
+                                                <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1582750135_group505.svg" alt="vs-Img">
+                                            </div>
+                                            <div class="matchingHeader">
+                                                <div class="matchingText">
+                                                <img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608546113_icon_small_register_purchase.png" alt="anx2-icon" height="32px" width="32px"> Purchase Document
+                                                </div>
+                                                <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Apr 23 - Feb 24</span></div>
+                                                <div class="matchingDoc"><span><i class="fa fa-file-text"></i> 0 Docs</span></div>
+                                                <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO PURCHASE DATA</div>
+                                            </div>
+                                            <hr class="seperatorLine">
+                                        </div>
+                                        <div class="selectDateBtn">
+                                            <button class="" data-toggle="modal" data-target="#selectDate">Select Dates</button>
+                                        </div>
+                                    </div>
+                                    <div class="matchingSummary">
+                                        <div class="table-responsive hideScrollbar docTypeTable mb-4">
+                                            <table class="align-middle mb-0 table table-borderless table-striped twoATwobTable">
+                                                <thead>
+                                                    <tr class="table-head">
+                                                        <th class="text-left">Doc Type</th>
+                                                        <th class="text-left">No. of Doc</th>
+                                                        <th class="text-center">Taxable Value</th>
+                                                        <th class="text-center">Tax Value</th>
+                                                        <th class="text-center" ="2">Tax Difference</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-left"> GSTR-2A</td>
+                                                        <td>
+                                                            4344
+                                                        </td>
+                                                        <td class="text-right">474</td>
+                                                        <td class="text-right">15323,6</td>
+                                                        <td class="text-center">121245</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <tr>
+                                                            <td class="text-left"> GSTR-2A</td>
+                                                            <td>
+                                                                4344
+                                                            </td>
+                                                            <td class="text-right">474</td>
+                                                            <td class="text-right">15323,6</td>
+                                                            
+                                                        </tr>
+                                                </tbody>   
+                                            </table>
+                                        </div>
+                                        <div class="summaryHeader">
+                                            <h4>Detailed Matching</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                                <div class="docType me-5">
+                                                    <p>TABLE VIEW:</p>
+                                                    <div class="radioBtns">
+                                                        <div class="form-check me-4">
+                                                            <input class="form-check-input" type="radio" name="viewTable" id="docViewRadio" checked>
+                                                            <label class="form-check-label" for="docViewRadio">Document View</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="viewTable" id="supplierViewRadio">
+                                                            <label class="form-check-label" for="supplierViewRadio">Supplier View</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="docType">
+                                                    <p>TYPE OF DOCUMENT:</p>
+                                                    <div class="radioBtns">
+                                                        <div class="form-check me-4">
+                                                            <input class="form-check-input" type="radio" name="viewDoc">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                             Invoices
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="viewDoc">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                            CDN
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="docView active">
+                                            <div class="filterTableHeader">
+                                                <div class="groupchecks">
+                                                    <div class="form-check me-4">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        Show Only Manually Linked Devices
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        Bulk Select
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="groupBtns">
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L489.3 358.2l90.5-90.5c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114l-96 96-31.9-25C430.9 239.6 420.1 175.1 377 132c-52.2-52.3-134.5-56.2-191.3-11.7L38.8 5.1zM239 162c30.1-14.9 67.7-9.9 92.8 15.3c20 20 27.5 48.3 21.7 74.5L239 162zM406.6 416.4L220.9 270c-2.1 39.8 12.2 80.1 42.2 110c38.9 38.9 94.4 51 143.6 36.3zm-290-228.5L60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l61.8-61.8-50.6-39.9z"/></svg> De link</button>
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160 352 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l111.5 0c0 0 0 0 0 0l.4 0c17.7 0 32-14.3 32-32l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 35.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1L16 432c0 17.7 14.3 32 32 32s32-14.3 32-32l0-35.1 17.6 17.5c0 0 0 0 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.8c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352l34.4 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L48.4 288c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/></svg>Reset</button>
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>Accept Supplier Value</button>
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>Accept my Value</button>
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"/></svg>Pending</button>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive hideScrollbar  mb-4 tablechecks">
+                                                <table class="align-middle mb-0 table table-borderless">
+                                                    <thead>
+                                                        <tr class="colspanHeader">
+                                                            <th colspan="8" class="text-center">GSTR2A</th>
+                                                            <th colspan="10" class="text-center">Purchase Document</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-left" width="200">
+                                                                <div class="dropdown-container">
+                                                                    <button class="dropdown-button" onclick="toggleDropdown(this)"><span>Supplier Name</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                                    <div class="dropdown-content">
+                                                                        <div class="search-bar">
+                                                                            <input type="text" placeholder="Search" oninput="filterOptions(this)">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th>
+                                                                <div class="dropdown-container">
+                                                                    <button class="dropdown-button" onclick="toggleDropdown(this)"><span>Matching Status</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                                    <div class="dropdown-content">
+                                                                        <div class="search-bar">
+                                                                            <input type="text" placeholder="Search" oninput="filterOptions(this)">
+                                                                        </div>
+                                                                        <div class="checkbox-container">
+                                                                            <div class="checkbox-item"><input type="checkbox" value="Option 1"><label>Exact Match</label></div>
+                                                                            <div class="checkbox-item"><input type="checkbox" value="Option 2"><label>Suggested Match</label></div>
+                                                                            <div class="checkbox-item"><input type="checkbox" value="Option 3"><label>Mismatch</label></div>
+                                                                            <div class="checkbox-item"><input type="checkbox" value="Option 4"><label>Mismatch in 2A</label></div>
+                                                                            <div class="checkbox-item"><input type="checkbox" value="Option 4"><label>Missing in PR</label></div>
+                                                                        </div>
+                                                                        <div class="dropdown-footer">
+                                                                            <button class="clear-btn" onclick="clearAll(this)">Clear</button>
+                                                                            <button class="select-all-btn" onclick="selectAll(this)">Select All</button>
+                                                                            <button class="apply-btn" onclick="applySelection(this)">Apply</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-center" width="300">
+                                                                <button class="dropdown-button"><span>Tax Diff(₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center" width="">
+                                                                <button class="dropdown-button"><span>Inv No.</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Inv Date</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Taxable Value(₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Tax Value(₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Total Value(₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Tax Diff(₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Inv. No.</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Inv. Date</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Taxable Value (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Tax Value (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Total Value (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Sub Type</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Mismatch Field</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Action Taken</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Imam Ul Hak</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>R Jadeja</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Deepak Chahar</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Klokesh Rahul</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Lahiruth Thirmane</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Glain Maxi</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="supplierView">
+                                            <div class="filterTableHeader">
+                                                <div class="groupchecks">
+                                                    <div class="form-check me-4">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        Show Only Manually Linked Devices
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        Bulk Select
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="groupBtns">
+                                                    <button  onclick = "window.location.href='./send-email.html';"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>Send Email</button>
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160 352 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l111.5 0c0 0 0 0 0 0l.4 0c17.7 0 32-14.3 32-32l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 35.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1L16 432c0 17.7 14.3 32 32 32s32-14.3 32-32l0-35.1 17.6 17.5c0 0 0 0 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.8c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352l34.4 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L48.4 288c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/></svg>Reset</button>
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>Accept Supplier Value</button>
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>Accept my Value</button>
+                                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"/></svg>Pending</button>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive hideScrollbar  mb-4 tablechecks">
+                                                <table class="align-middle mb-0 table table-borderless">
+                                                    <thead>
+                                                        <tr class="colspanHeader">
+                                                            <th colspan="7" class="text-center"></th>
+                                                            <th colspan="11" class="text-left">Purchase Document</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-left" width="200">
+                                                                <div class="dropdown-container">
+                                                                    <button class="dropdown-button" onclick="toggleDropdown(this)"><span>Supplier Name</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                                    <div class="dropdown-content">
+                                                                        <div class="search-bar">
+                                                                            <input type="text" placeholder="Search" oninput="filterOptions(this)">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th>
+                                                                <div class="dropdown-container">
+                                                                    <button class="dropdown-button" onclick="toggleDropdown(this)"><span>GSTIN</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-center" width="300">
+                                                                <button class="dropdown-button"><span>Tax Diff(₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center" width="">
+                                                                <button class="dropdown-button"><span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>SGST (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>CESS(₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span># of docs</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Total Taxable Value(₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Tax Tax (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>IGST (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>CGST (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>SGST (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Tax Value (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Total Value (₹)</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Sub Type</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Mismatch Field</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                            <th class="text-center">
+                                                                <button class="dropdown-button"><span>Action Taken</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Imam Ul Hak</td>
+                                                            <td>GSHST38363JS</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>833.2</td>
+                                                            <td>260.54</td>
+                                                            <td>46</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>3121</td>
+                                                            <td>8336</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>R Jadeja</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Deepak Chahar</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Klokesh Rahul</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Lahiruth Thirmane</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="50" class="text-center">
+                                                                <div class="form-check me-4">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                </div>
+                                                            </th>
+                                                            <td>Glain Maxi</td>
+                                                            <td>Exact</td>
+                                                            <td>987.9</td>
+                                                            <td>DIIPL87363</td>
+                                                            <td>09-02-2012</td>
+                                                            <td>260.54</td>
+                                                            <td>46.97</td>
+                                                            <td>307.91</td>
+                                                            <td>0.00</td>
+                                                            <td>DIHD835228</td>
+                                                            <td>02-08-2015</td>
+                                                            <td>736.9</td>
+                                                            <td>874.4</td>
+                                                            <td>322.32</td>
+                                                            <td>B2B</td>
+                                                            <td>-</td>
+                                                            <td>Accepted Supplier Value</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+      <!-- ==========================Import book data modal====================== -->
+      <div class="modal fade  gstr_prepare" id="selectDate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Select Dates to filter GSTR-1 and Sales Register data for matching</h1>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="matching1_block">
+                <div>
+                    <div class="modal_title">
+                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1588144894_gstr1_icon.svg" alt=""><span>GSTR-1</span>
+                    </div>
+                    <div>
+                        <form class="row g-3">
+                            <div class="col-sm-6 col-xs-12">
+                              <label for="Return Period" class="form-label required" required>Return Period</label>
+                              <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-12 checkboxDD">
+                                <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                          </form>
+                    </div>
+                </div>
+              <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
+              <div class="downloadData">
+                <p>Download GSTR-1 data from GSTN Portal</p>
+                <button>Download GSTR-1 data</button>
+              </div>
+            </div>
+            <div class="matching2_block mt-4">
+                <div>
+                    <div class="modal_title">
+                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1595250687_sales.png" alt=""><span>GSTR-1</span>
+                    </div>
+                    <div>
+                        <form class="row g-3">
+                            <div class="col-sm-6 col-xs-12">
+                              <label for="Return Period" class="form-label required" required>Return Period</label>
+                              <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-12 checkboxDD">
+                                <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                          </form>
+                    </div>
+                </div>
+              <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
+              <div class="downloadData">
+                <p>Import More Sales Register</p>
+                <button>Import Sales Register</button>
+              </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn matchingBtn">Start Matching</button>
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/dashboard-pack.js"></script> 
+<script src="../js/dashboard.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const docViewRadio = document.getElementById("docViewRadio");
+        const supplierViewRadio = document.getElementById("supplierViewRadio");
+        const docViewDiv = document.querySelector(".docView");
+        const supplierViewDiv = document.querySelector(".supplierView");
+
+        function toggleView() {
+            if (docViewRadio.checked) {
+                docViewDiv.classList.add("active");
+                supplierViewDiv.classList.remove("active");
+            } else if (supplierViewRadio.checked) {
+                supplierViewDiv.classList.add("active");
+                docViewDiv.classList.remove("active");
+            }
+        }
+        docViewRadio.addEventListener("change", toggleView);
+        supplierViewRadio.addEventListener("change", toggleView);
+
+        toggleView();
+    });
+</script>
+
+<script>
+    // Toggle dropdown visibility
+    function toggleDropdown(button) {
+        const dropdownContent = button.nextElementSibling;
+        dropdownContent.classList.toggle('show');
+    }
+
+    // Filter options based on search input
+    function filterOptions(input) {
+        const filter = input.value.toLowerCase();
+        const dropdownContent = input.closest('.dropdown-content');
+        const checkboxes = dropdownContent.querySelectorAll('.checkbox-item');
+        checkboxes.forEach(item => {
+            const label = item.querySelector('label').textContent.toLowerCase();
+            item.style.display = label.includes(filter) ? '' : 'none';
+        });
+    }
+
+    // Clear all selections
+    function clearAll(button) {
+        const dropdownContent = button.closest('.dropdown-content');
+        const checkboxes = dropdownContent.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+    }
+
+    // Select all options
+    function selectAll(button) {
+        const dropdownContent = button.closest('.dropdown-content');
+        const checkboxes = dropdownContent.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = true;
+        });
+    }
+
+    // Apply selection and close dropdown
+    function applySelection(button) {
+        const dropdownContent = button.closest('.dropdown-content');
+        const selectedOptions = Array.from(dropdownContent.querySelectorAll('input[type="checkbox"]:checked'))
+            .map(checkbox => checkbox.value);
+        alert("Selected options: " + selectedOptions.join(", "));
+        dropdownContent.classList.remove('show'); // Close dropdown after applying
+    }
+
+    // Close dropdown when clicking outside
+    window.onclick = function(event) {
+        if (!event.target.closest('.dropdown-button') && !event.target.closest('.dropdown-content')) {
+            document.querySelectorAll('.dropdown-content').forEach(content => content.classList.remove('show'));
+        }
+    };
+</script>
+</body>
+</html>

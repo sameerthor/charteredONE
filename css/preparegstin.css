@@ -1257,6 +1257,9 @@ body a:hover{
     width: 100%;
   }
   }
+  .matchingLine{
+    cursor: pointer;
+  }
   @media(max-width:768px){
   .header-checks{
       flex-direction: column;
@@ -1711,3 +1714,454 @@ letter-spacing: .5px;
 .form-check-input{
   cursor: pointer;
  }
+ .matchStep{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .matchStep h2{
+  font-size: 1.3rem;
+ }
+ .matchStep .matchBlock{
+  width: calc(100% / 3);
+ }
+ .matchStep .matchBlock.steps{
+  display: flex;
+  justify-content: center;
+ }
+ .matchStep .matchBlock.steps .step{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1rem;
+ }
+ .matchStep .matchBlock.steps .step.active{
+  border-bottom: 2px solid #f5b402;
+  width: 110px;
+ }
+ .matchStep .matchBlock.steps .step small{
+  border: 2px solid #b6b6b6;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #b6b6b6;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: .4rem;
+ }
+ .matchStep .matchBlock.steps .step.active small{
+ border: 2px solid #f5b402;
+ background-color: #f5b402;
+ color: #fff;
+ }
+ .matchStep .matchBlock.steps .step.active span{
+  color: #f5b402;
+  }
+ .matchStep .matchBlock.steps .step span{
+  color: #b6b6b6;
+  font-weight: 500;
+  font-size: .9rem;
+  padding-bottom: .4rem;
+ }
+ .matchStep .matchBlock:nth-of-type(3){
+  display: flex;
+  justify-content: right;
+ }
+ .matchStep .matchBlock:nth-of-type(3) button{
+  padding: .5rem 1rem;
+  border: none;
+  outline: none;
+  background-color: #f5b402;
+  color: #fff;
+  border-radius: 4px;
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+ }
+@media(max-width:768px){
+  .matchStep{
+   flex-direction: column;
+   }
+  .matchStep .matchBlock{
+    width: 100%;
+    margin-bottom: .5rem;
+   }
+}
+.matchingSummary{
+  padding: 1rem;
+}
+.summaryHeader{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.summaryHeader h4{
+  font-size: 1.2rem;
+  
+}
+.summaryHeader a{
+ cursor: pointer;
+ border: none;
+ outline: none;
+ padding: .5rem 1rem;
+ border-radius: 5px;
+ background-color: #f5b402;
+ font-weight: 500;
+ font-size: .9rem;
+ letter-spacing: .5px;
+ color: #fff;
+}
+.docType{
+  margin-top: 1rem;
+  display: flex;
+}
+.docType p{
+ font-weight: 500;
+ font-size: .9rem;
+ margin-right: 1rem;
+}
+.docType .radioBtns{
+ display: flex;
+}
+.docType .radioBtns .form-check-label{
+  font-weight: 500;
+  font-size: .8rem;
+ }
+ .docType .radioBtns .form-check-input{
+ box-shadow: none;
+ }
+ .filterTableHeader{
+  background-color: #f5b402;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .4rem 1rem;
+ }
+ .filterTableHeader .groupchecks{
+  display: flex;
+ }
+ .filterTableHeader .groupchecks .form-check-label{
+  font-weight: 500;
+  font-size: .85rem;
+  color: #000;
+ }
+ .filterTableHeader .groupchecks .form-check-input{
+ border-radius: 0;
+ box-shadow: none;
+ height: 1.2rem;
+ width: 1.2rem;
+ border: 1px solid #2e2e2e;
+ }
+ .filterTableHeader .groupchecks .form-check{
+ align-items: center;
+  }
+ .filterTableHeader .groupBtns button{
+  outline: none;
+  font-weight: 500;
+  font-size: .85rem;
+  padding: .2rem .4rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .5rem;
+  border: 2px solid #000;
+ }
+ .filterTableHeader .groupBtns button svg{
+  width: 16px;
+  height: 16px;
+  margin-right: .5rem;
+ }
+
+ .tablechecks .form-check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0 !important;
+ }
+ .tablechecks .form-check-input{
+  border: 1px solid #000;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0;
+  box-shadow: none;
+ }
+ .tablechecks .form-control::placeholder{
+  font-weight: 600;
+  color: #000;
+  font-size: .8rem;
+ }
+ .tablechecks .form-control{
+ box-shadow: none;
+ border: none;
+ outline:  none;
+ font-weight: 600;
+ color: #000;
+ font-size: .8rem;
+ }
+
+ /* ===========================dropdown select menu===================== */
+     
+        /* Dropdown container */
+        .dropdown-container {
+          position: relative;
+          width: 200px;
+      }
+
+      /* Dropdown button */
+      .dropdown-button {
+          width: 100%;
+          color: #000;
+          cursor: pointer;
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: transparent;
+          font-weight: 600;
+          font-size: .8rem;
+          border: none;
+          outline: none;
+      }
+      .dropdown-button svg{
+        width: 16px;
+        height: 16px;
+        margin-left: .2rem;
+    }
+
+      /* Dropdown content */
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: white;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          max-height: 300px;
+          overflow-y: auto;
+          z-index: 100;
+          margin-top: 5px;
+      }
+
+      /* Search bar */
+      .search-bar {
+          padding: 10px;
+          border-bottom: 1px solid #ddd;
+      }
+
+      .search-bar input {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          outline: none;
+      }
+      .search-bar input::placeholder{
+       font-weight: 500;
+    }
+
+      /* Checkboxes */
+      .checkbox-item {
+          padding: 5px 10px;
+          border-bottom: 1px solid #ddd;
+          display: flex;
+          align-items: center;
+      }
+      .checkbox-item label{
+        margin-bottom: 0;
+        color: #000;
+    }
+
+      .checkbox-item input {
+          margin-right: 8px;
+      }
+
+      /* Bottom buttons */
+      .dropdown-footer {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          border-top: 1px solid #ddd;
+          background-color: #f9f9f9;
+      }
+
+      .dropdown-footer button {
+          padding: 5px 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      .clear-btn { background-color: #f44336; color: white; }
+      .select-all-btn { background-color: #4CAF50; color: white; }
+      .apply-btn { background-color: #007bff; color: white; }
+
+      /* Show dropdown */
+      .show {
+          display: block;
+      }
+      .table-responsive{
+        max-width: 100%;
+        overflow: auto; 
+        width: 1450px;
+      }
+      .table-responsive .table{
+        width: 100%;
+        border-collapse: collapse;
+        white-space: nowrap;
+      }
+      .supplierInput{
+        width: 150px;
+      }
+      tr.colspanHeader th{
+        font-weight: 600 !important;
+        font-size: .8rem !important;
+        color: #000 !important;
+      }
+
+      .docView, .supplierView {
+        display: none;
+    }
+
+    .docView.active {
+        display: block;
+    }
+
+    .supplierView.active {
+        display: block;
+    }
+    .emailHeader{
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      padding: .5rem 1rem;
+    }
+    .sendEmailPage h2{
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #000;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .emailHeader .form-select{
+      box-shadow: none;
+      border-radius: 4px;
+      height: 2.4rem;
+      font-weight: 500;
+      font-size: .9rem;
+    }
+    .emailHeader label{
+      font-weight: 600;
+      font-size: .9rem;
+      color: #000;
+      margin-bottom: .5rem;
+    }
+    .row{
+      max-width: 100%;
+      margin: auto;
+    }
+    .emailHeader .form-control{
+      box-shadow: none;
+      border-radius: 4px;
+      height: 2.4rem;
+      font-weight: 500;
+      font-size: .9rem;
+    }
+    .emailHeader textarea.form-control{
+     min-height: 4rem;
+    }
+    .emailBtns{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .emailBtns button{
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: .85rem;
+    }
+    .emailBtns button:nth-of-type(1){
+      border: 2px solid #f5b402;
+      margin-right: 1rem;
+      color: #f5b402;
+    }
+    .emailBtns button:nth-of-type(2){
+      border: 2px solid #16a8ff;
+      color: #16a8ff;
+    }
+    .sentEmail{
+      display: flex;
+      width: 100px;
+      justify-content: left;
+      align-items: flex-start;
+
+    }
+    .sentEmail button{
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: .85rem;
+      background-color: #f5b402;
+      color: #fff;
+      padding: .5rem 1rem;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    .sentEmail button:hover{
+      background-color: #f5b402;
+      color: #fff;
+    }
+    .viewEmailModal .table .form-select{
+      font-weight: 500;
+      font-size: .8rem;
+      box-shadow: none;
+      border-radius: 4px;
+    }
+    .viewEmailModal .table thead tr th{
+      font-weight: 600;
+      font-size: .8rem;
+      color: #000 !important;
+    }
+    .viewEmailModal .modal-header{
+     border: none;
+     padding:  20px;
+     background-color: #fff;
+    }
+    .viewEmailModal .modal-footer{
+      padding: 20px;
+      border: none;
+      background-color: #fff;
+     }
+     .viewEmailModal .modal-footer button{
+      font-weight: 500;
+      color: #fff;
+      font-size: .86rem;
+      letter-spacing: .5px;
+      border-radius: 4px;
+      padding: .5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+     }
+     .viewEmailModal .modal-footer button svg{
+      height: 16px;
+      width: 16px;
+      fill: #fff;
+      margin-right: .5rem;
+     }
+     .viewEmailModal .modal-header button{
+      box-shadow: none;
+     }
+     .viewEmailModal .modal-body{
+     max-height: 60vh;
+     overflow: auto;
+     }
