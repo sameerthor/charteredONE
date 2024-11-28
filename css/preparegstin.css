@@ -2165,3 +2165,16 @@ letter-spacing: .5px;
      max-height: 60vh;
      overflow: auto;
      }
+     .hidden-row{
+      display: none;
+     }
+     .toggle-button{
+      cursor: pointer;
+     }
+     .hiddenHead{
+      background-color: #bed7ed;
+     }
+     .table-responsive table .hiddenHead  th{
+      color: #000 !important;
+      font-size: .8rem;
+     }
