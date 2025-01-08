@@ -1930,6 +1930,7 @@ letter-spacing: .5px;
           font-size: .8rem;
           border: none;
           outline: none;
+          white-space: nowrap;
       }
       .dropdown-button svg{
         width: 16px;
@@ -2191,4 +2192,14 @@ letter-spacing: .5px;
      .matchingBtn:hover{
       background-color: #26ace3;
       color: #fff;
+     }
+     .tablechecks{
+      width: 1450px;
+      max-width: 100%;
+      margin: auto;
+     }
+     .filterTableHeader .groupBtns{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
      }

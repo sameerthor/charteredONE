@@ -330,34 +330,50 @@
                     <div class="app-main__inner">
                         <!-- ================create New Client-->   
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 p-0">
                                 <div class="main-card mb-3 card">
                                     <div class="card-header header-links mt-4">
                                         <div class="header-links-items  mb-4">
-                                            <span class="matchinHeading">GSTR-1 vs. Sales Register</span>
+                                            <span class="matchinHeading">GSTR-1 vs Sales Register</span>
                                             <div class="matchingTxt mt-1"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" color="#2F89FC" xmlns="http://www.w3.org/2000/svg" style="color: rgb(47, 137, 252);"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"></path></svg> GSTIN: 36EAVPM2218B1ZP | PAN: EAVPM2218B</div>
                                         </div>
+                                    </div>
+                                    <div class="matchStep">
+                                        <div class="matchBlock">
+                                             <h2>Match and Reconcile</h2>
+                                        </div>
+                                        <div class="steps matchBlock">
+                                            <a class="step active" href="./1vsSalesMatching-summary.html">
+                                                <small>1</small>
+                                                <span>Matching</span>
+                                            </a>
+                                            <a class="step" href="./1vsSalesMatching-details.html">
+                                                <small>2</small>
+                                                <span>View in Detail</span>
+                                            </a>
+                                        </div>
+                                        <div class="matchBlock"> <button>Generate Report <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#fff" height="16" width="16"><path d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"/></svg></button></div>
                                     </div>
                                     <div class="matchingContainer">
                                         <div class="matchingLeftBox">
                                     <div class="matchingHeader">
                                         <div class="matchingText">
-                                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1588144894_gstr1_icon.svg" alt="anx2-icon" height="32px" width="32px"> GSTR-1
+                                        <img src="../images/1vs-sr.png" alt="anx2-icon" height="32px" width="32px"> GSTR-1
                                         </div>
-                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Dec 20 - Feb 31</span></div>
-                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> Docs</span></div>
-                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO GSTR-1 DATA</div>
+                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Apr 23 - Feb 24</span></div>
+                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> 0  Docs</span></div>
+                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO SUPPLIER DATA (GSTR-2A)</div>
                                     </div>
                                     <div class="VS_img">
                                         <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1582750135_group505.svg" alt="vs-Img">
                                     </div>
                                     <div class="matchingHeader">
                                         <div class="matchingText">
-                                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1595250687_sales.png" alt="anx2-icon" height="32px" width="32px"> GSTR-1
+                                        <img src="../images/1vs-sr.png" alt="anx2-icon" height="32px" width="32px"> Sales Document
                                         </div>
-                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Dec 20 - Feb 31</span></div>
-                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> Docs</span></div>
-                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO SALES DATA</div>
+                                        <div class="matchingDate" data-toggle="modal" data-target="#selectDate"><span><i class="fa fa-calendar-days"></i> &nbsp;Apr 23 - Feb 24</span></div>
+                                        <div class="matchingDoc"><span><i class="fa fa-file-text"></i> 0 Docs</span></div>
+                                        <div class="noMatchingData"><i class="fa fa-exclamation-circle"></i> NO PURCHASE DATA</div>
                                     </div>
                                     <hr class="seperatorLine">
                                 </div>
@@ -365,7 +381,126 @@
                                         <button class="" data-toggle="modal" data-target="#selectDate">Select Dates</button>
                                     </div>
                                     </div>
-                                    
+                                    <div class="matchingSummary">
+                                       <div class="summaryHeader">
+                                            <h4>Matching Summary</h4>
+                                            <div>
+                                                <a href="./1vsSalesMatching-details.html">View Result in detail</a>
+                                            </div>
+                                       </div>
+                                       <div class="docType">
+                                            <p>Type of document:</p>
+                                            <div class="radioBtns">
+                                                <div class="form-check me-4">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                      Innovice
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                      CDN
+                                                    </label>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <div class="table-responsive hideScrollbar docTypeTable">
+                                        <table class="align-middle mb-0 table table-borderless table-striped twoATwobTable">
+                                            <thead>
+                                                <tr class="table-head">
+                                                    <th class="text-left">Match Type</th>
+                                                    <th class="text-left">Description</th>
+                                                    <th class="text-center">No. of Document(2A)</th>
+                                                    <th class="text-center">No. of Document(PR)</th>
+                                                    <th class="text-center">Tax Diff(2A-PR)</th>
+                                                    <th class="text-center">Ation Taken</th>
+                                                    <th class="text-center matched"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left  matched"> Matched (82.43%)</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4"> Exact Match</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left  qrmp pl-4"> mismatched (0.43%)</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left  partiallyMatched"> Missing (10%)</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left pl-4">Missing in 2A</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left pl-4">Missing in PR</td>
+                                                    <td>
+                                                        These are the document for which we have exact match
+                                                    </td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">156</td>
+                                                    <td class="text-right">0.00</td>
+                                                    <td class="text-right">156/156</td>
+                                                    <td>
+                                                       <a href="#">View</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>   
+                                        </table>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -373,135 +508,6 @@
                 </div>
         </div>
     </div>
-    <!-- import options modal -->
-    <div class="modal fade  gstr_prepare" id="importOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 9999;">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Select Dates to filter GSTR-1 and Sales Register data for matching</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="importBox">
-                    <div>
-                        <h2>CHOOSE A METHOD TO IMPORT YOUR DATA</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-                            <a class="importMethod uploadGovt" href="./import-government-excel.html">
-                                <div>
-                                    <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1580894573_gstmobileappgstgovcoin1.svg" alt="">
-                                </div>
-                                <div class="importType">
-                                    <h4>Government Excel</h4>
-                                </div>
-                                <div class="importDesc">
-                                    <p>Import data prepared on Government excel template</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-                            <a class="importMethod" href="">
-                                <div>
-                                    <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1571219418_tally.svg" alt="">
-                                </div>
-                                <div class="importType">
-                                    <h4>Tally Connector</h4>
-                                </div>
-                                <div class="importDesc">
-                                    <p>Directly Import data into ClearTax from Tally</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-                            <a class="importMethod" href="">
-                                <div>
-                                    <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1575546007_cticon.svg" alt="">
-                                </div>
-                                <div class="importType">
-                                    <h4>CharteredOne Template</h4>
-                                </div>
-                                <div class="importDesc">
-                                    <p>Simplest way to prepare & import data 5x faster!</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-                            <a class="importMethod" href="">
-                                <div>
-                                    <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1571219724_typein.svg" alt="">
-                                </div>
-                                <div class="importType">
-                                    <h4>Type in or Copy/Paste</h4>
-                                </div>
-                                <div class="importDesc">
-                                    <p>Directly type in or copy paste your B2B/B2C invoices</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="importBox uploadFromLocal" style="display: none;">
-                    <div>
-                        <h2>If you have prepared your data on a Government Excel Template, please click below to import the file</h2>
-                    </div>
-                    <div class="uploadbox">
-                        <div class="">
-                            <div class="uploadInner" onclick="triggerUpload()">
-                                <input accept=".xlsx,.xls,.xlsm" type="file" autocomplete="off" tabindex="-1"  id="fileInput" style="display: none;" onchange="handleFileUpload(event)">
-                                <button>
-                                    <span>
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path>
-                                        </svg>
-                                    </span>Select file from your computer
-                                    <span>
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="downloadTemplete">
-                        <h4>Need the Government Excel for filing GSTR-1 data offline? <a href="#">Download it here</a></h4>
-                    </div>
-                    <div>
-                        <button type="button" class="btn matchingBtn" onclick="window.location.href='./1vsSalesMatching-summary.html'">Start Matching</button>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ==============upload sales data=============== -->
-      <div class="modal fade" id="uploadSalesData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Import Data</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="col-12">
-                <label for="form-select" class="form-label">Select a Return Period</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>May 24</option>
-                    <option value="1">Apr 24</option>
-                    <option value="2">Mar 24</option>
-                    <option value="3">Feb 24</option>
-                    <option value="3">Jan 24</option>
-                </select>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button onclick="window.location.href='./importSalesData-gstr1.html'" type="button" class="btn btn-primary">Continue</button>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- ==========================Import book data modal====================== -->
       <div class="modal fade  gstr_prepare" id="selectDate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -512,100 +518,61 @@
             </div>
             <div class="modal-body">
                 <div class="matching1_block">
-                    <div>
-                        <div class="modal_title">
-                            <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1588144894_gstr1_icon.svg" alt=""><span>GSTR-1</span>
-                        </div>
-                        <div>
-                            <form class="row g-3">
-                                <div class="col-sm-6 col-xs-12">
-                                    <label for="Return Period" class="form-label required" required>Return Period</label>
-                                    <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
-                                </div>
-                                <div class="col-sm-3 col-xs-12 checkboxDD">
-                                    <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                </div>
-                            </form>
-                        </div>
+                <div>
+                    <div class="modal_title">
+                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1588144894_gstr1_icon.svg" alt=""><span>GSTR-1</span>
                     </div>
-                    <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
-                    <div class="downloadData">
-                        <p>Download GSTR-1 data from GSTN Portal</p>
-                        <button>Download GSTR-1 data</button>
+                    <div>
+                        <form class="row g-3">
+                            <div class="col-sm-6 col-xs-12">
+                              <label for="Return Period" class="form-label required" required>Return Period</label>
+                              <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-12 checkboxDD">
+                                <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                          </form>
                     </div>
                 </div>
-                <div class="matching2_block mt-4">
-                    <div>
-                        <div class="modal_title">
-                            <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1595250687_sales.png" alt=""><span>GSTR-1</span>
-                        </div>
-                        <div>
-                            <form class="row g-3">
-                                <div class="col-sm-6 col-xs-12">
-                                     <label for="Return Period" class="form-label required" required>Return Period</label>
-                                    <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
-                                </div>
-                                <div class="col-sm-3 col-xs-12 checkboxDD">
-                                    <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                </div>
-                            </form>
-                        </div>
+              <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
+              <div class="downloadData">
+                <p>Download GSTR-1 data from GSTN Portal</p>
+                <button>Download GSTR-1 data</button>
+              </div>
+            </div>
+            <div class="matching2_block mt-4">
+                <div>
+                    <div class="modal_title">
+                        <img src="https://assets1.cleartax-cdn.com/cleartax-gst/images/1595250687_sales.png" alt=""><span>GSTR-1</span>
                     </div>
-                    <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
-                    <div class="downloadData">
-                        <p>Import More Sales Register</p>
-                        <button data-bs-toggle="modal" data-bs-target="#importOptions" id="importOptionsBtn">Import Sales Register</button>
+                    <div>
+                        <form class="row g-3">
+                            <div class="col-sm-6 col-xs-12">
+                              <label for="Return Period" class="form-label required" required>Return Period</label>
+                              <div class="returnPeriodInput"><input type="date" class="form-control" id="Return Period"><span class="ml-2 mr-2"> to </span> <input type="date" class="form-control" id="Return Period"></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-12 checkboxDD">
+                                <label class="form-check-label new" for="flexSwitchCheckDefault">Enable Invoice/Document date</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                          </form>
                     </div>
                 </div>
+              <p class="modal_text">Available Docs for selected period: doc-count 0 Docs (0 Invoices + 0 CDNs)</p>
+              <div class="downloadData">
+                <p>Import More Sales Register</p>
+                <button>Import Sales Register</button>
+              </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn matchingBtn">Start Matching</button>
             </div>
           </div>
         </div>
-      </div>
-      <button data-bs-toggle="modal" data-bs-target="#importOptions">Import Sales Register</button>
+    </div>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script src="../js/dashboard-pack.js"></script> 
-<script src="../dashboard/../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-<!-- show unload btn -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const uploadGovt = document.querySelector(".uploadGovt");
-    const uploadFromLocal = document.querySelector(".uploadFromLocal");
-
-    uploadGovt.addEventListener("click", function (e) {
-        e.preventDefault(); 
-
-        if (uploadFromLocal.style.display === "none") {
-            uploadFromLocal.style.display = "block";
-        }
-    });
-});
-</script>
-<script>
-    function triggerUpload() {
-      var fileInput = document.getElementById('fileInput');
-      fileInput.click();
-    }
-  
-    function handleFileUpload(event) {
-      console.log("File uploaded:", event.target.files[0]);
-    }
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const openSecondModalButton = document.getElementById("importOptionsBtn");
-
-    openSecondModalButton.addEventListener("click", function () {
-        const secondModal = new bootstrap.Modal(document.getElementById("importOptions"), {
-            backdrop: false,
-        });
-
-        secondModal.show();
-    });
-});
-
-
-</script>
 </body>
 </html>
