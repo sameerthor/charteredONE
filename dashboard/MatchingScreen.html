@@ -378,9 +378,9 @@
                                             <button class="download-btn"><img src="https://cleartax-media.s3.amazonaws.com/cleartax-gst/images/1608575654_subtractgstn.svg" height="14px" width="14px" alt="data_ico">Download data from GSTN&nbsp;</button>
                                           </a>
                                           <div class="dashedLine"></div>
-                                          <div class="matchingLine">
+                                          <a class="matchingLine" href="#" data-bs-toggle="modal" data-bs-target="#importOptions">
                                            <span><i class="fa fa-code-compare"> </i> </span>Start Matching
-                                          </div>
+                                          </a>
                                           <div class="dashedLine"></div>
                                           <!-- <a class="MatchingItem">
                                             <img class="matchingImg"
@@ -417,6 +417,108 @@
                 </div>
         </div>
     </div>
+    <!-- import options modal -->
+    <div class="modal fade  gstr_prepare" id="importOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Select Dates to filter GSTR-1 and Sales Register data for matching</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="importBox">
+                    <div>
+                        <h2>CHOOSE A METHOD TO IMPORT YOUR DATA</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                            <a class="importMethod uploadGovt" href="./import-government-excel.html">
+                                <div>
+                                    <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1580894573_gstmobileappgstgovcoin1.svg" alt="">
+                                </div>
+                                <div class="importType">
+                                    <h4>Government Excel</h4>
+                                </div>
+                                <div class="importDesc">
+                                    <p>Import data prepared on Government excel template</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                            <a class="importMethod" href="">
+                                <div>
+                                    <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1571219418_tally.svg" alt="">
+                                </div>
+                                <div class="importType">
+                                    <h4>Tally Connector</h4>
+                                </div>
+                                <div class="importDesc">
+                                    <p>Directly Import data into ClearTax from Tally</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                            <a class="importMethod" href="">
+                                <div>
+                                    <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1575546007_cticon.svg" alt="">
+                                </div>
+                                <div class="importType">
+                                    <h4>CharteredOne Template</h4>
+                                </div>
+                                <div class="importDesc">
+                                    <p>Simplest way to prepare & import data 5x faster!</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                            <a class="importMethod" href="">
+                                <div>
+                                    <img src="https://assets1.cleartax-cdn.com/cleargst-frontend/images/1571219724_typein.svg" alt="">
+                                </div>
+                                <div class="importType">
+                                    <h4>Type in or Copy/Paste</h4>
+                                </div>
+                                <div class="importDesc">
+                                    <p>Directly type in or copy paste your B2B/B2C invoices</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="importBox uploadFromLocal" style="display: none;">
+                    <div>
+                        <h2>If you have prepared your data on a Government Excel Template, please click below to import the file</h2>
+                    </div>
+                    <div class="uploadbox">
+                        <div class="">
+                            <div class="uploadInner" onclick="triggerUpload()">
+                                <input accept=".xlsx,.xls,.xlsm" type="file" autocomplete="off" tabindex="-1"  id="fileInput" style="display: none;" onchange="handleFileUpload(event)">
+                                <button>
+                                    <span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path>
+                                        </svg>
+                                    </span>Select file from your computer
+                                    <span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="downloadTemplete">
+                        <h4>Need the Government Excel for filing GSTR-1 data offline? <a href="#">Download it here</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn matchingBtn">Start Matching</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ==============upload sales data=============== -->
       <div class="modal fade" id="uploadSalesData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -507,9 +609,34 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
 <!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
 <script src="../js/dashboard-pack.js"></script> 
 <script src="../dashboard/../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<!-- show unload btn -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const uploadGovt = document.querySelector(".uploadGovt");
+    const uploadFromLocal = document.querySelector(".uploadFromLocal");
+
+    uploadGovt.addEventListener("click", function (e) {
+        e.preventDefault(); 
+
+        if (uploadFromLocal.style.display === "none") {
+            uploadFromLocal.style.display = "block";
+        }
+    });
+});
+</script>
+<script>
+    function triggerUpload() {
+      var fileInput = document.getElementById('fileInput');
+      fileInput.click();
+    }
+  
+    function handleFileUpload(event) {
+      console.log("File uploaded:", event.target.files[0]);
+    }
+</script>
 </body>
 </html>

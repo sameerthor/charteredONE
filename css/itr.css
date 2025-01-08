@@ -3315,10 +3315,9 @@ background-image: none;
     justify-content: left;
    }
    .modalCustomHeight .modal-dialog{
-    height: fit-content;
     min-height: 300px;
     background-color: #fff;
-    max-width: 97%;
+    max-width: 85%;
    }
    .table-responsive .table .creteRowBtn{
     display: flex;
@@ -3497,4 +3496,37 @@ background-image: none;
  }
  .card-header .form-check-input{
   cursor: pointer;
+ }
+ .card-body .card-header{
+  color: #000;
+ }
+ .computationTble .card-header{
+   height: auto;
+   padding: .5rem .6rem;
+   justify-content: space-between;
+ }
+ .highlightTr{
+  background-color: #eaf6e0;
+  box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 0 6px 0 rgba(60, 64, 67, .3), 0 1px 3px 0 rgba(60, 64, 67, .15);
+  border-bottom: 1px inset rgba(60, 64, 67, .15);
+ }
+ .table-responsive .table .highlightTr th{
+  font-size: .8rem;
+  color: #31719b;
+ }
+ .computationTble .table-responsive .table  th{
+  padding: .3rem .5rem;
+ }
+ .computationTble .table-responsive .table  td{
+  padding: .3rem .5rem;
+  font-weight: 500;
+  font-size: .75rem;
+  white-space: wrap;
+ }
+ .computationTble .table-responsive .table  tr td:nth-of-type(1){
+  max-width: 200px;
+ }
+ .computationTble .table-responsive .table  tr th:nth-of-type(1){
+ max-width: 200px;
+
  }
